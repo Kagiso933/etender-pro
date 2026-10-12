@@ -11,7 +11,11 @@ Only open IT tenders with an online briefing are added. Tenders already in the h
 refreshed (dates, briefing details, links) without touching the bid status or notes.
 
 Usage:
-    python3 tools/hub_sync.py data/tenders.json HUB_DIR [META_VERSION] > writes.json
+    python3 tools/hub_sync.py data/tenders.json HUB_DIR [META_VERSION] [VERSIONS_JSON] > writes.json
+
+META_VERSION is meta/etender's version ("" when that doc doesn't exist yet). VERSIONS_JSON is a
+file mapping each existing tenders doc_id to the version shown in the ArtifactData list result;
+writes to existing documents need it.
 
 HUB_DIR is the out_dir used for the ArtifactData read; documents are expected at
 HUB_DIR/tenders/<doc_id>.json (the folder may be missing when the hub is empty).
@@ -71,7 +75,7 @@ def to_hub(t):
     }
 
 
-def load_hub(hub_dir):
+def load_hub(hub_dir, versions):
     folder = os.path.join(hub_dir, "tenders")
     docs = {}
     if not os.path.isdir(folder):
@@ -81,19 +85,27 @@ def load_hub(hub_dir):
             continue
         with open(os.path.join(folder, name), encoding="utf-8") as f:
             raw = json.load(f)
-        # ArtifactData saves {id, version, data} or the bare document, depending on version
-        data = raw.get("data") if isinstance(raw.get("data"), dict) else raw
-        doc_id = raw.get("id") or raw.get("doc_id") or name[:-5]
-        docs[doc_id] = {"version": raw.get("version"), "data": data}
+        # ArtifactData out_dir saves the bare document as <doc_id>.json; versions come from VERSIONS_JSON
+        wrapped = isinstance(raw.get("data"), dict) and "version" in raw
+        data = raw["data"] if wrapped else raw
+        doc_id = (raw.get("id") if wrapped else None) or name[:-5]
+        docs[doc_id] = {"version": raw.get("version") if wrapped else versions.get(doc_id), "data": data}
     return docs
 
 
 def main():
     feed_path, hub_dir = sys.argv[1], sys.argv[2]
-    meta_version = sys.argv[3] if len(sys.argv) > 3 else ""  # version of meta/etender, if it exists
+    meta_version = sys.argv[3] if len(sys.argv) > 3 else ""  # version of meta/etender, if it exists ("" if not)
+    versions = {}
+    if len(sys.argv) > 4:  # JSON file {"<doc_id>": <version>, ...} copied from the ArtifactData list result
+        with open(sys.argv[4], encoding="utf-8") as f:
+            versions = {k: int(v) for k, v in json.load(f).items()}
     with open(feed_path, encoding="utf-8") as f:
         feed = json.load(f)
-    hub = load_hub(hub_dir)
+    hub = load_hub(hub_dir, versions)
+    missing = [d for d, v in hub.items() if not v["version"]]
+    if missing:
+        sys.exit(f"No version for existing hub documents {missing[:5]}: pass VERSIONS_JSON with every listed doc's version")
     by_ocid = {d["data"].get("ocid"): (doc_id, d) for doc_id, d in hub.items() if d["data"].get("ocid")}
 
     now = datetime.now(timezone.utc)
