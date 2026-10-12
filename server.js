@@ -19,116 +19,23 @@ app.use(express.json());
 let tenderCache = [];
 let lastScrapeTime = null;
 
-// IT keywords for filtering
-const IT_KEYWORDS = [
-    'software', 'hardware', 'IT', 'information technology',
-    'computer', 'network', 'server', 'cloud', 'database',
-    'cybersecurity', 'security', 'ERP', 'CRM', 'system'
-];
-
 /**
- * Web scraper for eTender.gov.za
+ * Fetch open IT tenders from the official eTenders OCDS API.
+ * Reuses etender_scraper.py so the website and this API share one data source.
  */
-async function scrapeTenders() {
-    console.log('[SCRAPER] Starting tender scrape...');
-    const tenders = [];
-    
-    try {
-        // NOTE: This is a template implementation
-        // The actual selectors and URLs need to match etender.gov.za structure
-        
-        const baseUrl = 'https://etender.gov.za';
-        const searchUrl = `${baseUrl}/tenders`;
-        
-        // Fetch tender listing page
-        const response = await axios.get(searchUrl, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            },
-            timeout: 30000
-        });
-        
-        const $ = cheerio.load(response.data);
-        
-        // Parse tender items (adjust selector based on actual HTML)
-        $('.tender-item').each((index, element) => {
-            try {
-                const tender = {
-                    id: $(element).attr('data-id') || `T${Date.now()}-${index}`,
-                    title: $(element).find('.tender-title').text().trim(),
-                    department: $(element).find('.department').text().trim(),
-                    value: $(element).find('.value').text().trim(),
-                    closingDate: parseTenderDate($(element).find('.closing-date').text().trim()),
-                    description: $(element).find('.description').text().trim(),
-                    category: '',
-                    link: baseUrl + $(element).find('a').attr('href'),
-                    scrapedAt: new Date().toISOString()
-                };
-                
-                // Filter for IT-related tenders
-                const searchText = `${tender.title} ${tender.description}`.toLowerCase();
-                const isIT = IT_KEYWORDS.some(kw => searchText.includes(kw.toLowerCase()));
-                
-                if (isIT) {
-                    tender.category = categorizeTender(tender);
-                    tenders.push(tender);
-                }
-            } catch (err) {
-                console.error('[SCRAPER] Error parsing tender:', err.message);
-            }
-        });
-        
-        console.log(`[SCRAPER] Found ${tenders.length} IT tenders`);
-        return tenders;
-        
-    } catch (error) {
-        console.error('[SCRAPER] Error during scrape:', error.message);
-        return [];
-    }
-}
-
-/**
- * Parse tender closing date
- */
-function parseTenderDate(dateStr) {
-    if (!dateStr) return new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
-    
-    try {
-        // Try parsing common SA date formats
-        const parts = dateStr.split(/[\/\-]/);
-        if (parts.length === 3) {
-            // Assume DD/MM/YYYY or DD-MM-YYYY
-            const [day, month, year] = parts;
-            return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
-        }
-    } catch (err) {
-        console.error('[SCRAPER] Date parse error:', err.message);
-    }
-    
-    return new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
-}
-
-/**
- * Categorize tender based on keywords
- */
-function categorizeTender(tender) {
-    const text = `${tender.title} ${tender.description}`.toLowerCase();
-    
-    const categories = {
-        'Software Development': ['software', 'development', 'programming', 'erp', 'crm'],
-        'IT Infrastructure': ['infrastructure', 'network', 'server', 'hardware'],
-        'Cybersecurity': ['security', 'cybersecurity', 'firewall', 'penetration'],
-        'Cloud Services': ['cloud', 'azure', 'aws', 'saas'],
-        'Data & Analytics': ['data', 'analytics', 'bi', 'database']
-    };
-    
-    for (const [category, keywords] of Object.entries(categories)) {
-        if (keywords.some(kw => text.includes(kw))) {
-            return category;
-        }
-    }
-    
-    return 'General IT Services';
+const { execFile } = require('child_process');
+function scrapeTenders() {
+    return new Promise((resolve) => {
+        execFile('python3', ['etender_scraper.py', '--out', 'data/tenders.json'], { timeout: 15 * 60 * 1000 },
+            async (err, stdout, stderr) => {
+                if (err) { console.error('[FETCH] failed:', stderr || err.message); return resolve([]); }
+                try {
+                    const json = JSON.parse(await fs.readFile('data/tenders.json', 'utf-8'));
+                    console.log(`[FETCH] ${json.count} open IT tenders`);
+                    resolve(json.tenders || []);
+                } catch (e) { console.error('[FETCH] bad output:', e.message); resolve([]); }
+            });
+    });
 }
 
 /**
@@ -177,14 +84,14 @@ app.get('/api/tenders', (req, res) => {
         filtered = filtered.filter(t => 
             t.title.toLowerCase().includes(query) ||
             t.department.toLowerCase().includes(query) ||
-            t.description.toLowerCase().includes(query)
+            (t.reference || '').toLowerCase().includes(query)
         );
     }
     
     // Filter by value range
     if (minValue || maxValue) {
         filtered = filtered.filter(t => {
-            const value = parseInt(t.value.replace(/[^\d]/g, ''));
+            const value = t.value || 0;
             if (minValue && value < parseInt(minValue)) return false;
             if (maxValue && value > parseInt(maxValue)) return false;
             return true;

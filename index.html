@@ -1,1074 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SA eTender Pro - IT Tender Management</title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'DM Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        #root {
-            width: 100%;
-            min-height: 100vh;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SA eTender Pro</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1c24; --panel: rgba(255,255,255,0.04); --panel2: rgba(0,0,0,0.28);
+    --line: rgba(255,255,255,0.10); --text: #e8eef2; --muted: #9fb0bd;
+    --accent: #7c8cf8; --accent2: #9b6bd6; --warn: #f59e0b; --bad: #ef4444; --good: #22c55e;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'DM Sans', system-ui, sans-serif; color: var(--text);
+         background: linear-gradient(135deg, #0f2027 0%, #203a43 55%, #2c5364 100%) fixed; min-height: 100vh; }
+  a { color: #a9b5ff; }
+  button { font-family: inherit; cursor: pointer; }
+  input, select, textarea { font-family: inherit; font-size: 15px; color: var(--text); background: var(--panel2);
+         border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; width: 100%; outline: none; }
+  input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+  select option { background: #1b2a33; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 20px 16px 60px; }
+  .top { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px); background: rgba(0,0,0,0.35); border-bottom: 1px solid var(--line); }
+  .top .wrap { padding-top: 14px; padding-bottom: 14px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  .brand h1 { margin: 0; font-size: 22px; }
+  .brand p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+  .btn { border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 8px; padding: 9px 14px; font-weight: 600; font-size: 14px; }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent2)); border: none; color: #fff; }
+  .btn:disabled { opacity: .55; cursor: not-allowed; }
+  .tabs { display: flex; gap: 6px; background: var(--panel2); padding: 6px; border-radius: 12px; margin: 18px 0; flex-wrap: wrap; }
+  .tabs button { flex: 1; min-width: 140px; padding: 11px; border-radius: 8px; border: 1px solid transparent; background: transparent; color: var(--muted); font-weight: 600; }
+  .tabs button.on { background: rgba(124,140,248,0.22); border-color: rgba(124,140,248,0.5); color: #fff; }
+  .panel { background: var(--panel2); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+  .grid4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  label.l { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
+  .meta { color: var(--muted); font-size: 13px; margin: 14px 2px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .card { background: var(--panel2); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-bottom: 14px; }
+  .card.sel { border-color: rgba(124,140,248,0.7); }
+  .card h3 { margin: 6px 0 8px; font-size: 17px; line-height: 1.35; }
+  .chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px; background: rgba(124,140,248,0.18); color: #c3cbff; margin-right: 6px; }
+  .chip.gray { background: rgba(255,255,255,0.08); color: var(--muted); }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 12px 0; }
+  .fact { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .fact .k { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .fact .v { font-weight: 700; margin-top: 3px; }
+  .urgent { color: var(--bad); } .soon { color: var(--warn); } .ok { color: var(--good); }
+  .docs a { display: inline-block; margin: 4px 8px 4px 0; font-size: 13px; padding: 5px 10px; border-radius: 6px; background: var(--panel); border: 1px solid var(--line); text-decoration: none; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .req { display: flex; gap: 12px; align-items: flex-start; padding: 14px; border: 1px solid var(--line); border-radius: 10px; margin-bottom: 10px; background: var(--panel); }
+  .req.done { opacity: .65; }
+  .req input[type=checkbox] { width: 20px; height: 20px; margin-top: 2px; flex: none; }
+  .req .where { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+  .bar { height: 8px; background: rgba(255,255,255,0.08); border-radius: 99px; overflow: hidden; }
+  .bar > div { height: 100%; background: linear-gradient(90deg, var(--accent), var(--good)); }
+  .ai { white-space: pre-wrap; line-height: 1.65; font-size: 15px; }
+  .empty { text-align: center; padding: 50px 20px; color: var(--muted); }
+  .note { font-size: 13px; color: var(--muted); line-height: 1.5; }
+  .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 50; }
+  .modal .box { background: #16252e; border: 1px solid var(--line); border-radius: 14px; max-width: 760px; width: 100%; max-height: 85vh; overflow: auto; padding: 20px; }
+  h2 { font-size: 19px; margin: 0 0 6px; }
+  .sec { margin-top: 22px; }
+  @media (max-width: 600px) { .tabs button { min-width: 100px; font-size: 13px; } }
+</style>
 </head>
 <body>
-    <div id="root"></div>
-    
-    <script type="text/babel">
-        const { useState, useEffect } = React;
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useMemo } = React;
 
-        // Anthropic API key is kept only in this browser (localStorage), never in the repo
-        const authHeaders = () => {
-          let key = null;
-          try { key = localStorage.getItem('anthropic_api_key'); } catch (e) {}
-          if (!key) {
-            key = window.prompt('Enter your Anthropic API key (stored only in this browser):');
-            if (key) { try { localStorage.setItem('anthropic_api_key', key.trim()); } catch (e) {} }
-          }
-          return {
-            "Content-Type": "application/json",
-            "x-api-key": (key || '').trim(),
-            "anthropic-version": "2023-06-01",
-            "anthropic-dangerous-direct-browser-access": "true"
-          };
-        };
-        
-        // Lucide React icons as inline SVG components
-        const Search = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.35-4.35"></path>
-            </svg>
-        );
+// Data is refreshed every 6 hours by a GitHub Action (see .github/workflows/update-tenders.yml).
+// raw.githubusercontent.com is tried first so new data shows up without waiting for a Pages rebuild.
+const DATA_URLS = [
+  'https://raw.githubusercontent.com/Kagiso933/etender-pro/main/data/tenders.json',
+  './data/tenders.json',
+];
+const MODEL = 'claude-sonnet-5-5';
 
-        const FileText = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>
-        );
+// ---------- storage helpers (wrapped: storage can be blocked) ----------
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+};
 
-        const CheckSquare = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <polyline points="9 11 12 14 22 4"></polyline>
-                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-            </svg>
-        );
+// ---------- Standard SA public-sector bid requirements and where to get them ----------
+const STANDARD_REQS = [
+  { id: 'csd', name: 'Central Supplier Database (CSD) registration',
+    where: 'Register free at secure.csd.gov.za. Bidders must be registered and tax-compliant on CSD before award. Attach the CSD summary report (shows your MAAA number).',
+    link: 'https://secure.csd.gov.za' },
+  { id: 'tax', name: 'Tax compliance status (SARS PIN)',
+    where: 'SARS eFiling > Tax Compliance Status > request a TCS PIN. Free. Include the PIN on SBD 1; the buyer verifies it on CSD/SARS.',
+    link: 'https://www.sarsefiling.co.za' },
+  { id: 'cipc', name: 'Company registration documents (CIPC)',
+    where: 'Download your registration certificate (CoR 14.3) and director details from CIPC / BizPortal. Make sure annual returns are up to date.',
+    link: 'https://www.bizportal.gov.za' },
+  { id: 'bbbee', name: 'B-BBEE certificate or sworn affidavit',
+    where: 'EMEs (turnover up to R10m) and 51%+ black-owned QSEs can submit a sworn affidavit (dtic template, signed before a commissioner of oaths) or the CIPC B-BBEE certificate. Larger entities need a certificate from a SANAS-accredited verification agency. Without it you usually score 0 preference points.',
+    link: 'https://www.sanas.co.za' },
+  { id: 'sbd', name: 'SBD forms completed and signed (SBD 1, SBD 4, SBD 6.1 etc.)',
+    where: 'These come in the tender pack itself (download the documents above). Complete every page, sign where required, and do not alter the forms. Municipal tenders use MBD forms instead.' },
+  { id: 'brief', name: 'Briefing session / site visit (check if compulsory)',
+    where: 'Look for "compulsory briefing" in the invitation document. Missing a compulsory briefing disqualifies the bid. Keep the attendance certificate.' },
+  { id: 'price', name: 'Pricing schedule completed (incl. VAT, valid for the stated period)',
+    where: 'Use the pricing schedule in the tender pack. Get written quotes from distributors/OEM partners first so your costs are backed up.' },
+  { id: 'exp', name: 'Proof of experience: reference letters / completed projects',
+    where: 'Ask past clients for signed reference letters on their letterhead (project, value, dates, contact). Government references usually score higher.' },
+  { id: 'certs', name: 'Key personnel CVs and certifications',
+    where: 'CVs with ID-matching names plus certified copies of certifications (e.g. Microsoft, Cisco, AWS, ITIL, CompTIA, ISC2). Check which are mandatory in the functionality criteria.' },
+  { id: 'oem', name: 'OEM / reseller authorisation letters (for hardware & licences)',
+    where: 'Request from the OEM partner portal or your SA distributor - e.g. Axiz, Tarsus Distribution, Pinnacle, Mustek, Rectron, Westcon-Comstor, First Distribution. Allow 3-5 working days.' },
+  { id: 'fin', name: 'Financial statements / bank rating letter (if requested)',
+    where: 'Audited or independently reviewed statements from your accountant; bank rating letter from your bank (can take a week).' },
+  { id: 'coida', name: 'COIDA letter of good standing (services with staff on site)',
+    where: 'Department of Employment and Labour - Compensation Fund online services. Often required for on-site services and installations.' },
+];
 
-        const DollarSign = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <line x1="12" y1="1" x2="12" y2="23"></line>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-            </svg>
-        );
+// ---------- formatting ----------
+const daysLeft = (iso) => Math.ceil((new Date(iso) - new Date()) / 86400000);
+const fmtDate = (iso) => new Date(iso).toLocaleString('en-ZA', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+const fmtMoney = (v) => v ? 'R ' + Math.round(v).toLocaleString('en-ZA') : 'Not disclosed';
+const urgency = (d) => d <= 3 ? 'urgent' : d <= 7 ? 'soon' : 'ok';
+const ago = (iso) => { const h = Math.round((Date.now() - new Date(iso)) / 3600000); return h < 1 ? 'just now' : h < 48 ? `${h}h ago` : `${Math.round(h / 24)} days ago`; };
 
-        const Calendar = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
-        );
+// ---------- Claude API (key stays in this browser only) ----------
+function getKey(force) {
+  let key = store.get('anthropic_api_key', '');
+  if (!key || force) {
+    const entered = window.prompt('Enter your Anthropic API key (get one at console.anthropic.com).\nIt is saved only in this browser.', key || '');
+    if (entered === null) return key;
+    key = entered.trim();
+    store.set('anthropic_api_key', key);
+  }
+  return key;
+}
 
-        const Sparkles = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
-                <path d="M5 3v4"></path>
-                <path d="M19 17v4"></path>
-                <path d="M3 5h4"></path>
-                <path d="M17 19h4"></path>
-            </svg>
-        );
+async function askClaude(prompt, maxTokens = 3000) {
+  const key = getKey(false);
+  if (!key) throw new Error('No API key set. Use "API key" at the top right.');
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01',
+               'anthropic-dangerous-direct-browser-access': 'true' },
+    body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data?.error?.message || `API error ${res.status}`);
+  return (data.content || []).filter(c => c.type === 'text').map(c => c.text).join('\n');
+}
 
-        const AlertCircle = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="8" x2="12" y2="12"></line>
-                <line x1="12" y1="16" x2="12.01" y2="16"></line>
-            </svg>
-        );
+const tenderBrief = (t) => `Reference: ${t.reference}
+Description: ${t.title}
+Buyer: ${t.department}
+Category (auto): ${t.category}
+Procurement method: ${t.procurementMethod}
+Estimated value: ${fmtMoney(t.value)}
+Closing: ${fmtDate(t.closingDate)} (${daysLeft(t.closingDate)} days left)
+Documents: ${t.documents.map(d => d.title).join('; ') || 'none listed'}`;
 
-        const Building2 = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
-                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
-                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
-                <path d="M10 6h4"></path>
-                <path d="M10 10h4"></path>
-                <path d="M10 14h4"></path>
-                <path d="M10 18h4"></path>
-            </svg>
-        );
+// ---------- App ----------
+function App() {
+  const [data, setData] = useState(null);
+  const [loadErr, setLoadErr] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [tab, setTab] = useState('discover');
+  const [q, setQ] = useState('');
+  const [cat, setCat] = useState('all');
+  const [within, setWithin] = useState(60);
+  const [selId, setSelId] = useState(store.get('selected_tender', null));
+  const [saved, setSaved] = useState(store.get('saved_tenders', []));
+  const [onlySaved, setOnlySaved] = useState(false);
 
-        const Package = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <path d="m7.5 4.27 9 5.15"></path>
-                <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
-                <path d="m3.3 7 8.7 5 8.7-5"></path>
-                <path d="M12 22V12"></path>
-            </svg>
-        );
+  const load = async () => {
+    setLoading(true); setLoadErr('');
+    for (const url of DATA_URLS) {
+      try {
+        const r = await fetch(url + (url.startsWith('http') ? `?t=${Date.now()}` : ''), { cache: 'no-store' });
+        if (!r.ok) continue;
+        const j = await r.json();
+        if (Array.isArray(j.tenders)) { setData(j); setLoading(false); return; }
+      } catch (e) {}
+    }
+    setLoadErr('Could not load tender data yet. If you just set this up, the first GitHub Action run may still be in progress.');
+    setLoading(false);
+  };
+  useEffect(() => { load(); }, []);
+  useEffect(() => { store.set('selected_tender', selId); }, [selId]);
+  useEffect(() => { store.set('saved_tenders', saved); }, [saved]);
 
-        const Loader2 = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
-            </svg>
-        );
+  const tenders = (data?.tenders || []).filter(t => daysLeft(t.closingDate) >= 0);
+  const cats = useMemo(() => [...new Set(tenders.map(t => t.category))].sort(), [data]);
+  const filtered = tenders.filter(t => {
+    const s = q.toLowerCase();
+    if (s && !`${t.title} ${t.reference} ${t.department}`.toLowerCase().includes(s)) return false;
+    if (cat !== 'all' && t.category !== cat) return false;
+    if (daysLeft(t.closingDate) > within) return false;
+    if (onlySaved && !saved.includes(t.id)) return false;
+    return true;
+  });
+  const sel = tenders.find(t => t.id === selId) || null;
+  const toggleSave = (id) => setSaved(s => s.includes(id) ? s.filter(x => x !== id) : [...s, id]);
 
-        const Download = ({ size = 24, ...props }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-        );
+  return (
+    <div>
+      <div className="top"><div className="wrap">
+        <div className="brand">
+          <h1>SA eTender Pro</h1>
+          <p>{data ? `${tenders.length} open IT tenders · data updated ${ago(data.generatedAt)} from the official eTenders API` : 'Open IT tenders from etenders.gov.za'}</p>
+        </div>
+        <div className="row" style={{ marginTop: 0 }}>
+          <button className="btn" onClick={() => getKey(true)}>API key</button>
+          <button className="btn primary" onClick={load} disabled={loading}>{loading ? 'Loading…' : 'Reload data'}</button>
+        </div>
+      </div></div>
 
-        const ETenderTool = () => {
-          const [activeTab, setActiveTab] = useState('discover');
-          const [tenders, setTenders] = useState([]);
-          const [selectedTender, setSelectedTender] = useState(null);
-          const [searchQuery, setSearchQuery] = useState('');
-          const [loading, setLoading] = useState(false);
-          const [aiAnalysis, setAiAnalysis] = useState(null);
-          const [aiProcessing, setAiProcessing] = useState(false);
-          const [filters, setFilters] = useState({
-            minValue: '',
-            maxValue: '',
-            closingDays: 30,
-            category: 'all'
-          });
+      <div className="wrap">
+        <div className="tabs">
+          {[['discover', 'Discover tenders'], ['analysis', 'AI analysis'], ['bid', 'Bid builder']].map(([id, label]) =>
+            <button key={id} className={tab === id ? 'on' : ''} onClick={() => setTab(id)}>{label}</button>)}
+        </div>
 
-          const mockTenders = [
-            {
-              id: 'T001-2026',
-              title: 'Supply and Implementation of Enterprise Resource Planning (ERP) System',
-              department: 'Department of Public Works and Infrastructure',
-              value: 'R 15,000,000',
-              closingDate: '2026-03-15',
-              description: 'Supply, implementation, and support of a comprehensive ERP system including modules for finance, procurement, asset management, and HR.',
-              category: 'Software Development',
-              requirements: [
-                'Company registration with CIPC',
-                'Valid Tax Clearance Certificate',
-                'B-BBEE Level 1-4 certification',
-                'Minimum 5 years experience in ERP implementation',
-                'ISO 27001 certification',
-                'References from at least 3 government entities'
-              ],
-              technicalSpecs: [
-                'Cloud-based or hybrid deployment',
-                'Support for minimum 500 concurrent users',
-                'Integration with existing systems via REST APIs',
-                'Mobile responsive interface',
-                'Comprehensive reporting and analytics module'
-              ]
-            },
-            {
-              id: 'T002-2026',
-              title: 'Network Infrastructure Upgrade for Provincial Offices',
-              department: 'Gauteng Department of e-Government',
-              value: 'R 8,500,000',
-              closingDate: '2026-02-28',
-              description: 'Upgrade of network infrastructure including switches, routers, WiFi access points, and cabling for 15 provincial office buildings.',
-              category: 'IT Infrastructure',
-              requirements: [
-                'Company registration',
-                'Tax compliance status',
-                'B-BBEE Level 1-3 preferred',
-                'Cisco or equivalent certification',
-                'Minimum R5m professional indemnity insurance',
-                'Previous government sector experience'
-              ],
-              technicalSpecs: [
-                'Enterprise-grade managed switches',
-                'WiFi 6 or higher access points',
-                'CAT6A cabling throughout',
-                'Redundant core routing',
-                '24/7 monitoring and support for 24 months'
-              ]
-            },
-            {
-              id: 'T003-2026',
-              title: 'Cybersecurity Assessment and Implementation Services',
-              department: 'State Information Technology Agency (SITA)',
-              value: 'R 12,000,000',
-              closingDate: '2026-03-30',
-              description: 'Comprehensive cybersecurity assessment, penetration testing, and implementation of security solutions across government IT infrastructure.',
-              category: 'Cybersecurity',
-              requirements: [
-                'CIPC registration',
-                'Tax clearance certificate',
-                'B-BBEE certification',
-                'CEH or OSCP certified staff (minimum 3)',
-                'ISO 27001 certified organization',
-                'ECSA accreditation for security services'
-              ],
-              technicalSpecs: [
-                'SIEM solution deployment',
-                'Endpoint detection and response',
-                'Network security assessment',
-                'Application security testing',
-                'Security Operations Center (SOC) setup',
-                'Compliance with POPIA requirements'
-              ]
-            },
-            {
-              id: 'T004-2026',
-              title: 'Cloud Migration and Managed Services',
-              department: 'National Treasury',
-              value: 'R 20,000,000',
-              closingDate: '2026-04-15',
-              description: 'Migration of critical applications and databases to cloud infrastructure with ongoing managed services for 36 months.',
-              category: 'Cloud Services',
-              requirements: [
-                'Company registration',
-                'Valid tax clearance',
-                'B-BBEE Level 1-4',
-                'Microsoft Azure or AWS certified partner',
-                'Minimum 7 years cloud services experience',
-                'Data center in South Africa',
-                'POPIA compliance certification'
-              ],
-              technicalSpecs: [
-                'Hybrid cloud architecture',
-                'Disaster recovery and backup solutions',
-                '99.9% uptime SLA',
-                'Data sovereignty compliance',
-                'DevOps automation',
-                'Cost optimization strategies'
-              ]
-            },
-            {
-              id: 'T005-2026',
-              title: 'Custom Software Development for Case Management System',
-              department: 'Department of Justice and Constitutional Development',
-              value: 'R 18,500,000',
-              closingDate: '2026-03-10',
-              description: 'Development of a custom case management system for tracking legal proceedings, document management, and stakeholder communication.',
-              category: 'Software Development',
-              requirements: [
-                'CIPC registered software development company',
-                'Tax clearance certificate',
-                'B-BBEE certification',
-                'Agile/Scrum methodology experience',
-                'Minimum 5 government software projects completed',
-                'Quality assurance certification (ISO 9001)'
-              ],
-              technicalSpecs: [
-                'Web-based responsive application',
-                'Role-based access control',
-                'Document management with version control',
-                'Electronic signatures integration',
-                'Reporting and analytics dashboard',
-                'Mobile application for field workers',
-                'Integration with existing court systems'
-              ]
-            }
-          ];
-
-          useEffect(() => {
-            setTenders(mockTenders);
-          }, []);
-
-          const filteredTenders = tenders.filter(tender => {
-            const matchesSearch = searchQuery === '' || 
-              tender.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-              tender.department.toLowerCase().includes(searchQuery.toLowerCase()) ||
-              tender.category.toLowerCase().includes(searchQuery.toLowerCase());
-            
-            const matchesCategory = filters.category === 'all' || tender.category === filters.category;
-            
-            const valueNum = parseInt(tender.value.replace(/[^\d]/g, ''));
-            const matchesMinValue = filters.minValue === '' || valueNum >= parseInt(filters.minValue);
-            const matchesMaxValue = filters.maxValue === '' || valueNum <= parseInt(filters.maxValue);
-            
-            const daysUntilClose = Math.ceil((new Date(tender.closingDate) - new Date()) / (1000 * 60 * 60 * 24));
-            const matchesClosingDate = daysUntilClose <= filters.closingDays;
-            
-            return matchesSearch && matchesCategory && matchesMinValue && matchesMaxValue && matchesClosingDate;
-          });
-
-          const analyzeWithAI = async (tender) => {
-            setAiProcessing(true);
-            try {
-              const response = await fetch("https://api.anthropic.com/v1/messages", {
-                method: "POST",
-                headers: authHeaders(),
-                body: JSON.stringify({
-                  model: "claude-sonnet-5-5",
-                  max_tokens: 4000,
-                  messages: [
-                    {
-                      role: "user",
-                      content: `You are a South African government tender specialist. Analyze this IT tender and provide comprehensive assistance:
-
-Tender: ${tender.title}
-Department: ${tender.department}
-Value: ${tender.value}
-Description: ${tender.description}
-Requirements: ${tender.requirements.join(', ')}
-Technical Specs: ${tender.technicalSpecs.join(', ')}
-
-Please provide:
-1. A risk assessment and viability analysis
-2. Key compliance requirements and how to obtain them
-3. Recommended suppliers/vendors for required items (with SA-based options)
-4. Estimated cost breakdown
-5. Timeline for bid preparation
-6. Critical success factors
-
-Format as JSON with keys: riskAssessment, compliance, suppliers, costBreakdown, timeline, successFactors`
-                    }
-                  ],
-                })
-              });
-
-              const data = await response.json();
-              const analysisText = data.content.find(c => c.type === 'text')?.text || '';
-              
-              let parsedAnalysis;
-              try {
-                const jsonMatch = analysisText.match(/\{[\s\S]*\}/);
-                parsedAnalysis = jsonMatch ? JSON.parse(jsonMatch[0]) : {
-                  riskAssessment: analysisText,
-                  compliance: 'See full analysis',
-                  suppliers: 'See full analysis',
-                  costBreakdown: 'See full analysis',
-                  timeline: 'See full analysis',
-                  successFactors: 'See full analysis'
-                };
-              } catch (e) {
-                parsedAnalysis = {
-                  riskAssessment: analysisText,
-                  compliance: 'Analysis provided in main text',
-                  suppliers: 'Analysis provided in main text',
-                  costBreakdown: 'Analysis provided in main text',
-                  timeline: 'Analysis provided in main text',
-                  successFactors: 'Analysis provided in main text'
-                };
-              }
-              
-              setAiAnalysis(parsedAnalysis);
-            } catch (error) {
-              console.error('AI Analysis error:', error);
-              setAiAnalysis({ error: 'Failed to generate analysis. Please try again.' });
-            }
-            setAiProcessing(false);
-          };
-
-          const generateBidDocument = async (tender) => {
-            setAiProcessing(true);
-            try {
-              const response = await fetch("https://api.anthropic.com/v1/messages", {
-                method: "POST",
-                headers: authHeaders(),
-                body: JSON.stringify({
-                  model: "claude-sonnet-5-5",
-                  max_tokens: 4000,
-                  messages: [
-                    {
-                      role: "user",
-                      content: `Create a professional bid response template for this South African government IT tender:
-
-Tender: ${tender.title}
-Department: ${tender.department}
-Requirements: ${tender.requirements.join(', ')}
-Technical Specs: ${tender.technicalSpecs.join(', ')}
-
-Generate a comprehensive bid document template including:
-- Executive Summary
-- Company Profile section
-- Technical Proposal outline
-- Project Methodology
-- Pricing Structure template
-- Compliance checklist
-- Required attachments list
-
-Format as a professional document.`
-                    }
-                  ],
-                })
-              });
-
-              const data = await response.json();
-              const documentText = data.content.find(c => c.type === 'text')?.text || '';
-              
-              const blob = new Blob([documentText], { type: 'text/plain' });
-              const url = URL.createObjectURL(blob);
-              const a = document.createElement('a');
-              a.href = url;
-              a.download = `Bid_Template_${tender.id}.txt`;
-              a.click();
-              URL.revokeObjectURL(url);
-              
-              alert('Bid template downloaded! Review and customize before submission.');
-            } catch (error) {
-              console.error('Document generation error:', error);
-              alert('Failed to generate document. Please try again.');
-            }
-            setAiProcessing(false);
-          };
-
-          const searchETender = async () => {
-            setLoading(true);
-            setTimeout(() => {
-              setLoading(false);
-              alert('In production, this would search the live eTender.gov.za site. Currently showing sample data.');
-            }, 1500);
-          };
-
-          return (
-            <div style={{
-              minHeight: '100vh',
-              background: 'linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)',
-              fontFamily: '"DM Sans", sans-serif',
-              color: '#fff',
-              padding: '0'
-            }}>
-              <div style={{
-                background: 'rgba(0, 0, 0, 0.3)',
-                backdropFilter: 'blur(10px)',
-                borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-                padding: '1.5rem 2rem',
-                position: 'sticky',
-                top: 0,
-                zIndex: 100
-              }}>
-                <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                    <div style={{
-                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                      padding: '0.75rem',
-                      borderRadius: '12px',
-                      boxShadow: '0 8px 24px rgba(102, 126, 234, 0.3)'
-                    }}>
-                      <Building2 size={28} />
-                    </div>
-                    <div>
-                      <h1 style={{ 
-                        margin: 0, 
-                        fontSize: '1.75rem', 
-                        fontWeight: 700,
-                        background: 'linear-gradient(to right, #fff, #a0aec0)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
-                      }}>
-                        SA eTender Pro
-                      </h1>
-                      <p style={{ margin: 0, fontSize: '0.875rem', color: '#cbd5e0' }}>
-                        AI-Powered IT Tender Management
-                      </p>
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', gap: '0.75rem' }}>
-                    <button
-                      onClick={searchETender}
-                      disabled={loading}
-                      style={{
-                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                        border: 'none',
-                        padding: '0.75rem 1.5rem',
-                        borderRadius: '8px',
-                        color: 'white',
-                        fontWeight: 600,
-                        cursor: loading ? 'not-allowed' : 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.5rem',
-                        fontSize: '0.875rem',
-                        transition: 'transform 0.2s',
-                        opacity: loading ? 0.6 : 1
-                      }}
-                    >
-                      {loading ? <Loader2 size={16} style={{animation: 'spin 1s linear infinite'}} /> : <Search size={16} />}
-                      Refresh Tenders
-                    </button>
-                  </div>
-                </div>
+        {tab === 'discover' && <>
+          <div className="panel">
+            <div className="grid4">
+              <div style={{ gridColumn: '1 / -1' }}>
+                <input placeholder="Search description, reference number or department…" value={q} onChange={e => setQ(e.target.value)} />
               </div>
-
-              <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '2rem' }}>
-                <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '2rem', background: 'rgba(0, 0, 0, 0.2)', padding: '0.5rem', borderRadius: '12px' }}>
-                  {[
-                    { id: 'discover', label: 'Discover Tenders', icon: Search },
-                    { id: 'analysis', label: 'AI Analysis', icon: Sparkles },
-                    { id: 'requirements', label: 'Bid Builder', icon: CheckSquare }
-                  ].map(tab => {
-                    const Icon = tab.icon;
-                    return (
-                      <button
-                        key={tab.id}
-                        onClick={() => setActiveTab(tab.id)}
-                        style={{
-                          flex: 1,
-                          padding: '1rem',
-                          background: activeTab === tab.id ? 'rgba(102, 126, 234, 0.3)' : 'transparent',
-                          border: activeTab === tab.id ? '1px solid rgba(102, 126, 234, 0.5)' : '1px solid transparent',
-                          borderRadius: '8px',
-                          color: activeTab === tab.id ? '#fff' : '#a0aec0',
-                          cursor: 'pointer',
-                          fontWeight: activeTab === tab.id ? 600 : 400,
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          gap: '0.5rem',
-                          transition: 'all 0.3s'
-                        }}
-                      >
-                        <Icon size={20} />
-                        {tab.label}
-                      </button>
-                    );
-                  })}
-                </div>
-
-                {activeTab === 'discover' && (
-                  <div>
-                    <div style={{
-                      background: 'rgba(0, 0, 0, 0.3)',
-                      backdropFilter: 'blur(10px)',
-                      borderRadius: '16px',
-                      padding: '1.5rem',
-                      marginBottom: '2rem',
-                      border: '1px solid rgba(255, 255, 255, 0.1)'
-                    }}>
-                      <div style={{ position: 'relative', marginBottom: '1.5rem' }}>
-                        <Search style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', color: '#a0aec0' }} size={20} />
-                        <input
-                          type="text"
-                          placeholder="Search tenders by title, department, or category..."
-                          value={searchQuery}
-                          onChange={(e) => setSearchQuery(e.target.value)}
-                          style={{
-                            width: '100%',
-                            padding: '0.875rem 1rem 0.875rem 3rem',
-                            background: 'rgba(0, 0, 0, 0.4)',
-                            border: '1px solid rgba(255, 255, 255, 0.1)',
-                            borderRadius: '8px',
-                            color: '#fff',
-                            fontSize: '1rem',
-                            outline: 'none'
-                          }}
-                        />
-                      </div>
-                      
-                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
-                        <div>
-                          <label style={{ display: 'block', fontSize: '0.875rem', marginBottom: '0.5rem', color: '#cbd5e0' }}>
-                            Category
-                          </label>
-                          <select
-                            value={filters.category}
-                            onChange={(e) => setFilters({...filters, category: e.target.value})}
-                            style={{
-                              width: '100%',
-                              padding: '0.75rem',
-                              background: 'rgba(0, 0, 0, 0.4)',
-                              border: '1px solid rgba(255, 255, 255, 0.1)',
-                              borderRadius: '8px',
-                              color: '#fff',
-                              outline: 'none'
-                            }}
-                          >
-                            <option value="all">All Categories</option>
-                            <option value="Software Development">Software Development</option>
-                            <option value="IT Infrastructure">IT Infrastructure</option>
-                            <option value="Cybersecurity">Cybersecurity</option>
-                            <option value="Cloud Services">Cloud Services</option>
-                          </select>
-                        </div>
-                        
-                        <div>
-                          <label style={{ display: 'block', fontSize: '0.875rem', marginBottom: '0.5rem', color: '#cbd5e0' }}>
-                            Closing Within (days)
-                          </label>
-                          <input
-                            type="number"
-                            value={filters.closingDays}
-                            onChange={(e) => setFilters({...filters, closingDays: parseInt(e.target.value)})}
-                            style={{
-                              width: '100%',
-                              padding: '0.75rem',
-                              background: 'rgba(0, 0, 0, 0.4)',
-                              border: '1px solid rgba(255, 255, 255, 0.1)',
-                              borderRadius: '8px',
-                              color: '#fff',
-                              outline: 'none'
-                            }}
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div style={{ marginBottom: '1rem', color: '#cbd5e0', fontSize: '0.875rem' }}>
-                      Showing {filteredTenders.length} of {tenders.length} tenders
-                    </div>
-                    
-                    <div style={{ display: 'grid', gap: '1.5rem' }}>
-                      {filteredTenders.map(tender => (
-                        <div
-                          key={tender.id}
-                          style={{
-                            background: 'rgba(0, 0, 0, 0.3)',
-                            backdropFilter: 'blur(10px)',
-                            borderRadius: '16px',
-                            padding: '2rem',
-                            border: selectedTender?.id === tender.id ? '2px solid rgba(102, 126, 234, 0.5)' : '1px solid rgba(255, 255, 255, 0.1)',
-                            cursor: 'pointer',
-                            transition: 'all 0.3s'
-                          }}
-                          onClick={() => setSelectedTender(tender)}
-                        >
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
-                            <div style={{ flex: 1 }}>
-                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
-                                <h3 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 700 }}>
-                                  {tender.title}
-                                </h3>
-                                <span style={{
-                                  background: 'rgba(102, 126, 234, 0.2)',
-                                  color: '#a0b3ff',
-                                  padding: '0.25rem 0.75rem',
-                                  borderRadius: '12px',
-                                  fontSize: '0.75rem',
-                                  fontWeight: 600
-                                }}>
-                                  {tender.category}
-                                </span>
-                              </div>
-                              <p style={{ margin: '0.5rem 0', color: '#cbd5e0', fontSize: '0.875rem' }}>
-                                <Building2 size={14} style={{ display: 'inline', marginRight: '0.5rem' }} />
-                                {tender.department}
-                              </p>
-                            </div>
-                            <div style={{ textAlign: 'right' }}>
-                              <div style={{ fontSize: '0.75rem', color: '#a0aec0', marginBottom: '0.25rem' }}>
-                                Tender ID
-                              </div>
-                              <div style={{ fontWeight: 700, color: '#fff' }}>
-                                {tender.id}
-                              </div>
-                            </div>
-                          </div>
-
-                          <p style={{ color: '#cbd5e0', lineHeight: 1.6, marginBottom: '1.5rem' }}>
-                            {tender.description}
-                          </p>
-
-                          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
-                            <div style={{
-                              background: 'rgba(102, 126, 234, 0.1)',
-                              padding: '1rem',
-                              borderRadius: '12px',
-                              border: '1px solid rgba(102, 126, 234, 0.2)'
-                            }}>
-                              <div style={{ fontSize: '0.75rem', color: '#a0aec0', marginBottom: '0.5rem' }}>
-                                <DollarSign size={14} style={{ display: 'inline', marginRight: '0.25rem' }} />
-                                Tender Value
-                              </div>
-                              <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#667eea' }}>
-                                {tender.value}
-                              </div>
-                            </div>
-
-                            <div style={{
-                              background: 'rgba(234, 88, 12, 0.1)',
-                              padding: '1rem',
-                              borderRadius: '12px',
-                              border: '1px solid rgba(234, 88, 12, 0.2)'
-                            }}>
-                              <div style={{ fontSize: '0.75rem', color: '#a0aec0', marginBottom: '0.5rem' }}>
-                                <Calendar size={14} style={{ display: 'inline', marginRight: '0.25rem' }} />
-                                Closing Date
-                              </div>
-                              <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#f97316' }}>
-                                {new Date(tender.closingDate).toLocaleDateString()}
-                              </div>
-                              <div style={{ fontSize: '0.75rem', color: '#fed7aa', marginTop: '0.25rem' }}>
-                                {Math.ceil((new Date(tender.closingDate) - new Date()) / (1000 * 60 * 60 * 24))} days remaining
-                              </div>
-                            </div>
-                          </div>
-
-                          {selectedTender?.id === tender.id && (
-                            <div style={{
-                              borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-                              paddingTop: '1.5rem',
-                              marginTop: '1.5rem'
-                            }}>
-                              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '1.5rem' }}>
-                                <div>
-                                  <h4 style={{ marginTop: 0, marginBottom: '1rem', color: '#a0b3ff', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase' }}>
-                                    Requirements
-                                  </h4>
-                                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                    {tender.requirements.map((req, idx) => (
-                                      <li key={idx} style={{
-                                        padding: '0.75rem',
-                                        marginBottom: '0.5rem',
-                                        background: 'rgba(0, 0, 0, 0.3)',
-                                        borderRadius: '8px',
-                                        fontSize: '0.875rem',
-                                        display: 'flex',
-                                        alignItems: 'flex-start',
-                                        gap: '0.5rem'
-                                      }}>
-                                        <CheckSquare size={16} style={{ marginTop: '0.125rem', flexShrink: 0, color: '#667eea' }} />
-                                        {req}
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                                
-                                <div>
-                                  <h4 style={{ marginTop: 0, marginBottom: '1rem', color: '#a0b3ff', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase' }}>
-                                    Technical Specifications
-                                  </h4>
-                                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                    {tender.technicalSpecs.map((spec, idx) => (
-                                      <li key={idx} style={{
-                                        padding: '0.75rem',
-                                        marginBottom: '0.5rem',
-                                        background: 'rgba(0, 0, 0, 0.3)',
-                                        borderRadius: '8px',
-                                        fontSize: '0.875rem',
-                                        display: 'flex',
-                                        alignItems: 'flex-start',
-                                        gap: '0.5rem'
-                                      }}>
-                                        <Package size={16} style={{ marginTop: '0.125rem', flexShrink: 0, color: '#f97316' }} />
-                                        {spec}
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              </div>
-
-                              <div style={{ display: 'flex', gap: '1rem' }}>
-                                <button
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    setActiveTab('analysis');
-                                    analyzeWithAI(tender);
-                                  }}
-                                  style={{
-                                    flex: 1,
-                                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                                    border: 'none',
-                                    padding: '1rem',
-                                    borderRadius: '8px',
-                                    color: 'white',
-                                    fontWeight: 600,
-                                    cursor: 'pointer',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    gap: '0.5rem',
-                                    fontSize: '0.875rem'
-                                  }}
-                                >
-                                  <Sparkles size={16} />
-                                  AI Analysis & Suppliers
-                                </button>
-                                
-                                <button
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    generateBidDocument(tender);
-                                  }}
-                                  style={{
-                                    flex: 1,
-                                    background: 'rgba(249, 115, 22, 0.2)',
-                                    border: '1px solid rgba(249, 115, 22, 0.5)',
-                                    padding: '1rem',
-                                    borderRadius: '8px',
-                                    color: '#f97316',
-                                    fontWeight: 600,
-                                    cursor: 'pointer',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    gap: '0.5rem',
-                                    fontSize: '0.875rem'
-                                  }}
-                                >
-                                  <FileText size={16} />
-                                  Generate Bid Template
-                                </button>
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {activeTab === 'analysis' && (
-                  <div>
-                    {!selectedTender ? (
-                      <div style={{
-                        background: 'rgba(0, 0, 0, 0.3)',
-                        backdropFilter: 'blur(10px)',
-                        borderRadius: '16px',
-                        padding: '4rem 2rem',
-                        textAlign: 'center',
-                        border: '1px solid rgba(255, 255, 255, 0.1)'
-                      }}>
-                        <AlertCircle size={48} style={{ color: '#667eea', marginBottom: '1rem' }} />
-                        <h3 style={{ marginBottom: '0.5rem' }}>No Tender Selected</h3>
-                        <p style={{ color: '#cbd5e0' }}>
-                          Select a tender from the Discover tab to view AI-powered analysis
-                        </p>
-                      </div>
-                    ) : aiProcessing ? (
-                      <div style={{
-                        background: 'rgba(0, 0, 0, 0.3)',
-                        backdropFilter: 'blur(10px)',
-                        borderRadius: '16px',
-                        padding: '4rem 2rem',
-                        textAlign: 'center',
-                        border: '1px solid rgba(255, 255, 255, 0.1)'
-                      }}>
-                        <Loader2 size={48} style={{ color: '#667eea', marginBottom: '1rem', animation: 'spin 1s linear infinite' }} />
-                        <h3 style={{ marginBottom: '0.5rem' }}>Analyzing Tender...</h3>
-                        <p style={{ color: '#cbd5e0' }}>
-                          Claude is analyzing requirements, identifying suppliers, and generating recommendations
-                        </p>
-                      </div>
-                    ) : aiAnalysis ? (
-                      <div>
-                        <div style={{
-                          background: 'rgba(102, 126, 234, 0.1)',
-                          border: '1px solid rgba(102, 126, 234, 0.3)',
-                          borderRadius: '16px',
-                          padding: '1.5rem',
-                          marginBottom: '2rem'
-                        }}>
-                          <h2 style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                            <Sparkles size={24} />
-                            AI Analysis: {selectedTender.title}
-                          </h2>
-                        </div>
-
-                        <div style={{ display: 'grid', gap: '1.5rem' }}>
-                          {Object.entries(aiAnalysis).map(([key, value]) => (
-                            <div key={key} style={{
-                              background: 'rgba(0, 0, 0, 0.3)',
-                              backdropFilter: 'blur(10px)',
-                              borderRadius: '16px',
-                              padding: '1.5rem',
-                              border: '1px solid rgba(255, 255, 255, 0.1)'
-                            }}>
-                              <h3 style={{
-                                marginTop: 0,
-                                marginBottom: '1rem',
-                                color: '#a0b3ff',
-                                fontSize: '1rem',
-                                fontWeight: 600,
-                                textTransform: 'capitalize'
-                              }}>
-                                {key.replace(/([A-Z])/g, ' $1').trim()}
-                              </h3>
-                              <div style={{ color: '#e2e8f0', lineHeight: 1.7, whiteSpace: 'pre-wrap' }}>
-                                {typeof value === 'string' ? value : JSON.stringify(value, null, 2)}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ) : (
-                      <div style={{
-                        background: 'rgba(0, 0, 0, 0.3)',
-                        backdropFilter: 'blur(10px)',
-                        borderRadius: '16px',
-                        padding: '4rem 2rem',
-                        textAlign: 'center',
-                        border: '1px solid rgba(255, 255, 255, 0.1)'
-                      }}>
-                        <Sparkles size={48} style={{ color: '#667eea', marginBottom: '1rem' }} />
-                        <h3 style={{ marginBottom: '0.5rem' }}>Ready to Analyze</h3>
-                        <p style={{ color: '#cbd5e0', marginBottom: '1.5rem' }}>
-                          Click the button below to get AI-powered insights for {selectedTender.title}
-                        </p>
-                        <button
-                          onClick={() => analyzeWithAI(selectedTender)}
-                          style={{
-                            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                            border: 'none',
-                            padding: '1rem 2rem',
-                            borderRadius: '8px',
-                            color: 'white',
-                            fontWeight: 600,
-                            cursor: 'pointer',
-                            fontSize: '1rem'
-                          }}
-                        >
-                          Start AI Analysis
-                        </button>
-                      </div>
-                    )}
-                  </div>
-                )}
-
-                {activeTab === 'requirements' && (
-                  <div>
-                    {!selectedTender ? (
-                      <div style={{
-                        background: 'rgba(0, 0, 0, 0.3)',
-                        backdropFilter: 'blur(10px)',
-                        borderRadius: '16px',
-                        padding: '4rem 2rem',
-                        textAlign: 'center',
-                        border: '1px solid rgba(255, 255, 255, 0.1)'
-                      }}>
-                        <FileText size={48} style={{ color: '#667eea', marginBottom: '1rem' }} />
-                        <h3 style={{ marginBottom: '0.5rem' }}>No Tender Selected</h3>
-                        <p style={{ color: '#cbd5e0' }}>
-                          Select a tender from the Discover tab to start building your bid
-                        </p>
-                      </div>
-                    ) : (
-                      <div>
-                        <div style={{
-                          background: 'rgba(102, 126, 234, 0.1)',
-                          border: '1px solid rgba(102, 126, 234, 0.3)',
-                          borderRadius: '16px',
-                          padding: '1.5rem',
-                          marginBottom: '2rem'
-                        }}>
-                          <h2 style={{ margin: 0, marginBottom: '0.5rem' }}>
-                            Bid Builder: {selectedTender.title}
-                          </h2>
-                          <p style={{ margin: 0, color: '#cbd5e0', fontSize: '0.875rem' }}>
-                            Track your progress and get AI assistance for each requirement
-                          </p>
-                        </div>
-
-                        <div style={{ display: 'grid', gap: '1rem' }}>
-                          {selectedTender.requirements.map((req, idx) => (
-                            <div key={idx} style={{
-                              background: 'rgba(0, 0, 0, 0.3)',
-                              backdropFilter: 'blur(10px)',
-                              borderRadius: '12px',
-                              padding: '1.5rem',
-                              border: '1px solid rgba(255, 255, 255, 0.1)'
-                            }}>
-                              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
-                                <input
-                                  type="checkbox"
-                                  style={{
-                                    width: '20px',
-                                    height: '20px',
-                                    marginTop: '0.125rem',
-                                    cursor: 'pointer'
-                                  }}
-                                />
-                                <div style={{ flex: 1 }}>
-                                  <h4 style={{ margin: 0, marginBottom: '0.5rem', fontSize: '1rem' }}>
-                                    {req}
-                                  </h4>
-                                  <p style={{ margin: 0, color: '#cbd5e0', fontSize: '0.875rem' }}>
-                                    Status: Not started
-                                  </p>
-                                </div>
-                                <button
-                                  onClick={async () => {
-                                    const response = await fetch("https://api.anthropic.com/v1/messages", {
-                                      method: "POST",
-                                      headers: authHeaders(),
-                                      body: JSON.stringify({
-                                        model: "claude-sonnet-5-5",
-                                        max_tokens: 1000,
-                                        messages: [{
-                                          role: "user",
-                                          content: `Provide detailed guidance on how to obtain this requirement for a South African government IT tender: "${req}". Include where to apply, costs, timeframes, and any prerequisites.`
-                                        }]
-                                      })
-                                    });
-                                    const data = await response.json();
-                                    const guidance = data.content.find(c => c.type === 'text')?.text || '';
-                                    alert(guidance);
-                                  }}
-                                  style={{
-                                    background: 'rgba(102, 126, 234, 0.2)',
-                                    border: '1px solid rgba(102, 126, 234, 0.3)',
-                                    padding: '0.5rem 1rem',
-                                    borderRadius: '6px',
-                                    color: '#a0b3ff',
-                                    cursor: 'pointer',
-                                    fontSize: '0.875rem',
-                                    fontWeight: 600
-                                  }}
-                                >
-                                  Get Help
-                                </button>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-
-                        <div style={{ marginTop: '2rem' }}>
-                          <button
-                            onClick={() => generateBidDocument(selectedTender)}
-                            disabled={aiProcessing}
-                            style={{
-                              width: '100%',
-                              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                              border: 'none',
-                              padding: '1rem',
-                              borderRadius: '8px',
-                              color: 'white',
-                              fontWeight: 600,
-                              cursor: aiProcessing ? 'not-allowed' : 'pointer',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              gap: '0.5rem',
-                              fontSize: '1rem',
-                              opacity: aiProcessing ? 0.6 : 1
-                            }}
-                          >
-                            {aiProcessing ? <Loader2 size={20} style={{animation: 'spin 1s linear infinite'}} /> : <Download size={20} />}
-                            Download Bid Template
-                          </button>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-
-              <style>{`
-                @keyframes spin {
-                  from { transform: rotate(0deg); }
-                  to { transform: rotate(360deg); }
-                }
-              `}</style>
+              <div><label className="l">Category</label>
+                <select value={cat} onChange={e => setCat(e.target.value)}>
+                  <option value="all">All IT categories</option>
+                  {cats.map(c => <option key={c}>{c}</option>)}
+                </select></div>
+              <div><label className="l">Closing within (days)</label>
+                <input type="number" min="1" value={within} onChange={e => setWithin(Number(e.target.value) || 365)} /></div>
+              <div><label className="l">Show</label>
+                <select value={onlySaved ? 'saved' : 'all'} onChange={e => setOnlySaved(e.target.value === 'saved')}>
+                  <option value="all">All tenders</option><option value="saved">Saved only ({saved.length})</option>
+                </select></div>
             </div>
-          );
-        };
+          </div>
 
-        ReactDOM.render(<ETenderTool />, document.getElementById('root'));
-    </script>
+          <div className="meta">
+            <span>Showing {filtered.length} of {tenders.length}, soonest closing first</span>
+            <a href="https://www.etenders.gov.za" target="_blank" rel="noopener">Open etenders.gov.za ↗</a>
+          </div>
+
+          {loadErr && <div className="panel empty">{loadErr}</div>}
+          {!loadErr && data && filtered.length === 0 && <div className="panel empty">No tenders match these filters.</div>}
+
+          {filtered.map(t => {
+            const d = daysLeft(t.closingDate);
+            const isSel = t.id === selId;
+            return (
+              <div key={t.id} className={'card' + (isSel ? ' sel' : '')}>
+                <div><span className="chip">{t.category}</span><span className="chip gray">{t.reference}</span>
+                  {saved.includes(t.id) && <span className="chip" style={{ background: 'rgba(34,197,94,0.18)', color: '#86efac' }}>Saved</span>}</div>
+                <h3>{t.title}</h3>
+                <div className="note">{t.department}{t.procurementMethod ? ` · ${t.procurementMethod}` : ''}</div>
+                <div className="facts">
+                  <div className="fact"><div className="k">Closes</div><div className={'v ' + urgency(d)}>{fmtDate(t.closingDate)}</div>
+                    <div className={'note ' + urgency(d)}>{d === 0 ? 'Closes today' : `${d} day${d === 1 ? '' : 's'} left`}</div></div>
+                  <div className="fact"><div className="k">Estimated value</div><div className="v">{fmtMoney(t.value)}</div></div>
+                  <div className="fact"><div className="k">Documents</div><div className="v">{t.documents.length}</div></div>
+                </div>
+                {t.documents.length > 0 && <div className="docs">
+                  {t.documents.map((doc, i) => <a key={i} href={doc.url} target="_blank" rel="noopener">📄 {doc.title}</a>)}
+                </div>}
+                {t.contact && Object.keys(t.contact).length > 0 &&
+                  <div className="note" style={{ marginTop: 8 }}>Contact: {[t.contact.name, t.contact.email, t.contact.telephone].filter(Boolean).join(' · ')}</div>}
+                <div className="row">
+                  <button className="btn primary" onClick={() => { setSelId(t.id); setTab('bid'); }}>Build bid</button>
+                  <button className="btn" onClick={() => { setSelId(t.id); setTab('analysis'); }}>AI analysis</button>
+                  <button className="btn" onClick={() => toggleSave(t.id)}>{saved.includes(t.id) ? 'Unsave' : 'Save'}</button>
+                </div>
+              </div>
+            );
+          })}
+        </>}
+
+        {tab === 'analysis' && (sel ? <Analysis t={sel} /> : <Pick />)}
+        {tab === 'bid' && (sel ? <BidBuilder t={sel} /> : <Pick />)}
+      </div>
+    </div>
+  );
+}
+
+const Pick = () => <div className="panel empty">Pick a tender on the Discover tab first.</div>;
+
+function TenderHeader({ t }) {
+  const d = daysLeft(t.closingDate);
+  return (
+    <div className="panel" style={{ marginBottom: 14 }}>
+      <span className="chip">{t.category}</span><span className="chip gray">{t.reference}</span>
+      <h2 style={{ marginTop: 8 }}>{t.title}</h2>
+      <div className="note">{t.department} · closes {fmtDate(t.closingDate)} (<span className={urgency(d)}>{d} days left</span>) · {fmtMoney(t.value)}</div>
+      {t.documents.length > 0 && <div className="docs" style={{ marginTop: 8 }}>
+        {t.documents.map((doc, i) => <a key={i} href={doc.url} target="_blank" rel="noopener">📄 {doc.title}</a>)}</div>}
+    </div>
+  );
+}
+
+// ---------- AI analysis ----------
+function Analysis({ t }) {
+  const key = 'analysis_' + t.id;
+  const [docText, setDocText] = useState(store.get('doctext_' + t.id, ''));
+  const [out, setOut] = useState(store.get(key, ''));
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState('');
+  useEffect(() => { store.set('doctext_' + t.id, docText); }, [docText]);
+
+  const run = async () => {
+    setBusy(true); setErr('');
+    try {
+      const text = await askClaude(`You are an expert in South African public-sector procurement (PFMA/MFMA, PPPFA 2022 regulations, CSD, B-BBEE) helping an IT company decide whether and how to bid.
+
+TENDER
+${tenderBrief(t)}
+${docText ? `\nTEXT FROM THE TENDER DOCUMENTS:\n${docText.slice(0, 60000)}` : '\n(No tender document text provided - say where the documents need to be checked.)'}
+
+Write a practical bid analysis with these plain-text sections (no markdown tables):
+1. WHAT THEY WANT - scope in plain language
+2. GO / NO-GO - fit, risks, red flags (e.g. very short deadline, compulsory briefing, unrealistic specs)
+3. MANDATORY REQUIREMENTS - everything that disqualifies if missing, and where to obtain each in South Africa
+4. EVALUATION - functionality threshold and price/preference points system if stated
+5. WHAT TO SOURCE AND WHERE - products/services/licences needed and suitable South African distributors, OEM partners or service providers to get quotes from
+6. ROUGH COST BUILD-UP - main cost lines to price (do not invent the buyer's budget)
+7. ACTION PLAN - day-by-day steps until the closing date
+Be specific. If something cannot be known without the documents, say so instead of guessing.`, 4000);
+      setOut(text); store.set(key, text);
+    } catch (e) { setErr(e.message); }
+    setBusy(false);
+  };
+
+  return <>
+    <TenderHeader t={t} />
+    <div className="panel">
+      <label className="l">Paste text from the tender documents (optional, makes the analysis far more accurate)</label>
+      <textarea rows="6" value={docText} onChange={e => setDocText(e.target.value)}
+        placeholder="Open the PDF above, select all, copy and paste here - especially the scope, specifications and evaluation criteria." />
+      <div className="row">
+        <button className="btn primary" onClick={run} disabled={busy}>{busy ? 'Analysing…' : out ? 'Re-run analysis' : 'Run AI analysis'}</button>
+        {out && <button className="btn" onClick={() => download(`Analysis_${t.reference}.txt`, out)}>Download</button>}
+      </div>
+      {err && <p className="urgent">{err}</p>}
+    </div>
+    {out && <div className="panel sec"><div className="ai">{out}</div>
+      <p className="note">AI output - verify every requirement against the official tender documents before submitting.</p></div>}
+  </>;
+}
+
+// ---------- Bid builder ----------
+function BidBuilder({ t }) {
+  const sKey = 'bid_' + t.id;
+  const [state, setState] = useState(store.get(sKey, { done: {}, notes: {}, custom: [] }));
+  const [help, setHelp] = useState(null); // {title, text}
+  const [busy, setBusy] = useState('');
+  const [docText, setDocText] = useState(store.get('doctext_' + t.id, ''));
+  const [newReq, setNewReq] = useState('');
+  useEffect(() => { store.set(sKey, state); }, [state]);
+  useEffect(() => { store.set('doctext_' + t.id, docText); }, [docText]);
+
+  const all = [...STANDARD_REQS, ...state.custom];
+  const doneCount = all.filter(r => state.done[r.id]).length;
+  const pct = all.length ? Math.round(doneCount / all.length * 100) : 0;
+  const setDone = (id, v) => setState(s => ({ ...s, done: { ...s.done, [id]: v } }));
+  const setNote = (id, v) => setState(s => ({ ...s, notes: { ...s.notes, [id]: v } }));
+  const addCustom = (name, where = '') => setState(s => ({ ...s, custom: [...s.custom, { id: 'c' + Date.now() + Math.random().toString(36).slice(2, 6), name, where, custom: true }] }));
+  const removeCustom = (id) => setState(s => ({ ...s, custom: s.custom.filter(r => r.id !== id) }));
+
+  const getHelp = async (r) => {
+    setBusy(r.id);
+    try {
+      const text = await askClaude(`Help a South African IT company meet this requirement for a government tender.
+Requirement: "${r.name}"
+${r.where ? `Known guidance: ${r.where}` : ''}
+Tender: ${t.reference} - ${t.title} (${t.department}), closing ${fmtDate(t.closingDate)}.
+Give: exactly what document/evidence to submit, where to get it in South Africa (official sites, accredited bodies, or suitable suppliers), typical turnaround time and cost, and common mistakes that get bids disqualified. Be concise and practical.`, 1500);
+      setHelp({ title: r.name, text });
+    } catch (e) { setHelp({ title: 'Error', text: e.message }); }
+    setBusy('');
+  };
+
+  const extract = async () => {
+    if (!docText.trim()) { setHelp({ title: 'Paste the tender text first', text: 'Open the tender PDF, copy its text into the box, then extract.' }); return; }
+    setBusy('extract');
+    try {
+      const text = await askClaude(`From this South African government tender document, list every requirement the bidder must meet or submit that is specific to this tender (mandatory documents, technical specifications, certifications, experience, briefing sessions, functionality criteria). Skip generic items already covered: CSD, tax compliance, CIPC, B-BBEE, SBD forms.
+Return ONLY a JSON array of objects: [{"name": "short requirement", "where": "where/how to obtain or evidence it in South Africa"}]. Max 25 items.
+
+DOCUMENT:
+${docText.slice(0, 60000)}`, 3000);
+      const m = text.match(/\[[\s\S]*\]/);
+      const items = m ? JSON.parse(m[0]) : [];
+      items.forEach(i => i?.name && addCustom(String(i.name), String(i.where || '')));
+      setHelp({ title: 'Requirements extracted', text: `Added ${items.length} tender-specific requirement(s) to the checklist below. Check them against the document.` });
+    } catch (e) { setHelp({ title: 'Error', text: e.message }); }
+    setBusy('');
+  };
+
+  const template = async () => {
+    setBusy('template');
+    try {
+      const text = await askClaude(`Draft a bid response pack for this South African government IT tender, written for the bidder to complete.
+${tenderBrief(t)}
+${docText ? `\nTENDER TEXT:\n${docText.slice(0, 50000)}` : ''}
+Include: cover letter, executive summary, company profile (with placeholders), understanding of requirements, technical solution and methodology, project plan and timeline, team and experience, risk management, pricing schedule structure, compliance checklist, and list of annexures. Use [PLACEHOLDER] for anything the bidder must fill in. Plain text with clear headings.`, 6000);
+      download(`Bid_Response_${t.reference.replace(/[^\w-]+/g, '_')}.txt`, text);
+    } catch (e) { setHelp({ title: 'Error', text: e.message }); }
+    setBusy('');
+  };
+
+  return <>
+    <TenderHeader t={t} />
+    <div className="panel">
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
+        <strong>Bid readiness</strong><span>{doneCount} / {all.length} ({pct}%)</span></div>
+      <div className="bar"><div style={{ width: pct + '%' }} /></div>
+      <div className="row">
+        <button className="btn primary" onClick={template} disabled={!!busy}>{busy === 'template' ? 'Drafting…' : 'Draft bid response (AI)'}</button>
+        <button className="btn" onClick={() => download(`Checklist_${t.reference}.txt`, checklistText(t, all, state))}>Download checklist</button>
+      </div>
+    </div>
+
+    <div className="panel sec">
+      <h2>Tender-specific requirements</h2>
+      <p className="note">The detailed requirements are inside the tender PDFs. Paste the document text and let AI pull them into your checklist, or add them yourself.</p>
+      <textarea rows="5" value={docText} onChange={e => setDocText(e.target.value)} placeholder="Paste tender document text here…" />
+      <div className="row">
+        <button className="btn primary" onClick={extract} disabled={!!busy}>{busy === 'extract' ? 'Extracting…' : 'Extract requirements (AI)'}</button>
+      </div>
+      <div className="row">
+        <input style={{ flex: 1, minWidth: 200 }} value={newReq} onChange={e => setNewReq(e.target.value)} placeholder="Add a requirement manually…"
+          onKeyDown={e => { if (e.key === 'Enter' && newReq.trim()) { addCustom(newReq.trim()); setNewReq(''); } }} />
+        <button className="btn" onClick={() => { if (newReq.trim()) { addCustom(newReq.trim()); setNewReq(''); } }}>Add</button>
+      </div>
+    </div>
+
+    <div className="sec">
+      {all.map(r => (
+        <div key={r.id} className={'req' + (state.done[r.id] ? ' done' : '')}>
+          <input type="checkbox" checked={!!state.done[r.id]} onChange={e => setDone(r.id, e.target.checked)} />
+          <div style={{ flex: 1 }}>
+            <strong>{r.name}</strong>{r.custom && <span className="chip gray" style={{ marginLeft: 8 }}>this tender</span>}
+            {r.where && <div className="where">Where to get it: {r.where} {r.link && <a href={r.link} target="_blank" rel="noopener">{r.link.replace('https://', '')} ↗</a>}</div>}
+            <input style={{ marginTop: 8, fontSize: 13, padding: '7px 10px' }} placeholder="Notes (e.g. requested on 14 Oct, file name)…"
+              value={state.notes[r.id] || ''} onChange={e => setNote(r.id, e.target.value)} />
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <button className="btn" onClick={() => getHelp(r)} disabled={!!busy}>{busy === r.id ? '…' : 'Help'}</button>
+            {r.custom && <button className="btn" onClick={() => removeCustom(r.id)}>Remove</button>}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {help && <div className="modal" onClick={() => setHelp(null)}>
+      <div className="box" onClick={e => e.stopPropagation()}>
+        <h2>{help.title}</h2><div className="ai" style={{ marginTop: 10 }}>{help.text}</div>
+        <div className="row"><button className="btn primary" onClick={() => setHelp(null)}>Close</button></div>
+      </div></div>}
+  </>;
+}
+
+function checklistText(t, all, state) {
+  return `BID CHECKLIST - ${t.reference}\n${t.title}\n${t.department}\nCloses: ${fmtDate(t.closingDate)}\n\n` +
+    all.map(r => `[${state.done[r.id] ? 'x' : ' '}] ${r.name}${r.where ? `\n    Where: ${r.where}` : ''}${state.notes[r.id] ? `\n    Notes: ${state.notes[r.id]}` : ''}`).join('\n\n');
+}
+
+function download(name, text) {
+  const url = URL.createObjectURL(new Blob([text], { type: 'text/plain' }));
+  const a = document.createElement('a'); a.href = url; a.download = name; a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
 </body>
 </html>
