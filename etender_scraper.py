@@ -28,9 +28,9 @@ from datetime import datetime, timedelta, timezone
 
 API_URL = "https://ocds-api.etenders.gov.za/api/OCDSReleases"
 PORTAL_URL = "https://www.etenders.gov.za"
-PAGE_SIZE = 100       # the API returns HTTP 500 for large pages / long ranges
-MIN_PAGE_SIZE = 10
-WINDOW_DAYS = 7       # query one week at a time
+PAGE_SIZE = 50        # normal page size
+SUB_PAGE_SIZE = 5     # used to step around records the API cannot serialise (HTTP 500)
+WINDOW_DAYS = 3       # query a few days at a time
 
 # Category -> keyword patterns (matched case-insensitively against title + description)
 CATEGORIES = [
@@ -45,11 +45,11 @@ CATEGORIES = [
                             r"business intelligence", r"\bBI\b", r"data analytics", r"\bGIS\b", r"digiti[sz]",
                             r"\bAI\b", r"artificial intelligence", r"automation"]),
     ("Network & Infrastructure", [r"network", r"\bLAN\b", r"\bWAN\b", r"\bWi-?Fi\b", r"wireless", r"router",
-                                  r"switch(es)?\b", r"server", r"data cent(re|er)", r"\bstorage\b", r"\bSAN\b",
+                                  r"switch(es)?\b", r"server", r"data cent(re|er)", r"data storage", r"storage (array|solution|area network)", r"\bSAN\b",
                                   r"structured cabling", r"fibre", r"fiber", r"connectivity", r"internet",
                                   r"\bVPN\b", r"backup", r"disaster recovery", r"virtuali[sz]"]),
     ("End-User Computing", [r"laptop", r"desktop", r"computer", r"\bPCs?\b", r"tablet", r"printer", r"printing solution",
-                            r"\bmonitors?\b", r"end.user", r"\bEUC\b", r"peripheral"]),
+                            r"\b(computer|LCD|LED|desktop|PC) monitors?\b", r"end.user", r"\bEUC\b", r"peripheral"]),
     ("Telecoms & Unified Comms", [r"telecom", r"telephon", r"\bPABX\b", r"\bVoIP\b", r"unified communication",
                                   r"video conferenc", r"\bcellular\b", r"mobile (data|devices)", r"\bAPN\b"]),
     ("IT Services & Support", [r"\bICT\b", r"\bIT\b", r"information technology", r"information and communication technolog",
@@ -59,7 +59,7 @@ CATEGORIES = [
 
 # Phrases that look like IT but usually are not (reduce false positives)
 EXCLUDE = [r"\bsecurity guard", r"\bguarding\b", r"physical security", r"security services? at",
-           r"armed response", r"\bCCTV\b(?!.*network)", r"switchgear", r"\bswitch(es)? and sockets\b",
+           r"armed response", r"\bCCTV\b(?!.*network)", r"switchgear", r"water (tank|storage)", r"\bJoJo\b", r"gas monitor", r"\bswitch(es)? and sockets\b",
            r"water network", r"sewer network", r"road network", r"electrical network", r"reticulation"]
 
 def _flags(pattern):
@@ -106,7 +106,7 @@ def fetch_page(page, date_from, date_to, page_size=PAGE_SIZE, retries=3):
     })
     for attempt in range(1, retries + 1):
         try:
-            with urllib.request.urlopen(req, timeout=180) as resp:
+            with urllib.request.urlopen(req, timeout=90) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
             body = e.read().decode("utf-8", "replace")[:300].replace("\n", " ")
@@ -184,27 +184,46 @@ def to_tender(release, now, keep_all=False):
     }
 
 
-def fetch_window(date_from, date_to, latest):
-    """Page through one date window. On repeated API errors, retry the window with smaller pages."""
-    size = PAGE_SIZE
-    while True:
+def fetch_window(date_from, date_to, latest, gaps):
+    """Page through one date window.
+
+    Some releases make the API return HTTP 500 for any page that contains them.
+    When a page fails, re-read that slice in pages of SUB_PAGE_SIZE and skip only
+    the small pages that still fail, so one bad record costs at most a few tenders.
+    """
+    def keep(releases):
+        for r in releases:
+            ocid = r.get("ocid")
+            if ocid and (ocid not in latest or (r.get("date") or "") >= (latest[ocid].get("date") or "")):
+                latest[ocid] = r
+
+    count = 0
+    ratio = PAGE_SIZE // SUB_PAGE_SIZE
+    for page in range(1, 1000):
         try:
-            count = 0
-            for page in range(1, 500):
-                releases = fetch_page(page, date_from, date_to, size).get("releases") or []
-                count += len(releases)
-                for r in releases:
-                    ocid = r.get("ocid")
-                    if ocid and (ocid not in latest or (r.get("date") or "") >= (latest[ocid].get("date") or "")):
-                        latest[ocid] = r
-                if len(releases) < size:
-                    return count
-                time.sleep(0.5)  # be polite to the API
+            releases = fetch_page(page, date_from, date_to, PAGE_SIZE, retries=2).get("releases") or []
         except RuntimeError:
-            if size <= MIN_PAGE_SIZE:
-                raise
-            size = max(MIN_PAGE_SIZE, size // 2)
-            print(f"  retrying {date_from}..{date_to} with page size {size}", file=sys.stderr)
+            ended = False
+            for sub in range((page - 1) * ratio + 1, page * ratio + 1):
+                try:
+                    part = fetch_page(sub, date_from, date_to, SUB_PAGE_SIZE, retries=1).get("releases") or []
+                except RuntimeError:
+                    gaps.append(f"{date_from}..{date_to} records {(sub - 1) * SUB_PAGE_SIZE + 1}-{sub * SUB_PAGE_SIZE}")
+                    continue
+                keep(part)
+                count += len(part)
+                if len(part) < SUB_PAGE_SIZE:
+                    ended = True
+                    break
+            if ended:
+                return count
+            continue
+        keep(releases)
+        count += len(releases)
+        if len(releases) < PAGE_SIZE:
+            return count
+        time.sleep(0.3)  # be polite to the API
+    return count
 
 
 def collect(days, keep_all=False):
@@ -214,12 +233,12 @@ def collect(days, keep_all=False):
     print(f"Fetching eTenders releases {start} -> {end} in {WINDOW_DAYS}-day windows")
 
     latest = {}  # ocid -> newest release (releases repeat when a tender is updated)
-    scanned, failed = 0, []
+    scanned, failed, gaps = 0, [], []
     day = start
     while day <= end:
         win_end = min(day + timedelta(days=WINDOW_DAYS - 1), end)
         try:
-            n = fetch_window(day.isoformat(), win_end.isoformat(), latest)
+            n = fetch_window(day.isoformat(), win_end.isoformat(), latest, gaps)
             scanned += n
             print(f"  {day}..{win_end}: {n} releases")
         except RuntimeError as e:
@@ -231,6 +250,9 @@ def collect(days, keep_all=False):
         raise RuntimeError("; ".join(failed[:3]))
     for msg in failed:  # partial data is still useful; flag the gaps
         gh_error(f"Skipped a date window: {msg}")
+    if gaps:
+        print(f"::warning::Skipped {len(gaps)} small page(s) the API could not return (about {len(gaps) * SUB_PAGE_SIZE} records): "
+              + "; ".join(gaps[:10]), file=sys.stderr)
 
     tenders = [x for x in (to_tender(r, now, keep_all) for r in latest.values()) if x]
     tenders.sort(key=lambda x: x["closingDate"])
