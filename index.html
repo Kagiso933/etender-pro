@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA eTender Pro - IT Tender Management</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        #root {
+            width: 100%;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        // Anthropic API key is kept only in this browser (localStorage), never in the repo
+        const authHeaders = () => {
+          let key = null;
+          try { key = localStorage.getItem('anthropic_api_key'); } catch (e) {}
+          if (!key) {
+            key = window.prompt('Enter your Anthropic API key (stored only in this browser):');
+            if (key) { try { localStorage.setItem('anthropic_api_key', key.trim()); } catch (e) {} }
+          }
+          return {
+            "Content-Type": "application/json",
+            "x-api-key": (key || '').trim(),
+            "anthropic-version": "2023-06-01",
+            "anthropic-dangerous-direct-browser-access": "true"
+          };
+        };
+        
+        // Lucide React icons as inline SVG components
+        const Search = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+        );
+
+        const FileText = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+        );
+
+        const CheckSquare = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+        );
+
+        const DollarSign = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+        );
+
+        const Calendar = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+        );
+
+        const Sparkles = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                <path d="M5 3v4"></path>
+                <path d="M19 17v4"></path>
+                <path d="M3 5h4"></path>
+                <path d="M17 19h4"></path>
+            </svg>
+        );
+
+        const AlertCircle = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+        );
+
+        const Building2 = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                <path d="M10 6h4"></path>
+                <path d="M10 10h4"></path>
+                <path d="M10 14h4"></path>
+                <path d="M10 18h4"></path>
+            </svg>
+        );
+
+        const Package = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <path d="m7.5 4.27 9 5.15"></path>
+                <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                <path d="m3.3 7 8.7 5 8.7-5"></path>
+                <path d="M12 22V12"></path>
+            </svg>
+        );
+
+        const Loader2 = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
+            </svg>
+        );
+
+        const Download = ({ size = 24, ...props }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+        );
+
+        const ETenderTool = () => {
+          const [activeTab, setActiveTab] = useState('discover');
+          const [tenders, setTenders] = useState([]);
+          const [selectedTender, setSelectedTender] = useState(null);
+          const [searchQuery, setSearchQuery] = useState('');
+          const [loading, setLoading] = useState(false);
+          const [aiAnalysis, setAiAnalysis] = useState(null);
+          const [aiProcessing, setAiProcessing] = useState(false);
+          const [filters, setFilters] = useState({
+            minValue: '',
+            maxValue: '',
+            closingDays: 30,
+            category: 'all'
+          });
+
+          const mockTenders = [
+            {
+              id: 'T001-2026',
+              title: 'Supply and Implementation of Enterprise Resource Planning (ERP) System',
+              department: 'Department of Public Works and Infrastructure',
+              value: 'R 15,000,000',
+              closingDate: '2026-03-15',
+              description: 'Supply, implementation, and support of a comprehensive ERP system including modules for finance, procurement, asset management, and HR.',
+              category: 'Software Development',
+              requirements: [
+                'Company registration with CIPC',
+                'Valid Tax Clearance Certificate',
+                'B-BBEE Level 1-4 certification',
+                'Minimum 5 years experience in ERP implementation',
+                'ISO 27001 certification',
+                'References from at least 3 government entities'
+              ],
+              technicalSpecs: [
+                'Cloud-based or hybrid deployment',
+                'Support for minimum 500 concurrent users',
+                'Integration with existing systems via REST APIs',
+                'Mobile responsive interface',
+                'Comprehensive reporting and analytics module'
+              ]
+            },
+            {
+              id: 'T002-2026',
+              title: 'Network Infrastructure Upgrade for Provincial Offices',
+              department: 'Gauteng Department of e-Government',
+              value: 'R 8,500,000',
+              closingDate: '2026-02-28',
+              description: 'Upgrade of network infrastructure including switches, routers, WiFi access points, and cabling for 15 provincial office buildings.',
+              category: 'IT Infrastructure',
+              requirements: [
+                'Company registration',
+                'Tax compliance status',
+                'B-BBEE Level 1-3 preferred',
+                'Cisco or equivalent certification',
+                'Minimum R5m professional indemnity insurance',
+                'Previous government sector experience'
+              ],
+              technicalSpecs: [
+                'Enterprise-grade managed switches',
+                'WiFi 6 or higher access points',
+                'CAT6A cabling throughout',
+                'Redundant core routing',
+                '24/7 monitoring and support for 24 months'
+              ]
+            },
+            {
+              id: 'T003-2026',
+              title: 'Cybersecurity Assessment and Implementation Services',
+              department: 'State Information Technology Agency (SITA)',
+              value: 'R 12,000,000',
+              closingDate: '2026-03-30',
+              description: 'Comprehensive cybersecurity assessment, penetration testing, and implementation of security solutions across government IT infrastructure.',
+              category: 'Cybersecurity',
+              requirements: [
+                'CIPC registration',
+                'Tax clearance certificate',
+                'B-BBEE certification',
+                'CEH or OSCP certified staff (minimum 3)',
+                'ISO 27001 certified organization',
+                'ECSA accreditation for security services'
+              ],
+              technicalSpecs: [
+                'SIEM solution deployment',
+                'Endpoint detection and response',
+                'Network security assessment',
+                'Application security testing',
+                'Security Operations Center (SOC) setup',
+                'Compliance with POPIA requirements'
+              ]
+            },
+            {
+              id: 'T004-2026',
+              title: 'Cloud Migration and Managed Services',
+              department: 'National Treasury',
+              value: 'R 20,000,000',
+              closingDate: '2026-04-15',
+              description: 'Migration of critical applications and databases to cloud infrastructure with ongoing managed services for 36 months.',
+              category: 'Cloud Services',
+              requirements: [
+                'Company registration',
+                'Valid tax clearance',
+                'B-BBEE Level 1-4',
+                'Microsoft Azure or AWS certified partner',
+                'Minimum 7 years cloud services experience',
+                'Data center in South Africa',
+                'POPIA compliance certification'
+              ],
+              technicalSpecs: [
+                'Hybrid cloud architecture',
+                'Disaster recovery and backup solutions',
+                '99.9% uptime SLA',
+                'Data sovereignty compliance',
+                'DevOps automation',
+                'Cost optimization strategies'
+              ]
+            },
+            {
+              id: 'T005-2026',
+              title: 'Custom Software Development for Case Management System',
+              department: 'Department of Justice and Constitutional Development',
+              value: 'R 18,500,000',
+              closingDate: '2026-03-10',
+              description: 'Development of a custom case management system for tracking legal proceedings, document management, and stakeholder communication.',
+              category: 'Software Development',
+              requirements: [
+                'CIPC registered software development company',
+                'Tax clearance certificate',
+                'B-BBEE certification',
+                'Agile/Scrum methodology experience',
+                'Minimum 5 government software projects completed',
+                'Quality assurance certification (ISO 9001)'
+              ],
+              technicalSpecs: [
+                'Web-based responsive application',
+                'Role-based access control',
+                'Document management with version control',
+                'Electronic signatures integration',
+                'Reporting and analytics dashboard',
+                'Mobile application for field workers',
+                'Integration with existing court systems'
+              ]
+            }
+          ];
+
+          useEffect(() => {
+            setTenders(mockTenders);
+          }, []);
+
+          const filteredTenders = tenders.filter(tender => {
+            const matchesSearch = searchQuery === '' || 
+              tender.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+              tender.department.toLowerCase().includes(searchQuery.toLowerCase()) ||
+              tender.category.toLowerCase().includes(searchQuery.toLowerCase());
+            
+            const matchesCategory = filters.category === 'all' || tender.category === filters.category;
+            
+            const valueNum = parseInt(tender.value.replace(/[^\d]/g, ''));
+            const matchesMinValue = filters.minValue === '' || valueNum >= parseInt(filters.minValue);
+            const matchesMaxValue = filters.maxValue === '' || valueNum <= parseInt(filters.maxValue);
+            
+            const daysUntilClose = Math.ceil((new Date(tender.closingDate) - new Date()) / (1000 * 60 * 60 * 24));
+            const matchesClosingDate = daysUntilClose <= filters.closingDays;
+            
+            return matchesSearch && matchesCategory && matchesMinValue && matchesMaxValue && matchesClosingDate;
+          });
+
+          const analyzeWithAI = async (tender) => {
+            setAiProcessing(true);
+            try {
+              const response = await fetch("https://api.anthropic.com/v1/messages", {
+                method: "POST",
+                headers: authHeaders(),
+                body: JSON.stringify({
+                  model: "claude-sonnet-5-5",
+                  max_tokens: 4000,
+                  messages: [
+                    {
+                      role: "user",
+                      content: `You are a South African government tender specialist. Analyze this IT tender and provide comprehensive assistance:
+
+Tender: ${tender.title}
+Department: ${tender.department}
+Value: ${tender.value}
+Description: ${tender.description}
+Requirements: ${tender.requirements.join(', ')}
+Technical Specs: ${tender.technicalSpecs.join(', ')}
+
+Please provide:
+1. A risk assessment and viability analysis
+2. Key compliance requirements and how to obtain them
+3. Recommended suppliers/vendors for required items (with SA-based options)
+4. Estimated cost breakdown
+5. Timeline for bid preparation
+6. Critical success factors
+
+Format as JSON with keys: riskAssessment, compliance, suppliers, costBreakdown, timeline, successFactors`
+                    }
+                  ],
+                })
+              });
+
+              const data = await response.json();
+              const analysisText = data.content.find(c => c.type === 'text')?.text || '';
+              
+              let parsedAnalysis;
+              try {
+                const jsonMatch = analysisText.match(/\{[\s\S]*\}/);
+                parsedAnalysis = jsonMatch ? JSON.parse(jsonMatch[0]) : {
+                  riskAssessment: analysisText,
+                  compliance: 'See full analysis',
+                  suppliers: 'See full analysis',
+                  costBreakdown: 'See full analysis',
+                  timeline: 'See full analysis',
+                  successFactors: 'See full analysis'
+                };
+              } catch (e) {
+                parsedAnalysis = {
+                  riskAssessment: analysisText,
+                  compliance: 'Analysis provided in main text',
+                  suppliers: 'Analysis provided in main text',
+                  costBreakdown: 'Analysis provided in main text',
+                  timeline: 'Analysis provided in main text',
+                  successFactors: 'Analysis provided in main text'
+                };
+              }
+              
+              setAiAnalysis(parsedAnalysis);
+            } catch (error) {
+              console.error('AI Analysis error:', error);
+              setAiAnalysis({ error: 'Failed to generate analysis. Please try again.' });
+            }
+            setAiProcessing(false);
+          };
+
+          const generateBidDocument = async (tender) => {
+            setAiProcessing(true);
+            try {
+              const response = await fetch("https://api.anthropic.com/v1/messages", {
+                method: "POST",
+                headers: authHeaders(),
+                body: JSON.stringify({
+                  model: "claude-sonnet-5-5",
+                  max_tokens: 4000,
+                  messages: [
+                    {
+                      role: "user",
+                      content: `Create a professional bid response template for this South African government IT tender:
+
+Tender: ${tender.title}
+Department: ${tender.department}
+Requirements: ${tender.requirements.join(', ')}
+Technical Specs: ${tender.technicalSpecs.join(', ')}
+
+Generate a comprehensive bid document template including:
+- Executive Summary
+- Company Profile section
+- Technical Proposal outline
+- Project Methodology
+- Pricing Structure template
+- Compliance checklist
+- Required attachments list
+
+Format as a professional document.`
+                    }
+                  ],
+                })
+              });
+
+              const data = await response.json();
+              const documentText = data.content.find(c => c.type === 'text')?.text || '';
+              
+              const blob = new Blob([documentText], { type: 'text/plain' });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.href = url;
+              a.download = `Bid_Template_${tender.id}.txt`;
+              a.click();
+              URL.revokeObjectURL(url);
+              
+              alert('Bid template downloaded! Review and customize before submission.');
+            } catch (error) {
+              console.error('Document generation error:', error);
+              alert('Failed to generate document. Please try again.');
+            }
+            setAiProcessing(false);
+          };
+
+          const searchETender = async () => {
+            setLoading(true);
+            setTimeout(() => {
+              setLoading(false);
+              alert('In production, this would search the live eTender.gov.za site. Currently showing sample data.');
+            }, 1500);
+          };
+
+          return (
+            <div style={{
+              minHeight: '100vh',
+              background: 'linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)',
+              fontFamily: '"DM Sans", sans-serif',
+              color: '#fff',
+              padding: '0'
+            }}>
+              <div style={{
+                background: 'rgba(0, 0, 0, 0.3)',
+                backdropFilter: 'blur(10px)',
+                borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                padding: '1.5rem 2rem',
+                position: 'sticky',
+                top: 0,
+                zIndex: 100
+              }}>
+                <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    <div style={{
+                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                      padding: '0.75rem',
+                      borderRadius: '12px',
+                      boxShadow: '0 8px 24px rgba(102, 126, 234, 0.3)'
+                    }}>
+                      <Building2 size={28} />
+                    </div>
+                    <div>
+                      <h1 style={{ 
+                        margin: 0, 
+                        fontSize: '1.75rem', 
+                        fontWeight: 700,
+                        background: 'linear-gradient(to right, #fff, #a0aec0)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}>
+                        SA eTender Pro
+                      </h1>
+                      <p style={{ margin: 0, fontSize: '0.875rem', color: '#cbd5e0' }}>
+                        AI-Powered IT Tender Management
+                      </p>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', gap: '0.75rem' }}>
+                    <button
+                      onClick={searchETender}
+                      disabled={loading}
+                      style={{
+                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                        border: 'none',
+                        padding: '0.75rem 1.5rem',
+                        borderRadius: '8px',
+                        color: 'white',
+                        fontWeight: 600,
+                        cursor: loading ? 'not-allowed' : 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        fontSize: '0.875rem',
+                        transition: 'transform 0.2s',
+                        opacity: loading ? 0.6 : 1
+                      }}
+                    >
+                      {loading ? <Loader2 size={16} style={{animation: 'spin 1s linear infinite'}} /> : <Search size={16} />}
+                      Refresh Tenders
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '2rem' }}>
+                <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '2rem', background: 'rgba(0, 0, 0, 0.2)', padding: '0.5rem', borderRadius: '12px' }}>
+                  {[
+                    { id: 'discover', label: 'Discover Tenders', icon: Search },
+                    { id: 'analysis', label: 'AI Analysis', icon: Sparkles },
+                    { id: 'requirements', label: 'Bid Builder', icon: CheckSquare }
+                  ].map(tab => {
+                    const Icon = tab.icon;
+                    return (
+                      <button
+                        key={tab.id}
+                        onClick={() => setActiveTab(tab.id)}
+                        style={{
+                          flex: 1,
+                          padding: '1rem',
+                          background: activeTab === tab.id ? 'rgba(102, 126, 234, 0.3)' : 'transparent',
+                          border: activeTab === tab.id ? '1px solid rgba(102, 126, 234, 0.5)' : '1px solid transparent',
+                          borderRadius: '8px',
+                          color: activeTab === tab.id ? '#fff' : '#a0aec0',
+                          cursor: 'pointer',
+                          fontWeight: activeTab === tab.id ? 600 : 400,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: '0.5rem',
+                          transition: 'all 0.3s'
+                        }}
+                      >
+                        <Icon size={20} />
+                        {tab.label}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {activeTab === 'discover' && (
+                  <div>
+                    <div style={{
+                      background: 'rgba(0, 0, 0, 0.3)',
+                      backdropFilter: 'blur(10px)',
+                      borderRadius: '16px',
+                      padding: '1.5rem',
+                      marginBottom: '2rem',
+                      border: '1px solid rgba(255, 255, 255, 0.1)'
+                    }}>
+                      <div style={{ position: 'relative', marginBottom: '1.5rem' }}>
+                        <Search style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', color: '#a0aec0' }} size={20} />
+                        <input
+                          type="text"
+                          placeholder="Search tenders by title, department, or category..."
+                          value={searchQuery}
+                          onChange={(e) => setSearchQuery(e.target.value)}
+                          style={{
+                            width: '100%',
+                            padding: '0.875rem 1rem 0.875rem 3rem',
+                            background: 'rgba(0, 0, 0, 0.4)',
+                            border: '1px solid rgba(255, 255, 255, 0.1)',
+                            borderRadius: '8px',
+                            color: '#fff',
+                            fontSize: '1rem',
+                            outline: 'none'
+                          }}
+                        />
+                      </div>
+                      
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+                        <div>
+                          <label style={{ display: 'block', fontSize: '0.875rem', marginBottom: '0.5rem', color: '#cbd5e0' }}>
+                            Category
+                          </label>
+                          <select
+                            value={filters.category}
+                            onChange={(e) => setFilters({...filters, category: e.target.value})}
+                            style={{
+                              width: '100%',
+                              padding: '0.75rem',
+                              background: 'rgba(0, 0, 0, 0.4)',
+                              border: '1px solid rgba(255, 255, 255, 0.1)',
+                              borderRadius: '8px',
+                              color: '#fff',
+                              outline: 'none'
+                            }}
+                          >
+                            <option value="all">All Categories</option>
+                            <option value="Software Development">Software Development</option>
+                            <option value="IT Infrastructure">IT Infrastructure</option>
+                            <option value="Cybersecurity">Cybersecurity</option>
+                            <option value="Cloud Services">Cloud Services</option>
+                          </select>
+                        </div>
+                        
+                        <div>
+                          <label style={{ display: 'block', fontSize: '0.875rem', marginBottom: '0.5rem', color: '#cbd5e0' }}>
+                            Closing Within (days)
+                          </label>
+                          <input
+                            type="number"
+                            value={filters.closingDays}
+                            onChange={(e) => setFilters({...filters, closingDays: parseInt(e.target.value)})}
+                            style={{
+                              width: '100%',
+                              padding: '0.75rem',
+                              background: 'rgba(0, 0, 0, 0.4)',
+                              border: '1px solid rgba(255, 255, 255, 0.1)',
+                              borderRadius: '8px',
+                              color: '#fff',
+                              outline: 'none'
+                            }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style={{ marginBottom: '1rem', color: '#cbd5e0', fontSize: '0.875rem' }}>
+                      Showing {filteredTenders.length} of {tenders.length} tenders
+                    </div>
+                    
+                    <div style={{ display: 'grid', gap: '1.5rem' }}>
+                      {filteredTenders.map(tender => (
+                        <div
+                          key={tender.id}
+                          style={{
+                            background: 'rgba(0, 0, 0, 0.3)',
+                            backdropFilter: 'blur(10px)',
+                            borderRadius: '16px',
+                            padding: '2rem',
+                            border: selectedTender?.id === tender.id ? '2px solid rgba(102, 126, 234, 0.5)' : '1px solid rgba(255, 255, 255, 0.1)',
+                            cursor: 'pointer',
+                            transition: 'all 0.3s'
+                          }}
+                          onClick={() => setSelectedTender(tender)}
+                        >
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
+                            <div style={{ flex: 1 }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                                <h3 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 700 }}>
+                                  {tender.title}
+                                </h3>
+                                <span style={{
+                                  background: 'rgba(102, 126, 234, 0.2)',
+                                  color: '#a0b3ff',
+                                  padding: '0.25rem 0.75rem',
+                                  borderRadius: '12px',
+                                  fontSize: '0.75rem',
+                                  fontWeight: 600
+                                }}>
+                                  {tender.category}
+                                </span>
+                              </div>
+                              <p style={{ margin: '0.5rem 0', color: '#cbd5e0', fontSize: '0.875rem' }}>
+                                <Building2 size={14} style={{ display: 'inline', marginRight: '0.5rem' }} />
+                                {tender.department}
+                              </p>
+                            </div>
+                            <div style={{ textAlign: 'right' }}>
+                              <div style={{ fontSize: '0.75rem', color: '#a0aec0', marginBottom: '0.25rem' }}>
+                                Tender ID
+                              </div>
+                              <div style={{ fontWeight: 700, color: '#fff' }}>
+                                {tender.id}
+                              </div>
+                            </div>
+                          </div>
+
+                          <p style={{ color: '#cbd5e0', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+                            {tender.description}
+                          </p>
+
+                          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
+                            <div style={{
+                              background: 'rgba(102, 126, 234, 0.1)',
+                              padding: '1rem',
+                              borderRadius: '12px',
+                              border: '1px solid rgba(102, 126, 234, 0.2)'
+                            }}>
+                              <div style={{ fontSize: '0.75rem', color: '#a0aec0', marginBottom: '0.5rem' }}>
+                                <DollarSign size={14} style={{ display: 'inline', marginRight: '0.25rem' }} />
+                                Tender Value
+                              </div>
+                              <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#667eea' }}>
+                                {tender.value}
+                              </div>
+                            </div>
+
+                            <div style={{
+                              background: 'rgba(234, 88, 12, 0.1)',
+                              padding: '1rem',
+                              borderRadius: '12px',
+                              border: '1px solid rgba(234, 88, 12, 0.2)'
+                            }}>
+                              <div style={{ fontSize: '0.75rem', color: '#a0aec0', marginBottom: '0.5rem' }}>
+                                <Calendar size={14} style={{ display: 'inline', marginRight: '0.25rem' }} />
+                                Closing Date
+                              </div>
+                              <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#f97316' }}>
+                                {new Date(tender.closingDate).toLocaleDateString()}
+                              </div>
+                              <div style={{ fontSize: '0.75rem', color: '#fed7aa', marginTop: '0.25rem' }}>
+                                {Math.ceil((new Date(tender.closingDate) - new Date()) / (1000 * 60 * 60 * 24))} days remaining
+                              </div>
+                            </div>
+                          </div>
+
+                          {selectedTender?.id === tender.id && (
+                            <div style={{
+                              borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                              paddingTop: '1.5rem',
+                              marginTop: '1.5rem'
+                            }}>
+                              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '1.5rem' }}>
+                                <div>
+                                  <h4 style={{ marginTop: 0, marginBottom: '1rem', color: '#a0b3ff', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase' }}>
+                                    Requirements
+                                  </h4>
+                                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                    {tender.requirements.map((req, idx) => (
+                                      <li key={idx} style={{
+                                        padding: '0.75rem',
+                                        marginBottom: '0.5rem',
+                                        background: 'rgba(0, 0, 0, 0.3)',
+                                        borderRadius: '8px',
+                                        fontSize: '0.875rem',
+                                        display: 'flex',
+                                        alignItems: 'flex-start',
+                                        gap: '0.5rem'
+                                      }}>
+                                        <CheckSquare size={16} style={{ marginTop: '0.125rem', flexShrink: 0, color: '#667eea' }} />
+                                        {req}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                                
+                                <div>
+                                  <h4 style={{ marginTop: 0, marginBottom: '1rem', color: '#a0b3ff', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase' }}>
+                                    Technical Specifications
+                                  </h4>
+                                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                    {tender.technicalSpecs.map((spec, idx) => (
+                                      <li key={idx} style={{
+                                        padding: '0.75rem',
+                                        marginBottom: '0.5rem',
+                                        background: 'rgba(0, 0, 0, 0.3)',
+                                        borderRadius: '8px',
+                                        fontSize: '0.875rem',
+                                        display: 'flex',
+                                        alignItems: 'flex-start',
+                                        gap: '0.5rem'
+                                      }}>
+                                        <Package size={16} style={{ marginTop: '0.125rem', flexShrink: 0, color: '#f97316' }} />
+                                        {spec}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div style={{ display: 'flex', gap: '1rem' }}>
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    setActiveTab('analysis');
+                                    analyzeWithAI(tender);
+                                  }}
+                                  style={{
+                                    flex: 1,
+                                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                    border: 'none',
+                                    padding: '1rem',
+                                    borderRadius: '8px',
+                                    color: 'white',
+                                    fontWeight: 600,
+                                    cursor: 'pointer',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '0.5rem',
+                                    fontSize: '0.875rem'
+                                  }}
+                                >
+                                  <Sparkles size={16} />
+                                  AI Analysis & Suppliers
+                                </button>
+                                
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    generateBidDocument(tender);
+                                  }}
+                                  style={{
+                                    flex: 1,
+                                    background: 'rgba(249, 115, 22, 0.2)',
+                                    border: '1px solid rgba(249, 115, 22, 0.5)',
+                                    padding: '1rem',
+                                    borderRadius: '8px',
+                                    color: '#f97316',
+                                    fontWeight: 600,
+                                    cursor: 'pointer',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '0.5rem',
+                                    fontSize: '0.875rem'
+                                  }}
+                                >
+                                  <FileText size={16} />
+                                  Generate Bid Template
+                                </button>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {activeTab === 'analysis' && (
+                  <div>
+                    {!selectedTender ? (
+                      <div style={{
+                        background: 'rgba(0, 0, 0, 0.3)',
+                        backdropFilter: 'blur(10px)',
+                        borderRadius: '16px',
+                        padding: '4rem 2rem',
+                        textAlign: 'center',
+                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                      }}>
+                        <AlertCircle size={48} style={{ color: '#667eea', marginBottom: '1rem' }} />
+                        <h3 style={{ marginBottom: '0.5rem' }}>No Tender Selected</h3>
+                        <p style={{ color: '#cbd5e0' }}>
+                          Select a tender from the Discover tab to view AI-powered analysis
+                        </p>
+                      </div>
+                    ) : aiProcessing ? (
+                      <div style={{
+                        background: 'rgba(0, 0, 0, 0.3)',
+                        backdropFilter: 'blur(10px)',
+                        borderRadius: '16px',
+                        padding: '4rem 2rem',
+                        textAlign: 'center',
+                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                      }}>
+                        <Loader2 size={48} style={{ color: '#667eea', marginBottom: '1rem', animation: 'spin 1s linear infinite' }} />
+                        <h3 style={{ marginBottom: '0.5rem' }}>Analyzing Tender...</h3>
+                        <p style={{ color: '#cbd5e0' }}>
+                          Claude is analyzing requirements, identifying suppliers, and generating recommendations
+                        </p>
+                      </div>
+                    ) : aiAnalysis ? (
+                      <div>
+                        <div style={{
+                          background: 'rgba(102, 126, 234, 0.1)',
+                          border: '1px solid rgba(102, 126, 234, 0.3)',
+                          borderRadius: '16px',
+                          padding: '1.5rem',
+                          marginBottom: '2rem'
+                        }}>
+                          <h2 style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                            <Sparkles size={24} />
+                            AI Analysis: {selectedTender.title}
+                          </h2>
+                        </div>
+
+                        <div style={{ display: 'grid', gap: '1.5rem' }}>
+                          {Object.entries(aiAnalysis).map(([key, value]) => (
+                            <div key={key} style={{
+                              background: 'rgba(0, 0, 0, 0.3)',
+                              backdropFilter: 'blur(10px)',
+                              borderRadius: '16px',
+                              padding: '1.5rem',
+                              border: '1px solid rgba(255, 255, 255, 0.1)'
+                            }}>
+                              <h3 style={{
+                                marginTop: 0,
+                                marginBottom: '1rem',
+                                color: '#a0b3ff',
+                                fontSize: '1rem',
+                                fontWeight: 600,
+                                textTransform: 'capitalize'
+                              }}>
+                                {key.replace(/([A-Z])/g, ' $1').trim()}
+                              </h3>
+                              <div style={{ color: '#e2e8f0', lineHeight: 1.7, whiteSpace: 'pre-wrap' }}>
+                                {typeof value === 'string' ? value : JSON.stringify(value, null, 2)}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <div style={{
+                        background: 'rgba(0, 0, 0, 0.3)',
+                        backdropFilter: 'blur(10px)',
+                        borderRadius: '16px',
+                        padding: '4rem 2rem',
+                        textAlign: 'center',
+                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                      }}>
+                        <Sparkles size={48} style={{ color: '#667eea', marginBottom: '1rem' }} />
+                        <h3 style={{ marginBottom: '0.5rem' }}>Ready to Analyze</h3>
+                        <p style={{ color: '#cbd5e0', marginBottom: '1.5rem' }}>
+                          Click the button below to get AI-powered insights for {selectedTender.title}
+                        </p>
+                        <button
+                          onClick={() => analyzeWithAI(selectedTender)}
+                          style={{
+                            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                            border: 'none',
+                            padding: '1rem 2rem',
+                            borderRadius: '8px',
+                            color: 'white',
+                            fontWeight: 600,
+                            cursor: 'pointer',
+                            fontSize: '1rem'
+                          }}
+                        >
+                          Start AI Analysis
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {activeTab === 'requirements' && (
+                  <div>
+                    {!selectedTender ? (
+                      <div style={{
+                        background: 'rgba(0, 0, 0, 0.3)',
+                        backdropFilter: 'blur(10px)',
+                        borderRadius: '16px',
+                        padding: '4rem 2rem',
+                        textAlign: 'center',
+                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                      }}>
+                        <FileText size={48} style={{ color: '#667eea', marginBottom: '1rem' }} />
+                        <h3 style={{ marginBottom: '0.5rem' }}>No Tender Selected</h3>
+                        <p style={{ color: '#cbd5e0' }}>
+                          Select a tender from the Discover tab to start building your bid
+                        </p>
+                      </div>
+                    ) : (
+                      <div>
+                        <div style={{
+                          background: 'rgba(102, 126, 234, 0.1)',
+                          border: '1px solid rgba(102, 126, 234, 0.3)',
+                          borderRadius: '16px',
+                          padding: '1.5rem',
+                          marginBottom: '2rem'
+                        }}>
+                          <h2 style={{ margin: 0, marginBottom: '0.5rem' }}>
+                            Bid Builder: {selectedTender.title}
+                          </h2>
+                          <p style={{ margin: 0, color: '#cbd5e0', fontSize: '0.875rem' }}>
+                            Track your progress and get AI assistance for each requirement
+                          </p>
+                        </div>
+
+                        <div style={{ display: 'grid', gap: '1rem' }}>
+                          {selectedTender.requirements.map((req, idx) => (
+                            <div key={idx} style={{
+                              background: 'rgba(0, 0, 0, 0.3)',
+                              backdropFilter: 'blur(10px)',
+                              borderRadius: '12px',
+                              padding: '1.5rem',
+                              border: '1px solid rgba(255, 255, 255, 0.1)'
+                            }}>
+                              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                                <input
+                                  type="checkbox"
+                                  style={{
+                                    width: '20px',
+                                    height: '20px',
+                                    marginTop: '0.125rem',
+                                    cursor: 'pointer'
+                                  }}
+                                />
+                                <div style={{ flex: 1 }}>
+                                  <h4 style={{ margin: 0, marginBottom: '0.5rem', fontSize: '1rem' }}>
+                                    {req}
+                                  </h4>
+                                  <p style={{ margin: 0, color: '#cbd5e0', fontSize: '0.875rem' }}>
+                                    Status: Not started
+                                  </p>
+                                </div>
+                                <button
+                                  onClick={async () => {
+                                    const response = await fetch("https://api.anthropic.com/v1/messages", {
+                                      method: "POST",
+                                      headers: authHeaders(),
+                                      body: JSON.stringify({
+                                        model: "claude-sonnet-5-5",
+                                        max_tokens: 1000,
+                                        messages: [{
+                                          role: "user",
+                                          content: `Provide detailed guidance on how to obtain this requirement for a South African government IT tender: "${req}". Include where to apply, costs, timeframes, and any prerequisites.`
+                                        }]
+                                      })
+                                    });
+                                    const data = await response.json();
+                                    const guidance = data.content.find(c => c.type === 'text')?.text || '';
+                                    alert(guidance);
+                                  }}
+                                  style={{
+                                    background: 'rgba(102, 126, 234, 0.2)',
+                                    border: '1px solid rgba(102, 126, 234, 0.3)',
+                                    padding: '0.5rem 1rem',
+                                    borderRadius: '6px',
+                                    color: '#a0b3ff',
+                                    cursor: 'pointer',
+                                    fontSize: '0.875rem',
+                                    fontWeight: 600
+                                  }}
+                                >
+                                  Get Help
+                                </button>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div style={{ marginTop: '2rem' }}>
+                          <button
+                            onClick={() => generateBidDocument(selectedTender)}
+                            disabled={aiProcessing}
+                            style={{
+                              width: '100%',
+                              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                              border: 'none',
+                              padding: '1rem',
+                              borderRadius: '8px',
+                              color: 'white',
+                              fontWeight: 600,
+                              cursor: aiProcessing ? 'not-allowed' : 'pointer',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              gap: '0.5rem',
+                              fontSize: '1rem',
+                              opacity: aiProcessing ? 0.6 : 1
+                            }}
+                          >
+                            {aiProcessing ? <Loader2 size={20} style={{animation: 'spin 1s linear infinite'}} /> : <Download size={20} />}
+                            Download Bid Template
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              <style>{`
+                @keyframes spin {
+                  from { transform: rotate(0deg); }
+                  to { transform: rotate(360deg); }
+                }
+              `}</style>
+            </div>
+          );
+        };
+
+        ReactDOM.render(<ETenderTool />, document.getElementById('root'));
+    </script>
+</body>
+</html>

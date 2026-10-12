@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.local
+*.log
+tender_cache.json
+etender_data.json
+.DS_Store
