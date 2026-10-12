@@ -30,7 +30,7 @@ API_URL = "https://ocds-api.etenders.gov.za/api/OCDSReleases"
 PORTAL_URL = "https://www.etenders.gov.za"
 PAGE_SIZE = 50        # normal page size
 SUB_PAGE_SIZE = 5     # used to step around records the API cannot serialise (HTTP 500)
-WINDOW_DAYS = 3       # query a few days at a time
+WINDOW_DAYS = 1       # one day per query: the API slows down/500s on long date ranges
 
 # Category -> keyword patterns (matched case-insensitively against title + description)
 CATEGORIES = [
@@ -90,6 +90,14 @@ def classify(text):
     return best[0], sorted({t.lower() for v in hits.values() for t in v})
 
 
+STATS = {"requests": 0, "failed": 0, "seconds": 0.0}
+DEADLINE = [None]  # monotonic time after which no new requests are started
+
+
+class OutOfTime(Exception):
+    pass
+
+
 def gh_error(msg):
     """Print an error that also shows up as a GitHub Actions annotation."""
     print(f"::error::{msg}" if os.environ.get("GITHUB_ACTIONS") else f"ERROR: {msg}", file=sys.stderr)
@@ -105,14 +113,22 @@ def fetch_page(page, date_from, date_to, page_size=PAGE_SIZE, retries=3):
         "User-Agent": "SA-eTender-Pro/1.0 (+https://github.com/Kagiso933/etender-pro)",
     })
     for attempt in range(1, retries + 1):
+        if DEADLINE[0] and time.monotonic() > DEADLINE[0]:
+            raise OutOfTime()
+        t0 = time.monotonic()
+        STATS["requests"] += 1
         try:
-            with urllib.request.urlopen(req, timeout=90) as resp:
-                return json.loads(resp.read().decode("utf-8"))
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                out = json.loads(resp.read().decode("utf-8"))
+                STATS["seconds"] += time.monotonic() - t0
+                return out
         except urllib.error.HTTPError as e:
             body = e.read().decode("utf-8", "replace")[:300].replace("\n", " ")
             detail = f"HTTP {e.code} {e.reason}: {body}"
         except Exception as e:  # timeout, DNS, connection reset, bad JSON
             detail = f"{type(e).__name__}: {e}"
+        STATS["failed"] += 1
+        STATS["seconds"] += time.monotonic() - t0
         print(f"  {date_from}..{date_to} page {page} (size {page_size}) attempt {attempt} failed - {detail}", file=sys.stderr)
         if attempt == retries:
             raise RuntimeError(f"eTenders API {date_from}..{date_to} page {page} failed after {retries} attempts - {detail}")
@@ -226,37 +242,45 @@ def fetch_window(date_from, date_to, latest, gaps):
     return count
 
 
-def collect(days, keep_all=False):
+def collect(days, keep_all=False, budget_minutes=30):
     now = datetime.now(timezone.utc)
-    start = (now - timedelta(days=days)).date()
-    end = now.date()
-    print(f"Fetching eTenders releases {start} -> {end} in {WINDOW_DAYS}-day windows")
+    DEADLINE[0] = time.monotonic() + budget_minutes * 60
+    oldest = (now - timedelta(days=days)).date()
+    print(f"Fetching eTenders releases {now.date()} back to {oldest}, newest first ({budget_minutes} min budget)")
 
     latest = {}  # ocid -> newest release (releases repeat when a tender is updated)
     scanned, failed, gaps = 0, [], []
-    day = start
-    while day <= end:
-        win_end = min(day + timedelta(days=WINDOW_DAYS - 1), end)
+    covered_to = None
+    day = now.date()
+    while day >= oldest:
+        win_start = max(day - timedelta(days=WINDOW_DAYS - 1), oldest)
         try:
-            n = fetch_window(day.isoformat(), win_end.isoformat(), latest, gaps)
+            n = fetch_window(win_start.isoformat(), day.isoformat(), latest, gaps)
             scanned += n
-            print(f"  {day}..{win_end}: {n} releases")
+            covered_to = win_start
+            print(f"  {win_start}..{day}: {n} releases")
+        except OutOfTime:
+            print(f"::warning::Time budget reached - covered tenders published back to {covered_to}, not {oldest}", file=sys.stderr)
+            break
         except RuntimeError as e:
             failed.append(str(e))
-            print(f"  {day}..{win_end}: FAILED", file=sys.stderr)
-        day = win_end + timedelta(days=1)
+            print(f"  {win_start}..{day}: FAILED", file=sys.stderr)
+        day = win_start - timedelta(days=1)
 
-    if failed and not latest:
-        raise RuntimeError("; ".join(failed[:3]))
-    for msg in failed:  # partial data is still useful; flag the gaps
+    if not latest:
+        raise RuntimeError("; ".join(failed[:3]) or "no releases returned")
+    for msg in failed[:5]:
         gh_error(f"Skipped a date window: {msg}")
     if gaps:
         print(f"::warning::Skipped {len(gaps)} small page(s) the API could not return (about {len(gaps) * SUB_PAGE_SIZE} records): "
-              + "; ".join(gaps[:10]), file=sys.stderr)
+              + "; ".join(gaps[:8]), file=sys.stderr)
+    avg = STATS["seconds"] / max(1, STATS["requests"])
+    print(f"::notice::{STATS['requests']} API requests ({STATS['failed']} failed, avg {avg:.1f}s); "
+          f"{scanned} releases scanned; coverage {covered_to}..{now.date()}", file=sys.stderr)
 
     tenders = [x for x in (to_tender(r, now, keep_all) for r in latest.values()) if x]
     tenders.sort(key=lambda x: x["closingDate"])
-    return tenders, scanned, len(latest)
+    return tenders, scanned, len(latest), (covered_to.isoformat() if covered_to else None)
 
 
 def main():
@@ -264,10 +288,11 @@ def main():
     ap.add_argument("--days", type=int, default=60, help="how far back to look for published tenders")
     ap.add_argument("--out", default="data/tenders.json")
     ap.add_argument("--all", action="store_true", help="keep non-IT tenders too")
+    ap.add_argument("--budget", type=float, default=30, help="stop fetching after this many minutes and save what we have")
     args = ap.parse_args()
 
     try:
-        tenders, scanned, unique = collect(args.days, keep_all=args.all)
+        tenders, scanned, unique, covered_from = collect(args.days, keep_all=args.all, budget_minutes=args.budget)
     except Exception as e:
         gh_error(str(e))
         sys.exit(1)
@@ -279,6 +304,7 @@ def main():
         "source": API_URL,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "lookbackDays": args.days,
+        "coveredFrom": covered_from,
         "releasesScanned": scanned,
         "uniqueTenders": unique,
         "count": len(tenders),
