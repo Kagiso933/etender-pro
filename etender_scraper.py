@@ -42,7 +42,7 @@ CATEGORIES = [
     ("Cloud Services", [r"cloud\s*-?\s*based", r"backup as a service", r"\bBaaS\b", r"\bveeam\b", r"\bazure\b", r"\bAWS\b", r"\bSaaS\b", r"\bIaaS\b", r"\bPaaS\b", r"microsoft 365",
                         r"office 365", r"\bM365\b", r"\bO365\b", r"cloud (computing|services?|migration|hosting|solution|platform|backup|storage|infrastructure)",
                         r"~\bcloud\b", r"~hosting"]),
-    ("Software & Systems", [r"\bmicrosoft\b", r"power ?bi\b", r"power platform", r"self.service portal", r"devops", r"development operations", r"\b(citrix|vmware|salesforce|servicenow|sage x3|sage 300|pastel)\b", r"~licen[cs]e renewal", r"software", r"\bERP\b", r"\bCRM\b", r"\bSAP\b", r"\boracle\b", r"application development",
+    ("Software & Systems", [r"payroll (system|software|licen)", r"employee self.?servic", r"\bsage \d{3}", r"\bESS\b", r"\bmicrosoft\b", r"power ?bi\b", r"power platform", r"self.service portal", r"devops", r"development operations", r"\b(citrix|vmware|salesforce|servicenow|sage x3|sage 300|pastel)\b", r"~licen[cs]e renewal", r"software", r"\bERP\b", r"\bCRM\b", r"\bSAP\b", r"\boracle\b", r"application development",
                             r"web(site| portal| application| development)", r"system development", r"information (management )?system",
                             r"software licen[cs]", r"(microsoft|adobe|esri|autodesk|vmware|sage|pastel|arcgis|oracle|sap) .{0,40}licen[cs]",
                             r"mobile app", r"business intelligence", r"data analytics", r"\bGIS\b", r"artificial intelligence",
