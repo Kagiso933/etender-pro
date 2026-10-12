@@ -1,0 +1,575 @@
+{
+ "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
+ "generatedAt": "2026-10-12T16:40:52.212919+00:00",
+ "lookbackDays": 60,
+ "releasesScanned": 0,
+ "uniqueTenders": 102,
+ "count": 15,
+ "categories": {
+  "Network & Infrastructure": 5,
+  "Software & Systems": 6,
+  "End-User Computing": 1,
+  "Cybersecurity": 2,
+  "IT Services & Support": 1
+ },
+ "tenders": [
+  {
+   "id": "ocds-9t57fa-173717",
+   "reference": "10024501",
+   "title": "Supply & Delivery of Server Spares",
+   "department": "State Security Agency",
+   "category": "Network & Infrastructure",
+   "matchedTerms": [
+    "server"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-19T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "RFQ server spares.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b4964b7f-c233-461e-8f44-3d9a99bd3ea0.pdf&downloadedFileName=RFQ%20server%20spares.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T09:19:03Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173822",
+   "reference": "RFQ No 29/2026",
+   "title": "Procurement Board Portal Software Solution for a period of 36 months.",
+   "department": "Postbank SOC",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "portal",
+    "software"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-19T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "RFQ No. 29_2026 Board Software Solution.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=aaae427e-5288-44db-a640-bda10b1db07a.pdf&downloadedFileName=RFQ%20No.%2029_2026%20Board%20Software%20Solution.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T17:14:46Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173758",
+   "reference": "RFQ 4688 /26",
+   "title": "Appointment of a training provider to provide Executive Artificial Intelligence (AI) and Data Analytics Training for four (4) Executive Managers.",
+   "department": "South African Weather Service",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "ai",
+    "artificial intelligence",
+    "data analytics"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-20T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "RFQ 4688_.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ad7b0998-799d-4d03-a477-6a0f8657cd83.pdf&downloadedFileName=RFQ%204688_.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T12:38:57Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173752",
+   "reference": "RFX6000003706",
+   "title": "Sentech is inviting quotations from qualified and accredited service providers for the Optical Fibre Reticulation and LAN Points Installation at its Durban Branch Campus.",
+   "department": "Sentech Limited",
+   "category": "Network & Infrastructure",
+   "matchedTerms": [
+    "fibre",
+    "lan"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-23T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "SENTECH SUPPLIER CONSENT FORM (009).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3a73b9a6-638b-407d-a28c-4c25af49baf8.pdf&downloadedFileName=SENTECH%20SUPPLIER%20CONSENT%20FORM%20%28009%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T11:44:04Z"
+    },
+    {
+     "title": "Revised Standard Bidding Document (SDB) 4_Annexure A (2).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=19410dcb-24b1-400d-9b70-55cee327e304.pdf&downloadedFileName=Revised%20Standard%20Bidding%20Document%20%28SDB%29%204_Annexure%20A%20%282%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T11:45:25Z"
+    },
+    {
+     "title": "RFQ LAN.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a9614461-4526-47f1-8cfe-e9f64ba1f125.pdf&downloadedFileName=RFQ%20LAN.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T11:42:19Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173805",
+   "reference": "E3663GXMPMAJ",
+   "title": "Correlation, Parallel and Spot Checking on Emission PM and Gas Monitors",
+   "department": "ESKOM",
+   "category": "End-User Computing",
+   "matchedTerms": [
+    "monitors"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-26T10:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "works",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "E-Tenderers E-Tendering Training Acknowledgement Form.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=69062cc5-3971-4c16-af3a-0219a2382abe.pdf&downloadedFileName=E-Tenderers%20E-Tendering%20Training%20Acknowledgement%20Form.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "240-77471651 Annexure C 1 (1).docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2690a38e-fb50-4128-a228-082c5bda7ea0.docx&downloadedFileName=240-77471651%20Annexure%20C%201%20%281%29.docx",
+     "format": "docx",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "E-tendering Help Manual for supplier - 27 January 2025 (1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=157ce16a-e860-42ce-be70-0f7831baaea7.pdf&downloadedFileName=E-tendering%20Help%20Manual%20for%20supplier%20-%2027%20January%202025%20%281%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "Supplier Evaluation Pack Template for 01 March 2024 to 29 February 2025.doc",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=096704d0-ab2e-43e5-bff3-26dd0cd60d87.doc&downloadedFileName=Supplier%20Evaluation%20Pack%20Template%20for%2001%20March%202024%20to%2029%20February%202025.doc",
+     "format": "doc",
+     "published": "2026-10-12T16:02:19Z"
+    },
+    {
+     "title": "Eskom Supplier Integrity Pact - 02 June 2023.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d8118d12-b550-4434-a791-3a62de71701c.pdf&downloadedFileName=Eskom%20Supplier%20Integrity%20Pact%20-%2002%20June%202023.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "Integrity Declaration Form - 31 May 2024.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=1b3e8bba-f5c7-41b6-b7b0-48a929ed31c6.docx&downloadedFileName=Integrity%20Declaration%20Form%20-%2031%20May%202024.docx",
+     "format": "docx",
+     "published": "2026-10-12T16:02:19Z"
+    },
+    {
+     "title": "240-68099512 Form A_Cat 3_ Rev 9.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=cae02ad9-e1dc-44b4-b214-5217eb8b2ea0.pdf&downloadedFileName=240-68099512%20Form%20A_Cat%203_%20Rev%209.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "Eskom - Standard Conditions of Tender (August 2024).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3f6b4a79-9f9d-43b0-b0d1-563c04aa2df8.pdf&downloadedFileName=Eskom%20-%20Standard%20Conditions%20of%20Tender%20%28August%202024%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "240-77471499 Annexure B.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ea23b32b-33fa-4432-bfeb-5cb86cbf6937.docx&downloadedFileName=240-77471499%20Annexure%20B.docx",
+     "format": "docx",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "Environmental Requirements for Contractors and Suppliers Rev 3- 06 March 2025 XY.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=43f54a84-7415-4a5b-ab35-63ead1aa0fe3.pdf&downloadedFileName=Environmental%20Requirements%20for%20Contractors%20and%20Suppliers%20Rev%203-%2006%20March%202025%20XY.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "Technical Evaluation Criteria.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5f6d50aa-96f6-44aa-b423-6d6b5101de1e.pdf&downloadedFileName=Technical%20Evaluation%20Criteria.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:19Z"
+    },
+    {
+     "title": "240-12248652_List of Tender Returnables_Cat 3_ Rev 7.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=44927955-a57c-40f0-b34c-72da105ecf3d.pdf&downloadedFileName=240-12248652_List%20of%20Tender%20Returnables_Cat%203_%20Rev%207.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "NEC Correlation Testing.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e7b8fc80-63ee-4276-8bb5-88f1471568e1.pdf&downloadedFileName=NEC%20Correlation%20Testing.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:19Z"
+    },
+    {
+     "title": "559-816058 32-726-03T High Risk Emission.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d4175746-845c-448c-8dc2-d91f002ce24e.docx&downloadedFileName=559-816058%2032-726-03T%20High%20Risk%20Emission.docx",
+     "format": "docx",
+     "published": "2026-10-12T16:02:18Z"
+    },
+    {
+     "title": "Supplier Development Localisation & Industrialisation Correlation, Parallel and Spot Checking on Emission PM and Gas Monitors.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4b9f1c5d-b134-4612-ac70-dfe35445cd47.pdf&downloadedFileName=Supplier%20Development%20Localisation%20%26%20Industrialisation%20Correlation%2C%20Parallel%20and%20Spot%20Checking%20on%20Emission%20PM%20and%20Gas%20Monitors.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:02:19Z"
+    },
+    {
+     "title": "Supplier Evaluation Pack Template for 01 March 2024 to 29 February 2025.xls",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=336f0830-77f6-4c43-bd64-f7cb9d91a8aa.xls&downloadedFileName=Supplier%20Evaluation%20Pack%20Template%20for%2001%20March%202024%20to%2029%20February%202025.xls",
+     "format": "xls",
+     "published": "2026-10-12T16:02:19Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173728",
+   "reference": "8/2/9/42 (2026-2029)",
+   "title": "8/2/9/42 (2026-2029) BID TO APPOINT A SERVICE PROVIDER FOR THE RENTAL OF TRAFFIC CONTRAVENTION MANAGEMENT SYSTEM AND RELATED EQUIPMENT TO MIDVAAL LOCAL MUNICIPALITY FROM DATE OF AWARD TO 30 JUNE 2029",
+   "department": "Midvaal Local Municipality",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "management system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-28T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "Advert for the week MN 4200-26.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=65cffe87-e19c-4998-9367-2bf7545b213c.pdf&downloadedFileName=Advert%20for%20the%20week%20MN%204200-26.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T09:59:22Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173817",
+   "reference": "LPT/QUT037/2026",
+   "title": "REQUEST FOR SUPPLY, DELIVERY , CONSTRUCT,INSTALL, COMMISSION AND TESTING OF A 10 000L WATER STORAGE TANK AT MOPANI",
+   "department": "Limpopo - Provincial Treasury",
+   "category": "Network & Infrastructure",
+   "matchedTerms": [
+    "storage"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-29T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "Tank_261012_155406.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4527f48b-c8d6-4aee-9f5b-907c46055a6f.pdf&downloadedFileName=Tank_261012_155406.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:58:44Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173766",
+   "reference": "CPSC/B/339/2026",
+   "title": "INVITATION BID NUMBER: CPSC/B/339/2026 OUTSOURCING OF SERVICE PROVIDER FOR THE SUPPLY, DELIVERY AND INSTALLATION OF 2 X 60 000 LITRES DIESEL STORAGE TANKS AT SANDRIVER AND MACADAMIA OPS BASES FOR JOINT OPERATION HEADQUARTERS (MPUMALANGA). PROCUREMENT PLAN NO:  DOD PROC PLAN 26-27/J OPS/3F",
+   "department": "Defence",
+   "category": "Network & Infrastructure",
+   "matchedTerms": [
+    "storage"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-02T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "CPSC-B-339-2026_261012_125940.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c0f58954-21c3-4dee-9b4f-85b8f9810e57.pdf&downloadedFileName=CPSC-B-339-2026_261012_125940.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T13:27:40Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173810",
+   "reference": "RFP 202092",
+   "title": "APPOINTMENT OF A QUALIFIED CONTRACTOR TO SUPPORT THE ENGINEERING & PLANT MAINTENANCE DEPARTMENT IN MAINTAINING INSTRUMENTATION AND AUTOMATION TECHNOLOGIES EQUIPMENT USED IN LABORATORIES FOR 3 YEARS: GROENKLOOF AND REGIONS - SECUNDA, RICHARDS BAY, OLIFANTSFONTEIN NETFA, CAPE TOWN, AND PORT ELIZABETH).",
+   "department": "The South African Bureau of Standards (SABS)",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "automation"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-02T11:00:00+00:00",
+   "procurementMethod": "Request for Proposal",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "RFP 202092 Intrumentation & Automation.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d7cb4213-282f-42ac-8231-8c053b4ba15d.pdf&downloadedFileName=RFP%20202092%20Intrumentation%20%26%20Automation.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:21:33Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173827",
+   "reference": "T14-10 -26",
+   "title": "The appointment of an actuarial service provider to provide Land Bank Insurance SOC LTD (“LBIC”) with head of actuarial function services (“HAF”) for a period of 5 years",
+   "department": "Land and Agricultural Development Bank of South Africa",
+   "category": "Cybersecurity",
+   "matchedTerms": [
+    "soc"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-05T11:00:00+00:00",
+   "procurementMethod": "Request for Proposal",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "Annexure F - Terms and conditions.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=15da1c1e-7d0b-449e-ac81-643c869c72af.pdf&downloadedFileName=Annexure%20F%20-%20Terms%20and%20conditions.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T18:00:05Z"
+    },
+    {
+     "title": "ANNEXURE G - SLA.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=35e277dd-d37c-440d-873a-7ad9724c3cfc.pdf&downloadedFileName=ANNEXURE%20G%20-%20SLA.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T18:00:05Z"
+    },
+    {
+     "title": "ANNEXURE H - BRIBERY AND CORRUPTION DECLARATION.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=acce09af-db64-4c34-a549-a93431ad0c94.pdf&downloadedFileName=ANNEXURE%20H%20-%20BRIBERY%20AND%20CORRUPTION%20DECLARATION.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T18:00:06Z"
+    },
+    {
+     "title": "T14-10-26 The appointment of an actuarial service provider to provide Land Bank Insurance SOC LTD with head of actuarial function services.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6fff0b5a-ece7-447f-ac2f-cef3c276253a.pdf&downloadedFileName=T14-10-26%20The%20appointment%20of%20an%20actuarial%20service%20provider%20to%20provide%20Land%20Bank%20Insurance%20SOC%20LTD%20with%20head%20of%20actuarial%20function%20services.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T18:28:56Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173751",
+   "reference": "KZNL 03/2026",
+   "title": "APPOINTMENT OF A SUITABLE SERVICE PROVIDER FOR THE LICENSING, MAINTENANCE, AND SUPPORT OF THE EXISTING SAGE ERP SYSTEM, TOGETHER WITH INTEGRATED THIRD-PARTY SUB-SYSTEMS, FOR A PERIOD OF SIXTY (60) MONTHS",
+   "department": "Kwazulu Natal - Provincial Legislature",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "erp"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-10T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "KZNL 3 2026 SAGE Support.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=cabd7bb1-6692-4b18-9df7-83cbd4dccebf.pdf&downloadedFileName=KZNL%203%202026%20SAGE%20Support.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T11:31:00Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173806",
+   "reference": "AE/VALK007/2026",
+   "title": "APPOINTMENT OF A SUITABLY QUALIFIED SERVICE PROVIDER TO PROVIDE MINE SURVEYING SERVICES FOR AFRICAN EXPLORATION MINING AND FINANCE CORPORATION (SOC) LTD (“AEMFC”) AT VLAKFONTEIN MINE FOR A PERIOD OF THIRTY-SIX (36) MONTHS.",
+   "department": "African Exploration Mining and Finance Corporation Soc Ltd",
+   "category": "Cybersecurity",
+   "matchedTerms": [
+    "soc"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-10T12:00:00+00:00",
+   "procurementMethod": "Request for Proposal",
+   "procurementCategory": "works",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "AE-VLAK007-2026- BS-RFP Mine Survey Services- Final Advert.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3cc49e45-becf-4c0c-909e-32aa2cbd2f4b.pdf&downloadedFileName=AE-VLAK007-2026-%20BS-RFP%20Mine%20Survey%20Services-%20Final%20Advert.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T16:05:17Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173732",
+   "reference": "8/2/2/474 (2026-2029)",
+   "title": "8/2/2/474 (2026-2029) BID TO APPOINT A PANEL OF PROFESSIONAL SERVICE PROVIDERS FOR WATER USE LICENCE APPLICATIONS (WULA) AND ENVIRONMENTAL IMPACT ASSESSMENT (EIA) APPLICATIONS ON AN AS WHEN REQUIRED BASIS FROM DATE OF APPOINTMENT TO 30 JUNE 2029",
+   "department": "Midvaal Local Municipality",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "licence"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-11T10:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "Advert for the week MN 4200-26.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bdcab0fd-ae03-4624-b7bf-0ae451233663.pdf&downloadedFileName=Advert%20for%20the%20week%20MN%204200-26.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T10:09:37Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173787",
+   "reference": "039/2026/OCFO/GRAP/RFB",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER TO COMPILE GRAP COMPLIANT INTERIM AND ANNUAL FINANCIAL STATEMENTS (AFS) AND PROVIDE OTHER TECHNICAL SUPPORT FOR A PERIOD OF TWENTY-FOUR (24) MONTHS",
+   "department": "Trans-Caledon Tunnel Authority",
+   "category": "IT Services & Support",
+   "matchedTerms": [
+    "technical support"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-12T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "GRAP COMPLIANT INTERIM AND ANNUAL FINANCIAL STATEMENTSadvert.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=be5d27f9-834e-4fd3-b6fa-05bf677d1f7a.pdf&downloadedFileName=GRAP%20COMPLIANT%20INTERIM%20AND%20ANNUAL%20FINANCIAL%20STATEMENTSadvert.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T14:54:33Z"
+    },
+    {
+     "title": "Copy of Annexure C  Pricing templateadvert.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a25bf0c6-4263-48ec-8ba0-83c3ab0c06d0.xlsx&downloadedFileName=Copy%20of%20Annexure%20C%20%20Pricing%20templateadvert.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-12T14:53:04Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173777",
+   "reference": "FAIS2026/27 - T002",
+   "title": "PROVISION OF PRIMARY FIBRE OPTIC INTERNET LINE, MIMECAST AND EXCHANGE EMAIL HOSTING",
+   "department": "Office of the Ombud for Financial Service Providers",
+   "category": "Network & Infrastructure",
+   "matchedTerms": [
+    "fibre",
+    "hosting",
+    "internet"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-13T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "documents": [
+    {
+     "title": "FAIS202627-T002 [PRIMARY FIBRE INTERNET LINE EXCHANGE EMAIL HOSTING AND TELEPHONE  SERVICES].pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=74040825-a5b5-4549-a52b-3edf406a8263.pdf&downloadedFileName=FAIS202627-T002%20%5BPRIMARY%20FIBRE%20INTERNET%20LINE%20EXCHANGE%20EMAIL%20HOSTING%20AND%20TELEPHONE%20%20SERVICES%5D.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T14:05:43Z"
+    },
+    {
+     "title": "ANNEXURE A - GENERAL  CONDITIONS OF CONTRACT (2).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bab974c5-ee53-42e3-9687-dc084368ea6f.pdf&downloadedFileName=ANNEXURE%20A%20-%20GENERAL%20%20CONDITIONS%20OF%20CONTRACT%20%282%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T14:05:43Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  }
+ ]
+}
