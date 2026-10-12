@@ -22,11 +22,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+
+      - name: Check the eTenders API is reachable
+        run: |
+          code=$(curl -s -o /tmp/probe.json -w "%{http_code}" --max-time 60 \
+            "https://ocds-api.etenders.gov.za/api/OCDSReleases?PageNumber=1&PageSize=1&dateFrom=$(date -u -d '-3 days' +%F)&dateTo=$(date -u +%F)") || code="curl-failed($?)"
+          echo "API probe: $code"
+          if [ "$code" != "200" ]; then echo "::error::eTenders API probe returned $code: $(head -c 300 /tmp/probe.json 2>/dev/null)"; exit 1; fi
 
       - name: Fetch open IT tenders from the eTenders API
         run: python3 etender_scraper.py --days 60 --out data/tenders.json

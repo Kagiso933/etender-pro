@@ -21,13 +21,14 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
 API_URL = "https://ocds-api.etenders.gov.za/api/OCDSReleases"
 PORTAL_URL = "https://www.etenders.gov.za"
-PAGE_SIZE = 1000
+PAGE_SIZE = 500
 
 # Category -> keyword patterns (matched case-insensitively against title + description)
 CATEGORIES = [
@@ -87,7 +88,12 @@ def classify(text):
     return best[0], sorted({t.lower() for v in hits.values() for t in v})
 
 
-def fetch_page(page, date_from, date_to, retries=3):
+def gh_error(msg):
+    """Print an error that also shows up as a GitHub Actions annotation."""
+    print(f"::error::{msg}" if os.environ.get("GITHUB_ACTIONS") else f"ERROR: {msg}", file=sys.stderr)
+
+
+def fetch_page(page, date_from, date_to, retries=4):
     params = urllib.parse.urlencode({
         "PageNumber": page, "PageSize": PAGE_SIZE,
         "dateFrom": date_from, "dateTo": date_to,
@@ -98,13 +104,17 @@ def fetch_page(page, date_from, date_to, retries=3):
     })
     for attempt in range(1, retries + 1):
         try:
-            with urllib.request.urlopen(req, timeout=120) as resp:
+            with urllib.request.urlopen(req, timeout=180) as resp:
                 return json.loads(resp.read().decode("utf-8"))
-        except Exception as e:  # network hiccup or API timeout
-            if attempt == retries:
-                raise
-            print(f"  page {page} failed ({e}); retrying in {5 * attempt}s", file=sys.stderr)
-            time.sleep(5 * attempt)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", "replace")[:300].replace("\n", " ")
+            detail = f"HTTP {e.code} {e.reason}: {body}"
+        except Exception as e:  # timeout, DNS, connection reset, bad JSON
+            detail = f"{type(e).__name__}: {e}"
+        print(f"  page {page} attempt {attempt} failed - {detail}", file=sys.stderr)
+        if attempt == retries:
+            raise RuntimeError(f"eTenders API page {page} failed after {retries} attempts - {detail}")
+        time.sleep(10 * attempt)
 
 
 def parse_date(value):
@@ -175,7 +185,7 @@ def to_tender(release, now, keep_all=False):
 def collect(days, keep_all=False, max_pages=50):
     now = datetime.now(timezone.utc)
     date_from = (now - timedelta(days=days)).strftime("%Y-%m-%d")
-    date_to = (now + timedelta(days=1)).strftime("%Y-%m-%d")
+    date_to = now.strftime("%Y-%m-%d")
     print(f"Fetching eTenders releases {date_from} -> {date_to}")
 
     latest = {}  # ocid -> newest release (releases repeat when a tender is updated)
@@ -205,7 +215,11 @@ def main():
     ap.add_argument("--all", action="store_true", help="keep non-IT tenders too")
     args = ap.parse_args()
 
-    tenders, scanned, unique = collect(args.days, keep_all=args.all)
+    try:
+        tenders, scanned, unique = collect(args.days, keep_all=args.all)
+    except Exception as e:
+        gh_error(str(e))
+        sys.exit(1)
     cats = {}
     for t in tenders:
         cats[t["category"]] = cats.get(t["category"], 0) + 1
