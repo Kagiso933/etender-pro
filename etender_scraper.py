@@ -28,7 +28,9 @@ from datetime import datetime, timedelta, timezone
 
 API_URL = "https://ocds-api.etenders.gov.za/api/OCDSReleases"
 PORTAL_URL = "https://www.etenders.gov.za"
-PAGE_SIZE = 500
+PAGE_SIZE = 100       # the API returns HTTP 500 for large pages / long ranges
+MIN_PAGE_SIZE = 10
+WINDOW_DAYS = 7       # query one week at a time
 
 # Category -> keyword patterns (matched case-insensitively against title + description)
 CATEGORIES = [
@@ -93,9 +95,9 @@ def gh_error(msg):
     print(f"::error::{msg}" if os.environ.get("GITHUB_ACTIONS") else f"ERROR: {msg}", file=sys.stderr)
 
 
-def fetch_page(page, date_from, date_to, retries=4):
+def fetch_page(page, date_from, date_to, page_size=PAGE_SIZE, retries=3):
     params = urllib.parse.urlencode({
-        "PageNumber": page, "PageSize": PAGE_SIZE,
+        "PageNumber": page, "PageSize": page_size,
         "dateFrom": date_from, "dateTo": date_to,
     })
     req = urllib.request.Request(f"{API_URL}?{params}", headers={
@@ -111,10 +113,10 @@ def fetch_page(page, date_from, date_to, retries=4):
             detail = f"HTTP {e.code} {e.reason}: {body}"
         except Exception as e:  # timeout, DNS, connection reset, bad JSON
             detail = f"{type(e).__name__}: {e}"
-        print(f"  page {page} attempt {attempt} failed - {detail}", file=sys.stderr)
+        print(f"  {date_from}..{date_to} page {page} (size {page_size}) attempt {attempt} failed - {detail}", file=sys.stderr)
         if attempt == retries:
-            raise RuntimeError(f"eTenders API page {page} failed after {retries} attempts - {detail}")
-        time.sleep(10 * attempt)
+            raise RuntimeError(f"eTenders API {date_from}..{date_to} page {page} failed after {retries} attempts - {detail}")
+        time.sleep(5 * attempt)
 
 
 def parse_date(value):
@@ -182,26 +184,53 @@ def to_tender(release, now, keep_all=False):
     }
 
 
-def collect(days, keep_all=False, max_pages=50):
+def fetch_window(date_from, date_to, latest):
+    """Page through one date window. On repeated API errors, retry the window with smaller pages."""
+    size = PAGE_SIZE
+    while True:
+        try:
+            count = 0
+            for page in range(1, 500):
+                releases = fetch_page(page, date_from, date_to, size).get("releases") or []
+                count += len(releases)
+                for r in releases:
+                    ocid = r.get("ocid")
+                    if ocid and (ocid not in latest or (r.get("date") or "") >= (latest[ocid].get("date") or "")):
+                        latest[ocid] = r
+                if len(releases) < size:
+                    return count
+                time.sleep(0.5)  # be polite to the API
+        except RuntimeError:
+            if size <= MIN_PAGE_SIZE:
+                raise
+            size = max(MIN_PAGE_SIZE, size // 2)
+            print(f"  retrying {date_from}..{date_to} with page size {size}", file=sys.stderr)
+
+
+def collect(days, keep_all=False):
     now = datetime.now(timezone.utc)
-    date_from = (now - timedelta(days=days)).strftime("%Y-%m-%d")
-    date_to = now.strftime("%Y-%m-%d")
-    print(f"Fetching eTenders releases {date_from} -> {date_to}")
+    start = (now - timedelta(days=days)).date()
+    end = now.date()
+    print(f"Fetching eTenders releases {start} -> {end} in {WINDOW_DAYS}-day windows")
 
     latest = {}  # ocid -> newest release (releases repeat when a tender is updated)
-    scanned = 0
-    for page in range(1, max_pages + 1):
-        data = fetch_page(page, date_from, date_to)
-        releases = data.get("releases") or []
-        scanned += len(releases)
-        print(f"  page {page}: {len(releases)} releases")
-        for r in releases:
-            ocid = r.get("ocid")
-            if ocid and (ocid not in latest or (r.get("date") or "") >= (latest[ocid].get("date") or "")):
-                latest[ocid] = r
-        if len(releases) < PAGE_SIZE:
-            break
-        time.sleep(1)  # be polite to the API
+    scanned, failed = 0, []
+    day = start
+    while day <= end:
+        win_end = min(day + timedelta(days=WINDOW_DAYS - 1), end)
+        try:
+            n = fetch_window(day.isoformat(), win_end.isoformat(), latest)
+            scanned += n
+            print(f"  {day}..{win_end}: {n} releases")
+        except RuntimeError as e:
+            failed.append(str(e))
+            print(f"  {day}..{win_end}: FAILED", file=sys.stderr)
+        day = win_end + timedelta(days=1)
+
+    if failed and not latest:
+        raise RuntimeError("; ".join(failed[:3]))
+    for msg in failed:  # partial data is still useful; flag the gaps
+        gh_error(f"Skipped a date window: {msg}")
 
     tenders = [x for x in (to_tender(r, now, keep_all) for r in latest.values()) if x]
     tenders.sort(key=lambda x: x["closingDate"])
