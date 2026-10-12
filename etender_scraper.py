@@ -174,20 +174,64 @@ BRIEF_TEXT = re.compile(r"[^.\n]{0,160}\bbriefing\b[^.\n]{0,220}", re.I)
 URL = re.compile(r"https?://\S+")
 
 
-def briefing_info(t, text):
+BRIEF_KEYS = {}  # key path -> example value, recorded so the output shows where eTenders puts briefing data
+
+
+def find_briefing(obj, path=""):
+    """Find briefing fields wherever eTenders puts them (tender.briefingSession, a release-level field, ...)."""
+    found = {}
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            p = f"{path}.{k}" if path else k
+            if "brief" in k.lower():
+                if len(BRIEF_KEYS) < 20 and p not in BRIEF_KEYS:
+                    BRIEF_KEYS[p] = v if not isinstance(v, (dict, list)) else json.dumps(v)[:300]
+                if isinstance(v, dict):
+                    found.update({kk: vv for kk, vv in v.items() if kk not in found})
+                elif isinstance(v, list) and v and isinstance(v[0], dict):
+                    found.update({kk: vv for kk, vv in v[0].items() if kk not in found})
+                else:
+                    found.setdefault(k, v)
+            elif isinstance(v, (dict, list)) and k not in ("documents", "parties"):
+                for kk, vv in find_briefing(v, p).items():
+                    found.setdefault(kk, vv)
+    elif isinstance(obj, list):
+        for item in obj[:5]:
+            for kk, vv in find_briefing(item, path).items():
+                found.setdefault(kk, vv)
+    return found
+
+
+def pick_ci(d, *names):
+    low = {k.lower(): v for k, v in d.items()}
+    for n in names:
+        v = low.get(n.lower())
+        if v not in (None, ""):
+            return v
+    return None
+
+
+def briefing_info(t, text, release=None):
     """Work out whether a tender has a briefing session, and whether it can be attended online.
 
     eTenders publishes a briefingSession object on the tender (isSession, compulsory, date, venue)
     when the department fills it in. Many departments only mention the briefing in the description,
     so fall back to reading that text.
     """
-    bs = t.get("briefingSession") or {}
-    if not isinstance(bs, dict):
-        bs = {}
-    venue = str(bs.get("venue") or "").strip()
-    held = bs.get("isSession")
-    compulsory = bs.get("compulsory")
-    date = parse_date(bs.get("date")) if isinstance(bs.get("date"), str) else None
+    bs = find_briefing(release if release is not None else {"tender": t})
+    venue = str(pick_ci(bs, "venue", "briefingVenue", "location", "address", "briefingSessionVenue") or "").strip()
+    held = pick_ci(bs, "isSession", "isBriefingSession", "briefingSession", "hasBriefing")
+    if isinstance(held, str):
+        held = held.strip().lower() in ("true", "yes", "1") if held.strip().lower() in ("true", "false", "yes", "no", "1", "0") else None
+    elif not isinstance(held, bool):
+        held = None
+    compulsory = pick_ci(bs, "compulsory", "isCompulsory", "briefingCompulsory", "compulsoryBriefing", "mandatory")
+    if isinstance(compulsory, str):
+        compulsory = compulsory.strip().lower() in ("true", "yes", "1", "compulsory")
+    elif not isinstance(compulsory, bool):
+        compulsory = None
+    raw_date = pick_ci(bs, "date", "briefingDate", "dateTime", "briefingDateTime", "startDate")
+    date = parse_date(raw_date) if isinstance(raw_date, str) else None
 
     snippet = ""
     m = BRIEF_TEXT.search(text or "")
@@ -270,7 +314,7 @@ def to_tender(release, now, keep_all=False):
     } for d in (t.get("documents") or []) if d.get("url")]
 
     start = parse_date((t.get("tenderPeriod") or {}).get("startDate"))
-    briefing = briefing_info(t, " ".join([description, t.get("eligibilityCriteria") or "", t.get("submissionMethodDetails") or ""]))
+    briefing = briefing_info(t, " ".join([description, t.get("eligibilityCriteria") or "", t.get("submissionMethodDetails") or ""]), release)
     province = t.get("province") or contact.get("region") or ""
     return {
         "id": release.get("ocid"),
@@ -378,6 +422,35 @@ def collect(days, keep_all=False, budget_minutes=30):
     return tenders, scanned, len(latest), (covered_to.isoformat() if covered_to else None)
 
 
+def carry_over(path, tenders, covered_from, days):
+    """When the API is slow and a run covers fewer days than asked, keep still-open tenders
+    from the previous file that were published before this run's coverage started."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            prev = json.load(f)
+    except (OSError, ValueError):
+        return 0
+    if not covered_from:
+        return 0
+    now = datetime.now(timezone.utc)
+    have = {t["id"] for t in tenders}
+    added = 0
+    for t in prev.get("tenders") or []:
+        end = parse_date(t.get("closingDate"))
+        published = (t.get("publishedDate") or "")[:10]
+        if t.get("id") in have or not end or end < now or not published or published >= covered_from:
+            continue
+        t.setdefault("province", (t.get("contact") or {}).get("region", ""))
+        if "briefing" not in t:
+            t["briefing"] = briefing_info({}, " ".join([t.get("title", ""), t.get("eligibility", ""), t.get("submission", "")]), {})
+        tenders.append(t)
+        have.add(t["id"])
+        added += 1
+    if added:
+        print(f"::notice::Kept {added} still-open tenders from the previous run (published before {covered_from})", file=sys.stderr)
+    return added
+
+
 def main():
     ap = argparse.ArgumentParser(description="Fetch open IT tenders from the eTenders OCDS API")
     ap.add_argument("--days", type=int, default=60, help="how far back to look for published tenders")
@@ -391,10 +464,13 @@ def main():
     except Exception as e:
         gh_error(str(e))
         sys.exit(1)
+    carried = carry_over(args.out, tenders, covered_from, args.days)
+    if carried:
+        tenders.sort(key=lambda x: x["closingDate"])
     cats = {}
     for t in tenders:
         cats[t["category"]] = cats.get(t["category"], 0) + 1
-    online = sum(1 for t in tenders if t["briefing"]["online"])
+    online = sum(1 for t in tenders if (t.get("briefing") or {}).get("online"))
 
     payload = {
         "source": API_URL,
@@ -406,6 +482,8 @@ def main():
         "count": len(tenders),
         "categories": cats,
         "onlineBriefings": online,
+        "carriedOver": carried,
+        "briefingFieldsSeen": BRIEF_KEYS,
         "tenders": tenders,
     }
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
