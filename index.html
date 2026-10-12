@@ -208,7 +208,7 @@ function App() {
       <div className="top"><div className="wrap">
         <div className="brand">
           <h1>SA eTender Pro</h1>
-          <p>{data ? `${tenders.length} open IT tenders · data updated ${ago(data.generatedAt)} from the official eTenders API` : 'Open IT tenders from etenders.gov.za'}</p>
+          <p>{data ? `${tenders.length} open IT tenders · updated ${ago(data.generatedAt)}${data.coveredFrom ? ` · published since ${new Date(data.coveredFrom).toLocaleDateString('en-ZA', { day: 'numeric', month: 'short' })}` : ''} · official eTenders API` : 'Open IT tenders from etenders.gov.za'}</p>
         </div>
         <div className="row" style={{ marginTop: 0 }}>
           <button className="btn" onClick={() => getKey(true)}>API key</button>

@@ -32,62 +32,81 @@ PAGE_SIZE = 50        # normal page size
 SUB_PAGE_SIZE = 5     # used to step around records the API cannot serialise (HTTP 500)
 WINDOW_DAYS = 1       # one day per query: the API slows down/500s on long date ranges
 
-# Category -> keyword patterns (matched case-insensitively against title + description)
+# Category -> keyword patterns (matched against title + description).
+# Patterns starting with "~" are WEAK: common outside IT, so a tender needs at least one
+# strong match, or two different weak matches, to count as IT.
 CATEGORIES = [
-    ("Cybersecurity", [r"cyber", r"\bsecurity operations\b", r"\bSOC\b", r"firewall", r"penetration test",
-                       r"vulnerability", r"\bSIEM\b", r"endpoint (detection|protection)", r"antivirus", r"anti-virus",
-                       r"information security", r"\bISMS\b"]),
-    ("Cloud Services", [r"\bcloud\b", r"\bazure\b", r"\bAWS\b", r"\bSaaS\b", r"\bIaaS\b", r"\bPaaS\b",
-                        r"microsoft 365", r"office 365", r"\bM365\b", r"\bO365\b", r"hosting"]),
-    ("Software & Systems", [r"software", r"\bERP\b", r"\bCRM\b", r"\bSAP\b", r"oracle", r"application development",
-                            r"web(site| portal| application)", r"\bportal\b", r"system development",
-                            r"management system", r"\blicen[cs]e", r"\bdatabase\b", r"mobile app", r"\bapp\b",
-                            r"business intelligence", r"\bBI\b", r"data analytics", r"\bGIS\b", r"digiti[sz]",
-                            r"\bAI\b", r"artificial intelligence", r"automation"]),
-    ("Network & Infrastructure", [r"network", r"\bLAN\b", r"\bWAN\b", r"\bWi-?Fi\b", r"wireless", r"router",
-                                  r"switch(es)?\b", r"server", r"data cent(re|er)", r"data storage", r"storage (array|solution|area network)", r"\bSAN\b",
-                                  r"structured cabling", r"fibre", r"fiber", r"connectivity", r"internet",
-                                  r"\bVPN\b", r"backup", r"disaster recovery", r"virtuali[sz]"]),
-    ("End-User Computing", [r"laptop", r"desktop", r"computer", r"\bPCs?\b", r"tablet", r"printer", r"printing solution",
-                            r"\b(computer|LCD|LED|desktop|PC) monitors?\b", r"end.user", r"\bEUC\b", r"peripheral"]),
-    ("Telecoms & Unified Comms", [r"telecom", r"telephon", r"\bPABX\b", r"\bVoIP\b", r"unified communication",
-                                  r"video conferenc", r"\bcellular\b", r"mobile (data|devices)", r"\bAPN\b"]),
-    ("IT Services & Support", [r"\bICT\b", r"\bIT\b", r"information technology", r"information and communication technolog",
-                               r"help ?desk", r"service desk", r"managed services?", r"technical support",
-                               r"IT support", r"maintenance and support of", r"\bSLA\b"]),
+    ("Cybersecurity", [r"privileged (remote )?access", r"e-?mail (security|archiv|filtering)", r"\b(mimecast|beyondtrust|fortinet|fortigate|sophos|kaspersky|eset|trend micro|crowdstrike|palo alto)\b", r"cyber", r"security operations cent(re|er)", r"firewall", r"penetration test",
+                       r"vulnerability (assessment|scan|management)", r"\bSIEM\b", r"endpoint (detection|protection)",
+                       r"anti-?virus", r"information security", r"\bISMS\b", r"\bPOPIA\b"]),
+    ("Cloud Services", [r"cloud\s*-?\s*based", r"backup as a service", r"\bBaaS\b", r"\bveeam\b", r"\bazure\b", r"\bAWS\b", r"\bSaaS\b", r"\bIaaS\b", r"\bPaaS\b", r"microsoft 365",
+                        r"office 365", r"\bM365\b", r"\bO365\b", r"cloud (computing|services?|migration|hosting|solution|platform|backup|storage|infrastructure)",
+                        r"~\bcloud\b", r"~hosting"]),
+    ("Software & Systems", [r"\bmicrosoft\b", r"power ?bi\b", r"power platform", r"self.service portal", r"devops", r"development operations", r"\b(citrix|vmware|salesforce|servicenow|sage x3|sage 300|pastel)\b", r"~licen[cs]e renewal", r"software", r"\bERP\b", r"\bCRM\b", r"\bSAP\b", r"\boracle\b", r"application development",
+                            r"web(site| portal| application| development)", r"system development", r"information (management )?system",
+                            r"software licen[cs]", r"(microsoft|adobe|esri|autodesk|vmware|sage|pastel|arcgis|oracle|sap) .{0,40}licen[cs]",
+                            r"mobile app", r"business intelligence", r"data analytics", r"\bGIS\b", r"artificial intelligence",
+                            r"\bAI\b", r"learning management system", r"\bLMS\b", r"electronic (document|records|content) management",
+                            r"~management system", r"~\bdatabase\b", r"~\bportal\b", r"~digiti[sz]", r"~automation",
+                            r"~licen[cs]e", r"~\bapp\b", r"~\bsystem\b"]),
+    ("Network & Infrastructure", [r"network monitoring", r"virtual environment", r"internet (access|links?|service provider|connectivity)", r"fib(re|er) termination", r"\b(cisco|huawei|aruba|juniper|mikrotik)\b", r"\bLAN\b", r"\bWAN\b", r"\bWi-?Fi\b", r"wireless (network|access)", r"router",
+                                  r"network switch", r"server", r"data cent(re|er)", r"data storage",
+                                  r"storage (array|solution|area network)", r"\bSAN\b", r"structured cabling",
+                                  r"fib(re|er) optic", r"\bVPN\b", r"disaster recovery", r"virtuali[sz]", r"\bMPLS\b",
+                                  r"(ICT|IT|computer|data|local area|wide area) network", r"network (infrastructure|equipment|security|upgrade|cabling)",
+                                  r"~network", r"~connectivity", r"~internet", r"~backup", r"~\bswitch(es)?\b", r"~fib(re|er)"]),
+    ("End-User Computing", [r"\bPC[\'’]?s\b", r"printers?\b", r"managed print", r"\bIT.related", r"\b(lenovo|dell|hp|hpe)\b (laptop|desktop|notebook|server|computer)", r"laptop", r"desktop", r"computers?\b", r"\bPCs\b", r"notebooks? computers?",
+                            r"\b(computer|LCD|LED|desktop|PC) monitors?\b", r"end.user comput", r"\bEUC\b",
+                            r"multifunction(al)? (printer|device)", r"~tablets?\b", r"~peripheral"]),
+    ("Telecoms & Unified Comms", [r"communication network", r"satellite (airtime|communication)", r"telecommunication", r"telephony", r"\bPABX\b", r"\bVoIP\b", r"unified communication",
+                                  r"video ?conferenc", r"~\bcellular\b", r"~mobile (data|devices)", r"\bAPN\b"]),
+    ("IT Services & Support", [r"\bIT (internal )?audit", r"\bICT\b", r"information technology", r"information and communication technolog",
+                               r"\bIT (services?|support|equipment|infrastructure|solutions?|systems?|hardware|security|governance|"
+                               r"department|unit|helpdesk|help desk|professional|specialist|audit|strategy|managed)\b",
+                               r"help ?desk", r"service desk", r"managed (IT |ICT )?services", r"desktop support",
+                               r"~technical support", r"~\bSLA\b"]),
 ]
 
-# Phrases that look like IT but usually are not (reduce false positives)
-EXCLUDE = [r"\bsecurity guard", r"\bguarding\b", r"physical security", r"security services? at",
-           r"armed response", r"\bCCTV\b(?!.*network)", r"switchgear", r"water (tank|storage)", r"\bJoJo\b", r"gas monitor", r"\bswitch(es)? and sockets\b",
-           r"water network", r"sewer network", r"road network", r"electrical network", r"reticulation"]
+# Phrases that look like IT but usually are not; they cancel a lone weak match
+EXCLUDE = [r"security guard", r"guarding", r"physical security", r"armed response", r"switchgear",
+           r"water (tank|storage|meter|network|reticulation)", r"sewer", r"sanitation", r"road network",
+           r"electrical network", r"reticulation", r"ceilometer", r"cloud (base|height|cover)", r"\bEPWP\b",
+           r"liquor licen", r"business licen", r"driver'?s? licen", r"gas monitor", r"cleaning"]
+
 
 def _flags(pattern):
-    """All-caps acronyms (IT, AI, SOC, LAN...) match case-sensitively so 'it'/'ai' don't count."""
+    """All-caps acronyms (IT, AI, LAN...) match case-sensitively so ordinary words don't count."""
     letters = re.sub(r"\\[a-zA-Z]|[^a-zA-Z]", "", pattern)
     return 0 if letters and letters.isupper() else re.I
 
 
-_compiled = [(name, [re.compile(p, _flags(p)) for p in pats]) for name, pats in CATEGORIES]
+_compiled = [(name, [(re.compile(p.lstrip("~"), _flags(p.lstrip("~"))), p.startswith("~")) for p in pats])
+             for name, pats in CATEGORIES]
+# For ALL-CAPS text every acronym is upper case anyway, so match everything case-insensitively
+_compiled_caps = [(name, [(re.compile(p.lstrip("~"), re.I), p.startswith("~")) for p in pats])
+                  for name, pats in CATEGORIES]
 _exclude = [re.compile(p, re.I) for p in EXCLUDE]
 
 
 def classify(text):
     """Return (category, matched_terms) for IT tenders, or (None, []) if not IT."""
-    hits = {}
-    for name, patterns in _compiled:
-        for rx in patterns:
+    letters = [c for c in text if c.isalpha()]
+    caps = bool(letters) and sum(c.isupper() for c in letters) / len(letters) > 0.6
+    strong, weak = {}, {}
+    for name, patterns in (_compiled_caps if caps else _compiled):
+        for rx, is_weak in patterns:
             m = rx.search(text)
             if m:
-                hits.setdefault(name, []).append(m.group(0))
-    if not hits:
+                (weak if is_weak else strong).setdefault(name, []).append(m.group(0).lower())
+    weak_terms = {t for v in weak.values() for t in v}
+    excluded = any(rx.search(text) for rx in _exclude)
+    if not strong and (len(weak_terms) < 2 or excluded):
         return None, []
-    strong = sum(len(v) for v in hits.values())
-    # A single weak match next to a known false-positive phrase is not IT
-    if strong <= 1 and any(rx.search(text) for rx in _exclude):
+    if strong and excluded and sum(len(v) for v in strong.values()) == 1 and not weak_terms:
         return None, []
-    best = max(hits.items(), key=lambda kv: len(kv[1]))
-    return best[0], sorted({t.lower() for v in hits.values() for t in v})
+    scores = {n: len(strong.get(n, [])) * 2 + len(weak.get(n, [])) for n in set(strong) | set(weak)}
+    best = max(scores, key=scores.get)
+    return best, sorted({t for d in (strong, weak) for v in d.values() for t in v})
 
 
 STATS = {"requests": 0, "failed": 0, "seconds": 0.0}
