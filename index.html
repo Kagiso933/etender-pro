@@ -133,21 +133,40 @@ function getKey(force) {
     if (entered === null) return key;
     key = entered.trim();
     store.set('anthropic_api_key', key);
+    if (force) askWorkspace(true);
   }
   return key;
 }
 
-async function askClaude(prompt, maxTokens = 3000) {
+// Keys that are not scoped to a workspace must send the workspace ID with every request
+function askWorkspace(optional) {
+  const current = store.get('anthropic_workspace_id', '');
+  const entered = window.prompt(
+    (optional ? 'Optional: ' : 'Your API key is not scoped to a workspace, so a workspace ID is needed.\n') +
+    'Workspace ID (Claude Console > Settings > Workspaces, starts with "wrkspc_").\nLeave blank if your key belongs to a workspace.',
+    current);
+  if (entered === null) return current;
+  store.set('anthropic_workspace_id', entered.trim());
+  return entered.trim();
+}
+
+async function askClaude(prompt, maxTokens = 3000, retried = false) {
   const key = getKey(false);
   if (!key) throw new Error('No API key set. Use "API key" at the top right.');
+  const workspace = store.get('anthropic_workspace_id', '');
+  const headers = { 'Content-Type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01',
+                    'anthropic-dangerous-direct-browser-access': 'true' };
+  if (workspace) headers['anthropic-workspace-id'] = workspace;
   const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01',
-               'anthropic-dangerous-direct-browser-access': 'true' },
+    method: 'POST', headers,
     body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] }),
   });
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data?.error?.message || `API error ${res.status}`);
+  if (!res.ok) {
+    const msg = data?.error?.message || `API error ${res.status}`;
+    if (!retried && /workspace/i.test(msg) && askWorkspace(false)) return askClaude(prompt, maxTokens, true);
+    throw new Error(msg);
+  }
   return (data.content || []).filter(c => c.type === 'text').map(c => c.text).join('\n');
 }
 
