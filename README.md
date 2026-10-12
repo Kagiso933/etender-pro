@@ -16,6 +16,7 @@ eTenders OCDS API ──► GitHub Action (every 6h) ──► data/tenders.json
   - It reads the last 60 days of published tenders.
   - It keeps the ones that are still open (closing date in the future).
   - It sorts them into IT categories: Software & Systems, Network & Infrastructure, Cloud, Cybersecurity, End-User Computing, Telecoms, and IT Services & Support.
+  - It records each tender's briefing session (date, compulsory or not, venue) and whether it can be attended online (Teams, Zoom, virtual or a join link). It reads eTenders' briefing fields first and falls back to the tender description.
 - **Refresh:** `.github/workflows/update-tenders.yml` runs the fetcher every 6 hours and commits the result. You can also run it any time from **Actions → Update tender data → Run workflow**.
 - **Website:** `index.html` is a single static page with no build step. It has three tabs:
   - **Discover:** search and filter open tenders, see closing dates, and open the tender PDFs directly.
@@ -24,6 +25,13 @@ eTenders OCDS API ──► GitHub Action (every 6h) ──► data/tenders.json
     - AI can pull the tender-specific requirements out of the pasted document text.
     - It saves your progress and notes, and can draft a bid response.
     - Progress is saved in your browser.
+
+## Ryno-Tec hub integration
+
+- **Briefing filter:** Discover has a *Briefing* filter. Choose *Online briefing* to see only tenders you can brief on remotely.
+- **Export for Ryno-Tec hub:** downloads the filtered tenders as JSON. In the hub, go to Tenders → *Import file*. The hub keeps the IT tenders with an online briefing and updates ones it already has without touching your bid status or notes.
+- **Daily sync:** a scheduled Claude task reads `data/tenders.json` each morning and adds new online-briefing tenders to the hub.
+- **Deep links:** `#tender=<ocid>&tab=bid` (or `tab=analysis`) opens a tender straight in the Bid builder. The hub's *Build bid in eTender Pro* button uses this.
 
 ## Setup
 

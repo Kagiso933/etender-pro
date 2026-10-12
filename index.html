@@ -191,6 +191,8 @@ function App() {
   const [selId, setSelId] = useState(store.get('selected_tender', null));
   const [saved, setSaved] = useState(store.get('saved_tenders', []));
   const [onlySaved, setOnlySaved] = useState(false);
+  const [brief, setBrief] = useState(store.get('briefing_filter', 'any'));
+  useEffect(() => { store.set('briefing_filter', brief); }, [brief]);
 
   const load = async () => {
     setLoading(true); setLoadErr('');
@@ -199,13 +201,20 @@ function App() {
         const r = await fetch(url + (url.startsWith('http') ? `?t=${Date.now()}` : ''), { cache: 'no-store' });
         if (!r.ok) continue;
         const j = await r.json();
-        if (Array.isArray(j.tenders)) { setData(j); setLoading(false); return; }
+        if (Array.isArray(j.tenders)) { setData(j); setLoading(false); openFromHash(j.tenders); return; }
       } catch (e) {}
     }
     setLoadErr('Could not load tender data yet. If you just set this up, the first GitHub Action run may still be in progress.');
     setLoading(false);
   };
   useEffect(() => { load(); }, []);
+  // Deep link from the Ryno-Tec hub: #tender=<ocid>&tab=bid|analysis
+  const openFromHash = (list) => {
+    const h = new URLSearchParams(location.hash.slice(1));
+    const id = h.get('tender');
+    if (id && list.some(t => t.id === id)) { setSelId(id); setTab(['bid', 'analysis'].includes(h.get('tab')) ? h.get('tab') : 'bid'); }
+  };
+  useEffect(() => { const f = () => data && openFromHash(data.tenders); window.addEventListener('hashchange', f); return () => window.removeEventListener('hashchange', f); }, [data]);
   useEffect(() => { store.set('selected_tender', selId); }, [selId]);
   useEffect(() => { store.set('saved_tenders', saved); }, [saved]);
 
@@ -217,6 +226,10 @@ function App() {
     if (cat !== 'all' && t.category !== cat) return false;
     if (daysLeft(t.closingDate) > within) return false;
     if (onlySaved && !saved.includes(t.id)) return false;
+    const b = t.briefing || {};
+    if (brief === 'online' && !b.online) return false;
+    if (brief === 'compulsory' && !b.compulsory) return false;
+    if (brief === 'none' && b.mode !== 'none') return false;
     return true;
   });
   const sel = tenders.find(t => t.id === selId) || null;
@@ -243,7 +256,7 @@ function App() {
 
         {tab === 'discover' && <>
           <div className="panel">
-            <div className="grid4">
+            <div className="grid4 grid5">
               <div style={{ gridColumn: '1 / -1' }}>
                 <input placeholder="Search description, reference number or department…" value={q} onChange={e => setQ(e.target.value)} />
               </div>
@@ -254,6 +267,13 @@ function App() {
                 </select></div>
               <div><label className="l">Closing within (days)</label>
                 <input type="number" min="1" value={within} onChange={e => setWithin(Number(e.target.value) || 365)} /></div>
+              <div><label className="l">Briefing</label>
+                <select value={brief} onChange={e => setBrief(e.target.value)}>
+                  <option value="any">Any briefing</option>
+                  <option value="online">Online briefing ({tenders.filter(t => t.briefing?.online).length})</option>
+                  <option value="compulsory">Compulsory briefing</option>
+                  <option value="none">No briefing</option>
+                </select></div>
               <div><label className="l">Show</label>
                 <select value={onlySaved ? 'saved' : 'all'} onChange={e => setOnlySaved(e.target.value === 'saved')}>
                   <option value="all">All tenders</option><option value="saved">Saved only ({saved.length})</option>
@@ -263,7 +283,10 @@ function App() {
 
           <div className="meta">
             <span>Showing {filtered.length} of {tenders.length}, soonest closing first</span>
-            <a href="https://www.etenders.gov.za" target="_blank" rel="noopener">Open etenders.gov.za ↗</a>
+            <span className="row" style={{ marginTop: 0 }}>
+              <button className="btn" disabled={!filtered.length} onClick={() => exportForHub(filtered)}>Export for Ryno-Tec hub</button>
+              <a href="https://www.etenders.gov.za" target="_blank" rel="noopener">Open etenders.gov.za ↗</a>
+            </span>
           </div>
 
           {loadErr && <div className="panel empty">{loadErr}</div>}
@@ -283,6 +306,7 @@ function App() {
                     <div className={'note ' + urgency(d)}>{d === 0 ? 'Closes today' : `${d} day${d === 1 ? '' : 's'} left`}</div></div>
                   <div className="fact"><div className="k">Estimated value</div><div className="v">{fmtMoney(t.value)}</div></div>
                   <div className="fact"><div className="k">Documents</div><div className="v">{t.documents.length}</div></div>
+                  <Briefing b={t.briefing} />
                 </div>
                 {t.documents.length > 0 && <div className="docs">
                   {t.documents.map((doc, i) => <a key={i} href={doc.url} target="_blank" rel="noopener">📄 {doc.title}</a>)}
@@ -304,6 +328,27 @@ function App() {
       </div>
     </div>
   );
+}
+
+const BRIEF_LABEL = { online: 'Online', 'online and in person': 'Online and in person', 'in person': 'In person', none: 'No briefing', unknown: 'Not stated' };
+function Briefing({ b }) {
+  if (!b) return null;
+  const when = b.date ? new Date(b.date).toLocaleString('en-ZA', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '';
+  return (
+    <div className="fact"><div className="k">Briefing</div>
+      <div className={'v' + (b.online ? ' ok' : '')}>{BRIEF_LABEL[b.mode] || 'Not stated'}</div>
+      {(when || b.compulsory != null) && <div className="note">{[when, b.compulsory === true ? 'compulsory' : b.compulsory === false ? 'optional' : ''].filter(Boolean).join(', ')}</div>}
+      {b.link && <div className="note"><a href={b.link} target="_blank" rel="noopener">Join link ↗</a></div>}
+    </div>
+  );
+}
+
+// Same tender shape the Ryno-Tec business hub imports (Tenders → Import from tender system)
+function exportForHub(list) {
+  const payload = { source: 'SA eTender Pro', exportedAt: new Date().toISOString(), tenders: list };
+  const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 1)], { type: 'application/json' }));
+  const a = document.createElement('a'); a.href = url; a.download = `etender-pro-${new Date().toISOString().slice(0, 10)}.json`; a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 const Pick = () => <div className="panel empty">Pick a tender on the Discover tab first.</div>;

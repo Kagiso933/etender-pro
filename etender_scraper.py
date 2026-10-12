@@ -163,6 +163,78 @@ def parse_date(value):
         return None
 
 
+# ---------------------------------------------------------------- briefing sessions
+ONLINE_TERMS = re.compile(r"\b(virtual(ly)?|online|ms[ -]?teams|microsoft teams|teams (meeting|link)|zoom|webex|google meet|webinar|"
+                          r"via (a )?link|link will be (sent|shared|provided|e-?mailed))\b", re.I)
+PHYSICAL_TERMS = re.compile(r"\b(boardroom|board room|auditorium|committee room|conference room|venue:|building|"
+                            r"\d{1,5}\s+\w+(\s\w+)?\s+(street|st|road|rd|avenue|ave|drive|dr)\b|on.?site|site (meeting|inspection|visit))", re.I)
+MONTHS = "january|february|march|april|may|june|july|august|september|october|november|december"
+DATE_TEXT = re.compile(rf"\b(\d{{1,2}})(st|nd|rd|th)?\s+({MONTHS})\s+(\d{{4}})(?:\D{{1,25}}?(\d{{1,2}})\s*[h:.]\s*(\d{{2}}))?", re.I)
+BRIEF_TEXT = re.compile(r"[^.\n]{0,160}\bbriefing\b[^.\n]{0,220}", re.I)
+URL = re.compile(r"https?://\S+")
+
+
+def briefing_info(t, text):
+    """Work out whether a tender has a briefing session, and whether it can be attended online.
+
+    eTenders publishes a briefingSession object on the tender (isSession, compulsory, date, venue)
+    when the department fills it in. Many departments only mention the briefing in the description,
+    so fall back to reading that text.
+    """
+    bs = t.get("briefingSession") or {}
+    if not isinstance(bs, dict):
+        bs = {}
+    venue = str(bs.get("venue") or "").strip()
+    held = bs.get("isSession")
+    compulsory = bs.get("compulsory")
+    date = parse_date(bs.get("date")) if isinstance(bs.get("date"), str) else None
+
+    snippet = ""
+    m = BRIEF_TEXT.search(text or "")
+    if m:
+        snippet = re.sub(r"\s+", " ", m.group(0)).strip()
+        if held is None:
+            held = not re.search(r"\bno (compulsory )?briefing\b|\bbriefing.{0,20}\bnot (be )?(held|applicable)\b", snippet, re.I)
+        if compulsory is None:
+            if re.search(r"\b(non|none|not)[ -]?compulsory\b|\boptional\b", snippet, re.I):
+                compulsory = False
+            elif re.search(r"\bcompulsory|mandatory\b", snippet, re.I):
+                compulsory = True
+        if not date:
+            d = DATE_TEXT.search(snippet)
+            if d:
+                try:
+                    hh, mm = int(d.group(5) or 0), int(d.group(6) or 0)
+                    date = datetime.strptime(f"{d.group(1)} {d.group(3)} {d.group(4)}", "%d %B %Y").replace(
+                        hour=hh if hh < 24 else 0, minute=mm if mm < 60 else 0, tzinfo=timezone(timedelta(hours=2)))
+                except ValueError:
+                    date = None
+
+    where = f"{venue} {snippet}"
+    online, physical = bool(ONLINE_TERMS.search(where)), bool(PHYSICAL_TERMS.search(where))
+    if held is False:
+        mode = "none"
+    elif online and physical:
+        mode = "online and in person"
+    elif online:
+        mode = "online"
+    elif venue or held:
+        mode = "in person"
+    else:
+        mode = "unknown"
+    link = URL.search(where)
+    return {
+        "held": held,
+        "compulsory": compulsory,
+        "date": date.isoformat() if date else None,
+        "venue": venue,
+        "mode": mode,
+        "online": mode in ("online", "online and in person"),
+        "link": link.group(0).rstrip(".,);") if link else None,
+        "note": snippet[:300] if not venue else "",
+    }
+
+
 def to_tender(release, now, keep_all=False):
     t = release.get("tender") or {}
     end = parse_date((t.get("tenderPeriod") or {}).get("endDate"))
@@ -198,6 +270,8 @@ def to_tender(release, now, keep_all=False):
     } for d in (t.get("documents") or []) if d.get("url")]
 
     start = parse_date((t.get("tenderPeriod") or {}).get("startDate"))
+    briefing = briefing_info(t, " ".join([description, t.get("eligibilityCriteria") or "", t.get("submissionMethodDetails") or ""]))
+    province = t.get("province") or contact.get("region") or ""
     return {
         "id": release.get("ocid"),
         "reference": title,  # eTenders "title" is usually the bid number
@@ -214,6 +288,8 @@ def to_tender(release, now, keep_all=False):
         "eligibility": t.get("eligibilityCriteria") or "",
         "submission": t.get("submissionMethodDetails") or "",
         "contact": contact,
+        "province": province,
+        "briefing": briefing,
         "documents": docs,
         "portalUrl": PORTAL_URL,  # search the portal by the reference number
     }
@@ -318,6 +394,7 @@ def main():
     cats = {}
     for t in tenders:
         cats[t["category"]] = cats.get(t["category"], 0) + 1
+    online = sum(1 for t in tenders if t["briefing"]["online"])
 
     payload = {
         "source": API_URL,
@@ -328,6 +405,7 @@ def main():
         "uniqueTenders": unique,
         "count": len(tenders),
         "categories": cats,
+        "onlineBriefings": online,
         "tenders": tenders,
     }
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
@@ -335,7 +413,7 @@ def main():
         json.dump(payload, f, indent=1, ensure_ascii=False)
 
     print(f"\nScanned {scanned} releases ({unique} unique tenders)")
-    print(f"Open IT tenders: {len(tenders)} -> {args.out}")
+    print(f"Open IT tenders: {len(tenders)} -> {args.out} ({online} with an online briefing)")
     for name, n in sorted(cats.items(), key=lambda kv: -kv[1]):
         print(f"  {name}: {n}")
 
