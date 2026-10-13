@@ -9,6 +9,7 @@
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
 <style>
   /* Ryno-Tec brand: charcoal header, light working area, orange accent (matches ryno-tec.co.za and the Business Hub) */
   :root {
@@ -205,7 +206,7 @@ function askWorkspace(optional) {
   return entered.trim();
 }
 
-async function askClaude(prompt, maxTokens = 3000, retried = false) {
+async function askClaude(prompt, maxTokens = 3000, retried = false, files = []) {
   const key = getKey(false);
   if (!key) throw new Error('No API key set. Use "API key" at the top right.');
   const workspace = store.get('anthropic_workspace_id', '');
@@ -214,16 +215,112 @@ async function askClaude(prompt, maxTokens = 3000, retried = false) {
   if (workspace) headers['anthropic-workspace-id'] = workspace;
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST', headers,
-    body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] }),
+    body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, messages: [{ role: 'user', content: files.length ? [...files.map(fileBlock), { type: 'text', text: prompt }] : prompt }] }),
   });
   const data = await res.json().catch(() => ({}));
   if (!res.ok) {
     const msg = data?.error?.message || `API error ${res.status}`;
-    if (!retried && /workspace/i.test(msg) && askWorkspace(false)) return askClaude(prompt, maxTokens, true);
+    if (!retried && /workspace/i.test(msg) && askWorkspace(false)) return askClaude(prompt, maxTokens, true, files);
+    if (files.length && /page|too large|exceed|size|pdf/i.test(msg)) throw new Error(msg + ' Large tender packs can exceed the limit: remove an attachment, upload only the sections you need (scope, specifications, evaluation), or paste the text instead.');
     throw new Error(msg);
   }
   return (data.content || []).filter(c => c.type === 'text').map(c => c.text).join('\n');
 }
+
+// ---------- tender documents: uploaded files kept per tender in IndexedDB ----------
+const DOC_TYPES = { 'application/pdf': 'pdf', 'image/png': 'image', 'image/jpeg': 'image', 'image/webp': 'image', 'image/gif': 'image' };
+const MAX_DOC_BYTES = 24 * 1024 * 1024;
+const idb = (() => {
+  let dbp = null;
+  const open = () => dbp || (dbp = new Promise((res, rej) => {
+    try { const r = indexedDB.open('etender-pro-docs', 1); r.onupgradeneeded = () => r.result.createObjectStore('docs'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); } catch (e) { rej(e); }
+  }));
+  const tx = (mode, fn) => open().then(db => new Promise((res, rej) => { const t = db.transaction('docs', mode); const q = fn(t.objectStore('docs')); t.oncomplete = () => res(q && q.result); t.onerror = () => rej(t.error); }));
+  return { get: k => tx('readonly', s => s.get(k)).catch(() => undefined), set: (k, v) => tx('readwrite', s => s.put(v, k)).catch(() => {}) };
+})();
+const MEM_DOCS = {};
+async function loadDocs(id) { if (MEM_DOCS[id]) return MEM_DOCS[id]; const v = await idb.get('files_' + id); return (MEM_DOCS[id] = Array.isArray(v) ? v : []); }
+async function saveDocs(id, files) { MEM_DOCS[id] = files; await idb.set('files_' + id, files); }
+const fileBlock = f => f.kind === 'pdf'
+  ? { type: 'document', source: { type: 'base64', media_type: 'application/pdf', data: f.data }, title: f.name }
+  : { type: 'image', source: { type: 'base64', media_type: f.type, data: f.data } };
+const toB64 = buf => { const u = new Uint8Array(buf); let s = ''; for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(s); };
+const fmtSize = n => n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(n / 1024)) + ' KB';
+
+// Reads uploads: PDFs and images go to Claude as-is (it reads scanned pages too); Word and text files become text.
+async function readUploads(fileList) {
+  const files = [], texts = [], skipped = [];
+  for (const file of fileList) {
+    const name = file.name, lower = name.toLowerCase();
+    try {
+      if (DOC_TYPES[file.type] || lower.endsWith('.pdf')) {
+        const type = DOC_TYPES[file.type] ? file.type : 'application/pdf';
+        files.push({ name, type, kind: DOC_TYPES[type], size: file.size, data: toB64(await file.arrayBuffer()) });
+      } else if (lower.endsWith('.docx')) {
+        if (!window.mammoth) throw new Error('Word reader did not load');
+        const r = await window.mammoth.extractRawText({ arrayBuffer: await file.arrayBuffer() });
+        texts.push(`--- ${name} ---\n${r.value.trim()}`);
+      } else if (lower.endsWith('.doc')) {
+        skipped.push(`${name} (old .doc format: save it as PDF or .docx first)`);
+      } else if (/\.(txt|csv|md|html?)$/.test(lower) || file.type.startsWith('text/')) {
+        texts.push(`--- ${name} ---\n${(await file.text()).trim()}`);
+      } else skipped.push(`${name} (unsupported type)`);
+    } catch (e) { skipped.push(`${name} (${e.message || 'could not be read'})`); }
+  }
+  return { files, texts, skipped };
+}
+
+function DocInput({ t, docText, setDocText, files, setFiles }) {
+  const [msg, setMsg] = useState('');
+  const [busy, setBusy] = useState(false);
+  const total = files.reduce((a, f) => a + f.size, 0);
+  const onPick = async (e) => {
+    const list = [...(e.target.files || [])]; e.target.value = '';
+    if (!list.length) return;
+    setBusy(true); setMsg('');
+    const { files: add, texts, skipped } = await readUploads(list);
+    const next = [...files, ...add.filter(a => !files.some(f => f.name === a.name && f.size === a.size))];
+    const size = next.reduce((a, f) => a + f.size, 0);
+    if (size > MAX_DOC_BYTES) { setMsg(`That would be ${fmtSize(size)}; the limit is ${fmtSize(MAX_DOC_BYTES)}. Upload fewer or smaller files.`); setBusy(false); return; }
+    setFiles(next); await saveDocs(t.id, next);
+    if (texts.length) setDocText((docText ? docText + '\n\n' : '') + texts.join('\n\n'));
+    const parts = [];
+    if (add.length) parts.push(`${add.length} file${add.length > 1 ? 's' : ''} attached`);
+    if (texts.length) parts.push(`text from ${texts.length} Word/text file${texts.length > 1 ? 's' : ''} added below`);
+    if (skipped.length) parts.push('skipped: ' + skipped.join('; '));
+    setMsg(parts.join('. ') + '.');
+    setBusy(false);
+  };
+  const remove = async (i) => { const next = files.filter((_, j) => j !== i); setFiles(next); await saveDocs(t.id, next); };
+  return <>
+    <label className="l">Tender documents</label>
+    <div className="row" style={{ marginTop: 0, alignItems: 'center' }}>
+      <label className="btn primary" style={{ cursor: busy ? 'wait' : 'pointer' }}>
+        {busy ? 'Reading files…' : 'Upload PDF, Word or scans'}
+        <input type="file" multiple hidden accept=".pdf,.docx,.doc,.txt,.png,.jpg,.jpeg,.webp,application/pdf" onChange={onPick} disabled={busy} />
+      </label>
+      <span className="note">Download the bid documents from the links above, then upload them here. Claude reads PDFs directly, including scanned pages.</span>
+    </div>
+    {files.length > 0 && <div className="docs" style={{ marginTop: 10 }}>
+      {files.map((f, i) => <span key={i} className="chip gray" style={{ display: 'inline-flex', gap: 6, alignItems: 'center', marginBottom: 6 }}>
+        {f.kind === 'pdf' ? '📄' : '🖼'} {f.name} · {fmtSize(f.size)}
+        <button className="btn small" style={{ padding: '0 6px', border: 0, background: 'transparent' }} aria-label={'Remove ' + f.name} onClick={() => remove(i)}>×</button></span>)}
+      <div className="note">{fmtSize(total)} attached. Saved in this browser for this tender. Each analysis sends the files to Claude, which uses more of your API credit than pasted text.</div>
+    </div>}
+    {msg && <p className="note" style={{ marginTop: 8 }}>{msg}</p>}
+    <label className="l" style={{ marginTop: 14 }}>Or paste text from the documents</label>
+    <textarea rows="5" value={docText} onChange={e => setDocText(e.target.value)}
+      placeholder="Optional if you uploaded files. Paste the scope, specifications and evaluation criteria." />
+  </>;
+}
+function useDocFiles(id) {
+  const [files, setFiles] = useState(MEM_DOCS[id] || []);
+  useEffect(() => { let live = true; loadDocs(id).then(f => { if (live) setFiles(f); }); return () => { live = false; }; }, [id]);
+  return [files, setFiles];
+}
+const docsNote = (docText, files) => files.length || docText
+  ? `${files.length ? `\nThe attached ${files.length > 1 ? files.length + ' files are' : 'file is'} the tender documents (${files.map(f => f.name).join(', ')}). Read them in full.` : ''}${docText ? `\nTEXT FROM THE TENDER DOCUMENTS:\n${docText.slice(0, 60000)}` : ''}`
+  : '';
 
 const tenderBrief = (t) => `Reference: ${t.reference}
 Description: ${t.title}
@@ -429,6 +526,7 @@ function TenderHeader({ t }) {
 function Analysis({ t }) {
   const key = 'analysis_' + t.id;
   const [docText, setDocText] = useState(store.get('doctext_' + t.id, ''));
+  const [files, setFiles] = useDocFiles(t.id);
   const [out, setOut] = useState(store.get(key, ''));
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState('');
@@ -441,7 +539,7 @@ function Analysis({ t }) {
 
 TENDER
 ${tenderBrief(t)}
-${docText ? `\nTEXT FROM THE TENDER DOCUMENTS:\n${docText.slice(0, 60000)}` : '\n(No tender document text provided - say where the documents need to be checked.)'}
+${docsNote(docText, files) || '\n(No tender documents provided - say where the documents need to be checked.)'}
 
 Write a practical bid analysis with these plain-text sections (no markdown tables):
 1. WHAT THEY WANT - scope in plain language
@@ -451,7 +549,7 @@ Write a practical bid analysis with these plain-text sections (no markdown table
 5. WHAT TO SOURCE AND WHERE - products/services/licences needed and suitable South African distributors, OEM partners or service providers to get quotes from
 6. ROUGH COST BUILD-UP - main cost lines to price (do not invent the buyer's budget)
 7. ACTION PLAN - day-by-day steps until the closing date
-Be specific. If something cannot be known without the documents, say so instead of guessing.`, 4000);
+Be specific. If something cannot be known without the documents, say so instead of guessing.`, 4000, false, files);
       setOut(text); store.set(key, text);
     } catch (e) { setErr(e.message); }
     setBusy(false);
@@ -460,9 +558,7 @@ Be specific. If something cannot be known without the documents, say so instead 
   return <>
     <TenderHeader t={t} />
     <div className="panel">
-      <label className="l">Paste text from the tender documents (optional, makes the analysis far more accurate)</label>
-      <textarea rows="6" value={docText} onChange={e => setDocText(e.target.value)}
-        placeholder="Open the PDF above, select all, copy and paste here - especially the scope, specifications and evaluation criteria." />
+      <DocInput t={t} docText={docText} setDocText={setDocText} files={files} setFiles={setFiles} />
       <div className="row">
         <button className="btn primary" onClick={run} disabled={busy}>{busy ? 'Analysing…' : out ? 'Re-run analysis' : 'Run AI analysis'}</button>
         {out && <button className="btn" onClick={() => download(`Analysis_${t.reference}.txt`, out)}>Download</button>}
@@ -481,6 +577,7 @@ function BidBuilder({ t }) {
   const [help, setHelp] = useState(null); // {title, text}
   const [busy, setBusy] = useState('');
   const [docText, setDocText] = useState(store.get('doctext_' + t.id, ''));
+  const [files, setFiles] = useDocFiles(t.id);
   const [newReq, setNewReq] = useState('');
   useEffect(() => { store.set(sKey, state); }, [state]);
   useEffect(() => { store.set('doctext_' + t.id, docText); }, [docText]);
@@ -507,14 +604,13 @@ Give: exactly what document/evidence to submit, where to get it in South Africa 
   };
 
   const extract = async () => {
-    if (!docText.trim()) { setHelp({ title: 'Paste the tender text first', text: 'Open the tender PDF, copy its text into the box, then extract.' }); return; }
+    if (!docText.trim() && !files.length) { setHelp({ title: 'Add the tender documents first', text: 'Upload the tender PDF or Word file, or paste its text, then extract.' }); return; }
     setBusy('extract');
     try {
       const text = await askClaude(`From this South African government tender document, list every requirement the bidder must meet or submit that is specific to this tender (mandatory documents, technical specifications, certifications, experience, briefing sessions, functionality criteria). Skip generic items already covered: CSD, tax compliance, CIPC, B-BBEE, SBD forms.
 Return ONLY a JSON array of objects: [{"name": "short requirement", "where": "where/how to obtain or evidence it in South Africa"}]. Max 25 items.
 
-DOCUMENT:
-${docText.slice(0, 60000)}`, 3000);
+DOCUMENT:${docsNote(docText, files)}`, 3000, false, files);
       const m = text.match(/\[[\s\S]*\]/);
       const items = m ? JSON.parse(m[0]) : [];
       items.forEach(i => i?.name && addCustom(String(i.name), String(i.where || '')));
@@ -528,8 +624,8 @@ ${docText.slice(0, 60000)}`, 3000);
     try {
       const text = await askClaude(`Draft a bid response pack for this South African government IT tender, written for the bidder to complete.
 ${tenderBrief(t)}
-${docText ? `\nTENDER TEXT:\n${docText.slice(0, 50000)}` : ''}
-Include: cover letter, executive summary, company profile (with placeholders), understanding of requirements, technical solution and methodology, project plan and timeline, team and experience, risk management, pricing schedule structure, compliance checklist, and list of annexures. Use [PLACEHOLDER] for anything the bidder must fill in. Plain text with clear headings.`, 6000);
+${docsNote(docText, files)}
+Include: cover letter, executive summary, company profile (with placeholders), understanding of requirements, technical solution and methodology, project plan and timeline, team and experience, risk management, pricing schedule structure, compliance checklist, and list of annexures. Use [PLACEHOLDER] for anything the bidder must fill in. Plain text with clear headings.`, 6000, false, files);
       download(`Bid_Response_${t.reference.replace(/[^\w-]+/g, '_')}.txt`, text);
     } catch (e) { setHelp({ title: 'Error', text: e.message }); }
     setBusy('');
@@ -549,8 +645,8 @@ Include: cover letter, executive summary, company profile (with placeholders), u
 
     <div className="panel sec">
       <h2>Tender-specific requirements</h2>
-      <p className="note">The detailed requirements are inside the tender PDFs. Paste the document text and let AI pull them into your checklist, or add them yourself.</p>
-      <textarea rows="5" value={docText} onChange={e => setDocText(e.target.value)} placeholder="Paste tender document text here…" />
+      <p className="note">The detailed requirements are inside the tender documents. Upload them (or paste their text) and let AI pull them into your checklist, or add them yourself. Files you upload here are shared with the AI analysis tab.</p>
+      <DocInput t={t} docText={docText} setDocText={setDocText} files={files} setFiles={setFiles} />
       <div className="row">
         <button className="btn primary" onClick={extract} disabled={!!busy}>{busy === 'extract' ? 'Extracting…' : 'Extract requirements (AI)'}</button>
       </div>
