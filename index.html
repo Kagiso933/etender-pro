@@ -68,7 +68,7 @@
   .btn:hover { border-color: var(--accent); }
   .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
   .btn.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
-  .btn:disabled { opacity: .55; cursor: not-allowed; }
+  .btn:disabled, .btn.off { opacity: .55; cursor: not-allowed; }
 
   .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 6px 0 20px; flex-wrap: wrap; }
   .tabs button { padding: 11px 16px; border: 0; border-bottom: 3px solid transparent; background: transparent; color: var(--muted); font-weight: 600; font-size: 15px; margin-bottom: -1px; }
@@ -206,25 +206,34 @@ function askWorkspace(optional) {
   return entered.trim();
 }
 
-async function askClaude(prompt, maxTokens = 3000, retried = false, files = []) {
+async function askClaude(prompt, maxTokens = 3000, retried = false, files = [], tools = null) {
   const key = getKey(false);
   if (!key) throw new Error('No API key set. Use "API key" at the top right.');
   const workspace = store.get('anthropic_workspace_id', '');
   const headers = { 'Content-Type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01',
                     'anthropic-dangerous-direct-browser-access': 'true' };
   if (workspace) headers['anthropic-workspace-id'] = workspace;
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST', headers,
-    body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, messages: [{ role: 'user', content: files.length ? [...files.map(fileBlock), { type: 'text', text: prompt }] : prompt }] }),
-  });
-  const data = await res.json().catch(() => ({}));
+  const messages = [{ role: 'user', content: files.length ? [...files.map(fileBlock), { type: 'text', text: prompt }] : prompt }];
+  let res, data, parts = [];
+  for (let turn = 0; turn < 4; turn++) {
+    res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST', headers,
+      body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, messages, ...(tools ? { tools } : {}) }),
+    });
+    data = await res.json().catch(() => ({}));
+    if (!res.ok) break;
+    parts.push(...(data.content || []).filter(c => c.type === 'text').map(c => c.text));
+    if (data.stop_reason !== 'pause_turn') break;
+    messages.push({ role: 'assistant', content: data.content }); // long web searches pause; let them finish
+  }
   if (!res.ok) {
     const msg = data?.error?.message || `API error ${res.status}`;
-    if (!retried && /workspace/i.test(msg) && askWorkspace(false)) return askClaude(prompt, maxTokens, true, files);
+    if (!retried && /workspace/i.test(msg) && askWorkspace(false)) return askClaude(prompt, maxTokens, true, files, tools);
+    if (tools && /web_search|web search|tool/i.test(msg)) throw new Error(msg + ' Web search may be switched off for your organisation: turn it on in Claude Console > Settings > Privacy (web search), then try again.');
     if (files.length && /page|too large|exceed|size|pdf/i.test(msg)) throw new Error(msg + ' Large tender packs can exceed the limit: remove an attachment, upload only the sections you need (scope, specifications, evaluation), or paste the text instead.');
     throw new Error(msg);
   }
-  return (data.content || []).filter(c => c.type === 'text').map(c => c.text).join('\n');
+  return parts.join('\n');
 }
 
 // ---------- tender documents: uploaded files kept per tender in IndexedDB ----------
@@ -364,7 +373,7 @@ function App() {
   const openFromHash = (list) => {
     const h = new URLSearchParams(location.hash.slice(1));
     const id = h.get('tender');
-    if (id && list.some(t => t.id === id)) { setSelId(id); setTab(['bid', 'analysis'].includes(h.get('tab')) ? h.get('tab') : 'bid'); }
+    if (id && list.some(t => t.id === id)) { setSelId(id); setTab(['bid', 'analysis', 'quotes'].includes(h.get('tab')) ? h.get('tab') : 'bid'); }
   };
   useEffect(() => { const f = () => data && openFromHash(data.tenders); window.addEventListener('hashchange', f); return () => window.removeEventListener('hashchange', f); }, [data]);
   useEffect(() => { store.set('selected_tender', selId); }, [selId]);
@@ -406,7 +415,7 @@ function App() {
 
       <div className="wrap">
         <div className="tabs">
-          {[['discover', 'Discover tenders'], ['analysis', 'AI analysis'], ['bid', 'Bid builder']].map(([id, label]) =>
+          {[['discover', 'Discover tenders'], ['analysis', 'AI analysis'], ['bid', 'Bid builder'], ['quotes', 'Supplier quotes']].map(([id, label]) =>
             <button key={id} className={tab === id ? 'on' : ''} onClick={() => setTab(id)}>{label}</button>)}
         </div>
 
@@ -472,6 +481,7 @@ function App() {
                 <div className="row">
                   <button className="btn primary" onClick={() => { setSelId(t.id); setTab('bid'); }}>Build bid</button>
                   <button className="btn" onClick={() => { setSelId(t.id); setTab('analysis'); }}>AI analysis</button>
+                  {isSupply(t) && <button className="btn" onClick={() => { setSelId(t.id); setTab('quotes'); }}>Get supplier quotes</button>}
                   <button className="btn" onClick={() => toggleSave(t.id)}>{saved.includes(t.id) ? 'Unsave' : 'Save'}</button>
                 </div>
               </div>
@@ -481,6 +491,7 @@ function App() {
 
         {tab === 'analysis' && (sel ? <Analysis t={sel} /> : <Pick />)}
         {tab === 'bid' && (sel ? <BidBuilder t={sel} /> : <Pick />)}
+        {tab === 'quotes' && (sel ? <Sourcing t={sel} /> : <Pick />)}
       </div>
     </div>
   );
@@ -680,6 +691,222 @@ Include: cover letter, executive summary, company profile (with placeholders), u
         <h2>{help.title}</h2><div className="ai" style={{ marginTop: 10 }}>{help.text}</div>
         <div className="row"><button className="btn primary" onClick={() => setHelp(null)}>Close</button></div>
       </div></div>}
+  </>;
+}
+
+// ---------- Supplier quotes: neutral RFQs that never reveal the tender ----------
+const isSupply = t => /suppl(y|ies)\b[^.;:]{0,40}deliver|deliver(y|ies)? of|procurement of (hardware|laptops?|desktops?|equipment|licen)|purchase of|\b(laptops?|desktops?|notebooks?|tablets?|printers?|toners?|cartridges?|monitors?|kits?|ups units?|hardware|licen[cs]es)\b/i.test(t.title || '');
+const SENDER_DEFAULT = { name: 'Kagiso Tshukudu', company: 'Ryno-Tec Consulting (Pty) Ltd', email: '', phone: '', website: 'www.ryno-tec.co.za' };
+const SUPPLY_TYPES = ['Not sent', 'Requested', 'Quoted', 'Declined'];
+const roundQty = q => !q ? q : q <= 10 ? q : q <= 100 ? Math.ceil(q / 10) * 10 : Math.ceil(q / 50) * 50;
+const lastJsonArray = text => { const m = String(text).match(/\[[\s\S]*\]/g); if (!m) return []; for (let i = m.length - 1; i >= 0; i--) { try { const v = JSON.parse(m[i]); if (Array.isArray(v)) return v; } catch (e) {} } return []; };
+const addBizDays = (n) => { const d = new Date(); while (n > 0) { d.setDate(d.getDate() + 1); if (d.getDay() % 6) n--; } return d.toISOString().slice(0, 10); };
+const uid = () => Math.random().toString(36).slice(2, 9);
+
+// Anything that would let a supplier find the tender and bid around you
+function leakTerms(t, sender) {
+  const terms = [t.reference, t.department, t.contact?.name, t.contact?.email, t.portalUrl].filter(x => x && String(x).trim().length > 3);
+  return { terms, words: /\b(tenders?|bids?|bidders?|bidding|SBD ?\d*|RFB|RFP|PPPFA|CSD|municipality|municipal|department of|closing date|compulsory briefing|etenders?)\b/gi };
+}
+function findLeaks(text, t) {
+  const { terms, words } = leakTerms(t);
+  const low = text.toLowerCase(), hits = new Set();
+  terms.forEach(x => { if (low.includes(String(x).toLowerCase())) hits.add(String(x)); });
+  (text.match(words) || []).forEach(w => hits.add(w));
+  return [...hits];
+}
+
+function rfqText(st, t, contact) {
+  const s = st.sender, items = st.items.filter(i => i.name.trim());
+  const subject = items.length ? `Request for quotation: ${items[0].name}${items.length > 1 ? ` and ${items.length - 1} other item${items.length > 2 ? 's' : ''}` : ''}` : 'Request for quotation';
+  const lines = items.map((i, n) => {
+    const q = st.vague ? roundQty(+i.qty) : i.qty;
+    const qty = q ? `\n   Quantity: ${st.vague && +q !== +i.qty ? 'about ' : ''}${q}${i.unit ? ' ' + i.unit : ''}` : '';
+    return `${n + 1}. ${i.name}${i.spec ? `\n   Specification: ${i.spec}` : ''}${qty}`;
+  }).join('\n\n');
+  const asks = ['Unit price and total, excluding VAT', `Delivered price${st.region ? ' to ' + st.region : ''} (or delivery cost separately)`, 'Lead time and current stock availability',
+    'Brand, model and part number offered, with a spec sheet', 'Warranty terms', 'Quote validity (90 days if possible)'];
+  if (st.vague) asks.push('Volume pricing, as final quantities may still change');
+  const sig = [s.name, s.company, s.phone, s.email, s.website].filter(Boolean).join('\n');
+  const body = `Good day${contact ? ' ' + contact : ''},
+
+${s.company} would like a quotation for the following:
+
+${lines}
+
+Please include:
+${asks.map(a => '- ' + a).join('\n')}
+${st.extra ? '\n' + st.extra + '\n' : ''}
+We would appreciate your quotation by ${st.by ? new Date(st.by + 'T12:00').toLocaleDateString('en-ZA', { weekday: 'long', day: 'numeric', month: 'long' }) : 'the end of the week'}.
+
+Kind regards
+${sig}`;
+  return { subject, body };
+}
+
+function Sourcing({ t }) {
+  const sKey = 'sourcing_' + t.id;
+  const fresh = () => ({ items: [], suppliers: [], region: t.province && t.province !== 'National' ? t.province : '', vague: false, extra: '', by: addBizDays(3), sender: store.get('rfq_sender', SENDER_DEFAULT) });
+  const [st, setSt] = useState(() => ({ ...fresh(), ...store.get(sKey, {}) }));
+  const [docText, setDocText] = useState(store.get('doctext_' + t.id, ''));
+  const [files, setFiles] = useDocFiles(t.id);
+  const [busy, setBusy] = useState('');
+  const [msg, setMsg] = useState('');
+  const [showDocs, setShowDocs] = useState(false);
+  const [preview, setPreview] = useState(null);
+  useEffect(() => { store.set(sKey, st); store.set('rfq_sender', st.sender); }, [st]);
+  useEffect(() => { store.set('doctext_' + t.id, docText); }, [docText]);
+  const up = patch => setSt(s => ({ ...s, ...patch }));
+  const setItem = (id, k, v) => setSt(s => ({ ...s, items: s.items.map(i => i.id === id ? { ...i, [k]: v } : i) }));
+  const setSup = (id, k, v) => setSt(s => ({ ...s, suppliers: s.suppliers.map(i => i.id === id ? { ...i, [k]: v } : i) }));
+  const setSender = (k, v) => setSt(s => ({ ...s, sender: { ...s.sender, [k]: v } }));
+
+  const extract = async () => {
+    setBusy('items'); setMsg('');
+    try {
+      const text = await askClaude(`You are preparing a supplier request for quotation. From the procurement details below, list every physical product, licence or consumable that must be bought from a supplier (not labour or services we deliver ourselves).
+For each item write a neutral product description a distributor can quote on: product type, brand/model or equivalent if specified, and the technical specification.
+NEVER include buyer or organisation names, reference or contract numbers, site or delivery addresses, project names, dates, or the words tender, bid, RFQ number, SBD, municipality or department.
+Return ONLY a JSON array: [{"name": "short product name", "spec": "technical specification", "qty": number or null, "unit": "e.g. units, licences, kits"}]. Max 30 items.
+
+TITLE: ${t.title}
+${docsNote(docText, files) || '(Only the title is available. List what can be inferred and leave qty null if unknown.)'}`, 3000, false, files);
+      const items = lastJsonArray(text).filter(i => i && i.name).map(i => ({ id: uid(), name: String(i.name), spec: String(i.spec || ''), qty: i.qty == null ? '' : String(i.qty), unit: String(i.unit || '') }));
+      if (!items.length) throw new Error('No products found. Upload the specification or bill of quantities, or add items yourself.');
+      up({ items: [...st.items, ...items] });
+      setMsg(`Added ${items.length} item${items.length > 1 ? 's' : ''}. Check each one before you request quotes.`);
+    } catch (e) { setMsg(e.message); }
+    setBusy('');
+  };
+
+  const findSuppliers = async () => {
+    const items = st.items.filter(i => i.name.trim());
+    if (!items.length) { setMsg('Add the products first.'); return; }
+    setBusy('suppliers'); setMsg('');
+    try {
+      const text = await askClaude(`Search the web for South African companies that can supply these products${st.region ? `, ideally with delivery to ${st.region}` : ''}. Prefer authorised distributors, OEM partners and established resellers that sell to businesses.
+
+PRODUCTS:
+${items.map(i => `- ${i.name}${i.spec ? ': ' + i.spec.slice(0, 200) : ''}`).join('\n')}
+
+Find up to 8 suppliers. Use only contact details you actually found on their website or listing; leave a field empty rather than guess. Prefer a sales or quotes email address.
+Return ONLY a JSON array at the end: [{"name": "", "website": "https://...", "email": "", "phone": "", "city": "", "covers": ["product names from the list"], "note": "why they fit, e.g. authorised distributor for X"}]`, 5000, false, [],
+        [{ type: 'web_search_20250305', name: 'web_search', max_uses: 8, user_location: { type: 'approximate', country: 'ZA', timezone: 'Africa/Johannesburg' } }]);
+      const known = new Set(st.suppliers.map(x => x.name.toLowerCase()));
+      const found = lastJsonArray(text).filter(x => x && x.name && !known.has(String(x.name).toLowerCase())).map(x => ({
+        id: uid(), name: String(x.name), website: String(x.website || ''), email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x.email || '') ? x.email : '', phone: String(x.phone || ''),
+        city: String(x.city || ''), covers: Array.isArray(x.covers) ? x.covers.join(', ') : String(x.covers || ''), note: String(x.note || ''), contact: '', status: 'Not sent', price: '', pick: true }));
+      if (!found.length) throw new Error('No new suppliers found. Try simpler product names, or add suppliers you know.');
+      up({ suppliers: [...st.suppliers, ...found] });
+      setMsg(`Found ${found.length} supplier${found.length > 1 ? 's' : ''}. Check the contact details on their websites before sending.`);
+    } catch (e) { setMsg(e.message); }
+    setBusy('');
+  };
+
+  const generic = rfqText(st, t, '');
+  const leaks = findLeaks(generic.subject + '\n' + generic.body, t);
+  const picked = st.suppliers.filter(x => x.pick && x.email);
+  const mailto = (to, bcc, r) => `mailto:${encodeURIComponent(to || '')}?${bcc ? 'bcc=' + encodeURIComponent(bcc) + '&' : ''}subject=${encodeURIComponent(r.subject)}&body=${encodeURIComponent(r.body)}`;
+  const gmail = (to, bcc, r) => `https://mail.google.com/mail/?view=cm&fs=1${to ? '&to=' + encodeURIComponent(to) : ''}${bcc ? '&bcc=' + encodeURIComponent(bcc) : ''}&su=${encodeURIComponent(r.subject)}&body=${encodeURIComponent(r.body)}`;
+  const markSent = ids => setSt(s => ({ ...s, suppliers: s.suppliers.map(x => ids.includes(x.id) && x.status === 'Not sent' ? { ...x, status: 'Requested', sentOn: new Date().toISOString().slice(0, 10) } : x) }));
+  const copy = txt => navigator.clipboard?.writeText(txt).then(() => setMsg('Copied.')).catch(() => setPreview({ title: 'Copy this', text: txt }));
+  const guard = fn => e => { if (leaks.length && !confirm(`The request still mentions: ${leaks.join(', ')}.\nSuppliers could use this to find the tender. Send anyway?`)) { e.preventDefault(); return; } fn && fn(); };
+  const inp = { fontSize: 14, padding: '7px 10px', width: '100%' };
+
+  return <>
+    <TenderHeader t={t} />
+    <div className="panel">
+      <h2>1. What you need to buy</h2>
+      <p className="note">Pull the products from the tender documents, then edit them. Descriptions are kept neutral: no buyer, reference number, site or tender wording goes to suppliers.</p>
+      <div className="row">
+        <button className="btn primary" onClick={extract} disabled={!!busy}>{busy === 'items' ? 'Reading…' : st.items.length ? 'Extract more items (AI)' : 'Extract products (AI)'}</button>
+        <button className="btn" onClick={() => up({ items: [...st.items, { id: uid(), name: '', spec: '', qty: '', unit: '' }] })}>Add item</button>
+        <button className="btn" onClick={() => setShowDocs(v => !v)}>{showDocs ? 'Hide documents' : `Tender documents${files.length ? ` (${files.length})` : ''}`}</button>
+      </div>
+      {showDocs && <div className="sec"><DocInput t={t} docText={docText} setDocText={setDocText} files={files} setFiles={setFiles} /></div>}
+      {st.items.length > 0 && <div className="sec">{st.items.map((i, n) => (
+        <div key={i.id} className="req" style={{ flexWrap: 'wrap' }}>
+          <strong style={{ width: 22 }}>{n + 1}.</strong>
+          <div style={{ flex: '1 1 260px', display: 'grid', gap: 6 }}>
+            <input style={inp} value={i.name} placeholder="Product, e.g. 24-port PoE managed switch" onChange={e => setItem(i.id, 'name', e.target.value)} />
+            <textarea style={{ ...inp, minHeight: 54 }} value={i.spec} placeholder="Specification" onChange={e => setItem(i.id, 'spec', e.target.value)} />
+          </div>
+          <div style={{ display: 'grid', gap: 6, width: 130 }}>
+            <input style={inp} value={i.qty} placeholder="Qty" inputMode="numeric" onChange={e => setItem(i.id, 'qty', e.target.value)} />
+            <input style={inp} value={i.unit} placeholder="Unit" onChange={e => setItem(i.id, 'unit', e.target.value)} />
+          </div>
+          <button className="btn" onClick={() => up({ items: st.items.filter(x => x.id !== i.id) })} aria-label={'Remove ' + i.name}>Remove</button>
+        </div>))}</div>}
+    </div>
+
+    <div className="panel sec">
+      <h2>2. Suppliers</h2>
+      <p className="note">Searches the web for South African distributors and resellers. Always confirm the email on their website.</p>
+      <div className="row">
+        <button className="btn primary" onClick={findSuppliers} disabled={!!busy || !st.items.length}>{busy === 'suppliers' ? 'Searching the web…' : st.suppliers.length ? 'Find more suppliers (AI)' : 'Find suppliers (AI)'}</button>
+        <button className="btn" onClick={() => up({ suppliers: [...st.suppliers, { id: uid(), name: '', website: '', email: '', phone: '', city: '', covers: '', note: '', contact: '', status: 'Not sent', price: '', pick: true, manual: true }] })}>Add supplier</button>
+      </div>
+      {st.suppliers.length > 0 && <div className="sec">{st.suppliers.map(x => (
+        <div key={x.id} className={'req' + (x.status === 'Quoted' ? ' done' : '')} style={{ flexWrap: 'wrap' }}>
+          <input type="checkbox" checked={!!x.pick} onChange={e => setSup(x.id, 'pick', e.target.checked)} aria-label={'Include ' + x.name} />
+          <div style={{ flex: '1 1 280px', minWidth: 0 }}>
+            {x.manual ? <input style={inp} value={x.name} placeholder="Supplier name" onChange={e => setSup(x.id, 'name', e.target.value)} />
+              : <strong>{x.name}</strong>}
+            {(x.city || x.covers) && <div className="where">{[x.city, x.covers && 'Covers: ' + x.covers].filter(Boolean).join(' · ')}</div>}
+            {x.note && <div className="where">{x.note}</div>}
+            <div className="where">{x.website && <a href={/^https?:/.test(x.website) ? x.website : 'https://' + x.website} target="_blank" rel="noopener">{x.website.replace(/^https?:\/\//, '').replace(/\/$/, '')} ↗</a>}{x.phone && ' · ' + x.phone}</div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 6, marginTop: 8 }}>
+              <input style={inp} value={x.email} placeholder="sales@… (check site)" onChange={e => setSup(x.id, 'email', e.target.value.trim())} />
+              <input style={inp} value={x.contact} placeholder="Contact name (optional)" onChange={e => setSup(x.id, 'contact', e.target.value)} />
+              <select style={inp} value={x.status} onChange={e => setSup(x.id, 'status', e.target.value)}>{SUPPLY_TYPES.map(o => <option key={o}>{o}</option>)}</select>
+              <input style={inp} value={x.price} placeholder="Quoted total (R)" onChange={e => setSup(x.id, 'price', e.target.value)} />
+            </div>
+            {x.sentOn && <div className="where">Requested {new Date(x.sentOn + 'T12:00').toLocaleDateString('en-ZA', { day: 'numeric', month: 'short' })}</div>}
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            {(() => { const r = rfqText(st, t, x.contact); return x.email ? <>
+              <a className="btn primary" href={gmail(x.email, '', r)} target="_blank" rel="noopener" onClick={guard(() => markSent([x.id]))}>Gmail</a>
+              <a className="btn" href={mailto(x.email, '', r)} onClick={guard(() => markSent([x.id]))}>Mail app</a></>
+              : <button className="btn" onClick={() => copy(r.subject + '\n\n' + r.body)}>Copy request</button>; })()}
+            <button className="btn" onClick={() => up({ suppliers: st.suppliers.filter(y => y.id !== x.id) })}>Remove</button>
+          </div>
+        </div>))}</div>}
+    </div>
+
+    <div className="panel sec">
+      <h2>3. Request for quotation</h2>
+      <div className="grid4" style={{ marginTop: 10 }}>
+        <div><label className="l">Deliver to (town or province)</label><input style={inp} value={st.region} placeholder="e.g. Pretoria, Gauteng" onChange={e => up({ region: e.target.value })} /></div>
+        <div><label className="l">Quotes needed by</label><input style={inp} type="date" value={st.by} onChange={e => up({ by: e.target.value })} /></div>
+        <div><label className="l">Your name</label><input style={inp} value={st.sender.name} onChange={e => setSender('name', e.target.value)} /></div>
+        <div><label className="l">Company</label><input style={inp} value={st.sender.company} onChange={e => setSender('company', e.target.value)} /></div>
+        <div><label className="l">Email</label><input style={inp} value={st.sender.email} placeholder="you@ryno-tec.co.za" onChange={e => setSender('email', e.target.value)} /></div>
+        <div><label className="l">Phone</label><input style={inp} value={st.sender.phone} onChange={e => setSender('phone', e.target.value)} /></div>
+      </div>
+      <label style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 12, fontSize: 14 }}>
+        <input type="checkbox" checked={st.vague} onChange={e => up({ vague: e.target.checked })} style={{ width: 18, height: 18, accentColor: 'var(--accent)' }} />
+        Round quantities and ask for volume pricing (exact quantities can identify a tender)</label>
+      <div style={{ marginTop: 10 }}><label className="l">Extra note (optional)</label>
+        <textarea style={{ ...inp, minHeight: 50 }} value={st.extra} placeholder="e.g. Please quote the equivalent if the exact model is unavailable." onChange={e => up({ extra: e.target.value })} /></div>
+      {leaks.length > 0 ? <p className="urgent" style={{ fontSize: 14 }}>Before sending, remove: {leaks.join(', ')}. Suppliers could search for it and quote the buyer directly.</p>
+        : st.items.length > 0 && <p className="ok" style={{ fontSize: 14 }}>No tender references, buyer names or tender wording found in the request.</p>}
+      <div className="ai" style={{ background: 'var(--bg)', border: '1px solid var(--line)', borderRadius: 4, padding: 14, marginTop: 10, fontSize: 14 }}><strong>{generic.subject}</strong>{'\n\n' + generic.body}</div>
+      <div className="row">
+        <a className={'btn primary' + (picked.length ? '' : ' off')} aria-disabled={!picked.length} href={picked.length ? gmail(st.sender.email, picked.map(x => x.email).join(','), generic) : undefined} target="_blank" rel="noopener"
+          onClick={picked.length ? guard(() => markSent(picked.map(x => x.id))) : e => e.preventDefault()}>Send to {picked.length} ticked supplier{picked.length === 1 ? '' : 's'} (Gmail, BCC)</a>
+        {picked.length > 0 && <a className="btn" href={mailto(st.sender.email, picked.map(x => x.email).join(','), generic)} onClick={guard(() => markSent(picked.map(x => x.id)))}>Mail app (BCC)</a>}
+        <button className="btn" onClick={() => copy(generic.subject + '\n\n' + generic.body)}>Copy</button>
+      </div>
+      <p className="note">BCC keeps suppliers from seeing each other. In Gmail, pick your ryno-tec.co.za address in the From field before sending. Each supplier's own button greets their contact by name.</p>
+      {msg && <p className="note" style={{ color: 'var(--ink)' }}>{msg}</p>}
+      {(() => { const q = st.suppliers.filter(x => x.status === 'Quoted' && parseFloat(String(x.price).replace(/[^\d.]/g, ''))); if (!q.length) return null;
+        const best = q.reduce((a, b) => parseFloat(String(a.price).replace(/[^\d.]/g, '')) <= parseFloat(String(b.price).replace(/[^\d.]/g, '')) ? a : b);
+        return <p className="note">{q.length} quote{q.length > 1 ? 's' : ''} in. Lowest: <strong>{best.name}</strong> at R {parseFloat(String(best.price).replace(/[^\d.]/g, '')).toLocaleString('en-ZA')} excl. VAT.</p>; })()}
+    </div>
+
+    {preview && <div className="modal" onClick={() => setPreview(null)}><div className="box" onClick={e => e.stopPropagation()}>
+      <h2>{preview.title}</h2><textarea readOnly style={{ ...inp, minHeight: 300, marginTop: 10 }} value={preview.text} onFocus={e => e.target.select()} />
+      <div className="row"><button className="btn primary" onClick={() => setPreview(null)}>Close</button></div></div></div>}
   </>;
 }
 
