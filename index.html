@@ -721,7 +721,7 @@ function rfqText(st, t, contact) {
   const subject = items.length ? `Request for quotation: ${items[0].name}${items.length > 1 ? ` and ${items.length - 1} other item${items.length > 2 ? 's' : ''}` : ''}` : 'Request for quotation';
   const lines = items.map((i, n) => {
     const q = st.vague ? roundQty(+i.qty) : i.qty;
-    const qty = q ? `\n   Quantity: ${st.vague && +q !== +i.qty ? 'about ' : ''}${q}${i.unit ? ' ' + i.unit : ''}` : '';
+    const qty = `\n   Quantity: ${q ? `${st.vague && +q !== +i.qty ? 'about ' : ''}${q}${i.unit ? ' ' + i.unit : ''}` : 'to be confirmed (please quote a unit price)'}`;
     return `${n + 1}. ${i.name}${i.spec ? `\n   Specification: ${i.spec}` : ''}${qty}`;
   }).join('\n\n');
   const asks = ['Unit price and total, excluding VAT', `Delivered price${st.region ? ' to ' + st.region : ''} (or delivery cost separately)`, 'Lead time and current stock availability',
@@ -762,10 +762,19 @@ function Sourcing({ t }) {
   const setSender = (k, v) => setSt(s => ({ ...s, sender: { ...s.sender, [k]: v } }));
 
   const extract = async () => {
+    const hasDocs = files.length > 0 || docText.trim().length > 0;
+    if (!hasDocs) {
+      setShowDocs(true);
+      if (!confirm('No tender document uploaded yet.\n\nQuantities and specifications are in the document (usually the specification or pricing schedule), not the title. Download it from the 📄 link at the top and upload it under "Tender documents".\n\nPress OK to guess from the title anyway (quantities will be blank), or Cancel to upload first.')) {
+        setMsg('Upload the tender document below, then click Extract products again.'); return;
+      }
+    }
+    if (st.items.length && !confirm(`Replace the ${st.items.length} items in your list with a fresh extract?`)) return;
     setBusy('items'); setMsg('');
     try {
       const text = await askClaude(`You are preparing a supplier request for quotation. From the procurement details below, list every physical product, licence or consumable that must be bought from a supplier (not labour or services we deliver ourselves).
-For each item write a neutral product description a distributor can quote on: product type, brand/model or equivalent if specified, and the technical specification.
+For each item write a neutral product description a distributor can quote on: product type, brand/model or equivalent if specified, and the technical specification exactly as the document states it. Do not invent specifications; if the document gives none, keep the description short.
+QUANTITIES: take them from the document (pricing schedule, bill of quantities, specification or scope, e.g. "25 x laptops"). If the same item appears for several sites or lots with the same specification, add the quantities into one line. Use null only when the document truly gives no quantity. List each distinct item once.
 NEVER include buyer or organisation names, reference or contract numbers, site or delivery addresses, project names, dates, or the words tender, bid, RFQ number, SBD, municipality or department.
 Return ONLY a JSON array: [{"name": "short product name", "spec": "technical specification", "qty": number or null, "unit": "e.g. units, licences, kits"}]. Max 30 items.
 
@@ -773,8 +782,9 @@ TITLE: ${t.title}
 ${docsNote(docText, files) || '(Only the title is available. List what can be inferred and leave qty null if unknown.)'}`, 3000, false, files);
       const items = lastJsonArray(text).filter(i => i && i.name).map(i => ({ id: uid(), name: String(i.name), spec: String(i.spec || ''), qty: i.qty == null ? '' : String(i.qty), unit: String(i.unit || '') }));
       if (!items.length) throw new Error('No products found. Upload the specification or bill of quantities, or add items yourself.');
-      up({ items: [...st.items, ...items] });
-      setMsg(`Added ${items.length} item${items.length > 1 ? 's' : ''}. Check each one before you request quotes.`);
+      up({ items });
+      const noQ = items.filter(i => !i.qty).length;
+      setMsg(`Found ${items.length} item${items.length > 1 ? 's' : ''}.${noQ ? ` ${noQ} ha${noQ > 1 ? 've' : 's'} no quantity in the document; fill ${noQ > 1 ? 'them' : 'it'} in before sending.` : ' Check the quantities against the document.'}`);
     } catch (e) { setMsg(e.message); }
     setBusy('');
   };
@@ -819,7 +829,7 @@ Return ONLY a JSON array at the end: [{"name": "", "website": "https://...", "em
       <h2>1. What you need to buy</h2>
       <p className="note">Pull the products from the tender documents, then edit them. Descriptions are kept neutral: no buyer, reference number, site or tender wording goes to suppliers.</p>
       <div className="row">
-        <button className="btn primary" onClick={extract} disabled={!!busy}>{busy === 'items' ? 'Reading…' : st.items.length ? 'Extract more items (AI)' : 'Extract products (AI)'}</button>
+        <button className="btn primary" onClick={extract} disabled={!!busy}>{busy === 'items' ? 'Reading…' : st.items.length ? 'Re-extract from documents (AI)' : 'Extract products (AI)'}</button>
         <button className="btn" onClick={() => up({ items: [...st.items, { id: uid(), name: '', spec: '', qty: '', unit: '' }] })}>Add item</button>
         <button className="btn" onClick={() => setShowDocs(v => !v)}>{showDocs ? 'Hide documents' : `Tender documents${files.length ? ` (${files.length})` : ''}`}</button>
       </div>
@@ -832,7 +842,7 @@ Return ONLY a JSON array at the end: [{"name": "", "website": "https://...", "em
             <textarea style={{ ...inp, minHeight: 54 }} value={i.spec} placeholder="Specification" onChange={e => setItem(i.id, 'spec', e.target.value)} />
           </div>
           <div style={{ display: 'grid', gap: 6, width: 130 }}>
-            <input style={inp} value={i.qty} placeholder="Qty" inputMode="numeric" onChange={e => setItem(i.id, 'qty', e.target.value)} />
+            <input style={{ ...inp, ...(String(i.qty).trim() ? {} : { borderColor: 'var(--warn)' }) }} value={i.qty} placeholder="Qty needed" inputMode="numeric" aria-label={'Quantity for ' + i.name} onChange={e => setItem(i.id, 'qty', e.target.value)} />
             <input style={inp} value={i.unit} placeholder="Unit" onChange={e => setItem(i.id, 'unit', e.target.value)} />
           </div>
           <button className="btn" onClick={() => up({ items: st.items.filter(x => x.id !== i.id) })} aria-label={'Remove ' + i.name}>Remove</button>
@@ -888,6 +898,10 @@ Return ONLY a JSON array at the end: [{"name": "", "website": "https://...", "em
         Round quantities and ask for volume pricing (exact quantities can identify a tender)</label>
       <div style={{ marginTop: 10 }}><label className="l">Extra note (optional)</label>
         <textarea style={{ ...inp, minHeight: 50 }} value={st.extra} placeholder="e.g. Please quote the equivalent if the exact model is unavailable." onChange={e => up({ extra: e.target.value })} /></div>
+      {(() => { const noQ = st.items.filter(i => i.name.trim() && !String(i.qty).trim()); return noQ.length > 0 &&
+        <p className="soon" style={{ fontSize: 14 }}>No quantity on {noQ.length} item{noQ.length > 1 ? 's' : ''} ({noQ.map(i => i.name).slice(0, 4).join(', ')}{noQ.length > 4 ? '…' : ''}). Suppliers will only quote unit prices for {noQ.length > 1 ? 'these' : 'it'}. Add quantities from the tender's pricing schedule.</p>; })()}
+      {(() => { const seen = {}, dup = st.items.filter(i => { const k = i.name.trim().toLowerCase(); if (!k) return false; const d = seen[k]; seen[k] = 1; return d; }); return dup.length > 0 &&
+        <p className="soon" style={{ fontSize: 14 }}>Listed twice: {[...new Set(dup.map(i => i.name))].join(', ')}. Remove the extra line or merge the quantities.</p>; })()}
       {leaks.length > 0 ? <p className="urgent" style={{ fontSize: 14 }}>Before sending, remove: {leaks.join(', ')}. Suppliers could search for it and quote the buyer directly.</p>
         : st.items.length > 0 && <p className="ok" style={{ fontSize: 14 }}>No tender references, buyer names or tender wording found in the request.</p>}
       <div className="ai" style={{ background: 'var(--bg)', border: '1px solid var(--line)', borderRadius: 4, padding: 14, marginTop: 10, fontSize: 14 }}><strong>{generic.subject}</strong>{'\n\n' + generic.body}</div>
