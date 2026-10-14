@@ -10,6 +10,7 @@
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
   /* Ryno-Tec brand: charcoal header, light working area, orange accent (matches ryno-tec.co.za and the Business Hub) */
   :root {
@@ -269,6 +270,18 @@ async function readUploads(fileList) {
         if (!window.mammoth) throw new Error('Word reader did not load');
         const r = await window.mammoth.extractRawText({ arrayBuffer: await file.arrayBuffer() });
         texts.push(`--- ${name} ---\n${r.value.trim()}`);
+      } else if (/\.(xlsx|xlsm|xls|ods)$/.test(lower)) {
+        if (!window.XLSX) throw new Error('Excel reader did not load');
+        const wb = window.XLSX.read(await file.arrayBuffer(), { type: 'array' });
+        const sheets = wb.SheetNames.map(n => {
+          const csv = window.XLSX.utils.sheet_to_csv(wb.Sheets[n], { blankrows: false, strip: true })
+            .split('\n').filter(l => l.replace(/,/g, '').trim()).join('\n');
+          return csv ? `[Sheet: ${n}]\n${csv}` : '';
+        }).filter(Boolean);
+        let text = sheets.join('\n\n');
+        if (text.length > 150000) text = text.slice(0, 150000) + '\n[...truncated: spreadsheet too long, upload only the pricing schedule sheet]';
+        if (!text) throw new Error('the spreadsheet is empty');
+        texts.push(`--- ${name} (spreadsheet, rows as CSV) ---\n${text}`);
       } else if (lower.endsWith('.doc')) {
         skipped.push(`${name} (old .doc format: save it as PDF or .docx first)`);
       } else if (/\.(txt|csv|md|html?)$/.test(lower) || file.type.startsWith('text/')) {
@@ -295,7 +308,7 @@ function DocInput({ t, docText, setDocText, files, setFiles }) {
     if (texts.length) setDocText((docText ? docText + '\n\n' : '') + texts.join('\n\n'));
     const parts = [];
     if (add.length) parts.push(`${add.length} file${add.length > 1 ? 's' : ''} attached`);
-    if (texts.length) parts.push(`text from ${texts.length} Word/text file${texts.length > 1 ? 's' : ''} added below`);
+    if (texts.length) parts.push(`text from ${texts.length} Word, Excel or text file${texts.length > 1 ? 's' : ''} added below`);
     if (skipped.length) parts.push('skipped: ' + skipped.join('; '));
     setMsg(parts.join('. ') + '.');
     setBusy(false);
@@ -305,10 +318,10 @@ function DocInput({ t, docText, setDocText, files, setFiles }) {
     <label className="l">Tender documents</label>
     <div className="row" style={{ marginTop: 0, alignItems: 'center' }}>
       <label className="btn primary" style={{ cursor: busy ? 'wait' : 'pointer' }}>
-        {busy ? 'Reading files…' : 'Upload PDF, Word or scans'}
-        <input type="file" multiple hidden accept=".pdf,.docx,.doc,.txt,.png,.jpg,.jpeg,.webp,application/pdf" onChange={onPick} disabled={busy} />
+        {busy ? 'Reading files…' : 'Upload PDF, Word, Excel or scans'}
+        <input type="file" multiple hidden accept=".pdf,.docx,.doc,.xlsx,.xlsm,.xls,.ods,.csv,.txt,.png,.jpg,.jpeg,.webp,application/pdf" onChange={onPick} disabled={busy} />
       </label>
-      <span className="note">Download the bid documents from the links above, then upload them here. Claude reads PDFs directly, including scanned pages.</span>
+      <span className="note">Download the bid documents from the links above, then upload them here. Claude reads PDFs directly, including scanned pages. Excel pricing schedules and bills of quantities are read sheet by sheet.</span>
     </div>
     {files.length > 0 && <div className="docs" style={{ marginTop: 10 }}>
       {files.map((f, i) => <span key={i} className="chip gray" style={{ display: 'inline-flex', gap: 6, alignItems: 'center', marginBottom: 6 }}>
@@ -362,13 +375,14 @@ function App() {
         const r = await fetch(url + (url.startsWith('http') ? `?t=${Date.now()}` : ''), { cache: 'no-store' });
         if (!r.ok) continue;
         const j = await r.json();
-        if (Array.isArray(j.tenders)) { setData(j); setLoading(false); openFromHash(j.tenders); return; }
+        if (Array.isArray(j.tenders)) { setData(applyBriefs(j)); setLoading(false); openFromHash(j.tenders); return; }
       } catch (e) {}
     }
     setLoadErr('Could not load tender data yet. If you just set this up, the first GitHub Action run may still be in progress.');
     setLoading(false);
   };
   useEffect(() => { load(); }, []);
+  useEffect(() => { const f = () => setData(d => d && applyBriefs(d)); window.addEventListener('briefing-updated', f); return () => window.removeEventListener('briefing-updated', f); }, []);
   // Deep link from the Ryno-Tec hub: #tender=<ocid>&tab=bid|analysis
   const openFromHash = (list) => {
     const h = new URLSearchParams(location.hash.slice(1));
@@ -497,6 +511,33 @@ function App() {
   );
 }
 
+// ---------- briefing details read from the bid documents (kept per tender in this browser) ----------
+const BRIEF_STORE = 'briefing_from_docs';
+const applyBriefs = j => { const o = store.get(BRIEF_STORE, {}); return { ...j, tenders: j.tenders.map(t => o[t.id] ? { ...t, briefing: { ...(t.briefing || {}), ...o[t.id], fromDocs: true } } : t) }; };
+const saveBrief = (id, b) => { const o = store.get(BRIEF_STORE, {}); if (b) o[id] = b; else delete o[id]; store.set(BRIEF_STORE, o); window.dispatchEvent(new Event('briefing-updated')); };
+async function findBriefing(t, docText, files) {
+  const text = await askClaude(`Read this South African government tender's documents and find the briefing session (also called clarification meeting, compulsory briefing, information session or site inspection).
+Tender: ${t.reference} - ${t.title} (${t.department})
+${docsNote(docText, files)}
+
+Return ONLY one JSON object:
+{"mode": "online" | "in person" | "online and in person" | "none" | "unknown",
+ "date": "YYYY-MM-DDTHH:MM" in South African time, or null,
+ "compulsory": true | false | null,
+ "link": "the Teams/Zoom/meeting URL if given, else null",
+ "venue": "address or room for in-person, or how to get the link (e.g. email x to register)", 
+ "register": "how and by when to register, if stated, else null",
+ "evidence": "the exact sentence from the document that you based this on"}
+Use "none" only if the documents say there is no briefing. Use "unknown" if they do not mention one. Never guess a date or link.`, 1200, false, files);
+  const m = text.match(/\{[\s\S]*\}/); if (!m) throw new Error('Could not read the briefing details. Try again.');
+  const r = JSON.parse(m[0]);
+  const mode = ['online', 'in person', 'online and in person', 'none'].includes(r.mode) ? r.mode : 'unknown';
+  const date = r.date && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(r.date) ? r.date.slice(0, 16) + ':00+02:00' : null;
+  const link = /^https?:\/\//.test(r.link || '') ? r.link : null;
+  return { mode, online: /online/.test(mode), date, compulsory: typeof r.compulsory === 'boolean' ? r.compulsory : null, link,
+    venue: [r.venue, r.register && 'Register: ' + r.register].filter(Boolean).join(' · ').slice(0, 500) || null, evidence: String(r.evidence || '').slice(0, 400), checkedAt: new Date().toISOString() };
+}
+
 const BRIEF_LABEL = { online: 'Online', 'online and in person': 'Online and in person', 'in person': 'In person', none: 'No briefing', unknown: 'Not stated' };
 function Briefing({ b }) {
   if (!b) return null;
@@ -506,6 +547,8 @@ function Briefing({ b }) {
       <div className={'v' + (b.online ? ' ok' : '')}>{BRIEF_LABEL[b.mode] || 'Not stated'}</div>
       {(when || b.compulsory != null) && <div className="note">{[when, b.compulsory === true ? 'compulsory' : b.compulsory === false ? 'optional' : ''].filter(Boolean).join(', ')}</div>}
       {b.link && <div className="note"><a href={b.link} target="_blank" rel="noopener">Join link ↗</a></div>}
+      {b.fromDocs && b.venue && <div className="note">{b.venue}</div>}
+      {b.fromDocs && <div className="note" title={b.evidence || ''}>From the bid documents</div>}
     </div>
   );
 }
@@ -527,6 +570,7 @@ function TenderHeader({ t }) {
       <span className="chip">{t.category}</span><span className="chip gray">{t.reference}</span>
       <h2 style={{ marginTop: 8 }}>{t.title}</h2>
       <div className="note">{t.department} · closes {fmtDate(t.closingDate)} (<span className={urgency(d)}>{d} days left</span>) · {fmtMoney(t.value)}</div>
+      {t.briefing && t.briefing.mode !== 'unknown' && <div className="facts" style={{ margin: '10px 0 0', maxWidth: 420 }}><Briefing b={t.briefing} /></div>}
       {t.documents.length > 0 && <div className="docs" style={{ marginTop: 8 }}>
         {t.documents.map((doc, i) => <a key={i} href={doc.url} target="_blank" rel="noopener">📄 {doc.title}</a>)}</div>}
     </div>
@@ -543,8 +587,23 @@ function Analysis({ t }) {
   const [err, setErr] = useState('');
   useEffect(() => { store.set('doctext_' + t.id, docText); }, [docText]);
 
+  const [bBusy, setBBusy] = useState(false);
+  const [bMsg, setBMsg] = useState('');
+  const briefing = async (auto) => {
+    if (!files.length && !docText.trim()) { if (!auto) setBMsg('Upload the bid documents first.'); return; }
+    setBBusy(true); setBMsg('');
+    try {
+      const b = await findBriefing(t, docText, files);
+      saveBrief(t.id, b);
+      const when = b.date ? new Date(b.date).toLocaleString('en-ZA', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '';
+      setBMsg(b.mode === 'unknown' ? 'The documents don\'t mention a briefing session.' : b.mode === 'none' ? 'The documents say there is no briefing.'
+        : `${BRIEF_LABEL[b.mode]} briefing${when ? ' on ' + when : ''}${b.compulsory ? ', compulsory' : b.compulsory === false ? ', optional' : ''}.${b.link ? ' Join link found.' : b.online ? ' No join link in the documents; check how to register.' : ''}${b.evidence ? ` Source: "${b.evidence}"` : ''}`);
+    } catch (e) { setBMsg(e.message); }
+    setBBusy(false);
+  };
   const run = async () => {
     setBusy(true); setErr('');
+    if (!t.briefing?.fromDocs) briefing(true);
     try {
       const text = await askClaude(`You are an expert in South African public-sector procurement (PFMA/MFMA, PPPFA 2022 regulations, CSD, B-BBEE) helping an IT company decide whether and how to bid.
 
@@ -572,9 +631,11 @@ Be specific. If something cannot be known without the documents, say so instead 
       <DocInput t={t} docText={docText} setDocText={setDocText} files={files} setFiles={setFiles} />
       <div className="row">
         <button className="btn primary" onClick={run} disabled={busy}>{busy ? 'Analysing…' : out ? 'Re-run analysis' : 'Run AI analysis'}</button>
+        <button className="btn" onClick={() => briefing(false)} disabled={bBusy}>{bBusy ? 'Reading…' : t.briefing?.fromDocs ? 'Re-check briefing (AI)' : 'Find briefing details (AI)'}</button>
         {out && <button className="btn" onClick={() => download(`Analysis_${t.reference}.txt`, out)}>Download</button>}
       </div>
       {err && <p className="urgent">{err}</p>}
+      {bMsg && <p className="note" style={{ color: 'var(--ink)' }}>{bMsg}</p>}
     </div>
     {out && <div className="panel sec"><div className="ai">{out}</div>
       <p className="note">AI output - verify every requirement against the official tender documents before submitting.</p></div>}
