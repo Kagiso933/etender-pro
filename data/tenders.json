@@ -1,103 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-14T15:44:43.058939+00:00",
+ "generatedAt": "2026-10-14T20:47:53.999080+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-23",
- "releasesScanned": 2031,
- "uniqueTenders": 2031,
- "count": 174,
+ "coveredFrom": "2026-10-07",
+ "releasesScanned": 738,
+ "uniqueTenders": 763,
+ "count": 175,
  "categories": {
+  "Software & Systems": 79,
+  "Cybersecurity": 13,
   "End-User Computing": 24,
-  "Cybersecurity": 15,
-  "Software & Systems": 77,
   "Network & Infrastructure": 30,
-  "IT Services & Support": 16,
+  "IT Services & Support": 17,
   "Telecoms & Unified Comms": 7,
   "Cloud Services": 5
  },
  "onlineBriefings": 2,
- "carriedOver": 44,
+ "carriedOver": 112,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-173144",
-   "reference": "RFQJW048NS26-27",
-   "title": "SUPPLY AND DELIVERY of 25x Laptops and 10x Chargers",
-   "department": "Johannesburg Water",
-   "category": "End-User Computing",
-   "matchedTerms": [
-    "laptop"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-07T00:00:00+00:00",
-   "closingDate": "2026-10-14T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQJW048NS26-27(SUPPLY AND DELIVERY of 25x Laptops and 10x Chargers) (1).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=dbf8d0d4-1824-4895-8225-1d296c933250.pdf&downloadedFileName=RFQJW048NS26-27%28SUPPLY%20AND%20DELIVERY%20of%2025x%20Laptops%20and%2010x%20Chargers%29%20%281%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-07T10:10:13Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-172081",
-   "reference": "CSIR RFQ 9543/14/10/2026",
-   "title": "The Provision of venue, accommodation, and catering services to the CSIR to host the\r\n2026 National Integrated Cyberinfrastructure System (NICIS) National Student\r\nCompetitions in the Western Cape Province or the Gauteng Province.",
-   "department": "Council for Scientific and Industrial Research (CSIR)",
-   "category": "Cybersecurity",
-   "matchedTerms": [
-    "cyber",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-29T00:00:00+00:00",
-   "closingDate": "2026-10-14T16:30:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ 9543-14-10-2026 - NICIS National Student Competition.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2e6ff8e8-aab8-4dba-b274-9a67d0487f45.pdf&downloadedFileName=RFQ%209543-14-10-2026%20-%20NICIS%20National%20Student%20Competition.pdf",
-     "format": "pdf",
-     "published": "2026-09-29T16:05:05Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-170701",
    "reference": "E3536CXMWP",
@@ -847,53 +768,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=43141980-279d-47ae-83a9-bbd8d9f8ec78.pdf&downloadedFileName=SBD-4-BIDDERS-DISCLOSURE-3%20-.pdf",
      "format": "pdf",
      "published": "2026-10-13T14:01:23Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-173201",
-   "reference": "RFQ16/10/2026",
-   "title": "Training: PM-PL900T00 Microsoft Power Platform Fundamentals and PM-PL300T00 Microsoft Power BI Data Analyst",
-   "department": "Science & Technology",
-   "category": "Software & Systems",
-   "matchedTerms": [
-    "microsoft",
-    "power bi",
-    "power platform"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-07T00:00:00+00:00",
-   "closingDate": "2026-10-16T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "SBD 1 4 6.1 and POPIA (6.1 in terms of PPR 2022)80-20.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=32219e37-bef5-41ed-a07f-7d0a796446ff.docx&downloadedFileName=SBD%201%204%206.1%20and%20POPIA%20%286.1%20in%20terms%20of%20PPR%202022%2980-20.docx",
-     "format": "docx",
-     "published": "2026-10-07T13:23:06Z"
-    },
-    {
-     "title": "Tag A_ TOR_ PM-PL900T00 Microsoft Power Platform-.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=4e4052cf-91c8-45ab-b458-cab2270343be.docx&downloadedFileName=Tag%20A_%20TOR_%20PM-PL900T00%20Microsoft%20Power%20Platform-.docx",
-     "format": "docx",
-     "published": "2026-10-07T13:23:06Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1845,6 +1719,45 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-173687",
+   "reference": "10069056",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER TO REDEVELOP THE WEBSITE FOR THE GPL FOR A PERIOD OF TWELVE MONTHS (12) MONTHS",
+   "department": "Gauteng - Legislature",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "website"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-09T00:00:00+00:00",
+   "closingDate": "2026-10-19T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "PR10069056 -BID DOCUMENT - WEBSITE DEVELOPMENT 09 October 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0f5c0c67-292e-46df-b491-bb3181550b4c.pdf&downloadedFileName=PR10069056%20-BID%20DOCUMENT%20-%20WEBSITE%20DEVELOPMENT%2009%20October%202026.pdf",
+     "format": "pdf",
+     "published": "2026-10-09T22:05:30Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-173285",
    "reference": "RFQ 075-26",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE IMPLEMENTATION, INTEGRATION, SUPPORT AND MAINTENANCE OF AN INTELLIGENT ACCOUNTS RECEIVABLE PLATFORM WITH INTEGRATION TO SAGE 300 FINANCE FOR PERIOD OF TWELVE (12) MONTHS",
@@ -2071,6 +1984,51 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=70a0320e-bc38-4fea-95e3-bb5e57c842b9.xlsx&downloadedFileName=WAN%20Tender%20-%20Annexure%20B%20%28Pricing%20Schedule%29%20Final.xlsx",
      "format": "xlsx",
      "published": "2026-09-18T14:19:00Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173608",
+   "reference": "6000263520",
+   "title": "MICROSOFT EXCEL TRAINING - SEE ATTACHED SPECIFICATION FOR DETAILS",
+   "department": "DENEL (Pty) Ltd",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "microsoft"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-09T00:00:00+00:00",
+   "closingDate": "2026-10-19T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Microsoft Excel Specification doc - RFQ 6000263520.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=933595c9-cfaa-4569-9514-37b0353bf550.docx&downloadedFileName=Microsoft%20Excel%20Specification%20doc%20-%20RFQ%206000263520.docx",
+     "format": "docx",
+     "published": "2026-10-09T14:23:09Z"
+    },
+    {
+     "title": "COSAD-06012-FRM-009-03 Declaration POPIA.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0c7e92a2-b4af-4a98-9370-b0536f35abad.docx&downloadedFileName=COSAD-06012-FRM-009-03%20Declaration%20POPIA.docx",
+     "format": "docx",
+     "published": "2026-10-09T14:19:16Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3039,6 +2997,86 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=2ddf463f-f378-4b59-b43a-e976f12fdbfd.pdf&downloadedFileName=SDLI%20Strategy_BIDDERS%20TEMPLATE%20The%20provision%20of%20GIS%20and%20remote%20sensing%20services%20and%20spatial%20datasets%20on%20an%20as%20and%20when%20required%20basis.pdf",
      "format": "pdf",
      "published": "2026-10-01T08:44:26Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174136",
+   "reference": "COJ0010-26/27",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER TO PROCURE, SUPPLY AND INSTALL (SETUP) ADOBE INDESIGN, ADOBE ILLUSTRATOR, AND CANVA FOR BUSINESS SOFTWARE LICENSES FOR THE COMMUNICATIONS AND STAKEHOLDER MANAGEMENT UNIT UNDER THE GROUP FINANCE DEPARTMENT.",
+   "department": "City Council of Johannesburg",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "license",
+    "software",
+    "software licens"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-10-21T10:30:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "COJ0010-26-27 ADOBE AND CANVA FOR BUSINESS SOFWARE AND LICENSES..pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b7675813-128a-4493-b777-d89b74df28aa.pdf&downloadedFileName=COJ0010-26-27%20ADOBE%20AND%20CANVA%20FOR%20BUSINESS%20SOFWARE%20AND%20LICENSES..pdf",
+     "format": "pdf",
+     "published": "2026-10-14T18:08:33Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173617",
+   "reference": "UG ER 0987",
+   "title": "SITA ACCREDITED SERVICE PROVIDERS ON RFB 740 CONTRACT ARE HEREBY INVITED TO QUOTE FOR SUPPLY AND DELIVERY OF 22 LAPTOPS FOR UGU DISTRICT TO BE DELEVERED AT LOT 618 – RAY KNONYENI ROAD. CONTACT PERSON – MR. THOBANI SHABALALA – 073 804 4581. PLEASE SEE THE ATTACHED SPECIFICATION",
+   "department": "Kwazulu Natal - Social Development",
+   "category": "End-User Computing",
+   "matchedTerms": [
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-09T00:00:00+00:00",
+   "closingDate": "2026-10-21T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "UG ER 0987.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6d325aa9-905e-4e23-93a1-867c691f48a0.pdf&downloadedFileName=UG%20ER%200987.pdf",
+     "format": "pdf",
+     "published": "2026-10-09T14:34:11Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8626,14 +8664,14 @@
    },
    "documents": [
     {
-     "title": "Specification for ISS Printer Ribbons Hologram and Access Cards-CP_TSSPEC_ 430 rev 1_.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e37b0089-812c-43d2-a418-2a26c6d0cbbc.pdf&downloadedFileName=Specification%20for%20ISS%20Printer%20Ribbons%20Hologram%20and%20Access%20Cards-CP_TSSPEC_%20430%20rev%201_.pdf",
+     "title": "Bid Document PRINTER HOLOGRAM  2654GS - 002.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c1067cf0-ac4a-4bb1-951c-053fe950499c.pdf&downloadedFileName=Bid%20Document%20PRINTER%20HOLOGRAM%20%202654GS%20-%20002.pdf",
      "format": "pdf",
-     "published": "2026-10-09T14:18:12Z"
+     "published": "2026-10-14T20:19:51Z"
     },
     {
-     "title": "Bid Document PRINTER HOLOGRAM  2654GS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=54c501c9-35f2-4d09-95ee-baf35c449d9a.pdf&downloadedFileName=Bid%20Document%20PRINTER%20HOLOGRAM%20%202654GS.pdf",
+     "title": "Specification for ISS Printer Ribbons Hologram and Access Cards-CP_TSSPEC_ 430 rev 1_.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e37b0089-812c-43d2-a418-2a26c6d0cbbc.pdf&downloadedFileName=Specification%20for%20ISS%20Printer%20Ribbons%20Hologram%20and%20Access%20Cards-CP_TSSPEC_%20430%20rev%201_.pdf",
      "format": "pdf",
      "published": "2026-10-09T14:18:12Z"
     },
@@ -8642,6 +8680,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=a17b89a5-b900-49c1-bd45-db58d4ba7a46.pdf&downloadedFileName=Bid%20Advert%202654GS.pdf",
      "format": "pdf",
      "published": "2026-10-09T14:19:07Z"
+    },
+    {
+     "title": "Bid Erratum.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b039091f-29de-4674-96b8-e5818d7040a8.pdf&downloadedFileName=Bid%20Erratum.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T20:18:45Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8909,7 +8953,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Cybersecurity",
+   "category": "IT Services & Support",
    "matchedTerms": [
     "firewall",
     "ict",
