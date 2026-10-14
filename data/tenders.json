@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-14T01:49:00.964812+00:00",
+ "generatedAt": "2026-10-14T10:07:10.897334+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-04",
- "releasesScanned": 3475,
- "uniqueTenders": 3500,
- "count": 172,
+ "coveredFrom": "2026-10-09",
+ "releasesScanned": 415,
+ "uniqueTenders": 415,
+ "count": 170,
  "categories": {
   "Software & Systems": 78,
-  "Network & Infrastructure": 25,
-  "IT Services & Support": 17,
+  "Network & Infrastructure": 23,
+  "IT Services & Support": 15,
   "End-User Computing": 27,
-  "Cybersecurity": 14,
+  "Cybersecurity": 15,
   "Telecoms & Unified Comms": 7,
-  "Cloud Services": 4
+  "Cloud Services": 5
  },
  "onlineBriefings": 2,
- "carriedOver": 8,
+ "carriedOver": 134,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1787,45 +1787,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-173635",
-   "reference": "RFQJW0094SM2026",
-   "title": "Supply And Delivery Of 60 (Sixty) X Remote Data Loggers with Mobile Application",
-   "department": "Johannesburg Water",
-   "category": "Software & Systems",
-   "matchedTerms": [
-    "mobile app"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-09T00:00:00+00:00",
-   "closingDate": "2026-10-16T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQJW0094SM2026 - Remote Data Loggers with Mobile App Function.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b91220d0-7d7f-449d-a817-61648965ec32.pdf&downloadedFileName=RFQJW0094SM2026%20-%20Remote%20Data%20Loggers%20with%20Mobile%20App%20Function.pdf",
-     "format": "pdf",
-     "published": "2026-10-09T15:02:53Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-173051",
    "reference": "REQ1087-0610-ICT-WAN",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF INTERNET AND WIDE AREA NETWORK (WAN) CONNECTIVITY SERVICES FOR A PERIOD OF 12 MONTHS",
@@ -1956,85 +1917,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=c02ad743-aa07-42f5-8364-dc4b2c86a3c6.pdf&downloadedFileName=RFQ-BIOMETRIC%20SERVICES_.pdf",
      "format": "pdf",
      "published": "2026-10-13T08:24:31Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-173717",
-   "reference": "10024501",
-   "title": "Supply & Delivery of Server Spares",
-   "department": "State Security Agency",
-   "category": "Network & Infrastructure",
-   "matchedTerms": [
-    "server"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-12T00:00:00+00:00",
-   "closingDate": "2026-10-19T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ server spares.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b4964b7f-c233-461e-8f44-3d9a99bd3ea0.pdf&downloadedFileName=RFQ%20server%20spares.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T09:19:03Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-173822",
-   "reference": "RFQ No 29/2026",
-   "title": "Procurement Board Portal Software Solution for a period of 36 months.",
-   "department": "Postbank SOC",
-   "category": "Software & Systems",
-   "matchedTerms": [
-    "portal",
-    "software"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-12T00:00:00+00:00",
-   "closingDate": "2026-10-19T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ No. 29_2026 Board Software Solution.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=aaae427e-5288-44db-a640-bda10b1db07a.pdf&downloadedFileName=RFQ%20No.%2029_2026%20Board%20Software%20Solution.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T17:14:46Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3520,6 +3402,45 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174020",
+   "reference": "RFQJW143TN26",
+   "title": "RFQJW143TN26 - SAP Support Maintenance",
+   "department": "Johannesburg Water",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "sap"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-10-21T16:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQJW143TN26 - SAP SUPPORT MAINTENANCE.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d34666d6-d461-47a3-8380-3bef6012984d.pdf&downloadedFileName=RFQJW143TN26%20-%20SAP%20SUPPORT%20MAINTENANCE.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T10:30:38Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-169664",
    "reference": "COMMAR 2/2026",
    "title": "Centralised customer relations management database and system",
@@ -3595,46 +3516,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=10f95b25-8be4-48f7-b65f-9ed7edfdc02b.pdf&downloadedFileName=PR10067837%20-%20BID%20DOCUMENT%20-%20QUEST%20LICENSES%20AND%20SUPPORT%2012%20OCTOBER%202026.pdf",
      "format": "pdf",
      "published": "2026-10-12T23:21:59Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-173840",
-   "reference": "PR10067842",
-   "title": "APPOINTMENT OF AN ACCREDITED SERVICE PROVIDER FOR THE RENEWAL OF TENABLE IO LICENSES AND MANAGED SERVICES FOR A PERIOD OF 2 YEARS",
-   "department": "Gauteng - Legislature",
-   "category": "IT Services & Support",
-   "matchedTerms": [
-    "license",
-    "managed services"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-12T00:00:00+00:00",
-   "closingDate": "2026-10-22T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "PR10067842 - BID DOCUMENT - TENABLE IO LICENSES AND SUPPORT 12 OCTOBER 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=cadcd7fc-5a4c-4c29-854a-ef1eca181a8b.pdf&downloadedFileName=PR10067842%20-%20BID%20DOCUMENT%20-%20TENABLE%20IO%20LICENSES%20AND%20SUPPORT%2012%20OCTOBER%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T23:25:39Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3874,6 +3755,69 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=1bdaa430-8a5b-437b-9505-2470584f79f5.pdf&downloadedFileName=Sage%20300%20-%20TENDER%20DOCUMENT%20.pdf",
      "format": "pdf",
      "published": "2026-09-21T15:43:49Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174006",
+   "reference": "RFQ GSM080/2026",
+   "title": "Request for quotation for IT resources to enable the migration to new AWS stack",
+   "department": "South African Airways (Pty) Limited",
+   "category": "Cloud Services",
+   "matchedTerms": [
+    "aws"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-10-22T16:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "REVISED SBD 4 -Annexure 2.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d41b43b9-15ac-46dc-947b-5aa2abccd69f.pdf&downloadedFileName=REVISED%20SBD%204%20-Annexure%202.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
+    },
+    {
+     "title": "RFQ GSM080-2026  -IT resources to enable the migration to new AWS stack.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bfaca77f-7957-46d1-92e0-5b6a424facf5.pdf&downloadedFileName=RFQ%20GSM080-2026%20%20-IT%20resources%20to%20enable%20the%20migration%20to%20new%20AWS%20stack.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
+    },
+    {
+     "title": "SAA GENERAL CONDITIONS OF CONTRACT. ANNEXURE 4.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e625347b-7596-435e-b3cd-d21bce455586.pdf&downloadedFileName=SAA%20GENERAL%20CONDITIONS%20OF%20CONTRACT.%20ANNEXURE%204.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
+    },
+    {
+     "title": "Job Descrptions for the Roles in Scope of Work.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=435c15df-f2c6-4c10-8824-d34322a4559d.pdf&downloadedFileName=Job%20Descrptions%20for%20the%20Roles%20in%20Scope%20of%20Work.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
+    },
+    {
+     "title": "Annexure 1 - Vendor application Local.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=05bca00b-d717-4373-987c-e9ea13304047.pdf&downloadedFileName=Annexure%201%20-%20Vendor%20application%20Local.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -4311,70 +4255,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=f5e8d5c9-7146-426f-9423-9bb319e1f679.pdf&downloadedFileName=TENDER%20DOC%20CGS-2026-037S.pdf",
      "format": "pdf",
      "published": "2026-09-22T14:20:40Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-173752",
-   "reference": "RFX6000003706",
-   "title": "Sentech is inviting quotations from qualified and accredited service providers for the Optical Fibre Reticulation and LAN Points Installation at its Durban Branch Campus.",
-   "department": "Sentech Limited",
-   "category": "Network & Infrastructure",
-   "matchedTerms": [
-    "fibre",
-    "lan"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-12T00:00:00+00:00",
-   "closingDate": "2026-10-23T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "SCOPE OF WORKS- LAN & Wifi (1).docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=cf7185ec-eed5-49f7-8280-1097db8e5409.docx&downloadedFileName=SCOPE%20OF%20WORKS-%20LAN%20%26%20Wifi%20%281%29.docx",
-     "format": "docx",
-     "published": "2026-10-13T11:44:50Z"
-    },
-    {
-     "title": "SENTECH SUPPLIER CONSENT FORM (009).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=3a73b9a6-638b-407d-a28c-4c25af49baf8.pdf&downloadedFileName=SENTECH%20SUPPLIER%20CONSENT%20FORM%20%28009%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T11:44:04Z"
-    },
-    {
-     "title": "Revised Standard Bidding Document (SDB) 4_Annexure A (2).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=19410dcb-24b1-400d-9b70-55cee327e304.pdf&downloadedFileName=Revised%20Standard%20Bidding%20Document%20%28SDB%29%204_Annexure%20A%20%282%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T11:45:25Z"
-    },
-    {
-     "title": "SCOPE OF WORKS- LAN & Wifi (1).docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=dfb4e8b0-5fbb-42e7-8b32-e78d01d7e423.docx&downloadedFileName=SCOPE%20OF%20WORKS-%20LAN%20%26%20Wifi%20%281%29.docx",
-     "format": "docx",
-     "published": "2026-10-13T11:44:52Z"
-    },
-    {
-     "title": "RFQ LAN.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a9614461-4526-47f1-8cfe-e9f64ba1f125.pdf&downloadedFileName=RFQ%20LAN.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T11:42:19Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8000,6 +7880,46 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174039",
+   "reference": "MER/T01/2027",
+   "title": "THE CUSTOMISATION CONFIGURATION, IMPLEMENTATION AND SUPPORT OF THREE ADDITIONAL MODULES WITHIN MER’S EXISTING PLUMSOFT ERP SYSTEM",
+   "department": "Abaqulusi Local Municipality",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "erp",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-11-06T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "60MM-08102026-MERT012027.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ce0f3d10-2c39-49ca-8d64-acb25dc7649d.pdf&downloadedFileName=60MM-08102026-MERT012027.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T11:24:12Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-173291",
    "reference": "E3655CXMWP",
    "title": "Requests for Information of a demonstration of Energy Trading and Risk Management (ETRM) software",
@@ -8825,7 +8745,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "IT Services & Support",
+   "category": "Cybersecurity",
    "matchedTerms": [
     "firewall",
     "ict",
