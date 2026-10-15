@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-14T20:47:53.999080+00:00",
+ "generatedAt": "2026-10-15T01:07:25.658411+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-07",
- "releasesScanned": 738,
- "uniqueTenders": 763,
- "count": 175,
+ "coveredFrom": "2026-09-16",
+ "releasesScanned": 2632,
+ "uniqueTenders": 2712,
+ "count": 178,
  "categories": {
-  "Software & Systems": 79,
-  "Cybersecurity": 13,
+  "Software & Systems": 83,
+  "Cybersecurity": 14,
   "End-User Computing": 24,
-  "Network & Infrastructure": 30,
+  "Network & Infrastructure": 28,
   "IT Services & Support": 17,
   "Telecoms & Unified Comms": 7,
   "Cloud Services": 5
  },
  "onlineBriefings": 2,
- "carriedOver": 112,
+ "carriedOver": 23,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -768,6 +768,53 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=43141980-279d-47ae-83a9-bbd8d9f8ec78.pdf&downloadedFileName=SBD-4-BIDDERS-DISCLOSURE-3%20-.pdf",
      "format": "pdf",
      "published": "2026-10-13T14:01:23Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173201",
+   "reference": "RFQ16/10/2026",
+   "title": "Training: PM-PL900T00 Microsoft Power Platform Fundamentals and PM-PL300T00 Microsoft Power BI Data Analyst",
+   "department": "Science & Technology",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "microsoft",
+    "power bi",
+    "power platform"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-07T00:00:00+00:00",
+   "closingDate": "2026-10-16T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "SBD 1 4 6.1 and POPIA (6.1 in terms of PPR 2022)80-20.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=32219e37-bef5-41ed-a07f-7d0a796446ff.docx&downloadedFileName=SBD%201%204%206.1%20and%20POPIA%20%286.1%20in%20terms%20of%20PPR%202022%2980-20.docx",
+     "format": "docx",
+     "published": "2026-10-07T13:23:06Z"
+    },
+    {
+     "title": "Tag A_ TOR_ PM-PL900T00 Microsoft Power Platform-.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4e4052cf-91c8-45ab-b458-cab2270343be.docx&downloadedFileName=Tag%20A_%20TOR_%20PM-PL900T00%20Microsoft%20Power%20Platform-.docx",
+     "format": "docx",
+     "published": "2026-10-07T13:23:06Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5164,7 +5211,7 @@
    "reference": "E3640CXMWP",
    "title": "SUPPLY, DELIVERY, TRAINING, AND TECHNICAL SUPPORT OF THE DRONE SYSTEM FOR INSPECTION AND APPLICATION IN FOSSIL POWER PLANTS AT ESKOM RESEARCH AND DEVELOPMENT FOR THE PERIOD OF TWELVE (12) MONTHS.",
    "department": "ESKOM",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "matchedTerms": [
     "system",
     "technical support"
@@ -6119,7 +6166,7 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "matchedTerms": [
     "computer",
     "data centre",
@@ -6223,7 +6270,7 @@
    "reference": "SCMU14-26/27-0009",
    "title": "Rate based contract for the supply of ICT server related infrastructure for a period of 3 years (36 months) \r\n[SITA registered IT vendors/service providers (RFB  contract)]",
    "department": "Eastern Cape - Sport Recreation Arts and Culture",
-   "category": "Network & Infrastructure",
+   "category": "IT Services & Support",
    "matchedTerms": [
     "ict",
     "server"
@@ -7106,6 +7153,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=eeaa3cdd-648e-49dc-aa60-7545c96490ec.pdf&downloadedFileName=VENDING%20SERVICES%20MKHO19_2026_27%20FINAL%20TENDER%20DOCUMENT%20.pdf",
      "format": "pdf",
      "published": "2026-10-02T17:01:23Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-172408",
+   "reference": "220/2026",
+   "title": "OFFICE EQUIPMENT (PRINTERS, COPIERS AND MULTI-FUNCTION MACHINES: LEASE OPTION) AND PRINT\r\nMANAGEMENT SOFTWARE",
+   "department": "Kouga Municipality",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "printers",
+    "software"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-01T00:00:00+00:00",
+   "closingDate": "2026-11-02T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "TENDER DOCUMENT FOR NOTICE 220 OF 2026 PRINTERS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f895c836-012c-45d9-b4ca-1b12b411f2a2.pdf&downloadedFileName=TENDER%20DOCUMENT%20FOR%20NOTICE%20220%20OF%202026%20PRINTERS.pdf",
+     "format": "pdf",
+     "published": "2026-10-01T13:29:01Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8340,6 +8427,45 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174129",
+   "reference": "ULM-CORP 004/27",
+   "title": "PROVISION OF ICT SUPPORT SERVICES ( 36 MONTHS CONTRACT)",
+   "department": "Umzimkhulu Local Municipality",
+   "category": "IT Services & Support",
+   "matchedTerms": [
+    "ict"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-15T00:00:00+00:00",
+   "closingDate": "2026-11-06T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "15-10-2026 TENDER ADVERT - PROVISION OF ICT SUPPORT SERVICES ( 36 MONTHS CONTRACT).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=90f8dfca-7469-4f38-85c0-7933a1cf1d7d.pdf&downloadedFileName=15-10-2026%20TENDER%20ADVERT%20-%20PROVISION%20OF%20ICT%20SUPPORT%20SERVICES%20%28%2036%20MONTHS%20CONTRACT%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T16:56:54Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-173277",
    "reference": "RE8/3/1-03/2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE LICENSING, SUPPORT, MAINTENANCE AND ENHANCEMENTS OF AN INTEGRATED MUNICIPAL FINANCIAL MANAGEMENT SYSTEM (ERP) COMPLIANT WITH mSCOA REGULATIONS AND NATIONAL TREASURY BUSINESS PROCESS REQUIREMENTS FOR A PERIOD OF THREE (3) YEARS",
@@ -8953,7 +9079,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "IT Services & Support",
+   "category": "Cybersecurity",
    "matchedTerms": [
     "firewall",
     "ict",
