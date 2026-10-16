@@ -1,153 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-16T15:27:20.281498+00:00",
+ "generatedAt": "2026-10-16T20:08:27.300945+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-07",
- "releasesScanned": 1008,
- "uniqueTenders": 1008,
- "count": 170,
+ "coveredFrom": "2026-10-09",
+ "releasesScanned": 851,
+ "uniqueTenders": 861,
+ "count": 176,
  "categories": {
-  "Cloud Services": 4,
-  "Software & Systems": 78,
-  "Network & Infrastructure": 26,
+  "Software & Systems": 80,
+  "Network & Infrastructure": 27,
   "End-User Computing": 25,
   "Telecoms & Unified Comms": 9,
   "Cybersecurity": 8,
-  "IT Services & Support": 20
+  "IT Services & Support": 22,
+  "Cloud Services": 5
  },
  "onlineBriefings": 2,
- "carriedOver": 92,
+ "carriedOver": 103,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-173668",
-   "reference": "RFQ221066",
-   "title": "CLOUD - BASED ASSET VERIFICATION SOLUTION",
-   "department": "Commission for Conciliation Mediation & Arbitration",
-   "category": "Cloud Services",
-   "matchedTerms": [
-    "cloud",
-    "cloud - based"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-09T00:00:00+00:00",
-   "closingDate": "2026-10-16T15:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ 221066 CLOUD - BASED ASSET VERIFICATION SOLUTION.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=069ed264-917b-4f82-bc47-b76a8b174844.pdf&downloadedFileName=RFQ%20221066%20CLOUD%20-%20BASED%20ASSET%20VERIFICATION%20SOLUTION.pdf",
-     "format": "pdf",
-     "published": "2026-10-09T16:49:43Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-173635",
-   "reference": "RFQJW0094SM2026",
-   "title": "Supply And Delivery Of 60 (Sixty) X Remote Data Loggers with Mobile Application",
-   "department": "Johannesburg Water",
-   "category": "Software & Systems",
-   "matchedTerms": [
-    "mobile app"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-09T00:00:00+00:00",
-   "closingDate": "2026-10-16T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQJW0094SM2026 - Remote Data Loggers with Mobile App Function.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b91220d0-7d7f-449d-a817-61648965ec32.pdf&downloadedFileName=RFQJW0094SM2026%20-%20Remote%20Data%20Loggers%20with%20Mobile%20App%20Function.pdf",
-     "format": "pdf",
-     "published": "2026-10-09T15:02:53Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-173051",
-   "reference": "REQ1087-0610-ICT-WAN",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF INTERNET AND WIDE AREA NETWORK (WAN) CONNECTIVITY SERVICES FOR A PERIOD OF 12 MONTHS",
-   "department": "KwaZulu Natal Economic Regulatory Authority",
-   "category": "Network & Infrastructure",
-   "matchedTerms": [
-    "connectivity",
-    "ict",
-    "internet",
-    "network",
-    "wan",
-    "wide area network"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-06T00:00:00+00:00",
-   "closingDate": "2026-10-16T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "TOR WAN IS - 202608_FINAL_1.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=3649fdea-e327-43ee-8fad-5a47afe134f8.pdf&downloadedFileName=TOR%20WAN%20IS%20-%20202608_FINAL_1.pdf",
-     "format": "pdf",
-     "published": "2026-10-06T14:25:37Z"
-    },
-    {
-     "title": "QBD.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5734e25d-a078-4dfc-b787-deafa61fbc3e.pdf&downloadedFileName=QBD.pdf",
-     "format": "pdf",
-     "published": "2026-10-06T14:25:37Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-171501",
    "reference": "RFP176/2026",
@@ -229,6 +100,85 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=c02ad743-aa07-42f5-8364-dc4b2c86a3c6.pdf&downloadedFileName=RFQ-BIOMETRIC%20SERVICES_.pdf",
      "format": "pdf",
      "published": "2026-10-13T08:24:31Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173717",
+   "reference": "10024501",
+   "title": "Supply & Delivery of Server Spares",
+   "department": "State Security Agency",
+   "category": "Network & Infrastructure",
+   "matchedTerms": [
+    "server"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-19T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ server spares.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b4964b7f-c233-461e-8f44-3d9a99bd3ea0.pdf&downloadedFileName=RFQ%20server%20spares.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T09:19:03Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173822",
+   "reference": "RFQ No 29/2026",
+   "title": "Procurement Board Portal Software Solution for a period of 36 months.",
+   "department": "Postbank SOC",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "portal",
+    "software"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-19T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ No. 29_2026 Board Software Solution.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=aaae427e-5288-44db-a640-bda10b1db07a.pdf&downloadedFileName=RFQ%20No.%2029_2026%20Board%20Software%20Solution.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T17:14:46Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -929,6 +879,47 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=012d7534-5a92-450c-a2bf-90a3a65e8237.zip&downloadedFileName=Invitation%20to%20Tender%20-%20%20E3458GCDMWP.zip",
      "format": "zip",
      "published": "2026-09-22T12:22:53Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173758",
+   "reference": "RFQ 4688 /26",
+   "title": "Appointment of a training provider to provide Executive Artificial Intelligence (AI) and Data Analytics Training for four (4) Executive Managers.",
+   "department": "South African Weather Service",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "ai",
+    "artificial intelligence",
+    "data analytics"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-10-20T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ 4688_.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ad7b0998-799d-4d03-a477-6a0f8657cd83.pdf&downloadedFileName=RFQ%204688_.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T12:38:57Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1810,6 +1801,123 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174020",
+   "reference": "RFQJW143TN26",
+   "title": "RFQJW143TN26 - SAP Support Maintenance",
+   "department": "Johannesburg Water",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "sap"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-10-21T16:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQJW143TN26 - SAP SUPPORT MAINTENANCE.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d34666d6-d461-47a3-8380-3bef6012984d.pdf&downloadedFileName=RFQJW143TN26%20-%20SAP%20SUPPORT%20MAINTENANCE.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T10:30:38Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174181",
+   "reference": "RFQJW053NS26-27",
+   "title": "SUPPLY AND DELIVERY of 20x C-Type Laptop Chargers",
+   "department": "Johannesburg Water",
+   "category": "End-User Computing",
+   "matchedTerms": [
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-10-21T16:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQJW053NS26-27 SUPPLY AND DELIVERY of 20x C-Type Laptop Chargers(14-21 OCT).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=666b9163-8ad2-4831-b5ce-4e7595139049.pdf&downloadedFileName=RFQJW053NS26-27%20SUPPLY%20AND%20DELIVERY%20of%2020x%20C-Type%20Laptop%20Chargers%2814-21%20OCT%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-15T10:00:12Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174095",
+   "reference": "RFQ/CMS/ICT/2-02102026",
+   "title": "Appointment of the Event Handler for SigniFlow to be able to work on the CMS’s Singflow and SharePoint systems.",
+   "department": "Council for Medical Schemes",
+   "category": "IT Services & Support",
+   "matchedTerms": [
+    "ict"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-10-22T00:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Appointment of the Event Handler for SigniFlow to be able to work on the CMS’s Singflow and SharePoint systems..pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5f7e970a-5548-417f-9312-c515f804c12b.pdf&downloadedFileName=Appointment%20of%20the%20Event%20Handler%20for%20SigniFlow%20to%20be%20able%20to%20work%20on%20the%20CMS%E2%80%99s%20Singflow%20and%20SharePoint%20systems..pdf",
+     "format": "pdf",
+     "published": "2026-10-14T15:06:05Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-169664",
    "reference": "COMMAR 2/2026",
    "title": "Centralised customer relations management database and system",
@@ -1845,45 +1953,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=4b84b47a-6f5c-422e-a696-0683dc924ac0.pdf&downloadedFileName=Ad%20COMMAR22026.pdf",
      "format": "pdf",
      "published": "2026-09-09T11:31:11Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174174",
-   "reference": "108/2026/EWSS/CMS/RFQ",
-   "title": "APPOINTMENT OF AN INFORMATION TECHNOLOGY CHANGE MANAGEMENT SPECIALIST FOR A PERIOD OF SIX (6) MONTHS",
-   "department": "Trans-Caledon Tunnel Authority",
-   "category": "IT Services & Support",
-   "matchedTerms": [
-    "information technology"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-10-22T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "108-2026-EWSS-CMS-RFQ.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a3145d89-960f-4c8c-8f9f-46fcd6a75725.pdf&downloadedFileName=108-2026-EWSS-CMS-RFQ.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T09:48:38Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -2048,6 +2117,46 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174091",
+   "reference": "VCW27/028A",
+   "title": "Renewal of Annual License and Support for Read AI Enterprise + Plus for the period of three years",
+   "department": "Vaal Central Water",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "ai",
+    "license"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-10-22T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "VCW27 - 028A Annual Licence and Support for Read AI.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bf704a38-eb07-4fe0-af3e-543aa73de613.pdf&downloadedFileName=VCW27%20-%20028A%20Annual%20Licence%20and%20Support%20for%20Read%20AI.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T14:42:46Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-173456",
    "reference": "MDM 2026/27-16",
    "title": "Development of Spazashops addressing and Management System",
@@ -2203,6 +2312,69 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=1bdaa430-8a5b-437b-9505-2470584f79f5.pdf&downloadedFileName=Sage%20300%20-%20TENDER%20DOCUMENT%20.pdf",
      "format": "pdf",
      "published": "2026-09-21T15:43:49Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174006",
+   "reference": "RFQ GSM080/2026",
+   "title": "Request for quotation for IT resources to enable the migration to new AWS stack",
+   "department": "South African Airways (Pty) Limited",
+   "category": "Cloud Services",
+   "matchedTerms": [
+    "aws"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-10-22T16:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "REVISED SBD 4 -Annexure 2.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d41b43b9-15ac-46dc-947b-5aa2abccd69f.pdf&downloadedFileName=REVISED%20SBD%204%20-Annexure%202.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
+    },
+    {
+     "title": "RFQ GSM080-2026  -IT resources to enable the migration to new AWS stack.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bfaca77f-7957-46d1-92e0-5b6a424facf5.pdf&downloadedFileName=RFQ%20GSM080-2026%20%20-IT%20resources%20to%20enable%20the%20migration%20to%20new%20AWS%20stack.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
+    },
+    {
+     "title": "SAA GENERAL CONDITIONS OF CONTRACT. ANNEXURE 4.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e625347b-7596-435e-b3cd-d21bce455586.pdf&downloadedFileName=SAA%20GENERAL%20CONDITIONS%20OF%20CONTRACT.%20ANNEXURE%204.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
+    },
+    {
+     "title": "Job Descrptions for the Roles in Scope of Work.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=435c15df-f2c6-4c10-8824-d34322a4559d.pdf&downloadedFileName=Job%20Descrptions%20for%20the%20Roles%20in%20Scope%20of%20Work.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
+    },
+    {
+     "title": "Annexure 1 - Vendor application Local.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=05bca00b-d717-4373-987c-e9ea13304047.pdf&downloadedFileName=Annexure%201%20-%20Vendor%20application%20Local.pdf",
+     "format": "pdf",
+     "published": "2026-10-14T09:22:56Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -2438,7 +2610,7 @@
    "reference": "NWNW381/CORPS23-08/2026/2027",
    "title": "PROVISION OF ASSESSMENT AND MODERATION SERVICES FOR NATIONAL CERTIFICATE – INFORMATION TECHNOLOGY: END USER COMPUTING FOR 2025/26 ACADEMIC YEAR",
    "department": "Ratlou Local Municipality",
-   "category": "End-User Computing",
+   "category": "IT Services & Support",
    "matchedTerms": [
     "end user comput",
     "information technology"
@@ -2499,6 +2671,45 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=58d42ae7-76ff-40ba-8c50-c205e187f990.pdf&downloadedFileName=RFQ%20-%20Assesment%20and%20Moderation%202.pdf",
      "format": "pdf",
      "published": "2026-10-16T08:29:55Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174290",
+   "reference": "RFQ497/26/27",
+   "title": "Procurement of ICT Consumables\r\nSpecification attached to SBD form",
+   "department": "Limpopo - Public Works",
+   "category": "IT Services & Support",
+   "matchedTerms": [
+    "ict"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-15T00:00:00+00:00",
+   "closingDate": "2026-10-23T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "ICT CONSUMABLES 2.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=639ca429-0209-47d5-b31f-ece81f0e98e7.pdf&downloadedFileName=ICT%20CONSUMABLES%202.pdf",
+     "format": "pdf",
+     "published": "2026-10-15T15:39:46Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8464,7 +8675,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "matchedTerms": [
     "azure",
     "microsoft"
@@ -8581,6 +8792,45 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=b930cb21-f95a-4b06-8ba6-0d0fa3ce7d31.pdf&downloadedFileName=PMS%20DOCUMENT.pdf",
      "format": "pdf",
      "published": "2026-10-16T12:08:14Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174520",
+   "reference": "SO/097/10/2026",
+   "title": "Provision for 10G LAN PHY L1 transparent wavelength circuit service at SANSA Hartebeesthoek for a period of five (5) years",
+   "department": "South African National Space Agency",
+   "category": "Network & Infrastructure",
+   "matchedTerms": [
+    "lan"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-16T00:00:00+00:00",
+   "closingDate": "2026-11-18T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "works",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Bid Document-Oneweb 10G LAN PHY L1 Transparent Wavelength Circuit.docx.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4b4009dc-ce1d-42a4-b89b-cad052eb9985.pdf&downloadedFileName=Bid%20Document-Oneweb%2010G%20LAN%20PHY%20L1%20Transparent%20Wavelength%20Circuit.docx.pdf",
+     "format": "pdf",
+     "published": "2026-10-16T19:31:03Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
