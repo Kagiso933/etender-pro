@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-17T01:04:57.296687+00:00",
+ "generatedAt": "2026-10-17T09:09:03.132147+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-10",
- "releasesScanned": 3397,
- "uniqueTenders": 3452,
+ "coveredFrom": "2026-09-01",
+ "releasesScanned": 3999,
+ "uniqueTenders": 3999,
  "count": 180,
  "categories": {
-  "Software & Systems": 79,
+  "Software & Systems": 84,
   "Network & Infrastructure": 27,
-  "End-User Computing": 29,
+  "End-User Computing": 24,
   "Cloud Services": 6,
-  "Cybersecurity": 9,
-  "IT Services & Support": 22,
-  "Telecoms & Unified Comms": 8
+  "Telecoms & Unified Comms": 9,
+  "Cybersecurity": 7,
+  "IT Services & Support": 23
  },
  "onlineBriefings": 2,
- "carriedOver": 8,
+ "carriedOver": 4,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -528,7 +528,7 @@
    "reference": "UB/VW/02/2026/2027",
    "title": "Tenders are hereby invited for the Supply , Delivery, Installation and Maintenance  of Office Printers with PABX System with internet connective for Ubuntu Local  Municipality for a period of 36 Months",
    "department": "UBUNTU LOCAL MUNICIPALITY",
-   "category": "End-User Computing",
+   "category": "Telecoms & Unified Comms",
    "matchedTerms": [
     "internet",
     "pabx",
@@ -2709,7 +2709,7 @@
    "reference": "NWNW381/CORPS23-08/2026/2027",
    "title": "PROVISION OF ASSESSMENT AND MODERATION SERVICES FOR NATIONAL CERTIFICATE – INFORMATION TECHNOLOGY: END USER COMPUTING FOR 2025/26 ACADEMIC YEAR",
    "department": "Ratlou Local Municipality",
-   "category": "End-User Computing",
+   "category": "IT Services & Support",
    "matchedTerms": [
     "end user comput",
     "information technology"
@@ -2818,7 +2818,7 @@
    "reference": "MHSC027/2026-2027",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION OF MIMECAST LICENSE RENEWAL, SUPPORT, AND MANAGING OF TENANCY FOR A PERIOD OF THREE (3) YEARS",
    "department": "Mine Health and Safety Council",
-   "category": "Cybersecurity",
+   "category": "Software & Systems",
    "matchedTerms": [
     "license",
     "license renewal",
@@ -5274,7 +5274,7 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "matchedTerms": [
     "computer",
     "data centre",
@@ -6270,7 +6270,7 @@
    "reference": "220/2026",
    "title": "OFFICE EQUIPMENT (PRINTERS, COPIERS AND MULTI-FUNCTION MACHINES: LEASE OPTION) AND PRINT\r\nMANAGEMENT SOFTWARE",
    "department": "Kouga Municipality",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "matchedTerms": [
     "printers",
     "software"
@@ -8568,7 +8568,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Cybersecurity",
+   "category": "Software & Systems",
    "matchedTerms": [
     "firewall",
     "ict",
@@ -9199,7 +9199,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "matchedTerms": [
     "printer",
     "software"
