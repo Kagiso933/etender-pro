@@ -1,10 +1,10 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-18T00:38:15.067018+00:00",
+ "generatedAt": "2026-10-18T09:27:05.419657+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-09",
- "releasesScanned": 3475,
- "uniqueTenders": 3555,
+ "coveredFrom": "2026-10-16",
+ "releasesScanned": 155,
+ "uniqueTenders": 190,
  "count": 180,
  "categories": {
   "Software & Systems": 79,
@@ -16,7 +16,7 @@
   "Telecoms & Unified Comms": 8
  },
  "onlineBriefings": 2,
- "carriedOver": 7,
+ "carriedOver": 161,
  "briefingFieldsSeen": {},
  "tenders": [
   {
