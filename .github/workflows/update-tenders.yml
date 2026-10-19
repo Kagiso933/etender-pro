@@ -35,14 +35,14 @@ jobs:
           echo "API probe: $code"
           if [ "$code" != "200" ]; then echo "::error::eTenders API probe returned $code: $(head -c 300 /tmp/probe.json 2>/dev/null)"; exit 1; fi
 
-      - name: Fetch open IT tenders from the eTenders API
+      - name: Fetch open IT and Lesego Laka tenders from the eTenders API
         run: python3 etender_scraper.py --days 60 --budget 35 --out data/tenders.json
 
       - name: Commit updated data
         run: |
           git config user.name "etender-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/tenders.json
+          git add data/tenders.json data/tenders-llp.json
           if git diff --cached --quiet; then
             echo "No changes"
           else

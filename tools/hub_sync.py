@@ -7,8 +7,12 @@ The hub is a Claude artifact with a shared database. A scheduled Claude task:
   2. runs this script,
   3. applies each batch it prints with ArtifactData action "batch".
 
-Only open IT tenders with an online briefing are added. Tenders already in the hub are
-refreshed (dates, briefing details, links) without touching the bid status or notes.
+Two companies share the hub, and each tender document carries a "company" field:
+  - Ryno-Tec ("rtc"): open IT tenders with an online briefing, from data/tenders.json.
+  - Lesego Laka Projects ("llp"): open maintenance, grounds, agriculture and supply tenders
+    in Gauteng, from data/tenders-llp.json beside the IT feed (read automatically if present).
+Tenders already in the hub are refreshed (dates, briefing details, links) without touching
+the bid status or notes.
 
 Usage:
     python3 tools/hub_sync.py data/tenders.json HUB_DIR [META_VERSION] [VERSIONS_JSON] > writes.json
@@ -31,6 +35,10 @@ from datetime import datetime, timedelta, timezone
 SAST = timezone(timedelta(hours=2))
 MODE = {"online": "Online", "online and in person": "Online and in person", "in person": "In person",
         "none": "No briefing", "unknown": "Not stated"}
+GAUTENG = re.compile(r"gauteng|tshwane|pretoria|johannesburg|joburg|soweto|ekurhuleni|germiston|benoni|boksburg|"
+                     r"kempton|tembisa|springs|sedibeng|vereeniging|vanderbijlpark|emfuleni|midvaal|meyerton|lesedi|heidelberg|"
+                     r"west rand|mogale|krugersdorp|randfontein|rand west|merafong|carletonville|westonaria|mabopane|"
+                     r"soshanguve|ga-?rankuwa|hammanskraal|centurion|midrand|sandton|roodepoort|alberton", re.I)
 FEED_FIELDS = ("title", "tenderNo", "buyer", "province", "category", "value", "closing", "briefing",
                "compulsory", "briefingAt", "briefingVenue", "briefingLink", "sourceUrl", "docsUrl", "ocid")
 
@@ -93,6 +101,14 @@ def load_hub(hub_dir, versions):
     return docs
 
 
+def in_gauteng(t):
+    """Lesego Laka bids in Gauteng: match the province or any Gauteng place in the tender."""
+    b, c = t.get("briefing") or {}, t.get("contact") or {}
+    text = " ".join(str(x or "") for x in (t.get("province"), c.get("region"), t.get("department"), t.get("title"),
+                                            t.get("eligibility"), t.get("submission"), b.get("venue"), b.get("note")))
+    return bool(GAUTENG.search(text))
+
+
 def main():
     feed_path, hub_dir = sys.argv[1], sys.argv[2]
     meta_version = sys.argv[3] if len(sys.argv) > 3 else ""  # version of meta/etender, if it exists ("" if not)
@@ -102,6 +118,11 @@ def main():
             versions = {k: int(v) for k, v in json.load(f).items()}
     with open(feed_path, encoding="utf-8") as f:
         feed = json.load(f)
+    llp_path = os.path.join(os.path.dirname(feed_path) or ".", "tenders-llp.json")
+    llp_feed = {}
+    if os.path.exists(llp_path):
+        with open(llp_path, encoding="utf-8") as f:
+            llp_feed = json.load(f)
     hub = load_hub(hub_dir, versions)
     missing = [d for d, v in hub.items() if not v["version"]]
     if missing:
@@ -112,7 +133,9 @@ def main():
     stamp = now.isoformat()
     writes, added, updated = [], 0, 0
     online = 0
-    for t in feed.get("tenders", []):
+    llp = {"open": 0, "added": 0, "updated": 0, "outsideGauteng": 0}
+    items = [("rtc", t) for t in feed.get("tenders", [])] + [("llp", t) for t in llp_feed.get("tenders", [])]
+    for company, t in items:
         closing = t.get("closingDate")
         try:
             if closing and datetime.fromisoformat(closing.replace("Z", "+00:00")) < now:
@@ -121,7 +144,12 @@ def main():
             pass
         body = to_hub(t)
         is_online = bool((t.get("briefing") or {}).get("online"))
-        online += is_online
+        if company == "rtc":
+            online += is_online
+            wanted = is_online
+        else:
+            wanted = in_gauteng(t)
+            llp["open" if wanted else "outsideGauteng"] += 1
         match = by_ocid.get(body["ocid"])
         if match:
             doc_id, doc = match
@@ -135,21 +163,30 @@ def main():
                 if doc.get("version"):
                     entry["if_version"] = doc["version"]
                 writes.append(entry)
-                updated += 1
-        elif is_online and body["ocid"]:
+                if company == "llp":
+                    llp["updated"] += 1
+                else:
+                    updated += 1
+        elif wanted and body["ocid"]:
             doc_id = re.sub(r"[^A-Za-z0-9_\-.~:@+]", "-", body["ocid"])[:200]
             writes.append({"op": "set", "collection": "tenders", "doc_id": doc_id,
-                           "data": {**body, "status": "New", "notes": "", "createdAt": stamp, "updatedAt": stamp}})
-            added += 1
+                           "data": {**body, "company": company, "status": "New", "notes": "", "createdAt": stamp, "updatedAt": stamp}})
+            if company == "llp":
+                llp["added"] += 1
+            else:
+                added += 1
 
     summary = {"syncedAt": stamp, "feedGeneratedAt": feed.get("generatedAt"), "online": online,
-               "added": added, "updated": updated, "source": "https://kagiso933.github.io/etender-pro/"}
+               "added": added, "updated": updated, "source": "https://kagiso933.github.io/etender-pro/",
+               "companies": {"llp": llp}}
     batches = [writes[i:i + 49] for i in range(0, len(writes), 49)] or [[]]
     # the sync status shown on the hub's Tenders page goes in the last batch
     batches[-1].append({"op": "set", "collection": "meta", "doc_id": "etender", "data": summary,
                         **({"if_version": int(meta_version)} if meta_version else {})})
     json.dump({"batches": batches, "summary": summary}, sys.stdout, indent=1)
-    print(f"\n{added} to add, {updated} to update, {online} open online-briefing tenders in the feed", file=sys.stderr)
+    print(f"\nRyno-Tec: {added} to add, {updated} to update, {online} open online-briefing tenders in the feed", file=sys.stderr)
+    print(f"Lesego Laka: {llp['added']} to add, {llp['updated']} to update, {llp['open']} open in Gauteng "
+          f"({llp['outsideGauteng']} elsewhere skipped)", file=sys.stderr)
 
 
 if __name__ == "__main__":

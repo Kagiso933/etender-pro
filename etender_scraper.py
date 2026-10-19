@@ -3,8 +3,10 @@
 SA eTender Pro - tender fetcher.
 
 Pulls tenders from National Treasury's official eTenders open-data API
-(Open Contracting Data Standard), keeps the ones that are still open and
-IT-related, and writes them to data/tenders.json for the web app.
+(Open Contracting Data Standard) and keeps the ones that are still open:
+  - IT tenders (Ryno-Tec)            -> data/tenders.json (the web app reads this)
+  - facilities maintenance, grounds, agriculture and supply tenders
+    (Lesego Laka Projects)            -> data/tenders-llp.json, next to it
 
 API docs: https://ocds-api.etenders.gov.za/swagger/index.html
 Uses only the Python standard library, so it runs anywhere with Python 3.8+.
@@ -80,26 +82,66 @@ def _flags(pattern):
     return 0 if letters and letters.isupper() else re.I
 
 
-_compiled = [(name, [(re.compile(p.lstrip("~"), _flags(p.lstrip("~"))), p.startswith("~")) for p in pats])
-             for name, pats in CATEGORIES]
-# For ALL-CAPS text every acronym is upper case anyway, so match everything case-insensitively
-_compiled_caps = [(name, [(re.compile(p.lstrip("~"), re.I), p.startswith("~")) for p in pats])
-                  for name, pats in CATEGORIES]
+# Lesego Laka Projects: facilities maintenance, grounds, agriculture and non-IT supply.
+# Same rules as above: "~" patterns are weak and need a strong match or a second weak one.
+LLP_CATEGORIES = [
+    ("Facilities Maintenance", [r"painting", r"\bpaint(s|ed)?\b", r"paving", r"\bpavers?\b", r"kerb(s|ing)?\b", r"building maintenance",
+                                r"maintenance (and|&) repairs?", r"repairs? (and|&) maintenance", r"refurbish", r"renovat",
+                                r"plumbing", r"roof(s|ing)? (repair|replacement|maintenance)", r"waterproofing", r"ceilings?\b",
+                                r"\btiling\b", r"gutters?\b", r"fencing", r"palisade", r"(minor )?building works", r"civil works",
+                                r"carpentry", r"glazing", r"handyman", r"general maintenance", r"facilit(y|ies) maintenance",
+                                r"~maintenance", r"~repairs?\b", r"~upgrad", r"~\bbuildings?\b"]),
+    ("Grounds & Landscaping", [r"grass cutting", r"cutting of grass", r"landscap", r"garden(ing)? services", r"horticultur",
+                               r"tree (felling|pruning|cutting|removal)", r"bush clearing", r"alien (vegetation|invasive|plant)",
+                               r"vegetation (management|control|clearing)", r"weed control", r"\blawns?\b", r"park(s)? maintenance",
+                               r"cemeter(y|ies)", r"verge maintenance", r"open spaces?", r"~garden", r"~grounds\b", r"~clearing"]),
+    ("Agriculture", [r"agricultur", r"livestock", r"cattle", r"\bgoats?\b", r"\bsheep\b", r"\bpigs?\b", r"piggery", r"poultry",
+                     r"broilers?", r"animal feed", r"fodder", r"lucerne", r"seedlings?", r"\bseeds\b", r"fertili[sz]er",
+                     r"farm(ing)? (inputs|implements|equipment|infrastructure)", r"fresh produce", r"vegetables?", r"mechani[sz]ation",
+                     r"hydroponic", r"food parcels?", r"nutrition programme", r"lease of (state |municipal )?(land|farms?)",
+                     r"~\bfarm(s|ers?|ing)?\b", r"~irrigation", r"~tractors?", r"~tunnels?\b", r"~\bfood\b"]),
+    ("Supply & Consumables", [r"\bPPE\b", r"personal protective", r"protective clothing", r"workwear", r"overalls", r"uniforms?\b",
+                              r"safety boots", r"cleaning (materials|chemicals|products|consumables|equipment)", r"hygiene (products|services|consumables)",
+                              r"detergents?", r"toiletries", r"stationery", r"cleaning services", r"~consumables", r"~cleaning"]),
+]
+# Work Lesego Laka does not do; these cancel a lone weak match
+LLP_EXCLUDE = [r"vehicles?\b", r"\bfleet\b", r"\blifts?\b", r"elevators?", r"escalators?", r"\bHVAC\b", r"air.?condition",
+               r"generators?", r"medical (equipment|devices)", r"software", r"\bICT\b", r"x-?ray", r"boilers?\b"]
+
+
+def _compile(categories):
+    return ([(name, [(re.compile(p.lstrip("~"), _flags(p.lstrip("~"))), p.startswith("~")) for p in pats]) for name, pats in categories],
+            # For ALL-CAPS text every acronym is upper case anyway, so match everything case-insensitively
+            [(name, [(re.compile(p.lstrip("~"), re.I), p.startswith("~")) for p in pats]) for name, pats in categories])
+
+
+_compiled, _compiled_caps = _compile(CATEGORIES)
 _exclude = [re.compile(p, re.I) for p in EXCLUDE]
+_llp_compiled, _llp_compiled_caps = _compile(LLP_CATEGORIES)
+_llp_exclude = [re.compile(p, re.I) for p in LLP_EXCLUDE]
 
 
 def classify(text):
     """Return (category, matched_terms) for IT tenders, or (None, []) if not IT."""
+    return _classify(text, _compiled, _compiled_caps, _exclude)
+
+
+def classify_llp(text):
+    """Return (category, matched_terms) for Lesego Laka Projects tenders, or (None, [])."""
+    return _classify(text, _llp_compiled, _llp_compiled_caps, _llp_exclude)
+
+
+def _classify(text, compiled, compiled_caps, exclude):
     letters = [c for c in text if c.isalpha()]
     caps = bool(letters) and sum(c.isupper() for c in letters) / len(letters) > 0.6
     strong, weak = {}, {}
-    for name, patterns in (_compiled_caps if caps else _compiled):
+    for name, patterns in (compiled_caps if caps else compiled):
         for rx, is_weak in patterns:
             m = rx.search(text)
             if m:
                 (weak if is_weak else strong).setdefault(name, []).append(m.group(0).lower())
     weak_terms = {t for v in weak.values() for t in v}
-    excluded = any(rx.search(text) for rx in _exclude)
+    excluded = any(rx.search(text) for rx in exclude)
     if not strong and (len(weak_terms) < 2 or excluded):
         return None, []
     if strong and excluded and sum(len(v) for v in strong.values()) == 1 and not weak_terms:
@@ -288,6 +330,10 @@ def to_tender(release, now, keep_all=False):
     title = (t.get("title") or "").strip()
     description = (t.get("description") or "").strip()
     category, terms = classify(f"{title} {description}")
+    company = "rtc" if category else ""
+    if not category:  # not IT: is it Lesego Laka work?
+        category, terms = classify_llp(f"{title} {description}")
+        company = "llp" if category else ""
     if not category and not keep_all:
         return None
 
@@ -322,6 +368,7 @@ def to_tender(release, now, keep_all=False):
         "title": description or title,
         "department": buyer,
         "category": category or "Other",
+        "company": company,
         "matchedTerms": terms,
         "value": amount if amount and amount > 0 else None,
         "currency": value.get("currency") or "ZAR",
@@ -454,7 +501,7 @@ def carry_over(path, tenders, covered_from, days):
 def main():
     ap = argparse.ArgumentParser(description="Fetch open IT tenders from the eTenders OCDS API")
     ap.add_argument("--days", type=int, default=60, help="how far back to look for published tenders")
-    ap.add_argument("--out", default="data/tenders.json")
+    ap.add_argument("--out", default="data/tenders.json", help="IT tenders; Lesego Laka tenders go to tenders-llp.json beside it")
     ap.add_argument("--all", action="store_true", help="keep non-IT tenders too")
     ap.add_argument("--budget", type=float, default=30, help="stop fetching after this many minutes and save what we have")
     args = ap.parse_args()
@@ -464,9 +511,15 @@ def main():
     except Exception as e:
         gh_error(str(e))
         sys.exit(1)
+    llp_out = os.path.join(os.path.dirname(args.out) or ".", "tenders-llp.json")
+    llp = [t for t in tenders if t.get("company") == "llp"]
+    tenders = [t for t in tenders if t.get("company") != "llp"]
     carried = carry_over(args.out, tenders, covered_from, args.days)
     if carried:
         tenders.sort(key=lambda x: x["closingDate"])
+    llp_carried = carry_over(llp_out, llp, covered_from, args.days)
+    if llp_carried:
+        llp.sort(key=lambda x: x["closingDate"])
     cats = {}
     for t in tenders:
         cats[t["category"]] = cats.get(t["category"], 0) + 1
@@ -490,9 +543,20 @@ def main():
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=1, ensure_ascii=False)
 
+    llp_cats = {}
+    for t in llp:
+        llp_cats[t["category"]] = llp_cats.get(t["category"], 0) + 1
+    with open(llp_out, "w", encoding="utf-8") as f:
+        json.dump({**payload, "company": "llp", "count": len(llp), "categories": llp_cats,
+                   "onlineBriefings": sum(1 for t in llp if (t.get("briefing") or {}).get("online")),
+                   "carriedOver": llp_carried, "tenders": llp}, f, indent=1, ensure_ascii=False)
+
     print(f"\nScanned {scanned} releases ({unique} unique tenders)")
     print(f"Open IT tenders: {len(tenders)} -> {args.out} ({online} with an online briefing)")
     for name, n in sorted(cats.items(), key=lambda kv: -kv[1]):
+        print(f"  {name}: {n}")
+    print(f"Open Lesego Laka tenders: {len(llp)} -> {llp_out}")
+    for name, n in sorted(llp_cats.items(), key=lambda kv: -kv[1]):
         print(f"  {name}: {n}")
 
 
