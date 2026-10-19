@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-19T17:34:18.420151+00:00",
+ "generatedAt": "2026-10-19T22:04:42.791515+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-05",
- "releasesScanned": 3724,
- "uniqueTenders": 3794,
- "count": 178,
+ "coveredFrom": "2026-09-11",
+ "releasesScanned": 3380,
+ "uniqueTenders": 3440,
+ "count": 176,
  "categories": {
-  "Network & Infrastructure": 25,
-  "End-User Computing": 24,
+  "Network & Infrastructure": 26,
+  "End-User Computing": 23,
   "Cybersecurity": 9,
-  "Software & Systems": 87,
-  "IT Services & Support": 20,
+  "Software & Systems": 81,
+  "IT Services & Support": 24,
   "Cloud Services": 5,
   "Telecoms & Unified Comms": 8
  },
  "onlineBriefings": 2,
- "carriedOver": 4,
+ "carriedOver": 10,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -25,6 +25,7 @@
    "title": "FORTINET NETWORK SWITCHES & ACCESS POINTS",
    "department": "Technology Innovation Agency",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "fortinet",
     "network",
@@ -91,6 +92,7 @@
    "title": "ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY AND DELIVERY OF IT-RELATED PERIPHERALS FOR THE SHARED SERVICES DEPARTMENT",
    "department": "City of Tshwane",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "it-related",
     "peripheral"
@@ -171,6 +173,7 @@
    "title": "Appointment of a training provider to provide Executive Artificial Intelligence (AI) and Data Analytics Training for four (4) Executive Managers.",
    "department": "South African Weather Service",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "ai",
     "artificial intelligence",
@@ -212,6 +215,7 @@
    "title": "THE APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY, DELIVERY, INSTALLATION AND MAINTENANCE OF NEW MULTIFUNCTION COPIERS AND PRINTERS FOR GGDA GROUP FOR A PERIOD OF 36 MONTHS",
    "department": "Gauteng Growth and Development Agency (GGDA)",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "printers"
    ],
@@ -384,6 +388,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISIONING OF AN AUDIT MANAGEMENT SOFTWARE “AUDIT TOOL” FOR INTERNAL AUDIT.",
    "department": "South African Forestry Company Limited",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -435,6 +440,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE SPECIALISED ICT TECHNICAL SUPPORT SERVICES, UPGRADE AND IMPLEMENT NEW FUNCTIONALITIES FOR PRESCRIBED MICROSOFT TECHNOLOGIES FOR BERGRIVIER MUNICIPALITY FROM DATE OF APPOINTMENT UNTIL 30 JUNE 2029",
    "department": "Bergrivier - WC Local Municipality",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict",
     "microsoft",
@@ -476,6 +482,7 @@
    "title": "THREE-YEAR CONTRACT - SUPPLY AND FITMENT OF A VEHICLE MONITORING, TRACKING AND FLEET MANAGEMENT SYSTEM.",
    "department": "uMlalazi Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -638,6 +645,7 @@
    "title": "Provision of GIS and remote sensing services and spatial datasets on an as-and-when-required basis for a period of five years",
    "department": "ESKOM",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "gis"
    ],
@@ -719,6 +727,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO PROCURE, SUPPLY AND INSTALL (SETUP) ADOBE INDESIGN, ADOBE ILLUSTRATOR, AND CANVA FOR BUSINESS SOFTWARE LICENSES FOR THE COMMUNICATIONS AND STAKEHOLDER MANAGEMENT UNIT UNDER THE GROUP FINANCE DEPARTMENT.",
    "department": "City Council of Johannesburg",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "license",
     "software",
@@ -760,6 +769,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT A DETAILED LAN ASSESSMENT",
    "department": "Media, Information and Communication Technologies Sector Education and training Authority (MICT SETA)",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "lan"
    ],
@@ -799,6 +809,7 @@
    "title": "SITA ACCREDITED SERVICE PROVIDERS ON RFB 740 CONTRACT ARE HEREBY INVITED TO QUOTE FOR SUPPLY AND DELIVERY OF 22 LAPTOPS FOR UGU DISTRICT TO BE DELEVERED AT LOT 618 – RAY KNONYENI ROAD. CONTACT PERSON – MR. THOBANI SHABALALA – 073 804 4581. PLEASE SEE THE ATTACHED SPECIFICATION",
    "department": "Kwazulu Natal - Social Development",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "laptop"
    ],
@@ -838,6 +849,7 @@
    "title": "APPOINTMENT OF SERVICE PROVIDER FOR THE PROVISION OF A GOVERNANCE, RISK AND COMPLIANCE (GRC) SOFTWARE SOLUTION INCLUDING INSTALLATION, MAINTENANCE AND SUPPORT FOR A PERIOD OF THREE (3) YEARS",
    "department": "Film and Publication Board",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -877,6 +889,7 @@
    "title": "APPOINTMENT OF INTERNET SERVICE PROVIDER FOR GAUTENG PROVINCIAL LEGISLATURE FOR 5 YEARS.",
    "department": "Gauteng - Legislature",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "internet",
     "internet service provider"
@@ -917,6 +930,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO REPLACE AND SUPPORT THE CHAMBER PC’S AND RELATED INFRASTRUCTURE FOR THE GPL FOR A PERIOD OF THREE YEARS.",
    "department": "Gauteng - Legislature",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "pc’s"
    ],
@@ -956,6 +970,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO SUPPLY VMWARE VCF PRESCRIPTION LICENCE RENEWAL SERVICES TO SENTECH HEAD OFFICE FOR A PERIOD OF ONE (1) YEAR.",
    "department": "Sentech Limited",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "licence",
     "licence renewal",
@@ -1016,6 +1031,7 @@
    "title": "RENEWAL OF 60 X MICROSOFT 365 E3 LICENSES, INCLUSIVE OF MICROSOFT TEAMS PHONE STANDARD AND OPERATOR CONNECT SERVICES FOR A CONTRACT PERIOD OF 24 MONTHS",
    "department": "National Arts Council of South Africa",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "license",
     "microsoft",
@@ -1058,6 +1074,7 @@
    "title": "RFQJW143TN26 - SAP Support Maintenance",
    "department": "Johannesburg Water",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "sap"
    ],
@@ -1097,6 +1114,7 @@
    "title": "SUPPLY AND DELIVERY of 20x C-Type Laptop Chargers",
    "department": "Johannesburg Water",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "laptop"
    ],
@@ -1136,6 +1154,7 @@
    "title": "Appointment of the Event Handler for SigniFlow to be able to work on the CMS’s Singflow and SharePoint systems.",
    "department": "Council for Medical Schemes",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict"
    ],
@@ -1215,6 +1234,7 @@
    "title": "APPOINTMENT OF AN INFORMATION TECHNOLOGY CHANGE MANAGEMENT SPECIALIST FOR A PERIOD OF SIX (6) MONTHS",
    "department": "Trans-Caledon Tunnel Authority",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "information technology"
    ],
@@ -1254,6 +1274,7 @@
    "title": "APPOINTMENT OF AN ACCREDITED SERVICE PROVIDER FOR THE RENEWAL OF QUEST LICENSES AND MANAGED SERVICES FOR A PERIOD OF 2 YEARS",
    "department": "Gauteng - Legislature",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "license",
     "managed services"
@@ -1294,6 +1315,7 @@
    "title": "APPOINTMENT OF AN ACCREDITED SERVICE PROVIDER FOR THE RENEWAL OF TENABLE IO LICENSES AND MANAGED SERVICES FOR A PERIOD OF 2 YEARS",
    "department": "Gauteng - Legislature",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "license",
     "managed services"
@@ -1334,6 +1356,7 @@
    "title": "SUPPLY AND DELIVERY OF INSTRUMENTATION SOFTWARES LOGGERNET AND RTMC PRO FOR THE RAISING OF CLANWILLIAM DAM PROJECT IN THE WESTERN CAPE FOR DWS CONSTRUCTION SOUTH.",
    "department": "Water and Sanitation",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -1373,6 +1396,7 @@
    "title": "SUPPLY OF FUEL, INSTALLATION, MANAGEMENT AND MAINTENANCE OF AN INTEGRATED ELECTRONIC FLEET MANAGEMENT SYSTEM",
    "department": "Nelson Mandela Bay Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -1413,6 +1437,7 @@
    "title": "Renewal of Annual License and Support for Read AI Enterprise + Plus for the period of three years",
    "department": "Vaal Central Water",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "ai",
     "license"
@@ -1453,6 +1478,7 @@
    "title": "Development of Spazashops addressing and Management System",
    "department": "Mopani District Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -1493,6 +1519,7 @@
    "title": "SUPPLY AND DELIVERY OF LAPTOPS AND DESKTOPS",
    "department": "Francis Baard District Municipality",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "desktop",
     "laptop"
@@ -1533,6 +1560,7 @@
    "title": "Provision of 3 Tier Virtual Environment at Majuba TVET College for the period of five (05) Years",
    "department": "Majuba Tvet college",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "virtual environment"
    ],
@@ -1572,6 +1600,7 @@
    "title": "APPOINTMENT OF SERVICE PROVIDER FOR THE RENEWAL AND LICENSING OF THE SAGE 300 PEOPLE HR & PAYROLL SYSTEM",
    "department": "Greater Kokstad Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "payroll system",
     "sage 300",
@@ -1613,6 +1642,7 @@
    "title": "PROVISION OF SAP ERP THIRD-LINE SUPPORT SERVICES ON AN AS-AND-WHEN-REQUIRED BASIS",
    "department": "Johannesburg Water",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "erp",
     "sap"
@@ -1653,6 +1683,7 @@
    "title": "Request for quotation for IT resources to enable the migration to new AWS stack",
    "department": "South African Airways (Pty) Limited",
    "category": "Cloud Services",
+   "company": "rtc",
    "matchedTerms": [
     "aws"
    ],
@@ -1716,6 +1747,7 @@
    "title": "RE-ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF COMPREHENSIVE MAINTENANCE, REPAIR AND CALIBRATION SERVICES OF EXISTING MULTIDECK WEIGHBRIDGES AND OTHER WEIGHBRIDGES, THE PROVISION AND RELOADING OF APPROPRIATE SOFTWARE, AS WELL AS THE SURVEYING AND ASSESSMENT OF EXISTING EQUIPMENT AND INFRASTRUCTURE SCHEDULED FOR UPGRADING, REVAMPING OR REPLACEMENT TO THE TSHWANE METRO POLICE DEPARTMENT",
    "department": "City of Tshwane",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -1755,6 +1787,7 @@
    "title": "APPOINTMENT OF A PANEL OF DEVELOPMENT OPERATIONS SUPPLIERS\r\nTO PROVIDE A TEAM OF HIGHLY SKILLED DEVELOPERS FOR A PERIOD OF THREE\r\nYEARS.",
    "department": "South African Broadcasting Corporation Limited",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "development operations"
    ],
@@ -1794,6 +1827,7 @@
    "title": "PROVISION OF BACKUP AS A SERVICE (BAAS) FOR A PERIOD OF 5 YEARS",
    "department": "ESKOM",
    "category": "Cloud Services",
+   "company": "rtc",
    "matchedTerms": [
     "baas",
     "backup",
@@ -1919,6 +1953,7 @@
    "title": "Provision of ICT desktop support services for a period of 3 years",
    "department": "City of Tshwane",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "desktop",
     "desktop support",
@@ -1959,7 +1994,8 @@
    "reference": "NWNW381/CORPS23-08/2026/2027",
    "title": "PROVISION OF ASSESSMENT AND MODERATION SERVICES FOR NATIONAL CERTIFICATE – INFORMATION TECHNOLOGY: END USER COMPUTING FOR 2025/26 ACADEMIC YEAR",
    "department": "Ratlou Local Municipality",
-   "category": "End-User Computing",
+   "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "end user comput",
     "information technology"
@@ -2030,6 +2066,7 @@
    "title": "Procurement of ICT Consumables\r\nSpecification attached to SBD form",
    "department": "Limpopo - Public Works",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict"
    ],
@@ -2064,92 +2101,12 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-172540",
-   "reference": "MHSC027/2026-2027",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION OF MIMECAST LICENSE RENEWAL, SUPPORT, AND MANAGING OF TENANCY FOR A PERIOD OF THREE (3) YEARS",
-   "department": "Mine Health and Safety Council",
-   "category": "Software & Systems",
-   "matchedTerms": [
-    "license",
-    "license renewal",
-    "mimecast"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-02T00:00:00+00:00",
-   "closingDate": "2026-10-23T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "MHSC_027_2026_2027.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=39165efb-8f87-4852-ab8d-35fb40b5c178.pdf&downloadedFileName=MHSC_027_2026_2027.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T08:54:28Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-172568",
-   "reference": "MICT/SETA/ADB/07/2026",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE RENEWAL OF ADOBE PRO LICENSES FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
-   "department": "Media, Information and Communication Technologies Sector Education and training Authority (MICT SETA)",
-   "category": "Software & Systems",
-   "matchedTerms": [
-    "adobe pro licens",
-    "license"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-02T00:00:00+00:00",
-   "closingDate": "2026-10-23T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "BID DOCUMENT-MICT-SETA-ADB-07-2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=da3327cb-7af5-440d-95b2-0797ed4aa54a.pdf&downloadedFileName=BID%20DOCUMENT-MICT-SETA-ADB-07-2026.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T10:44:38Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-172293",
    "reference": "H26/015 AI",
    "title": "Mamelodi Magistrate Court: Appointment of Multi – Disciplinary Professional Service include Architect, Principal Agent and Construction Health and Safety Agent.",
    "department": "Public Works",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "ai"
    ],
@@ -2189,6 +2146,7 @@
    "title": "TBH 210/2026: OPEN BIDDING: SUPPLY, INSTALL, COMMISSION AND GUARANTEE OF FIVE (5) x 600L MEDICAL STEAM AUTOCLAVES WITH 316L STAINLESS STEEL CHAMBER, DIGITAL DATA LOGGER & THERMAL PRINTER, TYGERBERG HOSPITAL.",
    "department": "Tygerburg Hospital",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "printer"
    ],
@@ -2234,6 +2192,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF ICT PERIPHERALS, DEVICES AND COMPONENTS AS AND WHEN REQUIRED BASIS FOR A PERIOD OF THREE (03) YEARS",
    "department": "Council for Geoscience",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict",
     "peripheral"
@@ -2280,6 +2239,7 @@
    "title": "Procurement of Laptops and Tracking Devices",
    "department": "Winnie Madikizela-Mandela Local Municipality",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "laptop"
    ],
@@ -2319,6 +2279,7 @@
    "title": "SUPPLY AND DELIVERY OF LAPTOPS",
    "department": "Umsobomvu Local Municipality",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "laptop"
    ],
@@ -2358,6 +2319,7 @@
    "title": "Sentech is inviting quotations from qualified and accredited service providers for the Optical Fibre Reticulation and LAN Points Installation at its Durban Branch Campus.",
    "department": "Sentech Limited",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "fibre",
     "lan"
@@ -2422,6 +2384,7 @@
    "title": "THE PROVISION OF M-FILES APPLICATION SOFTWARE LICENSE & SERVICE LEVEL AGREEMENT TO UGU DISTRICT MUNICIPALITY FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
    "department": "Ugu Disctrict Munucipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "license",
     "software",
@@ -2463,6 +2426,7 @@
    "title": "THE PROVISION OF ROUTEMASTER CLOUD (RMC) APPLICATION SOFTWARE LICENSE & SERVICE LEVEL AGREEMENT TO UGU DISTRICT MUNICIPALITY FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
    "department": "Ugu Disctrict Munucipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "cloud",
     "license",
@@ -2511,6 +2475,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT PENETRATION TESTING AND VULNERABILITY ASSESSMENT SERVICES FOR A ONCE-OFF ENGAGEMENT OF APPROXIMATELY THREE (3) MONTHS",
    "department": "NATIONAL METROLOGY INSTITUTE OF SOUTH AFRICA",
    "category": "Cybersecurity",
+   "company": "rtc",
    "matchedTerms": [
     "penetration test",
     "vulnerability assessment"
@@ -2551,6 +2516,7 @@
    "title": "SUPPLY AND DELIVERY OF LAPTOPS",
    "department": "Beaufort West Municipality",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "laptop"
    ],
@@ -2590,6 +2556,7 @@
    "title": "Request for Information to develop the final RFQ for the Supply, Installation and Commissioning of a Podcast Studio and Multimedia Production Solution, including Audio Recording Equipment, Software, Training and Support Services for SAQA.",
    "department": "The South African Qualifications Authority (SAQA)",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -2629,6 +2596,7 @@
    "title": "Request for quotation for IT resources to support the SAA IT infrastructure",
    "department": "South African Airways (Pty) Limited",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "it infrastructure"
    ],
@@ -2686,6 +2654,7 @@
    "title": "Request for quotation : A service provider to Support , Maintain and host project  management system",
    "department": "Tourism",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -2738,6 +2707,7 @@
    "title": "ADLash Maintenance and Minor Works for NTCSA, Eskom and Broadband Infraco Optic Fibre Network on an as and when required basis for a period of three (3) years",
    "department": "ESKOM",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "fibre",
     "network"
@@ -2964,6 +2934,7 @@
    "title": "Lease Agreement for telecommunication transaction to secure suitable office accommodation in Orkney /Klerksdorp ±542m² office space with parking for approximately 12 vehicles. The property must be located within a 3-5 km radius of the mew Orkney Northwest for a period of 5(five) years",
    "department": "Eskom National Transmission Company of South Africa",
    "category": "Telecoms & Unified Comms",
+   "company": "rtc",
    "matchedTerms": [
     "telecommunication"
    ],
@@ -3063,6 +3034,7 @@
    "title": "Request for Proposals for the Supply and Delivery of Laptops for NCV and Occupational Program Students of the College",
    "department": "Higher Education and Training - Mopani East TVET College",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "laptop"
    ],
@@ -3102,6 +3074,7 @@
    "title": "Request for Proposals for the Supply and Delivery of All-In-One Desktop Computers for Computer Labs at Phalaborwa Campus and Sir Val Duncan Campus.",
    "department": "Higher Education and Training - Mopani East TVET College",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "computers",
     "desktop"
@@ -3142,6 +3115,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE THE RENEWAL OF MICROSOFT 365 E5, MICROSOFT 365 COPILOT, MICROSOFT TEAMS, AND MICROSOFT PROJECT LICENSES, SUPPORT, AND MANAGING OF TENANCY FOR A PERIOD OF THREE (3) YEARS",
    "department": "Mine Health and Safety Council",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "license",
     "microsoft",
@@ -3184,6 +3158,7 @@
    "title": "REQUEST FOR PROPOSALS (RFQ) FOR THE PROVISION OF CLOUD HOSTING SERVICES FOR MORDINISED SCHOOLS ADMINISTRATION SYSTEMS (SA-SAMS)",
    "department": "Basic Education",
    "category": "Cloud Services",
+   "company": "rtc",
    "matchedTerms": [
     "cloud",
     "cloud hosting",
@@ -3225,6 +3200,7 @@
    "title": "Appointment of a Specialist Service Provider for Electrical and Mechanical Maintenance, Repairs, Supply of Materials and Equipment for a Period of Sixty (60) Months – SITA Offices",
    "department": "State Information Technology Agency",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "erp"
    ],
@@ -3288,6 +3264,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO DESIGN, IMPLEMENT AND MAINTAIN REVENUE SELF-SERVICE PORTAL SYSTEMS FOR THE PERIOD OF THREE (03) YEARS",
    "department": "Mbombela Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "portal",
     "self-service portal"
@@ -3334,6 +3311,7 @@
    "title": "FOR THE PROVISION OF CYBER SECURITY AND ARTIFICIAL INTELLIGENCE TRAINING FOR THE INTERNAL AUDIT STAFF – SOUTH AFRICAN CIVIL AVIATION AUTHORITY (SACAA).",
    "department": "South African Civil Aviation Authority",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "artificial intelligence",
     "cyber"
@@ -3374,6 +3352,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF A VISITOR MANAGEMENT SYSTEM FOR THE MHSC FOR A PERIOD OF THREE (3) YEARS",
    "department": "Mine Health and Safety Council",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -3414,6 +3393,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE ASSESSMENT OF THE MICT SETA ICT GOVERNANCE PROCESSES FOR A PERIOD OF TWELVE (12) MONTHS",
    "department": "Media, Information and Communication Technologies Sector Education and training Authority (MICT SETA)",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict"
    ],
@@ -3567,6 +3547,7 @@
    "title": "PROCUREMENT OF MICROSOFT DYNAMICS 365 MAINTENACE SERVICES AND TECHNICAL SUPPORT FOR A PERIOD OF TWELVE (12) MONTHS",
    "department": "NATIONAL METROLOGY INSTITUTE OF SOUTH AFRICA",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "microsoft",
     "technical support"
@@ -3606,7 +3587,8 @@
    "reference": "E3640CXMWP",
    "title": "SUPPLY, DELIVERY, TRAINING, AND TECHNICAL SUPPORT OF THE DRONE SYSTEM FOR INSPECTION AND APPLICATION IN FOSSIL POWER PLANTS AT ESKOM RESEARCH AND DEVELOPMENT FOR THE PERIOD OF TWELVE (12) MONTHS.",
    "department": "ESKOM",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "system",
     "technical support"
@@ -3743,6 +3725,7 @@
    "title": "PROVISION OF AN ACCREDITED SERVICE PROVIDER TO PROVIDE PROFESSIONAL END USER COMPUTER TRAINING FOR THE CITY OF CAPE TOWN EMPLOYEES, STUDENTS, EPWP AND COUNCILLORS",
    "department": "City of Cape Town",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "computer",
     "end user comput"
@@ -3789,6 +3772,7 @@
    "title": "PROVISION OF IT RESEARCH AND ADVISORY MEMBERSHIP SERVICES TO SUPPORT IT GOVERNANCE, RISK MANAGEMENT, DIGITAL TRANSFORMATION AND STRATEGIC TECHNOLOGY DECISION-MAKING AT THE ROAD ACCIDENT FUND (RAF) FOR A PERIOD OF TWENTY-FOUR (24) MONTHS",
    "department": "Road Accident Fund",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "it governance"
    ],
@@ -3828,6 +3812,7 @@
    "title": "ADOBE CREATIVE CLOUD ALL APPS LICENSES",
    "department": "Cape Winelands District Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "adobe creative cloud all apps licens",
     "cloud",
@@ -3869,6 +3854,7 @@
    "title": "SUPPLY AND DELIVERY OF SAN SWITCH AND NETWORK SERVER CARDS",
    "department": "Cape Winelands District Municipality",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "network",
     "san",
@@ -3911,6 +3897,7 @@
    "title": "SUPPLY AND DELIVERY OF NETWORK SWITCHES AND TAPE DRIVES",
    "department": "Cape Winelands District Municipality",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "network",
     "network switch",
@@ -3952,6 +3939,7 @@
    "title": "SATELLITE AIRTIME SUPPORT FOR 11 SOUTH AFRICAN NAVY VESSELS THAT ACT AS A BACKUP TO COMMUNICATE WITH THE SHORE BASES FOR A PERIOD OF TWO YEARS .  DOD PROC PLAN 26-27/SA NAVY/934",
    "department": "Defence",
    "category": "Telecoms & Unified Comms",
+   "company": "rtc",
    "matchedTerms": [
     "backup",
     "satellite airtime"
@@ -3992,6 +3980,7 @@
    "title": "Provision of service for the Supply, Delivery, Setup and configuration of Information Communication Technology(ICT), Hardware and Peripherals for the period of three years",
    "department": "Musina Local Municipality",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict",
     "peripheral"
@@ -4032,6 +4021,7 @@
    "title": "Appointment of a service provider to assist Agrement South Africa in procuring a Mimecast Mega Plan for 50 Users to ensure email cybersecurity and resilience for ASA’s Office 365 email platform for 36 months.",
    "department": "Agrément South Africa",
    "category": "Cybersecurity",
+   "company": "rtc",
    "matchedTerms": [
     "cyber",
     "mimecast",
@@ -4091,6 +4081,7 @@
    "title": "RE-ADVERTISED RFQ 01/09/2026: REQUEST FOR QUOTATION: PROVISION OF ACCREDITED ICT TRAINING AND VENDOR-SPECIFIC CERTIFICATION PROGRAMMES",
    "department": "Oudtshoorn Municipality",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict"
    ],
@@ -4130,6 +4121,7 @@
    "title": "8/2/9/42 (2026-2029) BID TO APPOINT A SERVICE PROVIDER FOR THE RENTAL OF TRAFFIC CONTRAVENTION MANAGEMENT SYSTEM AND RELATED EQUIPMENT TO MIDVAAL LOCAL MUNICIPALITY FROM DATE OF AWARD TO 30 JUNE 2029",
    "department": "Midvaal Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -4176,6 +4168,7 @@
    "title": "TENDER 14 - 2026 TENDER SUPPLY, RENTAL & MAINTENANCE OF PRINTERS",
    "department": "uMgungundlovu District Municipality",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "printers"
    ],
@@ -4221,6 +4214,7 @@
    "title": "FOR THE PROVISIONING OF HARDWARE, ARCHITECTURE, DESIGNING, PURCHASE AND SOFTWARE OF INFRASTRUCTURE FOR TRANSNET PORT TERMINALS (TPT), TRANSNET NATIONAL PORTS AUTHORITY (TNPA) AND TRANSNET CORPORATE CENTRE (TCC) FOR A PERIOD OF FIVE (05) YEARS",
    "department": "Transnet SOC Ltd",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -4344,6 +4338,7 @@
    "title": "Appointment of a service provider for the replacement of generator x2 batteries and replacement of UPS",
    "department": "Council for Medical Schemes",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict"
    ],
@@ -4383,6 +4378,7 @@
    "title": "Appointment of a Service Provider to Provide Backup Software, Maintenance and Support for Three Years.",
    "department": "State Information Technology Agency",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "backup",
     "erp",
@@ -4448,6 +4444,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF A HOSPITALITY PROPERTY MANAGEMENT SYSTEM FOR A PERIOD OF FIVE (5) YEARS) AT EZEMVELO KZN WILDLIFE",
    "department": "Kwa-Zulu Natal - Ezemvelo KwaZulu-Natal Wildlife",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -4494,6 +4491,7 @@
    "title": "Appointment of a Panel of Five (5) Professional Service Providers for the formulation of Project Management Units (PMU’S) for a period five (5) Years.",
    "department": "Public Works",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "ai"
    ],
@@ -4533,6 +4531,7 @@
    "title": "EXPRESSION OF INTEREST (EOI) FOR THE SUPPLY AND DELIVERY OF CARTRIDGES, PRINTER ACCESSORIES AND MEMORY STICKS",
    "department": "Nelson Mandela Bay Municipality",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "printer"
    ],
@@ -4572,6 +4571,7 @@
    "title": "BID FOR THE APPOINTMENT OF A SERVICE PROVIDER FOR RENEWAL OF DESKTOP AND LAPTOP BACKUP SOLUTION FOR A PERIOD OF 24 MONTHS",
    "department": "Eastern Cape - Roads and Public Works",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "backup",
     "desktop",
@@ -4613,6 +4613,7 @@
    "title": "Request for Quotations for the Supply and Installation of AWOS Equipment, Accessories and Software Upgrade at OR Tambo International Airport for a period of 6 months at Airports Company South Africa.",
    "department": "Airports Company of South Africa Limited",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -4658,6 +4659,7 @@
    "title": "Provision of Intergrated GIS Management System for Mopani District Municipality for a period of 36 Months.",
    "department": "Mopani District Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "gis",
     "management system",
@@ -4699,6 +4701,7 @@
    "title": "THE INSTALLATION OF A VISITOR MANAGEMENT SYSTEM (VMS) AND LICENCE\r\nPLATE RECOGNITION (LPR) SYSTEM AT ESKOM CORPORATE SITES (EAL, MWP\r\nAND ERIC) FOR A PERIOD OF THREE (03) YEARS",
    "department": "ESKOM",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "licence",
     "management system",
@@ -4740,6 +4743,7 @@
    "title": "THE APPOINTMENT OF A MICROSOFT CLOUD SOLUTIONS PARTNER TO REDEVELOP, ENHANCE, MAINTAIN AND SUPPORT NERSA’S MICROSOFT SHAREPOINT CLOUD ENVIRONMENT FOR ITS INTRANET INCLUDING ELECTRONIC DOCUMENTS AND RECORDS MANAGEMENT SYSTEM (EDRMS) FOR A PERIOD OF FIVE (5) YEARS",
    "department": "National Energy Regulator of South Africa",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "cloud",
     "cloud solution",
@@ -4790,6 +4794,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE DEVELOPMENT OF THE DEPARTMENTAL INFORMATION SECURITY OFFICER (DISO) TRAINING PROGRAMME FOR THE PUBLIC SERVICE.",
    "department": "Public Service & Administration",
    "category": "Cybersecurity",
+   "company": "rtc",
    "matchedTerms": [
     "information security"
    ],
@@ -4828,7 +4833,8 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "computer",
     "data centre",
@@ -4894,6 +4900,7 @@
    "title": "APPOINTMENT OF A PROFESSIONAL SERVICE PROVIDER FOR A NEW SOFTWARE: SCREENING AND VETTING INVESTIGATION SOLUTION FOR A PERIOD OF 36 MONTHS FOR UPONGOLA UMZIMKULU CATCHMENT MANAGEMENT AGENCY (PUCMA)",
    "department": "Water and Sanitation",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -4932,7 +4939,8 @@
    "reference": "SCMU14-26/27-0009",
    "title": "Rate based contract for the supply of ICT server related infrastructure for a period of 3 years (36 months) \r\n[SITA registered IT vendors/service providers (RFB  contract)]",
    "department": "Eastern Cape - Sport Recreation Arts and Culture",
-   "category": "Network & Infrastructure",
+   "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict",
     "server"
@@ -4973,6 +4981,7 @@
    "title": "SD-WAN SERVICES FOR ROBBEN ISLAND MUSEUM FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
    "department": "Robben Island Museum",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "wan"
    ],
@@ -5012,6 +5021,7 @@
    "title": "REQUEST FOR PROPOSAL FOR THE PROVISION OF AUTOMATED FUEL MANAGEMENT SYSTEM FOR A PERIOD OF SEVEN (7) MONTHS AT GEORGE, KING PHALO, BRAM FISCHER, KIMBERLEY AND UPINGTON AIRPORTS.",
    "department": "Airports Company of South Africa",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -5064,6 +5074,7 @@
    "title": "Request for Bid for the Procurement of Backup Solution Including Maintenance and Support for SITA Client For Period of Three (03) Years.The Closing Date Has Being Extended Till 30 October 2026",
    "department": "State Information Technology Agency",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "backup",
     "erp"
@@ -5375,6 +5386,7 @@
    "title": "APPOINTMENT OF A PANEL OF A MAXIMUM OF THREE (03) SUITABLY QUALIFIED SERVICE PROVIDERS FOR THE PROVISION OF LAPTOPS AND ACCESSORIES AS AND WHEN REQUIRED BY THE SANC FOR A PERIOD OF FIVE (05) YEARS",
    "department": "South African Nursing Council",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "laptop"
    ],
@@ -5414,6 +5426,7 @@
    "title": "RE-ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION, LICENSING, HOSTING, SUPPORT, MAINTENANCE AND ENHANCEMENT OF AN mSCOA-COMPLIANT FINANCIAL MANAGEMENT SYSTEM FOR A PERIOD OF THREE (3) YEARS",
    "department": "Xhariep District Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "hosting",
     "management system",
@@ -5461,6 +5474,7 @@
    "title": "SUPPLY, SUPPORT AND MAINTENANCE OF PUBLIC KEY INFRASTRUCTURE, SOFTWARE, SERVICES, DEVELOPMENT AND LICENSING",
    "department": "City of Cape Town",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -5500,6 +5514,7 @@
    "title": "INSTALLATION OF MUNICIPAL SURVEILANCE CAMERA AND PUBLIC WI-FI HOTSPOTS",
    "department": "Matatiele Local Municipality",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "wi-fi"
    ],
@@ -5539,6 +5554,7 @@
    "title": "Provision of Microsoft Azure Cloud Hosting and Managed Support Services",
    "department": "Quality Council for Trades and Occupations",
    "category": "Cloud Services",
+   "company": "rtc",
    "matchedTerms": [
     "azure",
     "cloud",
@@ -5600,6 +5616,7 @@
    "title": "Appointment of service provider to supply, deliver, install, and commission – 41IR cybersecurity lab, coding and robotics",
    "department": "Purchasing Consortium Southern Africa (PURCOSA)",
    "category": "Cybersecurity",
+   "company": "rtc",
    "matchedTerms": [
     "cyber"
    ],
@@ -5639,6 +5656,7 @@
    "title": "REQUEST FOR PROPOSALS FOR THE DEVELOPMENT OF RURAL ROAD ASSET MANAGEMENT SYSTEM (RRAMS) AND PROFESSIONAL SUPPORT FOR NGAKA MODIRI MOLEMA DISTRICT MUNICIPALITY FOR PERIOD OF THREE (03) YEARS (36 MONTHS).",
    "department": "Ngaka Modiri Molema District Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -5685,6 +5703,7 @@
    "title": "Service Provider for Supply, Installation, Commissioning and Maintenance of a Performance Management System for a period of 3 Years.",
    "department": "Port St Johns Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -5725,6 +5744,7 @@
    "title": "Service Provider for Redesigning, Hosting, Support and Maintenance of Municipal Website for a period of 3 Years",
    "department": "Port St Johns Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "hosting",
     "website"
@@ -5765,6 +5785,7 @@
    "title": "PROVISION OF NETWORK SUPPORT SERVICES, HOSTING AND VOIP SERVICES",
    "department": "Cederberg Municipality",
    "category": "Telecoms & Unified Comms",
+   "company": "rtc",
    "matchedTerms": [
     "hosting",
     "network",
@@ -5806,6 +5827,7 @@
    "title": "THE APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION, IMPLEMENTATION AND SUPPORT OF A WEB- BASED ELECTRONIC PERFORMANCE MANAGEMENT SYSTEM AND RELATED REQUIREMENTS FOR CEDERBERG MUNICIPALITY",
    "department": "Cederberg Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -5846,6 +5868,7 @@
    "title": "PROVISION OF MULTI-UTILITY ONLINE VENDING SYSTEM INCLUDING THIRD-PARTY VENDING, TID AND REVENUE MANAGEMENT SYSTEM FOR MKHONDO LOCAL MUNICIPALITY FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
    "department": "Mkhondo Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -5886,6 +5909,7 @@
    "title": "OFFICE EQUIPMENT (PRINTERS, COPIERS AND MULTI-FUNCTION MACHINES: LEASE OPTION) AND PRINT\r\nMANAGEMENT SOFTWARE",
    "department": "Kouga Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "printers",
     "software"
@@ -5926,6 +5950,7 @@
    "title": "12 - 2026 Panel for Information Technology",
    "department": "uMgungundlovu District Municipality",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "information technology"
    ],
@@ -5971,6 +5996,7 @@
    "title": "REQUEST FOR BIDS FOR THE SUPPLY, INSTALLATION, DECOMMISSIONING AND DISPOSAL OF AUDIO AND VIDEO CONFERENCING EQUIPMENT FOR THE OR TAMBO INTERNATIONAL AIRPORT MEDIA CENTRE, OR TAMBO INTERNATIONAL AIRPORT EMERGENCY COMMAND CENTRE AND VARIOUS OTHER ACSA AIRPORTS MEETING ROOMS, FOR A PERIOD OF 24 MONTHS.",
    "department": "Airports Company of South Africa",
    "category": "Telecoms & Unified Comms",
+   "company": "rtc",
    "matchedTerms": [
     "video conferenc"
    ],
@@ -6040,6 +6066,7 @@
    "title": "PROCUREMENT OF DOMAIN NAME SYSTEM (DNS) SECURITY MANAGED SERVICES FOR A PERIOD OF FIVE (5) YEARS. (1 YEAR IMPLEMENTATION AND 4 YEARS MAINTENANCE AND SUPPORT)",
    "department": "ESKOM",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "managed services",
     "system"
@@ -6176,6 +6203,7 @@
    "title": "APPOINTMENT AS A SERVICE PROVIDER FOR THE SUPPORT AND MAINTENANCE OF MSCOA FINANCIAL MANAGEMENT SYSTEM COMPLIANT FOR A PERIOD OF 36 MONTHS WITH AN OPTION OF FURTHER 2 YEARS",
    "department": "Ratlou Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -6222,6 +6250,7 @@
    "title": "FOSRBY-RFP-13-26/27 REQUEST FOR PROPOSAL [RFP] THE PROVISION OF MICROSOFT AZURE CLOUD BACKUP SERVICES FOR A PERIOD OF SIXTY (60) MONTHS",
    "department": "Industrial Development Corporation of South Africa Limited",
    "category": "Cloud Services",
+   "company": "rtc",
    "matchedTerms": [
     "azure",
     "backup",
@@ -6265,6 +6294,7 @@
    "title": "Website Revamp and Maintenance for 3 Years",
    "department": "Winnie Madikizela-Mandela Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "website"
    ],
@@ -6304,6 +6334,7 @@
    "title": "Supply, Deliver, Installation, Maintenance and Service of new printers for a period of three (3) years on a Lease Agreement. 2027/28 – 2029/30.",
    "department": "Karoo Hoogland Local Municipality",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "printers"
    ],
@@ -6349,6 +6380,7 @@
    "title": "Request for bid for the Appointment of a Service Provider to Provide a Suitable Office Space for SITA Kimberley Through an Operating Lease Agreement for a Period of Five (5) Years.",
    "department": "State Information Technology Agency",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "erp"
    ],
@@ -6412,6 +6444,7 @@
    "title": "Supply, delivery of new core network infrastructure",
    "department": "South African Nuclear Energy Corporation Limited",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "network",
     "network infrastructure"
@@ -6494,6 +6527,7 @@
    "title": "Billing Software",
    "department": "Airports Company of South Africa",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -6545,6 +6579,7 @@
    "title": "The provision of the establishment of a Support Contract for the Eskom Telecomms BME Equipment install base, spares holding and Network Management System.",
    "department": "ESKOM",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "network",
@@ -6712,6 +6747,7 @@
    "title": "TERMS OF REFERENCE FOR THE APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE MEMBERSHIP SUBSCRIPTION FOR ACCESS TO ICT RESEARCH AND ADVISORY SERVICES OVER A PERIOD OF TWO YEARS.",
    "department": "National Lotteries Commission",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict"
    ],
@@ -6751,6 +6787,7 @@
    "title": "PROVISION OF NETWORK PERIMETER FIREWALL SECURITY HARDWARE",
    "department": "FINANCIAL SECTOR CONDUCT AUTHORITY (FSCA)",
    "category": "Cybersecurity",
+   "company": "rtc",
    "matchedTerms": [
     "firewall",
     "network"
@@ -6791,6 +6828,7 @@
    "title": "Appointment of a service provider for the supply and delivery of thirty (30) standard computers, four (04) standard laptops and one (01) technical laptop for the Department of Public Works & Infrastructure.",
    "department": "Kwazulu Natal - Public Works (Head Office)",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "computers",
     "laptop"
@@ -6831,6 +6869,7 @@
    "title": "REQUEST FOR TENDER [RFT] FOR THE APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE INTERNET, FIREWALLS, VMWARE, VXRAIL, AND NETWORK SWITCHES FOR CEF SANDTON AND SANPC-REFINERY OVER A PERIOD OF THREE (3) YEARS.",
    "department": "CEF (Pty) Ltd",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "firewall",
     "internet",
@@ -6875,6 +6914,7 @@
    "title": "Appointment of a Service Provider for Upgrade and Service of Head Office Server Room Infrastructure",
    "department": "Moqhaka Local Municipality",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "server"
    ],
@@ -6914,6 +6954,7 @@
    "title": "Appointment of a Service Provider for Supply (2 X Server), Delivery, Installation, Testing, Commissioning of Disaster Recovery",
    "department": "Moqhaka Local Municipality",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "disaster recovery",
     "server"
@@ -6954,6 +6995,7 @@
    "title": "APPOINTMENT OF A QUALIFIED AND EXPERIENCED SERVICE PROVIDER FOR THE IMPLEMENTATION, LICENSING, MAINTENANCE AND SUPPORT OF AN ENTERPRISE RESOURCE PLANNING (ERP) SYSTEM FOR THE NKOMAZI SPECIAL ECONOMIC ZONE (NSEZ) FOR A PERIOD OF THREE (3) YEARS",
    "department": "Nkomazi Special Economic Zone",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "erp",
     "system"
@@ -6994,6 +7036,7 @@
    "title": "Supply and delivery of Laptops, Desktops and Accessories for the National School of Government (NSG)",
    "department": "National School of Government",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "desktop",
     "laptop"
@@ -7034,6 +7077,7 @@
    "title": "Supply and Delivery of Huawei Network Infrastructure Equipment with Huawei Support for Five (5) Years for the Western Cape Government (WCG), Department of the Premier - Centre for e-Innovation (CEI)",
    "department": "State Information Technology Agency",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "erp",
     "huawei",
@@ -7100,6 +7144,7 @@
    "title": "THE CUSTOMISATION CONFIGURATION, IMPLEMENTATION AND SUPPORT OF THREE ADDITIONAL MODULES WITHIN MER’S EXISTING PLUMSOFT ERP SYSTEM",
    "department": "Abaqulusi Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "erp",
     "system"
@@ -7140,6 +7185,7 @@
    "title": "The NHBRC intends to appoint a qualified Panel of Service Providers to provide managed IT support Services. This is to assist the ICT Unit with outsourced specialists’ resources as and when required for a period of two (02) years.",
    "department": "National Home Builders Registration Council",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict",
     "it support"
@@ -7192,6 +7238,7 @@
    "title": "Requests for Information of a demonstration of Energy Trading and Risk Management (ETRM) software",
    "department": "ESKOM",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software"
    ],
@@ -7243,6 +7290,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF DESKTOPS, LAPTOPS AND ACCESSORIES, INCLUDING WARRANTY AND SUPPORT FOR A PERIOD OF THREE (3) YEARS",
    "department": "Trans-Caledon Tunnel Authority",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "desktop",
     "laptop"
@@ -7283,6 +7331,7 @@
    "title": "THE SUPPLY, DELIVERY, COMMISSIONING, AND SUPPORT OF FIBRE TERMINATION NODES AT FACT, FAGG, FAPE, FALE, FAEL, FABL, FAKM, FAUP AND AT THE ATA",
    "department": "Air Traffic and Navigation Services Company Limited",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "fibre",
     "fibre termination"
@@ -7365,6 +7414,7 @@
    "title": "RFP FOR THE APPOINTMENT OF ONE (1) CONTRACTOR PER CLUSTER FOR THE IMPLEMENTATION OF AN AUTOMATED METER READING (AMR) SYSTEM, INCLUDING BILLING SOFTWARE, FOR A PERIOD OF TWELVE (12) MONTHS, TOGETHER WITH A CONCURRENT SIXTY (60) MONTH OPERATIONAL SUPPORT SERVICES CONTRACT, ACROSS ACSA AIRPORTS CATEGORISED INTO CLUSTER WORK PACKAGES A, B AND C.",
    "department": "Airports Company of South Africa",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "software",
     "system"
@@ -7465,6 +7515,7 @@
    "title": "PROVISION OF ICT SUPPORT SERVICES ( 36 MONTHS CONTRACT)",
    "department": "Umzimkhulu Local Municipality",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "ict"
    ],
@@ -7504,6 +7555,7 @@
    "title": "FORMAL TENDER: TD 07/10/2026: SUPPLY, CONFIGURE AND INSTALLATION OF SATELITE INTERNET CONNECTIVITY AT CANGO CAVES AND CANGO MOUNTAIN RESORT FOR A PERIOD ENDING 30 JUNE 2029.",
    "department": "Oudtshoorn Municipality",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "connectivity",
     "internet",
@@ -7545,6 +7597,7 @@
    "title": "Appointment of a Service Provider for the renewal of Adobe Acrobat Pro DC & Creative Cloud licenses for a period of three (3) years",
    "department": "Trans-Caledon Tunnel Authority",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "adobe acrobat pro dc & creative cloud licens",
     "cloud",
@@ -7586,6 +7639,7 @@
    "title": "FORMAL TENDER: TD 04/10/2026: SUPPLY, DEVELOP AND DELIVERY OF A FULLY FUNCTIONAL WEBSITE AND HOSTING SERVICES FOR CANGO CAVES FOR A PERIOD ENDING 30 JUNE 2029",
    "department": "Oudtshoorn Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "hosting",
     "website"
@@ -7626,6 +7680,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE LICENSING, SUPPORT, MAINTENANCE AND ENHANCEMENTS OF AN INTEGRATED MUNICIPAL FINANCIAL MANAGEMENT SYSTEM (ERP) COMPLIANT WITH mSCOA REGULATIONS AND NATIONAL TREASURY BUSINESS PROCESS REQUIREMENTS FOR A PERIOD OF THREE (3) YEARS",
    "department": "Govan Mbeki Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "erp",
     "management system",
@@ -7667,6 +7722,7 @@
    "title": "APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE PROVISION OF DISASTER RECOVERY SERVICES FOR THE MERAFONG CITY LOCAL MUNICIPALITY FOR A PERIOD OF THREE YEARS.",
    "department": "Merafong Local Municipality",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "disaster recovery"
    ],
@@ -7706,6 +7762,7 @@
    "title": "Request For Bid for the Appointment of a Service Provider to Execute and Manage the Reinstatement of the Current SITA Cape Town Office and Relocation to New Office",
    "department": "State Information Technology Agency",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "erp"
    ],
@@ -7769,6 +7826,7 @@
    "title": "APPOINTMENT OF A SUITABLE SERVICE PROVIDER FOR THE LICENSING, MAINTENANCE, AND SUPPORT OF THE EXISTING SAGE ERP SYSTEM, TOGETHER WITH INTEGRATED THIRD-PARTY SUB-SYSTEMS, FOR A PERIOD OF SIXTY (60) MONTHS",
    "department": "Kwazulu Natal - Provincial Legislature",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "erp",
     "system"
@@ -7809,6 +7867,7 @@
    "title": "BID - 2646GS  - For Bids For SAP Infrastructure",
    "department": "City Power – Johannesburg",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "sap"
    ],
@@ -7860,6 +7919,7 @@
    "title": "Appointment of a Professional Service Provider to GIS Licences and Maintenance Services for a Period of Three (3) Years",
    "department": "Sekhukhune District Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "gis",
     "licence"
@@ -7900,6 +7960,7 @@
    "title": "REQUEST FOR INFORMATION (RFI) FOR THE APPOINTMENT OF A SERVICE PROVIDER TO DEVELOP, IMPLEMENT, MAINTAIN AND SUPPORT A REGULATORY DATA HUB TO PERFORM DIGITAL SAWEM MARKET MONITORING AND SURVEILLANCE, INTEGRATED DATA DRIVEN REGULATORY DECISION MAKING AND BUSINESS INTELLIGENCE FOR A PERIOD OF FIVE (5) YEARS.",
    "department": "National Energy Regulator of South Africa",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "business intelligence"
    ],
@@ -7945,6 +8006,7 @@
    "title": "Appointment of a Service Provider for the Supply and Deliver of Computer Hardware, Devices, Peripherals, and Computer Consumables for a Period of Three (3) Years.",
    "department": "Sekhukhune District Municipality",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "computer",
     "peripheral"
@@ -7985,6 +8047,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO DESIGN, IMPLEMENT, AND MAINTAIN SOFTWARE-DEFINED WIDE AREA NETWORK (SD-WAN) SOLUTIONS AND WI-FI SERVICES FOR A PERIOD OF THREE YEARS ACROSS THE HEAD OFFICE AND NATURE RESERVES",
    "department": "Mpumalanga - Mpumalanga Tourism and Parks Agency (MTPA)",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "network",
     "software",
@@ -8028,6 +8091,7 @@
    "title": "BID - 2654GS - Supply, Installation, Commissioning And Integration of ISS Printer, Ribbons, Hologram and Access Cards",
    "department": "City Power – Johannesburg",
    "category": "End-User Computing",
+   "company": "rtc",
    "matchedTerms": [
     "printer"
    ],
@@ -8085,6 +8149,7 @@
    "title": "REFURBISHMENT WORK TO ENABLE DIGITAL RADIO HIGH SITES COMMUNICATION NETWORK AT TRANSNET RAIL INFRASTRUCTURE MANAGER(TRIM) BUILDINGS NATIONALLY (WESTERN REGIONS) FOR A PERIOD OF FIVE (5) YEARS ON AN “AS AND\r\nWHEN” REQUIRED BASIS.",
    "department": "Transnet SOC Ltd",
    "category": "Telecoms & Unified Comms",
+   "company": "rtc",
    "matchedTerms": [
     "communication network",
     "network"
@@ -8125,6 +8190,7 @@
    "title": "Provision of MS Teams Telephony Devices for a period of Five (5) years",
    "department": "ESKOM",
    "category": "Telecoms & Unified Comms",
+   "company": "rtc",
    "matchedTerms": [
     "telephony"
    ],
@@ -8254,6 +8320,7 @@
    "title": "PROVISION OF PRIMARY FIBRE OPTIC INTERNET LINE, MIMECAST AND EXCHANGE EMAIL HOSTING",
    "department": "Office of the Ombud for Financial Service Providers",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "fibre",
     "fibre optic",
@@ -8303,6 +8370,7 @@
    "title": "APPOINTMENT OF A PARTNER FOR MICROSOFT LICENSING FOR THE PERIOD OF 36 MONTHS.",
    "department": "Msukaligwa Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "microsoft",
     "microsoft licens"
@@ -8342,7 +8410,8 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "firewall",
     "ict",
@@ -8385,6 +8454,7 @@
    "title": "PROVISION OF A FULLY AUTOMATED SYSTEM FOR E-PMS AND E-RISK MANAGEMENT SYSTEM, FULLY BACK UP SUPPORT FOR A PERIOD OF THREE YEARS",
    "department": "Matatiele Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -8425,6 +8495,7 @@
    "title": "APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE SUPPLY, DELIVERY, INSTALLATION, DEINSTALLATION, REPAIRS, MAINTENANCE, COMMISSIONING, DECOMMISSIONING, DISPOSAL OF FUEL TANKS, LEASING OF ELECTRONIC FUEL MANAGEMENT SYSTEM, AND FUEL ANALYSIS FOR BULK FUEL INFRASTRUCTURE AND BOWSERS FOR THE STATE FOR A PERIOD OF SIXTY (60) MONTHS",
    "department": "National Treasury",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -8555,6 +8626,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION, SUPPORT AND MAINTENANCE OF ELECTRONIC TRAFFIC SURVEILLANCE EQUIPMENT AND CONTRAVENTION MANAGEMENT SYSTEM FOR A PERIOD OF 36 MONTHS",
    "department": "Lepelle-Nkumpi Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -8601,6 +8673,7 @@
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "azure",
     "microsoft"
@@ -8646,7 +8719,8 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "backup",
     "system"
@@ -8687,6 +8761,7 @@
    "title": "THREE-YEAR CONTRACT: PROVISION OF AN ORGANISATIONAL AND INDIVIDUAL PERFORMANCE MANAGEMENT SYSTEM AND RELATED PROFESSIONAL SERVICES FOR uMLALAZI MUNICIPALITY.",
    "department": "uMlalazi Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -8727,6 +8802,7 @@
    "title": "Provision for 10G LAN PHY L1 transparent wavelength circuit service at SANSA Hartebeesthoek for a period of five (5) years",
    "department": "South African National Space Agency",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "lan"
    ],
@@ -8766,6 +8842,7 @@
    "title": "MN12/2026-27: PROVISION OF 150 MBPS MICROWAVE/ FIBER/ LTE BUSINESS INTERNET & BACKUP LINK FOR A PERIOD OF 24 MONTHS",
    "department": "Emadlangeni Local Municipality",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "backup",
     "fiber",
@@ -8807,6 +8884,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION, INSTALLATION, CONFIGURATION AND SUPPORT OF SECURITY INCIDENT MANAGEMENT APPLICATION (SIEM) FOR A TERM OF  36 MONTHS",
    "department": "Inkomati Catchment Management Agency",
    "category": "Cybersecurity",
+   "company": "rtc",
    "matchedTerms": [
     "siem"
    ],
@@ -8846,6 +8924,7 @@
    "title": "APPOINTMENT OF SERVICE PROVIDER FOR TO DELOP A GEOGRAPHIC INFORMATION SYSTEM (GIS) STRATEGY FOR THE LIMPOPO DEPARTMENT OF COOPERATIVE GOVERNANCE HUMAN SETTLEMENTS AND TRADITIONAL AFFAIRS",
    "department": "Limpopo - Co-operative Governance, Human Settlements and Traditional Affairs",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "gis",
     "information system",
@@ -8887,6 +8966,7 @@
    "title": "SUPPLY AND INSTALLATION OF A VEHICLE TRACKING AND MANAGEMENT SYSTEM",
    "department": "Mossel Bay Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -8933,6 +9013,7 @@
    "title": "Readvert: Lease for provision of speed red light cameras and fines management system within Makhuduthamaga Local Municipality roads for the period of thirty six (36) months.",
    "department": "Makhuduthamaga Local Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -8973,6 +9054,7 @@
    "title": "Appointment of a Service Provider ro Supply, Install, Implement and Maintain Dedicated Server Hosted VOIP(Telephony) and Cloud-Based Contact Centre Solution for the Period of 36 Months",
    "department": "Msukaligwa Local Municipality",
    "category": "Telecoms & Unified Comms",
+   "company": "rtc",
    "matchedTerms": [
     "cloud",
     "cloud-based",
@@ -9016,6 +9098,7 @@
    "title": "Tender for appointment of a panel of service providers to support city of Tshwane business applications and to provide information technology services for 36 months.",
    "department": "City of Tshwane",
    "category": "IT Services & Support",
+   "company": "rtc",
    "matchedTerms": [
     "information technology"
    ],
@@ -9055,6 +9138,7 @@
    "title": "SUPPLY, INSTALLATION AND MAINTENANCE OF VIDEO CONFERENCING AND COLLABORATION SYSTEMS.",
    "department": "City of Cape Town",
    "category": "Telecoms & Unified Comms",
+   "company": "rtc",
    "matchedTerms": [
     "video conferenc"
    ],
@@ -9094,6 +9178,7 @@
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "printer",
     "software"
