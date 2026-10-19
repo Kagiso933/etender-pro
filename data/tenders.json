@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-19T00:47:58.316314+00:00",
+ "generatedAt": "2026-10-19T10:30:00.038160+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-08-22",
- "releasesScanned": 4467,
- "uniqueTenders": 4552,
- "count": 180,
+ "coveredFrom": "2026-08-29",
+ "releasesScanned": 4099,
+ "uniqueTenders": 4144,
+ "count": 185,
  "categories": {
-  "Software & Systems": 77,
-  "Network & Infrastructure": 29,
+  "Software & Systems": 84,
+  "Network & Infrastructure": 30,
   "End-User Computing": 28,
-  "Cloud Services": 6,
-  "Telecoms & Unified Comms": 9,
   "Cybersecurity": 11,
-  "IT Services & Support": 20
+  "IT Services & Support": 19,
+  "Cloud Services": 5,
+  "Telecoms & Unified Comms": 8
  },
  "onlineBriefings": 2,
- "carriedOver": 0,
+ "carriedOver": 4,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -172,6 +172,45 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=7e543fb5-2cad-4922-bf23-6da035f480a3.pdf&downloadedFileName=PR10069056%20-BID%20DOCUMENT%20-%20WEBSITE%20DEVELOPMENT%20ADDENDUM%2014%20October%202026.pdf",
      "format": "pdf",
      "published": "2026-10-15T16:24:44Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173285",
+   "reference": "RFQ 075-26",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE IMPLEMENTATION, INTEGRATION, SUPPORT AND MAINTENANCE OF AN INTELLIGENT ACCOUNTS RECEIVABLE PLATFORM WITH INTEGRATION TO SAGE 300 FINANCE FOR PERIOD OF TWELVE (12) MONTHS",
+   "department": "National Regulator for Compulsory Specifications",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "sage 300"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-07T00:00:00+00:00",
+   "closingDate": "2026-10-19T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ 075-26 - Intelligent AR Platform.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3ebf8c82-c73f-4a76-9dc6-c23896e43c31.pdf&downloadedFileName=RFQ%20075-26%20-%20Intelligent%20AR%20Platform.pdf",
+     "format": "pdf",
+     "published": "2026-10-07T17:27:08Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -488,7 +527,7 @@
    "reference": "ILM 09/26/27",
    "title": "PROVISION OF MICROSOFT OFFICE 365 E3 (INCLUDING MICROSOFT TEAMS) FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
    "department": "Inkosi Langalibalele Local Municipality",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "matchedTerms": [
     "microsoft",
     "office 365"
@@ -528,7 +567,7 @@
    "reference": "UB/VW/02/2026/2027",
    "title": "Tenders are hereby invited for the Supply , Delivery, Installation and Maintenance  of Office Printers with PABX System with internet connective for Ubuntu Local  Municipality for a period of 36 Months",
    "department": "UBUNTU LOCAL MUNICIPALITY",
-   "category": "Telecoms & Unified Comms",
+   "category": "End-User Computing",
    "matchedTerms": [
     "internet",
     "pabx",
@@ -3353,6 +3392,58 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174594",
+   "reference": "NB148/2026",
+   "title": "Request for quotation : A service provider to Support , Maintain and host project  management system",
+   "department": "Tourism",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "management system",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-16T00:00:00+00:00",
+   "closingDate": "2026-10-26T10:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "REVISED SBD 4 -Annexure A_AUG 2026.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d876fbcd-1820-421f-91d6-0a632aea57fc.docx&downloadedFileName=REVISED%20SBD%204%20-Annexure%20A_AUG%202026.docx",
+     "format": "docx",
+     "published": "2026-10-19T10:50:35Z"
+    },
+    {
+     "title": "NB148.2026 RFQ Final System Support -26 OCT 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=13b738b5-ccb6-4d13-94b2-201cf08165bc.pdf&downloadedFileName=NB148.2026%20RFQ%20Final%20System%20Support%20-26%20OCT%202026.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T10:48:24Z"
+    },
+    {
+     "title": "ADDENDUM 4 - TEMPLATE - SWORN AFFIDAVIT OF BOTH EME AND QSE -.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=cccd58d6-c1bc-4670-8f56-a35942d9678d.docx&downloadedFileName=ADDENDUM%204%20-%20TEMPLATE%20-%20SWORN%20AFFIDAVIT%20OF%20BOTH%20EME%20AND%20QSE%20-.docx",
+     "format": "docx",
+     "published": "2026-10-19T10:49:09Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-171412",
    "reference": "E3549NTCSAMWP",
    "title": "ADLash Maintenance and Minor Works for NTCSA, Eskom and Broadband Infraco Optic Fibre Network on an as and when required basis for a period of three (3) years",
@@ -4186,7 +4277,7 @@
    "reference": "E3640CXMWP",
    "title": "SUPPLY, DELIVERY, TRAINING, AND TECHNICAL SUPPORT OF THE DRONE SYSTEM FOR INSPECTION AND APPLICATION IN FOSSIL POWER PLANTS AT ESKOM RESEARCH AND DEVELOPMENT FOR THE PERIOD OF TWELVE (12) MONTHS.",
    "department": "ESKOM",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "matchedTerms": [
     "system",
     "technical support"
@@ -5310,7 +5401,7 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "End-User Computing",
+   "category": "Network & Infrastructure",
    "matchedTerms": [
     "computer",
     "data centre",
@@ -6011,6 +6102,67 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=87503dd0-3036-4b06-b774-0ab0be233788.pdf&downloadedFileName=WI-FI%20HOTSPOTS-13.pdf",
      "format": "pdf",
      "published": "2026-10-02T12:53:09Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174577",
+   "reference": "QCTO RFQ 24/2026",
+   "title": "Provision of Microsoft Azure Cloud Hosting and Managed Support Services",
+   "department": "Quality Council for Trades and Occupations",
+   "category": "Cloud Services",
+   "matchedTerms": [
+    "azure",
+    "cloud",
+    "cloud hosting",
+    "hosting",
+    "microsoft"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-19T00:00:00+00:00",
+   "closingDate": "2026-11-02T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "TOR Provisioning of Microsoft Azure Cloud Infrastructure.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a27760cc-3581-41ec-8a40-81f18fe0a1a0.pdf&downloadedFileName=TOR%20Provisioning%20of%20Microsoft%20Azure%20Cloud%20Infrastructure.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T09:09:14Z"
+    },
+    {
+     "title": "RFQ - Microsoft Azure Cloud Hosting.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fa42a663-a25e-4935-a6ab-964601047ae9.pdf&downloadedFileName=RFQ%20-%20Microsoft%20Azure%20Cloud%20Hosting.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T09:09:14Z"
+    },
+    {
+     "title": "SBD 6.1.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bfc95acb-e947-4d81-b6a9-bf04091b8c2b.pdf&downloadedFileName=SBD%206.1.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T09:09:14Z"
+    },
+    {
+     "title": "Standard Bidding Document (SDB) 4.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=1116751a-f7d1-42d8-84d7-ef5f46ba3a7b.pdf&downloadedFileName=Standard%20Bidding%20Document%20%28SDB%29%204.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T09:09:14Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -6828,46 +6980,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-172993",
-   "reference": "ZNTD 01/07/2026",
-   "title": "Appointment of a service provider for the supply and delivery of thirty (30) standard computers, four (04) standard laptops and one (01) technical laptop for the Department of Public Works & Infrastructure.",
-   "department": "Kwazulu Natal - Public Works (Head Office)",
-   "category": "End-User Computing",
-   "matchedTerms": [
-    "computers",
-    "laptop"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-06T00:00:00+00:00",
-   "closingDate": "2026-11-04T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "BID DOCUMENT FOR ZNTD 01-07-2026 PROC OF COMPUTERS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d5a45d96-240a-4789-9add-f12e4e612619.pdf&downloadedFileName=BID%20DOCUMENT%20FOR%20ZNTD%2001-07-2026%20PROC%20OF%20COMPUTERS.pdf",
-     "format": "pdf",
-     "published": "2026-10-06T09:10:49Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-172629",
    "reference": "FIN-SCM-TEN-0254",
    "title": "Supply, delivery of new core network infrastructure",
@@ -6945,6 +7057,57 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=42c80cbc-8e78-4bad-8d4d-f158352218c3.docx&downloadedFileName=2.%20SBD.docx",
      "format": "docx",
      "published": "2026-10-02T12:27:06Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174588",
+   "reference": "RFQ/29088",
+   "title": "Billing Software",
+   "department": "Airports Company of South Africa",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "software"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-19T00:00:00+00:00",
+   "closingDate": "2026-11-05T01:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Request for Quotation for the Provision of Billing Software RFQ 29088.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6468fa5e-25c0-4a33-aa7e-5baacf2a53f8.pdf&downloadedFileName=Request%20for%20Quotation%20for%20the%20Provision%20of%20Billing%20Software%20RFQ%2029088.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T09:58:09Z"
+    },
+    {
+     "title": "NEC3 - TSC Request for Quotation for the Provision of Billing Software RFQ 29088  for metering 6 Months 22-05-2026.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a660fdd0-44b0-4e12-aceb-93530e62d715.docx&downloadedFileName=NEC3%20-%20TSC%20Request%20for%20Quotation%20for%20the%20Provision%20of%20Billing%20Software%20RFQ%2029088%20%20for%20metering%206%20Months%2022-05-2026.docx",
+     "format": "docx",
+     "published": "2026-10-19T09:58:09Z"
+    },
+    {
+     "title": "1-BOQ for metering 6 Months.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3987ec30-8ff7-40c6-8ad5-93c834013248.xlsx&downloadedFileName=1-BOQ%20for%20metering%206%20Months.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-19T09:58:09Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -7191,6 +7354,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=9575f31d-cc19-4657-9968-2c0616bb9f31.pdf&downloadedFileName=TOR%20FSCA202627-T014%20PROVISION%20OF%20NETWORK%20PERIMETER%20FIREWALL%20SECURITY%20HARDWARE%20%5BPUBLISHED%5D.pdf",
      "format": "pdf",
      "published": "2026-10-09T14:57:47Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-172993",
+   "reference": "ZNTD 01/07/2026",
+   "title": "Appointment of a service provider for the supply and delivery of thirty (30) standard computers, four (04) standard laptops and one (01) technical laptop for the Department of Public Works & Infrastructure.",
+   "department": "Kwazulu Natal - Public Works (Head Office)",
+   "category": "End-User Computing",
+   "matchedTerms": [
+    "computers",
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-06T00:00:00+00:00",
+   "closingDate": "2026-11-05T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "BID DOCUMENT FOR ZNTD 01-07-2026 PROC OF COMPUTERS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d5a45d96-240a-4789-9add-f12e4e612619.pdf&downloadedFileName=BID%20DOCUMENT%20FOR%20ZNTD%2001-07-2026%20PROC%20OF%20COMPUTERS.pdf",
+     "format": "pdf",
+     "published": "2026-10-06T09:10:49Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8642,6 +8845,46 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174570",
+   "reference": "MATAT/2026/2027-23",
+   "title": "PROVISION OF A FULLY AUTOMATED SYSTEM FOR E-PMS AND E-RISK MANAGEMENT SYSTEM, FULLY BACK UP SUPPORT FOR A PERIOD OF THREE YEARS",
+   "department": "Matatiele Local Municipality",
+   "category": "Software & Systems",
+   "matchedTerms": [
+    "management system",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-19T00:00:00+00:00",
+   "closingDate": "2026-11-16T10:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RE-ADVERT FOR E-PMS & E-RISK-23.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9b1ba988-26a3-48b0-bda2-235552e3e219.pdf&downloadedFileName=RE-ADVERT%20FOR%20E-PMS%20%26%20E-RISK-23.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T08:16:27Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174464",
    "reference": "RT83-2026RA",
    "title": "APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE SUPPLY, DELIVERY, INSTALLATION, DEINSTALLATION, REPAIRS, MAINTENANCE, COMMISSIONING, DECOMMISSIONING, DISPOSAL OF FUEL TANKS, LEASING OF ELECTRONIC FUEL MANAGEMENT SYSTEM, AND FUEL ANALYSIS FOR BULK FUEL INFRASTRUCTURE AND BOWSERS FOR THE STATE FOR A PERIOD OF SIXTY (60) MONTHS",
@@ -8822,7 +9065,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "matchedTerms": [
     "azure",
     "microsoft"
@@ -9144,10 +9387,10 @@
    },
    "documents": [
     {
-     "title": "doc00528220261015151606.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=004f5c08-c0fc-4ca0-a606-e3182f5ceb5a.pdf&downloadedFileName=doc00528220261015151606.pdf",
+     "title": "doc00528820261019101023.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7cc72f99-558d-4eb6-b5d8-006a01817057.pdf&downloadedFileName=doc00528820261019101023.pdf",
      "format": "pdf",
-     "published": "2026-10-15T15:16:50Z"
+     "published": "2026-10-19T10:12:46Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
