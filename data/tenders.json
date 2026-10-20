@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-19T22:04:42.791515+00:00",
+ "generatedAt": "2026-10-20T01:41:17.661064+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-11",
- "releasesScanned": 3380,
- "uniqueTenders": 3440,
- "count": 176,
+ "coveredFrom": "2026-09-04",
+ "releasesScanned": 3840,
+ "uniqueTenders": 3850,
+ "count": 179,
  "categories": {
-  "Network & Infrastructure": 26,
-  "End-User Computing": 23,
+  "Network & Infrastructure": 28,
+  "End-User Computing": 25,
   "Cybersecurity": 9,
-  "Software & Systems": 81,
-  "IT Services & Support": 24,
-  "Cloud Services": 5,
+  "Software & Systems": 80,
+  "IT Services & Support": 23,
+  "Cloud Services": 6,
   "Telecoms & Unified Comms": 8
  },
  "onlineBriefings": 2,
- "carriedOver": 10,
+ "carriedOver": 4,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -255,6 +255,7 @@
    "title": "Request for Bid for the Supply, Configuration, Installation Including Maintenance and Support of Local Area Network Infrastructure (ARUBA SWITCHES AND WIFI ACCESS POINTS) for the Period of 3 Years for the Department of Water and Sanitation (DWS) Head Office (PHASE 2) in Pretoria. Non Compulsory Virtual Briefing Session Will Be Held on 22 September 2026 at 11h00am.The Closing Date Has Being Extended Till 20 October 2026",
    "department": "State Information Technology Agency",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "aruba",
     "erp",
@@ -523,6 +524,7 @@
    "title": "SUPPLY, INSTALLATION, COMMISSION AND MAINTENANCE OF RICHARDS BAY AND EMPANGENI INTERNET LINKS FOR A PERIOD OF 36 MONTHS",
    "department": "uMhlathuze Municipality",
    "category": "Network & Infrastructure",
+   "company": "rtc",
    "matchedTerms": [
     "internet",
     "internet links"
@@ -563,6 +565,7 @@
    "title": "SUPPLY, INSTALLATION, AND COMMISSIONING OF A NEXT-GEN EMAIL SECURITY SOLUTION WITH ARCHIVING AND CYBERSECURITY USER AWARENESS TRAINING\r\nPLATFORM FOR A PERIOD OF 36 MONTHS",
    "department": "uMhlathuze Municipality",
    "category": "Cybersecurity",
+   "company": "rtc",
    "matchedTerms": [
     "cyber",
     "email security"
@@ -603,6 +606,7 @@
    "title": "PROCUREMENT FOR RURAL ROADS ASSET MANAGEMENT SYSTEM SUPPORT AND SOFTWARE LICENSING SERVICE FOR VHEMBE DISTRICT MUNICIPALITY FOR A PERIOD OF 36 MONTHS (3 YEARS)",
    "department": "Vhembe District Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "software",
@@ -1194,6 +1198,7 @@
    "title": "Centralised customer relations management database and system",
    "department": "Drakenstein Municipality",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "database",
     "system"
@@ -2096,6 +2101,89 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=639ca429-0209-47d5-b31f-ece81f0e98e7.pdf&downloadedFileName=ICT%20CONSUMABLES%202.pdf",
      "format": "pdf",
      "published": "2026-10-15T15:39:46Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-172540",
+   "reference": "MHSC027/2026-2027",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION OF MIMECAST LICENSE RENEWAL, SUPPORT, AND MANAGING OF TENANCY FOR A PERIOD OF THREE (3) YEARS",
+   "department": "Mine Health and Safety Council",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "license",
+    "license renewal",
+    "mimecast"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-02T00:00:00+00:00",
+   "closingDate": "2026-10-23T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "MHSC_027_2026_2027.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=39165efb-8f87-4852-ab8d-35fb40b5c178.pdf&downloadedFileName=MHSC_027_2026_2027.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T08:54:28Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-172568",
+   "reference": "MICT/SETA/ADB/07/2026",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE RENEWAL OF ADOBE PRO LICENSES FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
+   "department": "Media, Information and Communication Technologies Sector Education and training Authority (MICT SETA)",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "adobe pro licens",
+    "license"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-02T00:00:00+00:00",
+   "closingDate": "2026-10-23T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "BID DOCUMENT-MICT-SETA-ADB-07-2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=da3327cb-7af5-440d-95b2-0797ed4aa54a.pdf&downloadedFileName=BID%20DOCUMENT-MICT-SETA-ADB-07-2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T10:44:38Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -4939,7 +5027,7 @@
    "reference": "SCMU14-26/27-0009",
    "title": "Rate based contract for the supply of ICT server related infrastructure for a period of 3 years (36 months) \r\n[SITA registered IT vendors/service providers (RFB  contract)]",
    "department": "Eastern Cape - Sport Recreation Arts and Culture",
-   "category": "IT Services & Support",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -5151,6 +5239,7 @@
    "title": "For the Provision of Services to Architect, Design, Develop, Integrate, Migrate, Install, Configure, and Test an Incident Management Solution for the South African Police Service for a Period of Thirty-Six (36) Months.The Closing Date Has Being Extended Till 30 October 2026",
    "department": "State Information Technology Agency",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "erp"
    ],
@@ -5908,7 +5997,7 @@
    "reference": "220/2026",
    "title": "OFFICE EQUIPMENT (PRINTERS, COPIERS AND MULTI-FUNCTION MACHINES: LEASE OPTION) AND PRINT\r\nMANAGEMENT SOFTWARE",
    "department": "Kouga Municipality",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "printers",
@@ -8672,7 +8761,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -8914,6 +9003,106 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=1f0334f7-04b7-4d93-b99c-eba1d34b6d0f.pdf&downloadedFileName=IUCMA-002-SIEMSOC-2026%20%28003%29.pdf",
      "format": "pdf",
      "published": "2026-10-19T15:51:23Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174751",
+   "reference": "NCR1047102026",
+   "title": "APPOINTMENT TO SELECT OF A QUALIFIED AND EXPERIENCED SERVICES PROVIDER TO ESTABLISH A DISASTER RECOVERY (DR) AND BUSINESS CONTINUITY (BS) SOLUTION FOR PERIOD OF THREE (3) YEARS AT NATIONAL CREDIT REGULATOR",
+   "department": "National Credit Regulator",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "disaster recovery"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-11-20T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "REVISED SBD 7.2 (3).docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=18a62bba-616d-44a0-aab5-03c32bfd8d41.docx&downloadedFileName=REVISED%20SBD%207.2%20%283%29.docx",
+     "format": "docx",
+     "published": "2026-10-19T19:51:09Z"
+    },
+    {
+     "title": "annexure_b1_signatures.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a47e1afb-aa67-4afd-a2b9-1b20d15a20ed.pdf&downloadedFileName=annexure_b1_signatures.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T19:51:09Z"
+    },
+    {
+     "title": "Annexure H - (Non disclosure).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3425da21-d254-4656-80e2-2650bdb426fe.pdf&downloadedFileName=Annexure%20H%20-%20%28Non%20disclosure%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T19:51:09Z"
+    },
+    {
+     "title": "SBD1.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=70297201-7241-4f3c-929d-2ceb0d74ac73.docx&downloadedFileName=SBD1.docx",
+     "format": "docx",
+     "published": "2026-10-19T19:51:09Z"
+    },
+    {
+     "title": "DRAFT_SLA_FOR_SERVICE_PROVIDERS_REVIEW.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b9bfa2c2-d91a-49d1-a375-2d55bc22e3a3.pdf&downloadedFileName=DRAFT_SLA_FOR_SERVICE_PROVIDERS_REVIEW.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T19:51:09Z"
+    },
+    {
+     "title": "Annexure B - _General terms  conditions_8020 ver 2021.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=57a06c6c-79fc-429a-a537-52e44a212dfc.pdf&downloadedFileName=Annexure%20B%20-%20_General%20terms%20%20conditions_8020%20ver%202021.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T19:51:09Z"
+    },
+    {
+     "title": "SCM-Bid documents SBD 3.1 (2).doc",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=20ef4ada-2c4c-490c-a2bb-5ded7e34daa2.doc&downloadedFileName=SCM-Bid%20documents%20SBD%203.1%20%282%29.doc",
+     "format": "doc",
+     "published": "2026-10-19T19:51:09Z"
+    },
+    {
+     "title": "SCM-Bid documents SBD 3.3.doc",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c147d09a-ab19-4351-a282-909bd20f7d95.doc&downloadedFileName=SCM-Bid%20documents%20SBD%203.3.doc",
+     "format": "doc",
+     "published": "2026-10-19T19:51:08Z"
+    },
+    {
+     "title": "REVISED SBD 4 -Annexure A (2).docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=960da15b-d6f0-4bc2-a85c-930dc33fec8c.docx&downloadedFileName=REVISED%20SBD%204%20-Annexure%20A%20%282%29.docx",
+     "format": "docx",
+     "published": "2026-10-19T19:51:09Z"
+    },
+    {
+     "title": "SBD 6.1 IN TERMS OF PPR2022.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8ac7fec8-d370-40d7-9bb8-ed2341ab1ba8.docx&downloadedFileName=SBD%206.1%20IN%20TERMS%20OF%20PPR2022.docx",
+     "format": "docx",
+     "published": "2026-10-19T19:51:09Z"
+    },
+    {
+     "title": "TERMS OF REFERENCE FOR NCR1047.10.2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=43daa434-1f27-4d5c-823f-fae4ba719162.pdf&downloadedFileName=TERMS%20OF%20REFERENCE%20FOR%20NCR1047.10.2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T19:51:08Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -9177,7 +9366,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "printer",
