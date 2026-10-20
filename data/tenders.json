@@ -1,66 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-20T15:42:23.819470+00:00",
+ "generatedAt": "2026-10-20T20:35:04.722652+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-12",
- "releasesScanned": 3307,
- "uniqueTenders": 3372,
- "count": 175,
+ "coveredFrom": "2026-10-13",
+ "releasesScanned": 775,
+ "uniqueTenders": 805,
+ "count": 173,
  "categories": {
-  "Software & Systems": 85,
   "Network & Infrastructure": 23,
   "End-User Computing": 23,
-  "IT Services & Support": 24,
+  "Software & Systems": 86,
+  "IT Services & Support": 21,
   "Cloud Services": 5,
   "Cybersecurity": 7,
   "Telecoms & Unified Comms": 8
  },
  "onlineBriefings": 1,
- "carriedOver": 8,
+ "carriedOver": 101,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-174136",
-   "reference": "COJ0010-26/27",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER TO PROCURE, SUPPLY AND INSTALL (SETUP) ADOBE INDESIGN, ADOBE ILLUSTRATOR, AND CANVA FOR BUSINESS SOFTWARE LICENSES FOR THE COMMUNICATIONS AND STAKEHOLDER MANAGEMENT UNIT UNDER THE GROUP FINANCE DEPARTMENT.",
-   "department": "City Council of Johannesburg",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "license",
-    "software",
-    "software licens"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-14T00:00:00+00:00",
-   "closingDate": "2026-10-21T10:30:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "COJ0010-26-27 ADOBE AND CANVA FOR BUSINESS SOFWARE AND LICENSES..pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b7675813-128a-4493-b777-d89b74df28aa.pdf&downloadedFileName=COJ0010-26-27%20ADOBE%20AND%20CANVA%20FOR%20BUSINESS%20SOFWARE%20AND%20LICENSES..pdf",
-     "format": "pdf",
-     "published": "2026-10-14T18:08:33Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-174304",
    "reference": "RFQ/MICT/65/2026",
@@ -1293,7 +1251,7 @@
    "reference": "NWNW381/CORPS23-08/2026/2027",
    "title": "PROVISION OF ASSESSMENT AND MODERATION SERVICES FOR NATIONAL CERTIFICATE – INFORMATION TECHNOLOGY: END USER COMPUTING FOR 2025/26 ACADEMIC YEAR",
    "department": "Ratlou Local Municipality",
-   "category": "IT Services & Support",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "end user comput",
@@ -1355,46 +1313,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=58d42ae7-76ff-40ba-8c50-c205e187f990.pdf&downloadedFileName=RFQ%20-%20Assesment%20and%20Moderation%202.pdf",
      "format": "pdf",
      "published": "2026-10-16T08:29:55Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174290",
-   "reference": "RFQ497/26/27",
-   "title": "Procurement of ICT Consumables\r\nSpecification attached to SBD form",
-   "department": "Limpopo - Public Works",
-   "category": "IT Services & Support",
-   "company": "rtc",
-   "matchedTerms": [
-    "ict"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-10-23T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "ICT CONSUMABLES 2.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=639ca429-0209-47d5-b31f-ece81f0e98e7.pdf&downloadedFileName=ICT%20CONSUMABLES%202.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T15:39:46Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1565,46 +1483,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=f5e8d5c9-7146-426f-9423-9bb319e1f679.pdf&downloadedFileName=TENDER%20DOC%20CGS-2026-037S.pdf",
      "format": "pdf",
      "published": "2026-09-22T14:20:40Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174219",
-   "reference": "WMM-LM 08/10/26/01 LTD",
-   "title": "Procurement of Laptops and Tracking Devices",
-   "department": "Winnie Madikizela-Mandela Local Municipality",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "laptop"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-10-23T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Tender Document Laptops and tracking Devices.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b01152fd-c00a-4103-b20a-398df1c8e7c5.pdf&downloadedFileName=Tender%20Document%20Laptops%20and%20tracking%20Devices.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T11:56:58Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3544,7 +3422,7 @@
    "reference": "HO/ ICT/ 10375486 / 10 /2026",
    "title": "REQUEST FOR QUOTATION PROVISION OF 50 PORTABLE HANDHELD POINT-OF-SALE TICKETING DEVICES WITH EMBEDDED PRASA COMPATIBLE SOFTWARE, PAYMENT FACILITATOR AND GATEWAY, INCLUDING SUPPORT AND MAINTENANCE FOR A DURATION OF 6 MONTHS",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -7904,6 +7782,72 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=1d4e631f-f3da-44cf-976e-a680b5e0ba4c.pdf&downloadedFileName=ToR%20Annexure%20A%20%28Vmware%29.pdf",
      "format": "pdf",
      "published": "2026-10-20T13:13:40Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174918",
+   "reference": "RFB 3300/2026-(ERP No 530012)",
+   "title": "Appointment of a Service Provider for the Analysis, Design and Development of the National Digital Human Settlements Management System (NDHSMS) for the Department of Human Settlements for a Period of Thirty-Six (36) Months",
+   "department": "State Information Technology Agency",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "erp",
+    "management system",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-11-12T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFB 3300-2026 Price Schedule.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=522aaf3c-87a1-427c-8fa3-13eb91ed1f7e.xlsx&downloadedFileName=RFB%203300-2026%20Price%20Schedule.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-20T18:44:45Z"
+    },
+    {
+     "title": "RFB 3300-2026 Final Bid Specification.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=af96eef7-d77c-4ad6-bdc7-8a4c79745cbc.docx&downloadedFileName=RFB%203300-2026%20Final%20Bid%20Specification.docx",
+     "format": "docx",
+     "published": "2026-10-20T18:44:45Z"
+    },
+    {
+     "title": "RFB 3300-2026 - Invitation to bidder letter.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8e442823-d5b4-4a59-a2f6-953c08ec666f.pdf&downloadedFileName=RFB%203300-2026%20-%20Invitation%20to%20bidder%20letter.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T18:44:45Z"
+    },
+    {
+     "title": "RFB 3300 -2026 Standard Bidding Document.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5231aa8b-e90c-4241-81f9-b1b6f6c9e8ff.docx&downloadedFileName=RFB%203300%20-2026%20Standard%20Bidding%20Document.docx",
+     "format": "docx",
+     "published": "2026-10-20T18:44:45Z"
+    },
+    {
+     "title": "RFB 3300 -2026 - Notice to Bidders_June 2026 Signed.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f9b83ba3-8b94-4028-b3f1-e5b4c09965c3.pdf&downloadedFileName=RFB%203300%20-2026%20-%20Notice%20to%20Bidders_June%202026%20Signed.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T18:45:42Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
