@@ -1,172 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-20T01:41:17.661064+00:00",
+ "generatedAt": "2026-10-20T10:01:04.567644+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-04",
- "releasesScanned": 3840,
- "uniqueTenders": 3850,
- "count": 179,
+ "coveredFrom": "2026-09-26",
+ "releasesScanned": 2202,
+ "uniqueTenders": 2247,
+ "count": 176,
  "categories": {
-  "Network & Infrastructure": 28,
-  "End-User Computing": 25,
-  "Cybersecurity": 9,
-  "Software & Systems": 80,
-  "IT Services & Support": 23,
+  "Software & Systems": 79,
+  "End-User Computing": 26,
+  "Network & Infrastructure": 27,
+  "Cybersecurity": 8,
+  "IT Services & Support": 22,
   "Cloud Services": 6,
   "Telecoms & Unified Comms": 8
  },
  "onlineBriefings": 2,
- "carriedOver": 4,
+ "carriedOver": 35,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-173939",
-   "reference": "POS10012",
-   "title": "FORTINET NETWORK SWITCHES & ACCESS POINTS",
-   "department": "Technology Innovation Agency",
-   "category": "Network & Infrastructure",
-   "company": "rtc",
-   "matchedTerms": [
-    "fortinet",
-    "network",
-    "network switch",
-    "switches"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-13T00:00:00+00:00",
-   "closingDate": "2026-10-20T09:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "POS10012.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8c29fab5-d8f4-4a38-a68e-4eccb6d439a5.docx&downloadedFileName=POS10012.docx",
-     "format": "docx",
-     "published": "2026-10-14T15:32:23Z"
-    },
-    {
-     "title": "REVISED SBD 4 -Annexure A.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=adb8dc98-71c2-4fbe-be11-5367f62da8cd.docx&downloadedFileName=REVISED%20SBD%204%20-Annexure%20A.docx",
-     "format": "docx",
-     "published": "2026-10-14T15:32:23Z"
-    },
-    {
-     "title": "Annexure B.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6fcce6a7-9a3c-4427-95d2-5a4f476c007c.pdf&downloadedFileName=Annexure%20B.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T15:32:23Z"
-    },
-    {
-     "title": "SBD 6.1 IN TERMS OF PPR2022 CORRECT_request for quotes.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=3cf51dd3-4b9d-41d0-b27f-8a946857096b.docx&downloadedFileName=SBD%206.1%20IN%20TERMS%20OF%20PPR2022%20CORRECT_request%20for%20quotes.docx",
-     "format": "docx",
-     "published": "2026-10-14T15:32:23Z"
-    },
-    {
-     "title": "Request for Quotation - Fortinet Network Switches & Access Points.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=549fb015-bb99-4ead-91ba-d28ffa7b5769.pdf&downloadedFileName=Request%20for%20Quotation%20-%20Fortinet%20Network%20Switches%20%26%20Access%20Points.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T15:32:23Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-172980",
-   "reference": "Q39-2026-27",
-   "title": "ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY AND DELIVERY OF IT-RELATED PERIPHERALS FOR THE SHARED SERVICES DEPARTMENT",
-   "department": "City of Tshwane",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "it-related",
-    "peripheral"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-05T00:00:00+00:00",
-   "closingDate": "2026-10-20T10:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Q39-2026-27 QUOTATION DOCUMENT AMENDED.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=4480f59a-4137-4a21-8c4d-4aceb8f13d83.pdf&downloadedFileName=Q39-2026-27%20QUOTATION%20DOCUMENT%20AMENDED.pdf",
-     "format": "pdf",
-     "published": "2026-10-06T15:30:42Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-168953",
-   "reference": "E3458GCDMWP",
-   "title": "The Provision of IT Professional Services on an as and when required basis for Information Security Services, Business Solution and Development Services and IT Governance Services",
-   "department": "ESKOM",
-   "category": "Cybersecurity",
-   "matchedTerms": [
-    "information security",
-    "it professional"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-03T00:00:00+00:00",
-   "closingDate": "2026-10-20T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Invitation to Tender -  E3458GCDMWP.zip",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=012d7534-5a92-450c-a2bf-90a3a65e8237.zip&downloadedFileName=Invitation%20to%20Tender%20-%20%20E3458GCDMWP.zip",
-     "format": "zip",
-     "published": "2026-09-22T12:22:53Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-173758",
    "reference": "RFQ 4688 /26",
@@ -384,58 +236,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-171920",
-   "reference": "RFB017/2026",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISIONING OF AN AUDIT MANAGEMENT SOFTWARE “AUDIT TOOL” FOR INTERNAL AUDIT.",
-   "department": "South African Forestry Company Limited",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "software"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-28T00:00:00+00:00",
-   "closingDate": "2026-10-20T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFB017.2026 - AUDIT TOOL.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ca7f4b3c-ceec-448b-875b-475032605b8b.pdf&downloadedFileName=RFB017.2026%20-%20AUDIT%20TOOL.pdf",
-     "format": "pdf",
-     "published": "2026-09-28T15:53:55Z"
-    },
-    {
-     "title": "Draft TSSC4 Audit Tool.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=3df181f9-b5eb-49e3-a2e1-99d3416c235d.pdf&downloadedFileName=Draft%20TSSC4%20Audit%20Tool.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T15:39:25Z"
-    },
-    {
-     "title": "Reference Template_ Annexure 1 Audit tool .docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e72ff2d3-cb8c-4737-92d6-fd3f15273155.docx&downloadedFileName=Reference%20Template_%20Annexure%201%20Audit%20tool%20.docx",
-     "format": "docx",
-     "published": "2026-09-28T15:53:55Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-170878",
    "reference": "TENDER 8/3/51-2026 / MN190-2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE SPECIALISED ICT TECHNICAL SUPPORT SERVICES, UPGRADE AND IMPLEMENT NEW FUNCTIONALITIES FOR PRESCRIBED MICROSOFT TECHNOLOGIES FOR BERGRIVIER MUNICIPALITY FROM DATE OF APPOINTMENT UNTIL 30 JUNE 2029",
@@ -639,88 +439,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=651ab490-c72c-47cc-bd52-0a523fad4e1c.pdf&downloadedFileName=PROCUMENT%20FOR%20RURAL%20ROADS%20ASSET%20MANAGEMENT%20SYSTEM%20SUPPORT%20AND%20SOFTWARE%20LICENSING%20SERVICE%20FOR%20VHEMBE%20DISTRICT%20MUNICIPALITY%20FOR%20A%20PERIOD%20OF%2036%20MONTHS%20%283%20YEARS%29.pdf",
      "format": "pdf",
      "published": "2026-09-07T10:29:24Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-172316",
-   "reference": "E3637DXGOU",
-   "title": "Provision of GIS and remote sensing services and spatial datasets on an as-and-when-required basis for a period of five years",
-   "department": "ESKOM",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "gis"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-01T00:00:00+00:00",
-   "closingDate": "2026-10-21T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "20260701_GIS Remote Sensing_ Form A_Cat 4_ Rev 9.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fe36231c-5a18-4c86-8bf3-0774e9accd13.pdf&downloadedFileName=20260701_GIS%20Remote%20Sensing_%20Form%20A_Cat%204_%20Rev%209.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T08:44:26Z"
-    },
-    {
-     "title": "Clarification Document_.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6f35a92a-95c6-42a3-bc6f-1af743f5916c.pdf&downloadedFileName=Clarification%20Document_.pdf",
-     "format": "pdf",
-     "published": "2026-10-16T15:07:16Z"
-    },
-    {
-     "title": "Invitation to Tender (ITT)_.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=719b329f-5ca3-4fb2-8abc-2aec43462964.pdf&downloadedFileName=Invitation%20to%20Tender%20%28ITT%29_.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T08:44:26Z"
-    },
-    {
-     "title": "240-109253302 _ Quality Control Plan or Inspection Test Plan (QCP or ITP)-rev 3.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=72e7a50f-a4d2-4947-9f20-72c0117d2057.pdf&downloadedFileName=240-109253302%20_%20Quality%20Control%20Plan%20or%20Inspection%20Test%20Plan%20%28QCP%20or%20ITP%29-rev%203.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T08:44:26Z"
-    },
-    {
-     "title": "20260701_GIS Remote sensing_List of Tender Returnables_Cat 4_ Rev 7.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a195df13-9374-4057-900d-8ce12ff6f17f.pdf&downloadedFileName=20260701_GIS%20Remote%20sensing_List%20of%20Tender%20Returnables_Cat%204_%20Rev%207.pdf",
-     "format": "pdf",
-     "published": "2026-10-16T15:09:00Z"
-    },
-    {
-     "title": "NEC3 TSC3_GIS _.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5decb2cc-4fb1-456b-80fe-d1737316fb6a.pdf&downloadedFileName=NEC3%20TSC3_GIS%20_.pdf",
-     "format": "pdf",
-     "published": "2026-10-06T11:12:23Z"
-    },
-    {
-     "title": "240-126469599_Method Statement template -Rev 3 .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c82f1f43-8bcd-4460-b70a-e44548b9d25d.pdf&downloadedFileName=240-126469599_Method%20Statement%20template%20-Rev%203%20.pdf",
-     "format": "pdf",
-     "published": "2026-10-16T15:07:50Z"
-    },
-    {
-     "title": "SDLI Strategy_BIDDERS TEMPLATE The provision of GIS and remote sensing services and spatial datasets on an as and when required basis.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2ddf463f-f378-4b59-b43a-e976f12fdbfd.pdf&downloadedFileName=SDLI%20Strategy_BIDDERS%20TEMPLATE%20The%20provision%20of%20GIS%20and%20remote%20sensing%20services%20and%20spatial%20datasets%20on%20an%20as%20and%20when%20required%20basis.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T08:44:26Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1999,7 +1717,7 @@
    "reference": "NWNW381/CORPS23-08/2026/2027",
    "title": "PROVISION OF ASSESSMENT AND MODERATION SERVICES FOR NATIONAL CERTIFICATE – INFORMATION TECHNOLOGY: END USER COMPUTING FOR 2025/26 ACADEMIC YEAR",
    "department": "Ratlou Local Municipality",
-   "category": "IT Services & Support",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "end user comput",
@@ -3389,6 +3107,53 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=b84c636a-2ddb-4581-b166-71a5fff091d7.pdf&downloadedFileName=COM82-2026%20DESIGN%2C%20IMPLEMENT%20AND%20MAINTAIN%20REVENUE%20SELF-SERVICE%20PORTAL%20SYSTEM%20-%20Advert.pdf",
      "format": "pdf",
      "published": "2026-09-25T12:26:48Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174780",
+   "reference": "ZNQP 04/08/2026",
+   "title": "Request to appoint a suitable service provider to supply and install 3 UPS system for eThekwini Region 2nd floor server room, eThekwini District and MEC’s office and installation of existing UPS at the Main Server room. Department of Public Works and Infrastructure, eThekwini Region, 455A King Cetshwayo Highway 4001.",
+   "department": "Kwazulu Natal - Public Works (Head Office)",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "server",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-27T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "ADVERT FOR UPS SYSTEMS-ZNQP 04-08-2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=36604010-bf4f-415a-b8d0-3eec209862e1.pdf&downloadedFileName=ADVERT%20FOR%20UPS%20SYSTEMS-ZNQP%2004-08-2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T09:23:09Z"
+    },
+    {
+     "title": "BID DOCUMENT FOR UPS SYSTEMS ZNQP 04-08-2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fb79547c-723c-4928-af52-4dd9d921dc35.pdf&downloadedFileName=BID%20DOCUMENT%20FOR%20UPS%20SYSTEMS%20ZNQP%2004-08-2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T09:23:09Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -4784,6 +4549,88 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-172316",
+   "reference": "E3637DXGOU",
+   "title": "Provision of GIS and remote sensing services and spatial datasets on an as-and-when-required basis for a period of five years",
+   "department": "ESKOM",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "gis"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-01T00:00:00+00:00",
+   "closingDate": "2026-10-30T10:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "20260701_GIS Remote Sensing_ Form A_Cat 4_ Rev 9.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fe36231c-5a18-4c86-8bf3-0774e9accd13.pdf&downloadedFileName=20260701_GIS%20Remote%20Sensing_%20Form%20A_Cat%204_%20Rev%209.pdf",
+     "format": "pdf",
+     "published": "2026-10-01T08:44:26Z"
+    },
+    {
+     "title": "Clarification Document_.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6f35a92a-95c6-42a3-bc6f-1af743f5916c.pdf&downloadedFileName=Clarification%20Document_.pdf",
+     "format": "pdf",
+     "published": "2026-10-16T15:07:16Z"
+    },
+    {
+     "title": "Invitation to Tender (ITT)_.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=719b329f-5ca3-4fb2-8abc-2aec43462964.pdf&downloadedFileName=Invitation%20to%20Tender%20%28ITT%29_.pdf",
+     "format": "pdf",
+     "published": "2026-10-01T08:44:26Z"
+    },
+    {
+     "title": "240-109253302 _ Quality Control Plan or Inspection Test Plan (QCP or ITP)-rev 3.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=72e7a50f-a4d2-4947-9f20-72c0117d2057.pdf&downloadedFileName=240-109253302%20_%20Quality%20Control%20Plan%20or%20Inspection%20Test%20Plan%20%28QCP%20or%20ITP%29-rev%203.pdf",
+     "format": "pdf",
+     "published": "2026-10-01T08:44:26Z"
+    },
+    {
+     "title": "20260701_GIS Remote sensing_List of Tender Returnables_Cat 4_ Rev 7.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a195df13-9374-4057-900d-8ce12ff6f17f.pdf&downloadedFileName=20260701_GIS%20Remote%20sensing_List%20of%20Tender%20Returnables_Cat%204_%20Rev%207.pdf",
+     "format": "pdf",
+     "published": "2026-10-16T15:09:00Z"
+    },
+    {
+     "title": "NEC3 TSC3_GIS _.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5decb2cc-4fb1-456b-80fe-d1737316fb6a.pdf&downloadedFileName=NEC3%20TSC3_GIS%20_.pdf",
+     "format": "pdf",
+     "published": "2026-10-06T11:12:23Z"
+    },
+    {
+     "title": "240-126469599_Method Statement template -Rev 3 .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c82f1f43-8bcd-4460-b70a-e44548b9d25d.pdf&downloadedFileName=240-126469599_Method%20Statement%20template%20-Rev%203%20.pdf",
+     "format": "pdf",
+     "published": "2026-10-16T15:07:50Z"
+    },
+    {
+     "title": "SDLI Strategy_BIDDERS TEMPLATE The provision of GIS and remote sensing services and spatial datasets on an as and when required basis.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2ddf463f-f378-4b59-b43a-e976f12fdbfd.pdf&downloadedFileName=SDLI%20Strategy_BIDDERS%20TEMPLATE%20The%20provision%20of%20GIS%20and%20remote%20sensing%20services%20and%20spatial%20datasets%20on%20an%20as%20and%20when%20required%20basis.pdf",
+     "format": "pdf",
+     "published": "2026-10-01T08:44:26Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-171537",
    "reference": "E3571CXERE",
    "title": "THE INSTALLATION OF A VISITOR MANAGEMENT SYSTEM (VMS) AND LICENCE\r\nPLATE RECOGNITION (LPR) SYSTEM AT ESKOM CORPORATE SITES (EAL, MWP\r\nAND ERIC) FOR A PERIOD OF THREE (03) YEARS",
@@ -4921,7 +4768,7 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "Network & Infrastructure",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "computer",

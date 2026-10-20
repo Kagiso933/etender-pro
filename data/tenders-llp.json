@@ -1,61 +1,21 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-20T01:41:17.661064+00:00",
+ "generatedAt": "2026-10-20T10:01:04.567644+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-04",
- "releasesScanned": 3840,
- "uniqueTenders": 3850,
- "count": 337,
+ "coveredFrom": "2026-09-26",
+ "releasesScanned": 2202,
+ "uniqueTenders": 2247,
+ "count": 338,
  "categories": {
-  "Supply & Consumables": 90,
   "Agriculture": 45,
-  "Facilities Maintenance": 170,
+  "Facilities Maintenance": 171,
+  "Supply & Consumables": 90,
   "Grounds & Landscaping": 32
  },
  "onlineBriefings": 0,
- "carriedOver": 0,
+ "carriedOver": 68,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-173151",
-   "reference": "DFFE 219 PPE SANAE",
-   "title": "SUPPLY AND DELIVERY OF PPE",
-   "department": "National - Environment, Forestry and Fisheries",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "ppe"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-07T00:00:00+00:00",
-   "closingDate": "2026-10-20T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "DFFE RFQ 219 PPE SANAE 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1f372606-d568-4409-9ee4-729f20cffa44.pdf&downloadedFileName=DFFE%20RFQ%20219%20PPE%20SANAE%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-07T10:38:20Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-170987",
    "reference": "S028/26",
@@ -1447,61 +1407,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=4660dfb0-ca32-4cf6-b297-4a6077f143ca.pdf&downloadedFileName=TENDER%20NOTICE%20-%20Agricultural%20Implements.pdf",
      "format": "pdf",
      "published": "2026-10-06T08:00:41Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-172376",
-   "reference": "HO/INTERSITE/60/09/2026",
-   "title": "REQUEST FOR QUOTATION (RFQ) FOR APPOINTMENT OF ONE (1) SERVICE PROVIDER FOR PLUMBING REPAIRS AND MAINTENANCE AT UMJANTSHI HOUSE FOR A PERIOD OF 36 MONTHS ON AS AND WHEN REQUIRED BASIS.",
-   "department": "Passenger Rail Agency of South Africa",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "maintenance",
-    "plumbing",
-    "repairs",
-    "repairs and maintenance"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-01T00:00:00+00:00",
-   "closingDate": "2026-10-21T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Specification_ As and When Plumbing Repairs  and Maintenance for Umjantshi House-.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2ed6506c-3a47-49f8-85c6-87a58f2975ea.pdf&downloadedFileName=Specification_%20As%20and%20When%20Plumbing%20Repairs%20%20and%20Maintenance%20for%20Umjantshi%20House-.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T13:06:26Z"
-    },
-    {
-     "title": "Vetted  - As and When Required Contract Template-Plumbing Maintenance.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=90e99414-533a-49c8-bc02-8e8e81a7ba2b.pdf&downloadedFileName=Vetted%20%20-%20As%20and%20When%20Required%20Contract%20Template-Plumbing%20Maintenance.pdf",
-     "format": "pdf",
-     "published": "2026-10-07T10:44:58Z"
-    },
-    {
-     "title": "(RFQ) FOR APPOINTMENT OF A SERVICE PROVIDER FOR PLUMBNG REPAIRS AND MAITENANCE AT UMJANTSHI HOUSE.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=af5d6334-76a6-4bac-b015-c39fcdd32496.pdf&downloadedFileName=%28RFQ%29%20FOR%20APPOINTMENT%20OF%20A%20SERVICE%20PROVIDER%20FOR%20PLUMBNG%20REPAIRS%20AND%20MAITENANCE%20AT%20UMJANTSHI%20HOUSE.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T12:11:09Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5673,6 +5578,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174764",
+   "reference": "INFQ011/26AI",
+   "title": "BLOEMFONTEIN: OLIEWENHUIS ART MUSEUM: REPAIRS AND RENOVATION: APPOINTMENT OF STRUCTURAL ENGINEERING SERVICES",
+   "department": "Public Works",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "renovat",
+    "repairs"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-27T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "INFQ011_26AI - Quotation document.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=52133d89-065b-4528-acdb-d684cf10c7ca.pdf&downloadedFileName=INFQ011_26AI%20-%20Quotation%20document.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T08:11:52Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174603",
    "reference": "JRA/25/141",
    "title": "Appointment of a service provider for the supply, installation, upgrading of a CCTV camera system, including the provision of armed security officers, system support, repairs, replacement, maintenance and armed response services on an as and when required basis for a period of 36 months.",
@@ -6005,6 +5951,104 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=1e6867b1-01a0-41a8-bfc0-c2c5435916e4.pdf&downloadedFileName=COGHSTA%20B009%20PERSONAL%20PROTECTIVE%20EQUIPMENTS%20FOR%20DEPARTMENTAL%20EMPLOYEES_260930_161653.pdf",
      "format": "pdf",
      "published": "2026-09-30T17:56:45Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174765",
+   "reference": "IHLM/68/2026-27/ADMIN",
+   "title": "SUPPLY AND DELIVERY OF STATIONERY",
+   "department": "Ingquza Hill Local Municipality",
+   "category": "Supply & Consumables",
+   "company": "llp",
+   "matchedTerms": [
+    "stationery"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-27T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "BID DOCUMENT FOR SUPPLY AND DELIVERY OF STATIONERY.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b4a1f32a-18ec-43da-8a96-b6dbcd29c518.pdf&downloadedFileName=BID%20DOCUMENT%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20STATIONERY.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T08:23:43Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174805",
+   "reference": "RFQ-STATIONERY 2026",
+   "title": "REQUEST FOR QUOTATIONS: SUPPLY AND DELIVERY OF STATIONERY",
+   "department": "Xhariep District Municipality",
+   "category": "Supply & Consumables",
+   "company": "llp",
+   "matchedTerms": [
+    "stationery"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-27T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Stationery Specifications.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d05e9218-665d-455f-93cf-1e23d515e980.pdf&downloadedFileName=Stationery%20Specifications.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T11:09:58Z"
+    },
+    {
+     "title": "MBD 4.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ef4d518c-0061-4af4-98cf-68f76d7613b0.pdf&downloadedFileName=MBD%204.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T11:09:58Z"
+    },
+    {
+     "title": "Stationery Advert.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f00ce1d6-a960-40f1-983f-d0481d1a3de8.pdf&downloadedFileName=Stationery%20Advert.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T11:09:58Z"
+    },
+    {
+     "title": "MBD 6.1 IN TERMS OF PPR2022.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=db6b21fb-d8b4-4798-84be-ebab080c3dc7.pdf&downloadedFileName=MBD%206.1%20IN%20TERMS%20OF%20PPR2022.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T11:09:58Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -7084,6 +7128,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=6510416f-5b07-482b-9697-f99350b58e19.pdf&downloadedFileName=REQUEST%20TO%20PURCHASE%20INDUSTRIAL%20LAWN%20MOWER%20GRASS%20CUTTING%20MACHINE%20OF%20RAMUSHWANA%20FIRE%20STATION.pdf",
      "format": "pdf",
      "published": "2026-10-19T15:48:20Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174808",
+   "reference": "ECR/RAIL/HCM/04/10/2026",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR SUPPLY AND DELIVERY OF CANVASES AND BLUE TEMPERA PAINT TO PRASA ON A ONCE-OFF BASIS IN THE EASTERN CAPE REGION",
+   "department": "Passenger Rail Agency of South Africa",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "paint"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-28T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "APPOINTMENT OF A SERVICE PROVIDER FOR SUPPLY AND DELIVERY OF CANVASES AND BLUE TEMPA PAINT TO PRASA ON A ONCE-OFF BASIS IN THE EASTERN CAPE REGION.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ae0f38dc-1450-4b3f-ad64-83c06ecc35dd.pdf&downloadedFileName=APPOINTMENT%20OF%20A%20SERVICE%20PROVIDER%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20CANVASES%20AND%20BLUE%20TEMPA%20PAINT%20TO%20PRASA%20ON%20A%20ONCE-OFF%20BASIS%20IN%20THE%20EASTERN%20CAPE%20REGION.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T11:17:35Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -9642,6 +9726,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=8e7ba809-e53b-40da-ba29-9e5d12fb0593.pdf&downloadedFileName=Tender%20Advert%20October%202026.pdf",
      "format": "pdf",
      "published": "2026-10-15T14:37:40Z"
+    },
+    {
+     "title": "Personal Protective Equipment (PPE)TENDER DOCUMENT (RE-ADVERT).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6bb63810-804c-4ed5-ae1e-d885516f4675.pdf&downloadedFileName=Personal%20Protective%20Equipment%20%28PPE%29TENDER%20DOCUMENT%20%28RE-ADVERT%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T10:26:37Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -12312,6 +12402,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=ead3848b-02bf-4984-93ba-d9a5914b5fac.pdf&downloadedFileName=ALA612-1.pdf",
      "format": "pdf",
      "published": "2026-10-13T15:46:03Z"
+    },
+    {
+     "title": "ALA 612 26 MP ADDENDUM.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b35f8028-d09d-4c52-9061-ecd12fbdd093.pdf&downloadedFileName=ALA%20612%2026%20MP%20ADDENDUM.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T09:36:28Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -13536,46 +13632,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=20ed17be-0ba9-44d2-81b4-2ece36e1a6a2.pdf&downloadedFileName=MEGA%202027.08%20F215.1%20BID%20DOC.pdf",
      "format": "pdf",
      "published": "2026-10-14T08:43:18Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-173510",
-   "reference": "NLM/SCM/20/2026/2027",
-   "title": "Provision of protective clothing for a period of twenty-four months",
-   "department": "Ntabankulu Local Municipality",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "protective clothing"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-09T00:00:00+00:00",
-   "closingDate": "2026-11-09T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Supply and Delivery of Protective Clothing for period of 24 Months.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8d36f53c-9def-45e4-b2af-6fec3047250a.pdf&downloadedFileName=Supply%20and%20Delivery%20of%20Protective%20Clothing%20for%20period%20of%2024%20Months.pdf",
-     "format": "pdf",
-     "published": "2026-10-09T10:08:01Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
