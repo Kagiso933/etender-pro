@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-21T15:50:26.758965+00:00",
+ "generatedAt": "2026-10-21T20:45:35.185744+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-12",
- "releasesScanned": 3362,
- "uniqueTenders": 3362,
- "count": 333,
+ "coveredFrom": "2026-09-20",
+ "releasesScanned": 2807,
+ "uniqueTenders": 2807,
+ "count": 332,
  "categories": {
-  "Facilities Maintenance": 179,
+  "Facilities Maintenance": 188,
   "Grounds & Landscaping": 30,
-  "Supply & Consumables": 93,
+  "Supply & Consumables": 83,
   "Agriculture": 31
  },
  "onlineBriefings": 0,
- "carriedOver": 15,
+ "carriedOver": 27,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -558,7 +558,7 @@
    "reference": "GSHPT214/2026",
    "title": "THE PLACEMENT OF TWO (2) ULTRASONIC SURGICAL ASPIRATORS (AT NO COST) FOR INTRACRANIAL AND INTRAVENTRICULAR NEUROSURGERY, AND LAPAROSCOPIC AND OPEN LIVER SURGERY, A FULLY COMPREHENSIVE MAINTENANCE CONTRACT, AND THE SUPPLY AND DELIVERY OF CONSUMABLES FOR GROOTE SCHUUR HOSPITAL (GSH) OVER A PERIOD OF THREE YEARS.",
    "department": "Western Cape - Health",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -1707,7 +1707,7 @@
    "reference": "RFB017-26-27",
    "title": "PLACEMENT /OUTRIGHT PURCHASE OF AUTOMATED NUCLEIC CARD PUNCHER FOR UNIVERSITAS INCLUDING SERVICE, REAGENTS, CONSUMABLES AND MAINTENANCE FOR THE PERIOD OF FIVE (5) YEARS.",
    "department": "National Health Laboratory Service",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -1872,99 +1872,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=796ce6e5-bccb-46b1-83c6-7fa4fa6d5b37.pdf&downloadedFileName=ADVERT%20-%20Q06108%20Uniform%20for%20meter%20readers.pdf",
      "format": "pdf",
      "published": "2026-10-16T14:58:07Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174194",
-   "reference": "SGR 57 09 26",
-   "title": "RE-ADVERTISEMENT) REQUEST FOR QUOTATION (RFQ) FOR THE APPOINTMENT OF TWO (2) SERVICE PROVIDERS THAT WILL PROVIDE CLEANING, HYGIENE AND HORTICULTURE SERVICES AT PRASA WEST AREA CORRIDOR 1, WEST AREA CORRIDOR 3, OF THE SOUTH GAUTENG REGION FOR THE PERIOD OF 6 MONTHS",
-   "department": "Passenger Rail Agency of South Africa",
-   "category": "Grounds & Landscaping",
-   "company": "llp",
-   "matchedTerms": [
-    "cleaning",
-    "horticultur"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-10-23T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Functionality Criteria Cleaning Hygiene And Horticulture Services.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5c5d89c6-6ad9-4456-a6d3-3ec5708408bc.pdf&downloadedFileName=Functionality%20Criteria%20Cleaning%20Hygiene%20And%20Horticulture%20Services.pdf",
-     "format": "pdf",
-     "published": "2026-10-16T10:25:54Z"
-    },
-    {
-     "title": "West_Rand_Corridor_1_And_3_Cleaning_Hygiene_And_Horticulture_Services_Specification_Sept_2026. Advert version doc.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ff732660-38e0-4fe8-b20b-5ed45f7c6cbf.pdf&downloadedFileName=West_Rand_Corridor_1_And_3_Cleaning_Hygiene_And_Horticulture_Services_Specification_Sept_2026.%20Advert%20version%20doc.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T10:57:25Z"
-    },
-    {
-     "title": "RFQ for cleaning,hygiene and horticulture services for Corridor 1 and 3.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=681693d5-513b-44dd-bf56-e4c137868dfc.pdf&downloadedFileName=RFQ%20for%20cleaning%2Chygiene%20and%20horticulture%20services%20for%20Corridor%201%20and%203.pdf",
-     "format": "pdf",
-     "published": "2026-10-16T11:55:11Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174257",
-   "reference": "IHLM/64/2026-27/COMM",
-   "title": "SUPPLY AND DELIVERY OF PPE FOR COMMUNICITY SERVICES",
-   "department": "Ingquza Hill Local Municipality",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "ppe"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-10-23T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "TENDER DOCUMENT SUPPLY AND DELIVERY OF PPE FOR COMMUNITY SERVICES 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=471eb194-cbb6-4be6-8a7e-9f09c30ee467.pdf&downloadedFileName=TENDER%20DOCUMENT%20SUPPLY%20AND%20DELIVERY%20OF%20PPE%20FOR%20COMMUNITY%20SERVICES%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T14:42:39Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5527,6 +5434,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-175131",
+   "reference": "COJ0012-26/27",
+   "title": "APPOINTMENT OF A SUITABLE SERVICE PROVIDER TO SUPPLY AND DELIVER OF ENVIRONMENTAL HEALTH SPECIALIZED PEST CONTROL PERSONAL PROTECTIVE EQUIPMENT (PPE)",
+   "department": "City Council of Johannesburg",
+   "category": "Supply & Consumables",
+   "company": "llp",
+   "matchedTerms": [
+    "personal protective",
+    "ppe"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-21T00:00:00+00:00",
+   "closingDate": "2026-10-28T10:30:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "COJ0012-26-27 PEST CONTROL PPE.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6185ed0f-b2f8-43c6-8c33-46b1be252f33.pdf&downloadedFileName=COJ0012-26-27%20PEST%20CONTROL%20PPE.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T20:00:01Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-173927",
    "reference": "AGR148/26",
    "title": "MAINTENANCE AND REPAIRS OF BOREHOLES, IRRIGATION EQUIPMENT, AND ACCESSORIES FOR TARLTON AND RAND WEST AGRIPARK (CIDB GRADING DESIGNATION OF 2SH OR HIGHER)",
@@ -7058,7 +7006,7 @@
    "reference": "E3615GXMPDUV",
    "title": "Service, Maintenance, Calibration, Supply of spares and consumables of Lab Instruments at Duvha Power Station on as and when required basis for a period of 60 Months.",
    "department": "ESKOM",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -7264,7 +7212,7 @@
    "reference": "LPT/QUT039/2026",
    "title": "CLEANING OF WINDOWS AT ISMINI, TRAINING CENTRE (LEBOWAKGOMO), VHEMBE DISTRICT OFFICE, MOPANI DISTRICT OFFICE AND TALAS BUILDING (POLOKWANE)",
    "department": "Limpopo - Provincial Treasury",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "building",
@@ -7632,7 +7580,7 @@
    "reference": "RT33-2026",
    "title": "THE APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY, DELIVERY, INSTALLATION, COMMISSIONING AND MAINTENANCE OF DNA EQUIPMENT, SYSTEMS, ACCESSORIES AND RELATED CONSUMABLES FOR A PERIOD OF 36 MONTHS",
    "department": "National Treasury",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -7996,7 +7944,7 @@
    "reference": "RFP OW-021/2026/27",
    "title": "SUPPLY AND DELIVERY OF MAINTENANCE MATERIAL AND CONSUMABLES TO OVERBERG WATER BOARD AS AND WHEN REQUIRED FOR A PERIOD OF 36 MONTHS",
    "department": "Overberg Water",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -10345,7 +10293,7 @@
    "reference": "HDA/LIM/2026/002",
    "title": "THE LEASING OF A SUITABLE OFFICE ACCOMMODATION WITH PARKING SPACES INCLUDING CLEANING AND MAINTENANCE OF THE HDA PROVINCIAL OFFICES IN LIMPOPO -POLOKWANE.",
    "department": "Housing Development Agency",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -10569,7 +10517,7 @@
    "reference": "10375597",
    "title": "REQUEST FOR QUOTATION (RFQ) FOR APPOINTMENT OF A SERVICE PROVIDERS FOR MAINTENANCE, SERVICING, PUMPING, CLEANING AND JETTING OF SEPTIC TANKS FOR A PERIOD OF 5 MONTHS IN WESTERN CAPE REGION",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -13504,7 +13452,7 @@
    "reference": "GSHPT62/2026",
    "title": "THE PLACEMENT OF 2X PHACOEMULSIFICATION MACHINES FOR THE ANTERIOR REMOVAL OF CARATACTS AND THE SUPPLY OF ALL CONSUMABLES INCLUDING A FULLY COMPREHENSIVE MAINTENANCE CONTRACT FOR GROOTE SCHUUR HOSPITAL OVER A THREE (3) YEAR PERIOD",
    "department": "Western Cape - Health",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -15953,7 +15901,7 @@
    "reference": "CSA/06/2026-27",
    "title": "THE DESIGN, SUPPLY, INSTALLATION, TESTING, \r\nCOMMISSIONING AND VERIFICATION OF LED ARENA \r\nFLOODLIGHTING, NEW FLOODLIGHT MASTS AND ASSOCIATED \r\nELECTRICAL INFRASTRUCTURE, AND MAINTENANCE FOR TEN \r\n(10) YEARS, AT THE BORDER CRICKET GROUNDS (BUFFALO \r\nPARK STADIUM), KUGOMPO CITY",
    "department": "Buffalo City Metropolitan Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "grounds",
@@ -16035,7 +15983,7 @@
    "reference": "8/3-11/22627",
    "title": "Appointment of a Service Provider for Printing Solution Equipment, Multifunctional Copier Rental, Maintenance and Consumables for the Period of 36 Months",
    "department": "Msukaligwa Local Municipality",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",

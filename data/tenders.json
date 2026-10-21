@@ -1,104 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-21T15:50:26.758965+00:00",
+ "generatedAt": "2026-10-21T20:45:35.185744+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-12",
- "releasesScanned": 3362,
- "uniqueTenders": 3362,
- "count": 182,
+ "coveredFrom": "2026-09-20",
+ "releasesScanned": 2807,
+ "uniqueTenders": 2807,
+ "count": 180,
  "categories": {
-  "Software & Systems": 77,
-  "End-User Computing": 26,
   "IT Services & Support": 25,
+  "Software & Systems": 76,
+  "End-User Computing": 25,
   "Network & Infrastructure": 28,
   "Cybersecurity": 11,
   "Cloud Services": 7,
   "Telecoms & Unified Comms": 8
  },
  "onlineBriefings": 2,
- "carriedOver": 8,
+ "carriedOver": 10,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-174020",
-   "reference": "RFQJW143TN26",
-   "title": "RFQJW143TN26 - SAP Support Maintenance",
-   "department": "Johannesburg Water",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "sap"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-14T00:00:00+00:00",
-   "closingDate": "2026-10-21T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQJW143TN26 - SAP SUPPORT MAINTENANCE.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d34666d6-d461-47a3-8380-3bef6012984d.pdf&downloadedFileName=RFQJW143TN26%20-%20SAP%20SUPPORT%20MAINTENANCE.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T10:30:38Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174181",
-   "reference": "RFQJW053NS26-27",
-   "title": "SUPPLY AND DELIVERY of 20x C-Type Laptop Chargers",
-   "department": "Johannesburg Water",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "laptop"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-14T00:00:00+00:00",
-   "closingDate": "2026-10-21T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQJW053NS26-27 SUPPLY AND DELIVERY of 20x C-Type Laptop Chargers(14-21 OCT).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=666b9163-8ad2-4831-b5ce-4e7595139049.pdf&downloadedFileName=RFQJW053NS26-27%20SUPPLY%20AND%20DELIVERY%20of%2020x%20C-Type%20Laptop%20Chargers%2814-21%20OCT%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T10:00:12Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-174095",
    "reference": "RFQ/CMS/ICT/2-02102026",
@@ -974,46 +894,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-174290",
-   "reference": "RFQ497/26/27",
-   "title": "Procurement of ICT Consumables\r\nSpecification attached to SBD form",
-   "department": "Limpopo - Public Works",
-   "category": "IT Services & Support",
-   "company": "rtc",
-   "matchedTerms": [
-    "ict"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-10-23T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "ICT CONSUMABLES 2.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=639ca429-0209-47d5-b31f-ece81f0e98e7.pdf&downloadedFileName=ICT%20CONSUMABLES%202.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T15:39:46Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-172540",
    "reference": "MHSC027/2026-2027",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION OF MIMECAST LICENSE RENEWAL, SUPPORT, AND MANAGING OF TENANCY FOR A PERIOD OF THREE (3) YEARS",
@@ -1185,46 +1065,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=f5e8d5c9-7146-426f-9423-9bb319e1f679.pdf&downloadedFileName=TENDER%20DOC%20CGS-2026-037S.pdf",
      "format": "pdf",
      "published": "2026-09-22T14:20:40Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174219",
-   "reference": "WMM-LM 08/10/26/01 LTD",
-   "title": "Procurement of Laptops and Tracking Devices",
-   "department": "Winnie Madikizela-Mandela Local Municipality",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "laptop"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-10-23T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Tender Document Laptops and tracking Devices.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b01152fd-c00a-4103-b20a-398df1c8e7c5.pdf&downloadedFileName=Tender%20Document%20Laptops%20and%20tracking%20Devices.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T11:56:58Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -2964,6 +2804,46 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-175132",
+   "reference": "RFQ282 AM (26/27)",
+   "title": "Supply and delivery of Standard Laptop (Refer to the Annexure:A below for Detailed Specification)",
+   "department": "National - Environment, Forestry and Fisheries",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-21T00:00:00+00:00",
+   "closingDate": "2026-10-28T11:00:00+00:00",
+   "procurementMethod": "SITA contract",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ282 AM Procurement of Laptops  UPDATED.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=19ce4e72-2979-46c3-b28d-9eaed0879bcb.pdf&downloadedFileName=RFQ282%20AM%20Procurement%20of%20Laptops%20%20UPDATED.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T20:01:25Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174698",
    "reference": "RAF/2026/00067",
    "title": "PROVISION OF IT RESEARCH AND ADVISORY MEMBERSHIP SERVICES TO SUPPORT IT GOVERNANCE, RISK MANAGEMENT, DIGITAL TRANSFORMATION AND STRATEGIC TECHNOLOGY DECISION-MAKING AT THE ROAD ACCIDENT FUND (RAF) FOR A PERIOD OF TWENTY-FOUR (24) MONTHS",
@@ -4549,7 +4429,7 @@
    "reference": "SCMU14-26/27-0009",
    "title": "Rate based contract for the supply of ICT server related infrastructure for a period of 3 years (36 months) \r\n[SITA registered IT vendors/service providers (RFB  contract)]",
    "department": "Eastern Cape - Sport Recreation Arts and Culture",
-   "category": "Network & Infrastructure",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -9364,6 +9244,48 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=1051d11a-aa5b-40d8-9fc3-09a00fef9875.pdf&downloadedFileName=COGHSTA%20B008%2026%2027FY%20Appointment%20of%20a%20service%20provider%20to%20develop%20a%20GIS%20strategy%20for%20Limpopo%20COGHSTA_261001_085623.pdf",
      "format": "pdf",
      "published": "2026-10-01T18:07:08Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175133",
+   "reference": "NLM2027-002A",
+   "title": "APPOINTMENT OF SERVICE PROVIDER FOR TELEPHONE SERVICES,NETWORK INFRASTRUCTURE AND OTHER IT SERVICES FROM DATE OF AWARD UNTIL 30 JUNE 2029",
+   "department": "Naledi - NW Local Municipality",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "it services",
+    "network",
+    "network infrastructure"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-21T00:00:00+00:00",
+   "closingDate": "2026-11-20T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "DOCUMENT.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4d15345a-7eee-4ef0-86b2-2f87ffa2fca1.pdf&downloadedFileName=DOCUMENT.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T20:22:02Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
