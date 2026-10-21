@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-21T01:13:10.290453+00:00",
+ "generatedAt": "2026-10-21T09:57:24.898104+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-08",
- "releasesScanned": 3711,
- "uniqueTenders": 3741,
- "count": 178,
+ "coveredFrom": "2026-10-01",
+ "releasesScanned": 1964,
+ "uniqueTenders": 1964,
+ "count": 179,
  "categories": {
-  "Software & Systems": 83,
+  "Software & Systems": 80,
   "Network & Infrastructure": 24,
-  "End-User Computing": 24,
-  "IT Services & Support": 26,
-  "Cloud Services": 6,
-  "Cybersecurity": 7,
+  "End-User Computing": 30,
+  "IT Services & Support": 22,
+  "Cloud Services": 5,
+  "Cybersecurity": 10,
   "Telecoms & Unified Comms": 8
  },
  "onlineBriefings": 2,
- "carriedOver": 2,
+ "carriedOver": 38,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -319,49 +319,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=395edd5e-a951-4fde-965f-ebc0503df8ab.pdf&downloadedFileName=SENTECH%20SUPPLIER%20CONSENT%20FORM.pdf",
      "format": "pdf",
      "published": "2026-10-15T14:45:26Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174070",
-   "reference": "RFQ 14-10-2026",
-   "title": "RENEWAL OF 60 X MICROSOFT 365 E3 LICENSES, INCLUSIVE OF MICROSOFT TEAMS PHONE STANDARD AND OPERATOR CONNECT SERVICES FOR A CONTRACT PERIOD OF 24 MONTHS",
-   "department": "National Arts Council of South Africa",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "license",
-    "microsoft",
-    "microsoft 365",
-    "microsoft 365 e3 licens"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-14T00:00:00+00:00",
-   "closingDate": "2026-10-21T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ 14-10-2026 RENEWAL OF 60 X MICROSOFT 365 E3 MICROSOFT TEAMS CALLING AND OPERATOR CONNECT LICENSES FOR A PERIOD OF 24 MONTHS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=701f52ba-7295-4ea5-a5e2-4f0e645326fa.pdf&downloadedFileName=RFQ%2014-10-2026%20RENEWAL%20OF%2060%20X%20MICROSOFT%20365%20E3%20MICROSOFT%20TEAMS%20CALLING%20AND%20OPERATOR%20CONNECT%20LICENSES%20FOR%20A%20PERIOD%20OF%2024%20MONTHS.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T13:31:18Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -731,47 +688,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-174091",
-   "reference": "VCW27/028A",
-   "title": "Renewal of Annual License and Support for Read AI Enterprise + Plus for the period of three years",
-   "department": "Vaal Central Water",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "ai",
-    "license"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-14T00:00:00+00:00",
-   "closingDate": "2026-10-22T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "VCW27 - 028A Annual Licence and Support for Read AI.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=bf704a38-eb07-4fe0-af3e-543aa73de613.pdf&downloadedFileName=VCW27%20-%20028A%20Annual%20Licence%20and%20Support%20for%20Read%20AI.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T14:42:46Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-173456",
    "reference": "MDM 2026/27-16",
    "title": "Development of Spazashops addressing and Management System",
@@ -972,70 +888,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=d0c8281c-509f-45ed-9a6b-370df454b2f5.pdf&downloadedFileName=RFQJW051NS26-27%28PROVISION%20OF%20SAP%20ERP%20THIRD-LINE%20SUPPORT%20SERVICES%20ON%20AN%20AS-AND-WHEN-REQUIRED%20BASIS%2815-21%20Oct%29.pdf",
      "format": "pdf",
      "published": "2026-10-15T09:56:49Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174006",
-   "reference": "RFQ GSM080/2026",
-   "title": "Request for quotation for IT resources to enable the migration to new AWS stack",
-   "department": "South African Airways (Pty) Limited",
-   "category": "Cloud Services",
-   "company": "rtc",
-   "matchedTerms": [
-    "aws"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-14T00:00:00+00:00",
-   "closingDate": "2026-10-22T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "REVISED SBD 4 -Annexure 2.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d41b43b9-15ac-46dc-947b-5aa2abccd69f.pdf&downloadedFileName=REVISED%20SBD%204%20-Annexure%202.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
-    },
-    {
-     "title": "RFQ GSM080-2026  -IT resources to enable the migration to new AWS stack.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=bfaca77f-7957-46d1-92e0-5b6a424facf5.pdf&downloadedFileName=RFQ%20GSM080-2026%20%20-IT%20resources%20to%20enable%20the%20migration%20to%20new%20AWS%20stack.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
-    },
-    {
-     "title": "SAA GENERAL CONDITIONS OF CONTRACT. ANNEXURE 4.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e625347b-7596-435e-b3cd-d21bce455586.pdf&downloadedFileName=SAA%20GENERAL%20CONDITIONS%20OF%20CONTRACT.%20ANNEXURE%204.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
-    },
-    {
-     "title": "Job Descrptions for the Roles in Scope of Work.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=435c15df-f2c6-4c10-8824-d34322a4559d.pdf&downloadedFileName=Job%20Descrptions%20for%20the%20Roles%20in%20Scope%20of%20Work.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
-    },
-    {
-     "title": "Annexure 1 - Vendor application Local.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=05bca00b-d717-4373-987c-e9ea13304047.pdf&downloadedFileName=Annexure%201%20-%20Vendor%20application%20Local.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1293,7 +1145,7 @@
    "reference": "NWNW381/CORPS23-08/2026/2027",
    "title": "PROVISION OF ASSESSMENT AND MODERATION SERVICES FOR NATIONAL CERTIFICATE – INFORMATION TECHNOLOGY: END USER COMPUTING FOR 2025/26 ACADEMIC YEAR",
    "department": "Ratlou Local Municipality",
-   "category": "IT Services & Support",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "end user comput",
@@ -1404,7 +1256,7 @@
    "reference": "MHSC027/2026-2027",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION OF MIMECAST LICENSE RENEWAL, SUPPORT, AND MANAGING OF TENANCY FOR A PERIOD OF THREE (3) YEARS",
    "department": "Mine Health and Safety Council",
-   "category": "Software & Systems",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "license",
@@ -1437,6 +1289,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=39165efb-8f87-4852-ab8d-35fb40b5c178.pdf&downloadedFileName=MHSC_027_2026_2027.pdf",
      "format": "pdf",
      "published": "2026-10-02T08:54:28Z"
+    },
+    {
+     "title": "Mimecast Responses MHSC 027- 2026-27.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b04625e8-9a29-4bcb-a214-ebba3ceebdd3.docx&downloadedFileName=Mimecast%20Responses%20MHSC%20027-%202026-27.docx",
+     "format": "docx",
+     "published": "2026-10-21T10:17:47Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -2688,6 +2546,60 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174989",
+   "reference": "HO / ICT / 10375117/10/2026",
+   "title": "REQUEST FOR QUOTATION MOBILE NOTEBOOK COMPUTERS",
+   "department": "Passenger Rail Agency of South Africa",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "computers",
+    "ict",
+    "notebook computers"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-21T00:00:00+00:00",
+   "closingDate": "2026-10-26T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "SCOPE OF WORK  RFQ - Mobile Notebook Computers_ 10375117.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c1d9a901-1c0e-4852-88d3-8c72607ebc36.pdf&downloadedFileName=SCOPE%20OF%20WORK%20%20RFQ%20-%20Mobile%20Notebook%20Computers_%2010375117.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T10:45:52Z"
+    },
+    {
+     "title": "SAP Ariba Sourcing User Guide - Supplier Responses E-Tender 10375117.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d21a4fd8-4088-4ea6-97c2-da5a71f83cc6.pdf&downloadedFileName=SAP%20Ariba%20Sourcing%20User%20Guide%20-%20Supplier%20Responses%20E-Tender%2010375117.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T10:43:31Z"
+    },
+    {
+     "title": "REQUEST FOR QUOTATION MOBILE NOTEBOOK COMPUTERS B 10375117.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=aca44826-b255-40f2-9c4e-f1425a92e95c.docx&downloadedFileName=REQUEST%20FOR%20QUOTATION%20MOBILE%20NOTEBOOK%20COMPUTERS%20B%2010375117.docx",
+     "format": "docx",
+     "published": "2026-10-21T10:48:32Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174839",
    "reference": "HO/ ICT/ 10375117 / 10 /2026",
    "title": "REQUEST FOR QUOTATION MOBILE NOTEBOOK COMPUTERS",
@@ -2834,7 +2746,7 @@
    "reference": "RFQ/MR/TRAINING/IA/069/2026-2027",
    "title": "FOR THE PROVISION OF CYBER SECURITY AND ARTIFICIAL INTELLIGENCE TRAINING FOR THE INTERNAL AUDIT STAFF – SOUTH AFRICAN CIVIL AVIATION AUTHORITY (SACAA).",
    "department": "South African Civil Aviation Authority",
-   "category": "Software & Systems",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "artificial intelligence",
@@ -3111,7 +3023,7 @@
    "reference": "E3640CXMWP",
    "title": "SUPPLY, DELIVERY, TRAINING, AND TECHNICAL SUPPORT OF THE DRONE SYSTEM FOR INSPECTION AND APPLICATION IN FOSSIL POWER PLANTS AT ESKOM RESEARCH AND DEVELOPMENT FOR THE PERIOD OF TWELVE (12) MONTHS.",
    "department": "ESKOM",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "system",
@@ -3286,6 +3198,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=672251d3-5b68-48db-b679-e1f291f315a0.zip&downloadedFileName=079S%20-Notice%201.zip",
      "format": "zip",
      "published": "2026-10-16T07:34:18Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174958",
+   "reference": "RAF/2026/00065",
+   "title": "THE ROAD ACCIDENT FUND REQUIRES A QUOTATION FOR THE PROVISION OF SAP ON PREMISES SERVICES.",
+   "department": "Road Accident Fund",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "sap"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-21T00:00:00+00:00",
+   "closingDate": "2026-10-28T11:00:00+00:00",
+   "procurementMethod": "Request for Information",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFI - SAP on Prem.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9f7a7bb5-ea47-4d79-8716-a14fad7382b5.pdf&downloadedFileName=RFI%20-%20SAP%20on%20Prem.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T09:16:42Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3544,7 +3496,7 @@
    "reference": "HO/ ICT/ 10375486 / 10 /2026",
    "title": "REQUEST FOR QUOTATION PROVISION OF 50 PORTABLE HANDHELD POINT-OF-SALE TICKETING DEVICES WITH EMBEDDED PRASA COMPATIBLE SOFTWARE, PAYMENT FACILITATOR AND GATEWAY, INCLUDING SUPPORT AND MAINTENANCE FOR A DURATION OF 6 MONTHS",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -3905,6 +3857,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=571cc4e9-aa6b-416a-a712-f2f2122b916d.pdf&downloadedFileName=Annexure%20J%20Supplier%20Integrity%20Pact.pdf",
      "format": "pdf",
      "published": "2026-09-23T21:05:25Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174960",
+   "reference": "303 AM (26-27) LAPTOPS",
+   "title": "1. Manufacturer’s Authorised Dealer\r\n•\tThe bidder must be a Manufacturer’s Authorised Dealer for the brand being offered, namely Dell, Lenovo, or HP.\r\n•\tThe bidder must submit a Original Equipment Manufacturer (OEM) Certificate as proof of authorisation for the relevant brand.\r\n•\tBidders may only offer brands for which they are duly authorised or accredited.\r\n\r\n2. SITA RFB 740 Accreditation\r\n•\tThe bidder must be an accredited supplier under SITA RFB 740 in Gauteng.\r\n•\tThe bidder must submit a SITA letter of accreditation for RFB 740 as proof of accreditation.",
+   "department": "National - Environment, Forestry and Fisheries",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-21T00:00:00+00:00",
+   "closingDate": "2026-10-29T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ-303 AM (26-27) LAPTOPS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3378a416-d9fb-49a8-9a94-fcc34cbade99.pdf&downloadedFileName=RFQ-303%20AM%20%2826-27%29%20LAPTOPS.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T09:21:56Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5256,6 +5248,46 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-173641",
+   "reference": "SCM03/2025/SANC",
+   "title": "APPOINTMENT OF A PANEL OF A MAXIMUM OF THREE (03) SUITABLY QUALIFIED SERVICE PROVIDERS FOR THE PROVISION OF LAPTOPS AND ACCESSORIES AS AND WHEN REQUIRED BY THE SANC FOR A PERIOD OF FIVE (05) YEARS",
+   "department": "South African Nursing Council",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-09T00:00:00+00:00",
+   "closingDate": "2026-10-30T12:00:00+00:00",
+   "procurementMethod": "Request for Proposal",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Invitation to Bid Document_ Laptops and Accessories.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7f7580f6-1fa0-46a2-bc63-e14d5d3b4afc.pdf&downloadedFileName=Invitation%20to%20Bid%20Document_%20Laptops%20and%20Accessories.pdf",
+     "format": "pdf",
+     "published": "2026-10-09T15:23:21Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-173643",
    "reference": "SCM03/2026/SANC",
    "title": "APPOINTMENT OF A PANEL OF A MAXIMUM OF THREE (03) SUITABLY QUALIFIED SERVICE PROVIDERS FOR THE PROVISION OF LAPTOPS AND ACCESSORIES AS AND WHEN REQUIRED BY THE SANC FOR A PERIOD OF FIVE (05) YEARS",
@@ -5836,7 +5868,7 @@
    "reference": "220/2026",
    "title": "OFFICE EQUIPMENT (PRINTERS, COPIERS AND MULTI-FUNCTION MACHINES: LEASE OPTION) AND PRINT\r\nMANAGEMENT SOFTWARE",
    "department": "Kouga Municipality",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "printers",
@@ -8541,7 +8573,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "IT Services & Support",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -9001,6 +9033,12 @@
    },
    "documents": [
     {
+     "title": "BID Document.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e5106fb5-3c1c-48fb-bba7-237d6556d68f.pdf&downloadedFileName=BID%20Document.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T09:29:48Z"
+    },
+    {
      "title": "MN12-2026-27.pdf",
      "url": "https://www.etenders.gov.za/home/Download?blobName=ac07321a-b999-4c07-b507-9f5efb6a7067.pdf&downloadedFileName=MN12-2026-27.pdf",
      "format": "pdf",
@@ -9040,6 +9078,12 @@
     "note": ""
    },
    "documents": [
+    {
+     "title": "Addendum 1 - IUCMA002SIEMSOC2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a36736c6-65b2-46e3-be6a-99930da23351.pdf&downloadedFileName=Addendum%201%20-%20IUCMA002SIEMSOC2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T11:23:15Z"
+    },
     {
      "title": "IUCMA-002-SIEMSOC-2026 (003).pdf",
      "url": "https://www.etenders.gov.za/home/Download?blobName=1f0334f7-04b7-4d93-b99c-eba1d34b6d0f.pdf&downloadedFileName=IUCMA-002-SIEMSOC-2026%20%28003%29.pdf",
@@ -9408,7 +9452,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "printer",
