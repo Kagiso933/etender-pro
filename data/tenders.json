@@ -1,24 +1,66 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-20T20:35:04.722652+00:00",
+ "generatedAt": "2026-10-21T01:13:10.290453+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-13",
- "releasesScanned": 775,
- "uniqueTenders": 805,
- "count": 173,
+ "coveredFrom": "2026-09-08",
+ "releasesScanned": 3711,
+ "uniqueTenders": 3741,
+ "count": 178,
  "categories": {
-  "Network & Infrastructure": 23,
-  "End-User Computing": 23,
-  "Software & Systems": 86,
-  "IT Services & Support": 21,
-  "Cloud Services": 5,
+  "Software & Systems": 83,
+  "Network & Infrastructure": 24,
+  "End-User Computing": 24,
+  "IT Services & Support": 26,
+  "Cloud Services": 6,
   "Cybersecurity": 7,
   "Telecoms & Unified Comms": 8
  },
- "onlineBriefings": 1,
- "carriedOver": 101,
+ "onlineBriefings": 2,
+ "carriedOver": 2,
  "briefingFieldsSeen": {},
  "tenders": [
+  {
+   "id": "ocds-9t57fa-174136",
+   "reference": "COJ0010-26/27",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER TO PROCURE, SUPPLY AND INSTALL (SETUP) ADOBE INDESIGN, ADOBE ILLUSTRATOR, AND CANVA FOR BUSINESS SOFTWARE LICENSES FOR THE COMMUNICATIONS AND STAKEHOLDER MANAGEMENT UNIT UNDER THE GROUP FINANCE DEPARTMENT.",
+   "department": "City Council of Johannesburg",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "license",
+    "software",
+    "software licens"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-14T00:00:00+00:00",
+   "closingDate": "2026-10-21T10:30:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "COJ0010-26-27 ADOBE AND CANVA FOR BUSINESS SOFWARE AND LICENSES..pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b7675813-128a-4493-b777-d89b74df28aa.pdf&downloadedFileName=COJ0010-26-27%20ADOBE%20AND%20CANVA%20FOR%20BUSINESS%20SOFWARE%20AND%20LICENSES..pdf",
+     "format": "pdf",
+     "published": "2026-10-14T18:08:33Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
   {
    "id": "ocds-9t57fa-174304",
    "reference": "RFQ/MICT/65/2026",
@@ -1251,7 +1293,7 @@
    "reference": "NWNW381/CORPS23-08/2026/2027",
    "title": "PROVISION OF ASSESSMENT AND MODERATION SERVICES FOR NATIONAL CERTIFICATE – INFORMATION TECHNOLOGY: END USER COMPUTING FOR 2025/26 ACADEMIC YEAR",
    "department": "Ratlou Local Municipality",
-   "category": "End-User Computing",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "end user comput",
@@ -1313,6 +1355,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=58d42ae7-76ff-40ba-8c50-c205e187f990.pdf&downloadedFileName=RFQ%20-%20Assesment%20and%20Moderation%202.pdf",
      "format": "pdf",
      "published": "2026-10-16T08:29:55Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174290",
+   "reference": "RFQ497/26/27",
+   "title": "Procurement of ICT Consumables\r\nSpecification attached to SBD form",
+   "department": "Limpopo - Public Works",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "ict"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-15T00:00:00+00:00",
+   "closingDate": "2026-10-23T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "ICT CONSUMABLES 2.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=639ca429-0209-47d5-b31f-ece81f0e98e7.pdf&downloadedFileName=ICT%20CONSUMABLES%202.pdf",
+     "format": "pdf",
+     "published": "2026-10-15T15:39:46Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1483,6 +1565,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=f5e8d5c9-7146-426f-9423-9bb319e1f679.pdf&downloadedFileName=TENDER%20DOC%20CGS-2026-037S.pdf",
      "format": "pdf",
      "published": "2026-09-22T14:20:40Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174219",
+   "reference": "WMM-LM 08/10/26/01 LTD",
+   "title": "Procurement of Laptops and Tracking Devices",
+   "department": "Winnie Madikizela-Mandela Local Municipality",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-15T00:00:00+00:00",
+   "closingDate": "2026-10-23T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Tender Document Laptops and tracking Devices.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b01152fd-c00a-4103-b20a-398df1c8e7c5.pdf&downloadedFileName=Tender%20Document%20Laptops%20and%20tracking%20Devices.pdf",
+     "format": "pdf",
+     "published": "2026-10-15T11:56:58Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3422,7 +3544,7 @@
    "reference": "HO/ ICT/ 10375486 / 10 /2026",
    "title": "REQUEST FOR QUOTATION PROVISION OF 50 PORTABLE HANDHELD POINT-OF-SALE TICKETING DEVICES WITH EMBEDDED PRASA COMPATIBLE SOFTWARE, PAYMENT FACILITATOR AND GATEWAY, INCLUDING SUPPORT AND MAINTENANCE FOR A DURATION OF 6 MONTHS",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -4204,6 +4326,46 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174934",
+   "reference": "Q03-03-2026-27",
+   "title": "RE-ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER TO OFFER PROFESSIONAL AND TECHNICAL TRAINING FOR GROUP AUDIT AND RISK (INFORMATION TECHNOLOGY AUDITORS AND RISK PRACTITIONERS) BASED ON PRE-SELECTED TRAINING COURSES FOR THE COMING 12 MONTHS AS ALIGNED TO THE WORK SKILLS PLAN",
+   "department": "City of Tshwane",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "information technology"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-30T10:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Q03-03-2026-27 QUOTATION DOCUMENT.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0142c32e-f253-43ab-9694-2c028eb9d5b6.pdf&downloadedFileName=Q03-03-2026-27%20QUOTATION%20DOCUMENT.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T23:06:35Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-172316",
    "reference": "E3637DXGOU",
    "title": "Provision of GIS and remote sensing services and spatial datasets on an as-and-when-required basis for a period of five years",
@@ -4423,7 +4585,7 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "computer",
@@ -4783,6 +4945,76 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=354860f2-be06-40e3-8028-ed2351ce5464.pdf&downloadedFileName=RFB%203289-2026%20-%20Notice%20to%20Bidders_June%202026%20Signed.pdf",
      "format": "pdf",
      "published": "2026-09-11T11:12:31Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-169765",
+   "reference": "RFB 3288-2026 ERP NO 499016",
+   "title": "Request for Bid for the Supply, Configuration, Installation Including Maintenance and Support of Local Area Network Infrastructure (ARUBA SWITCHES AND WIFI ACCESS POINTS) for the Period of 3 Years for the Department of Water and Sanitation (DWS) Head Office (PHASE 2) in Pretoria. Non Compulsory Virtual Briefing Session Will Be Held on 22 September 2026 at 11h00am.The Closing Date Has Being Extended Till 30 October 2026",
+   "department": "State Information Technology Agency",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "aruba",
+    "erp",
+    "local area network",
+    "network",
+    "network infrastructure",
+    "switches",
+    "wifi"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-09-09T00:00:00+00:00",
+   "closingDate": "2026-10-30T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": true,
+    "compulsory": false,
+    "date": "2026-09-22T11:00:00+02:00",
+    "venue": "",
+    "mode": "online",
+    "online": true,
+    "link": null,
+    "note": "Non Compulsory Virtual Briefing Session Will Be Held on 22 September 2026 at 11h00am"
+   },
+   "documents": [
+    {
+     "title": "Notice to Bidders_Mr Mello_June 2026 Signed.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=53459c28-2033-4f32-8a7a-2a845abf7d99.pdf&downloadedFileName=Notice%20to%20Bidders_Mr%20Mello_June%202026%20Signed.pdf",
+     "format": "pdf",
+     "published": "2026-09-09T19:50:01Z"
+    },
+    {
+     "title": "RFB 3288 2026 ERP 499016 Pricing Schedule.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=24270739-5ca9-4aad-a965-3c897c433026.xlsx&downloadedFileName=RFB%203288%202026%20ERP%20499016%20Pricing%20Schedule.xlsx",
+     "format": "xlsx",
+     "published": "2026-09-09T19:50:01Z"
+    },
+    {
+     "title": "Signed RFB 3288 2026 Invitation to bidders Letter.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=20b791b6-de82-4b1d-a0bb-64219e48d6bd.pdf&downloadedFileName=Signed%20RFB%203288%202026%20Invitation%20to%20bidders%20Letter.pdf",
+     "format": "pdf",
+     "published": "2026-09-09T19:50:01Z"
+    },
+    {
+     "title": "RFB 3288 2026 ERP 499016 Standard Bidding Document.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=edf3eb8b-5da5-4e72-a645-81462ed94f4b.docx&downloadedFileName=RFB%203288%202026%20ERP%20499016%20Standard%20Bidding%20Document.docx",
+     "format": "docx",
+     "published": "2026-09-09T19:50:01Z"
+    },
+    {
+     "title": "RFB 3288 2026 ERP 499016 Bid Specification Document.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f2f2d29b-3ff4-4abc-a994-e06e09eea479.docx&downloadedFileName=RFB%203288%202026%20ERP%20499016%20Bid%20Specification%20Document.docx",
+     "format": "docx",
+     "published": "2026-09-09T19:50:01Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8309,7 +8541,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -8571,7 +8803,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "azure",
