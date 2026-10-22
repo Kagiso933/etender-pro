@@ -1,129 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-22T15:52:40.285913+00:00",
+ "generatedAt": "2026-10-22T20:42:27.963727+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-23",
- "releasesScanned": 2746,
- "uniqueTenders": 2746,
- "count": 177,
+ "coveredFrom": "2026-08-29",
+ "releasesScanned": 4346,
+ "uniqueTenders": 4376,
+ "count": 179,
  "categories": {
-  "Software & Systems": 78,
-  "Cloud Services": 5,
-  "End-User Computing": 29,
+  "Software & Systems": 82,
   "IT Services & Support": 18,
-  "Network & Infrastructure": 29,
+  "Cybersecurity": 11,
+  "End-User Computing": 25,
+  "Network & Infrastructure": 30,
   "Telecoms & Unified Comms": 8,
-  "Cybersecurity": 10
+  "Cloud Services": 5
  },
  "onlineBriefings": 2,
- "carriedOver": 10,
+ "carriedOver": 2,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-174177",
-   "reference": "RFQJW051NS26-27",
-   "title": "PROVISION OF SAP ERP THIRD-LINE SUPPORT SERVICES ON AN AS-AND-WHEN-REQUIRED BASIS",
-   "department": "Johannesburg Water",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "erp",
-    "sap"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-10-22T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQJW051NS26-27(PROVISION OF SAP ERP THIRD-LINE SUPPORT SERVICES ON AN AS-AND-WHEN-REQUIRED BASIS(15-21 Oct).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d0c8281c-509f-45ed-9a6b-370df454b2f5.pdf&downloadedFileName=RFQJW051NS26-27%28PROVISION%20OF%20SAP%20ERP%20THIRD-LINE%20SUPPORT%20SERVICES%20ON%20AN%20AS-AND-WHEN-REQUIRED%20BASIS%2815-21%20Oct%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T09:56:49Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174006",
-   "reference": "RFQ GSM080/2026",
-   "title": "Request for quotation for IT resources to enable the migration to new AWS stack",
-   "department": "South African Airways (Pty) Limited",
-   "category": "Cloud Services",
-   "company": "rtc",
-   "matchedTerms": [
-    "aws"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-14T00:00:00+00:00",
-   "closingDate": "2026-10-22T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "REVISED SBD 4 -Annexure 2.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d41b43b9-15ac-46dc-947b-5aa2abccd69f.pdf&downloadedFileName=REVISED%20SBD%204%20-Annexure%202.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
-    },
-    {
-     "title": "RFQ GSM080-2026  -IT resources to enable the migration to new AWS stack.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=bfaca77f-7957-46d1-92e0-5b6a424facf5.pdf&downloadedFileName=RFQ%20GSM080-2026%20%20-IT%20resources%20to%20enable%20the%20migration%20to%20new%20AWS%20stack.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
-    },
-    {
-     "title": "SAA GENERAL CONDITIONS OF CONTRACT. ANNEXURE 4.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e625347b-7596-435e-b3cd-d21bce455586.pdf&downloadedFileName=SAA%20GENERAL%20CONDITIONS%20OF%20CONTRACT.%20ANNEXURE%204.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
-    },
-    {
-     "title": "Job Descrptions for the Roles in Scope of Work.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=435c15df-f2c6-4c10-8824-d34322a4559d.pdf&downloadedFileName=Job%20Descrptions%20for%20the%20Roles%20in%20Scope%20of%20Work.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
-    },
-    {
-     "title": "Annexure 1 - Vendor application Local.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=05bca00b-d717-4373-987c-e9ea13304047.pdf&downloadedFileName=Annexure%201%20-%20Vendor%20application%20Local.pdf",
-     "format": "pdf",
-     "published": "2026-10-14T09:22:56Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-173600",
    "reference": "Q23-01-2026-27",
@@ -169,7 +64,7 @@
    "reference": "NWNW381/CORPS23-08/2026/2027",
    "title": "PROVISION OF ASSESSMENT AND MODERATION SERVICES FOR NATIONAL CERTIFICATE – INFORMATION TECHNOLOGY: END USER COMPUTING FOR 2025/26 ACADEMIC YEAR",
    "department": "Ratlou Local Municipality",
-   "category": "End-User Computing",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "end user comput",
@@ -271,6 +166,95 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=639ca429-0209-47d5-b31f-ece81f0e98e7.pdf&downloadedFileName=ICT%20CONSUMABLES%202.pdf",
      "format": "pdf",
      "published": "2026-10-15T15:39:46Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-172540",
+   "reference": "MHSC027/2026-2027",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION OF MIMECAST LICENSE RENEWAL, SUPPORT, AND MANAGING OF TENANCY FOR A PERIOD OF THREE (3) YEARS",
+   "department": "Mine Health and Safety Council",
+   "category": "Cybersecurity",
+   "company": "rtc",
+   "matchedTerms": [
+    "license",
+    "license renewal",
+    "mimecast"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-02T00:00:00+00:00",
+   "closingDate": "2026-10-23T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "MHSC_027_2026_2027.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=39165efb-8f87-4852-ab8d-35fb40b5c178.pdf&downloadedFileName=MHSC_027_2026_2027.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T08:54:28Z"
+    },
+    {
+     "title": "Mimecast Responses MHSC 027- 2026-27.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b04625e8-9a29-4bcb-a214-ebba3ceebdd3.docx&downloadedFileName=Mimecast%20Responses%20MHSC%20027-%202026-27.docx",
+     "format": "docx",
+     "published": "2026-10-21T10:17:47Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-172568",
+   "reference": "MICT/SETA/ADB/07/2026",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE RENEWAL OF ADOBE PRO LICENSES FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
+   "department": "Media, Information and Communication Technologies Sector Education and training Authority (MICT SETA)",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "adobe pro licens",
+    "license"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-02T00:00:00+00:00",
+   "closingDate": "2026-10-23T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "BID DOCUMENT-MICT-SETA-ADB-07-2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=da3327cb-7af5-440d-95b2-0797ed4aa54a.pdf&downloadedFileName=BID%20DOCUMENT-MICT-SETA-ADB-07-2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T10:44:38Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1398,6 +1382,59 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=38e85864-1452-4da3-a4c8-d862e78b6da3.docx&downloadedFileName=REQUEST%20FOR%20QUOTATION%20MOBILE%20NOTEBOOK%20COMPUTERS%20B.docx",
      "format": "docx",
      "published": "2026-10-20T12:50:39Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175292",
+   "reference": "HO/ICT/10375263/10/2026",
+   "title": "REQUEST FOR QUOTATION FOR AN APPOINTMENT OF SERVICE PROVIDER FOR PROVISION OF SUITABLY QUALIFIED SAP RESOURCES ON “AS AND WHEN” REQUIRED BASIS OVER A SIX (6) MONTHS CONTRACT TERM TO PRASA TO PERFORM VARIOUS SAP SUPPORT AND ENHANCEMENTS",
+   "department": "Passenger Rail Agency of South Africa",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "ict",
+    "sap"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-22T00:00:00+00:00",
+   "closingDate": "2026-10-27T10:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "SAP Ariba Sourcing User Guide - Supplier Responses E-Tender 10375263.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f19d654d-0d74-4e07-9101-80bdeabdff58.pdf&downloadedFileName=SAP%20Ariba%20Sourcing%20User%20Guide%20-%20Supplier%20Responses%20E-Tender%2010375263.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T20:00:01Z"
+    },
+    {
+     "title": "SCOPE OF WORK SAP Adhoc Support  Enhancements 10375263.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4c1f8462-ce37-4adc-b90e-92048847d730.docx&downloadedFileName=SCOPE%20OF%20WORK%20SAP%20Adhoc%20Support%20%20Enhancements%2010375263.docx",
+     "format": "docx",
+     "published": "2026-10-22T20:02:40Z"
+    },
+    {
+     "title": "COVER PAGE REQUEST FOR QUOTATION FOR SAP ADHOC 10375263.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6eb850c8-3abf-4048-831f-ce07faaabab0.docx&downloadedFileName=COVER%20PAGE%20REQUEST%20FOR%20QUOTATION%20FOR%20SAP%20ADHOC%2010375263.docx",
+     "format": "docx",
+     "published": "2026-10-22T20:01:36Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3680,7 +3717,7 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "computer",
@@ -3786,7 +3823,7 @@
    "reference": "SCMU14-26/27-0009",
    "title": "Rate based contract for the supply of ICT server related infrastructure for a period of 3 years (36 months) \r\n[SITA registered IT vendors/service providers (RFB  contract)]",
    "department": "Eastern Cape - Sport Recreation Arts and Culture",
-   "category": "IT Services & Support",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -4081,6 +4118,18 @@
     "note": "Non Compulsory Virtual Briefing Session Will Be Held on 22 September 2026 at 11h00am"
    },
    "documents": [
+    {
+     "title": "RFB 3288 2026 ERP 499016 Pricing Schedule Updated.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=42dadd64-b97f-40f6-aee3-08cfb26d6582.xlsx&downloadedFileName=RFB%203288%202026%20ERP%20499016%20Pricing%20Schedule%20Updated.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-22T09:53:37Z"
+    },
+    {
+     "title": "RFB 3288-2026 - Updated Bid Specification Document_Amended.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a510b3ef-2b89-43d4-917e-21a9a41972dd.docx&downloadedFileName=RFB%203288-2026%20-%20Updated%20Bid%20Specification%20Document_Amended.docx",
+     "format": "docx",
+     "published": "2026-10-22T09:52:47Z"
+    },
     {
      "title": "Notice to Bidders_Mr Mello_June 2026 Signed.pdf",
      "url": "https://www.etenders.gov.za/home/Download?blobName=53459c28-2033-4f32-8a7a-2a845abf7d99.pdf&downloadedFileName=Notice%20to%20Bidders_Mr%20Mello_June%202026%20Signed.pdf",
@@ -4847,7 +4896,7 @@
    "reference": "220/2026",
    "title": "OFFICE EQUIPMENT (PRINTERS, COPIERS AND MULTI-FUNCTION MACHINES: LEASE OPTION) AND PRINT\r\nMANAGEMENT SOFTWARE",
    "department": "Kouga Municipality",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "printers",
@@ -6292,190 +6341,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-171354",
-   "reference": "ATNS/RFP06/07/2026/27/TO-FIBRE-TERM-NODES-COM-2025",
-   "title": "THE SUPPLY, DELIVERY, COMMISSIONING, AND SUPPORT OF FIBRE TERMINATION NODES AT FACT, FAGG, FAPE, FALE, FAEL, FABL, FAKM, FAUP AND AT THE ATA",
-   "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Network & Infrastructure",
-   "company": "rtc",
-   "matchedTerms": [
-    "fibre",
-    "fibre termination"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-22T00:00:00+00:00",
-   "closingDate": "2026-11-06T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Volume 1B - Fibre Termination Nod.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=15e85edc-30e3-49d6-8e1e-071a8d6f61df.pdf&downloadedFileName=Volume%201B%20-%20Fibre%20Termination%20Nod.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T18:06:23Z"
-    },
-    {
-     "title": "Volume 1A - Fibre Termination Nod.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c25b7777-4d4f-4f6d-bca1-64d741f0828b.pdf&downloadedFileName=Volume%201A%20-%20Fibre%20Termination%20Nod.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T18:06:23Z"
-    },
-    {
-     "title": "Volume 2 - Fibre Termination Nod.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0f88b556-447e-4bda-bc65-93fa7f88505d.pdf&downloadedFileName=Volume%202%20-%20Fibre%20Termination%20Nod.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T18:06:23Z"
-    },
-    {
-     "title": "Tender Questions and Answers Register.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2a9babce-bee9-4b9e-b8df-9a5ac6af62f4.pdf&downloadedFileName=Tender%20Questions%20and%20Answers%20Register.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T22:55:56Z"
-    },
-    {
-     "title": "Volume 3 - Fibre Termination Nod.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=468c58f0-38f5-4476-8970-c05e9661c7c5.pdf&downloadedFileName=Volume%203%20-%20Fibre%20Termination%20Nod.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T18:06:23Z"
-    },
-    {
-     "title": "Technical Tender Briefing Presentation.pptx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=87078144-423a-42e4-9915-c756237168f5.pptx&downloadedFileName=Technical%20Tender%20Briefing%20Presentation.pptx",
-     "format": "pptx",
-     "published": "2026-10-16T02:56:43Z"
-    },
-    {
-     "title": "Volume 1C - Price Schedules - Fibre Node.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6f090408-6d22-4202-a1a3-d96c469f38d7.xlsx&downloadedFileName=Volume%201C%20-%20Price%20Schedules%20-%20Fibre%20Node.xlsx",
-     "format": "xlsx",
-     "published": "2026-09-22T18:06:23Z"
-    },
-    {
-     "title": "Volume 4 - Fibre Termination Nod.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c7d71dd7-c32f-4c29-aa9c-e6ae956e7cdc.pdf&downloadedFileName=Volume%204%20-%20Fibre%20Termination%20Nod.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T18:06:24Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-171002",
-   "reference": "COR8204/2026/RFP",
-   "title": "RFP FOR THE APPOINTMENT OF ONE (1) CONTRACTOR PER CLUSTER FOR THE IMPLEMENTATION OF AN AUTOMATED METER READING (AMR) SYSTEM, INCLUDING BILLING SOFTWARE, FOR A PERIOD OF TWELVE (12) MONTHS, TOGETHER WITH A CONCURRENT SIXTY (60) MONTH OPERATIONAL SUPPORT SERVICES CONTRACT, ACROSS ACSA AIRPORTS CATEGORISED INTO CLUSTER WORK PACKAGES A, B AND C.",
-   "department": "Airports Company of South Africa",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "software",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-18T00:00:00+00:00",
-   "closingDate": "2026-11-06T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Annexure B1.1_Preliminary_Decommi & New Smart Metering Asset Register & Spares_Cluster 3.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a6565f60-eb15-40cb-ac20-00b13b6205d4.xlsx&downloadedFileName=Annexure%20B1.1_Preliminary_Decommi%20%26%20New%20Smart%20Metering%20Asset%20Register%20%26%20Spares_Cluster%203.xlsx",
-     "format": "xlsx",
-     "published": "2026-09-18T14:50:30Z"
-    },
-    {
-     "title": "FINAL RFP COR 8204-2026-RFP- SMART METERING.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=62978fb2-b4a1-4b69-8724-0d8b3210c1e7.pdf&downloadedFileName=FINAL%20RFP%20COR%208204-2026-RFP-%20SMART%20METERING.pdf",
-     "format": "pdf",
-     "published": "2026-09-18T14:41:25Z"
-    },
-    {
-     "title": "Annexure A2 - Cluster 1 NEC3 TSC Contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5aa578cd-b79b-4e3a-a662-3bccd19b3476.pdf&downloadedFileName=Annexure%20A2%20-%20Cluster%201%20NEC3%20TSC%20Contract.pdf",
-     "format": "pdf",
-     "published": "2026-09-18T14:46:44Z"
-    },
-    {
-     "title": "Annexure A1 - Cluster 1 NEC3 ECC Contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=42e246d1-608d-4a1a-8f4e-46e5d7dc1348.pdf&downloadedFileName=Annexure%20A1%20-%20Cluster%201%20NEC3%20ECC%20Contract.pdf",
-     "format": "pdf",
-     "published": "2026-09-18T14:45:47Z"
-    },
-    {
-     "title": "Annexure B1 - Cluster 2 NEC3 ECC Contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5d2c18be-9c11-4953-931b-6be1ba4758ef.pdf&downloadedFileName=Annexure%20B1%20-%20Cluster%202%20NEC3%20ECC%20Contract.pdf",
-     "format": "pdf",
-     "published": "2026-09-18T14:47:50Z"
-    },
-    {
-     "title": "Annexure B1.1_Preliminary_Decommi & New Smart Metering Asset Register & Spares_Cluster 2.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d001cd7d-fd0d-4142-a5cf-900fc30a3aed.xlsx&downloadedFileName=Annexure%20B1.1_Preliminary_Decommi%20%26%20New%20Smart%20Metering%20Asset%20Register%20%26%20Spares_Cluster%202.xlsx",
-     "format": "xlsx",
-     "published": "2026-09-18T14:49:40Z"
-    },
-    {
-     "title": "Annexure C2 - Cluster 3 NEC3 TSC Contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f67fb1a6-78bd-4117-8c9e-aed2eabcf2dd.pdf&downloadedFileName=Annexure%20C2%20-%20Cluster%203%20NEC3%20TSC%20Contract.pdf",
-     "format": "pdf",
-     "published": "2026-09-18T14:56:49Z"
-    },
-    {
-     "title": "Annexure C1 - Cluster 3 NEC3 ECC Contract .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c090dcf2-5fcf-487b-bf8a-cf631fcf6b14.pdf&downloadedFileName=Annexure%20C1%20-%20Cluster%203%20NEC3%20ECC%20Contract%20.pdf",
-     "format": "pdf",
-     "published": "2026-09-18T14:52:45Z"
-    },
-    {
-     "title": "Annexure C1_Metering Technical Specifications and Guidelines_D112MAN.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=9062f3e7-4e00-40f3-90c2-ed251b50c738.pdf&downloadedFileName=Annexure%20C1_Metering%20Technical%20Specifications%20and%20Guidelines_D112MAN.pdf",
-     "format": "pdf",
-     "published": "2026-09-18T14:54:54Z"
-    },
-    {
-     "title": "Annexure B2 - Cluster 2 NEC3 TSC Contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ee5ef58b-9935-4f69-a4a4-f83546935baf.pdf&downloadedFileName=Annexure%20B2%20-%20Cluster%202%20NEC3%20TSC%20Contract.pdf",
-     "format": "pdf",
-     "published": "2026-09-18T14:51:28Z"
-    },
-    {
-     "title": "Annexure B1.1_Preliminary_Decommi & New Smart Metering Asset Register & Spares_Cluster 1.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fa2ef680-55c4-47a8-bbcd-fc2d8ce71d92.xlsx&downloadedFileName=Annexure%20B1.1_Preliminary_Decommi%20%26%20New%20Smart%20Metering%20Asset%20Register%20%26%20Spares_Cluster%201.xlsx",
-     "format": "xlsx",
-     "published": "2026-09-18T14:48:37Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174129",
    "reference": "ULM-CORP 004/27",
    "title": "PROVISION OF ICT SUPPORT SERVICES ( 36 MONTHS CONTRACT)",
@@ -7767,9 +7632,9 @@
    "documents": [
     {
      "title": "Tender Document - GAARS - October 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fbb9ad7e-418f-407c-9050-c521986f961a.pdf&downloadedFileName=Tender%20Document%20-%20GAARS%20-%20October%202026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=66949363-2461-4e42-a1b4-08afa883beb8.pdf&downloadedFileName=Tender%20Document%20-%20GAARS%20-%20October%202026.pdf",
      "format": "pdf",
-     "published": "2026-10-22T16:13:39Z"
+     "published": "2026-10-22T17:40:56Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8260,7 +8125,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -8741,6 +8606,244 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-171354",
+   "reference": "ATNS/RFP06/07/2026/27/TO-FIBRE-TERM-NODES-COM-2025",
+   "title": "THE SUPPLY, DELIVERY, COMMISSIONING, AND SUPPORT OF FIBRE TERMINATION NODES AT FACT, FAGG, FAPE, FALE, FAEL, FABL, FAKM, FAUP AND AT THE ATA",
+   "department": "Air Traffic and Navigation Services Company Limited",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "fibre",
+    "fibre termination"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-09-22T00:00:00+00:00",
+   "closingDate": "2026-11-20T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Volume 1B - Fibre Termination Nod.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=15e85edc-30e3-49d6-8e1e-071a8d6f61df.pdf&downloadedFileName=Volume%201B%20-%20Fibre%20Termination%20Nod.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T18:06:23Z"
+    },
+    {
+     "title": "Volume 1A - Fibre Termination Nod.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c25b7777-4d4f-4f6d-bca1-64d741f0828b.pdf&downloadedFileName=Volume%201A%20-%20Fibre%20Termination%20Nod.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T18:06:23Z"
+    },
+    {
+     "title": "Addendum.docx.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=12879610-a1ce-490e-94c4-80aa9a891360.pdf&downloadedFileName=Addendum.docx.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T15:52:37Z"
+    },
+    {
+     "title": "Volume 2 - Fibre Termination Nod.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0f88b556-447e-4bda-bc65-93fa7f88505d.pdf&downloadedFileName=Volume%202%20-%20Fibre%20Termination%20Nod.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T18:06:23Z"
+    },
+    {
+     "title": "Tender Questions and Answers Register.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2a9babce-bee9-4b9e-b8df-9a5ac6af62f4.pdf&downloadedFileName=Tender%20Questions%20and%20Answers%20Register.pdf",
+     "format": "pdf",
+     "published": "2026-10-15T22:55:56Z"
+    },
+    {
+     "title": "Volume 3 - Fibre Termination Nod.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=468c58f0-38f5-4476-8970-c05e9661c7c5.pdf&downloadedFileName=Volume%203%20-%20Fibre%20Termination%20Nod.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T18:06:23Z"
+    },
+    {
+     "title": "Technical Tender Briefing Presentation.pptx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=87078144-423a-42e4-9915-c756237168f5.pptx&downloadedFileName=Technical%20Tender%20Briefing%20Presentation.pptx",
+     "format": "pptx",
+     "published": "2026-10-16T02:56:43Z"
+    },
+    {
+     "title": "Volume 1C - Price Schedules - Fibre Node.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6f090408-6d22-4202-a1a3-d96c469f38d7.xlsx&downloadedFileName=Volume%201C%20-%20Price%20Schedules%20-%20Fibre%20Node.xlsx",
+     "format": "xlsx",
+     "published": "2026-09-22T18:06:23Z"
+    },
+    {
+     "title": "Volume 4 - Fibre Termination Nod.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c7d71dd7-c32f-4c29-aa9c-e6ae956e7cdc.pdf&downloadedFileName=Volume%204%20-%20Fibre%20Termination%20Nod.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T18:06:24Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-171002",
+   "reference": "COR8204/2026/RFP",
+   "title": "RFP FOR THE APPOINTMENT OF ONE (1) CONTRACTOR PER CLUSTER FOR THE IMPLEMENTATION OF AN AUTOMATED METER READING (AMR) SYSTEM, INCLUDING BILLING SOFTWARE, FOR A PERIOD OF TWELVE (12) MONTHS, TOGETHER WITH A CONCURRENT SIXTY (60) MONTH OPERATIONAL SUPPORT SERVICES CONTRACT, ACROSS ACSA AIRPORTS CATEGORISED INTO CLUSTER WORK PACKAGES A, B AND C.",
+   "department": "Airports Company of South Africa",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "software",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-09-18T00:00:00+00:00",
+   "closingDate": "2026-11-20T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Annexure B1.1_Preliminary_Decommi & New Smart Metering Asset Register & Spares_Cluster 3.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a6565f60-eb15-40cb-ac20-00b13b6205d4.xlsx&downloadedFileName=Annexure%20B1.1_Preliminary_Decommi%20%26%20New%20Smart%20Metering%20Asset%20Register%20%26%20Spares_Cluster%203.xlsx",
+     "format": "xlsx",
+     "published": "2026-09-18T14:50:30Z"
+    },
+    {
+     "title": "FINAL RFP COR 8204-2026-RFP- SMART METERING.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=62978fb2-b4a1-4b69-8724-0d8b3210c1e7.pdf&downloadedFileName=FINAL%20RFP%20COR%208204-2026-RFP-%20SMART%20METERING.pdf",
+     "format": "pdf",
+     "published": "2026-09-18T14:41:25Z"
+    },
+    {
+     "title": "Annexure A2 - Cluster 1 NEC3 TSC Contract.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5aa578cd-b79b-4e3a-a662-3bccd19b3476.pdf&downloadedFileName=Annexure%20A2%20-%20Cluster%201%20NEC3%20TSC%20Contract.pdf",
+     "format": "pdf",
+     "published": "2026-09-18T14:46:44Z"
+    },
+    {
+     "title": "Annexure A1 - Cluster 1 NEC3 ECC Contract.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=42e246d1-608d-4a1a-8f4e-46e5d7dc1348.pdf&downloadedFileName=Annexure%20A1%20-%20Cluster%201%20NEC3%20ECC%20Contract.pdf",
+     "format": "pdf",
+     "published": "2026-09-18T14:45:47Z"
+    },
+    {
+     "title": "Addendum No.1 for COR82042026RFP.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=df04f965-e86f-4067-8c1a-5317f2cc3f37.pdf&downloadedFileName=Addendum%20No.1%20for%20COR82042026RFP.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T14:52:59Z"
+    },
+    {
+     "title": "Annexure B2 - Cluster 2 NEC3 TSC Contract_Highlighted.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7d9fd7ba-748f-4178-902d-63785bbc57f0.pdf&downloadedFileName=Annexure%20B2%20-%20Cluster%202%20NEC3%20TSC%20Contract_Highlighted.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T14:58:54Z"
+    },
+    {
+     "title": "FINAL RFP COR 8204-2026-RFP- SMART METERING AMENDED CLOSING DATES.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3e2643a9-c293-4724-a87b-696eb172b25f.pdf&downloadedFileName=FINAL%20RFP%20COR%208204-2026-RFP-%20SMART%20METERING%20AMENDED%20CLOSING%20DATES.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T21:06:05Z"
+    },
+    {
+     "title": "Annexure B1 - Cluster 2 NEC3 ECC Contract.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5d2c18be-9c11-4953-931b-6be1ba4758ef.pdf&downloadedFileName=Annexure%20B1%20-%20Cluster%202%20NEC3%20ECC%20Contract.pdf",
+     "format": "pdf",
+     "published": "2026-09-18T14:47:50Z"
+    },
+    {
+     "title": "Addendum No.2 for COR82042026RFP.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f2b380ac-409c-4a22-b4c3-78fd7a03fcb3.pdf&downloadedFileName=Addendum%20No.2%20for%20COR82042026RFP.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T14:51:59Z"
+    },
+    {
+     "title": "Annexure B1.1_Preliminary_Decommi & New Smart Metering Asset Register & Spares_Cluster 2.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d001cd7d-fd0d-4142-a5cf-900fc30a3aed.xlsx&downloadedFileName=Annexure%20B1.1_Preliminary_Decommi%20%26%20New%20Smart%20Metering%20Asset%20Register%20%26%20Spares_Cluster%202.xlsx",
+     "format": "xlsx",
+     "published": "2026-09-18T14:49:40Z"
+    },
+    {
+     "title": "ADDENDUM 03 Closing Bid Extension for Smart Metering COR 8204-2026-RFP.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6f2aba5d-5259-458b-8718-a889947cddd6.pdf&downloadedFileName=ADDENDUM%2003%20Closing%20Bid%20Extension%20for%20Smart%20Metering%20COR%208204-2026-RFP.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T21:07:13Z"
+    },
+    {
+     "title": "Annexure C2 - Cluster 3 NEC3 TSC Contract.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f67fb1a6-78bd-4117-8c9e-aed2eabcf2dd.pdf&downloadedFileName=Annexure%20C2%20-%20Cluster%203%20NEC3%20TSC%20Contract.pdf",
+     "format": "pdf",
+     "published": "2026-09-18T14:56:49Z"
+    },
+    {
+     "title": "Annexure B1 - Cluster 2 NEC3 ECC Contract_Highlighted with Comments.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c19b5168-a3ce-4d35-8f1e-be17b287617a.pdf&downloadedFileName=Annexure%20B1%20-%20Cluster%202%20NEC3%20ECC%20Contract_Highlighted%20with%20Comments.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T14:58:15Z"
+    },
+    {
+     "title": "Annexure A2 - Cluster 1 NEC3 TSC Contract_Highlighted.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=1ba3504d-4d05-4a98-90fe-c1b7a6ba5a93.pdf&downloadedFileName=Annexure%20A2%20-%20Cluster%201%20NEC3%20TSC%20Contract_Highlighted.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T14:57:24Z"
+    },
+    {
+     "title": "Addendum No.4  for COR82042026RFP.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2f6d3c6e-1dc0-4282-9977-c6fbf38a736d.pdf&downloadedFileName=Addendum%20No.4%20%20for%20COR82042026RFP.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T21:07:47Z"
+    },
+    {
+     "title": "Annexure C1 - Cluster 3 NEC3 ECC Contract .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c090dcf2-5fcf-487b-bf8a-cf631fcf6b14.pdf&downloadedFileName=Annexure%20C1%20-%20Cluster%203%20NEC3%20ECC%20Contract%20.pdf",
+     "format": "pdf",
+     "published": "2026-09-18T14:52:45Z"
+    },
+    {
+     "title": "Annexure C1_Metering Technical Specifications and Guidelines_D112MAN.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9062f3e7-4e00-40f3-90c2-ed251b50c738.pdf&downloadedFileName=Annexure%20C1_Metering%20Technical%20Specifications%20and%20Guidelines_D112MAN.pdf",
+     "format": "pdf",
+     "published": "2026-09-18T14:54:54Z"
+    },
+    {
+     "title": "Annexure B2 - Cluster 2 NEC3 TSC Contract.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ee5ef58b-9935-4f69-a4a4-f83546935baf.pdf&downloadedFileName=Annexure%20B2%20-%20Cluster%202%20NEC3%20TSC%20Contract.pdf",
+     "format": "pdf",
+     "published": "2026-09-18T14:51:28Z"
+    },
+    {
+     "title": "Annexure B1.1_Preliminary_Decommi & New Smart Metering Asset Register & Spares_Cluster 1.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fa2ef680-55c4-47a8-bbcd-fc2d8ce71d92.xlsx&downloadedFileName=Annexure%20B1.1_Preliminary_Decommi%20%26%20New%20Smart%20Metering%20Asset%20Register%20%26%20Spares_Cluster%201.xlsx",
+     "format": "xlsx",
+     "published": "2026-09-18T14:48:37Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175133",
    "reference": "NLM2027-002A",
    "title": "APPOINTMENT OF SERVICE PROVIDER FOR TELEPHONE SERVICES,NETWORK INFRASTRUCTURE AND OTHER IT SERVICES FROM DATE OF AWARD UNTIL 30 JUNE 2029",
@@ -8866,6 +8969,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=cf4f25df-3156-4a6d-bf81-872f791eb860.pdf&downloadedFileName=Advert%20for%20travel%20agency%20and%20speed%20cameras.pdf",
      "format": "pdf",
      "published": "2026-10-08T16:24:12Z"
+    },
+    {
+     "title": "Tender document for TRAFFIC MANAGEMENT SYSTEM (003).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d5f19cfe-78a1-4e70-9fc1-ab982f488fc2.pdf&downloadedFileName=Tender%20document%20for%20TRAFFIC%20MANAGEMENT%20SYSTEM%20%28003%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T18:38:42Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -9083,6 +9192,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-175290",
+   "reference": "10418532 R",
+   "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
+   "department": "Rand Water",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "backup",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-22T00:00:00+00:00",
+   "closingDate": "2026-11-24T16:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "10418532.zip",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=34054e16-b02d-4f7a-a5a3-c351860bb872.zip&downloadedFileName=10418532.zip",
+     "format": "zip",
+     "published": "2026-10-22T19:14:42Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-172507",
    "reference": "RFB 3294/2926 -(ERP No 516014)",
    "title": "Appointment of a Specialist Service Provider for Electrical and Mechanical Maintenance, Repairs, Supply of Materials and Equipment for a Period of Sixty (60) Months – SITA Offices.The Closing Date Has Being Extended Till 26 November 2026",
@@ -9231,7 +9381,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "printer",
