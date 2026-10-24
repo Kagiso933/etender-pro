@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-24T14:36:48.775861+00:00",
+ "generatedAt": "2026-10-24T19:22:47.790723+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-24",
- "releasesScanned": 5,
- "uniqueTenders": 85,
+ "coveredFrom": "2026-08-26",
+ "releasesScanned": 4700,
+ "uniqueTenders": 4700,
  "count": 185,
  "categories": {
-  "Software & Systems": 82,
-  "Network & Infrastructure": 33,
+  "Software & Systems": 76,
+  "Network & Infrastructure": 32,
   "Telecoms & Unified Comms": 7,
   "End-User Computing": 29,
   "Cloud Services": 6,
-  "IT Services & Support": 18,
-  "Cybersecurity": 10
+  "IT Services & Support": 24,
+  "Cybersecurity": 11
  },
  "onlineBriefings": 2,
- "carriedOver": 177,
+ "carriedOver": 0,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -777,7 +777,7 @@
    "reference": "HO/ICT/10375263/10/2026",
    "title": "REQUEST FOR QUOTATION FOR AN APPOINTMENT OF SERVICE PROVIDER FOR PROVISION OF SUITABLY QUALIFIED SAP RESOURCES ON “AS AND WHEN” REQUIRED BASIS OVER A SIX (6) MONTHS CONTRACT TERM TO PRASA TO PERFORM VARIOUS SAP SUPPORT AND ENHANCEMENTS",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -918,7 +918,7 @@
    "reference": "RFQ/MR/TRAINING/IA/069/2026-2027",
    "title": "FOR THE PROVISION OF CYBER SECURITY AND ARTIFICIAL INTELLIGENCE TRAINING FOR THE INTERNAL AUDIT STAFF – SOUTH AFRICAN CIVIL AVIATION AUTHORITY (SACAA).",
    "department": "South African Civil Aviation Authority",
-   "category": "Software & Systems",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "artificial intelligence",
@@ -1053,6 +1053,7 @@
    "title": "Request to Approve the Establishment of a New Five (5) Year Development, Support and Licence Maintenance Agreement for the BeyondTrust Remote Support System for SITA.The Closing Date Has Being Extended Till 27 October 2026",
    "department": "State Information Technology Agency",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "beyondtrust",
     "erp",
@@ -1250,46 +1251,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175552",
-   "reference": "SCMU3-P26/27-0946-HO",
-   "title": "SUPPLY AND DELIVERY OF MOBILE COMPUTERS ON WHEELS (NURSE CARTS) FOR NELSON MANDELA ACADEMIC HOSPITAL.",
-   "department": "Eastern Cape - Health",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "computers"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-10-28T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "SCMU3_P26 27_0946-HO.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=4125bdb2-155b-4a23-9e1b-4744ed4c908c.pdf&downloadedFileName=SCMU3_P26%2027_0946-HO.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T19:49:04Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-175423",
    "reference": "RFQ/MICT/65/2026 - Extension",
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT A DETAILED LAN ASSESSMENT",
@@ -1325,6 +1286,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=57f8f3fc-65f5-4c04-a03d-ebb05224be8d.pdf&downloadedFileName=RFQ-MICT-65-2026-_LAN_Assessment.pdf",
      "format": "pdf",
      "published": "2026-10-23T12:44:20Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175552",
+   "reference": "SCMU3-P26/27-0946-HO",
+   "title": "SUPPLY AND DELIVERY OF MOBILE COMPUTERS ON WHEELS (NURSE CARTS) FOR NELSON MANDELA ACADEMIC HOSPITAL.",
+   "department": "Eastern Cape - Health",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "computers"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-23T00:00:00+00:00",
+   "closingDate": "2026-10-28T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "SCMU3_P26 27_0946-HO.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4125bdb2-155b-4a23-9e1b-4744ed4c908c.pdf&downloadedFileName=SCMU3_P26%2027_0946-HO.pdf",
+     "format": "pdf",
+     "published": "2026-10-23T19:49:04Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1674,7 +1675,7 @@
    "reference": "HO/ ICT/ 10375486 / 10 /2026",
    "title": "REQUEST FOR QUOTATION PROVISION OF 50 PORTABLE HANDHELD POINT-OF-SALE TICKETING DEVICES WITH EMBEDDED PRASA COMPATIBLE SOFTWARE, PAYMENT FACILITATOR AND GATEWAY, INCLUDING SUPPORT AND MAINTENANCE FOR A DURATION OF 6 MONTHS",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -3074,7 +3075,7 @@
    "reference": "RFQ/SB/046/BACK-UP-EXEC-LICENSE-RENEWAL/ICT/2026-2",
    "title": "BACKUP EXEC LICENSE RENEWAL FOR 2 YEARS",
    "department": "South African Civil Aviation Authority",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -3320,7 +3321,7 @@
    "reference": "SCMU14-26/27-0009",
    "title": "Rate based contract for the supply of ICT server related infrastructure for a period of 3 years (36 months) \r\n[SITA registered IT vendors/service providers (RFB  contract)]",
    "department": "Eastern Cape - Sport Recreation Arts and Culture",
-   "category": "Network & Infrastructure",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -3666,6 +3667,7 @@
    "title": "APPOINTMENT OF A SERVICE PROVIDER AT THE INDEPENDENT COMMUNICATIONS  AUTHORITY OF SOUTH AFRICA (ICASA) TO PROVIDE AN AUTOMATED SPECTRUM MANAGEMENT SYSTEM (ASMS) WITH A THREE (3) YEAR SUPPORT AND MAINTENANCE ON AN 80/20 PPPFA 2000: PREFERENTIAL PROCUREMENT REGULATIONS, 2022",
    "department": "Independent Communications Authority of South Africa (ICASA)",
    "category": "Software & Systems",
+   "company": "rtc",
    "matchedTerms": [
     "management system",
     "system"
@@ -5668,7 +5670,7 @@
    "reference": "E3640CXMWP",
    "title": "SUPPLY, DELIVERY, TRAINING, AND TECHNICAL SUPPORT OF THE DRONE SYSTEM FOR INSPECTION AND APPLICATION IN FOSSIL POWER PLANTS AT ESKOM RESEARCH AND DEVELOPMENT FOR THE PERIOD OF TWELVE (12) MONTHS.",
    "department": "ESKOM",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "system",
@@ -7775,7 +7777,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
