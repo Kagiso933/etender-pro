@@ -1,10 +1,10 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-24T09:28:13.994154+00:00",
+ "generatedAt": "2026-10-24T14:36:48.775861+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-02",
- "releasesScanned": 2212,
- "uniqueTenders": 2217,
+ "coveredFrom": "2026-10-24",
+ "releasesScanned": 5,
+ "uniqueTenders": 85,
  "count": 321,
  "categories": {
   "Facilities Maintenance": 166,
@@ -13,7 +13,7 @@
   "Agriculture": 44
  },
  "onlineBriefings": 0,
- "carriedOver": 72,
+ "carriedOver": 314,
  "briefingFieldsSeen": {},
  "tenders": [
   {

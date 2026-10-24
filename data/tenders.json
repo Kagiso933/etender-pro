@@ -1,10 +1,10 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-24T09:28:13.994154+00:00",
+ "generatedAt": "2026-10-24T14:36:48.775861+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-02",
- "releasesScanned": 2212,
- "uniqueTenders": 2217,
+ "coveredFrom": "2026-10-24",
+ "releasesScanned": 5,
+ "uniqueTenders": 85,
  "count": 185,
  "categories": {
   "Software & Systems": 82,
@@ -16,7 +16,7 @@
   "Cybersecurity": 10
  },
  "onlineBriefings": 2,
- "carriedOver": 33,
+ "carriedOver": 177,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1250,46 +1250,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175423",
-   "reference": "RFQ/MICT/65/2026 - Extension",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT A DETAILED LAN ASSESSMENT",
-   "department": "Media, Information and Communication Technologies Sector Education and training Authority (MICT SETA)",
-   "category": "Network & Infrastructure",
-   "company": "rtc",
-   "matchedTerms": [
-    "lan"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-10-28T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ-MICT-65-2026-_LAN_Assessment.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=57f8f3fc-65f5-4c04-a03d-ebb05224be8d.pdf&downloadedFileName=RFQ-MICT-65-2026-_LAN_Assessment.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T12:44:20Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-175552",
    "reference": "SCMU3-P26/27-0946-HO",
    "title": "SUPPLY AND DELIVERY OF MOBILE COMPUTERS ON WHEELS (NURSE CARTS) FOR NELSON MANDELA ACADEMIC HOSPITAL.",
@@ -1325,6 +1285,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=4125bdb2-155b-4a23-9e1b-4744ed4c908c.pdf&downloadedFileName=SCMU3_P26%2027_0946-HO.pdf",
      "format": "pdf",
      "published": "2026-10-23T19:49:04Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175423",
+   "reference": "RFQ/MICT/65/2026 - Extension",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT A DETAILED LAN ASSESSMENT",
+   "department": "Media, Information and Communication Technologies Sector Education and training Authority (MICT SETA)",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "lan"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-23T00:00:00+00:00",
+   "closingDate": "2026-10-28T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ-MICT-65-2026-_LAN_Assessment.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=57f8f3fc-65f5-4c04-a03d-ebb05224be8d.pdf&downloadedFileName=RFQ-MICT-65-2026-_LAN_Assessment.pdf",
+     "format": "pdf",
+     "published": "2026-10-23T12:44:20Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
