@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-24T01:18:18.958209+00:00",
+ "generatedAt": "2026-10-24T09:28:13.994154+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-12",
- "releasesScanned": 3628,
- "uniqueTenders": 3673,
- "count": 322,
+ "coveredFrom": "2026-10-02",
+ "releasesScanned": 2212,
+ "uniqueTenders": 2217,
+ "count": 321,
  "categories": {
-  "Facilities Maintenance": 167,
+  "Facilities Maintenance": 166,
   "Grounds & Landscaping": 23,
   "Supply & Consumables": 88,
   "Agriculture": 44
  },
  "onlineBriefings": 0,
- "carriedOver": 12,
+ "carriedOver": 72,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -14311,52 +14311,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175083",
-   "reference": "PEA8335/2026/RFP",
-   "title": "REQUEST FOR PROPOSALS FOR THE APPOINTMENT OF A CONSULTANT TO PROVIDE DESIGN SERVICES FOR THE REFURBISHMENT OF AIRSIDE SERVICE ROADS AT CHIEF DAWID STUURMAN INTERNATIONAL AIRPORT FOR A PERIOD OF 24 MONTHS WITH TENDER REFERENCE PEA8335/2026/RFP",
-   "department": "Airports Company of South Africa",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "refurbish"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-21T00:00:00+00:00",
-   "closingDate": "2026-11-20T12:00:00+00:00",
-   "procurementMethod": "Request for Proposal",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFP83352026RFP Airside Service Road PSC Contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f9228f5f-cd4c-4bb5-9c33-113e1dd6a8a1.pdf&downloadedFileName=RFP83352026RFP%20Airside%20Service%20Road%20PSC%20Contract.pdf",
-     "format": "pdf",
-     "published": "2026-10-21T15:36:08Z"
-    },
-    {
-     "title": "PEA8335_2026_RFP  Tender Document .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=de57bfe6-51ef-440a-bd8c-b51d78071802.pdf&downloadedFileName=PEA8335_2026_RFP%20%20Tender%20Document%20.pdf",
-     "format": "pdf",
-     "published": "2026-10-21T15:36:08Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174380",
    "reference": "TDR47/2026/2027",
    "title": "BUILDING MAINTENANCE AND REPAIRS AT VARIOUS BUILDINGS WITHIN THE DIRECTORATE PLANNING AND ECONOMIC DEVELOPMENT, TECHNICAL SERVICES AND OTHER DIRECTORATES",
@@ -14779,6 +14733,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=85aeb3ff-fea1-4210-89f9-a9bb86e4512f.pdf&downloadedFileName=ANNEXURE%20D-Clarification%20Form.pdf",
      "format": "pdf",
      "published": "2026-10-23T23:46:24Z"
+    },
+    {
+     "title": "ANNEXURE A_RETURNABLE FORMS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b29a7a02-a043-4104-ba95-c646708b8c8e.pdf&downloadedFileName=ANNEXURE%20A_RETURNABLE%20FORMS.pdf",
+     "format": "pdf",
+     "published": "2026-10-24T06:55:07Z"
     },
     {
      "title": "ANNEXURE_B_C_FORM_C_BILL_OF_QUANTITIES_METRORAIL_WESTERN_CAPE.pdf",
