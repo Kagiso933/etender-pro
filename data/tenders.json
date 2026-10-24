@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-23T20:32:37.315730+00:00",
+ "generatedAt": "2026-10-24T01:18:18.958209+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-09",
- "releasesScanned": 1551,
- "uniqueTenders": 1571,
- "count": 183,
+ "coveredFrom": "2026-09-12",
+ "releasesScanned": 3628,
+ "uniqueTenders": 3673,
+ "count": 185,
  "categories": {
-  "Software & Systems": 80,
-  "Network & Infrastructure": 32,
-  "Telecoms & Unified Comms": 8,
-  "End-User Computing": 26,
+  "Software & Systems": 87,
+  "Network & Infrastructure": 31,
+  "Telecoms & Unified Comms": 7,
+  "End-User Computing": 25,
   "Cloud Services": 5,
-  "IT Services & Support": 21,
-  "Cybersecurity": 11
+  "Cybersecurity": 12,
+  "IT Services & Support": 18
  },
  "onlineBriefings": 2,
- "carriedOver": 65,
+ "carriedOver": 3,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -777,7 +777,7 @@
    "reference": "HO/ICT/10375263/10/2026",
    "title": "REQUEST FOR QUOTATION FOR AN APPOINTMENT OF SERVICE PROVIDER FOR PROVISION OF SUITABLY QUALIFIED SAP RESOURCES ON “AS AND WHEN” REQUIRED BASIS OVER A SIX (6) MONTHS CONTRACT TERM TO PRASA TO PERFORM VARIOUS SAP SUPPORT AND ENHANCEMENTS",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -826,6 +826,94 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174780",
+   "reference": "ZNQP 04/08/2026",
+   "title": "Request to appoint a suitable service provider to supply and install 3 UPS system for eThekwini Region 2nd floor server room, eThekwini District and MEC’s office and installation of existing UPS at the Main Server room. Department of Public Works and Infrastructure, eThekwini Region, 455A King Cetshwayo Highway 4001.",
+   "department": "Kwazulu Natal - Public Works (Head Office)",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "server",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-27T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "ADVERT FOR UPS SYSTEMS-ZNQP 04-08-2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=36604010-bf4f-415a-b8d0-3eec209862e1.pdf&downloadedFileName=ADVERT%20FOR%20UPS%20SYSTEMS-ZNQP%2004-08-2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T09:23:09Z"
+    },
+    {
+     "title": "BID DOCUMENT FOR UPS SYSTEMS ZNQP 04-08-2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fb79547c-723c-4928-af52-4dd9d921dc35.pdf&downloadedFileName=BID%20DOCUMENT%20FOR%20UPS%20SYSTEMS%20ZNQP%2004-08-2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T09:23:09Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174837",
+   "reference": "ATNS/RFQ04/10/2026/27/IT-3 HP LAPTOPS REPAIRS",
+   "title": "APPOINTMENT OF A SUITABLY QUALIFIED SERVICE PROVIDER FOR THE DIAGNOSTICS, REPAIR AND TESTING OF THREE (3) HP LAPTOPS DAMAGED BY WATER EXPOSURE",
+   "department": "Air Traffic and Navigation Services Company Limited",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "hp laptop",
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-27T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Volume 1A-  Laptop Repair.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=144cac0f-7038-49e1-b60f-725498a04dc8.pdf&downloadedFileName=Volume%201A-%20%20Laptop%20Repair.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T12:44:59Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174682",
    "reference": "RFQ/MR/TRAINING/IA/069/2026-2027",
    "title": "FOR THE PROVISION OF CYBER SECURITY AND ARTIFICIAL INTELLIGENCE TRAINING FOR THE INTERNAL AUDIT STAFF – SOUTH AFRICAN CIVIL AVIATION AUTHORITY (SACAA).",
@@ -867,47 +955,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-172614",
-   "reference": "MHSC029/2026/2027",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF A VISITOR MANAGEMENT SYSTEM FOR THE MHSC FOR A PERIOD OF THREE (3) YEARS",
-   "department": "Mine Health and Safety Council",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "management system",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-02T00:00:00+00:00",
-   "closingDate": "2026-10-27T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "MHSC_029_2026_2027.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d8157073-7b37-460a-b139-ea0e84abb295.pdf&downloadedFileName=MHSC_029_2026_2027.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T11:45:06Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-172750",
    "reference": "MICT/SETA/GOV/13/2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE ASSESSMENT OF THE MICT SETA ICT GOVERNANCE PROCESSES FOR A PERIOD OF TWELVE (12) MONTHS",
@@ -943,6 +990,59 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=c0b975ff-b47a-4506-8260-6d3644a9e806.pdf&downloadedFileName=BID%20DOCUMENT%20-MICT-SETA-GOV-13-2026%2C%2C%2C.pdf",
      "format": "pdf",
      "published": "2026-10-02T15:41:07Z"
+    },
+    {
+     "title": "ADDENDUM - GOV-13-2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4bb897e9-5ab9-482a-87bb-fddc4b4295a8.pdf&downloadedFileName=ADDENDUM%20-%20GOV-13-2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-23T13:28:11Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-172614",
+   "reference": "MHSC029/2026/2027",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF A VISITOR MANAGEMENT SYSTEM FOR THE MHSC FOR A PERIOD OF THREE (3) YEARS",
+   "department": "Mine Health and Safety Council",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "management system",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-02T00:00:00+00:00",
+   "closingDate": "2026-10-27T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Visitors Management System Responses MHSC 029- 2026-27 Final.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b63a9717-3586-4f6a-a0b8-36531d709449.docx&downloadedFileName=Visitors%20Management%20System%20Responses%20MHSC%20029-%202026-27%20Final.docx",
+     "format": "docx",
+     "published": "2026-10-23T17:13:16Z"
+    },
+    {
+     "title": "MHSC_029_2026_2027.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d8157073-7b37-460a-b139-ea0e84abb295.pdf&downloadedFileName=MHSC_029_2026_2027.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T11:45:06Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1098,143 +1198,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=55e9544d-63f1-48af-8835-429754d30af5.pdf&downloadedFileName=MICROSOFT%20DYNAMICS%20365%20MAINTENANCE%20SERVICES.pdf",
      "format": "pdf",
      "published": "2026-10-16T10:50:02Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-172939",
-   "reference": "E3640CXMWP",
-   "title": "SUPPLY, DELIVERY, TRAINING, AND TECHNICAL SUPPORT OF THE DRONE SYSTEM FOR INSPECTION AND APPLICATION IN FOSSIL POWER PLANTS AT ESKOM RESEARCH AND DEVELOPMENT FOR THE PERIOD OF TWELVE (12) MONTHS.",
-   "department": "ESKOM",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "system",
-    "technical support"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-05T00:00:00+00:00",
-   "closingDate": "2026-10-28T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "works",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Appendix A  Technical Evaluation Strategy for Boiler Inspection Drone._70%.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5359475a-f53b-4f42-afba-0a585afef39f.pdf&downloadedFileName=Appendix%20A%20%20Technical%20Evaluation%20Strategy%20for%20Boiler%20Inspection%20Drone._70%25.pdf",
-     "format": "pdf",
-     "published": "2026-10-05T15:02:23Z"
-    },
-    {
-     "title": "Practice-Guide-01-of-2018-Determining-Validity-of-a-B-BBEE-Certificate.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7e60a03d-8d16-4006-99e8-11387ab5fb09.pdf&downloadedFileName=Practice-Guide-01-of-2018-Determining-Validity-of-a-B-BBEE-Certificate.pdf",
-     "format": "pdf",
-     "published": "2026-10-05T14:58:42Z"
-    },
-    {
-     "title": "Eskom - Standard Conditions of Tender - 30 January 2025.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f13456b5-fff9-47cf-8f3a-21ab592f9ce8.pdf&downloadedFileName=Eskom%20-%20Standard%20Conditions%20of%20Tender%20-%2030%20January%202025.pdf",
-     "format": "pdf",
-     "published": "2026-10-05T14:58:42Z"
-    },
-    {
-     "title": "Acknowledgement Form for Eskom SHE Rules and other Requirements (1).docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=929bc685-ee94-44db-a71c-24f2b6e77f37.docx&downloadedFileName=Acknowledgement%20Form%20for%20Eskom%20SHE%20Rules%20and%20other%20Requirements%20%281%29.docx",
-     "format": "docx",
-     "published": "2026-10-05T15:00:03Z"
-    },
-    {
-     "title": "240-109253698 CQP Template.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5f6a0612-f11f-4416-b5ec-389c47631e42.docx&downloadedFileName=240-109253698%20CQP%20Template.docx",
-     "format": "docx",
-     "published": "2026-10-05T15:01:03Z"
-    },
-    {
-     "title": "E-Tenderers E-Tendering Training Acknowledgement Form - 27 January 2025 (1).docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c65339d1-415a-485e-b3d0-39b956406775.docx&downloadedFileName=E-Tenderers%20E-Tendering%20Training%20Acknowledgement%20Form%20-%2027%20January%202025%20%281%29.docx",
-     "format": "docx",
-     "published": "2026-10-05T14:58:42Z"
-    },
-    {
-     "title": "E3640CXMWP_Invitation to Tender_Boiler Drone_05 October 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1e856e3d-ce2f-4dbb-806d-4723a8aae144.pdf&downloadedFileName=E3640CXMWP_Invitation%20to%20Tender_Boiler%20Drone_05%20October%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-05T14:58:41Z"
-    },
-    {
-     "title": "240-68099512 Form A_Cat 3_ Rev 9_Drone For Fossil Power Plants.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=3a43f58b-7a18-4923-b9f2-4afb26f0b6f7.pdf&downloadedFileName=240-68099512%20Form%20A_Cat%203_%20Rev%209_Drone%20For%20Fossil%20Power%20Plants.pdf",
-     "format": "pdf",
-     "published": "2026-10-05T15:01:02Z"
-    },
-    {
-     "title": "Acknowledgement Form Life-saving Rules.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0bd531d7-fb8a-49f4-afa2-55d0aa912d0c.docx&downloadedFileName=Acknowledgement%20Form%20Life-saving%20Rules.docx",
-     "format": "docx",
-     "published": "2026-10-05T15:00:03Z"
-    },
-    {
-     "title": "E-tendering Help Manual for supplier - 27 January 2025 (1).docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=757dafbd-0136-4d6a-85a9-6a8afa780256.docx&downloadedFileName=E-tendering%20Help%20Manual%20for%20supplier%20-%2027%20January%202025%20%281%29.docx",
-     "format": "docx",
-     "published": "2026-10-05T14:58:42Z"
-    },
-    {
-     "title": "37-2 agreement form.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=88b70a0a-d367-4c51-bcf4-8ac9b1af757f.docx&downloadedFileName=37-2%20agreement%20form.docx",
-     "format": "docx",
-     "published": "2026-10-05T15:00:03Z"
-    },
-    {
-     "title": "240-105658000 SUPPLIER QUALITY MANAGEMENT SPEC REV4 FINAL 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=355b259d-5c71-4df2-ba2d-ab06f23ac242.pdf&downloadedFileName=240-105658000%20SUPPLIER%20QUALITY%20MANAGEMENT%20SPEC%20REV4%20FINAL%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-05T15:01:02Z"
-    },
-    {
-     "title": "Tender Environmental Requirements -  Drone for Fossil Power Plants -08 Sep 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=23ebb422-b189-4366-aa6e-acae3dd222fc.pdf&downloadedFileName=Tender%20Environmental%20Requirements%20-%20%20Drone%20for%20Fossil%20Power%20Plants%20-08%20Sep%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-05T14:59:27Z"
-    },
-    {
-     "title": "TSC3 NEC Contract -Drone System for boilers 28092026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1de67231-6c5e-4cd1-ba06-b74ca9060bef.pdf&downloadedFileName=TSC3%20NEC%20Contract%20-Drone%20System%20for%20boilers%2028092026.pdf",
-     "format": "pdf",
-     "published": "2026-10-05T14:58:42Z"
-    },
-    {
-     "title": "240-12248652_List of Tender Returnables_Cat 3_ Rev 7_Drone for Fossil Power Plants.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a51f8292-5275-4eea-bad8-bc4ab9c13450.pdf&downloadedFileName=240-12248652_List%20of%20Tender%20Returnables_Cat%203_%20Rev%207_Drone%20for%20Fossil%20Power%20Plants.pdf",
-     "format": "pdf",
-     "published": "2026-10-05T15:01:03Z"
-    },
-    {
-     "title": "240-109253302 _ Quality Control Plan or Inspection Test Plan (QCP or ITP) rev 2.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e8b97daa-704b-4c1e-aca2-e957febb5a9d.docx&downloadedFileName=240-109253302%20_%20Quality%20Control%20Plan%20or%20Inspection%20Test%20Plan%20%28QCP%20or%20ITP%29%20rev%202.docx",
-     "format": "docx",
-     "published": "2026-10-05T15:01:02Z"
-    },
-    {
-     "title": "OHS Evaluation.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b24606a7-b44d-4dab-b7ea-f947cc2e3f1f.docx&downloadedFileName=OHS%20Evaluation.docx",
-     "format": "docx",
-     "published": "2026-10-05T15:00:03Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1626,47 +1589,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-173156",
-   "reference": "SPSC-B-010-2026",
-   "title": "SATELLITE AIRTIME SUPPORT FOR 11 SOUTH AFRICAN NAVY VESSELS THAT ACT AS A BACKUP TO COMMUNICATE WITH THE SHORE BASES FOR A PERIOD OF TWO YEARS .  DOD PROC PLAN 26-27/SA NAVY/934",
-   "department": "Defence",
-   "category": "Telecoms & Unified Comms",
-   "company": "rtc",
-   "matchedTerms": [
-    "backup",
-    "satellite airtime"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-07T00:00:00+00:00",
-   "closingDate": "2026-10-28T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "SPSC B 010 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fd1039fc-e264-4250-ac0e-519cfffa7a68.pdf&downloadedFileName=SPSC%20B%20010%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-07T10:55:45Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-171899",
    "reference": "17-2026/27",
    "title": "Provision of service for the Supply, Delivery, Setup and configuration of Information Communication Technology(ICT), Hardware and Peripherals for the period of three years",
@@ -1743,6 +1665,59 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=2da82250-9ab9-494f-8323-67d295a236c6.pdf&downloadedFileName=TENDER%20DOCUMENT%20SUPPLY%20AND%20DELIVERY%20OF%2018%20LAPTOPS.pdf",
      "format": "pdf",
      "published": "2026-10-22T16:46:32Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174835",
+   "reference": "HO/ ICT/ 10375486 / 10 /2026",
+   "title": "REQUEST FOR QUOTATION PROVISION OF 50 PORTABLE HANDHELD POINT-OF-SALE TICKETING DEVICES WITH EMBEDDED PRASA COMPATIBLE SOFTWARE, PAYMENT FACILITATOR AND GATEWAY, INCLUDING SUPPORT AND MAINTENANCE FOR A DURATION OF 6 MONTHS",
+   "department": "Passenger Rail Agency of South Africa",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "ict",
+    "software"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-28T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "PRASA_PoS_Handheld_Devices_RFQ_5Oct2026 SCOPE OF WORK.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c34aac81-7e66-4b9f-ae96-4694ef4ac44f.pdf&downloadedFileName=PRASA_PoS_Handheld_Devices_RFQ_5Oct2026%20SCOPE%20OF%20WORK.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T12:38:02Z"
+    },
+    {
+     "title": "COVER PAGE POS  ICT.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e00ebd15-c16b-4be4-9b54-5624c9fcec4a.docx&downloadedFileName=COVER%20PAGE%20POS%20%20ICT.docx",
+     "format": "docx",
+     "published": "2026-10-20T12:38:02Z"
+    },
+    {
+     "title": "PRICING SCHEDULE.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e1da4be6-aca8-4695-b24a-58dc93ce3f68.pdf&downloadedFileName=PRICING%20SCHEDULE.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T12:38:02Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1978,6 +1953,30 @@
      "published": "2026-09-23T21:05:24Z"
     },
     {
+     "title": "Batch 1 Clarification Questions Transnet Responses.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2bc31dc4-28af-4ece-b59c-0957205e0e6f.pdf&downloadedFileName=Batch%201%20Clarification%20Questions%20Transnet%20Responses.pdf",
+     "format": "pdf",
+     "published": "2026-10-23T17:13:04Z"
+    },
+    {
+     "title": "Response to 23 QWH Primary TNPA.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=07299183-d8f4-480a-ac2c-0e54f0a39018.xlsx&downloadedFileName=Response%20to%2023%20QWH%20Primary%20TNPA.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-23T17:11:16Z"
+    },
+    {
+     "title": "Response to 23 Commvault Core.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0f121c31-91d0-4d15-aa9a-10ff48b9418f.pdf&downloadedFileName=Response%20to%2023%20Commvault%20Core.pdf",
+     "format": "pdf",
+     "published": "2026-10-23T17:11:16Z"
+    },
+    {
+     "title": "Response to 23 Copy of TNPA Private Cloud Equipment Capitalisation (003).xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=97f28084-5773-4826-a682-14d9983ef5b0.xlsx&downloadedFileName=Response%20to%2023%20Copy%20of%20TNPA%20Private%20Cloud%20Equipment%20Capitalisation%20%28003%29.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-23T17:11:16Z"
+    },
+    {
      "title": "Annexure K Transnet General Bid Conditions.pdf",
      "url": "https://www.etenders.gov.za/home/Download?blobName=642300e0-94b5-4b13-b012-1fb0e566488d.pdf&downloadedFileName=Annexure%20K%20Transnet%20General%20Bid%20Conditions.pdf",
      "format": "pdf",
@@ -2000,6 +1999,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=e461e6f2-fa8e-4fe3-b635-4fc270a79fce.xlsx&downloadedFileName=Annexure%20E%20Consolidated%20Technical%20Evaluation%20Criteria.xlsx",
      "format": "xlsx",
      "published": "2026-09-23T21:05:24Z"
+    },
+    {
+     "title": "Response to 23  DR Site TNPA.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8f257960-1751-49ba-bcec-6be28eea2f25.xlsx&downloadedFileName=Response%20to%2023%20%20DR%20Site%20TNPA.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-23T17:11:16Z"
     },
     {
      "title": "Presentation Non-Compulsory Briefing Session Consolidated Infrastructure.pdf",
@@ -3069,7 +3074,7 @@
    "reference": "RFQ/SB/046/BACK-UP-EXEC-LICENSE-RENEWAL/ICT/2026-2",
    "title": "BACKUP EXEC LICENSE RENEWAL FOR 2 YEARS",
    "department": "South African Civil Aviation Authority",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -5659,6 +5664,149 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-172939",
+   "reference": "E3640CXMWP",
+   "title": "SUPPLY, DELIVERY, TRAINING, AND TECHNICAL SUPPORT OF THE DRONE SYSTEM FOR INSPECTION AND APPLICATION IN FOSSIL POWER PLANTS AT ESKOM RESEARCH AND DEVELOPMENT FOR THE PERIOD OF TWELVE (12) MONTHS.",
+   "department": "ESKOM",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "system",
+    "technical support"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-05T00:00:00+00:00",
+   "closingDate": "2026-11-06T10:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "works",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Appendix A  Technical Evaluation Strategy for Boiler Inspection Drone._70%.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5359475a-f53b-4f42-afba-0a585afef39f.pdf&downloadedFileName=Appendix%20A%20%20Technical%20Evaluation%20Strategy%20for%20Boiler%20Inspection%20Drone._70%25.pdf",
+     "format": "pdf",
+     "published": "2026-10-05T15:02:23Z"
+    },
+    {
+     "title": "Practice-Guide-01-of-2018-Determining-Validity-of-a-B-BBEE-Certificate.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7e60a03d-8d16-4006-99e8-11387ab5fb09.pdf&downloadedFileName=Practice-Guide-01-of-2018-Determining-Validity-of-a-B-BBEE-Certificate.pdf",
+     "format": "pdf",
+     "published": "2026-10-05T14:58:42Z"
+    },
+    {
+     "title": "Eskom - Standard Conditions of Tender - 30 January 2025.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f13456b5-fff9-47cf-8f3a-21ab592f9ce8.pdf&downloadedFileName=Eskom%20-%20Standard%20Conditions%20of%20Tender%20-%2030%20January%202025.pdf",
+     "format": "pdf",
+     "published": "2026-10-05T14:58:42Z"
+    },
+    {
+     "title": "Acknowledgement Form for Eskom SHE Rules and other Requirements (1).docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=929bc685-ee94-44db-a71c-24f2b6e77f37.docx&downloadedFileName=Acknowledgement%20Form%20for%20Eskom%20SHE%20Rules%20and%20other%20Requirements%20%281%29.docx",
+     "format": "docx",
+     "published": "2026-10-05T15:00:03Z"
+    },
+    {
+     "title": "240-109253698 CQP Template.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5f6a0612-f11f-4416-b5ec-389c47631e42.docx&downloadedFileName=240-109253698%20CQP%20Template.docx",
+     "format": "docx",
+     "published": "2026-10-05T15:01:03Z"
+    },
+    {
+     "title": "E-Tenderers E-Tendering Training Acknowledgement Form - 27 January 2025 (1).docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c65339d1-415a-485e-b3d0-39b956406775.docx&downloadedFileName=E-Tenderers%20E-Tendering%20Training%20Acknowledgement%20Form%20-%2027%20January%202025%20%281%29.docx",
+     "format": "docx",
+     "published": "2026-10-05T14:58:42Z"
+    },
+    {
+     "title": "E3640CXMWP_Invitation to Tender_Boiler Drone_05 October 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=1e856e3d-ce2f-4dbb-806d-4723a8aae144.pdf&downloadedFileName=E3640CXMWP_Invitation%20to%20Tender_Boiler%20Drone_05%20October%202026.pdf",
+     "format": "pdf",
+     "published": "2026-10-05T14:58:41Z"
+    },
+    {
+     "title": "240-68099512 Form A_Cat 3_ Rev 9_Drone For Fossil Power Plants.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3a43f58b-7a18-4923-b9f2-4afb26f0b6f7.pdf&downloadedFileName=240-68099512%20Form%20A_Cat%203_%20Rev%209_Drone%20For%20Fossil%20Power%20Plants.pdf",
+     "format": "pdf",
+     "published": "2026-10-05T15:01:02Z"
+    },
+    {
+     "title": "Acknowledgement Form Life-saving Rules.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0bd531d7-fb8a-49f4-afa2-55d0aa912d0c.docx&downloadedFileName=Acknowledgement%20Form%20Life-saving%20Rules.docx",
+     "format": "docx",
+     "published": "2026-10-05T15:00:03Z"
+    },
+    {
+     "title": "Tender Questions and Answers REV1.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b0a49b50-c61c-4f97-b8f9-64726d8050d9.docx&downloadedFileName=Tender%20Questions%20and%20Answers%20REV1.docx",
+     "format": "docx",
+     "published": "2026-10-23T15:39:54Z"
+    },
+    {
+     "title": "E-tendering Help Manual for supplier - 27 January 2025 (1).docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=757dafbd-0136-4d6a-85a9-6a8afa780256.docx&downloadedFileName=E-tendering%20Help%20Manual%20for%20supplier%20-%2027%20January%202025%20%281%29.docx",
+     "format": "docx",
+     "published": "2026-10-05T14:58:42Z"
+    },
+    {
+     "title": "37-2 agreement form.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=88b70a0a-d367-4c51-bcf4-8ac9b1af757f.docx&downloadedFileName=37-2%20agreement%20form.docx",
+     "format": "docx",
+     "published": "2026-10-05T15:00:03Z"
+    },
+    {
+     "title": "240-105658000 SUPPLIER QUALITY MANAGEMENT SPEC REV4 FINAL 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=355b259d-5c71-4df2-ba2d-ab06f23ac242.pdf&downloadedFileName=240-105658000%20SUPPLIER%20QUALITY%20MANAGEMENT%20SPEC%20REV4%20FINAL%202026.pdf",
+     "format": "pdf",
+     "published": "2026-10-05T15:01:02Z"
+    },
+    {
+     "title": "Tender Environmental Requirements -  Drone for Fossil Power Plants -08 Sep 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=23ebb422-b189-4366-aa6e-acae3dd222fc.pdf&downloadedFileName=Tender%20Environmental%20Requirements%20-%20%20Drone%20for%20Fossil%20Power%20Plants%20-08%20Sep%202026.pdf",
+     "format": "pdf",
+     "published": "2026-10-05T14:59:27Z"
+    },
+    {
+     "title": "240-12248652_List of Tender Returnables_Cat 3_ Rev 7_Drone for Fossil Power Plants.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a51f8292-5275-4eea-bad8-bc4ab9c13450.pdf&downloadedFileName=240-12248652_List%20of%20Tender%20Returnables_Cat%203_%20Rev%207_Drone%20for%20Fossil%20Power%20Plants.pdf",
+     "format": "pdf",
+     "published": "2026-10-05T15:01:03Z"
+    },
+    {
+     "title": "240-109253302 _ Quality Control Plan or Inspection Test Plan (QCP or ITP) rev 2.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e8b97daa-704b-4c1e-aca2-e957febb5a9d.docx&downloadedFileName=240-109253302%20_%20Quality%20Control%20Plan%20or%20Inspection%20Test%20Plan%20%28QCP%20or%20ITP%29%20rev%202.docx",
+     "format": "docx",
+     "published": "2026-10-05T15:01:02Z"
+    },
+    {
+     "title": "TSC3 NEC Contract -Drone System for boilers .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9705de1b-bc39-438b-88d1-edd9f02c73e3.pdf&downloadedFileName=TSC3%20NEC%20Contract%20-Drone%20System%20for%20boilers%20.pdf",
+     "format": "pdf",
+     "published": "2026-10-23T15:32:03Z"
+    },
+    {
+     "title": "OHS Evaluation.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b24606a7-b44d-4dab-b7ea-f947cc2e3f1f.docx&downloadedFileName=OHS%20Evaluation.docx",
+     "format": "docx",
+     "published": "2026-10-05T15:00:03Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174230",
    "reference": "NSG/BID/05/2026/2027",
    "title": "Supply and delivery of Laptops, Desktops and Accessories for the National School of Government (NSG)",
@@ -7627,7 +7775,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "IT Services & Support",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -7929,7 +8077,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -8016,7 +8164,7 @@
    "reference": "RFB 3299/2026 - (ERP No 534010)",
    "title": "Request for Bid for the Procurement of Security Access Cards, Access Card Materials and the Cleaning Kit of the Smart Card Printer for a Period of Five (5) Years.",
    "department": "State Information Technology Agency",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -8081,7 +8229,7 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -9105,7 +9253,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -9236,7 +9384,7 @@
    "reference": "PSiRA/2026/27/RFB/08",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE DESIGN, SUPPLY, IMPLEMENT AND MAINTENANCE OF A CLOUD-BASED MICROSOFT TEAMS TELEPHONY SYSTEM AND CALL CENTER SOLUTION FOR A PERIOD OF 36 MONTHS.",
    "department": "Private Security Industry Regulatory Authority",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "cloud",
@@ -9560,7 +9708,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "printer",
