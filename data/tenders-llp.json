@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-25T14:56:34.325974+00:00",
+ "generatedAt": "2026-10-25T19:39:29.068429+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-08-26",
- "releasesScanned": 4698,
- "uniqueTenders": 4698,
- "count": 323,
+ "coveredFrom": "2026-10-23",
+ "releasesScanned": 162,
+ "uniqueTenders": 177,
+ "count": 315,
  "categories": {
-  "Facilities Maintenance": 180,
-  "Grounds & Landscaping": 20,
-  "Supply & Consumables": 79,
-  "Agriculture": 44
+  "Facilities Maintenance": 174,
+  "Grounds & Landscaping": 22,
+  "Supply & Consumables": 77,
+  "Agriculture": 42
  },
  "onlineBriefings": 0,
- "carriedOver": 0,
+ "carriedOver": 295,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -3352,47 +3352,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=30a756e2-ab7e-4180-833b-0de1ddbb11cc.pdf&downloadedFileName=ED4_2026%20Ad.pdf",
      "format": "pdf",
      "published": "2026-09-15T15:14:16Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175531",
-   "reference": "COJ0013-26/27",
-   "title": "APPOINTMENT OF A SUITABLE SERVICE PROVIDER TO SUPPLY, DELIVER AND OFFLOAD CLEANING MATERIALS AND CHEMICALS",
-   "department": "City Council of Johannesburg",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "cleaning",
-    "cleaning materials"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-10-29T10:30:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "COJ0013-26-27 cleaning material.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=89f46f10-4764-4d65-803e-41eaee0b77d1.pdf&downloadedFileName=COJ0013-26-27%20cleaning%20material.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T16:54:18Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -7761,7 +7720,7 @@
    "reference": "34981/TNP/2026-27-R",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR SERVICING AND MAINTENANCE OF WATER TREATMENT PLANTS AND WATER PURIFICATION PLANTS WITHIN THE TSITSIKAMMA SECTION OF GARDEN ROUTE NATIONAL PARK FOR A PERIOD OF 36 MONTHS.",
    "department": "South African National Parks",
-   "category": "Facilities Maintenance",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -9250,7 +9209,7 @@
    "reference": "MLM 09/2026/27",
    "title": "APPOINTMENT OF A CONTRACTOR FOR CONSTRUCTION OF TOILETS AND SEWER NETWORK REPAIR IN GORTIN PHASE 1.",
    "department": "Metsimaholo Local Municipality",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "repair",
@@ -9291,7 +9250,7 @@
    "reference": "37086/TNP/2026-27",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE TO SUPPLY LABOUR FORCE AND MATERIAL FOR REACTIVE MAINTENANCE AT THE TSITSIKAMMA SECTION OF GARDEN ROUTE NATIONAL PARK FOR A PERIOD OF 12 MONTHS",
    "department": "South African National Parks",
-   "category": "Facilities Maintenance",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -15210,47 +15169,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175448",
-   "reference": "S032/26",
-   "title": "BELLVILLE: STIKLAND HOSPITAL: GENERAL MAINTENANCE TO WARDS 1, 20, 10, 11, 14 AND 15",
-   "department": "Western Cape - Transport and Public Works",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "general maintenance",
-    "maintenance"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-11-24T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "TENDER DOCS.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b501d7c1-eeab-46f4-bcf0-68a51e5a23b3.docx&downloadedFileName=TENDER%20DOCS.docx",
-     "format": "docx",
-     "published": "2026-10-23T13:46:49Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174018",
    "reference": "ATNS/RFP15/06/2026/27/FAEL-FAUT-CLEANING SERVICES",
    "title": "Appointment of a Service Provider to Deliver Cleaning Services for ATNS FAEL (King Phalo Airport), FAUT (Mthatha Airport), and associated remote sites over a Five-Year Period on an and as when required basis",
@@ -15287,53 +15205,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=1f95d440-5ca9-44b2-9edd-2350bd913199.pdf&downloadedFileName=Volume%201A%20-%20FAEL%20%26%20FAUT%20Cleaning%20Services.pdf",
      "format": "pdf",
      "published": "2026-10-14T10:16:45Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175247",
-   "reference": "CDC/449/26",
-   "title": "REPAIRS, RENOVATIONS AND ADDITIONS TO ABLUTION FACILITIES AT TOWER PSYCHIATRIC HOSPITAL IN AMATHOLE DISTRICT MUNICIPALITY",
-   "department": "Eastern Cape - Coega Development Cooperation",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "renovat",
-    "repairs"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-11-24T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Tender Documents.zip",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=04e19be9-3881-4b18-99b9-51577ef0c832.zip&downloadedFileName=Tender%20Documents.zip",
-     "format": "zip",
-     "published": "2026-10-22T14:34:30Z"
-    },
-    {
-     "title": "Tender Advert - CDC-449-26.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ed528889-fa9e-468d-8105-d315f143c341.pdf&downloadedFileName=Tender%20Advert%20-%20CDC-449-26.pdf",
-     "format": "pdf",
-     "published": "2026-10-22T14:39:42Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -15416,46 +15287,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=29630bfc-bf5a-4cfe-98d7-9159a64c3d8f.pdf&downloadedFileName=Plumbing%20Material%203-2-002-2026-27%20Tender%20Document.pdf",
      "format": "pdf",
      "published": "2026-10-15T13:04:45Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175296",
-   "reference": "A-DPRE 01-2027",
-   "title": "The appointment of Service Providers for the Supply, Delivery, Off-Loading, Commissioning and Training Of Industrial Ride-On Scrubber and Sweeper Machines at the Ekurhuleni Fresh Produce Market on an as and when required basis from date of award until 30 June 2029",
-   "department": "City of Ekurhuleni",
-   "category": "Agriculture",
-   "company": "llp",
-   "matchedTerms": [
-    "fresh produce"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-11-25T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "A-DPRE 01 2027- FINAL BID DOCUMENT INDUSTRIAL RIDE-ON SCRUBBER AND SWEEPER MACHINES AT THE EKURHULENI FRESH PRODUCE MARKET.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1fb94a25-2366-4ce1-998d-ad7808e005e9.pdf&downloadedFileName=A-DPRE%2001%202027-%20FINAL%20BID%20DOCUMENT%20INDUSTRIAL%20RIDE-ON%20SCRUBBER%20AND%20SWEEPER%20MACHINES%20AT%20THE%20EKURHULENI%20FRESH%20PRODUCE%20MARKET.pdf",
-     "format": "pdf",
-     "published": "2026-10-22T21:42:32Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -15624,95 +15455,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=727f8efd-f837-4553-ac2a-458daf9650cc.pdf&downloadedFileName=BID%20NOTICE%2023%20OCTOBER%202026.pdf",
      "format": "pdf",
      "published": "2026-10-23T22:19:14Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175354",
-   "reference": "RLM/DCD/0061/2026/27",
-   "title": "Appointment of a service provider to render the cleaning and hygiene service at various municipal buildings for a period of 36 months as and when needed",
-   "department": "Rustenburg Local Municipality",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "buildings",
-    "cleaning"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-11-26T09:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Advert 23 October 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=73e72989-ba69-4986-b586-1f7535e91662.pdf&downloadedFileName=Advert%2023%20October%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T10:33:31Z"
-    },
-    {
-     "title": "Tender Document Cleaning Material.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=630d2abe-7a9b-43e2-813e-b9506e177aad.pdf&downloadedFileName=Tender%20Document%20Cleaning%20Material.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T11:15:20Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175430",
-   "reference": "ELM/5/10/2026T",
-   "title": "PANEL OF THREE SERVICE PROVIDERS TO SERVICING, REPAIRS AND MAINTENANCE OF\r\nEMALAHLENI VEHICLES FOR A PERIOD OF 36 MONTHS (AS AN AND WHEN REQUIRED).",
-   "department": "Emalahleni Local Municipality",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "maintenance",
-    "repairs",
-    "repairs and maintenance"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-11-26T12:00:00+00:00",
-   "procurementMethod": "Request for Proposal",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "ADVERT FOR PANEL OF THREE SERVICE PROVIDERS TO SERVICING,REPAIRS AND MAINTENANCE.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=9e836b63-6679-4607-b953-4c0ed1ffef67.pdf&downloadedFileName=ADVERT%20FOR%20PANEL%20OF%20THREE%20SERVICE%20PROVIDERS%20TO%20SERVICING%2CREPAIRS%20AND%20MAINTENANCE.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T13:11:05Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -16023,48 +15765,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175483",
-   "reference": "ATNS/RFP02/08/2026/27/FM-FAPE-BUILDING MAINTENANCE",
-   "title": "Appointment of a service provider for the Provision of Building Maintenance services at ATNS FAPE and remote sites for a period of five (5) years rate base contract on an as-and when required basis",
-   "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "building",
-    "building maintenance",
-    "maintenance"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-11-30T14:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Volume 1A - FAPE Building Maintenance 21_10_26.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=77ef00e0-a92d-41e7-ac40-a5a16482390d.pdf&downloadedFileName=Volume%201A%20-%20FAPE%20Building%20Maintenance%2021_10_26.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T14:57:21Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174905",
    "reference": "ATNS/RFP01/09/2026/207/FAGG-LANDSCAPING",
    "title": "Appointment of A Service Provider to Provide Landscaping, Bush Clearing, Weeds Control and Gardening Service at ATNS George Airport and Various Related Locations for a Period of Five (5) Years on an “as and when” Required Basis",
@@ -16109,52 +15809,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=28f43848-946d-40f9-bee8-92e2b1f49282.pdf&downloadedFileName=Volume%201A%20-%20FAGG%20-Landscape.pdf",
      "format": "pdf",
      "published": "2026-10-20T16:41:17Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175312",
-   "reference": "TDR49/2026/2027",
-   "title": "SUPPLY AND DELIVERY OF FIRE DEPARTMENT, COMMUNICATIONS AND DISASTER MANAGEMENT PROTECTIVE CLOTHING (FIRE GEAR)",
-   "department": "Mossel Bay Municipality",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "protective clothing"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-12-04T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "49-2026-2027 TENDER DOCUMENT.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=4fdfa888-8edf-4663-a1d9-3585360f5b7d.pdf&downloadedFileName=49-2026-2027%20TENDER%20DOCUMENT.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T08:15:39Z"
-    },
-    {
-     "title": "49-2026-2027 ADVERT.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7432e9ca-07cb-4e8a-934d-686a9f350c1f.pdf&downloadedFileName=49-2026-2027%20ADVERT.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T08:15:39Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
