@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-25T00:55:50.771627+00:00",
+ "generatedAt": "2026-10-25T09:45:25.038263+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-09",
- "releasesScanned": 3924,
- "uniqueTenders": 3924,
- "count": 322,
+ "coveredFrom": "2026-10-20",
+ "releasesScanned": 516,
+ "uniqueTenders": 566,
+ "count": 316,
  "categories": {
-  "Facilities Maintenance": 191,
-  "Grounds & Landscaping": 23,
-  "Supply & Consumables": 78,
+  "Facilities Maintenance": 187,
+  "Grounds & Landscaping": 22,
+  "Supply & Consumables": 77,
   "Agriculture": 30
  },
  "onlineBriefings": 0,
- "carriedOver": 4,
+ "carriedOver": 251,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1746,145 +1746,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-174765",
-   "reference": "IHLM/68/2026-27/ADMIN",
-   "title": "SUPPLY AND DELIVERY OF STATIONERY",
-   "department": "Ingquza Hill Local Municipality",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "stationery"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-20T00:00:00+00:00",
-   "closingDate": "2026-10-27T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "BID DOCUMENT FOR SUPPLY AND DELIVERY OF STATIONERY.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b4a1f32a-18ec-43da-8a96-b6dbcd29c518.pdf&downloadedFileName=BID%20DOCUMENT%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20STATIONERY.pdf",
-     "format": "pdf",
-     "published": "2026-10-20T08:23:43Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174805",
-   "reference": "RFQ-STATIONERY 2026",
-   "title": "REQUEST FOR QUOTATIONS: SUPPLY AND DELIVERY OF STATIONERY",
-   "department": "Xhariep District Municipality",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "stationery"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-20T00:00:00+00:00",
-   "closingDate": "2026-10-27T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Stationery Specifications.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d05e9218-665d-455f-93cf-1e23d515e980.pdf&downloadedFileName=Stationery%20Specifications.pdf",
-     "format": "pdf",
-     "published": "2026-10-20T11:09:58Z"
-    },
-    {
-     "title": "MBD 4.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ef4d518c-0061-4af4-98cf-68f76d7613b0.pdf&downloadedFileName=MBD%204.pdf",
-     "format": "pdf",
-     "published": "2026-10-20T11:09:58Z"
-    },
-    {
-     "title": "Stationery Advert.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f00ce1d6-a960-40f1-983f-d0481d1a3de8.pdf&downloadedFileName=Stationery%20Advert.pdf",
-     "format": "pdf",
-     "published": "2026-10-20T11:09:58Z"
-    },
-    {
-     "title": "MBD 6.1 IN TERMS OF PPR2022.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=db6b21fb-d8b4-4798-84be-ebab080c3dc7.pdf&downloadedFileName=MBD%206.1%20IN%20TERMS%20OF%20PPR2022.pdf",
-     "format": "pdf",
-     "published": "2026-10-20T11:09:58Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174861",
-   "reference": "7/1/002/2026-27",
-   "title": "SUPPLY AND DELIVERY OF VEGETABLE SEEDS",
-   "department": "Moqhaka Local Municipality",
-   "category": "Agriculture",
-   "company": "llp",
-   "matchedTerms": [
-    "seeds",
-    "vegetable"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-20T00:00:00+00:00",
-   "closingDate": "2026-10-27T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ 7-1-002-2026-27 Supply & Delivery of Seeds.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=25314e1f-975c-4b5b-8998-ec3b82bac7fd.pdf&downloadedFileName=RFQ%207-1-002-2026-27%20Supply%20%26%20Delivery%20of%20Seeds.pdf",
-     "format": "pdf",
-     "published": "2026-10-20T14:26:24Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-173909",
    "reference": "PRASA/NGR/001/10/2026",
    "title": "REQUEST FOR QUOTATION (RFQ) FOR AS AND WHEN: MAINTENANCE AND REPAIR PLUMBING WORKS AT VARIOUS STATIONS, SITES, DEPOTS IN NGR",
@@ -2618,47 +2479,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175131",
-   "reference": "COJ0012-26/27",
-   "title": "APPOINTMENT OF A SUITABLE SERVICE PROVIDER TO SUPPLY AND DELIVER OF ENVIRONMENTAL HEALTH SPECIALIZED PEST CONTROL PERSONAL PROTECTIVE EQUIPMENT (PPE)",
-   "department": "City Council of Johannesburg",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "personal protective",
-    "ppe"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-21T00:00:00+00:00",
-   "closingDate": "2026-10-28T10:30:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "COJ0012-26-27 PEST CONTROL PPE.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6185ed0f-b2f8-43c6-8c33-46b1be252f33.pdf&downloadedFileName=COJ0012-26-27%20PEST%20CONTROL%20PPE.pdf",
-     "format": "pdf",
-     "published": "2026-10-21T20:00:01Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-173927",
    "reference": "AGR148/26",
    "title": "MAINTENANCE AND REPAIRS OF BOREHOLES, IRRIGATION EQUIPMENT, AND ACCESSORIES FOR TARLTON AND RAND WEST AGRIPARK (CIDB GRADING DESIGNATION OF 2SH OR HIGHER)",
@@ -2965,47 +2785,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175063",
-   "reference": "RFQJW55SN26",
-   "title": "PROVISION OF PEST CONTROL SERVICES AT THE JOHANNESBURG WATER HEAD OFFICE TURBINE HALL PRECINCT, NAMELY TURBINE HALL AND TURBINE SQUARE BUILDINGS, INCLUDING THE SUPPLY, INSTALLATION, MONITORING, AND MAINTENANCE OF BAIT STATIONS IN THE ENTIRE PRECINCT TO EFFECTIVELY CONTROL AND PREVENT PEST INFESTATIONS FOR THE DURATION OF 12 MONTHS.",
-   "department": "Johannesburg Water",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "buildings",
-    "maintenance"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-21T00:00:00+00:00",
-   "closingDate": "2026-10-28T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQJW55SN26- Pest Control.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fd44fe8c-1ee9-41d1-b599-627dc207fcd9.pdf&downloadedFileName=RFQJW55SN26-%20Pest%20Control.pdf",
-     "format": "pdf",
-     "published": "2026-10-22T15:24:57Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174808",
    "reference": "ECR/RAIL/HCM/04/10/2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR SUPPLY AND DELIVERY OF CANVASES AND BLUE TEMPERA PAINT TO PRASA ON A ONCE-OFF BASIS IN THE EASTERN CAPE REGION",
@@ -3041,47 +2820,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=ae0f38dc-1450-4b3f-ad64-83c06ecc35dd.pdf&downloadedFileName=APPOINTMENT%20OF%20A%20SERVICE%20PROVIDER%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20CANVASES%20AND%20BLUE%20TEMPA%20PAINT%20TO%20PRASA%20ON%20A%20ONCE-OFF%20BASIS%20IN%20THE%20EASTERN%20CAPE%20REGION.pdf",
      "format": "pdf",
      "published": "2026-10-20T11:17:35Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174695",
-   "reference": "RFQ/VDM//COMM/12/10/2026/01",
-   "title": "REQUEST TO PURCHASE INDUSTRIAL LAWN MOWER GRASS CUTTING MACHINE OF RAMUSHWANA FIRE STATION",
-   "department": "Vhembe District Municipality",
-   "category": "Grounds & Landscaping",
-   "company": "llp",
-   "matchedTerms": [
-    "grass cutting",
-    "lawn"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-20T00:00:00+00:00",
-   "closingDate": "2026-10-28T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "REQUEST TO PURCHASE INDUSTRIAL LAWN MOWER GRASS CUTTING MACHINE OF RAMUSHWANA FIRE STATION.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6510416f-5b07-482b-9697-f99350b58e19.pdf&downloadedFileName=REQUEST%20TO%20PURCHASE%20INDUSTRIAL%20LAWN%20MOWER%20GRASS%20CUTTING%20MACHINE%20OF%20RAMUSHWANA%20FIRE%20STATION.pdf",
-     "format": "pdf",
-     "published": "2026-10-19T15:48:20Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -7929,7 +7667,7 @@
    "reference": "10375597",
    "title": "REQUEST FOR QUOTATION (RFQ) FOR APPOINTMENT OF A SERVICE PROVIDERS FOR MAINTENANCE, SERVICING, PUMPING, CLEANING AND JETTING OF SEPTIC TANKS FOR A PERIOD OF 5 MONTHS IN WESTERN CAPE REGION",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -9198,7 +8936,7 @@
    "reference": "MLM 09/2026/27",
    "title": "APPOINTMENT OF A CONTRACTOR FOR CONSTRUCTION OF TOILETS AND SEWER NETWORK REPAIR IN GORTIN PHASE 1.",
    "department": "Metsimaholo Local Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "repair",
@@ -15581,7 +15319,7 @@
    "reference": "RLM/DCD/0061/2026/27",
    "title": "Appointment of a service provider to render the cleaning and hygiene service at various municipal buildings for a period of 36 months as and when needed",
    "department": "Rustenburg Local Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "buildings",

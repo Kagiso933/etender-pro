@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-25T00:55:50.771627+00:00",
+ "generatedAt": "2026-10-25T09:45:25.038263+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-09",
- "releasesScanned": 3924,
- "uniqueTenders": 3924,
- "count": 185,
+ "coveredFrom": "2026-10-20",
+ "releasesScanned": 516,
+ "uniqueTenders": 566,
+ "count": 181,
  "categories": {
-  "Software & Systems": 78,
-  "Network & Infrastructure": 32,
+  "Software & Systems": 79,
+  "Network & Infrastructure": 31,
   "Telecoms & Unified Comms": 7,
-  "End-User Computing": 29,
+  "End-User Computing": 27,
   "Cloud Services": 4,
-  "IT Services & Support": 24,
-  "Cybersecurity": 11
+  "IT Services & Support": 23,
+  "Cybersecurity": 10
  },
  "onlineBriefings": 2,
- "carriedOver": 2,
+ "carriedOver": 117,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -918,7 +918,7 @@
    "reference": "RFQ/MR/TRAINING/IA/069/2026-2027",
    "title": "FOR THE PROVISION OF CYBER SECURITY AND ARTIFICIAL INTELLIGENCE TRAINING FOR THE INTERNAL AUDIT STAFF – SOUTH AFRICAN CIVIL AVIATION AUTHORITY (SACAA).",
    "department": "South African Civil Aviation Authority",
-   "category": "Cybersecurity",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "artificial intelligence",
@@ -1331,46 +1331,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175132",
-   "reference": "RFQ282 AM (26/27)",
-   "title": "Supply and delivery of Standard Laptop (Refer to the Annexure:A below for Detailed Specification)",
-   "department": "National - Environment, Forestry and Fisheries",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "laptop"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-21T00:00:00+00:00",
-   "closingDate": "2026-10-28T11:00:00+00:00",
-   "procurementMethod": "SITA contract",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ282 AM Procurement of Laptops  UPDATED.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=19ce4e72-2979-46c3-b28d-9eaed0879bcb.pdf&downloadedFileName=RFQ282%20AM%20Procurement%20of%20Laptops%20%20UPDATED.pdf",
-     "format": "pdf",
-     "published": "2026-10-21T20:01:25Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174698",
    "reference": "RAF/2026/00067",
    "title": "PROVISION OF IT RESEARCH AND ADVISORY MEMBERSHIP SERVICES TO SUPPORT IT GOVERNANCE, RISK MANAGEMENT, DIGITAL TRANSFORMATION AND STRATEGIC TECHNOLOGY DECISION-MAKING AT THE ROAD ACCIDENT FUND (RAF) FOR A PERIOD OF TWENTY-FOUR (24) MONTHS",
@@ -1666,59 +1626,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=2da82250-9ab9-494f-8323-67d295a236c6.pdf&downloadedFileName=TENDER%20DOCUMENT%20SUPPLY%20AND%20DELIVERY%20OF%2018%20LAPTOPS.pdf",
      "format": "pdf",
      "published": "2026-10-22T16:46:32Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174835",
-   "reference": "HO/ ICT/ 10375486 / 10 /2026",
-   "title": "REQUEST FOR QUOTATION PROVISION OF 50 PORTABLE HANDHELD POINT-OF-SALE TICKETING DEVICES WITH EMBEDDED PRASA COMPATIBLE SOFTWARE, PAYMENT FACILITATOR AND GATEWAY, INCLUDING SUPPORT AND MAINTENANCE FOR A DURATION OF 6 MONTHS",
-   "department": "Passenger Rail Agency of South Africa",
-   "category": "IT Services & Support",
-   "company": "rtc",
-   "matchedTerms": [
-    "ict",
-    "software"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-20T00:00:00+00:00",
-   "closingDate": "2026-10-28T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "PRASA_PoS_Handheld_Devices_RFQ_5Oct2026 SCOPE OF WORK.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c34aac81-7e66-4b9f-ae96-4694ef4ac44f.pdf&downloadedFileName=PRASA_PoS_Handheld_Devices_RFQ_5Oct2026%20SCOPE%20OF%20WORK.pdf",
-     "format": "pdf",
-     "published": "2026-10-20T12:38:02Z"
-    },
-    {
-     "title": "COVER PAGE POS  ICT.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e00ebd15-c16b-4be4-9b54-5624c9fcec4a.docx&downloadedFileName=COVER%20PAGE%20POS%20%20ICT.docx",
-     "format": "docx",
-     "published": "2026-10-20T12:38:02Z"
-    },
-    {
-     "title": "PRICING SCHEDULE.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e1da4be6-aca8-4695-b24a-58dc93ce3f68.pdf&downloadedFileName=PRICING%20SCHEDULE.pdf",
-     "format": "pdf",
-     "published": "2026-10-20T12:38:02Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -2066,46 +1973,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=571cc4e9-aa6b-416a-a712-f2f2122b916d.pdf&downloadedFileName=Annexure%20J%20Supplier%20Integrity%20Pact.pdf",
      "format": "pdf",
      "published": "2026-09-23T21:05:25Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174997",
-   "reference": "RFQJW054NS26-27",
-   "title": "Supply and Delivery of Huawei Idea Hub ES2 86\" (IHE3-86SA) or equivalent x3",
-   "department": "Johannesburg Water",
-   "category": "Network & Infrastructure",
-   "company": "rtc",
-   "matchedTerms": [
-    "huawei"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-21T00:00:00+00:00",
-   "closingDate": "2026-10-28T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQJW054NS26-27(Supply and Delivery of Huawei Idea Hub ES2 86(21-28 OCT).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2d47b533-b8f4-4dac-a130-50255a0f262a.pdf&downloadedFileName=RFQJW054NS26-27%28Supply%20and%20Delivery%20of%20Huawei%20Idea%20Hub%20ES2%2086%2821-28%20OCT%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-21T11:23:37Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -2501,52 +2368,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=b1a51fb7-0b5a-4d27-afd6-26bb0269365c.pdf&downloadedFileName=SCMU5_26_27_0062.pdf",
      "format": "pdf",
      "published": "2026-09-25T12:58:15Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175262",
-   "reference": "TPT/2026/10/1386/12937/RFQ",
-   "title": "Provide Microsoft teams room solution systems for RCB engineering boardroom at RCB TPT terminal.",
-   "department": "Transnet SOC Ltd",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "microsoft"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-22T00:00:00+00:00",
-   "closingDate": "2026-10-29T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "SUPPLY AND INSTALLATION OF MICROSOFT TEAMS SOLUTION SYSTEMS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=3b871531-a953-48ff-90db-be82f7c4668f.pdf&downloadedFileName=SUPPLY%20AND%20INSTALLATION%20OF%20MICROSOFT%20TEAMS%20SOLUTION%20SYSTEMS.pdf",
-     "format": "pdf",
-     "published": "2026-10-22T15:27:42Z"
-    },
-    {
-     "title": "RFQ template approach_market_memo",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5facd71c-7f7f-4cc3-832f-e871c5df23fa&downloadedFileName=RFQ%20template%20approach_market_memo",
-     "format": "",
-     "published": "2026-10-22T15:27:41Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8166,7 +7987,7 @@
    "reference": "RFB 3299/2026 - (ERP No 534010)",
    "title": "Request for Bid for the Procurement of Security Access Cards, Access Card Materials and the Cleaning Kit of the Smart Card Printer for a Period of Five (5) Years.",
    "department": "State Information Technology Agency",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "erp",
