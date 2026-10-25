@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-24T19:22:47.790723+00:00",
+ "generatedAt": "2026-10-25T00:55:50.771627+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-08-26",
- "releasesScanned": 4700,
- "uniqueTenders": 4700,
+ "coveredFrom": "2026-09-09",
+ "releasesScanned": 3924,
+ "uniqueTenders": 3924,
  "count": 185,
  "categories": {
-  "Software & Systems": 76,
+  "Software & Systems": 78,
   "Network & Infrastructure": 32,
   "Telecoms & Unified Comms": 7,
   "End-User Computing": 29,
-  "Cloud Services": 6,
+  "Cloud Services": 4,
   "IT Services & Support": 24,
   "Cybersecurity": 11
  },
  "onlineBriefings": 2,
- "carriedOver": 0,
+ "carriedOver": 2,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -8079,7 +8079,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -9386,7 +9386,7 @@
    "reference": "PSiRA/2026/27/RFB/08",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE DESIGN, SUPPLY, IMPLEMENT AND MAINTENANCE OF A CLOUD-BASED MICROSOFT TEAMS TELEPHONY SYSTEM AND CALL CENTER SOLUTION FOR A PERIOD OF 36 MONTHS.",
    "department": "Private Security Industry Regulatory Authority",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "cloud",
