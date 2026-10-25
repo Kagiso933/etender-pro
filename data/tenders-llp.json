@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-25T09:45:25.038263+00:00",
+ "generatedAt": "2026-10-25T14:56:34.325974+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-20",
- "releasesScanned": 516,
- "uniqueTenders": 566,
- "count": 316,
+ "coveredFrom": "2026-08-26",
+ "releasesScanned": 4698,
+ "uniqueTenders": 4698,
+ "count": 323,
  "categories": {
-  "Facilities Maintenance": 187,
-  "Grounds & Landscaping": 22,
-  "Supply & Consumables": 77,
-  "Agriculture": 30
+  "Facilities Maintenance": 180,
+  "Grounds & Landscaping": 20,
+  "Supply & Consumables": 79,
+  "Agriculture": 44
  },
  "onlineBriefings": 0,
- "carriedOver": 251,
+ "carriedOver": 0,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1082,7 +1082,7 @@
    "reference": "GKM 10-26/27 RE-ADV",
    "title": "APPOINTMENT OF AN ELECTRICAL CONTRACTOR FOR THE UPGRADING OF UNDERGROUND MV CABLES: PHASE 7",
    "department": "Greater Kokstad Local Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "tractor",
@@ -1248,6 +1248,58 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=c4360127-17a5-410e-9dce-d1eab3e47964.pdf&downloadedFileName=RFQ%2035834%20GGHNP2026-27_%20Appointment%20of%20a%20Service%20Provider%20for%20the%20Renovation%20of%20the%20Ablution%20Block.pdf",
      "format": "pdf",
      "published": "2026-10-12T16:49:23Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175609",
+   "reference": "NB150/2026",
+   "title": "Request for quotation : Stationery",
+   "department": "Tourism",
+   "category": "Supply & Consumables",
+   "company": "llp",
+   "matchedTerms": [
+    "stationery"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-22T00:00:00+00:00",
+   "closingDate": "2026-10-27T09:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "REVISED SBD 4 -Annexure A_AUG 2026.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=15556d67-7c7e-480c-825c-0f270a192463.docx&downloadedFileName=REVISED%20SBD%204%20-Annexure%20A_AUG%202026.docx",
+     "format": "docx",
+     "published": "2026-10-25T13:06:43Z"
+    },
+    {
+     "title": "NB150.2026 STATIONERY GONTSE 27.10.2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bc4ddfc4-370d-4502-ab4b-6717179c2005.pdf&downloadedFileName=NB150.2026%20STATIONERY%20GONTSE%2027.10.2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-25T12:59:55Z"
+    },
+    {
+     "title": "ADDENDUM 4 - TEMPLATE - SWORN AFFIDAVIT OF BOTH EME AND QSE -.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=256ec3eb-ba8a-49ab-936e-9e8c1698036c.docx&downloadedFileName=ADDENDUM%204%20-%20TEMPLATE%20-%20SWORN%20AFFIDAVIT%20OF%20BOTH%20EME%20AND%20QSE%20-.docx",
+     "format": "docx",
+     "published": "2026-10-25T13:05:54Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1746,6 +1798,145 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-174765",
+   "reference": "IHLM/68/2026-27/ADMIN",
+   "title": "SUPPLY AND DELIVERY OF STATIONERY",
+   "department": "Ingquza Hill Local Municipality",
+   "category": "Supply & Consumables",
+   "company": "llp",
+   "matchedTerms": [
+    "stationery"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-27T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "BID DOCUMENT FOR SUPPLY AND DELIVERY OF STATIONERY.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b4a1f32a-18ec-43da-8a96-b6dbcd29c518.pdf&downloadedFileName=BID%20DOCUMENT%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20STATIONERY.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T08:23:43Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174805",
+   "reference": "RFQ-STATIONERY 2026",
+   "title": "REQUEST FOR QUOTATIONS: SUPPLY AND DELIVERY OF STATIONERY",
+   "department": "Xhariep District Municipality",
+   "category": "Supply & Consumables",
+   "company": "llp",
+   "matchedTerms": [
+    "stationery"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-27T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Stationery Specifications.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d05e9218-665d-455f-93cf-1e23d515e980.pdf&downloadedFileName=Stationery%20Specifications.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T11:09:58Z"
+    },
+    {
+     "title": "MBD 4.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ef4d518c-0061-4af4-98cf-68f76d7613b0.pdf&downloadedFileName=MBD%204.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T11:09:58Z"
+    },
+    {
+     "title": "Stationery Advert.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f00ce1d6-a960-40f1-983f-d0481d1a3de8.pdf&downloadedFileName=Stationery%20Advert.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T11:09:58Z"
+    },
+    {
+     "title": "MBD 6.1 IN TERMS OF PPR2022.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=db6b21fb-d8b4-4798-84be-ebab080c3dc7.pdf&downloadedFileName=MBD%206.1%20IN%20TERMS%20OF%20PPR2022.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T11:09:58Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174861",
+   "reference": "7/1/002/2026-27",
+   "title": "SUPPLY AND DELIVERY OF VEGETABLE SEEDS",
+   "department": "Moqhaka Local Municipality",
+   "category": "Agriculture",
+   "company": "llp",
+   "matchedTerms": [
+    "seeds",
+    "vegetable"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-27T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ 7-1-002-2026-27 Supply & Delivery of Seeds.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=25314e1f-975c-4b5b-8998-ec3b82bac7fd.pdf&downloadedFileName=RFQ%207-1-002-2026-27%20Supply%20%26%20Delivery%20of%20Seeds.pdf",
+     "format": "pdf",
+     "published": "2026-10-20T14:26:24Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-173909",
    "reference": "PRASA/NGR/001/10/2026",
    "title": "REQUEST FOR QUOTATION (RFQ) FOR AS AND WHEN: MAINTENANCE AND REPAIR PLUMBING WORKS AT VARIOUS STATIONS, SITES, DEPOTS IN NGR",
@@ -2012,7 +2203,7 @@
    "reference": "CSIR RFQ No 9545/27/10/2026",
    "title": "Request for Quotation (RFQ) for the supply, delivery and installation of agricultural-grade perimeter fencing for ten (10) designated Aloe Forex cultivation sites in Peddie, Eastern Cape",
    "department": "Council for Scientific and Industrial Research (CSIR)",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "agricultur",
@@ -2479,6 +2670,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-175131",
+   "reference": "COJ0012-26/27",
+   "title": "APPOINTMENT OF A SUITABLE SERVICE PROVIDER TO SUPPLY AND DELIVER OF ENVIRONMENTAL HEALTH SPECIALIZED PEST CONTROL PERSONAL PROTECTIVE EQUIPMENT (PPE)",
+   "department": "City Council of Johannesburg",
+   "category": "Supply & Consumables",
+   "company": "llp",
+   "matchedTerms": [
+    "personal protective",
+    "ppe"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-21T00:00:00+00:00",
+   "closingDate": "2026-10-28T10:30:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "COJ0012-26-27 PEST CONTROL PPE.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6185ed0f-b2f8-43c6-8c33-46b1be252f33.pdf&downloadedFileName=COJ0012-26-27%20PEST%20CONTROL%20PPE.pdf",
+     "format": "pdf",
+     "published": "2026-10-21T20:00:01Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-173927",
    "reference": "AGR148/26",
    "title": "MAINTENANCE AND REPAIRS OF BOREHOLES, IRRIGATION EQUIPMENT, AND ACCESSORIES FOR TARLTON AND RAND WEST AGRIPARK (CIDB GRADING DESIGNATION OF 2SH OR HIGHER)",
@@ -2785,6 +3017,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-175063",
+   "reference": "RFQJW55SN26",
+   "title": "PROVISION OF PEST CONTROL SERVICES AT THE JOHANNESBURG WATER HEAD OFFICE TURBINE HALL PRECINCT, NAMELY TURBINE HALL AND TURBINE SQUARE BUILDINGS, INCLUDING THE SUPPLY, INSTALLATION, MONITORING, AND MAINTENANCE OF BAIT STATIONS IN THE ENTIRE PRECINCT TO EFFECTIVELY CONTROL AND PREVENT PEST INFESTATIONS FOR THE DURATION OF 12 MONTHS.",
+   "department": "Johannesburg Water",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "buildings",
+    "maintenance"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-21T00:00:00+00:00",
+   "closingDate": "2026-10-28T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQJW55SN26- Pest Control.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fd44fe8c-1ee9-41d1-b599-627dc207fcd9.pdf&downloadedFileName=RFQJW55SN26-%20Pest%20Control.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T15:24:57Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174808",
    "reference": "ECR/RAIL/HCM/04/10/2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR SUPPLY AND DELIVERY OF CANVASES AND BLUE TEMPERA PAINT TO PRASA ON A ONCE-OFF BASIS IN THE EASTERN CAPE REGION",
@@ -2820,6 +3093,47 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=ae0f38dc-1450-4b3f-ad64-83c06ecc35dd.pdf&downloadedFileName=APPOINTMENT%20OF%20A%20SERVICE%20PROVIDER%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20CANVASES%20AND%20BLUE%20TEMPA%20PAINT%20TO%20PRASA%20ON%20A%20ONCE-OFF%20BASIS%20IN%20THE%20EASTERN%20CAPE%20REGION.pdf",
      "format": "pdf",
      "published": "2026-10-20T11:17:35Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-174695",
+   "reference": "RFQ/VDM//COMM/12/10/2026/01",
+   "title": "REQUEST TO PURCHASE INDUSTRIAL LAWN MOWER GRASS CUTTING MACHINE OF RAMUSHWANA FIRE STATION",
+   "department": "Vhembe District Municipality",
+   "category": "Grounds & Landscaping",
+   "company": "llp",
+   "matchedTerms": [
+    "grass cutting",
+    "lawn"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-20T00:00:00+00:00",
+   "closingDate": "2026-10-28T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "REQUEST TO PURCHASE INDUSTRIAL LAWN MOWER GRASS CUTTING MACHINE OF RAMUSHWANA FIRE STATION.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6510416f-5b07-482b-9697-f99350b58e19.pdf&downloadedFileName=REQUEST%20TO%20PURCHASE%20INDUSTRIAL%20LAWN%20MOWER%20GRASS%20CUTTING%20MACHINE%20OF%20RAMUSHWANA%20FIRE%20STATION.pdf",
+     "format": "pdf",
+     "published": "2026-10-19T15:48:20Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3363,7 +3677,7 @@
    "reference": "RFQ 12243",
    "title": "REQUEST FOR QUOTE OF A CONTRACTOR APPOINTMENT TO REPAIR WATER LEAK AND POTHOLES NEXT TO CAR RENTALS FOR A PERIOD OF SIX MONTHS AT KING PHALO AIRPORT",
    "department": "Airports Company of South Africa",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "repair",
@@ -4407,7 +4721,7 @@
    "reference": "37046-5W",
    "title": "Framework contract to appoint a \r\npanel of contractors to undertake the \r\nimplementation of new and upgrading \r\nof water infrastructure projects on \r\nbehalf of the Water & sanitation Unit \r\nwithin the eThekwini Municipality for \r\na period of 36 months",
    "department": "Ethekwini Metropolitan Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "tractors",
@@ -5329,7 +5643,7 @@
    "reference": "RFP092/2026",
    "title": "Appointment of contractor for the design, supply, installation, commissioning and initial operation and maintenance of water efficient sanitation systems in informal settlements in the City of Cape Town",
    "department": "Development Bank of Southern Africa",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -5624,7 +5938,7 @@
    "reference": "RFP 202091",
    "title": "APPOINTMENT OF A QUALIFIED CONTRACTOR TO SUPPORT THE ENGINEERING & PLANT MAINTENANCE DEPARTMENT TO PERFORM PREVENTATIVE PLANNED MAINTENANCE AND BREAKDOWN MAINTENANCE ON MECHANICAL TYPE EQUIPMENT USED IN LABORATORIES: GROENKLOOF AND REGIONS - SECUNDA, RICHARDS BAY, OLIFANTSFONTEIN NETFA, CAPE TOWN, AND PORT ELIZABETH).",
    "department": "The South African Bureau of Standards (SABS)",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -5665,7 +5979,7 @@
    "reference": "RFP 202092",
    "title": "APPOINTMENT OF A QUALIFIED CONTRACTOR TO SUPPORT THE ENGINEERING & PLANT MAINTENANCE DEPARTMENT IN MAINTAINING INSTRUMENTATION AND AUTOMATION TECHNOLOGIES EQUIPMENT USED IN LABORATORIES FOR 3 YEARS: GROENKLOOF AND REGIONS - SECUNDA, RICHARDS BAY, OLIFANTSFONTEIN NETFA, CAPE TOWN, AND PORT ELIZABETH).",
    "department": "The South African Bureau of Standards (SABS)",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -5840,7 +6154,7 @@
    "reference": "CSRT/BID06/2026/27",
    "title": "Advertisement and appointment of a contractor with CIDB grading of 7CE or higher for the upgrading of S44 Road for 1.7 KM and auxiliary work for 36 km of road between Deneysville Intersection & Heilbron (Phase 2) for the Department of Community Safety Roads & Transport for a period of 7 months",
    "department": "Free State - Police, Roads and Transport",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "tractor",
@@ -6770,7 +7084,7 @@
    "reference": "DLRRD-RID-FS 003 (2026/2027)",
    "title": "APPOINTMENT OF A CONTRACTOR TO UNDERTAKE THE UPGRADING OF 2,01KM SEDIBA ROAD AND CULVERT CROSSING IN THABA NCHU UNDER MANGAUNG METRO MUNICIPALITY: FREE STATE PROVINCE",
    "department": "Department of Agriculture, Land Reform & Rural Development",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "tractor",
@@ -7447,7 +7761,7 @@
    "reference": "34981/TNP/2026-27-R",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR SERVICING AND MAINTENANCE OF WATER TREATMENT PLANTS AND WATER PURIFICATION PLANTS WITHIN THE TSITSIKAMMA SECTION OF GARDEN ROUTE NATIONAL PARK FOR A PERIOD OF 36 MONTHS.",
    "department": "South African National Parks",
-   "category": "Grounds & Landscaping",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -7667,7 +7981,7 @@
    "reference": "10375597",
    "title": "REQUEST FOR QUOTATION (RFQ) FOR APPOINTMENT OF A SERVICE PROVIDERS FOR MAINTENANCE, SERVICING, PUMPING, CLEANING AND JETTING OF SEPTIC TANKS FOR A PERIOD OF 5 MONTHS IN WESTERN CAPE REGION",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -8789,7 +9103,7 @@
    "reference": "SANRAL N002-300-2020/1",
    "title": "THE CONSTRUCTION OF PAVEMENT AND SETTLEMENT REPAIRS OF NATIONAL ROUTE 2, SECTION 30 FROM BUSHVELD RETREAT FARM (Km 44.00) TO HLUHLUWE INTERCHANGE (Km 55.00)",
    "department": "South African National Roads Agency Soc Limited (SANRAL)",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "farm",
@@ -8977,7 +9291,7 @@
    "reference": "37086/TNP/2026-27",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE TO SUPPLY LABOUR FORCE AND MATERIAL FOR REACTIVE MAINTENANCE AT THE TSITSIKAMMA SECTION OF GARDEN ROUTE NATIONAL PARK FOR A PERIOD OF 12 MONTHS",
    "department": "South African National Parks",
-   "category": "Grounds & Landscaping",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -10352,7 +10666,7 @@
    "reference": "SCMU6-26/27-0008",
    "title": "INVITATION TO CONTRACTORS AT CIDB GRADE 2EB/2EP OR HIGHER TO SUBMIT EXPRESSION OF INTEREST FOR THE APPOINTMENT OF COMPETENT CONTRACTORS FOR ELECTRICAL ENGINEERING WORKS-BUILDING/ELECTRICAL ENGINEERING WORKS- INFRASTRUCTURE (INCLUDING EMERGENCY PROCUREMENT), AS AND WHEN REQUIRED, FOR THE EASTERN CAPE DEPARTMENT OF EDUCATION",
    "department": "Eastern Cape - Education",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "building",
@@ -12610,7 +12924,7 @@
    "reference": "TDR37/2026/2027",
    "title": "APPOINTMENT OF A CONTRACTOR FOR THE GROUND MAINTENANCE OF THE MOUNTAIN VIEW HOUSING DEVELOPMENT",
    "department": "Mossel Bay Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -12697,7 +13011,7 @@
    "reference": "NRA 2026/0767",
    "title": "FOR CONSULTING ENGINEERING SERVICES FOR THE COMMUNITY DEVELOPMENT AND SMALL CONTRACTOR TRAINING AND DEVELOPMENT ON A 6KM GRAVEL ROAD UPGRADE NEAR NATIONAL ROAD N2, SECTION 21 IN MDATYA",
    "department": "South African National Roads Agency Soc Limited (SANRAL)",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "tractor",
@@ -14369,7 +14683,7 @@
    "reference": "CSA/06/2026-27",
    "title": "THE DESIGN, SUPPLY, INSTALLATION, TESTING, \r\nCOMMISSIONING AND VERIFICATION OF LED ARENA \r\nFLOODLIGHTING, NEW FLOODLIGHT MASTS AND ASSOCIATED \r\nELECTRICAL INFRASTRUCTURE, AND MAINTENANCE FOR TEN \r\n(10) YEARS, AT THE BORDER CRICKET GROUNDS (BUFFALO \r\nPARK STADIUM), KUGOMPO CITY",
    "department": "Buffalo City Metropolitan Municipality",
-   "category": "Grounds & Landscaping",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "grounds",
@@ -15319,7 +15633,7 @@
    "reference": "RLM/DCD/0061/2026/27",
    "title": "Appointment of a service provider to render the cleaning and hygiene service at various municipal buildings for a period of 36 months as and when needed",
    "department": "Rustenburg Local Municipality",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "buildings",
