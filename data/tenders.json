@@ -1,404 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-26T00:58:56.817936+00:00",
+ "generatedAt": "2026-10-26T10:43:47.336233+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-02",
- "releasesScanned": 2196,
- "uniqueTenders": 2256,
+ "coveredFrom": "2026-09-24",
+ "releasesScanned": 2837,
+ "uniqueTenders": 2837,
  "count": 186,
  "categories": {
-  "Software & Systems": 89,
-  "Network & Infrastructure": 30,
-  "Telecoms & Unified Comms": 7,
-  "End-User Computing": 26,
+  "Software & Systems": 91,
+  "End-User Computing": 25,
   "Cloud Services": 4,
-  "IT Services & Support": 20,
-  "Cybersecurity": 10
+  "Network & Infrastructure": 30,
+  "IT Services & Support": 19,
+  "Cybersecurity": 10,
+  "Telecoms & Unified Comms": 7
  },
  "onlineBriefings": 2,
- "carriedOver": 33,
+ "carriedOver": 12,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-174594",
-   "reference": "NB148/2026",
-   "title": "Request for quotation : A service provider to Support , Maintain and host project  management system",
-   "department": "Tourism",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "management system",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-16T00:00:00+00:00",
-   "closingDate": "2026-10-26T10:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "REVISED SBD 4 -Annexure A_AUG 2026.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d876fbcd-1820-421f-91d6-0a632aea57fc.docx&downloadedFileName=REVISED%20SBD%204%20-Annexure%20A_AUG%202026.docx",
-     "format": "docx",
-     "published": "2026-10-19T10:50:35Z"
-    },
-    {
-     "title": "NB148.2026 RFQ Final System Support -26 OCT 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=13b738b5-ccb6-4d13-94b2-201cf08165bc.pdf&downloadedFileName=NB148.2026%20RFQ%20Final%20System%20Support%20-26%20OCT%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-19T10:48:24Z"
-    },
-    {
-     "title": "ADDENDUM 4 - TEMPLATE - SWORN AFFIDAVIT OF BOTH EME AND QSE -.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=cccd58d6-c1bc-4670-8f56-a35942d9678d.docx&downloadedFileName=ADDENDUM%204%20-%20TEMPLATE%20-%20SWORN%20AFFIDAVIT%20OF%20BOTH%20EME%20AND%20QSE%20-.docx",
-     "format": "docx",
-     "published": "2026-10-19T10:49:09Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-171412",
-   "reference": "E3549NTCSAMWP",
-   "title": "ADLash Maintenance and Minor Works for NTCSA, Eskom and Broadband Infraco Optic Fibre Network on an as and when required basis for a period of three (3) years",
-   "department": "ESKOM",
-   "category": "Network & Infrastructure",
-   "company": "rtc",
-   "matchedTerms": [
-    "fibre",
-    "network"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-23T00:00:00+00:00",
-   "closingDate": "2026-10-26T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "works",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "NTCSA Non-Disclosure Agreement (NDA) Vendors.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c1d98693-33b9-4be1-8b58-0b53858926a6.docx&downloadedFileName=NTCSA%20Non-Disclosure%20Agreement%20%28NDA%29%20Vendors.docx",
-     "format": "docx",
-     "published": "2026-09-23T10:17:49Z"
-    },
-    {
-     "title": "240-154832228 Tx Environmental Managemement Tender Returnable Doc ADLASH.xls",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e4d495ad-166f-4e21-82c4-1861aa31f6bf.xls&downloadedFileName=240-154832228%20Tx%20Environmental%20Managemement%20Tender%20Returnable%20Doc%20ADLASH.xls",
-     "format": "xls",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "Tax Questionnaire - Supplier Evaluation Pack for 01 March 2026 to 28 February 2027.docx (2).doc",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=698a1179-5952-45e3-ad2b-1b811be45923.doc&downloadedFileName=Tax%20Questionnaire%20-%20Supplier%20Evaluation%20Pack%20for%2001%20March%202026%20to%2028%20February%202027.docx%20%282%29.doc",
-     "format": "doc",
-     "published": "2026-09-23T10:17:50Z"
-    },
-    {
-     "title": "Annexure K - Pricing Schedule_Adlash Maintenance.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a54f4cad-1f35-4af8-b928-2a1757d015fb.xlsx&downloadedFileName=Annexure%20K%20-%20Pricing%20Schedule_Adlash%20Maintenance.xlsx",
-     "format": "xlsx",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "NTCSA - Annexure T 1 OHS Tender Evaluation Criteria ADLASH (High risk)-.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d81479fe-b258-477b-8dc7-2ccc790db8fc.pdf&downloadedFileName=NTCSA%20-%20Annexure%20T%201%20OHS%20Tender%20Evaluation%20Criteria%20ADLASH%20%28High%20risk%29-.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:49Z"
-    },
-    {
-     "title": "240-12248652 (Rev 7) List of Tender Returnables-ADLASH Maintenance.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d5f8e540-380b-4507-9344-2e043bf32f53.pdf&downloadedFileName=240-12248652%20%28Rev%207%29%20List%20of%20Tender%20Returnables-ADLASH%20Maintenance.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:47Z"
-    },
-    {
-     "title": "Updated - 08.10.2026 - NTCSA - Annexure T 1 OHS Tender Evaluation Criteria ADLASH (High risk)-.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ac211ecb-b0ab-45b6-92ed-4e043ecc5a51.pdf&downloadedFileName=Updated%20-%2008.10.2026%20-%20NTCSA%20-%20Annexure%20T%201%20OHS%20Tender%20Evaluation%20Criteria%20ADLASH%20%28High%20risk%29-.pdf",
-     "format": "pdf",
-     "published": "2026-10-08T15:38:08Z"
-    },
-    {
-     "title": "NTCSA_E-Tenderers E-Tendering Training Acknowledgement Form - Security.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=240a47f2-ce3a-4370-9ba3-4f43b90d1155.docx&downloadedFileName=NTCSA_E-Tenderers%20E-Tendering%20Training%20Acknowledgement%20Form%20-%20Security.docx",
-     "format": "docx",
-     "published": "2026-09-23T10:17:49Z"
-    },
-    {
-     "title": "SDLI Input for ADLash Maintenance.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=43af3dfe-d14c-4cf5-80cb-51d9dcf499cc.pdf&downloadedFileName=SDLI%20Input%20for%20ADLash%20Maintenance.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T13:35:27Z"
-    },
-    {
-     "title": "240-110600836_ Enviromental Requirements Proforma ADLASH.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=16041a82-4f52-4e74-b0b9-53400b6c51d4.docx&downloadedFileName=240-110600836_%20Enviromental%20Requirements%20Proforma%20ADLASH.docx",
-     "format": "docx",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "OHS Specification for ADLASH Contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0db31c35-f0a7-405d-91de-5386fa5c00b2.pdf&downloadedFileName=OHS%20Specification%20for%20ADLASH%20Contract.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:49Z"
-    },
-    {
-     "title": "240-77471499 Annexure B (3)Acknowledgement of OHS legal  Other Requirements.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6ae1fba2-09a5-4628-b9d7-6ac4fcc3cada.pdf&downloadedFileName=240-77471499%20Annexure%20B%20%283%29Acknowledgement%20of%20OHS%20legal%20%20Other%20Requirements.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:47Z"
-    },
-    {
-     "title": "240-105658000 Supplier Quality Management Specification (3).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=9b681f73-e1e7-47c7-9de7-733dee44d5c9.pdf&downloadedFileName=240-105658000%20Supplier%20Quality%20Management%20Specification%20%283%29.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:47Z"
-    },
-    {
-     "title": "HIRA- ADLASH Maintenance Contract - Cover Page -Sign.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=816c0ee8-0176-4fc3-8191-76e181f0ae2d.pdf&downloadedFileName=HIRA-%20ADLASH%20Maintenance%20Contract%20-%20Cover%20Page%20-Sign.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:49Z"
-    },
-    {
-     "title": "C0 TSC3 Contract cover pages.ADLash.doc",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=417afe77-ea7f-4e9c-9f36-78965ea2791b.doc&downloadedFileName=C0%20TSC3%20Contract%20cover%20pages.ADLash.doc",
-     "format": "doc",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "C1 2b TSC3 Data by Contractor.ADLash.doc",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=bdccb46e-8994-4791-b757-78c1f0fb2f1d.doc&downloadedFileName=C1%202b%20TSC3%20Data%20by%20Contractor.ADLash.doc",
-     "format": "doc",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "C1 2a TSC3 Data by Employer.ADLash.doc",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c88edf0a-49a6-4f4e-a0db-7e2e9c878063.doc&downloadedFileName=C1%202a%20TSC3%20Data%20by%20Employer.ADLash.doc",
-     "format": "doc",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "C2  TSC3 Pricing Data Option .ADLash.doc",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1df65ca4-c5e1-487e-a592-81885c740451.doc&downloadedFileName=C2%20%20TSC3%20Pricing%20Data%20Option%20.ADLash.doc",
-     "format": "doc",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "NTCSA_E-tendering Help Manual for supplier.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=81e3e556-2bd9-4886-94cc-8805ed252065.docx&downloadedFileName=NTCSA_E-tendering%20Help%20Manual%20for%20supplier.docx",
-     "format": "docx",
-     "published": "2026-09-23T10:17:49Z"
-    },
-    {
-     "title": "Supporting Doc D.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c4c2b35c-bced-4ad1-aec0-8a34389c817d.pdf&downloadedFileName=Supporting%20Doc%20D.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:50Z"
-    },
-    {
-     "title": "C1 1 TSC3 Offer Acceptance.ADLash.doc",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f0efaed7-2814-4035-a817-8a7cbc66a847.doc&downloadedFileName=C1%201%20TSC3%20Offer%20Acceptance.ADLash.doc",
-     "format": "doc",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "Form A Tender - Rev 9.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=075ece19-5c91-444b-aa0a-9844473cd684.pdf&downloadedFileName=Form%20A%20Tender%20-%20Rev%209.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "240-109253302 _ Quality Control Plan or Inspection Test Plan (QCP or ITP) rev 2.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=704d0f12-d2f3-4899-86c3-9c5f36fb85b2.docx&downloadedFileName=240-109253302%20_%20Quality%20Control%20Plan%20or%20Inspection%20Test%20Plan%20%28QCP%20or%20ITP%29%20rev%202.docx",
-     "format": "docx",
-     "published": "2026-09-23T10:17:47Z"
-    },
-    {
-     "title": "Tender Questions and Answers - 15.10.2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f03a5545-5e31-4bbd-a3ec-c43d18a57f5b.pdf&downloadedFileName=Tender%20Questions%20and%20Answers%20-%2015.10.2026.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T13:04:54Z"
-    },
-    {
-     "title": "C3 1 TSC3 Employers Service Information.ADLash.doc",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=3920d109-aaca-420c-88b8-ca175f0ee667.doc&downloadedFileName=C3%201%20TSC3%20Employers%20Service%20Information.ADLash.doc",
-     "format": "doc",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "Supporting Doc E.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c8589529-ebd0-42c4-89ff-d3f479196303.pdf&downloadedFileName=Supporting%20Doc%20E.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:50Z"
-    },
-    {
-     "title": "Invitation_to_Tender_(ITT) - ADLASH.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=33ed9790-e516-4609-a920-df6dd3c0a802.pdf&downloadedFileName=Invitation_to_Tender_%28ITT%29%20-%20ADLASH.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:49Z"
-    },
-    {
-     "title": "Scope of Works - ADLash.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=06d8118c-2448-4831-8aaf-e0d4292ff352.pdf&downloadedFileName=Scope%20of%20Works%20-%20ADLash.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T13:35:27Z"
-    },
-    {
-     "title": "240-180100134_Transmission Environmental Requirements for Contractors and or Suppliers Standard.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7a4d4cbd-9353-4036-ad34-e76bf6e96516.pdf&downloadedFileName=240-180100134_Transmission%20Environmental%20Requirements%20for%20Contractors%20and%20or%20Suppliers%20Standard.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "240-109253698 CQP Template.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c296ecda-31d1-477b-9dec-e936fb001cb3.docx&downloadedFileName=240-109253698%20CQP%20Template.docx",
-     "format": "docx",
-     "published": "2026-09-23T10:17:48Z"
-    },
-    {
-     "title": "Supporting Doc C.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=018c8192-ccef-4da8-888b-febae6874a6d.pdf&downloadedFileName=Supporting%20Doc%20C.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:50Z"
-    },
-    {
-     "title": "Eskom - Standard Conditions of Tender - 30 January 2025.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=aa87770f-88bf-42c3-aada-ff65e2adffbe.pdf&downloadedFileName=Eskom%20-%20Standard%20Conditions%20of%20Tender%20-%2030%20January%202025.pdf",
-     "format": "pdf",
-     "published": "2026-09-23T10:17:48Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-171108",
-   "reference": "E3498NTCSAMWP",
-   "title": "Lease Agreement for telecommunication transaction to secure suitable office accommodation in Orkney /Klerksdorp ±542m² office space with parking for approximately 12 vehicles. The property must be located within a 3-5 km radius of the mew Orkney Northwest for a period of 5(five) years",
-   "department": "Eskom National Transmission Company of South Africa",
-   "category": "Telecoms & Unified Comms",
-   "company": "rtc",
-   "matchedTerms": [
-    "telecommunication"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-21T00:00:00+00:00",
-   "closingDate": "2026-10-26T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "20260618_NTCSA Invitation_to_Tender eTendering_ORKNEY LEASE_E3498NTCSAMWP.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8678a15c-710d-446a-ae84-2aac1d856603.pdf&downloadedFileName=20260618_NTCSA%20Invitation_to_Tender%20eTendering_ORKNEY%20LEASE_E3498NTCSAMWP.pdf",
-     "format": "pdf",
-     "published": "2026-09-21T10:37:43Z"
-    },
-    {
-     "title": "OHS Orkney Klerksdorp Office Lease Tender Returnable.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=093cc753-437a-456d-8999-39888eca2824.pdf&downloadedFileName=OHS%20Orkney%20Klerksdorp%20Office%20Lease%20Tender%20Returnable.pdf",
-     "format": "pdf",
-     "published": "2026-09-21T10:37:43Z"
-    },
-    {
-     "title": "LEASE CONTRACT – STANDARD TERMS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=93c2afff-b404-4992-b83a-804ef05bac73.pdf&downloadedFileName=LEASE%20CONTRACT%20%E2%80%93%20STANDARD%20TERMS.pdf",
-     "format": "pdf",
-     "published": "2026-09-21T10:37:43Z"
-    },
-    {
-     "title": "20260601_NTCSA Telecoms Offices at Orkney Klerksdorp- lease transaction__List of Tender Returnables_Cat 4_.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2e481f27-19c8-46df-afda-84a36b80e7c6.pdf&downloadedFileName=20260601_NTCSA%20Telecoms%20Offices%20at%20Orkney%20Klerksdorp-%20lease%20transaction__List%20of%20Tender%20Returnables_Cat%204_.pdf",
-     "format": "pdf",
-     "published": "2026-09-21T10:37:43Z"
-    },
-    {
-     "title": "20241106_Method Statement_Cat 4 Tender Returnables.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ea07dec5-e638-4e8a-b2e9-9912e7e96472.docx&downloadedFileName=20241106_Method%20Statement_Cat%204%20Tender%20Returnables.docx",
-     "format": "docx",
-     "published": "2026-09-21T10:37:43Z"
-    },
-    {
-     "title": "20260601_NTCSA Telecoms Offices at Orkney Klerksdorp- lease transaction_Form A_Cat 4_ Rev 9.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d323b713-c4bd-4487-9652-9b531557661d.docx&downloadedFileName=20260601_NTCSA%20Telecoms%20Offices%20at%20Orkney%20Klerksdorp-%20lease%20transaction_Form%20A_Cat%204_%20Rev%209.docx",
-     "format": "docx",
-     "published": "2026-09-21T10:37:43Z"
-    },
-    {
-     "title": "OHS Orkney  Klerksdorp Office Lease Tender Returnable.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=55e9f457-755b-4832-9c61-b476c4ff0a44.pdf&downloadedFileName=OHS%20Orkney%20%20Klerksdorp%20Office%20Lease%20Tender%20Returnable.pdf",
-     "format": "pdf",
-     "published": "2026-09-21T10:37:43Z"
-    },
-    {
-     "title": "Scope for Telecoms Office at Orkney- Southern Grid  office  lease transaction Filal Revised.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2c44967e-5abf-414d-82c3-ba7961ac5090.pdf&downloadedFileName=Scope%20for%20Telecoms%20Office%20at%20Orkney-%20Southern%20Grid%20%20office%20%20lease%20transaction%20Filal%20Revised.pdf",
-     "format": "pdf",
-     "published": "2026-09-21T10:37:44Z"
-    },
-    {
-     "title": "20251029_Supplier Quality Management_Security Services.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1f4e0ab5-42bc-4825-ae98-d11c1747de10.docx&downloadedFileName=20251029_Supplier%20Quality%20Management_Security%20Services.docx",
-     "format": "docx",
-     "published": "2026-09-21T10:37:43Z"
-    },
-    {
-     "title": "SHEQ SPECIFICATION LEASE ORKNEY.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=51d17cc2-cb13-47a9-981a-db8e8b65808a.pdf&downloadedFileName=SHEQ%20SPECIFICATION%20LEASE%20ORKNEY.pdf",
-     "format": "pdf",
-     "published": "2026-09-21T10:37:44Z"
-    },
-    {
-     "title": "240-77471499 Annexure B.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0aef7b8f-e17f-42ce-9e25-e2a900f41f69.pdf&downloadedFileName=240-77471499%20Annexure%20B.pdf",
-     "format": "pdf",
-     "published": "2026-09-21T10:37:43Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-174857",
    "reference": "IM2232026",
@@ -2476,46 +2096,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-171809",
-   "reference": "SCM/1373/G/2026-2027",
-   "title": "EXPRESSION OF INTEREST (EOI) FOR THE SUPPLY AND DELIVERY OF CARTRIDGES, PRINTER ACCESSORIES AND MEMORY STICKS",
-   "department": "Nelson Mandela Bay Municipality",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "printer"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-28T00:00:00+00:00",
-   "closingDate": "2026-10-29T11:00:00+00:00",
-   "procurementMethod": "Expression of interest",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Draft Advert 23-09-2026 (004).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a85f462f-a0ce-47b7-9206-6dc8deb19101.pdf&downloadedFileName=Draft%20Advert%2023-09-2026%20%28004%29.pdf",
-     "format": "pdf",
-     "published": "2026-09-28T09:02:56Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-171687",
    "reference": "SCMU5-26/27-0062",
    "title": "BID FOR THE APPOINTMENT OF A SERVICE PROVIDER FOR RENEWAL OF DESKTOP AND LAPTOP BACKUP SOLUTION FOR A PERIOD OF 24 MONTHS",
@@ -2863,6 +2443,18 @@
      "published": "2026-10-23T11:09:34Z"
     },
     {
+     "title": "SCOPE OF WORK FOR  Speed-gates POC 10375555.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f8c7399c-b053-463a-a3a1-662a6de2632a.docx&downloadedFileName=SCOPE%20OF%20WORK%20FOR%20%20Speed-gates%20POC%2010375555.docx",
+     "format": "docx",
+     "published": "2026-10-26T09:35:43Z"
+    },
+    {
+     "title": "SCOPE OF WORK FOR  Speed-gates POC 10375555.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=019eaf3f-e805-43e9-88db-666c47b8da1e.docx&downloadedFileName=SCOPE%20OF%20WORK%20FOR%20%20Speed-gates%20POC%2010375555.docx",
+     "format": "docx",
+     "published": "2026-10-26T09:35:46Z"
+    },
+    {
      "title": "COVER PAGE REQUEST FOR QUOTATION FOR SPEED GATES POC 10375555.docx",
      "url": "https://www.etenders.gov.za/home/Download?blobName=fa011378-bf8a-40df-90b9-c840c9ed2fa2.docx&downloadedFileName=COVER%20PAGE%20REQUEST%20FOR%20QUOTATION%20FOR%20SPEED%20GATES%20POC%2010375555.docx",
      "format": "docx",
@@ -3127,7 +2719,7 @@
    "reference": "RFQ/SB/046/BACK-UP-EXEC-LICENSE-RENEWAL/ICT/2026-2",
    "title": "BACKUP EXEC LICENSE RENEWAL FOR 2 YEARS",
    "department": "South African Civil Aviation Authority",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -4089,6 +3681,48 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-175662",
+   "reference": "RFQ 4688b/26",
+   "title": "Appointment of a training provider to provide Executive Artificial Intelligence (AI) and Data Analytics Training for four (4) Executive Managers.",
+   "department": "South African Weather Service",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "ai",
+    "artificial intelligence",
+    "data analytics"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-26T00:00:00+00:00",
+   "closingDate": "2026-11-02T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ 4688b_.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b8e84589-30df-452c-9f6c-35ee54355616.pdf&downloadedFileName=RFQ%204688b_.pdf",
+     "format": "pdf",
+     "published": "2026-10-26T11:35:12Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175502",
    "reference": "RFQ2026/27-65",
    "title": "Appointment of a Service provider to Supply, customization and licensing of Sage Business Intelligence module or similar solution for management reporting for one year.",
@@ -4870,6 +4504,64 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=1b00d271-c419-4a3a-b522-bde4261ffcfd.pdf&downloadedFileName=TENDER%20DOCUMENT%20-%20MSCOA%20SYSTEM%20SUPPORT.pdf",
      "format": "pdf",
      "published": "2026-10-15T12:08:46Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175651",
+   "reference": "RFX6000003758",
+   "title": "Appointment of a Service Provider for The Supply and Delivery of 2 X PowerEdge Server R670 (17th Generation) to Sentech Head Office.",
+   "department": "Sentech Limited",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "server"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-26T00:00:00+00:00",
+   "closingDate": "2026-11-03T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "SCOPE OF WORK - RFX 6000003758.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=76c83f24-3fbc-4c75-9849-251ba7139457.pdf&downloadedFileName=SCOPE%20OF%20WORK%20-%20RFX%206000003758.pdf",
+     "format": "pdf",
+     "published": "2026-10-26T10:27:11Z"
+    },
+    {
+     "title": "Standard Bidding (SDB) 4_Annexure A.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8eeddb50-08d0-4779-948a-2fb9870df835.pdf&downloadedFileName=Standard%20Bidding%20%28SDB%29%204_Annexure%20A.pdf",
+     "format": "pdf",
+     "published": "2026-10-26T10:27:11Z"
+    },
+    {
+     "title": "SENTECH SUPPLIER CONSENT FORM (1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0326aa4c-0dd2-443d-a64f-f736b4d14de9.pdf&downloadedFileName=SENTECH%20SUPPLIER%20CONSENT%20FORM%20%281%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-26T10:27:11Z"
+    },
+    {
+     "title": "RFX 6000003758.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3702cc84-7a05-4929-9f1d-fc2b341e0293.pdf&downloadedFileName=RFX%206000003758.pdf",
+     "format": "pdf",
+     "published": "2026-10-26T10:27:11Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -6631,6 +6323,64 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=cabd7bb1-6692-4b18-9df7-83cbd4dccebf.pdf&downloadedFileName=KZNL%203%202026%20SAGE%20Support.pdf",
      "format": "pdf",
      "published": "2026-10-12T11:31:00Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173351",
+   "reference": "BID - 2646GS",
+   "title": "BID - 2646GS  - For Bids For SAP Infrastructure",
+   "department": "City Power – Johannesburg",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "sap"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-08T00:00:00+00:00",
+   "closingDate": "2026-11-10T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Bid Document - SAP INFRASTRUCTURE.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e5b321a9-5a92-4ebf-8cde-21a08f1190b4.pdf&downloadedFileName=Bid%20Document%20-%20SAP%20INFRASTRUCTURE.pdf",
+     "format": "pdf",
+     "published": "2026-10-08T12:30:32Z"
+    },
+    {
+     "title": "FAQs for Request for Clarification.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e14498df-05e0-4152-a8aa-4b34332e96a8.pdf&downloadedFileName=FAQs%20for%20Request%20for%20Clarification.pdf",
+     "format": "pdf",
+     "published": "2026-10-26T11:27:16Z"
+    },
+    {
+     "title": "Bid Advert 2646GS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=627ba51b-3602-4f6c-984a-8a444aa26600.pdf&downloadedFileName=Bid%20Advert%202646GS.pdf",
+     "format": "pdf",
+     "published": "2026-10-08T12:30:32Z"
+    },
+    {
+     "title": "CP SPECIFICATION TSSTAN 183.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=21514b84-b965-483e-abd1-cbc12ace2fcd.pdf&downloadedFileName=CP%20SPECIFICATION%20TSSTAN%20183.pdf",
+     "format": "pdf",
+     "published": "2026-10-08T12:30:33Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -9291,6 +9041,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-175633",
+   "reference": "SCMU5-26/27-0060",
+   "title": "BID FOR THE APPOINTMENT OF SERVICE PROVIDER FOR THE UPGRADE OF A UNIFIED COMMUNICATION SYSTEM FOR A PERIOD OF 12 MONTHS",
+   "department": "Eastern Cape - Roads and Public Works",
+   "category": "Telecoms & Unified Comms",
+   "company": "rtc",
+   "matchedTerms": [
+    "system",
+    "unified communication"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-26T00:00:00+00:00",
+   "closingDate": "2026-11-24T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "UNIFIED COMMUNICATION SYSTEM FOR A PERIOD OF 12 MONTHS final draft.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=59b981e3-b128-42c9-94c5-67bb0f6f42e6.pdf&downloadedFileName=UNIFIED%20COMMUNICATION%20SYSTEM%20FOR%20A%20PERIOD%20OF%2012%20MONTHS%20final%20draft.pdf",
+     "format": "pdf",
+     "published": "2026-10-26T09:29:42Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175290",
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
@@ -9457,16 +9248,16 @@
    },
    "documents": [
     {
-     "title": "Invitation to bid PSiRA - Telephony.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ad9aac93-7b3a-444e-8288-6e78e5518b7a.docx&downloadedFileName=Invitation%20to%20bid%20PSiRA%20-%20Telephony.docx",
-     "format": "docx",
-     "published": "2026-10-23T15:55:00Z"
-    },
-    {
      "title": "bid document- telephony.pdf",
      "url": "https://www.etenders.gov.za/home/Download?blobName=0119d383-2eef-44cc-94e6-88917d9d5c1a.pdf&downloadedFileName=bid%20document-%20telephony.pdf",
      "format": "pdf",
      "published": "2026-10-23T15:54:12Z"
+    },
+    {
+     "title": "Invitation to bid PSiRA - Telephony.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b550c1a8-ba07-4e11-a212-fbf22f0ac85f.pdf&downloadedFileName=Invitation%20to%20bid%20PSiRA%20-%20Telephony.pdf",
+     "format": "pdf",
+     "published": "2026-10-26T11:42:27Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
