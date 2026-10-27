@@ -1,62 +1,21 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-27T16:28:27.117017+00:00",
+ "generatedAt": "2026-10-27T21:17:29.410513+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-01",
- "releasesScanned": 4510,
- "uniqueTenders": 4565,
- "count": 313,
+ "coveredFrom": "2026-09-15",
+ "releasesScanned": 3656,
+ "uniqueTenders": 3656,
+ "count": 312,
  "categories": {
-  "Facilities Maintenance": 163,
-  "Supply & Consumables": 88,
+  "Facilities Maintenance": 172,
+  "Supply & Consumables": 78,
   "Grounds & Landscaping": 33,
   "Agriculture": 29
  },
  "onlineBriefings": 0,
- "carriedOver": 1,
+ "carriedOver": 11,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-173788",
-   "reference": "CSIR RFQ No 9545/27/10/2026",
-   "title": "Request for Quotation (RFQ) for the supply, delivery and installation of agricultural-grade perimeter fencing for ten (10) designated Aloe Forex cultivation sites in Peddie, Eastern Cape",
-   "department": "Council for Scientific and Industrial Research (CSIR)",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "agricultur",
-    "fencing"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-12T00:00:00+00:00",
-   "closingDate": "2026-10-27T16:30:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "CSIR_RFQ_9545-27-07-2026-Fencing Eastern Cape.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=53ce4174-9716-4634-bc4a-5ad00e72cf13.pdf&downloadedFileName=CSIR_RFQ_9545-27-07-2026-Fencing%20Eastern%20Cape.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T15:06:16Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-173298",
    "reference": "E3230GXLPMATR",
@@ -2088,7 +2047,7 @@
    "reference": "E3615GXMPDUV",
    "title": "Service, Maintenance, Calibration, Supply of spares and consumables of Lab Instruments at Duvha Power Station on as and when required basis for a period of 60 Months.",
    "department": "ESKOM",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -2294,7 +2253,7 @@
    "reference": "LPT/QUT039/2026",
    "title": "CLEANING OF WINDOWS AT ISMINI, TRAINING CENTRE (LEBOWAKGOMO), VHEMBE DISTRICT OFFICE, MOPANI DISTRICT OFFICE AND TALAS BUILDING (POLOKWANE)",
    "department": "Limpopo - Provincial Treasury",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "building",
@@ -2662,7 +2621,7 @@
    "reference": "RT33-2026",
    "title": "THE APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY, DELIVERY, INSTALLATION, COMMISSIONING AND MAINTENANCE OF DNA EQUIPMENT, SYSTEMS, ACCESSORIES AND RELATED CONSUMABLES FOR A PERIOD OF 36 MONTHS",
    "department": "National Treasury",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -2703,7 +2662,7 @@
    "reference": "RFB033/26/27",
    "title": "PLACEMENT / OUTRIGHT PURCHASE OF A DIGITAL PATHOLOGY SCANNING SOLUTION AT NHLS; GEORGE MUKHARI, POLOKWANE, TSHWANE ACADEMIC DIVISION, CHARLOTTE MAXEKE JOHANNESBURG ACADEMIC HOSPITAL, CHRIS HANI BARAGWANATH, BLOEMFONTEIN (UNIVERSITAS), INKOSI ALBERT LUTHULI, MTHATHA, EAST LONDON, PORT ELIZABETH, TYGERBERG, GROOTE SCHUUR HOSPITAL, GREENPOINT COMPLEX AND NIOH (BRAAMFONTEIN) INCLUDING CONSUMABLES, SERVICE AND MAINTENANCE FOR A PERIOD OF FIVE (5) YEARS",
    "department": "National Health Laboratory Service",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -3066,7 +3025,7 @@
    "reference": "RFP OW-021/2026/27",
    "title": "SUPPLY AND DELIVERY OF MAINTENANCE MATERIAL AND CONSUMABLES TO OVERBERG WATER BOARD AS AND WHEN REQUIRED FOR A PERIOD OF 36 MONTHS",
    "department": "Overberg Water",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -5464,7 +5423,7 @@
    "reference": "HDA/LIM/2026/002",
    "title": "THE LEASING OF A SUITABLE OFFICE ACCOMMODATION WITH PARKING SPACES INCLUDING CLEANING AND MAINTENANCE OF THE HDA PROVINCIAL OFFICES IN LIMPOPO -POLOKWANE.",
    "department": "Housing Development Agency",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -5771,7 +5730,7 @@
    "reference": "10375597",
    "title": "REQUEST FOR QUOTATION (RFQ) FOR APPOINTMENT OF A SERVICE PROVIDERS FOR MAINTENANCE, SERVICING, PUMPING, CLEANING AND JETTING OF SEPTIC TANKS FOR A PERIOD OF 5 MONTHS IN WESTERN CAPE REGION",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -9354,22 +9313,16 @@
    },
    "documents": [
     {
-     "title": "RFQ Document - Waterfproofing at HO.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7f8b626c-8c44-426e-a5bc-3900f861c8d4.docx&downloadedFileName=RFQ%20Document%20-%20Waterfproofing%20at%20HO.docx",
-     "format": "docx",
-     "published": "2026-10-27T16:04:50Z"
-    },
-    {
      "title": "29 Acutt Waterproofing Scope and BOQ.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=de9061bd-c141-4391-9f56-e83a9baef50f.pdf&downloadedFileName=29%20Acutt%20Waterproofing%20Scope%20and%20BOQ.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a25ac321-072e-4573-9f6e-85916bc041c9.pdf&downloadedFileName=29%20Acutt%20Waterproofing%20Scope%20and%20BOQ.pdf",
      "format": "pdf",
-     "published": "2026-10-27T16:04:50Z"
+     "published": "2026-10-27T20:29:01Z"
     },
     {
-     "title": "ViewTenderNoticePdf.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=991cb497-be0c-4d4e-8c78-f106b798dc6c.pdf&downloadedFileName=ViewTenderNoticePdf.pdf",
-     "format": "pdf",
-     "published": "2026-10-27T16:04:50Z"
+     "title": "RFQ Document - Waterfproofing at HO.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=da427cdc-df43-4a4f-8ce3-b3449550abdf.docx&downloadedFileName=RFQ%20Document%20-%20Waterfproofing%20at%20HO.docx",
+     "format": "docx",
+     "published": "2026-10-27T20:29:01Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -9484,7 +9437,7 @@
    "reference": "GSHPT62/2026",
    "title": "THE PLACEMENT OF 2X PHACOEMULSIFICATION MACHINES FOR THE ANTERIOR REMOVAL OF CARATACTS AND THE SUPPLY OF ALL CONSUMABLES INCLUDING A FULLY COMPREHENSIVE MAINTENANCE CONTRACT FOR GROOTE SCHUUR HOSPITAL OVER A THREE (3) YEAR PERIOD",
    "department": "Western Cape - Health",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -13723,7 +13676,7 @@
    "reference": "8/3-11/22627",
    "title": "Appointment of a Service Provider for Printing Solution Equipment, Multifunctional Copier Rental, Maintenance and Consumables for the Period of 36 Months",
    "department": "Msukaligwa Local Municipality",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -14634,7 +14587,7 @@
    "reference": "RLM/DCD/0061/2026/27",
    "title": "Appointment of a service provider to render the cleaning and hygiene service at various municipal buildings for a period of 36 months as and when needed",
    "department": "Rustenburg Local Municipality",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "buildings",

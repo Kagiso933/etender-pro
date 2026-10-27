@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-27T16:28:27.117017+00:00",
+ "generatedAt": "2026-10-27T21:17:29.410513+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-01",
- "releasesScanned": 4510,
- "uniqueTenders": 4565,
+ "coveredFrom": "2026-09-15",
+ "releasesScanned": 3656,
+ "uniqueTenders": 3656,
  "count": 179,
  "categories": {
-  "Software & Systems": 86,
+  "Software & Systems": 82,
   "End-User Computing": 21,
-  "Network & Infrastructure": 31,
+  "Network & Infrastructure": 35,
   "IT Services & Support": 18,
   "Telecoms & Unified Comms": 10,
   "Cybersecurity": 10,
   "Cloud Services": 3
  },
  "onlineBriefings": 2,
- "carriedOver": 1,
+ "carriedOver": 3,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1990,7 +1990,7 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "computer",
@@ -3246,6 +3246,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=f73bd629-2fb6-4386-8d70-591a8899e72d.pdf&downloadedFileName=SPECIFICATION%20FOR%20HIGH-LEVEL%20PORTFOLIO%20MASTER%20PLAN%20FOR%20INTERSITE%20ASSET%20INVESTMENT%20..pdf",
      "format": "pdf",
      "published": "2026-10-27T15:07:24Z"
+    },
+    {
+     "title": "RFQ DOCUMENT.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b83969d5-d26f-4434-af16-66b5c7a6c4f1.pdf&downloadedFileName=RFQ%20DOCUMENT.pdf",
+     "format": "pdf",
+     "published": "2026-10-27T22:09:31Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -7478,7 +7484,7 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -8649,7 +8655,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -9156,7 +9162,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "management system",
