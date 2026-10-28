@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-27T21:17:29.410513+00:00",
+ "generatedAt": "2026-10-28T01:58:58.556992+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-15",
- "releasesScanned": 3656,
- "uniqueTenders": 3656,
- "count": 179,
+ "coveredFrom": "2026-10-02",
+ "releasesScanned": 2405,
+ "uniqueTenders": 2475,
+ "count": 176,
  "categories": {
-  "Software & Systems": 82,
-  "End-User Computing": 21,
-  "Network & Infrastructure": 35,
-  "IT Services & Support": 18,
-  "Telecoms & Unified Comms": 10,
-  "Cybersecurity": 10,
+  "Software & Systems": 87,
+  "End-User Computing": 20,
+  "Network & Infrastructure": 31,
+  "IT Services & Support": 17,
+  "Telecoms & Unified Comms": 9,
+  "Cybersecurity": 9,
   "Cloud Services": 3
  },
  "onlineBriefings": 2,
- "carriedOver": 3,
+ "carriedOver": 28,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -223,46 +223,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=19ce4e72-2979-46c3-b28d-9eaed0879bcb.pdf&downloadedFileName=RFQ282%20AM%20Procurement%20of%20Laptops%20%20UPDATED.pdf",
      "format": "pdf",
      "published": "2026-10-21T20:01:25Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174698",
-   "reference": "RAF/2026/00067",
-   "title": "PROVISION OF IT RESEARCH AND ADVISORY MEMBERSHIP SERVICES TO SUPPORT IT GOVERNANCE, RISK MANAGEMENT, DIGITAL TRANSFORMATION AND STRATEGIC TECHNOLOGY DECISION-MAKING AT THE ROAD ACCIDENT FUND (RAF) FOR A PERIOD OF TWENTY-FOUR (24) MONTHS",
-   "department": "Road Accident Fund",
-   "category": "IT Services & Support",
-   "company": "rtc",
-   "matchedTerms": [
-    "it governance"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-19T00:00:00+00:00",
-   "closingDate": "2026-10-28T11:00:00+00:00",
-   "procurementMethod": "Request for Information",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Request for Information - PROVISION OF IT RESEARCH AND ADVISORY MEMBERSHIP SERVICES .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=06842c1f-536a-495c-bf78-f64ea323b604.pdf&downloadedFileName=Request%20for%20Information%20-%20PROVISION%20OF%20IT%20RESEARCH%20AND%20ADVISORY%20MEMBERSHIP%20SERVICES%20.pdf",
-     "format": "pdf",
-     "published": "2026-10-19T15:49:16Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -488,46 +448,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175281",
-   "reference": "SLM/SCM/32/2026/2027",
-   "title": "SUPPLY AND DELIVERY OF  18 LAPTOPS FOR COUNCILLORS",
-   "department": "Sakhisizwe Local Municipality",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "laptop"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-22T00:00:00+00:00",
-   "closingDate": "2026-10-28T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "TENDER DOCUMENT SUPPLY AND DELIVERY OF 18 LAPTOPS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2da82250-9ab9-494f-8323-67d295a236c6.pdf&downloadedFileName=TENDER%20DOCUMENT%20SUPPLY%20AND%20DELIVERY%20OF%2018%20LAPTOPS.pdf",
-     "format": "pdf",
-     "published": "2026-10-22T16:46:32Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174835",
    "reference": "HO/ ICT/ 10375486 / 10 /2026",
    "title": "REQUEST FOR QUOTATION PROVISION OF 50 PORTABLE HANDHELD POINT-OF-SALE TICKETING DEVICES WITH EMBEDDED PRASA COMPATIBLE SOFTWARE, PAYMENT FACILITATOR AND GATEWAY, INCLUDING SUPPORT AND MAINTENANCE FOR A DURATION OF 6 MONTHS",
@@ -576,66 +496,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=e1da4be6-aca8-4695-b24a-58dc93ce3f68.pdf&downloadedFileName=PRICING%20SCHEDULE.pdf",
      "format": "pdf",
      "published": "2026-10-20T12:38:02Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174624",
-   "reference": "ASA 03/10/2026",
-   "title": "Appointment of a service provider to assist Agrement South Africa in procuring a Mimecast Mega Plan for 50 Users to ensure email cybersecurity and resilience for ASA’s Office 365 email platform for 36 months.",
-   "department": "Agrément South Africa",
-   "category": "Cybersecurity",
-   "company": "rtc",
-   "matchedTerms": [
-    "cyber",
-    "mimecast",
-    "office 365"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-19T00:00:00+00:00",
-   "closingDate": "2026-10-28T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "SBD 4.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=39b430fc-b240-498b-b954-24b00ebd3f90.pdf&downloadedFileName=SBD%204.pdf",
-     "format": "pdf",
-     "published": "2026-10-19T13:05:20Z"
-    },
-    {
-     "title": "Terms of Reference - Mimecast License.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=122e9d7a-040a-40f9-9e61-a3e2e9638bc0.pdf&downloadedFileName=Terms%20of%20Reference%20-%20Mimecast%20License.pdf",
-     "format": "pdf",
-     "published": "2026-10-19T13:05:20Z"
-    },
-    {
-     "title": "SBD 6.1 IN TERMS OF PPR2022 .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2ab272c8-1783-4f63-aa90-c5b2c4383966.pdf&downloadedFileName=SBD%206.1%20IN%20TERMS%20OF%20PPR2022%20.pdf",
-     "format": "pdf",
-     "published": "2026-10-19T13:05:20Z"
-    },
-    {
-     "title": "General Conditions of Contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=85f7a838-7efd-48af-8baf-d9bcb8d45f67.pdf&downloadedFileName=General%20Conditions%20of%20Contract.pdf",
-     "format": "pdf",
-     "published": "2026-10-19T13:05:20Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1990,7 +1850,7 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "computer",
@@ -7484,7 +7344,7 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -7654,7 +7514,7 @@
    "reference": "RFB 3301/ 2026 - (ERP No 530015)",
    "title": "Appointment of a Service Provider to Provide a New Integrated Video Conferencing and Audio-Visual Solution for SAPS UBUNYE Auditorium",
    "department": "State Information Technology Agency",
-   "category": "Telecoms & Unified Comms",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -8655,7 +8515,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -9162,7 +9022,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "management system",

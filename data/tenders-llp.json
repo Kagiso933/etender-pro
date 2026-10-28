@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-27T21:17:29.410513+00:00",
+ "generatedAt": "2026-10-28T01:58:58.556992+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-15",
- "releasesScanned": 3656,
- "uniqueTenders": 3656,
- "count": 312,
+ "coveredFrom": "2026-10-02",
+ "releasesScanned": 2405,
+ "uniqueTenders": 2475,
+ "count": 310,
  "categories": {
-  "Facilities Maintenance": 172,
-  "Supply & Consumables": 78,
-  "Grounds & Landscaping": 33,
-  "Agriculture": 29
+  "Facilities Maintenance": 163,
+  "Supply & Consumables": 83,
+  "Grounds & Landscaping": 34,
+  "Agriculture": 30
  },
  "onlineBriefings": 0,
- "carriedOver": 11,
+ "carriedOver": 59,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1269,46 +1269,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-174580",
-   "reference": "UMS/FIN/STA/09/2026 (Re-advert)",
-   "title": "SUPPLY AND DELIVERY OF STATIONERY TO UMSOBOMVU MUNICIPALITY",
-   "department": "Umsobomvu Local Municipality",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "stationery"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-19T00:00:00+00:00",
-   "closingDate": "2026-10-29T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "SUPPLY AND DELIVERY OF STATIONERY RE-ADVERT.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b286c94a-bae3-4e8d-9db6-850796d0eb9d.pdf&downloadedFileName=SUPPLY%20AND%20DELIVERY%20OF%20STATIONERY%20RE-ADVERT.pdf",
-     "format": "pdf",
-     "published": "2026-10-19T09:22:10Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174237",
    "reference": "RFX6000003723",
    "title": "APPOINTMENT OF A SUITABLY QUALIFIED AND EXPERIENCED SERVICE PROVIDER TO PROVIDE CLEANING AND GARDENING SERVICES FOR A PERIOD OF THREE (3) YEARS AT SENTECH'S MIDDELBURG OPERATIONAL CENTRE, EASTERN CAPE, UNDER THE SOUTHERN REGION.",
@@ -2253,7 +2213,7 @@
    "reference": "LPT/QUT039/2026",
    "title": "CLEANING OF WINDOWS AT ISMINI, TRAINING CENTRE (LEBOWAKGOMO), VHEMBE DISTRICT OFFICE, MOPANI DISTRICT OFFICE AND TALAS BUILDING (POLOKWANE)",
    "department": "Limpopo - Provincial Treasury",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "building",
@@ -3025,7 +2985,7 @@
    "reference": "RFP OW-021/2026/27",
    "title": "SUPPLY AND DELIVERY OF MAINTENANCE MATERIAL AND CONSUMABLES TO OVERBERG WATER BOARD AS AND WHEN REQUIRED FOR A PERIOD OF 36 MONTHS",
    "department": "Overberg Water",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -3167,54 +3127,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-174287",
-   "reference": "RFQ29533 RE-ISSUE",
-   "title": "The Maintenance and repairs of vehicles for King Shaka International Airport, Chief Dawid Stuurman International Airport, King Phalo Airport for period of 6 months.",
-   "department": "Airports Company of South Africa",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "maintenance",
-    "maintenance and repairs",
-    "repairs"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-10-30T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ29533 REISSUE.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7b6b7e17-53ff-47bf-ad68-32153c59f59f.pdf&downloadedFileName=RFQ29533%20REISSUE.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T15:35:45Z"
-    },
-    {
-     "title": "NEC contract Fleet RFQ29533.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5f0b2389-d3b2-4823-b9a5-469ff55f579e.pdf&downloadedFileName=NEC%20contract%20Fleet%20RFQ29533.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T15:35:45Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-171467",
    "reference": "Bid SAWS-467/26",
    "title": "Appointment of service provider to replace the existing security fencing at six radar sites.",
@@ -3290,59 +3202,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=0f7b9a5f-766b-488c-9fcc-49031825219c.pdf&downloadedFileName=Publication%20of%20Names%20of%20Bidders%20iro%20advertised%20Competitive%20Bids%20-%2007%20May%202026.pdf",
      "format": "pdf",
      "published": "2026-09-22T16:31:55Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174253",
-   "reference": "BPM 06/25/26 (RE-ADVERT)",
-   "title": "Panel of service providers for the supply and delivery of Personal Protective Equipment (PPE) as and when required for a period of 36 months (re-advert)",
-   "department": "Ba-Phalaborwa Local Municipality",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "personal protective",
-    "ppe"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-15T00:00:00+00:00",
-   "closingDate": "2026-11-02T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Tender Advert October 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8e7ba809-e53b-40da-ba29-9e5d12fb0593.pdf&downloadedFileName=Tender%20Advert%20October%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T14:37:40Z"
-    },
-    {
-     "title": "APPOINTMENT OF A PANEL OF ACCREDITED TRAINING PROVIDERS FOR A PERIOD OF THREE (3) YEARS Addendum.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=9b2a60c9-a1cb-4074-a850-cf02d3625179.pdf&downloadedFileName=APPOINTMENT%20OF%20A%20PANEL%20OF%20ACCREDITED%20TRAINING%20PROVIDERS%20FOR%20A%20PERIOD%20OF%20THREE%20%283%29%20YEARS%20Addendum.pdf",
-     "format": "pdf",
-     "published": "2026-10-27T12:36:35Z"
-    },
-    {
-     "title": "Personal Protective Equipment (PPE)TENDER DOCUMENT (RE-ADVERT).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6bb63810-804c-4ed5-ae1e-d885516f4675.pdf&downloadedFileName=Personal%20Protective%20Equipment%20%28PPE%29TENDER%20DOCUMENT%20%28RE-ADVERT%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-20T10:26:37Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5423,7 +5282,7 @@
    "reference": "HDA/LIM/2026/002",
    "title": "THE LEASING OF A SUITABLE OFFICE ACCOMMODATION WITH PARKING SPACES INCLUDING CLEANING AND MAINTENANCE OF THE HDA PROVINCIAL OFFICES IN LIMPOPO -POLOKWANE.",
    "department": "Housing Development Agency",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -5730,7 +5589,7 @@
    "reference": "10375597",
    "title": "REQUEST FOR QUOTATION (RFQ) FOR APPOINTMENT OF A SERVICE PROVIDERS FOR MAINTENANCE, SERVICING, PUMPING, CLEANING AND JETTING OF SEPTIC TANKS FOR A PERIOD OF 5 MONTHS IN WESTERN CAPE REGION",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -9437,7 +9296,7 @@
    "reference": "GSHPT62/2026",
    "title": "THE PLACEMENT OF 2X PHACOEMULSIFICATION MACHINES FOR THE ANTERIOR REMOVAL OF CARATACTS AND THE SUPPLY OF ALL CONSUMABLES INCLUDING A FULLY COMPREHENSIVE MAINTENANCE CONTRACT FOR GROOTE SCHUUR HOSPITAL OVER A THREE (3) YEAR PERIOD",
    "department": "Western Cape - Health",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -10409,6 +10268,59 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=d3566a79-4ce3-4013-9717-c13e19dfd3dc.pdf&downloadedFileName=Bid%20Documents%20for%20W11573.pdf",
      "format": "pdf",
      "published": "2026-10-01T14:39:41Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175764",
+   "reference": "RFQ 30599",
+   "title": "REQUEST FOR QUOTE FOR THE LANDSCAPING AND LANDSIDE GARDENS FOR A PERIOD OF 12 MONTHS AT KING SHAKA INTERNATIONAL AIRPORT",
+   "department": "Airports Company of South Africa",
+   "category": "Grounds & Landscaping",
+   "company": "llp",
+   "matchedTerms": [
+    "garden",
+    "landscap"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-12T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "NEC TSC Contract Landscaping Maintenance_RFQ 30599.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a6d9c55b-e5ba-4aa6-8d76-53036f399c6f.pdf&downloadedFileName=NEC%20TSC%20Contract%20Landscaping%20Maintenance_RFQ%2030599.pdf",
+     "format": "pdf",
+     "published": "2026-10-27T07:41:15Z"
+    },
+    {
+     "title": "RFQ 30599 Landscaping Maintenance KSIA.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=88c7e9e9-ae36-450b-8af6-87a1b87118d4.pdf&downloadedFileName=RFQ%2030599%20Landscaping%20Maintenance%20KSIA.pdf",
+     "format": "pdf",
+     "published": "2026-10-27T07:41:14Z"
+    },
+    {
+     "title": "Addendum RFQ 30599.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=cca0c8da-d01f-4c92-9d2a-b56039a092c4.pdf&downloadedFileName=Addendum%20RFQ%2030599.pdf",
+     "format": "pdf",
+     "published": "2026-10-27T13:23:00Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -13676,7 +13588,7 @@
    "reference": "8/3-11/22627",
    "title": "Appointment of a Service Provider for Printing Solution Equipment, Multifunctional Copier Rental, Maintenance and Consumables for the Period of 36 Months",
    "department": "Msukaligwa Local Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -14424,7 +14336,7 @@
    "reference": "MMB2627/037 GS",
    "title": "PREVENTATIVE MAINTENANCE(36 MONTHS) REPAIRS AND SERVICE OF FIRE FIGHTING EQUIPMENT : DR RSM DISTRICT MUNICIPALITY ( SAPS DOJ HOME AFFAIRS LABOUR STATS SA AGRICULTURE & DEEDS)\r\n\r\nCIDB GRADE  3F OR HIGHER",
    "department": "Public Works",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "agricultur",
@@ -14587,7 +14499,7 @@
    "reference": "RLM/DCD/0061/2026/27",
    "title": "Appointment of a service provider to render the cleaning and hygiene service at various municipal buildings for a period of 36 months as and when needed",
    "department": "Rustenburg Local Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "buildings",
