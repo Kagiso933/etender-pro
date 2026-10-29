@@ -1,239 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-29T11:29:45.160295+00:00",
+ "generatedAt": "2026-10-29T21:43:02.157294+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-28",
- "releasesScanned": 76,
- "uniqueTenders": 76,
- "count": 159,
+ "coveredFrom": "2026-09-18",
+ "releasesScanned": 3512,
+ "uniqueTenders": 3567,
+ "count": 165,
  "categories": {
-  "Software & Systems": 71,
-  "IT Services & Support": 18,
-  "Cybersecurity": 9,
-  "End-User Computing": 17,
-  "Network & Infrastructure": 30,
-  "Cloud Services": 5,
-  "Telecoms & Unified Comms": 9
+  "IT Services & Support": 20,
+  "Cybersecurity": 10,
+  "Software & Systems": 82,
+  "Network & Infrastructure": 27,
+  "End-User Computing": 15,
+  "Cloud Services": 3,
+  "Telecoms & Unified Comms": 8
  },
  "onlineBriefings": 2,
- "carriedOver": 153,
+ "carriedOver": 3,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-175262",
-   "reference": "TPT/2026/10/1386/12937/RFQ",
-   "title": "Provide Microsoft teams room solution systems for RCB engineering boardroom at RCB TPT terminal.",
-   "department": "Transnet SOC Ltd",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "microsoft"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-22T00:00:00+00:00",
-   "closingDate": "2026-10-29T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "SUPPLY AND INSTALLATION OF MICROSOFT TEAMS SOLUTION SYSTEMS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=3b871531-a953-48ff-90db-be82f7c4668f.pdf&downloadedFileName=SUPPLY%20AND%20INSTALLATION%20OF%20MICROSOFT%20TEAMS%20SOLUTION%20SYSTEMS.pdf",
-     "format": "pdf",
-     "published": "2026-10-22T15:27:42Z"
-    },
-    {
-     "title": "RFQ template approach_market_memo",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5facd71c-7f7f-4cc3-832f-e871c5df23fa&downloadedFileName=RFQ%20template%20approach_market_memo",
-     "format": "",
-     "published": "2026-10-22T15:27:41Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-172160",
-   "reference": "RFQ 73977 re-issue",
-   "title": "Request for Quotations for the Supply and Installation of AWOS Equipment, Accessories and Software Upgrade at OR Tambo International Airport for a period of 6 months at Airports Company South Africa.",
-   "department": "Airports Company of South Africa Limited",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "software"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-30T00:00:00+00:00",
-   "closingDate": "2026-10-29T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ 73977 - ECC3 Contract_ACSA AWOS Project.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=076f9ada-6259-40b2-b5cf-597d08c2fa34.pdf&downloadedFileName=RFQ%2073977%20-%20ECC3%20Contract_ACSA%20AWOS%20Project.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T14:47:05Z"
-    },
-    {
-     "title": "Tender document RFQ 73977-30 Sep 26.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c94d6baf-ea54-4e3f-b41d-b22e9f7ca3fe.pdf&downloadedFileName=Tender%20document%20RFQ%2073977-30%20Sep%2026.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T14:43:04Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-172106",
-   "reference": "MDM 2026/27-03",
-   "title": "Provision of Intergrated GIS Management System for Mopani District Municipality for a period of 36 Months.",
-   "department": "Mopani District Municipality",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "gis",
-    "management system",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-29T00:00:00+00:00",
-   "closingDate": "2026-10-29T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "MDM Spetember 2026 bid advert (1).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=3fdf834f-76e0-4906-b577-87c0f518759c.pdf&downloadedFileName=MDM%20Spetember%202026%20bid%20advert%20%281%29.pdf",
-     "format": "pdf",
-     "published": "2026-09-29T19:42:08Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175461",
-   "reference": "energy simulation software",
-   "title": "Request for Quotation (RFQ) for the supply and licensing of energy simulation software capable of designing, modelling, simulating, and optimizing solar PV and hybrid energy systems. The software should support technical and financial assessments to evaluate system performance, energy generation, consumption, cost-effectiveness, and potential savings, enabling informed decision-making on renewable energy projects.",
-   "department": "Land and Agricultural Development Bank of South Africa",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "software",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-23T00:00:00+00:00",
-   "closingDate": "2026-10-29T14:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ for the supply and licensing of energy simulation software capable of designing, modelling, simulating, and optimizing solar PV and hybrid energy systems.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5a9ae7f6-a97a-4b5a-aed9-a230cca69bb6.pdf&downloadedFileName=RFQ%20for%20the%20supply%20and%20licensing%20of%20energy%20simulation%20software%20capable%20of%20designing%2C%20modelling%2C%20simulating%2C%20and%20optimizing%20solar%20PV%20and%20hybrid%20energy%20systems.pdf",
-     "format": "pdf",
-     "published": "2026-10-23T14:13:55Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175135",
-   "reference": "RFQ/CMS/ICT/2-21102026",
-   "title": "Appointment of a service provider to provide SigniFlow product renewals for twelve (12) months",
-   "department": "Council for Medical Schemes",
-   "category": "IT Services & Support",
-   "company": "rtc",
-   "matchedTerms": [
-    "ict"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-22T00:00:00+00:00",
-   "closingDate": "2026-10-30T00:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ-Appointment of a service provider to provide SigniFlow product renewals.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8386dba8-283d-4ee3-98cd-7c62c3258409.pdf&downloadedFileName=RFQ-Appointment%20of%20a%20service%20provider%20to%20provide%20SigniFlow%20product%20renewals.pdf",
-     "format": "pdf",
-     "published": "2026-10-26T13:16:16Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-175374",
    "reference": "HO / ICT / 1037 5555/ 10 / 2026",
@@ -380,88 +165,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-172316",
-   "reference": "E3637DXGOU",
-   "title": "Provision of GIS and remote sensing services and spatial datasets on an as-and-when-required basis for a period of five years",
-   "department": "ESKOM",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "gis"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-01T00:00:00+00:00",
-   "closingDate": "2026-10-30T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "20260701_GIS Remote Sensing_ Form A_Cat 4_ Rev 9.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fe36231c-5a18-4c86-8bf3-0774e9accd13.pdf&downloadedFileName=20260701_GIS%20Remote%20Sensing_%20Form%20A_Cat%204_%20Rev%209.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T08:44:26Z"
-    },
-    {
-     "title": "Invitation to Tender (ITT)_.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=719b329f-5ca3-4fb2-8abc-2aec43462964.pdf&downloadedFileName=Invitation%20to%20Tender%20%28ITT%29_.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T08:44:26Z"
-    },
-    {
-     "title": "240-109253302 _ Quality Control Plan or Inspection Test Plan (QCP or ITP)-rev 3.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=72e7a50f-a4d2-4947-9f20-72c0117d2057.pdf&downloadedFileName=240-109253302%20_%20Quality%20Control%20Plan%20or%20Inspection%20Test%20Plan%20%28QCP%20or%20ITP%29-rev%203.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T08:44:26Z"
-    },
-    {
-     "title": "20260701_GIS Remote sensing_List of Tender Returnables_Cat 4_ Rev 7.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a195df13-9374-4057-900d-8ce12ff6f17f.pdf&downloadedFileName=20260701_GIS%20Remote%20sensing_List%20of%20Tender%20Returnables_Cat%204_%20Rev%207.pdf",
-     "format": "pdf",
-     "published": "2026-10-16T15:09:00Z"
-    },
-    {
-     "title": "Clarification Document_22.10.2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=cde4d542-4a36-45e1-a38c-9832162aa507.pdf&downloadedFileName=Clarification%20Document_22.10.2026.pdf",
-     "format": "pdf",
-     "published": "2026-10-22T11:44:10Z"
-    },
-    {
-     "title": "NEC3 TSC3_GIS _.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5decb2cc-4fb1-456b-80fe-d1737316fb6a.pdf&downloadedFileName=NEC3%20TSC3_GIS%20_.pdf",
-     "format": "pdf",
-     "published": "2026-10-06T11:12:23Z"
-    },
-    {
-     "title": "240-126469599_Method Statement template -Rev 3 .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c82f1f43-8bcd-4460-b70a-e44548b9d25d.pdf&downloadedFileName=240-126469599_Method%20Statement%20template%20-Rev%203%20.pdf",
-     "format": "pdf",
-     "published": "2026-10-16T15:07:50Z"
-    },
-    {
-     "title": "SDLI Strategy_BIDDERS TEMPLATE The provision of GIS and remote sensing services and spatial datasets on an as and when required basis.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2ddf463f-f378-4b59-b43a-e976f12fdbfd.pdf&downloadedFileName=SDLI%20Strategy_BIDDERS%20TEMPLATE%20The%20provision%20of%20GIS%20and%20remote%20sensing%20services%20and%20spatial%20datasets%20on%20an%20as%20and%20when%20required%20basis.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T08:44:26Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-175479",
    "reference": "RFQ/MICT/77/2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR ENHANCEMENTS, SUPPORT AND MAINTENANCE OF THE MICT SETA WEBSITE FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
@@ -497,49 +200,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=0b5c2663-8c36-48b4-91e4-a467521ad092.pdf&downloadedFileName=RFQ-MICT-77-2026-%20Website%20Maintenance.pdf",
      "format": "pdf",
      "published": "2026-10-23T14:53:02Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175254",
-   "reference": "RFQ/SB/046/BACK-UP-EXEC-LICENSE-RENEWAL/ICT/2026-2",
-   "title": "BACKUP EXEC LICENSE RENEWAL FOR 2 YEARS",
-   "department": "South African Civil Aviation Authority",
-   "category": "IT Services & Support",
-   "company": "rtc",
-   "matchedTerms": [
-    "backup",
-    "ict",
-    "license",
-    "license renewal"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-22T00:00:00+00:00",
-   "closingDate": "2026-10-30T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ Form - Backup Exec License Renewal for 2 Year 2026 License (1).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0801baa9-d9f1-4e14-ac2b-545b20035340.pdf&downloadedFileName=RFQ%20Form%20-%20Backup%20Exec%20License%20Renewal%20for%202%20Year%202026%20License%20%281%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-22T15:18:52Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -646,7 +306,7 @@
    "reference": "RFB 3292-2026 (ERP No 509011)",
    "title": "Request for the Procurement and Supply of Computer Labels for All SITA Data Centres for a Period of Five (5) Years. Non Compulsory Virtual Briefing Session Will be Held on 19 October 2026 at 11h00am.",
    "department": "State Information Technology Agency",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "computer",
@@ -752,7 +412,7 @@
    "reference": "SCMU14-26/27-0009",
    "title": "Rate based contract for the supply of ICT server related infrastructure for a period of 3 years (36 months) \r\n[SITA registered IT vendors/service providers (RFB  contract)]",
    "department": "Eastern Cape - Sport Recreation Arts and Culture",
-   "category": "Network & Infrastructure",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -1468,6 +1128,129 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176054",
+   "reference": "RFQ-112799",
+   "title": "Computer Monitor 27\"",
+   "department": "Statistics South Africa",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "computer",
+    "computer monitor"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-02T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Standard Bidding Document(SBD6.1) .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0b2c9993-bcfb-41df-a814-1c2b7ab48053.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD6.1%29%20.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:32:27Z"
+    },
+    {
+     "title": "Monitor Spec 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0b5944a9-7e09-4ef6-87e4-29498169b237.pdf&downloadedFileName=Monitor%20Spec%202026.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:32:27Z"
+    },
+    {
+     "title": "Standard Bidding Document(SBD4).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4d1046fc-422a-4181-892d-2ff30018bb2a.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD4%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:32:27Z"
+    },
+    {
+     "title": "Standard Bidding Document(SBD1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fb8800cc-bad7-44fc-9673-c3206be96bba.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD1%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:32:27Z"
+    },
+    {
+     "title": "Standard Bidding Document(SBD3.1) -Firm Prices.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b78e3bf8-d8d8-428e-859f-cc478b58b58f.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD3.1%29%20-Firm%20Prices.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:32:27Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176063",
+   "reference": "RFQ-112820",
+   "title": "PRINTER CARTRIDGE",
+   "department": "Statistics South Africa",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "printer"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-02T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Standard Bidding Document(SBD6.1) .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c6079656-8888-4514-831f-120372fff2c8.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD6.1%29%20.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:43:53Z"
+    },
+    {
+     "title": "Standard Bidding Document(SBD3.1) -Firm Prices.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=cf9138be-8a1c-453d-9117-6f5a97b48fe1.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD3.1%29%20-Firm%20Prices.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:43:53Z"
+    },
+    {
+     "title": "Standard Bidding Document(SBD4).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=923a49be-caf6-4733-9777-7e80048fa295.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD4%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:43:53Z"
+    },
+    {
+     "title": "Standard Bidding Document(SBD1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a990bebb-eaf0-4689-a625-b50d93bb0ce1.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD1%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:43:52Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175662",
    "reference": "RFQ 4688b/26",
    "title": "Appointment of a training provider to provide Executive Artificial Intelligence (AI) and Data Analytics Training for four (4) Executive Managers.",
@@ -2041,7 +1824,7 @@
    "reference": "220/2026",
    "title": "OFFICE EQUIPMENT (PRINTERS, COPIERS AND MULTI-FUNCTION MACHINES: LEASE OPTION) AND PRINT\r\nMANAGEMENT SOFTWARE",
    "department": "Kouga Municipality",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "printers",
@@ -2124,22 +1907,22 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-173839",
-   "reference": "E3291CXMWPR",
-   "title": "PROCUREMENT OF DOMAIN NAME SYSTEM (DNS) SECURITY MANAGED SERVICES FOR A PERIOD OF FIVE (5) YEARS. (1 YEAR IMPLEMENTATION AND 4 YEARS MAINTENANCE AND SUPPORT)",
-   "department": "ESKOM",
-   "category": "IT Services & Support",
+   "id": "ocds-9t57fa-176078",
+   "reference": "RFQ2579b",
+   "title": "DESCRIPTION: APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION OF ADOBE ACROBAT PRO AND ADOBE CREATIVE SUITE LICENSES, AND SUPPORT FOR A PERIOD OF THIRTY-SIX (36) MONTHS.",
+   "department": "Mine Health and Safety Council",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
-    "managed services",
-    "system"
+    "adobe acrobat pro and adobe creative suite licens",
+    "license"
    ],
    "value": null,
    "currency": "ZAR",
-   "publishedDate": "2026-10-12T00:00:00+00:00",
-   "closingDate": "2026-11-03T10:00:00+00:00",
-   "procurementMethod": "Request for Proposal",
-   "procurementCategory": "consultingServices",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-03T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
    "eligibility": "",
    "submission": "",
    "contact": {},
@@ -2156,106 +1939,10 @@
    },
    "documents": [
     {
-     "title": "Annexure V - E-tendering Help Manual for Supplier.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b3e65885-506a-4e6e-ba0a-01d7ed18aee6.pdf&downloadedFileName=Annexure%20V%20-%20E-tendering%20Help%20Manual%20for%20Supplier.pdf",
+     "title": "RFQ 2579b - Adobe Acrobat and Creative Suite license (003).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=50c1a5f8-68e2-4bbd-933f-62a640b33b43.pdf&downloadedFileName=RFQ%202579b%20-%20Adobe%20Acrobat%20and%20Creative%20Suite%20license%20%28003%29.pdf",
      "format": "pdf",
-     "published": "2026-10-12T23:22:15Z"
-    },
-    {
-     "title": "Annexure O SDL&I Template for Bidders - Domain Name System (DNS) v0.1.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d266af52-052a-4b5c-85c1-071cdc5fd36b.docx&downloadedFileName=Annexure%20O%20SDL%26I%20Template%20for%20Bidders%20-%20Domain%20Name%20System%20%28DNS%29%20v0.1.docx",
-     "format": "docx",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure P 240-105658000 SUPPLIER QUALITY MANAGEMENT SPEC REV4 FINAL 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f8d67f92-c236-458e-870c-2276ed8eaf05.pdf&downloadedFileName=Annexure%20P%20240-105658000%20SUPPLIER%20QUALITY%20MANAGEMENT%20SPEC%20REV4%20FINAL%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure P 20260702_DNS Solution and Maintenance_ Form A Rev 10 -Cat2.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=eb4b5598-9e9c-4871-9f01-2435100fdc65.docx&downloadedFileName=Annexure%20P%2020260702_DNS%20Solution%20and%20Maintenance_%20Form%20A%20Rev%2010%20-Cat2.docx",
-     "format": "docx",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure N2 DNS Security Technical Evaluation Criteria 05 May 2026.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=579d1f31-5a78-4977-8795-30176bf8a076.xlsx&downloadedFileName=Annexure%20N2%20DNS%20Security%20Technical%20Evaluation%20Criteria%2005%20May%202026.xlsx",
-     "format": "xlsx",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure K Supplier_Evaluation_Pack_Template_for_01_March_2024_to_29_February_2025.doc",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=18663c53-7afa-454a-83c1-42284441f942.doc&downloadedFileName=Annexure%20K%20Supplier_Evaluation_Pack_Template_for_01_March_2024_to_29_February_2025.doc",
-     "format": "doc",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure P 240-109253698 CQP Template 2021.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=11e5c93e-c3c0-4ecc-9dec-4f2c8c739773.docx&downloadedFileName=Annexure%20P%20240-109253698%20CQP%20Template%202021.docx",
-     "format": "docx",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure P 20260702_DNS solution and maint_Qualiy  returnablesCat 2_ Rev 7.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=88fff703-6565-49af-9a59-5365b4a246a7.pdf&downloadedFileName=Annexure%20P%2020260702_DNS%20solution%20and%20maint_Qualiy%20%20returnablesCat%202_%20Rev%207.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure L NEC Professional Services Contract - DNS.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=54677dcb-bd53-4753-87ce-58deb3c1a700.docx&downloadedFileName=Annexure%20L%20NEC%20Professional%20Services%20Contract%20-%20DNS.docx",
-     "format": "docx",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure T Eskom_-_Standard_Conditions_of_Tender_-_30_January_2025 (1).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=bedea649-7acf-4919-968e-76f262d6a7cf.pdf&downloadedFileName=Annexure%20T%20Eskom_-_Standard_Conditions_of_Tender_-_30_January_2025%20%281%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure A - J Invitation to Tender (ITT) for DNS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=94fc1d5f-468d-402c-983f-7878de887d1f.pdf&downloadedFileName=Annexure%20A%20-%20J%20Invitation%20to%20Tender%20%28ITT%29%20for%20DNS.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T23:22:13Z"
-    },
-    {
-     "title": "Annexure S 559-1789391746 Third-Party Security Risk Assessment Questionnaire_Rev 7.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7b992d5b-b8d7-4c96-98a9-7a557bda112c.docx&downloadedFileName=Annexure%20S%20559-1789391746%20Third-Party%20Security%20Risk%20Assessment%20Questionnaire_Rev%207.docx",
-     "format": "docx",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure P 240-109253302 _ Quality Control Plan or Inspection Test Plan (QCP or ITP)-rev 3.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f1e08df9-a90f-470b-bda4-843c86f3dd58.docx&downloadedFileName=Annexure%20P%20240-109253302%20_%20Quality%20Control%20Plan%20or%20Inspection%20Test%20Plan%20%28QCP%20or%20ITP%29-rev%203.docx",
-     "format": "docx",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure M DNS Pricing Schedule v0.1.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=520267cf-a71e-4dec-9fa9-b4eae6c69031.xlsx&downloadedFileName=Annexure%20M%20DNS%20Pricing%20Schedule%20v0.1.xlsx",
-     "format": "xlsx",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure N1 Domain Name System (DNS) Security Managed Services Tender Scope of Work 04 dec 2025 FV1 signed.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5faeb194-e62e-40be-b373-c063251696c6.pdf&downloadedFileName=Annexure%20N1%20Domain%20Name%20System%20%28DNS%29%20Security%20Managed%20Services%20Tender%20Scope%20of%20Work%2004%20dec%202025%20FV1%20signed.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure Q Group Technology-  SHE Tender Requirements _ Professional Services _Adhoc Support.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7dcdc2e7-b3ce-4a06-a3af-f9b889384cdf.docx&downloadedFileName=Annexure%20Q%20Group%20Technology-%20%20SHE%20Tender%20Requirements%20_%20Professional%20Services%20_Adhoc%20Support.docx",
-     "format": "docx",
-     "published": "2026-10-12T23:22:14Z"
-    },
-    {
-     "title": "Annexure U -Tenderers E-Tendering Training Acknowledgement Form.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=90bb31b0-d403-42f6-978c-f9e4426f0406.pdf&downloadedFileName=Annexure%20U%20-Tenderers%20E-Tendering%20Training%20Acknowledgement%20Form.pdf",
-     "format": "pdf",
-     "published": "2026-10-12T23:22:15Z"
+     "published": "2026-10-28T12:16:33Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3100,6 +2787,58 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176084",
+   "reference": "HO/ ICT/ 10375769 / 10 /2026",
+   "title": "REQUEST FOR QUOTATION\r\nAPPOINTMENT OF A SERVICE PROVIDER TO IMPLEMENT AND OPERATIONALISE DATA GOVERNANCE STRATEGY, FRAMEWORK AND DATA MANAGEMENT FOR SIX (6) MONTHS",
+   "department": "Passenger Rail Agency of South Africa",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "ict"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-05T12:00:00+00:00",
+   "procurementMethod": "Request for Proposal",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "PRASA_Scope of Work_Data_Governance_and_Management_Strategy_Framework Implementation v2.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=877b6b8d-9bef-4faf-89d7-031777f21949.pdf&downloadedFileName=PRASA_Scope%20of%20Work_Data_Governance_and_Management_Strategy_Framework%20Implementation%20v2.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T12:47:04Z"
+    },
+    {
+     "title": "SAP Ariba Sourcing User Guide - Supplier Responses E-Tender.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5bd752c9-b5a0-45a1-98f5-4fa0e6ce1059.pdf&downloadedFileName=SAP%20Ariba%20Sourcing%20User%20Guide%20-%20Supplier%20Responses%20E-Tender.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T12:47:04Z"
+    },
+    {
+     "title": "Cover Page for 10375769 b.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b39d34cc-18bb-44b0-86eb-b81212f3b89e.docx&downloadedFileName=Cover%20Page%20for%2010375769%20b.docx",
+     "format": "docx",
+     "published": "2026-10-28T12:47:03Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175906",
    "reference": "RFQ 134/2026",
    "title": "PROVISION AND DELIVERY OF COMPUTER EQUIPMENT, ACCESORIES AND SERVER LICENSES",
@@ -3350,52 +3089,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=46d04ed9-6bae-4f60-9696-ed131ed5ef9a.pdf&downloadedFileName=Invitation%20to%20Bid%20Document_%20Laptops%20and%20Accessories.pdf",
      "format": "pdf",
      "published": "2026-10-21T12:36:54Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176241",
-   "reference": "RFQ 10419003 R",
-   "title": "Request for Quotation for SAP Technical and Functional Support and Maintenance Services for SAP ECC 6.0 EHP7 and SAP S/4HANA (12 Months)",
-   "department": "Rand Water",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "sap"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-29T00:00:00+00:00",
-   "closingDate": "2026-11-06T00:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RW SCM 00016 F- Rev 11 - Request for Quotation–10419003 –SAP Support and Mainteance 24 Months.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=4ee8abd3-75b1-451b-8c27-605ecd66af89.pdf&downloadedFileName=RW%20SCM%2000016%20F-%20Rev%2011%20-%20Request%20for%20Quotation%E2%80%9310419003%20%E2%80%93SAP%20Support%20and%20Mainteance%2024%20Months.pdf",
-     "format": "pdf",
-     "published": "2026-10-29T12:27:29Z"
-    },
-    {
-     "title": "Functionality  Returnable Schedules.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1f17c8c4-f690-47ce-a29a-f507b8eac6c3.pdf&downloadedFileName=Functionality%20%20Returnable%20Schedules.pdf",
-     "format": "pdf",
-     "published": "2026-10-29T12:28:44Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3672,6 +3365,12 @@
    },
    "documents": [
     {
+     "title": "RFB 3273-2026 - Annexure 6c- Bid specification Updted.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5fb87b75-d1e2-4872-ba50-24a452700e4a.docx&downloadedFileName=RFB%203273-2026%20-%20Annexure%206c-%20Bid%20specification%20Updted.docx",
+     "format": "docx",
+     "published": "2026-10-29T13:11:48Z"
+    },
+    {
      "title": "RFB 3273-2026  - Annexure 6c- Bid specification.docx",
      "url": "https://www.etenders.gov.za/home/Download?blobName=626ff6d2-78ff-4eb3-b57f-3e473aae7741.docx&downloadedFileName=RFB%203273-2026%20%20-%20Annexure%206c-%20Bid%20specification.docx",
      "format": "docx",
@@ -3682,6 +3381,18 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=50968525-b531-4dba-90f9-67ed275313af.docx&downloadedFileName=RFB%203273-2026%20-%20Annexure%206c-%20Bid%20specification%20%28updted%29.docx",
      "format": "docx",
      "published": "2026-10-26T13:15:54Z"
+    },
+    {
+     "title": "RFB 3273-2026 - ERRATUM2.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8d3ddc37-d7cb-4876-914a-770dff442414.pdf&downloadedFileName=RFB%203273-2026%20-%20ERRATUM2.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T13:11:48Z"
+    },
+    {
+     "title": "RFB 3273-2026 - Annexure 6d- Price Schedule Updted.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=963cd59c-1f8f-4ae8-9919-7d1c2968d577.xlsx&downloadedFileName=RFB%203273-2026%20-%20Annexure%206d-%20Price%20Schedule%20Updted.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-29T13:12:57Z"
     },
     {
      "title": "RFB 3273-2026 - ERRATUM.pdf",
@@ -3959,47 +3670,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-173081",
-   "reference": "019/2026/EWSS/LAPTOPS/RFB",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF DESKTOPS, LAPTOPS AND ACCESSORIES, INCLUDING WARRANTY AND SUPPORT FOR A PERIOD OF THREE (3) YEARS",
-   "department": "Trans-Caledon Tunnel Authority",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "desktop",
-    "laptop"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-06T00:00:00+00:00",
-   "closingDate": "2026-11-06T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Desktops and laptops RFB 06102026 Final.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=01ad1107-1648-474a-a323-05b92247a64c.pdf&downloadedFileName=Desktops%20and%20laptops%20RFB%2006102026%20Final.pdf",
-     "format": "pdf",
-     "published": "2026-10-06T15:57:12Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174890",
    "reference": "HO/ ICT/ 10374850 / 10 /2026",
    "title": "REQUEST FOR QUOTATION\r\nPROVISION OF COMPREHENSIVE BUS AND RAIL TICKETING SYSTEM SUPPORT, MAINTENANCE, ENHANCEMENTS, INTEGRATION, AND UPGRADES FOR A DURATION OF 6 MONTHS",
@@ -4176,6 +3846,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176058",
+   "reference": "RFQ22139",
+   "title": "REQUEST FOR QUOTATION : MIMECAST LICENSES FOR A PERIOD OF 36 MONTHS",
+   "department": "South African Human Rights Commission",
+   "category": "Cybersecurity",
+   "company": "rtc",
+   "matchedTerms": [
+    "license",
+    "mimecast"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-06T23:30:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ22139 - Mimecast License for 36 months.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d3fa7d8c-f637-455a-a034-af66034343dd.pdf&downloadedFileName=RFQ22139%20-%20Mimecast%20License%20for%2036%20months.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T13:35:38Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174227",
    "reference": "077/2026/EWSS/LICENSES/RFB",
    "title": "Appointment of a Service Provider for the renewal of Adobe Acrobat Pro DC & Creative Cloud licenses for a period of three (3) years",
@@ -4219,6 +3930,111 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=6bed28b1-6dfb-4f17-b918-fe222220178a.pdf&downloadedFileName=Clarification%20no%201%20ADOBE%20281020296.pdf",
      "format": "pdf",
      "published": "2026-10-28T12:59:37Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176281",
+   "reference": "RFX6000003794",
+   "title": "Appointment of a Service Provider for the Supply and Delivery of \r\nTwo (2) PowerEdge R470 Servers to Sentech Head Office.",
+   "department": "Sentech Limited",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "server"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-11-09T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "SCOPE OF WORK - RFX 6000003794.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b3031dac-fb2a-4f14-a785-3cf11327ac94.pdf&downloadedFileName=SCOPE%20OF%20WORK%20-%20RFX%206000003794.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:02:12Z"
+    },
+    {
+     "title": "SENTECH SUPPLIER CONSENT FORM (1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=901c3897-9f01-4a05-bc37-71876cd99927.pdf&downloadedFileName=SENTECH%20SUPPLIER%20CONSENT%20FORM%20%281%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:02:12Z"
+    },
+    {
+     "title": "Standard Bidding (SDB) 4_Annexure A.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=82ec87dd-5f63-44e3-8f72-7570f760c841.pdf&downloadedFileName=Standard%20Bidding%20%28SDB%29%204_Annexure%20A.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:02:12Z"
+    },
+    {
+     "title": "RFX 6000003794.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=80abaaad-e2ac-47bb-90e5-96202232f11c.pdf&downloadedFileName=RFX%206000003794.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:02:12Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175519",
+   "reference": "SCMU 35/2026",
+   "title": "SUPPLY, DELIVERY AND INSTALLATION OF SPEED AND REDLIGHT VIOLATION MANAGEMENT SYSTEM FOR THE TZANEEN TRAFFIC DEPARTMENT",
+   "department": "Greater Tzaneen Municipality",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "management system",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-23T00:00:00+00:00",
+   "closingDate": "2026-11-09T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "SCMU35~1.PDF",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=caa72c13-2b21-4929-b3f0-2f37906c9a2e.PDF&downloadedFileName=SCMU35~1.PDF",
+     "format": "pdf",
+     "published": "2026-10-27T13:03:41Z"
+    },
+    {
+     "title": "COMBINED OCTOBER ADVERT 02.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2317ca15-c65f-4d46-bb0e-5d6cd3683de8.pdf&downloadedFileName=COMBINED%20OCTOBER%20ADVERT%2002.pdf",
+     "format": "pdf",
+     "published": "2026-10-23T16:09:27Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -4516,6 +4332,106 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176287",
+   "reference": "57495/0",
+   "title": "APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE SUPPLY AND DELIVERY OF ICT EQUIPMENTS FOR NKANGALA DISTRICT MUNICIPALITY FOR A PERIOD OF 36 MONTHS AS AND WHEN REQUIRED (RE-ADVERT)",
+   "department": "Nkangala District Municipality",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "ict"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-11-10T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "4 Returnable Documents Cover page white page.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d400efad-9048-4d60-984d-14f66c61d258.pdf&downloadedFileName=4%20Returnable%20Documents%20Cover%20page%20white%20page.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:52Z"
+    },
+    {
+     "title": "10 Bill of Quantities.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=28f71338-0cdc-4591-862b-18faf7668df2.pdf&downloadedFileName=10%20Bill%20of%20Quantities.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:52Z"
+    },
+    {
+     "title": "8 Contract Data.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=58121f35-9b52-4f13-9468-467ad24052f4.pdf&downloadedFileName=8%20Contract%20Data.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:52Z"
+    },
+    {
+     "title": "9 Pricing Instructions print on yellow.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2e2788a0-334f-4d50-a2e5-4f230f08436a.pdf&downloadedFileName=9%20Pricing%20Instructions%20print%20on%20yellow.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:52Z"
+    },
+    {
+     "title": "5 List of Returnable Documents.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=143a70aa-8d04-419a-87b2-5136e597ee23.pdf&downloadedFileName=5%20List%20of%20Returnable%20Documents.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:52Z"
+    },
+    {
+     "title": "6 The Contract White Page.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=905bf145-0e43-48f8-8108-61831b54e8aa.pdf&downloadedFileName=6%20The%20Contract%20White%20Page.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:52Z"
+    },
+    {
+     "title": "2 Contents  Notice print on white .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=374b596e-0bda-4f3e-9dc0-7428112e353d.pdf&downloadedFileName=2%20Contents%20%20Notice%20print%20on%20white%20.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:51Z"
+    },
+    {
+     "title": "1 COVER PAGE Print in colour.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fa475779-f0b4-42b5-9c77-7fe813d3446d.pdf&downloadedFileName=1%20COVER%20PAGE%20Print%20in%20colour.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:51Z"
+    },
+    {
+     "title": "11 Scope of Work Blue page.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0a4577b4-662a-4531-9e7e-b554052bdbd1.pdf&downloadedFileName=11%20Scope%20of%20Work%20Blue%20page.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:52Z"
+    },
+    {
+     "title": "3 Tender data  print on pink.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=36b890ee-5c05-447d-83bf-db7db5a0a084.pdf&downloadedFileName=3%20Tender%20data%20%20print%20on%20pink.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:52Z"
+    },
+    {
+     "title": "7 Form of Offer and Acceptance yellow page.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=91f8d369-9577-43dc-8861-fba73fdda327.pdf&downloadedFileName=7%20Form%20of%20Offer%20and%20Acceptance%20yellow%20page.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:16:52Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175471",
    "reference": "10375262",
    "title": "REQUEST FOR QUOTATION (RFQ) FOR THE APPOINTMENT OF QUALIFIED AND EXPERIENCED ICT TRAINING SERVICE PROVIDERS FOR THE PROVISION OF SPECIALIZED ICT TRAINING PROGRAMS FOR EMPLOYEES IN THE WESTERN CAPE REGION",
@@ -4791,6 +4707,47 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=bc1775b3-f45d-4865-80b8-bcf7d316edab.pdf&downloadedFileName=Appointment%20of%20Provider%20for%20the%20Supply%20and%20Deliver%20of%20Computer%20Hardware%2C%20Devices%2C%20Peripherals%2C%20and%20Computer%20Consumables%20for%20a%20Period%20of%20Three%20Years.pdf",
      "format": "pdf",
      "published": "2026-10-08T09:40:24Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176022",
+   "reference": "REQ00000000000866",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY, DELIVER, INSTALL, TEST AND COMMISSION OF WATER BACKUP STORAGE TANKS, BOOSTER PUMP SYSTEM AND WATER SUPPLY CHANGEOVER SYSTEM AT THE SOUTH AFRICAN NURSING COUNCIL (SANC)",
+   "department": "South African Nursing Council",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "backup",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-11T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "works",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "INVITATION TO QUOTE -WATER BACKUP.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=34479299-284e-40df-a425-d031652ec96c.pdf&downloadedFileName=INVITATION%20TO%20QUOTE%20-WATER%20BACKUP.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T10:28:53Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5366,10 +5323,16 @@
      "published": "2026-10-14T12:14:24Z"
     },
     {
-     "title": "Request for Proposal (RFP)MS Teams Telephony.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8d9eff96-ba32-471b-a8b6-7d2a55613ebd.pdf&downloadedFileName=Request%20for%20Proposal%20%28RFP%29MS%20Teams%20Telephony.pdf",
+     "title": "Request for Proposal (RFP)MS Teams Telephony -AMENDED.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0d477670-f6d9-4385-933d-7684da94df0f.pdf&downloadedFileName=Request%20for%20Proposal%20%28RFP%29MS%20Teams%20Telephony%20-AMENDED.pdf",
      "format": "pdf",
-     "published": "2026-10-13T16:55:07Z"
+     "published": "2026-10-29T11:25:26Z"
+    },
+    {
+     "title": "Clarification session Tech presentation.ppt",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ac808f44-9fce-43b7-8419-82d963bd8934.ppt&downloadedFileName=Clarification%20session%20Tech%20presentation.ppt",
+     "format": "ppt",
+     "published": "2026-10-29T12:32:50Z"
     },
     {
      "title": "SDL&I Template for Bidders - MS Team Telephony -Annexure P.docx",
@@ -5460,6 +5423,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=547379cd-9822-41d9-96a7-22c7f88fde6e.pdf&downloadedFileName=E3571CXERE_Invitation%20to%20Tender%20%28ITT%29_VMS_22%20September%202026.pdf",
      "format": "pdf",
      "published": "2026-09-23T15:59:25Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176033",
+   "reference": "KZNQ28/DSD/2026/27",
+   "title": "PROVISION OF TRAINING ON CONTEMPORARY KNOWLEDGE MANAGEMENT TECHNIQUES, ITIL FOUNDATION (IT SERVICE MANAGEMENT), AND DIGITAL TRANSFORMATION/DIGITAL GOVERNANCE.",
+   "department": "Kwazulu Natal - Social Development",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "it service"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-13T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "QUOTATION DOCUMENT - TRAINING ONCONTEMPORARY KNOWLEDGE MANAGEMENT TECHNIQUES, ITIL FOUNDATION (IT SERVICE MANAGEMENT) AND DIGITAL TRANSFORMATION DIGITAL GOVERNANCE-ICT.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=58790898-c668-43a0-87f6-71176b860ffe.pdf&downloadedFileName=QUOTATION%20DOCUMENT%20-%20TRAINING%20ONCONTEMPORARY%20KNOWLEDGE%20MANAGEMENT%20TECHNIQUES%2C%20ITIL%20FOUNDATION%20%28IT%20SERVICE%20MANAGEMENT%29%20AND%20DIGITAL%20TRANSFORMATION%20DIGITAL%20GOVERNANCE-ICT.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T12:01:32Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -6193,7 +6196,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -6323,7 +6326,7 @@
    "reference": "RFB 3299/2026 - (ERP No 534010)",
    "title": "Request for Bid for the Procurement of Security Access Cards, Access Card Materials and the Cleaning Kit of the Smart Card Printer for a Period of Five (5) Years.",
    "department": "State Information Technology Agency",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -6388,7 +6391,7 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -6554,11 +6557,154 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-173839",
+   "reference": "E3291CXMWPR",
+   "title": "PROCUREMENT OF DOMAIN NAME SYSTEM (DNS) SECURITY MANAGED SERVICES FOR A PERIOD OF FIVE (5) YEARS. (1 YEAR IMPLEMENTATION AND 4 YEARS MAINTENANCE AND SUPPORT)",
+   "department": "ESKOM",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "managed services",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-19T10:00:00+00:00",
+   "procurementMethod": "Request for Proposal",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Annexure V - E-tendering Help Manual for Supplier.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b3e65885-506a-4e6e-ba0a-01d7ed18aee6.pdf&downloadedFileName=Annexure%20V%20-%20E-tendering%20Help%20Manual%20for%20Supplier.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T23:22:15Z"
+    },
+    {
+     "title": "Annexure O SDL&I Template for Bidders - Domain Name System (DNS) v0.1.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d266af52-052a-4b5c-85c1-071cdc5fd36b.docx&downloadedFileName=Annexure%20O%20SDL%26I%20Template%20for%20Bidders%20-%20Domain%20Name%20System%20%28DNS%29%20v0.1.docx",
+     "format": "docx",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure P 240-105658000 SUPPLIER QUALITY MANAGEMENT SPEC REV4 FINAL 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f8d67f92-c236-458e-870c-2276ed8eaf05.pdf&downloadedFileName=Annexure%20P%20240-105658000%20SUPPLIER%20QUALITY%20MANAGEMENT%20SPEC%20REV4%20FINAL%202026.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure P 20260702_DNS Solution and Maintenance_ Form A Rev 10 -Cat2.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=eb4b5598-9e9c-4871-9f01-2435100fdc65.docx&downloadedFileName=Annexure%20P%2020260702_DNS%20Solution%20and%20Maintenance_%20Form%20A%20Rev%2010%20-Cat2.docx",
+     "format": "docx",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Request to Extend Enquiry Closing Date for DNS Ext 1 signed.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3eb6c0d0-cf41-42a0-aa14-2f97d1fd780a.pdf&downloadedFileName=Request%20to%20Extend%20Enquiry%20Closing%20Date%20for%20DNS%20Ext%201%20signed.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T11:47:40Z"
+    },
+    {
+     "title": "Annexure N2 DNS Security Technical Evaluation Criteria 05 May 2026.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=579d1f31-5a78-4977-8795-30176bf8a076.xlsx&downloadedFileName=Annexure%20N2%20DNS%20Security%20Technical%20Evaluation%20Criteria%2005%20May%202026.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure K Supplier_Evaluation_Pack_Template_for_01_March_2024_to_29_February_2025.doc",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=18663c53-7afa-454a-83c1-42284441f942.doc&downloadedFileName=Annexure%20K%20Supplier_Evaluation_Pack_Template_for_01_March_2024_to_29_February_2025.doc",
+     "format": "doc",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure P 240-109253698 CQP Template 2021.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=11e5c93e-c3c0-4ecc-9dec-4f2c8c739773.docx&downloadedFileName=Annexure%20P%20240-109253698%20CQP%20Template%202021.docx",
+     "format": "docx",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure P 20260702_DNS solution and maint_Qualiy  returnablesCat 2_ Rev 7.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=88fff703-6565-49af-9a59-5365b4a246a7.pdf&downloadedFileName=Annexure%20P%2020260702_DNS%20solution%20and%20maint_Qualiy%20%20returnablesCat%202_%20Rev%207.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure L NEC Professional Services Contract - DNS.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=54677dcb-bd53-4753-87ce-58deb3c1a700.docx&downloadedFileName=Annexure%20L%20NEC%20Professional%20Services%20Contract%20-%20DNS.docx",
+     "format": "docx",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure T Eskom_-_Standard_Conditions_of_Tender_-_30_January_2025 (1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bedea649-7acf-4919-968e-76f262d6a7cf.pdf&downloadedFileName=Annexure%20T%20Eskom_-_Standard_Conditions_of_Tender_-_30_January_2025%20%281%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure A - J Invitation to Tender (ITT) for DNS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=94fc1d5f-468d-402c-983f-7878de887d1f.pdf&downloadedFileName=Annexure%20A%20-%20J%20Invitation%20to%20Tender%20%28ITT%29%20for%20DNS.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T23:22:13Z"
+    },
+    {
+     "title": "Annexure S 559-1789391746 Third-Party Security Risk Assessment Questionnaire_Rev 7.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7b992d5b-b8d7-4c96-98a9-7a557bda112c.docx&downloadedFileName=Annexure%20S%20559-1789391746%20Third-Party%20Security%20Risk%20Assessment%20Questionnaire_Rev%207.docx",
+     "format": "docx",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure P 240-109253302 _ Quality Control Plan or Inspection Test Plan (QCP or ITP)-rev 3.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f1e08df9-a90f-470b-bda4-843c86f3dd58.docx&downloadedFileName=Annexure%20P%20240-109253302%20_%20Quality%20Control%20Plan%20or%20Inspection%20Test%20Plan%20%28QCP%20or%20ITP%29-rev%203.docx",
+     "format": "docx",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure M DNS Pricing Schedule v0.1.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=520267cf-a71e-4dec-9fa9-b4eae6c69031.xlsx&downloadedFileName=Annexure%20M%20DNS%20Pricing%20Schedule%20v0.1.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure N1 Domain Name System (DNS) Security Managed Services Tender Scope of Work 04 dec 2025 FV1 signed.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5faeb194-e62e-40be-b373-c063251696c6.pdf&downloadedFileName=Annexure%20N1%20Domain%20Name%20System%20%28DNS%29%20Security%20Managed%20Services%20Tender%20Scope%20of%20Work%2004%20dec%202025%20FV1%20signed.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure Q Group Technology-  SHE Tender Requirements _ Professional Services _Adhoc Support.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7dcdc2e7-b3ce-4a06-a3af-f9b889384cdf.docx&downloadedFileName=Annexure%20Q%20Group%20Technology-%20%20SHE%20Tender%20Requirements%20_%20Professional%20Services%20_Adhoc%20Support.docx",
+     "format": "docx",
+     "published": "2026-10-12T23:22:14Z"
+    },
+    {
+     "title": "Annexure U -Tenderers E-Tendering Training Acknowledgement Form.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=90bb31b0-d403-42f6-978c-f9e4426f0406.pdf&downloadedFileName=Annexure%20U%20-Tenderers%20E-Tendering%20Training%20Acknowledgement%20Form.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T23:22:15Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175891",
    "reference": "RFB 3301/ 2026 - (ERP No 530015)",
    "title": "Appointment of a Service Provider to Provide a New Integrated Video Conferencing and Audio-Visual Solution for SAPS UBUNYE Auditorium",
    "department": "State Information Technology Agency",
-   "category": "Telecoms & Unified Comms",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -6660,6 +6806,59 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=1f0334f7-04b7-4d93-b99c-eba1d34b6d0f.pdf&downloadedFileName=IUCMA-002-SIEMSOC-2026%20%28003%29.pdf",
      "format": "pdf",
      "published": "2026-10-19T15:51:23Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-173081",
+   "reference": "019/2026/EWSS/LAPTOPS/RFB",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF DESKTOPS, LAPTOPS AND ACCESSORIES, INCLUDING WARRANTY AND SUPPORT FOR A PERIOD OF THREE (3) YEARS",
+   "department": "Trans-Caledon Tunnel Authority",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "desktop",
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-06T00:00:00+00:00",
+   "closingDate": "2026-11-19T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Desktops and laptops RFB 06102026 Final.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=01ad1107-1648-474a-a323-05b92247a64c.pdf&downloadedFileName=Desktops%20and%20laptops%20RFB%2006102026%20Final.pdf",
+     "format": "pdf",
+     "published": "2026-10-06T15:57:12Z"
+    },
+    {
+     "title": "Addendum No 1 for desktops and laptops 29102026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7128dfb2-f1ee-4e2e-9aa1-716f9e33896a.pdf&downloadedFileName=Addendum%20No%201%20for%20desktops%20and%20laptops%2029102026.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T14:13:49Z"
+    },
+    {
+     "title": "Clarification No 1 desktops and laptops  29102026 Final.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=501b3cf0-b495-46d0-9e0f-e1af95929085.pdf&downloadedFileName=Clarification%20No%201%20desktops%20and%20laptops%20%2029102026%20Final.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T14:14:54Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -6798,6 +6997,64 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=5f75ef0e-c1f3-41d3-bf7e-b1cfe0c6f118.pdf&downloadedFileName=RFB%203303-2026%20-ERP%20537010%20-%20Invitation%20to%20Bid%20Letter.pdf",
      "format": "pdf",
      "published": "2026-10-29T10:27:30Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176255",
+   "reference": "RFB 3303/2026 - (ERP No 537010)",
+   "title": "The Procurement of a Full-Service Marketing Agency to Develop and Execute the Go-to-Market Strategy for Packaged Services for the Period of Six (6) Months",
+   "department": "State Information Technology Agency",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "erp"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-11-20T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFB 3303-2026 -ERP 537010 - Invitation to Bid Letter.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3eee3e70-f9f5-4c17-9268-03dd68c999dd.pdf&downloadedFileName=RFB%203303-2026%20-ERP%20537010%20-%20Invitation%20to%20Bid%20Letter.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T13:17:55Z"
+    },
+    {
+     "title": "RFB 3303-2026 - ERP 537010-Annexure G Bid Specification Document.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=606d24ae-0c3f-44aa-98f3-5277cee88242.docx&downloadedFileName=RFB%203303-2026%20-%20ERP%20537010-Annexure%20G%20Bid%20Specification%20Document.docx",
+     "format": "docx",
+     "published": "2026-10-29T13:17:55Z"
+    },
+    {
+     "title": "RFB 3303-2026 - Annexure C-Invitation to Bid.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f1cfa78a-08f0-4dc0-9f5d-a37d602615c0.docx&downloadedFileName=RFB%203303-2026%20-%20Annexure%20C-Invitation%20to%20Bid.docx",
+     "format": "docx",
+     "published": "2026-10-29T13:17:55Z"
+    },
+    {
+     "title": "RFB 3303-2026 - ERP 537010-Annexure H Pricing Schedule final.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=007d30df-b6c9-46a8-8988-ed41dd25b958.xlsx&downloadedFileName=RFB%203303-2026%20-%20ERP%20537010-Annexure%20H%20Pricing%20Schedule%20final.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-29T13:17:55Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -7264,48 +7521,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175133",
-   "reference": "NLM2027-002A",
-   "title": "APPOINTMENT OF SERVICE PROVIDER FOR TELEPHONE SERVICES,NETWORK INFRASTRUCTURE AND OTHER IT SERVICES FROM DATE OF AWARD UNTIL 30 JUNE 2029",
-   "department": "Naledi - NW Local Municipality",
-   "category": "Network & Infrastructure",
-   "company": "rtc",
-   "matchedTerms": [
-    "it services",
-    "network",
-    "network infrastructure"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-21T00:00:00+00:00",
-   "closingDate": "2026-11-20T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "DOCUMENT.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=4d15345a-7eee-4ef0-86b2-2f87ffa2fca1.pdf&downloadedFileName=DOCUMENT.pdf",
-     "format": "pdf",
-     "published": "2026-10-21T20:22:02Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174376",
    "reference": "TDR14/2026/2027",
    "title": "SUPPLY AND INSTALLATION OF A VEHICLE TRACKING AND MANAGEMENT SYSTEM",
@@ -7657,7 +7872,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -7828,7 +8043,7 @@
    "reference": "PSiRA/2026/27/RFB/08",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE DESIGN, SUPPLY, IMPLEMENT AND MAINTENANCE OF A CLOUD-BASED MICROSOFT TEAMS TELEPHONY SYSTEM AND CALL CENTER SOLUTION FOR A PERIOD OF 36 MONTHS.",
    "department": "Private Security Industry Regulatory Authority",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "cloud",
@@ -7933,6 +8148,155 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=300ebfb6-3fcf-4f27-a5ab-d71502f6ed48.pdf&downloadedFileName=RFB%203294-2026%20-%20Notice%20to%20Bidders%20%20Fraud.pdf",
      "format": "pdf",
      "published": "2026-10-01T18:26:08Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176325",
+   "reference": "E3770CXMWP",
+   "title": "Provision of Data Centers, Server Rooms and Portable Modular Data Centres (PMDC) support and maintenance contract for a period of 5 years",
+   "department": "ESKOM",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "data center",
+    "server"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-11-27T10:00:00+00:00",
+   "procurementMethod": "Request for Proposal",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Annexure B -Annexure Q.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5cc6fdb7-f5b5-47f9-8f46-1653f50167e1.docx&downloadedFileName=Annexure%20B%20-Annexure%20Q.docx",
+     "format": "docx",
+     "published": "2026-10-29T20:57:59Z"
+    },
+    {
+     "title": "PAYE Questionnaire for Service Contracts 2025_2026 -Annexure K.doc",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fe5bbb22-75d8-4b34-94fa-31b3355c4372.doc&downloadedFileName=PAYE%20Questionnaire%20for%20Service%20Contracts%202025_2026%20-Annexure%20K.doc",
+     "format": "doc",
+     "published": "2026-10-29T20:52:06Z"
+    },
+    {
+     "title": "20260409 _DataCentre&Servermntnce support-GIT- Form A_Cat 2 -Annexure W.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5f52960a-609f-4a9c-a6da-3e8ff4091f8b.docx&downloadedFileName=20260409%20_DataCentre%26Servermntnce%20support-GIT-%20Form%20A_Cat%202%20-Annexure%20W.docx",
+     "format": "docx",
+     "published": "2026-10-29T20:55:16Z"
+    },
+    {
+     "title": "SOW_Data Center and server rooms national contract - Annexure N.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b431fa69-ddd7-4b0a-a210-42ddcc19f542.pdf&downloadedFileName=SOW_Data%20Center%20and%20server%20rooms%20national%20contract%20-%20Annexure%20N.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T20:59:33Z"
+    },
+    {
+     "title": "Data Center Support Costing Schedule v0.3 - Annexure G.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7176e0e0-c778-4af3-a7d4-5bfa06486d97.xlsx&downloadedFileName=Data%20Center%20Support%20Costing%20Schedule%20v0.3%20-%20Annexure%20G.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-29T20:59:33Z"
+    },
+    {
+     "title": "Request for Proposal (RFP)Data Centers Server Rooms and Portable Modular Data Centres.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c6f951ba-9a69-4914-ba9a-6ca939561334.pdf&downloadedFileName=Request%20for%20Proposal%20%28RFP%29Data%20Centers%20Server%20Rooms%20and%20Portable%20Modular%20Data%20Centres.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T20:24:38Z"
+    },
+    {
+     "title": "Group Technology SHE Tender Requirements Low Risk  Proffessional Services Contracts.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0d60794f-a77a-49e8-b917-77fae00c2e5d.docx&downloadedFileName=Group%20Technology%20SHE%20Tender%20Requirements%20Low%20Risk%20%20Proffessional%20Services%20Contracts.docx",
+     "format": "docx",
+     "published": "2026-10-29T20:57:59Z"
+    },
+    {
+     "title": "Eskom - Standard Conditions of Tender (August 2024) - Annexure Y.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=84fde086-8cab-4aa6-972d-83f928614b4d.pdf&downloadedFileName=Eskom%20-%20Standard%20Conditions%20of%20Tender%20%28August%202024%29%20-%20Annexure%20Y.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T20:52:06Z"
+    },
+    {
+     "title": "20260409_ DataCentre&ServerRoomsupprt-GIT-Cat 2_ Rev 7 -Annexure U.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b6adb4e7-a6db-4f4d-8950-94c5109b63c5.pdf&downloadedFileName=20260409_%20DataCentre%26ServerRoomsupprt-GIT-Cat%202_%20Rev%207%20-Annexure%20U.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T20:55:16Z"
+    },
+    {
+     "title": "E-Tenderers E-Tendering Training Acknowledgement Form -Annexure M.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6268722e-12fa-4ae8-b884-a06eec14c5bd.docx&downloadedFileName=E-Tenderers%20E-Tendering%20Training%20Acknowledgement%20Form%20-Annexure%20M.docx",
+     "format": "docx",
+     "published": "2026-10-29T20:52:05Z"
+    },
+    {
+     "title": "240-109253698 CQP Template 2021 -Annexure V.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=71ccfaa7-f70c-4e37-b917-b0f176c88a2d.docx&downloadedFileName=240-109253698%20CQP%20Template%202021%20-Annexure%20V.docx",
+     "format": "docx",
+     "published": "2026-10-29T20:55:16Z"
+    },
+    {
+     "title": "E-tendering Help Manual for supplier - Annexure L.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ff9fee8f-2c5e-4f64-9e0a-b4dc63152a52.docx&downloadedFileName=E-tendering%20Help%20Manual%20for%20supplier%20-%20Annexure%20L.docx",
+     "format": "docx",
+     "published": "2026-10-29T20:52:05Z"
+    },
+    {
+     "title": "Schedule Q 240-IT002 rev 4 latest_2024 - Annexure Y.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=785fd78b-66ac-4466-9a79-b949c367c517.docx&downloadedFileName=Schedule%20Q%20240-IT002%20rev%204%20latest_2024%20-%20Annexure%20Y.docx",
+     "format": "docx",
+     "published": "2026-10-29T20:59:33Z"
+    },
+    {
+     "title": "Service_Level_Agrement__between_Eskom_&_service_provider -Annexure T.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ad84ae17-7da5-412f-9835-be7c500973f0.pdf&downloadedFileName=Service_Level_Agrement__between_Eskom_%26_service_provider%20-Annexure%20T.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T20:59:33Z"
+    },
+    {
+     "title": "SDL&I Template for Bidders - Data centre_Server rooms_PMDC v0.1 - Annexure P.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8f8015a1-3b91-4bc1-8fe1-c835510cbd8b.docx&downloadedFileName=SDL%26I%20Template%20for%20Bidders%20-%20Data%20centre_Server%20rooms_PMDC%20v0.1%20-%20Annexure%20P.docx",
+     "format": "docx",
+     "published": "2026-10-29T20:56:24Z"
+    },
+    {
+     "title": "240-105658000 Supplier Quality Management Specification (3).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=835feec9-ab36-4d91-8210-d0d2db5cd31b.pdf&downloadedFileName=240-105658000%20Supplier%20Quality%20Management%20Specification%20%283%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T20:55:16Z"
+    },
+    {
+     "title": "Server rooms maintenance contract_TEC -Annexure X.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0c331462-2ffc-4438-8114-daf2d41db430.xlsx&downloadedFileName=Server%20rooms%20maintenance%20contract_TEC%20-Annexure%20X.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-29T20:59:33Z"
+    },
+    {
+     "title": "Occupational Health and Safety Act Section 37(2)Agreement Form - Rev 7 -Annexure S.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e13fb89b-fa25-47da-ba30-dfcb722b3fb8.docx&downloadedFileName=Occupational%20Health%20and%20Safety%20Act%20Section%2037%282%29Agreement%20Form%20-%20Rev%207%20-Annexure%20S.docx",
+     "format": "docx",
+     "published": "2026-10-29T20:57:59Z"
+    },
+    {
+     "title": "NEC  Professional Services Contract - Data Center, Server Room and PMDC - Annexure R.doc",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3fece453-a182-4016-887c-fb72636ba4ca.doc&downloadedFileName=NEC%20%20Professional%20Services%20Contract%20-%20Data%20Center%2C%20Server%20Room%20and%20PMDC%20-%20Annexure%20R.doc",
+     "format": "doc",
+     "published": "2026-10-29T20:52:06Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8320,6 +8684,104 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176283",
+   "reference": "(RFT02 2026-2027)",
+   "title": "Appointment of a Service Provider for Provision of Microsoft Power Platform Licensing and the Design, Implementation and Support of the FPB Public Engagement and AI Chatbot Platform for Three (3) Years",
+   "department": "Film and Publication Board",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "ai",
+    "microsoft",
+    "microsoft power platform licens",
+    "power platform"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-11-30T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFT 02 2026_2027  Provision of Microsoft Power Platform Licensing and  Support of the FPB Public Engagement and AI Chatbot Platform for Three (3) Years.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8434b98a-650a-46cb-b378-626ce89e4bd3.pdf&downloadedFileName=RFT%2002%202026_2027%20%20Provision%20of%20Microsoft%20Power%20Platform%20Licensing%20and%20%20Support%20of%20the%20FPB%20Public%20Engagement%20and%20AI%20Chatbot%20Platform%20for%20Three%20%283%29%20Years.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T15:05:56Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176166",
+   "reference": "BID - 2648S",
+   "title": "BID - 2648S -  VMWARE SOFTWARE LICENCING AND SUPPORT RENEWAL",
+   "department": "City Power – Johannesburg",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "software",
+    "software licenc",
+    "vmware",
+    "vmware software licenc"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-30T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Bid Advert  for bid 2648S.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4785231b-8a5d-488e-ba3c-1f8cb71a0764.pdf&downloadedFileName=Bid%20Advert%20%20for%20bid%202648S.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T16:13:39Z"
+    },
+    {
+     "title": "CP_TSSTAN_230_Rev0_STANDARD FOR VMWARE SOFTWARE LICENSING AND SUPPORT.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d592ab3e-a0ed-44db-980c-61af26fe862c.pdf&downloadedFileName=CP_TSSTAN_230_Rev0_STANDARD%20FOR%20VMWARE%20SOFTWARE%20LICENSING%20AND%20SUPPORT.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T16:13:39Z"
+    },
+    {
+     "title": "Bid Document 2648S.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ada21644-27a8-496f-9354-c76038a194f8.pdf&downloadedFileName=Bid%20Document%202648S.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T16:13:39Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-176238",
    "reference": "TS/274/2026",
    "title": "PROVISION OF ENGINEERING SERVICES FOR RURAL ROADS ASSET MANAGEMENT SYSTEM (RRAMS) WITHIN THE ILEMBE DISTRICT MUNICIPALITY FOR A PERIOD OF THREE (3) YEARS.",
@@ -8361,11 +8823,58 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176172",
+   "reference": "COR8299/2026/RFP",
+   "title": "Request for Bids for provision of Quality Management System (QMS) for a period of sixty (60) months at Airport Company South Africa Airport",
+   "department": "Airports Company of South Africa",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "management system",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-30T12:00:00+00:00",
+   "procurementMethod": "Request for Proposal",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Tender document for Quality_Management_System - Final1.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8ea38f62-7447-4bf3-8c83-2de29cd724b4.pdf&downloadedFileName=Tender%20document%20for%20Quality_Management_System%20-%20Final1.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T16:55:07Z"
+    },
+    {
+     "title": "Annexure C- Pricing Schedule.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=45b56168-9ae4-46b9-bb90-ed7287f83729.pdf&downloadedFileName=Annexure%20C-%20Pricing%20Schedule.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T16:28:21Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175706",
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "management system",
@@ -8407,7 +8916,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "printer",
