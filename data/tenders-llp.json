@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-28T21:40:36.941339+00:00",
+ "generatedAt": "2026-10-29T02:23:29.346084+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-07",
- "releasesScanned": 2116,
- "uniqueTenders": 2146,
- "count": 312,
+ "coveredFrom": "2026-09-23",
+ "releasesScanned": 3214,
+ "uniqueTenders": 3254,
+ "count": 314,
  "categories": {
-  "Facilities Maintenance": 153,
-  "Supply & Consumables": 83,
-  "Grounds & Landscaping": 32,
-  "Agriculture": 44
+  "Facilities Maintenance": 170,
+  "Supply & Consumables": 76,
+  "Grounds & Landscaping": 35,
+  "Agriculture": 33
  },
  "onlineBriefings": 0,
- "carriedOver": 83,
+ "carriedOver": 18,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -379,7 +379,7 @@
    "reference": "RFQ 12243",
    "title": "REQUEST FOR QUOTE OF A CONTRACTOR APPOINTMENT TO REPAIR WATER LEAK AND POTHOLES NEXT TO CAR RENTALS FOR A PERIOD OF SIX MONTHS AT KING PHALO AIRPORT",
    "department": "Airports Company of South Africa",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "repair",
@@ -1259,7 +1259,7 @@
    "reference": "LPT/QUT039/2026",
    "title": "CLEANING OF WINDOWS AT ISMINI, TRAINING CENTRE (LEBOWAKGOMO), VHEMBE DISTRICT OFFICE, MOPANI DISTRICT OFFICE AND TALAS BUILDING (POLOKWANE)",
    "department": "Limpopo - Provincial Treasury",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "building",
@@ -2031,7 +2031,7 @@
    "reference": "RFP OW-021/2026/27",
    "title": "SUPPLY AND DELIVERY OF MAINTENANCE MATERIAL AND CONSUMABLES TO OVERBERG WATER BOARD AS AND WHEN REQUIRED FOR A PERIOD OF 36 MONTHS",
    "department": "Overberg Water",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -2553,7 +2553,7 @@
    "reference": "RFP 202091",
    "title": "APPOINTMENT OF A QUALIFIED CONTRACTOR TO SUPPORT THE ENGINEERING & PLANT MAINTENANCE DEPARTMENT TO PERFORM PREVENTATIVE PLANNED MAINTENANCE AND BREAKDOWN MAINTENANCE ON MECHANICAL TYPE EQUIPMENT USED IN LABORATORIES: GROENKLOOF AND REGIONS - SECUNDA, RICHARDS BAY, OLIFANTSFONTEIN NETFA, CAPE TOWN, AND PORT ELIZABETH).",
    "department": "The South African Bureau of Standards (SABS)",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -2594,7 +2594,7 @@
    "reference": "RFP 202092",
    "title": "APPOINTMENT OF A QUALIFIED CONTRACTOR TO SUPPORT THE ENGINEERING & PLANT MAINTENANCE DEPARTMENT IN MAINTAINING INSTRUMENTATION AND AUTOMATION TECHNOLOGIES EQUIPMENT USED IN LABORATORIES FOR 3 YEARS: GROENKLOOF AND REGIONS - SECUNDA, RICHARDS BAY, OLIFANTSFONTEIN NETFA, CAPE TOWN, AND PORT ELIZABETH).",
    "department": "The South African Bureau of Standards (SABS)",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -3787,7 +3787,7 @@
    "reference": "DLRRD-RID-FS 003 (2026/2027)",
    "title": "APPOINTMENT OF A CONTRACTOR TO UNDERTAKE THE UPGRADING OF 2,01KM SEDIBA ROAD AND CULVERT CROSSING IN THABA NCHU UNDER MANGAUNG METRO MUNICIPALITY: FREE STATE PROVINCE",
    "department": "Department of Agriculture, Land Reform & Rural Development",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "tractor",
@@ -4469,7 +4469,7 @@
    "reference": "HDA/LIM/2026/002",
    "title": "THE LEASING OF A SUITABLE OFFICE ACCOMMODATION WITH PARKING SPACES INCLUDING CLEANING AND MAINTENANCE OF THE HDA PROVINCIAL OFFICES IN LIMPOPO -POLOKWANE.",
    "department": "Housing Development Agency",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -4735,7 +4735,7 @@
    "reference": "10375597",
    "title": "REQUEST FOR QUOTATION (RFQ) FOR APPOINTMENT OF A SERVICE PROVIDERS FOR MAINTENANCE, SERVICING, PUMPING, CLEANING AND JETTING OF SEPTIC TANKS FOR A PERIOD OF 5 MONTHS IN WESTERN CAPE REGION",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -5845,54 +5845,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-172141",
-   "reference": "HES-TECH 27/2627",
-   "title": "APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE MAINTENANCE, REPAIR, REFURBISHMENT, SUPPLY, INSTALLATION, TESTING AND COMMISSIONING OF ELECTROMECHANICAL EQUIPMENT AND ASSOCIATED CONTROL SYSTEMS IN THE HESSEQUA MUNICIPAL AREA FOR A PERIOD OF THREE (3) YEARS",
-   "department": "Hessequa Municipality",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "maintenance",
-    "refurbish",
-    "repair"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-30T00:00:00+00:00",
-   "closingDate": "2026-11-06T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "HES-TECH 27-2627 PANEL FOR MAINTENANCE OF ELECTROMECHANICAL EQUIPMENT.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=18347572-b5fe-44ea-a221-a83111b97a7e.pdf&downloadedFileName=HES-TECH%2027-2627%20PANEL%20FOR%20MAINTENANCE%20OF%20ELECTROMECHANICAL%20EQUIPMENT.pdf",
-     "format": "pdf",
-     "published": "2026-09-30T11:33:18Z"
-    },
-    {
-     "title": "SCOPE OF WORKS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0cb27424-3ccd-4962-b679-b98b090949c6.pdf&downloadedFileName=SCOPE%20OF%20WORKS.pdf",
-     "format": "pdf",
-     "published": "2026-09-30T11:34:14Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-171727",
    "reference": "SANRAL N002-300-2020/1",
    "title": "THE CONSTRUCTION OF PAVEMENT AND SETTLEMENT REPAIRS OF NATIONAL ROUTE 2, SECTION 30 FROM BUSHVELD RETREAT FARM (Km 44.00) TO HLUHLUWE INTERCHANGE (Km 55.00)",
@@ -6263,7 +6215,7 @@
    "reference": "MLM 09/2026/27",
    "title": "APPOINTMENT OF A CONTRACTOR FOR CONSTRUCTION OF TOILETS AND SEWER NETWORK REPAIR IN GORTIN PHASE 1.",
    "department": "Metsimaholo Local Municipality",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "repair",
@@ -7819,7 +7771,7 @@
    "reference": "SCMU6-26/27-0008",
    "title": "INVITATION TO CONTRACTORS AT CIDB GRADE 2EB/2EP OR HIGHER TO SUBMIT EXPRESSION OF INTEREST FOR THE APPOINTMENT OF COMPETENT CONTRACTORS FOR ELECTRICAL ENGINEERING WORKS-BUILDING/ELECTRICAL ENGINEERING WORKS- INFRASTRUCTURE (INCLUDING EMERGENCY PROCUREMENT), AS AND WHEN REQUIRED, FOR THE EASTERN CAPE DEPARTMENT OF EDUCATION",
    "department": "Eastern Cape - Education",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "building",
@@ -8611,7 +8563,7 @@
    "reference": "GSHPT62/2026",
    "title": "THE PLACEMENT OF 2X PHACOEMULSIFICATION MACHINES FOR THE ANTERIOR REMOVAL OF CARATACTS AND THE SUPPLY OF ALL CONSUMABLES INCLUDING A FULLY COMPREHENSIVE MAINTENANCE CONTRACT FOR GROOTE SCHUUR HOSPITAL OVER A THREE (3) YEAR PERIOD",
    "department": "Western Cape - Health",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -10348,7 +10300,7 @@
    "reference": "TDR37/2026/2027",
    "title": "APPOINTMENT OF A CONTRACTOR FOR THE GROUND MAINTENANCE OF THE MOUNTAIN VIEW HOUSING DEVELOPMENT",
    "department": "Mossel Bay Municipality",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -10441,7 +10393,7 @@
    "reference": "NRA 2026/0767",
    "title": "FOR CONSULTING ENGINEERING SERVICES FOR THE COMMUNITY DEVELOPMENT AND SMALL CONTRACTOR TRAINING AND DEVELOPMENT ON A 6KM GRAVEL ROAD UPGRADE NEAR NATIONAL ROAD N2, SECTION 21 IN MDATYA",
    "department": "South African National Roads Agency Soc Limited (SANRAL)",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "tractor",
@@ -10479,6 +10431,60 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=f1958636-5443-48ca-960f-e9703c5e89f9.zip&downloadedFileName=C.003-109-2025-1F.zip",
      "format": "zip",
      "published": "2026-10-09T15:13:17Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-172141",
+   "reference": "HES-TECH 27/2627",
+   "title": "APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE MAINTENANCE, REPAIR, REFURBISHMENT, SUPPLY, INSTALLATION, TESTING AND COMMISSIONING OF ELECTROMECHANICAL EQUIPMENT AND ASSOCIATED CONTROL SYSTEMS IN THE HESSEQUA MUNICIPAL AREA FOR A PERIOD OF THREE (3) YEARS",
+   "department": "Hessequa Municipality",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "maintenance",
+    "refurbish",
+    "repair"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-09-30T00:00:00+00:00",
+   "closingDate": "2026-11-13T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "HES-TECH 27-2627 EXTENSION NOTICE.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=20526137-f953-412d-9e3c-5eeddd8c355c.pdf&downloadedFileName=HES-TECH%2027-2627%20EXTENSION%20NOTICE.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:00:11Z"
+    },
+    {
+     "title": "HES-TECH 27-2627 PANEL FOR MAINTENANCE OF ELECTROMECHANICAL EQUIPMENT.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=18347572-b5fe-44ea-a221-a83111b97a7e.pdf&downloadedFileName=HES-TECH%2027-2627%20PANEL%20FOR%20MAINTENANCE%20OF%20ELECTROMECHANICAL%20EQUIPMENT.pdf",
+     "format": "pdf",
+     "published": "2026-09-30T11:33:18Z"
+    },
+    {
+     "title": "SCOPE OF WORKS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0cb27424-3ccd-4962-b679-b98b090949c6.pdf&downloadedFileName=SCOPE%20OF%20WORKS.pdf",
+     "format": "pdf",
+     "published": "2026-09-30T11:34:14Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -11397,7 +11403,7 @@
    "reference": "SANBI- G588/2026",
    "title": "REQUEST FOR BIDS FOR THE APPOINTMENT OF A CONTRACTOR FOR THE INSTALLATION OF A WATER-WISE AND BIODIVERSITY GARDEN AT THE PRETORIA NATIONAL BOTANICAL GARDEN, GAUTENG",
    "department": "South African National Biodiversity Institute",
-   "category": "Agriculture",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -11444,7 +11450,7 @@
    "reference": "SANBI G592/2026",
    "title": "APPOINTMENT OF A CONTRACTOR FOR THE INSTALLATION OF A WATER-WISE AND BIODIVERSITY GARDEN. AT THE PRETORIA NATIONAL BOTANICAL GARDEN, GAUTENG",
    "department": "South African National Biodiversity Institute",
-   "category": "Agriculture",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -13039,7 +13045,7 @@
    "reference": "8/3-11/22627",
    "title": "Appointment of a Service Provider for Printing Solution Equipment, Multifunctional Copier Rental, Maintenance and Consumables for the Period of 36 Months",
    "department": "Msukaligwa Local Municipality",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -13787,7 +13793,7 @@
    "reference": "MMB2627/037 GS",
    "title": "PREVENTATIVE MAINTENANCE(36 MONTHS) REPAIRS AND SERVICE OF FIRE FIGHTING EQUIPMENT : DR RSM DISTRICT MUNICIPALITY ( SAPS DOJ HOME AFFAIRS LABOUR STATS SA AGRICULTURE & DEEDS)\r\n\r\nCIDB GRADE  3F OR HIGHER",
    "department": "Public Works",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "agricultur",
@@ -14098,7 +14104,7 @@
    "reference": "RLM/DCD/0061/2026/27",
    "title": "Appointment of a service provider to render the cleaning and hygiene service at various municipal buildings for a period of 36 months as and when needed",
    "department": "Rustenburg Local Municipality",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "buildings",
@@ -14656,7 +14662,7 @@
    "reference": "252/2026",
    "title": "APPOINTMENT OF CONTRACTOR FOR RESEALING AND MAINTENANCE OF ROADS AND STORMWATER IN THE KOUGA LOCAL MUNICIPAL AREA FOR A PERIOD OF THREE (3) YEARS",
    "department": "Kouga Municipality",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -14734,6 +14740,48 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=53499904-3f95-4ae7-bf4b-b90d8b4c7eb8.pdf&downloadedFileName=35-2026-2027%20Tender%20Document.pdf",
      "format": "pdf",
      "published": "2026-10-23T09:27:38Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175861",
+   "reference": "COM P4/2026",
+   "title": "INVASIVE ALIEN VEGETATION CLEARING IN MUNICIPAL AREAS FOR A PERIOD UP TO 30 JUNE 2029",
+   "department": "Drakenstein Municipality",
+   "category": "Grounds & Landscaping",
+   "company": "llp",
+   "matchedTerms": [
+    "alien vegetation",
+    "clearing",
+    "vegetation clearing"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-11-30T10:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "ADVERT COM P4.2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5573aef9-2e3e-4cad-a513-e7d4ad51da16.pdf&downloadedFileName=ADVERT%20COM%20P4.2026.pdf",
+     "format": "pdf",
+     "published": "2026-10-27T12:44:14Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -15557,6 +15605,59 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=28f43848-946d-40f9-bee8-92e2b1f49282.pdf&downloadedFileName=Volume%201A%20-%20FAGG%20-Landscape.pdf",
      "format": "pdf",
      "published": "2026-10-20T16:41:17Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176044",
+   "reference": "HES-CORP 05/2627",
+   "title": "LEASING OF A PORTION (APPROXIMATELY 2.3 HECTARES) OF PORTION 69 OF FARM 480, MELKHOUTFONTEIN FOR A PERIOD OF NINE (9) YEARS AND ELEVEN (11) MONTHS FOR AGRICULTURE PURPOSES",
+   "department": "Hessequa Municipality",
+   "category": "Agriculture",
+   "company": "llp",
+   "matchedTerms": [
+    "agricultur",
+    "farm"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-12-04T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "PRICING SCHEDULE.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=09d60615-87d6-4320-afd4-6d7db4f2fda2.pdf&downloadedFileName=PRICING%20SCHEDULE.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:15:53Z"
+    },
+    {
+     "title": "SPECIFICATIONS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c3083d35-2ed1-43bc-88a9-702cb5246b7e.pdf&downloadedFileName=SPECIFICATIONS.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:15:32Z"
+    },
+    {
+     "title": "HES-CORP 05-2627 LEASING OF A PORTION (APPROXIMATELY 2.3 HECTARES) OF PORTION 69 OF FARM 480, MELKHOUTFONTEIN.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7122db70-28c1-4dc1-89d2-c231a7a19079.pdf&downloadedFileName=HES-CORP%2005-2627%20LEASING%20OF%20A%20PORTION%20%28APPROXIMATELY%202.3%20HECTARES%29%20OF%20PORTION%2069%20OF%20FARM%20480%2C%20MELKHOUTFONTEIN.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:15:10Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
