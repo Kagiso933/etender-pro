@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-31T10:59:18.622669+00:00",
+ "generatedAt": "2026-10-31T20:34:30.962934+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-22",
- "releasesScanned": 945,
- "uniqueTenders": 975,
- "count": 316,
+ "coveredFrom": "2026-09-08",
+ "releasesScanned": 4342,
+ "uniqueTenders": 4342,
+ "count": 319,
  "categories": {
-  "Supply & Consumables": 73,
-  "Grounds & Landscaping": 31,
-  "Agriculture": 35,
-  "Facilities Maintenance": 177
+  "Supply & Consumables": 74,
+  "Agriculture": 33,
+  "Facilities Maintenance": 180,
+  "Grounds & Landscaping": 32
  },
  "onlineBriefings": 0,
- "carriedOver": 181,
+ "carriedOver": 3,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -65,48 +65,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=6bb63810-804c-4ed5-ae1e-d885516f4675.pdf&downloadedFileName=Personal%20Protective%20Equipment%20%28PPE%29TENDER%20DOCUMENT%20%28RE-ADVERT%29.pdf",
      "format": "pdf",
      "published": "2026-10-20T10:26:37Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-170170",
-   "reference": "ROC 02-2026/27",
-   "title": "Tender for grave digging and internment related services as well as the general horticultural maintenance of all municipal cemetery and crematorium terrains in the City of Tshwane, as and when required for a 3-year period",
-   "department": "City of Tshwane",
-   "category": "Grounds & Landscaping",
-   "company": "llp",
-   "matchedTerms": [
-    "cemetery",
-    "horticultur",
-    "maintenance"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-11T00:00:00+00:00",
-   "closingDate": "2026-11-02T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Notice 3 of 2026.27 (EdVN) Website_.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d8805caa-9678-473a-8e34-043fd84a547b.pdf&downloadedFileName=Notice%203%20of%202026.27%20%28EdVN%29%20Website_.pdf",
-     "format": "pdf",
-     "published": "2026-09-11T20:38:55Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -604,53 +562,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=3f4e2f58-5cf9-4492-b8f8-c82ca0c7e417.pdf&downloadedFileName=Terms%20of%20Reference%20%20for%20Office%20Stationery%20%28SCMO-26-27-001%29.pdf",
      "format": "pdf",
      "published": "2026-10-02T11:18:50Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-170130",
-   "reference": "GPL006/2027",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE REFURBISHMENT OF MEMBERS’ OFFICES AT THE JOHANNESBURG CITY HALL BUILDING FOR THE GAUTENG PROVINCIAL LEGISLATURE FOR A PERIOD OF THREE (3) MONTHS.",
-   "department": "Gauteng - Legislature",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "building",
-    "refurbish"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-11T00:00:00+00:00",
-   "closingDate": "2026-11-02T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "works",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Addendum 3 GPL006.2027 Refurbishment of the MPL Offices Tender Document.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6378e8e8-a38a-4c9c-aa34-37e61872d25f.pdf&downloadedFileName=Addendum%203%20GPL006.2027%20Refurbishment%20of%20the%20MPL%20Offices%20Tender%20Document.pdf",
-     "format": "pdf",
-     "published": "2026-10-26T15:05:28Z"
-    },
-    {
-     "title": "ADDENDUM 2 - GPL006.2027 Refurbishment of the MPL Offices Tender Document.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=94c3b260-0dc8-40f5-b549-d30463e23b72.pdf&downloadedFileName=ADDENDUM%202%20-%20GPL006.2027%20Refurbishment%20of%20the%20MPL%20Offices%20Tender%20Document.pdf",
-     "format": "pdf",
-     "published": "2026-10-07T22:13:05Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1671,6 +1582,58 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-175765",
+   "reference": "FQ 18/2026",
+   "title": "Supply and delivery of PPE for community services (once-off) for Kannaland Municipality",
+   "department": "Kannaland Municipality",
+   "category": "Supply & Consumables",
+   "company": "llp",
+   "matchedTerms": [
+    "ppe"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-27T00:00:00+00:00",
+   "closingDate": "2026-11-03T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "PPE ADVERT.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6a5ad94f-2eff-4988-afd8-3030199684b3.pdf&downloadedFileName=PPE%20ADVERT.pdf",
+     "format": "pdf",
+     "published": "2026-10-27T07:45:28Z"
+    },
+    {
+     "title": "FQ PPE for Community services 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7b487840-f612-4a32-be6d-77c63426050c.pdf&downloadedFileName=FQ%20PPE%20for%20Community%20services%202026.pdf",
+     "format": "pdf",
+     "published": "2026-10-27T07:45:28Z"
+    },
+    {
+     "title": "Pricing Schedule - PPE for Community.xlsx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2c275c43-2540-45e0-a9b0-f887cc26c0a4.xlsx&downloadedFileName=Pricing%20Schedule%20-%20PPE%20for%20Community.xlsx",
+     "format": "xlsx",
+     "published": "2026-10-27T07:45:28Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-172405",
    "reference": "74846",
    "title": "CARGO WAREHOUSE LIGHTING REFURBISHMENT AT OR TAMBO INTERNATIONAL AIRPORT.",
@@ -1892,6 +1855,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=77414466-22e2-44b4-92f3-dfb9f62b02d3.pdf&downloadedFileName=4%20Returnable%20Documents_%20Print%20on%20yellow%20Long%20Term%20Lease%20Klipfontein.pdf",
      "format": "pdf",
      "published": "2026-10-06T22:22:45Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176139",
+   "reference": "NTU111/2026/27",
+   "title": "SUPPLY AND DELIVERY OF TONG TATTOO PLIERS,SYRINGE’S,NEEDLES, ELECTROGUARD GEL AND AMINOGROW, VACCINES,GUANO BOOSTER 100% ORGANIC FERTILIZER: NCOME CORRECTIONAL SERVICE",
+   "department": "Correctional Services",
+   "category": "Agriculture",
+   "company": "llp",
+   "matchedTerms": [
+    "fertilizer"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-04T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "NTU 111 2026 2027.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e3629235-2092-4b51-944f-42359f9e6370.pdf&downloadedFileName=NTU%20111%202026%202027.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T15:16:37Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -2694,6 +2697,99 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=dd2fc9f5-9d16-484a-8666-d7c5b00355aa.pdf&downloadedFileName=DFFQ%20260%20PPE.pdf",
      "format": "pdf",
      "published": "2026-10-29T11:21:15Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176222",
+   "reference": "RFQ180-2026",
+   "title": "APPOINTMENT OF A BIDDER TO RENDER SERVICE OF MAINTENANCE, SERVICING, REPAIR AND MONITORING OF INTRUDER ALARM SYSTEM  FOR 36 MONTHS.",
+   "department": "South African Diamond and Precious Metals Regulator",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "maintenance",
+    "repair"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-11-06T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "PFMA GCC July 2010.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2138b27d-d3d7-4cb9-9f1e-76a1abf4edd4.pdf&downloadedFileName=PFMA%20GCC%20July%202010.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T10:51:49Z"
+    },
+    {
+     "title": "BID DOCUMENTS FOR INTRUDER ALARM SYSTEM00 02.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9125f2d8-7a82-4252-8e74-db63547b228a.pdf&downloadedFileName=BID%20DOCUMENTS%20FOR%20INTRUDER%20ALARM%20SYSTEM00%2002.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T10:17:09Z"
+    },
+    {
+     "title": "SADPMR  Bid Special Conditions of Contract Dated 23 June (002) (002).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=177fe82a-9137-4712-8be8-f0b7e37f5c8b.pdf&downloadedFileName=SADPMR%20%20Bid%20Special%20Conditions%20of%20Contract%20Dated%2023%20June%20%28002%29%20%28002%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T10:53:22Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176119",
+   "reference": "CET 20",
+   "title": "PLUMBING PREPARATION AND TRADE TEST TRAINING AT STANDERTON IN MPUMALANGA PROVINCE.",
+   "department": "Water and Sanitation",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "plumbing"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-06T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "CET 20.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9e583d4d-d31d-4e84-abf3-e486169a3252.pdf&downloadedFileName=CET%2020.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T14:05:27Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3522,65 +3618,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=2304aa2c-2ae8-4eb0-853a-d094c770680c.pdf&downloadedFileName=34-2026-2027%20TENDER%20DOCUMENT.pdf",
      "format": "pdf",
      "published": "2026-10-02T08:32:12Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-171727",
-   "reference": "SANRAL N002-300-2020/1",
-   "title": "THE CONSTRUCTION OF PAVEMENT AND SETTLEMENT REPAIRS OF NATIONAL ROUTE 2, SECTION 30 FROM BUSHVELD RETREAT FARM (Km 44.00) TO HLUHLUWE INTERCHANGE (Km 55.00)",
-   "department": "South African National Roads Agency Soc Limited (SANRAL)",
-   "category": "Agriculture",
-   "company": "llp",
-   "matchedTerms": [
-    "farm",
-    "repairs"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-25T00:00:00+00:00",
-   "closingDate": "2026-11-06T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "works",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Addendum 1 - SANRAL N.002-300-2020-1.zip",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=21d1814a-f07a-402d-8baf-0948164fa162.zip&downloadedFileName=Addendum%201%20-%20SANRAL%20N.002-300-2020-1.zip",
-     "format": "zip",
-     "published": "2026-10-22T09:56:15Z"
-    },
-    {
-     "title": "Tender document - SANRAL N.002-300-2020-1.zip",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7a944c84-b181-43d0-a34c-379deebd8122.zip&downloadedFileName=Tender%20document%20-%20SANRAL%20N.002-300-2020-1.zip",
-     "format": "zip",
-     "published": "2026-09-25T15:19:31Z"
-    },
-    {
-     "title": "SANRAL N.002-300-2020-1 - Correspondence 1.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=16ca84aa-5a98-4c41-af08-56cbb1e6791f.pdf&downloadedFileName=SANRAL%20N.002-300-2020-1%20-%20Correspondence%201.pdf",
-     "format": "pdf",
-     "published": "2026-10-22T19:51:38Z"
-    },
-    {
-     "title": "Minutes of the clarification meeting.zip",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=362d3085-64bf-4e68-a187-8f4d77af2eed.zip&downloadedFileName=Minutes%20of%20the%20clarification%20meeting.zip",
-     "format": "zip",
-     "published": "2026-10-22T09:53:54Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8913,88 +8950,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-171316",
-   "reference": "ORTIA8179/2026/RFP",
-   "title": "REFURBISHMENT OF STAFF RESTROOMS FOR A PERIOD OF 12 MONTHS AT OR TAMBO INTERNATIONAL AIRPORT",
-   "department": "Airports Company of South Africa",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "refurbish"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-09-23T00:00:00+00:00",
-   "closingDate": "2026-11-13T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Briefing Session Minutes.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=edaf7b4f-7596-4c59-9b4d-09e086cb7498.pdf&downloadedFileName=Briefing%20Session%20Minutes.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T21:15:26Z"
-    },
-    {
-     "title": "APPENDIX 2A- AIRSIDE INSURANCE REQUIREMENTS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0928713f-1761-48c6-ab5d-0df39aaae1fc.pdf&downloadedFileName=APPENDIX%202A-%20AIRSIDE%20INSURANCE%20REQUIREMENTS.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T15:09:34Z"
-    },
-    {
-     "title": "ORTIA81792026RFP- Final published.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=70c57394-6a37-436a-84c3-4edc2e995e6f.pdf&downloadedFileName=ORTIA81792026RFP-%20Final%20published.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T15:09:34Z"
-    },
-    {
-     "title": "Briefing Session Presentation.pptx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=521552f6-7389-4f85-9cca-544a66f13ffe.pptx&downloadedFileName=Briefing%20Session%20Presentation.pptx",
-     "format": "pptx",
-     "published": "2026-10-15T21:15:25Z"
-    },
-    {
-     "title": "APPENDIX 1- CONTRACT DOCUMENT.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6e19f201-e9c8-4db7-a0d3-764f0212b79a.pdf&downloadedFileName=APPENDIX%201-%20CONTRACT%20DOCUMENT.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T15:09:34Z"
-    },
-    {
-     "title": "Addendum 01.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ad8078e4-dfac-4dc1-9c1c-a5fc2f9bb273.pdf&downloadedFileName=Addendum%2001.pdf",
-     "format": "pdf",
-     "published": "2026-10-15T21:15:26Z"
-    },
-    {
-     "title": "APPENDIX 3- SAFETY & ENVIRONMENTAL REQUIREMENTS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7936434e-56a9-46fb-a972-afb59185dad2.pdf&downloadedFileName=APPENDIX%203-%20SAFETY%20%26%20ENVIRONMENTAL%20REQUIREMENTS.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T15:09:34Z"
-    },
-    {
-     "title": "APPENDIX 2B- LANDSIDE INSURANCE REQUIREMENTS.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1409cada-c914-4093-b025-d3ae579cfbb3.pdf&downloadedFileName=APPENDIX%202B-%20LANDSIDE%20INSURANCE%20REQUIREMENTS.pdf",
-     "format": "pdf",
-     "published": "2026-09-22T15:09:34Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-175900",
    "reference": "10416904",
    "title": "Refurbishment of Ferric Chloride and Coagulant Dosing Equipment at Rietvlei Water Purification Plant at Tshwane",
@@ -9984,7 +9939,7 @@
    "reference": "SANBI- G588/2026",
    "title": "REQUEST FOR BIDS FOR THE APPOINTMENT OF A CONTRACTOR FOR THE INSTALLATION OF A WATER-WISE AND BIODIVERSITY GARDEN AT THE PRETORIA NATIONAL BOTANICAL GARDEN, GAUTENG",
    "department": "South African National Biodiversity Institute",
-   "category": "Agriculture",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -10031,7 +9986,7 @@
    "reference": "SANBI G592/2026",
    "title": "APPOINTMENT OF A CONTRACTOR FOR THE INSTALLATION OF A WATER-WISE AND BIODIVERSITY GARDEN. AT THE PRETORIA NATIONAL BOTANICAL GARDEN, GAUTENG",
    "department": "South African National Biodiversity Institute",
-   "category": "Agriculture",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -10672,6 +10627,71 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=22e13256-6892-4a6e-9e74-e253f7077f3b.pdf&downloadedFileName=Tender%20Advert%20for%20Civil%20Panel.pdf",
      "format": "pdf",
      "published": "2026-10-23T16:53:26Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-171727",
+   "reference": "SANRAL N002-300-2020/1",
+   "title": "THE CONSTRUCTION OF PAVEMENT AND SETTLEMENT REPAIRS OF NATIONAL ROUTE 2, SECTION 30 FROM BUSHVELD RETREAT FARM (Km 44.00) TO HLUHLUWE INTERCHANGE (Km 55.00)",
+   "department": "South African National Roads Agency Soc Limited (SANRAL)",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "farm",
+    "repairs"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-09-25T00:00:00+00:00",
+   "closingDate": "2026-11-18T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "works",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Addendum 1 - SANRAL N.002-300-2020-1.zip",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=21d1814a-f07a-402d-8baf-0948164fa162.zip&downloadedFileName=Addendum%201%20-%20SANRAL%20N.002-300-2020-1.zip",
+     "format": "zip",
+     "published": "2026-10-22T09:56:15Z"
+    },
+    {
+     "title": "Tender document - SANRAL N.002-300-2020-1.zip",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7a944c84-b181-43d0-a34c-379deebd8122.zip&downloadedFileName=Tender%20document%20-%20SANRAL%20N.002-300-2020-1.zip",
+     "format": "zip",
+     "published": "2026-09-25T15:19:31Z"
+    },
+    {
+     "title": "SANRAL N.002-300-2020-1 - Correspondence 1.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=16ca84aa-5a98-4c41-af08-56cbb1e6791f.pdf&downloadedFileName=SANRAL%20N.002-300-2020-1%20-%20Correspondence%201.pdf",
+     "format": "pdf",
+     "published": "2026-10-22T19:51:38Z"
+    },
+    {
+     "title": "Minutes of the clarification meeting.zip",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=362d3085-64bf-4e68-a187-8f4d77af2eed.zip&downloadedFileName=Minutes%20of%20the%20clarification%20meeting.zip",
+     "format": "zip",
+     "published": "2026-10-22T09:53:54Z"
+    },
+    {
+     "title": "Addendum 2 - SANRAL N.002-300-2020-1.zip",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=1602abaf-a01d-42d2-abae-e3c254e92518.zip&downloadedFileName=Addendum%202%20-%20SANRAL%20N.002-300-2020-1.zip",
+     "format": "zip",
+     "published": "2026-10-30T16:37:38Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -13029,6 +13049,58 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-175982",
+   "reference": "RFX600003597/1",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER TO SUPPLY, DELIVER AND INSTALL A CONCRETE PALISADE FENCE AT C5 GEORGE SITE UNDER THE\r\nGEORGE OPERATIONAL CENTRE",
+   "department": "Sentech Limited",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "palisade"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-25T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "works",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ George Perimeter Fence GEORGE REDUCED SCOPEzzzzzz (003).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=cf6e5d67-f973-4e2c-89df-96b2ee21f607.pdf&downloadedFileName=RFQ%20George%20Perimeter%20Fence%20GEORGE%20REDUCED%20SCOPEzzzzzz%20%28003%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T08:32:37Z"
+    },
+    {
+     "title": "Revised Standard Bidding Document (SDB) 4_Annexure A (3) ZZZZZZ.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=03b163a4-db34-46c1-803f-b816f499f83a.pdf&downloadedFileName=Revised%20Standard%20Bidding%20Document%20%28SDB%29%204_Annexure%20A%20%283%29%20ZZZZZZ.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T08:31:00Z"
+    },
+    {
+     "title": "SENTECH SUPPLIER CONSENT FORMZZZZ.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=dddf8e11-754e-4db5-a513-b86b883e7c8d.pdf&downloadedFileName=SENTECH%20SUPPLIER%20CONSENT%20FORMZZZZ.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T08:33:17Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175564",
    "reference": "COMM-B022/26/27",
    "title": "SUPPLY AND DELIVER EMERGENCY UNIFORM (TRAFFIC, FIRE, DISASTER, DLTC, AND ANIMAL POUND) FOR A PERIOD OF 3 YEARS.",
@@ -14365,6 +14437,100 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=53499904-3f95-4ae7-bf4b-b90d8b4c7eb8.pdf&downloadedFileName=35-2026-2027%20Tender%20Document.pdf",
      "format": "pdf",
      "published": "2026-10-23T09:27:38Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-171316",
+   "reference": "ORTIA8179/2026/RFP",
+   "title": "REFURBISHMENT OF STAFF RESTROOMS FOR A PERIOD OF 12 MONTHS AT OR TAMBO INTERNATIONAL AIRPORT",
+   "department": "Airports Company of South Africa",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "refurbish"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-09-23T00:00:00+00:00",
+   "closingDate": "2026-11-27T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Briefing Session Minutes.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=edaf7b4f-7596-4c59-9b4d-09e086cb7498.pdf&downloadedFileName=Briefing%20Session%20Minutes.pdf",
+     "format": "pdf",
+     "published": "2026-10-15T21:15:26Z"
+    },
+    {
+     "title": "APPENDIX 2A- AIRSIDE INSURANCE REQUIREMENTS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0928713f-1761-48c6-ab5d-0df39aaae1fc.pdf&downloadedFileName=APPENDIX%202A-%20AIRSIDE%20INSURANCE%20REQUIREMENTS.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T15:09:34Z"
+    },
+    {
+     "title": "Addendum 02.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=eb50e0d9-256a-44fc-8224-3c00ec04deb6.pdf&downloadedFileName=Addendum%2002.pdf",
+     "format": "pdf",
+     "published": "2026-10-30T16:13:40Z"
+    },
+    {
+     "title": "ORTIA81792026RFP- Final published.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=70c57394-6a37-436a-84c3-4edc2e995e6f.pdf&downloadedFileName=ORTIA81792026RFP-%20Final%20published.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T15:09:34Z"
+    },
+    {
+     "title": "Briefing Session Presentation.pptx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=521552f6-7389-4f85-9cca-544a66f13ffe.pptx&downloadedFileName=Briefing%20Session%20Presentation.pptx",
+     "format": "pptx",
+     "published": "2026-10-15T21:15:25Z"
+    },
+    {
+     "title": "APPENDIX 1- CONTRACT DOCUMENT.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=6e19f201-e9c8-4db7-a0d3-764f0212b79a.pdf&downloadedFileName=APPENDIX%201-%20CONTRACT%20DOCUMENT.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T15:09:34Z"
+    },
+    {
+     "title": "Clarification 01.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b7ffcb06-f622-45bd-aaf4-a0122845375e.pdf&downloadedFileName=Clarification%2001.pdf",
+     "format": "pdf",
+     "published": "2026-10-30T16:13:40Z"
+    },
+    {
+     "title": "Addendum 01.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ad8078e4-dfac-4dc1-9c1c-a5fc2f9bb273.pdf&downloadedFileName=Addendum%2001.pdf",
+     "format": "pdf",
+     "published": "2026-10-15T21:15:26Z"
+    },
+    {
+     "title": "APPENDIX 3- SAFETY & ENVIRONMENTAL REQUIREMENTS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7936434e-56a9-46fb-a972-afb59185dad2.pdf&downloadedFileName=APPENDIX%203-%20SAFETY%20%26%20ENVIRONMENTAL%20REQUIREMENTS.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T15:09:34Z"
+    },
+    {
+     "title": "APPENDIX 2B- LANDSIDE INSURANCE REQUIREMENTS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=1409cada-c914-4093-b025-d3ae579cfbb3.pdf&downloadedFileName=APPENDIX%202B-%20LANDSIDE%20INSURANCE%20REQUIREMENTS.pdf",
+     "format": "pdf",
+     "published": "2026-09-22T15:09:34Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"

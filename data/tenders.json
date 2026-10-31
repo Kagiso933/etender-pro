@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-31T10:59:18.622669+00:00",
+ "generatedAt": "2026-10-31T20:34:30.962934+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-22",
- "releasesScanned": 945,
- "uniqueTenders": 975,
- "count": 162,
+ "coveredFrom": "2026-09-08",
+ "releasesScanned": 4342,
+ "uniqueTenders": 4342,
+ "count": 165,
  "categories": {
-  "Network & Infrastructure": 27,
-  "End-User Computing": 17,
-  "Software & Systems": 75,
-  "Cloud Services": 5,
-  "Cybersecurity": 12,
+  "Network & Infrastructure": 33,
+  "End-User Computing": 16,
+  "Software & Systems": 71,
+  "Cloud Services": 6,
+  "Cybersecurity": 10,
   "Telecoms & Unified Comms": 10,
-  "IT Services & Support": 16
+  "IT Services & Support": 19
  },
  "onlineBriefings": 0,
- "carriedOver": 89,
+ "carriedOver": 0,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -220,6 +220,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=b8e84589-30df-452c-9f6c-35ee54355616.pdf&downloadedFileName=RFQ%204688b_.pdf",
      "format": "pdf",
      "published": "2026-10-26T11:35:12Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-175502",
+   "reference": "RFQ2026/27-65",
+   "title": "Appointment of a Service provider to Supply, customization and licensing of Sage Business Intelligence module or similar solution for management reporting for one year.",
+   "department": "The South African Qualifications Authority (SAQA)",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "business intelligence"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-23T00:00:00+00:00",
+   "closingDate": "2026-11-02T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ 2026-27-65 SAGE BI MODULE.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f71cf3ba-491f-49bd-a463-bc788d198e4a.pdf&downloadedFileName=RFQ%202026-27-65%20SAGE%20BI%20MODULE.pdf",
+     "format": "pdf",
+     "published": "2026-10-23T15:39:47Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1239,6 +1279,64 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176199",
+   "reference": "PR00000016437",
+   "title": "REQUEST FOR POTENTIAL SERVICE PROVIDERS TO SUBMIT A QUOTATION TO AIDC FOR THE INFORMATION TECHNOLOGY SHORT COURSES",
+   "department": "Automotive Industry Development Centre (AIDC)",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "information technology"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-11-05T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "PR16437 - GRCP and CISA Training RFQ.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bef67086-6fce-4ae7-a7b4-46787addeff9.pdf&downloadedFileName=PR16437%20-%20GRCP%20and%20CISA%20Training%20RFQ.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T08:21:49Z"
+    },
+    {
+     "title": "Standard Bidding Document (SDB) 4_Annexure A.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fbe81bf3-665d-4aaa-b7fd-58bb4b1074e2.pdf&downloadedFileName=Standard%20Bidding%20Document%20%28SDB%29%204_Annexure%20A.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T08:21:49Z"
+    },
+    {
+     "title": "SBD 6.1 IN TERMS OF PPR2022.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9674a304-3f87-4e23-a7d0-6752c7d08c6c.pdf&downloadedFileName=SBD%206.1%20IN%20TERMS%20OF%20PPR2022.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T08:21:49Z"
+    },
+    {
+     "title": "Annexure A_Integrity Pact for Businesses.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=41f7e161-73c8-4fd7-b9dc-927754cfd497.pdf&downloadedFileName=Annexure%20A_Integrity%20Pact%20for%20Businesses.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T08:21:49Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174255",
    "reference": "NLC2026-016",
    "title": "TERMS OF REFERENCE FOR THE APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE MEMBERSHIP SUBSCRIPTION FOR ACCESS TO ICT RESEARCH AND ADVISORY SERVICES OVER A PERIOD OF TWO YEARS.",
@@ -1367,11 +1465,63 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176084",
+   "reference": "HO/ ICT/ 10375769 / 10 /2026",
+   "title": "REQUEST FOR QUOTATION\r\nAPPOINTMENT OF A SERVICE PROVIDER TO IMPLEMENT AND OPERATIONALISE DATA GOVERNANCE STRATEGY, FRAMEWORK AND DATA MANAGEMENT FOR SIX (6) MONTHS",
+   "department": "Passenger Rail Agency of South Africa",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "ict"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-05T12:00:00+00:00",
+   "procurementMethod": "Request for Proposal",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "PRASA_Scope of Work_Data_Governance_and_Management_Strategy_Framework Implementation v2.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=877b6b8d-9bef-4faf-89d7-031777f21949.pdf&downloadedFileName=PRASA_Scope%20of%20Work_Data_Governance_and_Management_Strategy_Framework%20Implementation%20v2.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T12:47:04Z"
+    },
+    {
+     "title": "SAP Ariba Sourcing User Guide - Supplier Responses E-Tender.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5bd752c9-b5a0-45a1-98f5-4fa0e6ce1059.pdf&downloadedFileName=SAP%20Ariba%20Sourcing%20User%20Guide%20-%20Supplier%20Responses%20E-Tender.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T12:47:04Z"
+    },
+    {
+     "title": "Cover Page for 10375769 b.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b39d34cc-18bb-44b0-86eb-b81212f3b89e.docx&downloadedFileName=Cover%20Page%20for%2010375769%20b.docx",
+     "format": "docx",
+     "published": "2026-10-28T12:47:03Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175906",
    "reference": "RFQ 134/2026",
    "title": "PROVISION AND DELIVERY OF COMPUTER EQUIPMENT, ACCESORIES AND SERVER LICENSES",
    "department": "Prince Albert Municipality",
-   "category": "End-User Computing",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "computer",
@@ -2466,7 +2616,7 @@
    "reference": "PR10119088",
    "title": "The Road Accident Fund (RAF) wishes to appoint a service provider for the Renewal of CISCO Firewall Licenses, Maintenance and Support for a period of twelve (12) months.",
    "department": "Road Accident Fund",
-   "category": "Cybersecurity",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "cisco",
@@ -3610,7 +3760,7 @@
    "reference": "REQ00000000000866",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY, DELIVER, INSTALL, TEST AND COMMISSION OF WATER BACKUP STORAGE TANKS, BOOSTER PUMP SYSTEM AND WATER SUPPLY CHANGEOVER SYSTEM AT THE SOUTH AFRICAN NURSING COUNCIL (SANC)",
    "department": "South African Nursing Council",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -4823,7 +4973,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Cybersecurity",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -5178,7 +5328,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -5421,7 +5571,7 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -6709,6 +6859,12 @@
      "published": "2026-10-15T22:55:56Z"
     },
     {
+     "title": "Annexure 1 - Correction of SBD 6.1.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=01462c99-7866-4798-ab51-ada1ea4c1319.pdf&downloadedFileName=Annexure%201%20-%20Correction%20of%20SBD%206.1.pdf",
+     "format": "pdf",
+     "published": "2026-10-31T08:01:16Z"
+    },
+    {
      "title": "Volume 3 - Fibre Termination Nod.pdf",
      "url": "https://www.etenders.gov.za/home/Download?blobName=468c58f0-38f5-4476-8970-c05e9661c7c5.pdf&downloadedFileName=Volume%203%20-%20Fibre%20Termination%20Nod.pdf",
      "format": "pdf",
@@ -6719,6 +6875,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=87078144-423a-42e4-9915-c756237168f5.pptx&downloadedFileName=Technical%20Tender%20Briefing%20Presentation.pptx",
      "format": "pptx",
      "published": "2026-10-16T02:56:43Z"
+    },
+    {
+     "title": "Addendum 02 - Correction of SBD 6.1.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=15f06063-cb6f-4e7c-a1ad-d215468ababe.pdf&downloadedFileName=Addendum%2002%20-%20Correction%20of%20SBD%206.1.pdf",
+     "format": "pdf",
+     "published": "2026-10-31T08:01:16Z"
     },
     {
      "title": "Volume 1C - Price Schedules - Fibre Node.xlsx",
@@ -7362,7 +7524,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -8364,7 +8526,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "management system",
