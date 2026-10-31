@@ -1,64 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-30T21:23:39.837598+00:00",
+ "generatedAt": "2026-10-31T02:11:17.704246+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-03",
- "releasesScanned": 2584,
- "uniqueTenders": 2659,
- "count": 165,
+ "coveredFrom": "2026-09-30",
+ "releasesScanned": 3021,
+ "uniqueTenders": 3021,
+ "count": 164,
  "categories": {
-  "Software & Systems": 74,
-  "Network & Infrastructure": 30,
-  "End-User Computing": 16,
-  "Cloud Services": 6,
+  "Network & Infrastructure": 26,
+  "End-User Computing": 17,
+  "Software & Systems": 76,
+  "Cloud Services": 4,
   "Cybersecurity": 12,
-  "Telecoms & Unified Comms": 10,
-  "IT Services & Support": 17
+  "Telecoms & Unified Comms": 11,
+  "IT Services & Support": 18
  },
  "onlineBriefings": 0,
- "carriedOver": 21,
+ "carriedOver": 5,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-172541",
-   "reference": "085S/2026/27",
-   "title": "SUPPLY, SUPPORT AND MAINTENANCE OF PUBLIC KEY INFRASTRUCTURE, SOFTWARE, SERVICES, DEVELOPMENT AND LICENSING",
-   "department": "City of Cape Town",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "software"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-02T00:00:00+00:00",
-   "closingDate": "2026-11-02T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "085S_2026_27 - Final Tender Document for Advert.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=37fbe1cf-da84-4158-a002-6368d15a3943.pdf&downloadedFileName=085S_2026_27%20-%20Final%20Tender%20Document%20for%20Advert.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T08:58:34Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-172642",
    "reference": "MATAT/2026/2027-13",
@@ -447,53 +407,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-172345",
-   "reference": "NMMDM 25/26/07 PWBS RE-ADVERT",
-   "title": "REQUEST FOR PROPOSALS FOR THE DEVELOPMENT OF RURAL ROAD ASSET MANAGEMENT SYSTEM (RRAMS) AND PROFESSIONAL SUPPORT FOR NGAKA MODIRI MOLEMA DISTRICT MUNICIPALITY FOR PERIOD OF THREE (03) YEARS (36 MONTHS).",
-   "department": "Ngaka Modiri Molema District Municipality",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "management system",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-01T00:00:00+00:00",
-   "closingDate": "2026-11-02T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "works",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "GCC.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8b85b3b7-9a29-410d-82dc-66dd989b5a6e.pdf&downloadedFileName=GCC.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T11:12:06Z"
-    },
-    {
-     "title": "TENDER DOCUMENT RRAMS PWBS READVERT-August 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=80468e7e-6cc3-431a-8eca-7cecaa743c1c.pdf&downloadedFileName=TENDER%20DOCUMENT%20RRAMS%20PWBS%20READVERT-August%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-01T11:10:58Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-172460",
    "reference": "PSJLM-CORP-2026/27-06",
    "title": "Service Provider for Supply, Installation, Commissioning and Maintenance of a Performance Management System for a period of 3 Years.",
@@ -756,7 +669,7 @@
    "reference": "220/2026",
    "title": "OFFICE EQUIPMENT (PRINTERS, COPIERS AND MULTI-FUNCTION MACHINES: LEASE OPTION) AND PRINT\r\nMANAGEMENT SOFTWARE",
    "department": "Kouga Municipality",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "printers",
@@ -1141,89 +1054,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=6e330726-5e43-4185-b57d-eede8146bd7c.pdf&downloadedFileName=RFB%203297-2026%20-%20Annexure%205A-Invitation%20Letter.pdf",
      "format": "pdf",
      "published": "2026-10-13T09:22:35Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-172629",
-   "reference": "FIN-SCM-TEN-0254",
-   "title": "Supply, delivery of new core network infrastructure",
-   "department": "South African Nuclear Energy Corporation Limited",
-   "category": "Network & Infrastructure",
-   "company": "rtc",
-   "matchedTerms": [
-    "network",
-    "network infrastructure"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-02T00:00:00+00:00",
-   "closingDate": "2026-11-04T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "5. SHEQ-INS-0100 Rev 9.0_NECSA Safety, Health and Environmental Policy.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=dec8783f-5ef3-417e-935b-05db1c435a29.pdf&downloadedFileName=5.%20SHEQ-INS-0100%20Rev%209.0_NECSA%20Safety%2C%20Health%20and%20Environmental%20Policy.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T12:19:00Z"
-    },
-    {
-     "title": "1.Main.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e94ac069-0537-4af5-ad56-3ae478ee4bd7.docx&downloadedFileName=1.Main.docx",
-     "format": "docx",
-     "published": "2026-10-02T12:19:00Z"
-    },
-    {
-     "title": "6. SHEQ-INS-5450-REV5.0.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=4eff7b3c-797a-4b00-8df3-62c30c0c42c6.pdf&downloadedFileName=6.%20SHEQ-INS-5450-REV5.0.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T12:19:00Z"
-    },
-    {
-     "title": "4. Necsa Confidentiality Agreement.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d85ccbb6-070f-45fa-abee-7da43a9b3611.pdf&downloadedFileName=4.%20Necsa%20Confidentiality%20Agreement.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T12:19:00Z"
-    },
-    {
-     "title": "7. SHEQ-INS-0102 Rev 4.0 Alcohol & Drugs Control Procedures.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=03cd253f-63bf-45a8-b259-9c10e3bd06c4.pdf&downloadedFileName=7.%20SHEQ-INS-0102%20Rev%204.0%20Alcohol%20%26%20Drugs%20Control%20Procedures.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T12:19:00Z"
-    },
-    {
-     "title": "3. NECSA TERMS AND CONDITIONS OF CONTRACT REV 3 ..pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=edf5f995-6b49-455d-bce0-a55c2edc21dd.pdf&downloadedFileName=3.%20NECSA%20TERMS%20AND%20CONDITIONS%20OF%20CONTRACT%20REV%203%20..pdf",
-     "format": "pdf",
-     "published": "2026-10-02T12:19:00Z"
-    },
-    {
-     "title": "GIT-IN-MEM-0007 - NetworkCore Tender 2026.docx.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8a124162-0f43-43f0-9170-c19a8f937b74.pdf&downloadedFileName=GIT-IN-MEM-0007%20-%20NetworkCore%20Tender%202026.docx.pdf",
-     "format": "pdf",
-     "published": "2026-10-02T12:19:00Z"
-    },
-    {
-     "title": "2. SBD.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=42c80cbc-8e78-4bad-8d4d-f158352218c3.docx&downloadedFileName=2.%20SBD.docx",
-     "format": "docx",
-     "published": "2026-10-02T12:27:06Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1992,7 +1822,7 @@
    "reference": "E3640CXMWP",
    "title": "SUPPLY, DELIVERY, TRAINING, AND TECHNICAL SUPPORT OF THE DRONE SYSTEM FOR INSPECTION AND APPLICATION IN FOSSIL POWER PLANTS AT ESKOM RESEARCH AND DEVELOPMENT FOR THE PERIOD OF TWELVE (12) MONTHS.",
    "department": "ESKOM",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "system",
@@ -3843,11 +3673,94 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-172629",
+   "reference": "FIN-SCM-TEN-0254",
+   "title": "Supply, delivery of new core network infrastructure",
+   "department": "South African Nuclear Energy Corporation Limited",
+   "category": "Network & Infrastructure",
+   "company": "rtc",
+   "matchedTerms": [
+    "network",
+    "network infrastructure"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-02T00:00:00+00:00",
+   "closingDate": "2026-11-11T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "5. SHEQ-INS-0100 Rev 9.0_NECSA Safety, Health and Environmental Policy.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=dec8783f-5ef3-417e-935b-05db1c435a29.pdf&downloadedFileName=5.%20SHEQ-INS-0100%20Rev%209.0_NECSA%20Safety%2C%20Health%20and%20Environmental%20Policy.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T12:19:00Z"
+    },
+    {
+     "title": "1.Main.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e94ac069-0537-4af5-ad56-3ae478ee4bd7.docx&downloadedFileName=1.Main.docx",
+     "format": "docx",
+     "published": "2026-10-02T12:19:00Z"
+    },
+    {
+     "title": "6. SHEQ-INS-5450-REV5.0.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4eff7b3c-797a-4b00-8df3-62c30c0c42c6.pdf&downloadedFileName=6.%20SHEQ-INS-5450-REV5.0.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T12:19:00Z"
+    },
+    {
+     "title": "4. Necsa Confidentiality Agreement.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d85ccbb6-070f-45fa-abee-7da43a9b3611.pdf&downloadedFileName=4.%20Necsa%20Confidentiality%20Agreement.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T12:19:00Z"
+    },
+    {
+     "title": "7. SHEQ-INS-0102 Rev 4.0 Alcohol & Drugs Control Procedures.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=03cd253f-63bf-45a8-b259-9c10e3bd06c4.pdf&downloadedFileName=7.%20SHEQ-INS-0102%20Rev%204.0%20Alcohol%20%26%20Drugs%20Control%20Procedures.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T12:19:00Z"
+    },
+    {
+     "title": "3. NECSA TERMS AND CONDITIONS OF CONTRACT REV 3 ..pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=edf5f995-6b49-455d-bce0-a55c2edc21dd.pdf&downloadedFileName=3.%20NECSA%20TERMS%20AND%20CONDITIONS%20OF%20CONTRACT%20REV%203%20..pdf",
+     "format": "pdf",
+     "published": "2026-10-02T12:19:00Z"
+    },
+    {
+     "title": "GIT-IN-MEM-0007 - NetworkCore Tender 2026.docx.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8a124162-0f43-43f0-9170-c19a8f937b74.pdf&downloadedFileName=GIT-IN-MEM-0007%20-%20NetworkCore%20Tender%202026.docx.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T12:19:00Z"
+    },
+    {
+     "title": "2. SBD.docx",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=42c80cbc-8e78-4bad-8d4d-f158352218c3.docx&downloadedFileName=2.%20SBD.docx",
+     "format": "docx",
+     "published": "2026-10-02T12:27:06Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-176022",
    "reference": "REQ00000000000866",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY, DELIVER, INSTALL, TEST AND COMMISSION OF WATER BACKUP STORAGE TANKS, BOOSTER PUMP SYSTEM AND WATER SUPPLY CHANGEOVER SYSTEM AT THE SOUTH AFRICAN NURSING COUNCIL (SANC)",
    "department": "South African Nursing Council",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -5373,7 +5286,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -5616,7 +5529,7 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -6033,11 +5946,75 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-172541",
+   "reference": "085S/2026/27",
+   "title": "SUPPLY, SUPPORT AND MAINTENANCE OF PUBLIC KEY INFRASTRUCTURE, SOFTWARE, SERVICES, DEVELOPMENT AND LICENSING",
+   "department": "City of Cape Town",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "software"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-02T00:00:00+00:00",
+   "closingDate": "2026-11-19T10:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "085S_2026_27 - Final Tender Document for Advert.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=37fbe1cf-da84-4158-a002-6368d15a3943.pdf&downloadedFileName=085S_2026_27%20-%20Final%20Tender%20Document%20for%20Advert.pdf",
+     "format": "pdf",
+     "published": "2026-10-02T08:58:34Z"
+    },
+    {
+     "title": "085S-2026-27  - Notice 1.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ef8b7a15-42cc-4792-80e6-722b91d0269f.pdf&downloadedFileName=085S-2026-27%20%20-%20Notice%201.pdf",
+     "format": "pdf",
+     "published": "2026-10-30T12:07:30Z"
+    },
+    {
+     "title": "Annexure A - 085S_2026_27 _Clarification Meeting Presentation.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2a969385-d250-4d8d-8ed0-862388872018.pdf&downloadedFileName=Annexure%20A%20-%20085S_2026_27%20_Clarification%20Meeting%20Presentation.pdf",
+     "format": "pdf",
+     "published": "2026-10-30T12:07:30Z"
+    },
+    {
+     "title": "085S-2026-27  - Notice 2.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=45765d5e-073e-4e03-b6d8-abc551452763.pdf&downloadedFileName=085S-2026-27%20%20-%20Notice%202.pdf",
+     "format": "pdf",
+     "published": "2026-10-30T12:07:30Z"
+    },
+    {
+     "title": "085S-2026-27 - Non-Compulsory Clarification Meeting minutes_22 - 10 - 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=83bf17db-8390-4b98-be8f-c2b237b571b9.pdf&downloadedFileName=085S-2026-27%20-%20Non-Compulsory%20Clarification%20Meeting%20minutes_22%20-%2010%20-%202026.pdf",
+     "format": "pdf",
+     "published": "2026-10-30T12:07:30Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175891",
    "reference": "RFB 3301/ 2026 - (ERP No 530015)",
    "title": "Appointment of a Service Provider to Provide a New Integrated Video Conferencing and Audio-Visual Solution for SAPS UBUNYE Auditorium",
    "department": "State Information Technology Agency",
-   "category": "Software & Systems",
+   "category": "Telecoms & Unified Comms",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -6281,7 +6258,7 @@
    "reference": "SANBI IT593/2026",
    "title": "THE APPOINTMENT OF A MICROSOFT AZURE MANAGED SERVICE PROVIDER TO MANAGE, STANDARDISE\r\nAND OPTIMISE EXISTING AZURE SERVICES FOR THE SOUTH AFRICAN NATIONAL BIODIVERSITY INSTITUTE (SANBI) FOR A PERIOD OF THREE (3) YEARS",
    "department": "South African National Biodiversity Institute",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -7493,7 +7470,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -8495,7 +8472,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "management system",
