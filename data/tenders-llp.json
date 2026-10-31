@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-31T02:11:17.704246+00:00",
+ "generatedAt": "2026-10-31T10:59:18.622669+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-30",
- "releasesScanned": 3021,
- "uniqueTenders": 3021,
- "count": 321,
+ "coveredFrom": "2026-10-22",
+ "releasesScanned": 945,
+ "uniqueTenders": 975,
+ "count": 316,
  "categories": {
-  "Supply & Consumables": 74,
+  "Supply & Consumables": 73,
   "Grounds & Landscaping": 31,
-  "Agriculture": 36,
-  "Facilities Maintenance": 180
+  "Agriculture": 35,
+  "Facilities Maintenance": 177
  },
  "onlineBriefings": 0,
- "carriedOver": 19,
+ "carriedOver": 181,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1671,58 +1671,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-175765",
-   "reference": "FQ 18/2026",
-   "title": "Supply and delivery of PPE for community services (once-off) for Kannaland Municipality",
-   "department": "Kannaland Municipality",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "ppe"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-27T00:00:00+00:00",
-   "closingDate": "2026-11-03T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "PPE ADVERT.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6a5ad94f-2eff-4988-afd8-3030199684b3.pdf&downloadedFileName=PPE%20ADVERT.pdf",
-     "format": "pdf",
-     "published": "2026-10-27T07:45:28Z"
-    },
-    {
-     "title": "FQ PPE for Community services 2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7b487840-f612-4a32-be6d-77c63426050c.pdf&downloadedFileName=FQ%20PPE%20for%20Community%20services%202026.pdf",
-     "format": "pdf",
-     "published": "2026-10-27T07:45:28Z"
-    },
-    {
-     "title": "Pricing Schedule - PPE for Community.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2c275c43-2540-45e0-a9b0-f887cc26c0a4.xlsx&downloadedFileName=Pricing%20Schedule%20-%20PPE%20for%20Community.xlsx",
-     "format": "xlsx",
-     "published": "2026-10-27T07:45:28Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-172405",
    "reference": "74846",
    "title": "CARGO WAREHOUSE LIGHTING REFURBISHMENT AT OR TAMBO INTERNATIONAL AIRPORT.",
@@ -1944,46 +1892,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=77414466-22e2-44b4-92f3-dfb9f62b02d3.pdf&downloadedFileName=4%20Returnable%20Documents_%20Print%20on%20yellow%20Long%20Term%20Lease%20Klipfontein.pdf",
      "format": "pdf",
      "published": "2026-10-06T22:22:45Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176139",
-   "reference": "NTU111/2026/27",
-   "title": "SUPPLY AND DELIVERY OF TONG TATTOO PLIERS,SYRINGE’S,NEEDLES, ELECTROGUARD GEL AND AMINOGROW, VACCINES,GUANO BOOSTER 100% ORGANIC FERTILIZER: NCOME CORRECTIONAL SERVICE",
-   "department": "Correctional Services",
-   "category": "Agriculture",
-   "company": "llp",
-   "matchedTerms": [
-    "fertilizer"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-28T00:00:00+00:00",
-   "closingDate": "2026-11-04T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "NTU 111 2026 2027.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e3629235-2092-4b51-944f-42359f9e6370.pdf&downloadedFileName=NTU%20111%202026%202027.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T15:16:37Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -2786,99 +2694,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=dd2fc9f5-9d16-484a-8666-d7c5b00355aa.pdf&downloadedFileName=DFFQ%20260%20PPE.pdf",
      "format": "pdf",
      "published": "2026-10-29T11:21:15Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176222",
-   "reference": "RFQ180-2026",
-   "title": "APPOINTMENT OF A BIDDER TO RENDER SERVICE OF MAINTENANCE, SERVICING, REPAIR AND MONITORING OF INTRUDER ALARM SYSTEM  FOR 36 MONTHS.",
-   "department": "South African Diamond and Precious Metals Regulator",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "maintenance",
-    "repair"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-29T00:00:00+00:00",
-   "closingDate": "2026-11-06T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "PFMA GCC July 2010.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=2138b27d-d3d7-4cb9-9f1e-76a1abf4edd4.pdf&downloadedFileName=PFMA%20GCC%20July%202010.pdf",
-     "format": "pdf",
-     "published": "2026-10-29T10:51:49Z"
-    },
-    {
-     "title": "BID DOCUMENTS FOR INTRUDER ALARM SYSTEM00 02.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=9125f2d8-7a82-4252-8e74-db63547b228a.pdf&downloadedFileName=BID%20DOCUMENTS%20FOR%20INTRUDER%20ALARM%20SYSTEM00%2002.pdf",
-     "format": "pdf",
-     "published": "2026-10-29T10:17:09Z"
-    },
-    {
-     "title": "SADPMR  Bid Special Conditions of Contract Dated 23 June (002) (002).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=177fe82a-9137-4712-8be8-f0b7e37f5c8b.pdf&downloadedFileName=SADPMR%20%20Bid%20Special%20Conditions%20of%20Contract%20Dated%2023%20June%20%28002%29%20%28002%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-29T10:53:22Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176119",
-   "reference": "CET 20",
-   "title": "PLUMBING PREPARATION AND TRADE TEST TRAINING AT STANDERTON IN MPUMALANGA PROVINCE.",
-   "department": "Water and Sanitation",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "plumbing"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-28T00:00:00+00:00",
-   "closingDate": "2026-11-06T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "CET 20.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=9e583d4d-d31d-4e84-abf3-e486169a3252.pdf&downloadedFileName=CET%2020.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T14:05:27Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -13209,58 +13024,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=75123763-b5df-42e7-adb7-14541ffd38a0.doc&downloadedFileName=pa06_3COGONEFireDRKK.doc",
      "format": "doc",
      "published": "2026-10-26T11:25:46Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-175982",
-   "reference": "RFX600003597/1",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER TO SUPPLY, DELIVER AND INSTALL A CONCRETE PALISADE FENCE AT C5 GEORGE SITE UNDER THE\r\nGEORGE OPERATIONAL CENTRE",
-   "department": "Sentech Limited",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "palisade"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-28T00:00:00+00:00",
-   "closingDate": "2026-11-25T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "works",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ George Perimeter Fence GEORGE REDUCED SCOPEzzzzzz (003).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=cf6e5d67-f973-4e2c-89df-96b2ee21f607.pdf&downloadedFileName=RFQ%20George%20Perimeter%20Fence%20GEORGE%20REDUCED%20SCOPEzzzzzz%20%28003%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T08:32:37Z"
-    },
-    {
-     "title": "Revised Standard Bidding Document (SDB) 4_Annexure A (3) ZZZZZZ.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=03b163a4-db34-46c1-803f-b816f499f83a.pdf&downloadedFileName=Revised%20Standard%20Bidding%20Document%20%28SDB%29%204_Annexure%20A%20%283%29%20ZZZZZZ.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T08:31:00Z"
-    },
-    {
-     "title": "SENTECH SUPPLIER CONSENT FORMZZZZ.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=dddf8e11-754e-4db5-a513-b86b883e7c8d.pdf&downloadedFileName=SENTECH%20SUPPLIER%20CONSENT%20FORMZZZZ.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T08:33:17Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
