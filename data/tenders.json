@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-10-31T20:34:30.962934+00:00",
+ "generatedAt": "2026-11-01T01:45:34.024123+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-08",
- "releasesScanned": 4342,
- "uniqueTenders": 4342,
- "count": 165,
+ "coveredFrom": "2026-10-16",
+ "releasesScanned": 1453,
+ "uniqueTenders": 1518,
+ "count": 163,
  "categories": {
   "Network & Infrastructure": 33,
-  "End-User Computing": 16,
-  "Software & Systems": 71,
+  "End-User Computing": 13,
+  "Software & Systems": 72,
   "Cloud Services": 6,
   "Cybersecurity": 10,
   "Telecoms & Unified Comms": 10,
   "IT Services & Support": 19
  },
  "onlineBriefings": 0,
- "carriedOver": 0,
+ "carriedOver": 61,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -120,64 +120,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=b78e3bf8-d8d8-428e-859f-cc478b58b58f.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD3.1%29%20-Firm%20Prices.pdf",
      "format": "pdf",
      "published": "2026-10-28T11:32:27Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176063",
-   "reference": "RFQ-112820",
-   "title": "PRINTER CARTRIDGE",
-   "department": "Statistics South Africa",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "printer"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-28T00:00:00+00:00",
-   "closingDate": "2026-11-02T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Standard Bidding Document(SBD6.1) .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c6079656-8888-4514-831f-120372fff2c8.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD6.1%29%20.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T11:43:53Z"
-    },
-    {
-     "title": "Standard Bidding Document(SBD3.1) -Firm Prices.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=cf9138be-8a1c-453d-9117-6f5a97b48fe1.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD3.1%29%20-Firm%20Prices.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T11:43:53Z"
-    },
-    {
-     "title": "Standard Bidding Document(SBD4).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=923a49be-caf6-4733-9777-7e80048fa295.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD4%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T11:43:53Z"
-    },
-    {
-     "title": "Standard Bidding Document(SBD1).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a990bebb-eaf0-4689-a625-b50d93bb0ce1.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD1%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T11:43:52Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -747,47 +689,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=d8bad665-d9dd-466d-988c-6d5c861a62d8.pdf&downloadedFileName=UPLOAD%20DOC_TENDER%2012-2026%20PANEL%20FOR%20INFORMATION%20TECHNOLOGY%20%28IT%29.pdf",
      "format": "pdf",
      "published": "2026-09-30T19:03:51Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176078",
-   "reference": "RFQ2579b",
-   "title": "DESCRIPTION: APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION OF ADOBE ACROBAT PRO AND ADOBE CREATIVE SUITE LICENSES, AND SUPPORT FOR A PERIOD OF THIRTY-SIX (36) MONTHS.",
-   "department": "Mine Health and Safety Council",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "adobe acrobat pro and adobe creative suite licens",
-    "license"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-28T00:00:00+00:00",
-   "closingDate": "2026-11-03T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ 2579b - Adobe Acrobat and Creative Suite license (003).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=50c1a5f8-68e2-4bbd-933f-62a640b33b43.pdf&downloadedFileName=RFQ%202579b%20-%20Adobe%20Acrobat%20and%20Creative%20Suite%20license%20%28003%29.pdf",
-     "format": "pdf",
-     "published": "2026-10-28T12:16:33Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5458,7 +5359,7 @@
    "reference": "RFB 3299/2026 - (ERP No 534010)",
    "title": "Request for Bid for the Procurement of Security Access Cards, Access Card Materials and the Cleaning Kit of the Smart Card Printer for a Period of Five (5) Years.",
    "department": "State Information Technology Agency",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -8568,7 +8469,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "printer",
