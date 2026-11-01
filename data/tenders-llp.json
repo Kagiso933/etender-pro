@@ -1,16 +1,16 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-01T11:51:17.009603+00:00",
+ "generatedAt": "2026-11-01T21:05:20.382036+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-18",
- "releasesScanned": 3649,
- "uniqueTenders": 3649,
- "count": 319,
+ "coveredFrom": "2026-09-17",
+ "releasesScanned": 3725,
+ "uniqueTenders": 3725,
+ "count": 320,
  "categories": {
   "Supply & Consumables": 74,
-  "Agriculture": 35,
+  "Agriculture": 34,
   "Facilities Maintenance": 180,
-  "Grounds & Landscaping": 30
+  "Grounds & Landscaping": 32
  },
  "onlineBriefings": 0,
  "carriedOver": 7,
@@ -9963,7 +9963,7 @@
    "reference": "SANBI- G588/2026",
    "title": "REQUEST FOR BIDS FOR THE APPOINTMENT OF A CONTRACTOR FOR THE INSTALLATION OF A WATER-WISE AND BIODIVERSITY GARDEN AT THE PRETORIA NATIONAL BOTANICAL GARDEN, GAUTENG",
    "department": "South African National Biodiversity Institute",
-   "category": "Agriculture",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -10010,7 +10010,7 @@
    "reference": "SANBI G592/2026",
    "title": "APPOINTMENT OF A CONTRACTOR FOR THE INSTALLATION OF A WATER-WISE AND BIODIVERSITY GARDEN. AT THE PRETORIA NATIONAL BOTANICAL GARDEN, GAUTENG",
    "department": "South African National Biodiversity Institute",
-   "category": "Agriculture",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -11806,6 +11806,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=7c60def3-175d-4511-a411-68ef9685f31c.pdf&downloadedFileName=Document%20%20Design%2C%20Supply%2C%20Installation%2C%20Testing%2C%20Commissioning%20and%2010-Year%20Maintenance%20of%20LED%20Floodlighting%20Infrastructure%20at%20Border%20Cricket%20Grounds.pdf",
      "format": "pdf",
      "published": "2026-10-19T10:45:05Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176572",
+   "reference": "PUCMA22PK",
+   "title": "APPOINTMENT OF A PROFESSIONAL SERVICE PROVIDER TO CONDUCT AN AGRICULTURAL POLLUTION ASSESSMENT IN THE UPPER UMNGENI CATCHMENT FOR PONGOLA UMZIMKULU CATCHMENT MANAGEMENT AGENCY (PUCMA)",
+   "department": "Water and Sanitation",
+   "category": "Agriculture",
+   "company": "llp",
+   "matchedTerms": [
+    "agricultur"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-01T00:00:00+00:00",
+   "closingDate": "2026-11-23T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "BID DOCUMENT PUCMA22PK.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f4e10a41-da91-4396-a3e4-b27c795f9226.pdf&downloadedFileName=BID%20DOCUMENT%20PUCMA22PK.pdf",
+     "format": "pdf",
+     "published": "2026-11-01T21:03:56Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
