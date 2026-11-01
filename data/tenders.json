@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-01T01:45:34.024123+00:00",
+ "generatedAt": "2026-11-01T11:51:17.009603+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-16",
- "releasesScanned": 1453,
- "uniqueTenders": 1518,
- "count": 163,
+ "coveredFrom": "2026-09-18",
+ "releasesScanned": 3649,
+ "uniqueTenders": 3649,
+ "count": 166,
  "categories": {
-  "Network & Infrastructure": 33,
-  "End-User Computing": 13,
-  "Software & Systems": 72,
+  "Network & Infrastructure": 30,
+  "End-User Computing": 17,
+  "Software & Systems": 73,
   "Cloud Services": 6,
-  "Cybersecurity": 10,
+  "Cybersecurity": 11,
   "Telecoms & Unified Comms": 10,
   "IT Services & Support": 19
  },
  "onlineBriefings": 0,
- "carriedOver": 61,
+ "carriedOver": 0,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -120,6 +120,64 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=b78e3bf8-d8d8-428e-859f-cc478b58b58f.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD3.1%29%20-Firm%20Prices.pdf",
      "format": "pdf",
      "published": "2026-10-28T11:32:27Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176063",
+   "reference": "RFQ-112820",
+   "title": "PRINTER CARTRIDGE",
+   "department": "Statistics South Africa",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "printer"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-02T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Standard Bidding Document(SBD6.1) .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c6079656-8888-4514-831f-120372fff2c8.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD6.1%29%20.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:43:53Z"
+    },
+    {
+     "title": "Standard Bidding Document(SBD3.1) -Firm Prices.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=cf9138be-8a1c-453d-9117-6f5a97b48fe1.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD3.1%29%20-Firm%20Prices.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:43:53Z"
+    },
+    {
+     "title": "Standard Bidding Document(SBD4).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=923a49be-caf6-4733-9777-7e80048fa295.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD4%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:43:53Z"
+    },
+    {
+     "title": "Standard Bidding Document(SBD1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=a990bebb-eaf0-4689-a625-b50d93bb0ce1.pdf&downloadedFileName=Standard%20Bidding%20Document%28SBD1%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T11:43:52Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -694,6 +752,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176078",
+   "reference": "RFQ2579b",
+   "title": "DESCRIPTION: APPOINTMENT OF A SERVICE PROVIDER FOR PROVISION OF ADOBE ACROBAT PRO AND ADOBE CREATIVE SUITE LICENSES, AND SUPPORT FOR A PERIOD OF THIRTY-SIX (36) MONTHS.",
+   "department": "Mine Health and Safety Council",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "adobe acrobat pro and adobe creative suite licens",
+    "license"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-28T00:00:00+00:00",
+   "closingDate": "2026-11-03T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ 2579b - Adobe Acrobat and Creative Suite license (003).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=50c1a5f8-68e2-4bbd-933f-62a640b33b43.pdf&downloadedFileName=RFQ%202579b%20-%20Adobe%20Acrobat%20and%20Creative%20Suite%20license%20%28003%29.pdf",
+     "format": "pdf",
+     "published": "2026-10-28T12:16:33Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-172800",
    "reference": "NW381/BTOS03/2026/2027",
    "title": "APPOINTMENT AS A SERVICE PROVIDER FOR THE SUPPORT AND MAINTENANCE OF MSCOA FINANCIAL MANAGEMENT SYSTEM COMPLIANT FOR A PERIOD OF 36 MONTHS WITH AN OPTION OF FURTHER 2 YEARS",
@@ -955,6 +1054,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=6e330726-5e43-4185-b57d-eede8146bd7c.pdf&downloadedFileName=RFB%203297-2026%20-%20Annexure%205A-Invitation%20Letter.pdf",
      "format": "pdf",
      "published": "2026-10-13T09:22:35Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176563",
+   "reference": "NRWDI/VAAL/2026-20",
+   "title": "SUPPLY AND DELIVERY OF ELECTRONIC PERSONAL DOSIMETERS AND SOFTWARE FOR THE NATIONAL RADIOACTIVE WASTE DISPOSAL FACILITY (VAALPUTS)",
+   "department": "National Radioactive Waste Disposal Institute (NRWDI)",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "software"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-01T00:00:00+00:00",
+   "closingDate": "2026-11-04T17:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "NRWDI RFQ FOR SUPPLY AND DELIVERY OF ELECTRONIC PERSONAL DOSIMETERS AND SOFTWARE pdf.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=44d26214-7290-423e-8995-14cb5c5aa7c4.pdf&downloadedFileName=NRWDI%20RFQ%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20ELECTRONIC%20PERSONAL%20DOSIMETERS%20AND%20SOFTWARE%20pdf.pdf",
+     "format": "pdf",
+     "published": "2026-11-01T10:55:57Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1422,7 +1561,7 @@
    "reference": "RFQ 134/2026",
    "title": "PROVISION AND DELIVERY OF COMPUTER EQUIPMENT, ACCESORIES AND SERVER LICENSES",
    "department": "Prince Albert Municipality",
-   "category": "Network & Infrastructure",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "computer",
@@ -2517,7 +2656,7 @@
    "reference": "PR10119088",
    "title": "The Road Accident Fund (RAF) wishes to appoint a service provider for the Renewal of CISCO Firewall Licenses, Maintenance and Support for a period of twelve (12) months.",
    "department": "Road Accident Fund",
-   "category": "Network & Infrastructure",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "cisco",
@@ -4908,6 +5047,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=c7e927e6-2441-44e6-9a12-7c91908e4060.pdf&downloadedFileName=Volume%201A%20-%20Firewall%2009_10_26.pdf",
      "format": "pdf",
      "published": "2026-10-09T18:34:20Z"
+    },
+    {
+     "title": "Consolidated Questions for Firewall.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5b7b243e-d367-4915-9bb9-e328f1fd9bcc.pdf&downloadedFileName=Consolidated%20Questions%20for%20Firewall.pdf",
+     "format": "pdf",
+     "published": "2026-11-01T13:26:46Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5359,7 +5504,7 @@
    "reference": "RFB 3299/2026 - (ERP No 534010)",
    "title": "Request for Bid for the Procurement of Security Access Cards, Access Card Materials and the Cleaning Kit of the Smart Card Printer for a Period of Five (5) Years.",
    "department": "State Information Technology Agency",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -8427,7 +8572,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "management system",
@@ -8469,7 +8614,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "printer",
