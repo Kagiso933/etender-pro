@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-01T21:05:20.382036+00:00",
+ "generatedAt": "2026-11-02T02:05:57.736033+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-17",
- "releasesScanned": 3725,
- "uniqueTenders": 3725,
- "count": 166,
+ "coveredFrom": "2026-10-22",
+ "releasesScanned": 941,
+ "uniqueTenders": 1041,
+ "count": 165,
  "categories": {
-  "Network & Infrastructure": 32,
-  "End-User Computing": 17,
-  "Software & Systems": 76,
-  "Cloud Services": 3,
+  "Network & Infrastructure": 33,
+  "End-User Computing": 16,
+  "Software & Systems": 72,
+  "Cloud Services": 5,
   "Cybersecurity": 11,
-  "Telecoms & Unified Comms": 10,
+  "Telecoms & Unified Comms": 11,
   "IT Services & Support": 17
  },
  "onlineBriefings": 0,
- "carriedOver": 0,
+ "carriedOver": 81,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1091,9 +1091,9 @@
    "documents": [
     {
      "title": "NRWDI RFQ FOR SUPPLY AND DELIVERY OF ELECTRONIC PERSONAL DOSIMETERS AND SOFTWARE pdf.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=44d26214-7290-423e-8995-14cb5c5aa7c4.pdf&downloadedFileName=NRWDI%20RFQ%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20ELECTRONIC%20PERSONAL%20DOSIMETERS%20AND%20SOFTWARE%20pdf.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c9f38f19-ab36-449e-9b56-6c5cd8f42ab3.pdf&downloadedFileName=NRWDI%20RFQ%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20ELECTRONIC%20PERSONAL%20DOSIMETERS%20AND%20SOFTWARE%20pdf.pdf",
      "format": "pdf",
-     "published": "2026-11-01T10:55:57Z"
+     "published": "2026-11-01T23:45:19Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1561,7 +1561,7 @@
    "reference": "RFQ 134/2026",
    "title": "PROVISION AND DELIVERY OF COMPUTER EQUIPMENT, ACCESORIES AND SERVER LICENSES",
    "department": "Prince Albert Municipality",
-   "category": "End-User Computing",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "computer",
@@ -6102,7 +6102,7 @@
    "reference": "RFB 3301/ 2026 - (ERP No 530015)",
    "title": "Appointment of a Service Provider to Provide a New Integrated Video Conferencing and Audio-Visual Solution for SAPS UBUNYE Auditorium",
    "department": "State Information Technology Agency",
-   "category": "Software & Systems",
+   "category": "Telecoms & Unified Comms",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -6346,7 +6346,7 @@
    "reference": "SANBI IT593/2026",
    "title": "THE APPOINTMENT OF A MICROSOFT AZURE MANAGED SERVICE PROVIDER TO MANAGE, STANDARDISE\r\nAND OPTIMISE EXISTING AZURE SERVICES FOR THE SOUTH AFRICAN NATIONAL BIODIVERSITY INSTITUTE (SANBI) FOR A PERIOD OF THREE (3) YEARS",
    "department": "South African National Biodiversity Institute",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -7741,7 +7741,7 @@
    "reference": "PSiRA/2026/27/RFB/08",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE DESIGN, SUPPLY, IMPLEMENT AND MAINTENANCE OF A CLOUD-BASED MICROSOFT TEAMS TELEPHONY SYSTEM AND CALL CENTER SOLUTION FOR A PERIOD OF 36 MONTHS.",
    "department": "Private Security Industry Regulatory Authority",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "cloud",
@@ -8475,47 +8475,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=ada21644-27a8-496f-9354-c76038a194f8.pdf&downloadedFileName=Bid%20Document%202648S.pdf",
      "format": "pdf",
      "published": "2026-10-28T16:13:39Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176238",
-   "reference": "TS/274/2026",
-   "title": "PROVISION OF ENGINEERING SERVICES FOR RURAL ROADS ASSET MANAGEMENT SYSTEM (RRAMS) WITHIN THE ILEMBE DISTRICT MUNICIPALITY FOR A PERIOD OF THREE (3) YEARS.",
-   "department": "ILembe District Municipality",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "management system",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-29T00:00:00+00:00",
-   "closingDate": "2026-11-30T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "works",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "TS-274-2026 BID DOCUMENT.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=94b332cb-93de-42f5-803b-364293c727c6.pdf&downloadedFileName=TS-274-2026%20BID%20DOCUMENT.pdf",
-     "format": "pdf",
-     "published": "2026-10-29T11:50:36Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
