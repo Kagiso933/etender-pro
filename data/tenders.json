@@ -1,88 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-04T02:55:52.864832+00:00",
+ "generatedAt": "2026-11-04T12:44:31.878498+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-08",
- "releasesScanned": 2444,
- "uniqueTenders": 2479,
- "count": 167,
+ "coveredFrom": "2026-10-06",
+ "releasesScanned": 2672,
+ "uniqueTenders": 2692,
+ "count": 169,
  "categories": {
-  "Software & Systems": 83,
+  "Software & Systems": 84,
   "IT Services & Support": 18,
-  "Cybersecurity": 11,
+  "Cybersecurity": 14,
   "End-User Computing": 10,
-  "Network & Infrastructure": 31,
+  "Network & Infrastructure": 29,
   "Cloud Services": 3,
   "Telecoms & Unified Comms": 11
  },
  "onlineBriefings": 0,
- "carriedOver": 20,
+ "carriedOver": 14,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-173848",
-   "reference": "RFB 3297/2026 (ERP No 523010)",
-   "title": "Request for bid for the Appointment of a Service Provider to Provide a Suitable Office Space for SITA Kimberley Through an Operating Lease Agreement for a Period of Five (5) Years.",
-   "department": "State Information Technology Agency",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "erp"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-13T00:00:00+00:00",
-   "closingDate": "2026-11-04T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFB 3297-2026 - Annexure 7-Fraud awareness.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0065a192-1016-4e82-be4b-bdd2787d2946.pdf&downloadedFileName=RFB%203297-2026%20-%20Annexure%207-Fraud%20awareness.pdf",
-     "format": "pdf",
-     "published": "2026-10-13T09:22:35Z"
-    },
-    {
-     "title": "RFB 3297-2026 - Annexure 5B-Invitation to Bid.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c962b697-9f1f-44a3-9f56-c4a29e4cae27.docx&downloadedFileName=RFB%203297-2026%20-%20Annexure%205B-Invitation%20to%20Bid.docx",
-     "format": "docx",
-     "published": "2026-10-13T09:22:35Z"
-    },
-    {
-     "title": "RFB 3297-2026 - Annexure 1-Bid Specification Document.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=92e9e8f1-4a2f-45a7-a83c-e01d15fb783d.docx&downloadedFileName=RFB%203297-2026%20-%20Annexure%201-Bid%20Specification%20Document.docx",
-     "format": "docx",
-     "published": "2026-10-13T09:22:35Z"
-    },
-    {
-     "title": "RFB 3297-2026 - Annexure 5C-Pricing Schedule.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d220bf06-e1e8-4eeb-bf24-e9f6d3945c49.xlsx&downloadedFileName=RFB%203297-2026%20-%20Annexure%205C-Pricing%20Schedule.xlsx",
-     "format": "xlsx",
-     "published": "2026-10-13T09:23:30Z"
-    },
-    {
-     "title": "RFB 3297-2026 - Annexure 5A-Invitation Letter.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6e330726-5e43-4185-b57d-eede8146bd7c.pdf&downloadedFileName=RFB%203297-2026%20-%20Annexure%205A-Invitation%20Letter.pdf",
-     "format": "pdf",
-     "published": "2026-10-13T09:22:35Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-174588",
    "reference": "RFQ/29088",
@@ -299,6 +235,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=9d7ba903-fb00-48eb-b7f7-f3dc271fd64c.pdf&downloadedFileName=OHS%20Specification%20for%20%20BME%20installation%20for%20Equipment%20pdf.pdf",
      "format": "pdf",
      "published": "2026-10-09T15:31:54Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176316",
+   "reference": "RFQ-HO-1822",
+   "title": "THE PROCUREMENT OF SAMSA HPE MSA 2060 SSF STORAGE DEVICE INCLUDING PROFESSIONAL SERVICES TO CONFIGURE AND IMPLEMENT THE DEVICES AT MRCC/SWR OFFICE IN PAROW CAPE TOWN IN A VMWARE ENVIRONMENT",
+   "department": "South African Maritime Safety Authority",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "vmware"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-29T00:00:00+00:00",
+   "closingDate": "2026-11-05T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ - HO - 1822- HPE_MSA_2060_pdf_.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=d7cf3162-5c96-4d2d-9c45-12de1be397d3.pdf&downloadedFileName=RFQ%20-%20HO%20-%201822-%20HPE_MSA_2060_pdf_.pdf",
+     "format": "pdf",
+     "published": "2026-10-29T17:23:51Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1719,7 +1695,7 @@
    "reference": "PR10119088",
    "title": "The Road Accident Fund (RAF) wishes to appoint a service provider for the Renewal of CISCO Firewall Licenses, Maintenance and Support for a period of twelve (12) months.",
    "department": "Road Accident Fund",
-   "category": "Network & Infrastructure",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "cisco",
@@ -2716,7 +2692,7 @@
    "reference": "RFQ/CMS/ICT/01112026",
    "title": "Appointment of a service provider to assist with the renewal of the Checkpoint 9200 firewall license for twelve (12) months",
    "department": "Council for Medical Schemes",
-   "category": "IT Services & Support",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -3141,6 +3117,47 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=42c80cbc-8e78-4bad-8d4d-f158352218c3.docx&downloadedFileName=2.%20SBD.docx",
      "format": "docx",
      "published": "2026-10-02T12:27:06Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-176909",
+   "reference": "RFQ 09-2026",
+   "title": "SUPPLY AND DELIVERY OF IT EQUIPMENT - LAPTOPS",
+   "department": "Pixley Ka Seme District Municipality",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "it equipment",
+    "laptop"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-04T00:00:00+00:00",
+   "closingDate": "2026-11-11T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ 09 - 2026 -SUPPLY AND DELIVERY OF LAPTOPS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=ea729e63-2ad6-4672-976b-0e7321aaaedf.pdf&downloadedFileName=RFQ%2009%20-%202026%20-SUPPLY%20AND%20DELIVERY%20OF%20LAPTOPS.pdf",
+     "format": "pdf",
+     "published": "2026-11-04T12:39:57Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -4330,7 +4347,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Software & Systems",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -5207,6 +5224,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176907",
+   "reference": "SCM20/10/2026",
+   "title": "REPAIRS AND COMMISSIONING OF LOAD MANAGEMENT SYSTEM AT CONTROL ROOM AND EBDEN SUBSTATION.",
+   "department": "Enoch Mgijima Local Municipality",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "management system",
+    "system"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-04T00:00:00+00:00",
+   "closingDate": "2026-11-18T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "COMBINED ADVERT- RIPLE CONTROL.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=981a84a9-147b-4741-bae1-700074d081d3.pdf&downloadedFileName=COMBINED%20ADVERT-%20RIPLE%20CONTROL.pdf",
+     "format": "pdf",
+     "published": "2026-11-04T06:04:26Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-174630",
    "reference": "MN12/2026-27",
    "title": "MN12/2026-27: PROVISION OF 150 MBPS MICROWAVE/ FIBER/ LTE BUSINESS INTERNET & BACKUP LINK FOR A PERIOD OF 24 MONTHS",
@@ -5662,6 +5720,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=501b3cf0-b495-46d0-9e0f-e1af95929085.pdf&downloadedFileName=Clarification%20No%201%20desktops%20and%20laptops%20%2029102026%20Final.pdf",
      "format": "pdf",
      "published": "2026-10-29T14:14:54Z"
+    },
+    {
+     "title": "Clarification No 2 desktops andlaptops 03112026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5d170a10-b82b-4686-83f2-e60a630f5e47.pdf&downloadedFileName=Clarification%20No%202%20desktops%20andlaptops%2003112026.pdf",
+     "format": "pdf",
+     "published": "2026-11-03T16:26:57Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -8402,7 +8466,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "management system",
