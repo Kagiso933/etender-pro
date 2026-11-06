@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-05T22:34:34.101033+00:00",
+ "generatedAt": "2026-11-06T03:02:29.144730+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-28",
- "releasesScanned": 3443,
- "uniqueTenders": 3443,
- "count": 321,
+ "coveredFrom": "2026-10-31",
+ "releasesScanned": 367,
+ "uniqueTenders": 487,
+ "count": 317,
  "categories": {
-  "Facilities Maintenance": 153,
-  "Supply & Consumables": 82,
-  "Grounds & Landscaping": 37,
-  "Agriculture": 49
+  "Facilities Maintenance": 158,
+  "Supply & Consumables": 77,
+  "Grounds & Landscaping": 34,
+  "Agriculture": 48
  },
  "onlineBriefings": 0,
- "carriedOver": 12,
+ "carriedOver": 251,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -2420,47 +2420,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=699aed54-3cf4-41c3-91ab-69bea3e9533b.pdf&downloadedFileName=RFQ%2021-%20SUPPLY%20AND%20DELIVERY%20OF%20AGRICULTURAL%20PRODUCTION%20INPUTS%20%281%29.pdf",
      "format": "pdf",
      "published": "2026-11-05T10:50:25Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176741",
-   "reference": "REN RFQ 006 26/27",
-   "title": "SUPPLY AND DELIVERY OF PERSONNEL PROTECTIVE CLOTHING (PPE)",
-   "department": "Renosterburg Local Municipality",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "ppe",
-    "protective clothing"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-03T00:00:00+00:00",
-   "closingDate": "2026-11-09T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ 006 SUPPLY AND DELIVERY OF PPE Signed.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6b1339bc-c6fc-4c29-92d4-fe0a700f8f17.pdf&downloadedFileName=RFQ%20006%20SUPPLY%20AND%20DELIVERY%20OF%20PPE%20Signed.pdf",
-     "format": "pdf",
-     "published": "2026-11-03T10:23:44Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5135,7 +5094,7 @@
    "reference": "21554/TNP/2026-27-RRR",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY AND DELIVERY OF BUILDING MATERIAL AT THE TSITSIKAMMA SECTION OF GARDEN ROUTE NATIONAL PARK FOR A PERIOD 3 YEARS.",
    "department": "South African National Parks",
-   "category": "Grounds & Landscaping",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "building",
@@ -7010,77 +6969,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-176576",
-   "reference": "WTE1064CE",
-   "title": "SUPPLY, DELIVER, INSTALL AND CONNECTION OF LOCAL CONTENT PLUMBING, FRESH WATER AND SANITARY WARE AT NTSHINGWAYO DAM PROJECT NEAR NEWCASTLE TOWN IN KWAZULU NATAL PROVINCE- CIDB CONTRACTOR GRADING DESIGNATION OF (CIDB -1GB).",
-   "department": "Water and Sanitation",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "plumbing",
-    "tractor"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-02T00:00:00+00:00",
-   "closingDate": "2026-11-16T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "works",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Annexure  C.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=53ea91b2-d2f2-44b1-9238-24f3d2bfa45e.pdf&downloadedFileName=Annexure%20%20C.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T08:12:08Z"
-    },
-    {
-     "title": "WTE1064CE-NTSHINGWAYO PLUMBING REVISED SPECIFICATION rev1.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e615322f-c1e6-4d2c-9a55-65bd8e5ac333.pdf&downloadedFileName=WTE1064CE-NTSHINGWAYO%20PLUMBING%20REVISED%20SPECIFICATION%20rev1.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T08:12:09Z"
-    },
-    {
-     "title": "REVISED SBD 4 -Annexure A (1).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=36d7bdf7-69de-47f6-9b2f-84a9b7026305.pdf&downloadedFileName=REVISED%20SBD%204%20-Annexure%20A%20%281%29.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T08:12:09Z"
-    },
-    {
-     "title": "BBBEE -EME-QME REPORTING  LETTER (3).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5da92ab0-b4e0-42a6-9de6-aac72578b41a.pdf&downloadedFileName=BBBEE%20-EME-QME%20REPORTING%20%20LETTER%20%283%29.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T08:12:08Z"
-    },
-    {
-     "title": "GeneralConditionsofContractJuly10 (3).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1d8bb2bb-073e-4f7c-9a8f-b7040a8e6cb3.pdf&downloadedFileName=GeneralConditionsofContractJuly10%20%283%29.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T08:12:09Z"
-    },
-    {
-     "title": "SBD 6.1 IN TERMS OF PPR2022 (80-20).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=81978207-e78c-408c-9589-e6cd32f0c1a1.pdf&downloadedFileName=SBD%206.1%20IN%20TERMS%20OF%20PPR2022%20%2880-20%29.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T08:12:09Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-176337",
    "reference": "RFQ 202111",
    "title": "APPOINTMENT OF A SUITABLY QUALIFIED AND EXPERIENCED SERVICE PROVIDER FOR THE REFURBISHMENT OF SABS PAVILLION",
@@ -8176,52 +8064,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-176620",
-   "reference": "RFQ74966",
-   "title": "Airfield and Inner Perimeter Vegetation Management",
-   "department": "Airports Company of South Africa",
-   "category": "Grounds & Landscaping",
-   "company": "llp",
-   "matchedTerms": [
-    "vegetation management"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-02T00:00:00+00:00",
-   "closingDate": "2026-11-17T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "AIRFIE~1.PDF",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=76a1b2d0-6193-42d9-9ed3-055a2d01a817.PDF&downloadedFileName=AIRFIE~1.PDF",
-     "format": "pdf",
-     "published": "2026-11-02T12:17:15Z"
-    },
-    {
-     "title": "INNERP~1.XLS",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a7a9f299-2980-4f6b-9e1c-fe914f9d4eef.XLS&downloadedFileName=INNERP~1.XLS",
-     "format": "xls",
-     "published": "2026-11-02T12:17:16Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-174418",
    "reference": "FOSPHB-RFP-23-26/27",
    "title": "FOSPHB-RFP-23-26/27 REQUEST FOR PROPOSAL FOR PROVISION OF CLEANING SERVICES FOR OFFICES AND HYGIENE FACILITIES IN COMPLIANCE TO REGULATIONS UNDER THE OCCUPATIONAL HEALTH AND SAFETY ACT 85 OF 1993 AT FOSKOR MINING DIVISION (PHALABORWA) FOR A PERIOD OF 3 YEARS",
@@ -8412,46 +8254,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=4ef6c48c-0859-4075-803f-7c8e1266a080.xls&downloadedFileName=BOQ%20for%20maintenance%20of%20municipal%20facilities.xls",
      "format": "xls",
      "published": "2026-10-21T16:27:16Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176617",
-   "reference": "TNPA/2026/10/0002/114848/RFQ",
-   "title": "SUPPLY AND INSTALLATION OF PALISADE FENCE (SKOONKAAI PORT BOUNDARY) IN THE PORT OF RICHARDS BAY FOR A PERIOD OF FIVE (5) MONTHS",
-   "department": "Transnet National Ports Authority",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "palisade"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-02T00:00:00+00:00",
-   "closingDate": "2026-11-18T02:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ - Palisade Fence.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0ecc348b-cf38-4463-ba68-8af1619fb43e.pdf&downloadedFileName=RFQ%20-%20Palisade%20Fence.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T12:13:46Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -11066,71 +10868,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-176688",
-   "reference": "RFB 3302/2026 - (ERP No 539010)",
-   "title": "The Appointment of a Service Provider to Supply and Delivery of Uniforms, Corporate Wear and Protective Clothing to SITA Facilities Management and Physical Security Department for a Period of 5 Years (60 Months).",
-   "department": "State Information Technology Agency",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "protective clothing",
-    "uniforms"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-02T00:00:00+00:00",
-   "closingDate": "2026-11-24T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFB 539010- RFB 3302-2026 - Invitation to bidder letter.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8516a51a-0dc2-4c78-ab93-60bed0326d33.pdf&downloadedFileName=RFB%20539010-%20RFB%203302-2026%20-%20Invitation%20to%20bidder%20letter.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T15:29:30Z"
-    },
-    {
-     "title": "RFB 3302-2026 (539010) - Price Schedule for Uniforms 1.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8194c9ab-0962-4c92-92e9-cf25148f55e7.xlsx&downloadedFileName=RFB%203302-2026%20%28539010%29%20-%20Price%20Schedule%20for%20Uniforms%201.xlsx",
-     "format": "xlsx",
-     "published": "2026-11-02T15:29:31Z"
-    },
-    {
-     "title": "RFB 3302-2026 (539010) - Standard Bidding Document.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b22c4fb2-ad6c-4e3d-837a-e1d8bad723ec.docx&downloadedFileName=RFB%203302-2026%20%28539010%29%20-%20Standard%20Bidding%20Document.docx",
-     "format": "docx",
-     "published": "2026-11-02T15:29:30Z"
-    },
-    {
-     "title": "RFB 3302-2026 (539010) - Bid Specification Document 1.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0c431c2c-55e1-4b23-a28f-fae2f67033d6.docx&downloadedFileName=RFB%203302-2026%20%28539010%29%20-%20Bid%20Specification%20Document%201.docx",
-     "format": "docx",
-     "published": "2026-11-02T15:29:30Z"
-    },
-    {
-     "title": "RFB 3302-2026 (539010) - Fraud awareness notice to all bidders.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fd8b2469-b2be-4648-9ce8-fcee901ecbb3.pdf&downloadedFileName=RFB%203302-2026%20%28539010%29%20-%20Fraud%20awareness%20notice%20to%20all%20bidders.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T15:31:51Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-176417",
    "reference": "GQET-2026/2027-011",
    "title": "FORT GLAMORGAN PRISON: MAINTENANCE AND REPAIRS OF\r\nBOILERS FOR A PERIOD OF 36 MONTHS",
@@ -11874,47 +11611,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-176597",
-   "reference": "DLRRD-MP0005(2026/2027)",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER TO RENDER CLEANING AND HYGIENE SERVICES FOR THE DEPARTMENT LAND REFORM AND RURAL DEVELOPMENT– GERT SIBANDE SHARED SERVICE CENTRE (ERMELO AND PIET RETIEF) OFFICES FOR A PERIOD OF 36 MONTHS.",
-   "department": "Department of  Land Reform and Rural Development",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "cleaning",
-    "hygiene services"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-02T00:00:00+00:00",
-   "closingDate": "2026-11-25T11:00:00+00:00",
-   "procurementMethod": "Request for Proposal",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "AMENDED BID DOCUMENT- GERT SIBANDE SHARED SERVICES CENTRE- CLEANING & HYGIENE SERVICES.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a3c90f06-d566-445b-84ee-1340b1be3f79.pdf&downloadedFileName=AMENDED%20BID%20DOCUMENT-%20GERT%20SIBANDE%20SHARED%20SERVICES%20CENTRE-%20CLEANING%20%26%20HYGIENE%20SERVICES.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T12:55:03Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-175825",
    "reference": "SANBI G591/2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE COMPLETION OF THE DRY ROOM AND MINOR REPAIR WORK TO THE SEEDBANK FACILITY AT THE KIRSTENBOSCH NATIONAL BOTANICAL GARDEN, CAPE TOWN",
@@ -12426,7 +12122,7 @@
    "reference": "E3615GXMPDUVp",
    "title": "Publication of bidders names - Service, Maintenance, Calibration, Supply of spares and consumables of Lab Instruments at Duvha Power Station on as and when required basis for a period of 60 Months.",
    "department": "ESKOM",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -13744,7 +13440,7 @@
    "reference": "ATM 2026/2027-09",
    "title": "The Afrikaans Language Museum and Monument (ATM) hereby invites quotations for the provision of professional grass-cutting and grounds maintenance services. The purpose of this invitation is to appoint a suitably qualified and experienced service provider to provide regular grass-cutting and grounds maintenance services at the ATM for a period of two (2) years.",
    "department": "Die Afrikaanse Taal Museum",
-   "category": "Grounds & Landscaping",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "grounds",
@@ -14201,6 +13897,112 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-177018",
+   "reference": "RFQ 16903",
+   "title": "ECC Room Renovations at Chief Dawid Stuurman Airport",
+   "department": "Airports Company of South Africa",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "renovat"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-06T00:00:00+00:00",
+   "closingDate": "2026-11-27T13:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "CDSIA ECC Building Maintenance Contract.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f78a5741-6489-41a5-a32e-bf297cb2b226.pdf&downloadedFileName=CDSIA%20ECC%20Building%20Maintenance%20Contract.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T14:12:33Z"
+    },
+    {
+     "title": "Annexure 1.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=b2294484-ccd0-49f1-9e34-d70d5de73ac0.pdf&downloadedFileName=Annexure%201.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T14:12:33Z"
+    },
+    {
+     "title": "RFQ_16903_ECC Room Renovations at Chief Dawid Stuurman Airport (2).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c67a22e9-9e05-475b-bc4a-f52d634a152b.pdf&downloadedFileName=RFQ_16903_ECC%20Room%20Renovations%20at%20Chief%20Dawid%20Stuurman%20Airport%20%282%29.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T19:27:22Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-177105",
+   "reference": "RFQ 16902",
+   "title": "MAINTENANCE AND ENGINEERING BUILDING REFURBISHMENT AT CHIEF DAWID STUURMAN AIRPORT",
+   "department": "Airports Company of South Africa",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "building",
+    "maintenance",
+    "refurbish"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-06T00:00:00+00:00",
+   "closingDate": "2026-11-27T15:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ_16902_Maintenance and Engineering Building Refurbishment at Chief Dawid Stuurman Airport.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=da23eabb-c007-4f70-bc2a-307362d38ce7.pdf&downloadedFileName=RFQ_16902_Maintenance%20and%20Engineering%20Building%20Refurbishment%20at%20Chief%20Dawid%20Stuurman%20Airport.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T19:43:32Z"
+    },
+    {
+     "title": "M&E building refurb functionality .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=afb39c23-3511-492b-a574-3c3e3d7832cb.pdf&downloadedFileName=M%26E%20building%20refurb%20functionality%20.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T19:43:32Z"
+    },
+    {
+     "title": "NEC 3 ECC -M&E Building Refurb Final Final .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=da5c8e3f-9094-44db-a609-821e468af279.pdf&downloadedFileName=NEC%203%20ECC%20-M%26E%20Building%20Refurb%20Final%20Final%20.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T19:43:32Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-177102",
    "reference": "NRF/SAAO/RFQ/120206",
    "title": "Appointment of a Panel of Suitably Qualified and Experienced Building Maintenance Contractors to Provide Construction and Maintenance Services at the NRF-SAAO Site in Sutherland, Northern Cape, for a Period of Three (3) Years",
@@ -14505,6 +14307,100 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=9c394447-5e5f-4412-aed9-ef1a98b0201a.pdf&downloadedFileName=NEC%20-%20%28TSC3%29%20-%20LV%20switch%20gear.pdf",
      "format": "pdf",
      "published": "2026-10-12T10:54:03Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-177032",
+   "reference": "ZNB 3001/2026-H",
+   "title": "PROVISION OF CLEANING OF BUILDINGS AND OFFICES AT SELECTED FACILITIES AND WILL BE AWARDED AS A MULTI-AWARD BID THREE (03) YEARS CONTRACT.",
+   "department": "Kwazulu Natal - Health",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "buildings",
+    "cleaning"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-06T00:00:00+00:00",
+   "closingDate": "2026-11-30T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "BID ADVERT ZNB 3001-2026-H.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=54cb0141-1aa4-46aa-8d34-2b53b946ae02.pdf&downloadedFileName=BID%20ADVERT%20ZNB%203001-2026-H.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T14:41:56Z"
+    },
+    {
+     "title": "BID DOC -ZNB 3001-2026-H .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=288b2f92-21de-48a9-9348-dac197a9c0f9.pdf&downloadedFileName=BID%20DOC%20-ZNB%203001-2026-H%20.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T14:41:56Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-177035",
+   "reference": "ZNB 3001 2026-H",
+   "title": "PROVISION OF CLEANING OF BUILDINGS AND OFFICES AT SELECTED FACILITIES AND WILL BE AWARDED AS A MULTI-AWARD BID THREE (03) YEARS CONTRACT.",
+   "department": "Kwazulu Natal - Health",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "buildings",
+    "cleaning"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-06T00:00:00+00:00",
+   "closingDate": "2026-11-30T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "BID ADVERT ZNB 3001-2026-H.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=54d3e37e-5488-403d-b5fa-2b06c400f411.pdf&downloadedFileName=BID%20ADVERT%20ZNB%203001-2026-H.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T14:43:47Z"
+    },
+    {
+     "title": "BID DOC -ZNB 3001-2026-H .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c6edbad3-ee2c-454c-b9cc-cd751e81b418.pdf&downloadedFileName=BID%20DOC%20-ZNB%203001-2026-H%20.pdf",
+     "format": "pdf",
+     "published": "2026-11-05T14:43:47Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -15083,47 +14979,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-176698",
-   "reference": "ACDP 26/10",
-   "title": "PROVISION OF MECHANISATION SERVICES FOR LIMPOPO DEPARTMENT OF AGRICULTURE AND RURAL DEVELOPMENT FOR 36 MONTHS",
-   "department": "Limpopo - Agriculture",
-   "category": "Agriculture",
-   "company": "llp",
-   "matchedTerms": [
-    "agricultur",
-    "mechanisation"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-02T00:00:00+00:00",
-   "closingDate": "2026-12-01T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "TENDER DOCUMENT ACDP 26 10._.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7aa8160e-5be5-47cb-9f1a-28cd7b626c77.pdf&downloadedFileName=TENDER%20DOCUMENT%20ACDP%2026%2010._.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T15:58:21Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-176372",
    "reference": "ADAB 03/2026",
    "title": "Contracting of a service provider to undertake office cleaning services at Agribusiness Development Agency (ADA) Makhathini Irrigation Scheme, Jozini for a period of thirty -six (36) months.",
@@ -15572,131 +15427,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-176719",
-   "reference": "E3764EGDMWP",
-   "title": "Provision of Installation and Infrastructure Upgrade for Anti-climb Perimeter Security Fence at Eskom Megawatt Park (MWP) for a period of Forty-Seven (47) Months. (Eleven (11) months construction and Thirty-Six (36) months Maintenance and Support).",
-   "department": "ESKOM",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "maintenance",
-    "upgrad"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-02T00:00:00+00:00",
-   "closingDate": "2026-12-02T10:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "works",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "20261014_GFD_ERE_MWP- Anti Climb Security Parimeter Fence Refurb OHS Baseline risk assessment template - rev. 6.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=ec2d2727-9c48-416d-8dbb-00243f40762a.xlsx&downloadedFileName=20261014_GFD_ERE_MWP-%20Anti%20Climb%20Security%20Parimeter%20Fence%20Refurb%20OHS%20Baseline%20risk%20assessment%20template%20-%20rev.%206.xlsx",
-     "format": "xlsx",
-     "published": "2026-11-02T22:50:57Z"
-    },
-    {
-     "title": "20261015_Report_GFD_ERE_SHEQ Evaluation Criteria_Anti Climb Security Parimeter Fence.Rev01.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a1be7c43-10f5-47b4-9636-16173e89fb02.pdf&downloadedFileName=20261015_Report_GFD_ERE_SHEQ%20Evaluation%20Criteria_Anti%20Climb%20Security%20Parimeter%20Fence.Rev01.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T23:04:22Z"
-    },
-    {
-     "title": "Technical Evaluation Criteria.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0a52f297-af08-40a4-9955-2740a79ca25f.pdf&downloadedFileName=Technical%20Evaluation%20Criteria.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T22:50:58Z"
-    },
-    {
-     "title": "240-105658000 Supplier Quality Management Specification (3).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=8a45b8b8-78b0-4fe4-93b7-277e2ffd3ed2.pdf&downloadedFileName=240-105658000%20Supplier%20Quality%20Management%20Specification%20%283%29.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T22:50:57Z"
-    },
-    {
-     "title": "20261015_Report_GFD_ERE_SHEQ Evaluation Criteria_Anti Climb Security Parimeter Fence.Rev01.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=4452972e-e5cf-45b4-888f-2a4eece39558.pdf&downloadedFileName=20261015_Report_GFD_ERE_SHEQ%20Evaluation%20Criteria_Anti%20Climb%20Security%20Parimeter%20Fence.Rev01.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T23:01:17Z"
-    },
-    {
-     "title": "Invitation to Tender (ITT).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=69ff1490-3b91-4fe3-8976-387ae42ea0a7.pdf&downloadedFileName=Invitation%20to%20Tender%20%28ITT%29.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T22:50:58Z"
-    },
-    {
-     "title": "20261015_Spec_GFD_ERE_MWP_Anti Climb Security Parimeter Fence Refurbment Project SHE Spec_Rev01.do.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6fba3a19-dfe7-4e78-9210-7567771aa5b3.pdf&downloadedFileName=20261015_Spec_GFD_ERE_MWP_Anti%20Climb%20Security%20Parimeter%20Fence%20Refurbment%20Project%20SHE%20Spec_Rev01.do.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T22:50:58Z"
-    },
-    {
-     "title": "20260313_Cat3- Quality  Req  _ERE _ MWP Perimeter Security Fence Upgrade .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5076ed72-e6cc-487c-ac59-877ca9236307.pdf&downloadedFileName=20260313_Cat3-%20Quality%20%20Req%20%20_ERE%20_%20MWP%20Perimeter%20Security%20Fence%20Upgrade%20.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T22:50:57Z"
-    },
-    {
-     "title": "20260313_ Form A Cat3_   ERE _  MWP Perimeter Security Fence Upgrade .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=14156305-a98b-4429-900c-972dafa67b72.pdf&downloadedFileName=20260313_%20Form%20A%20Cat3_%20%20%20ERE%20_%20%20MWP%20Perimeter%20Security%20Fence%20Upgrade%20.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T23:07:53Z"
-    },
-    {
-     "title": "20261015_GFD_ERE_Annexure B_Acknowledgement Form for Eskom SHE Rules and other Requirements (5).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a156fadb-4d84-44e8-84b2-a10d5b54abfe.pdf&downloadedFileName=20261015_GFD_ERE_Annexure%20B_Acknowledgement%20Form%20for%20Eskom%20SHE%20Rules%20and%20other%20Requirements%20%285%29.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T22:50:57Z"
-    },
-    {
-     "title": "240-109253302 _ Quality Control Plan or Inspection Test Plan (QCP or ITP) rev 2.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=766f6ea7-73fb-46da-af6c-adec8bb3a279.docx&downloadedFileName=240-109253302%20_%20Quality%20Control%20Plan%20or%20Inspection%20Test%20Plan%20%28QCP%20or%20ITP%29%20rev%202.docx",
-     "format": "docx",
-     "published": "2026-11-02T22:50:57Z"
-    },
-    {
-     "title": "NEC -contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=407b4aa4-9631-4ae7-b278-b553855ed838.pdf&downloadedFileName=NEC%20-contract.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T22:50:58Z"
-    },
-    {
-     "title": "BOQ_.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e16c865d-547a-4cdb-9828-bf1cfdeb7db0.xlsx&downloadedFileName=BOQ_.xlsx",
-     "format": "xlsx",
-     "published": "2026-11-02T22:50:58Z"
-    },
-    {
-     "title": "240-109253698 Contract  Quality  Plan (CQP) Template.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fd8305a2-a60e-4a82-be31-cc0d2e793dc3.docx&downloadedFileName=240-109253698%20Contract%20%20Quality%20%20Plan%20%28CQP%29%20Template.docx",
-     "format": "docx",
-     "published": "2026-11-02T22:50:57Z"
-    },
-    {
-     "title": "Technical Specification Rev 7.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b264863c-0cd8-4e6b-b25f-cd2b5bdf2296.pdf&downloadedFileName=Technical%20Specification%20Rev%207.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T22:50:58Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-175739",
    "reference": "SK8/3/1-18/2026/2027",
    "title": "RE-ADVERTISEMENT: APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE PROVISION OF PERSONAL PROTECTIVE EQUIPMENT (PPE) FOR SDM EMPLOYEES FOR A PERIOD OF THREE (3) YEARS.",
@@ -15918,7 +15648,7 @@
    "reference": "09/2027",
    "title": "Bid No: SUPPLY, INSTALL SERVICE AND MAINTENANCE OF  FOUR(4) 12kv SUBMERSIBLE PUMPS FOR PUMPING SEAWATER INTO SCOTTBURGH SWIMMING POOL,INCLUDING POOL CLEANING FOR A PERIOD OF 36 MONTHS",
    "department": "Umdoni Local Municipality",
-   "category": "Supply & Consumables",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
