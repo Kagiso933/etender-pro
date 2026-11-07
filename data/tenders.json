@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-07T11:40:10.757727+00:00",
+ "generatedAt": "2026-11-07T20:49:44.841534+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-30",
- "releasesScanned": 748,
- "uniqueTenders": 768,
- "count": 150,
+ "coveredFrom": "2026-11-06",
+ "releasesScanned": 139,
+ "uniqueTenders": 259,
+ "count": 148,
  "categories": {
-  "IT Services & Support": 15,
-  "End-User Computing": 11,
-  "Software & Systems": 78,
+  "IT Services & Support": 16,
+  "End-User Computing": 10,
+  "Software & Systems": 76,
   "Network & Infrastructure": 25,
   "Cloud Services": 4,
   "Cybersecurity": 7,
   "Telecoms & Unified Comms": 10
  },
  "onlineBriefings": 0,
- "carriedOver": 94,
+ "carriedOver": 126,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -5793,7 +5793,7 @@
    "reference": "HO/PGC/ICT/522/09/2026",
    "title": "THE APPOINTMENT OF A CONTRACTOR FOR THE DESIGN, SUPPLY, INSTALLATION, AND MAINTENANCE OF THE INTELLIGENT OPERATION CENTER AND AI PLATFORM FOR PRASA, AS AND WHEN REQUIRED, FOR A PERIOD OF 36 MONTHS.",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ai",
@@ -6440,53 +6440,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=afdce6f0-e4d7-4e07-97b3-f926c9bf2ef2.docx&downloadedFileName=E-tendering%20Help%20Manual%20for%20supplier%20-%20Annexure%20L.docx",
      "format": "docx",
      "published": "2026-10-13T16:55:49Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-177155",
-   "reference": "DHA20-2026",
-   "title": "APPOINTMENT OF A SERVICE PROVIDER FROM SITA RFB1183 FOR THE ESTABLISHMENT OF AN ICT PORTFOLIO MANAGEMENT OFFICE (PMO) TO DELIVER THE DIGITAL TRANSFORMATION STRATEGY (MICROSOFT-BASED PORTFOLIO MANAGEMENT) FOR A PERIOD OF THIRTY-SIX (36) MONTHS, WITH A POSSIBILITY TO RENEW FOR TWENTY-FOUR (24) MONTHS, SUBJECT TO SATISFACTORY PERFORMANCE OF THE SERVICE PROVIDER AND THE AVAILABILITY OF FUNDS.",
-   "department": "Home Affairs",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "ict",
-    "microsoft"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-06T00:00:00+00:00",
-   "closingDate": "2026-11-27T11:00:00+00:00",
-   "procurementMethod": "SITA contract",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "INVITATION TO BID DHA20-2026.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f9d4c534-7313-4ef4-b59d-b477c8b0225b.pdf&downloadedFileName=INVITATION%20TO%20BID%20DHA20-2026.pdf",
-     "format": "pdf",
-     "published": "2026-11-06T09:48:38Z"
-    },
-    {
-     "title": "General_Conditions_of_Contract-_July_2011 (1).pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=5e0005ca-51a2-4a38-a28a-c5b96f199698.pdf&downloadedFileName=General_Conditions_of_Contract-_July_2011%20%281%29.pdf",
-     "format": "pdf",
-     "published": "2026-11-06T09:50:17Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -7425,58 +7378,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=cd51b62e-dca8-4ba4-ad75-843e499ae9ab.pdf&downloadedFileName=Notice%206%20of%202026.27%20%28003%29.pdf",
      "format": "pdf",
      "published": "2026-10-16T22:41:11Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-177146",
-   "reference": "WRSCM-2026/2027-0010",
-   "title": "PROCUREMENT OF ENTERPRISE LAPTOP, 2 IN 1 DEVICES, ACCESSORIES, DEPLOYMENT SERVICES, WARRANTY AND SUPPORT ON AN AS-AND-WHEN-REQUIRED BASIS FOR A PERIOD OF THREE (3) YEARS",
-   "department": "Wholesale and Retail Sector Education and Training Authority",
-   "category": "End-User Computing",
-   "company": "rtc",
-   "matchedTerms": [
-    "laptop"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-06T00:00:00+00:00",
-   "closingDate": "2026-12-01T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "goods",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "PRICES~1.PDF",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=d3d7e45e-7f99-48bc-b991-5a00c2cadf12.PDF&downloadedFileName=PRICES~1.PDF",
-     "format": "pdf",
-     "published": "2026-11-06T09:29:33Z"
-    },
-    {
-     "title": "SPECIF~1.PDF",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=605d2b2c-94d7-45f5-b570-7fc79fcbd1ca.PDF&downloadedFileName=SPECIF~1.PDF",
-     "format": "pdf",
-     "published": "2026-11-06T09:29:33Z"
-    },
-    {
-     "title": "BIDDOC~1.PDF",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=e5875284-a6b3-44e1-b374-c88e809793de.PDF&downloadedFileName=BIDDOC~1.PDF",
-     "format": "pdf",
-     "published": "2026-11-06T09:29:33Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
