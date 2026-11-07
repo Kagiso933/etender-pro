@@ -237,6 +237,57 @@ async function askClaude(prompt, maxTokens = 3000, retried = false, files = [], 
   return parts.join('\n');
 }
 
+// Streams a long answer so text shows as it is written (a full bid analysis can take a minute or two).
+// onText gets the text so far; returns { text, stopReason }.
+async function askClaudeStream(prompt, maxTokens, files, onText, retried = false) {
+  const key = getKey(false);
+  if (!key) throw new Error('No API key set. Use "API key" at the top right.');
+  const workspace = store.get('anthropic_workspace_id', '');
+  const headers = { 'Content-Type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01',
+                    'anthropic-dangerous-direct-browser-access': 'true' };
+  if (workspace) headers['anthropic-workspace-id'] = workspace;
+  const content = files.length ? [...files.map(fileBlock), { type: 'text', text: prompt }] : prompt;
+  const ctrl = new AbortController();
+  let idle = setTimeout(() => ctrl.abort(), 120000);
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST', headers, signal: ctrl.signal,
+    body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, stream: true, messages: [{ role: 'user', content }] }),
+  }).catch(e => { clearTimeout(idle); throw new Error(e.name === 'AbortError' ? 'Claude did not respond within 2 minutes. Try again.' : 'Network error: ' + e.message); });
+  if (!res.ok) {
+    clearTimeout(idle);
+    const data = await res.json().catch(() => ({}));
+    const msg = data?.error?.message || `API error ${res.status}`;
+    if (!retried && /workspace/i.test(msg) && askWorkspace(false)) return askClaudeStream(prompt, maxTokens, files, onText, true);
+    if (files.length && /page|too large|exceed|size|pdf/i.test(msg)) throw new Error(msg + ' Large tender packs can exceed the limit: remove an attachment, upload only the sections you need, or paste the text instead.');
+    throw new Error(msg);
+  }
+  const reader = res.body.getReader(), dec = new TextDecoder();
+  let buf = '', text = '', stopReason = null;
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      clearTimeout(idle); idle = setTimeout(() => ctrl.abort(), 120000); // abort only if the stream goes silent
+      buf += dec.decode(value, { stream: true });
+      let i;
+      while ((i = buf.indexOf('\n\n')) >= 0) {
+        const ev = buf.slice(0, i); buf = buf.slice(i + 2);
+        const line = ev.split('\n').find(l => l.startsWith('data:'));
+        if (!line) continue;
+        let d; try { d = JSON.parse(line.slice(5)); } catch (e) { continue; }
+        if (d.type === 'content_block_delta' && d.delta?.type === 'text_delta') { text += d.delta.text; onText(text); }
+        else if (d.type === 'message_delta' && d.delta?.stop_reason) stopReason = d.delta.stop_reason;
+        else if (d.type === 'error') throw new Error(d.error?.message || 'Claude returned an error mid-answer.');
+      }
+    }
+  } catch (e) {
+    if (e.name === 'AbortError') throw new Error(text ? 'The answer stopped part-way (no data for 2 minutes). What arrived is shown; re-run for the rest.' : 'Claude did not respond within 2 minutes. Try again.');
+    throw e;
+  } finally { clearTimeout(idle); }
+  if (!text) throw new Error('Claude returned an empty answer. Try again.');
+  return { text, stopReason };
+}
+
 // ---------- tender documents: uploaded files kept per tender in IndexedDB ----------
 const DOC_TYPES = { 'application/pdf': 'pdf', 'image/png': 'image', 'image/jpeg': 'image', 'image/webp': 'image', 'image/gif': 'image' };
 const MAX_DOC_BYTES = 24 * 1024 * 1024;
@@ -340,8 +391,8 @@ function useDocFiles(id) {
   useEffect(() => { let live = true; loadDocs(id).then(f => { if (live) setFiles(f); }); return () => { live = false; }; }, [id]);
   return [files, setFiles];
 }
-const docsNote = (docText, files) => files.length || docText
-  ? `${files.length ? `\nThe attached ${files.length > 1 ? files.length + ' files are' : 'file is'} the tender documents (${files.map(f => f.name).join(', ')}). Read them in full.` : ''}${docText ? `\nTEXT FROM THE TENDER DOCUMENTS:\n${docText.slice(0, 60000)}` : ''}`
+const docsNote = (docText, files, limit = 60000) => files.length || docText
+  ? `${files.length ? `\nThe attached ${files.length > 1 ? files.length + ' files are' : 'file is'} the tender documents (${files.map(f => f.name).join(', ')}). Read them in full.` : ''}${docText ? `\nTEXT FROM THE TENDER DOCUMENTS:\n${docText.slice(0, limit)}${docText.length > limit ? '\n[...pasted text cut off here: it was too long]' : ''}` : ''}`
   : '';
 
 const tenderBrief = (t) => `Reference: ${t.reference}
@@ -585,7 +636,9 @@ function Analysis({ t }) {
   const [out, setOut] = useState(store.get(key, ''));
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState('');
+  const [secs, setSecs] = useState(0);
   useEffect(() => { store.set('doctext_' + t.id, docText); }, [docText]);
+  useEffect(() => { if (!busy) return; setSecs(0); const h = setInterval(() => setSecs(x => x + 1), 1000); return () => clearInterval(h); }, [busy]);
 
   const [bBusy, setBBusy] = useState(false);
   const [bMsg, setBMsg] = useState('');
@@ -602,14 +655,15 @@ function Analysis({ t }) {
     setBBusy(false);
   };
   const run = async () => {
-    setBusy(true); setErr('');
+    if (!files.length && !docText.trim() && !confirm('No tender documents uploaded or pasted. The analysis will be generic. Continue?')) return;
+    setBusy(true); setErr(''); setOut('');
     if (!t.briefing?.fromDocs) briefing(true);
     try {
-      const text = await askClaude(`You are an expert in South African public-sector procurement (PFMA/MFMA, PPPFA 2022 regulations, CSD, B-BBEE) helping an IT company decide whether and how to bid.
+      const { text, stopReason } = await askClaudeStream(`You are an expert in South African public-sector procurement (PFMA/MFMA, PPPFA 2022 regulations, CSD, B-BBEE) helping an IT company decide whether and how to bid.
 
 TENDER
 ${tenderBrief(t)}
-${docsNote(docText, files) || '\n(No tender documents provided - say where the documents need to be checked.)'}
+${docsNote(docText, files, 150000) || '\n(No tender documents provided - say where the documents need to be checked.)'}
 
 Write a practical bid analysis with these plain-text sections (no markdown tables):
 1. WHAT THEY WANT - scope in plain language
@@ -619,8 +673,10 @@ Write a practical bid analysis with these plain-text sections (no markdown table
 5. WHAT TO SOURCE AND WHERE - products/services/licences needed and suitable South African distributors, OEM partners or service providers to get quotes from
 6. ROUGH COST BUILD-UP - main cost lines to price (do not invent the buyer's budget)
 7. ACTION PLAN - day-by-day steps until the closing date
-Be specific. If something cannot be known without the documents, say so instead of guessing.`, 4000, false, files);
-      setOut(text); store.set(key, text);
+Also flag any contradictions inside the documents (e.g. two different closing times or briefing venues) and anything that differs from the TENDER summary above.
+Be specific. If something cannot be known without the documents, say so instead of guessing.`, 8000, files, setOut);
+      const final = stopReason === 'max_tokens' ? text + '\n\n[Analysis hit the length limit and stopped here. Re-run, or paste fewer pages.]' : text;
+      setOut(final); store.set(key, final);
     } catch (e) { setErr(e.message); }
     setBusy(false);
   };
@@ -630,10 +686,11 @@ Be specific. If something cannot be known without the documents, say so instead 
     <div className="panel">
       <DocInput t={t} docText={docText} setDocText={setDocText} files={files} setFiles={setFiles} />
       <div className="row">
-        <button className="btn primary" onClick={run} disabled={busy}>{busy ? 'Analysing…' : out ? 'Re-run analysis' : 'Run AI analysis'}</button>
+        <button className="btn primary" onClick={run} disabled={busy}>{busy ? `Analysing… ${secs}s` : out ? 'Re-run analysis' : 'Run AI analysis'}</button>
         <button className="btn" onClick={() => briefing(false)} disabled={bBusy}>{bBusy ? 'Reading…' : t.briefing?.fromDocs ? 'Re-check briefing (AI)' : 'Find briefing details (AI)'}</button>
-        {out && <button className="btn" onClick={() => download(`Analysis_${t.reference}.txt`, out)}>Download</button>}
+        {out && !busy && <button className="btn" onClick={() => download(`Analysis_${t.reference}.txt`, out)}>Download</button>}
       </div>
+      {busy && !out && <p className="note">Reading the documents and writing the full analysis. This usually takes 30 to 90 seconds; text appears below as it is written.</p>}
       {err && <p className="urgent">{err}</p>}
       {bMsg && <p className="note" style={{ color: 'var(--ink)' }}>{bMsg}</p>}
     </div>
