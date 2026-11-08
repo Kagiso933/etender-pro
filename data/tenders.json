@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-08T11:52:57.053803+00:00",
+ "generatedAt": "2026-11-08T21:03:58.484064+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-10",
- "releasesScanned": 2534,
- "uniqueTenders": 2564,
- "count": 159,
+ "coveredFrom": "2026-10-08",
+ "releasesScanned": 2772,
+ "uniqueTenders": 2827,
+ "count": 160,
  "categories": {
-  "End-User Computing": 15,
-  "IT Services & Support": 13,
-  "Software & Systems": 74,
-  "Network & Infrastructure": 29,
-  "Cybersecurity": 8,
-  "Cloud Services": 8,
+  "End-User Computing": 11,
+  "Software & Systems": 83,
+  "IT Services & Support": 16,
+  "Network & Infrastructure": 26,
+  "Cloud Services": 5,
+  "Cybersecurity": 7,
   "Telecoms & Unified Comms": 12
  },
  "onlineBriefings": 0,
- "carriedOver": 20,
+ "carriedOver": 14,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -70,7 +70,7 @@
    "reference": "RFQ-112823",
    "title": "Computer (CPU) with Monitor (All in one AI PC-Intel Core 5235 1 TB SSD 32GB)",
    "department": "Statistics South Africa",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ai",
@@ -913,7 +913,7 @@
    "reference": "RFQ/CMS/ICT/01112026",
    "title": "Appointment of a service provider to assist with the renewal of the Checkpoint 9200 firewall license for twelve (12) months",
    "department": "Council for Medical Schemes",
-   "category": "Cybersecurity",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -1306,7 +1306,7 @@
    "reference": "RFQ 09-2026",
    "title": "SUPPLY AND DELIVERY OF IT EQUIPMENT - LAPTOPS",
    "department": "Pixley Ka Seme District Municipality",
-   "category": "End-User Computing",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "it equipment",
@@ -1388,7 +1388,7 @@
    "reference": "REQ00000000000866",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY, DELIVER, INSTALL, TEST AND COMMISSION OF WATER BACKUP STORAGE TANKS, BOOSTER PUMP SYSTEM AND WATER SUPPLY CHANGEOVER SYSTEM AT THE SOUTH AFRICAN NURSING COUNCIL (SANC)",
    "department": "South African Nursing Council",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -1580,6 +1580,47 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=c005eb7d-1e2a-4414-9365-48cdc3906c1e.pdf&downloadedFileName=Q55-2026-27%20QUOTATION%20DOCUMENT.pdf",
      "format": "pdf",
      "published": "2026-11-06T09:52:56Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-177339",
+   "reference": "NRWDI/ICT/2026-17",
+   "title": "SUPPLY AND DELIVERY OF AN HPE PROLIANT DL320 Gen11 16TB BACKUP SOLUTION FOR NRWDI",
+   "department": "National Radioactive Waste Disposal Institute (NRWDI)",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "backup",
+    "ict"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-08T00:00:00+00:00",
+   "closingDate": "2026-11-12T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "goods",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "NRWDI RFQ FOR SUPPLY AND DELIVERY OF A HPE PROLIANT  DL320 GEN11 16TB BACKUP SOLUTION.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=66fd063e-40de-427e-8d56-ff31bd9fdd92.pdf&downloadedFileName=NRWDI%20RFQ%20FOR%20SUPPLY%20AND%20DELIVERY%20OF%20A%20HPE%20PROLIANT%20%20DL320%20GEN11%2016TB%20BACKUP%20SOLUTION.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T17:18:50Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -3206,7 +3247,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -3383,7 +3424,7 @@
    "reference": "RFB 3299/2026 - (ERP No 534010)",
    "title": "Request for Bid for the Procurement of Security Access Cards, Access Card Materials and the Cleaning Kit of the Smart Card Printer for a Period of Five (5) Years.",
    "department": "State Information Technology Agency",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -3496,7 +3537,7 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -4477,7 +4518,7 @@
    "reference": "SANBI IT593/2026",
    "title": "THE APPOINTMENT OF A MICROSOFT AZURE MANAGED SERVICE PROVIDER TO MANAGE, STANDARDISE\r\nAND OPTIMISE EXISTING AZURE SERVICES FOR THE SOUTH AFRICAN NATIONAL BIODIVERSITY INSTITUTE (SANBI) FOR A PERIOD OF THREE (3) YEARS",
    "department": "South African National Biodiversity Institute",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -5816,7 +5857,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -6080,7 +6121,7 @@
    "reference": "PSiRA/2026/27/RFB/08",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE DESIGN, SUPPLY, IMPLEMENT AND MAINTENANCE OF A CLOUD-BASED MICROSOFT TEAMS TELEPHONY SYSTEM AND CALL CENTER SOLUTION FOR A PERIOD OF 36 MONTHS.",
    "department": "Private Security Industry Regulatory Authority",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "cloud",
@@ -7638,7 +7679,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "End-User Computing",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "printer",

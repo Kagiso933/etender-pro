@@ -1,21 +1,62 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-08T11:52:57.053803+00:00",
+ "generatedAt": "2026-11-08T21:03:58.484064+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-10",
- "releasesScanned": 2534,
- "uniqueTenders": 2564,
+ "coveredFrom": "2026-10-08",
+ "releasesScanned": 2772,
+ "uniqueTenders": 2827,
  "count": 326,
  "categories": {
+  "Facilities Maintenance": 187,
   "Supply & Consumables": 74,
-  "Facilities Maintenance": 184,
-  "Agriculture": 37,
+  "Agriculture": 34,
   "Grounds & Landscaping": 31
  },
  "onlineBriefings": 0,
- "carriedOver": 52,
+ "carriedOver": 38,
  "briefingFieldsSeen": {},
  "tenders": [
+  {
+   "id": "ocds-9t57fa-173721",
+   "reference": "8/2/2/464 (4SQ3SQPE) (2026-2029)",
+   "title": "BID 8/2/2/464 (4SQ3SQPE) (2026-2029): BID TO APPOINT A SERVICE PROVIDER FOR THE INSTALLATION AND MAINTENANCE OF FENCING FOR MIDVAAL LOCAL MUNICIPALITY ON AN AS AND WHEN REQUIRED BASIS FROM DATE OF APPOINTMENT UNTIL 30 JUNE 2029",
+   "department": "Midvaal Local Municipality",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "fencing",
+    "maintenance"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-10-12T00:00:00+00:00",
+   "closingDate": "2026-11-09T10:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "8-2-2-464  CIDB ADVERT.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=bbfbb6e9-9eaa-4592-9f83-6679fb79cf20.pdf&downloadedFileName=8-2-2-464%20%20CIDB%20ADVERT.pdf",
+     "format": "pdf",
+     "published": "2026-10-12T09:35:35Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
   {
    "id": "ocds-9t57fa-176602",
    "reference": "AFE304",
@@ -1839,7 +1880,7 @@
    "reference": "SCMU6-26/27-0008",
    "title": "INVITATION TO CONTRACTORS AT CIDB GRADE 2EB/2EP OR HIGHER TO SUBMIT EXPRESSION OF INTEREST FOR THE APPOINTMENT OF COMPETENT CONTRACTORS FOR ELECTRICAL ENGINEERING WORKS-BUILDING/ELECTRICAL ENGINEERING WORKS- INFRASTRUCTURE (INCLUDING EMERGENCY PROCUREMENT), AS AND WHEN REQUIRED, FOR THE EASTERN CAPE DEPARTMENT OF EDUCATION",
    "department": "Eastern Cape - Education",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "building",
@@ -5292,7 +5333,7 @@
    "reference": "TDR37/2026/2027",
    "title": "APPOINTMENT OF A CONTRACTOR FOR THE GROUND MAINTENANCE OF THE MOUNTAIN VIEW HOUSING DEVELOPMENT",
    "department": "Mossel Bay Municipality",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -5385,7 +5426,7 @@
    "reference": "NRA 2026/0767",
    "title": "FOR CONSULTING ENGINEERING SERVICES FOR THE COMMUNITY DEVELOPMENT AND SMALL CONTRACTOR TRAINING AND DEVELOPMENT ON A 6KM GRAVEL ROAD UPGRADE NEAR NATIONAL ROAD N2, SECTION 21 IN MDATYA",
    "department": "South African National Roads Agency Soc Limited (SANRAL)",
-   "category": "Agriculture",
+   "category": "Facilities Maintenance",
    "company": "llp",
    "matchedTerms": [
     "tractor",
@@ -9750,48 +9791,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=7736d41a-1a32-4be9-a3a0-a9ae3ec910d2.pdf&downloadedFileName=07%20TSC%20RFP%20FOR%20GBM%20LADYSMITH%20TP-2026-09-0172-11808-RFP_v2%20%20%28003%29.pdf",
      "format": "pdf",
      "published": "2026-10-29T16:34:15Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174697",
-   "reference": "BID/11/2026-27",
-   "title": "PANEL OF SERVICE, MAINTENANCE & REPAIRS OF MUNICIPAL FLEET FOR A PERIOD OF THREE (3) YEARS ( AS AND WHEN REQUIRED)",
-   "department": "Matjhabeng Local Municipality",
-   "category": "Facilities Maintenance",
-   "company": "llp",
-   "matchedTerms": [
-    "maintenance",
-    "maintenance & repairs",
-    "repairs"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-19T00:00:00+00:00",
-   "closingDate": "2026-11-23T14:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "ADVERT - BID_11_2026-27 - PANEL FOR SERVICE, MAINTENANCE & REPAIRS OF MUNICIPAL FLEET FOR A PERIOD OF THREE (3) YEARS [AS AND WHEN REQUIRED].pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=0c04586d-f267-4a3f-97f4-0ece62edf7e7.pdf&downloadedFileName=ADVERT%20-%20BID_11_2026-27%20-%20PANEL%20FOR%20SERVICE%2C%20MAINTENANCE%20%26%20REPAIRS%20OF%20MUNICIPAL%20FLEET%20FOR%20A%20PERIOD%20OF%20THREE%20%283%29%20YEARS%20%5BAS%20AND%20WHEN%20REQUIRED%5D.pdf",
-     "format": "pdf",
-     "published": "2026-11-03T11:01:03Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
