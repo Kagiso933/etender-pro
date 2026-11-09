@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-08T21:03:58.484064+00:00",
+ "generatedAt": "2026-11-09T02:19:49.863871+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-08",
- "releasesScanned": 2772,
- "uniqueTenders": 2827,
+ "coveredFrom": "2026-10-15",
+ "releasesScanned": 2204,
+ "uniqueTenders": 2244,
  "count": 160,
  "categories": {
-  "End-User Computing": 11,
-  "Software & Systems": 83,
-  "IT Services & Support": 16,
-  "Network & Infrastructure": 26,
-  "Cloud Services": 5,
-  "Cybersecurity": 7,
-  "Telecoms & Unified Comms": 12
+  "End-User Computing": 12,
+  "Software & Systems": 75,
+  "IT Services & Support": 14,
+  "Network & Infrastructure": 30,
+  "Cybersecurity": 8,
+  "Cloud Services": 8,
+  "Telecoms & Unified Comms": 13
  },
  "onlineBriefings": 0,
- "carriedOver": 14,
+ "carriedOver": 26,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -913,7 +913,7 @@
    "reference": "RFQ/CMS/ICT/01112026",
    "title": "Appointment of a service provider to assist with the renewal of the Checkpoint 9200 firewall license for twelve (12) months",
    "department": "Council for Medical Schemes",
-   "category": "IT Services & Support",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -1306,7 +1306,7 @@
    "reference": "RFQ 09-2026",
    "title": "SUPPLY AND DELIVERY OF IT EQUIPMENT - LAPTOPS",
    "department": "Pixley Ka Seme District Municipality",
-   "category": "IT Services & Support",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "it equipment",
@@ -1388,7 +1388,7 @@
    "reference": "REQ00000000000866",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY, DELIVER, INSTALL, TEST AND COMMISSION OF WATER BACKUP STORAGE TANKS, BOOSTER PUMP SYSTEM AND WATER SUPPLY CHANGEOVER SYSTEM AT THE SOUTH AFRICAN NURSING COUNCIL (SANC)",
    "department": "South African Nursing Council",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -3247,7 +3247,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -3537,7 +3537,7 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -4164,7 +4164,7 @@
    "reference": "RFB 3301/ 2026 - (ERP No 530015)",
    "title": "Appointment of a Service Provider to Provide a New Integrated Video Conferencing and Audio-Visual Solution for SAPS UBUNYE Auditorium",
    "department": "State Information Technology Agency",
-   "category": "Software & Systems",
+   "category": "Telecoms & Unified Comms",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -4518,7 +4518,7 @@
    "reference": "SANBI IT593/2026",
    "title": "THE APPOINTMENT OF A MICROSOFT AZURE MANAGED SERVICE PROVIDER TO MANAGE, STANDARDISE\r\nAND OPTIMISE EXISTING AZURE SERVICES FOR THE SOUTH AFRICAN NATIONAL BIODIVERSITY INSTITUTE (SANBI) FOR A PERIOD OF THREE (3) YEARS",
    "department": "South African National Biodiversity Institute",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -5857,7 +5857,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -6121,7 +6121,7 @@
    "reference": "PSiRA/2026/27/RFB/08",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE DESIGN, SUPPLY, IMPLEMENT AND MAINTENANCE OF A CLOUD-BASED MICROSOFT TEAMS TELEPHONY SYSTEM AND CALL CENTER SOLUTION FOR A PERIOD OF 36 MONTHS.",
    "department": "Private Security Industry Regulatory Authority",
-   "category": "Software & Systems",
+   "category": "Cloud Services",
    "company": "rtc",
    "matchedTerms": [
     "cloud",
@@ -7631,7 +7631,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "management system",

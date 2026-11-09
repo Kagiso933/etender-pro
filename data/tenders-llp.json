@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-08T21:03:58.484064+00:00",
+ "generatedAt": "2026-11-09T02:19:49.863871+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-08",
- "releasesScanned": 2772,
- "uniqueTenders": 2827,
- "count": 326,
+ "coveredFrom": "2026-10-15",
+ "releasesScanned": 2204,
+ "uniqueTenders": 2244,
+ "count": 327,
  "categories": {
-  "Facilities Maintenance": 187,
-  "Supply & Consumables": 74,
-  "Agriculture": 34,
-  "Grounds & Landscaping": 31
+  "Facilities Maintenance": 165,
+  "Supply & Consumables": 81,
+  "Agriculture": 45,
+  "Grounds & Landscaping": 36
  },
  "onlineBriefings": 0,
- "carriedOver": 38,
+ "carriedOver": 73,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -144,7 +144,7 @@
    "reference": "MLM 09/2026/27",
    "title": "APPOINTMENT OF A CONTRACTOR FOR CONSTRUCTION OF TOILETS AND SEWER NETWORK REPAIR IN GORTIN PHASE 1.",
    "department": "Metsimaholo Local Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "repair",
@@ -209,7 +209,7 @@
    "reference": "37086/TNP/2026-27",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE TO SUPPLY LABOUR FORCE AND MATERIAL FOR REACTIVE MAINTENANCE AT THE TSITSIKAMMA SECTION OF GARDEN ROUTE NATIONAL PARK FOR A PERIOD OF 12 MONTHS",
    "department": "South African National Parks",
-   "category": "Facilities Maintenance",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -3777,7 +3777,7 @@
    "reference": "21554/TNP/2026-27-RRR",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY AND DELIVERY OF BUILDING MATERIAL AT THE TSITSIKAMMA SECTION OF GARDEN ROUTE NATIONAL PARK FOR A PERIOD 3 YEARS.",
    "department": "South African National Parks",
-   "category": "Facilities Maintenance",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "building",
@@ -4855,7 +4855,7 @@
    "reference": "19/1/1/128HQ(26/27)",
    "title": "APPOINTMENT OF A CONTRACTOR FOR REPAIR OF INCOMING ROLLER DOOR, SERVICE OF OUTGOING ROLLER DOOR, CONVERT BOTH ROLLER DOORS FROM ELECTRICAL REMOTE CONTROL TO MANUAL, REPAIR MAGNET ON THE KITCHEN DOOR, REPLACE MAGNET ON THE GUARD ROOM DOOR, REPLACE CHAIN WITH A LONGER ONE & 36 MONTHS GUARANTEE",
    "department": "South African Police Service",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "repair",
@@ -8158,7 +8158,7 @@
    "reference": "E3478CXMWPREISSUE",
    "title": "PROVISION OF SERVICE, MAINTENANCE, CONSUMABLES AND SPARES FOR GLASSWARE WASHER MACHINE AT ESKOM PETROLEUM SCIENCES (PS) LABORATORIES FOR A PERIOD OF FIVE (05) YEARS ON AN ‘AS AND WHEN’ REQUIRED BASIS.",
    "department": "ESKOM",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -9367,7 +9367,7 @@
    "reference": "CSA/06/2026-27",
    "title": "THE DESIGN, SUPPLY, INSTALLATION, TESTING, \r\nCOMMISSIONING AND VERIFICATION OF LED ARENA \r\nFLOODLIGHTING, NEW FLOODLIGHT MASTS AND ASSOCIATED \r\nELECTRICAL INFRASTRUCTURE, AND MAINTENANCE FOR TEN \r\n(10) YEARS, AT THE BORDER CRICKET GROUNDS (BUFFALO \r\nPARK STADIUM), KUGOMPO CITY",
    "department": "Buffalo City Metropolitan Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "grounds",
@@ -9677,7 +9677,7 @@
    "reference": "8/3-11/22627",
    "title": "Appointment of a Service Provider for Printing Solution Equipment, Multifunctional Copier Rental, Maintenance and Consumables for the Period of 36 Months",
    "department": "Msukaligwa Local Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -10862,7 +10862,7 @@
    "reference": "SANBI G591/2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE COMPLETION OF THE DRY ROOM AND MINOR REPAIR WORK TO THE SEEDBANK FACILITY AT THE KIRSTENBOSCH NATIONAL BOTANICAL GARDEN, CAPE TOWN",
    "department": "South African National Biodiversity Institute",
-   "category": "Facilities Maintenance",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "garden",
@@ -11322,7 +11322,7 @@
    "reference": "RLM/DCD/0061/2026/27",
    "title": "Appointment of a service provider to render the cleaning and hygiene service at various municipal buildings for a period of 36 months as and when needed",
    "department": "Rustenburg Local Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "buildings",
@@ -11369,7 +11369,7 @@
    "reference": "E3615GXMPDUVp",
    "title": "Publication of bidders names - Service, Maintenance, Calibration, Supply of spares and consumables of Lab Instruments at Duvha Power Station on as and when required basis for a period of 60 Months.",
    "department": "ESKOM",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -12687,7 +12687,7 @@
    "reference": "ATM 2026/2027-09",
    "title": "The Afrikaans Language Museum and Monument (ATM) hereby invites quotations for the provision of professional grass-cutting and grounds maintenance services. The purpose of this invitation is to appoint a suitably qualified and experienced service provider to provide regular grass-cutting and grounds maintenance services at the ATM for a period of two (2) years.",
    "department": "Die Afrikaanse Taal Museum",
-   "category": "Facilities Maintenance",
+   "category": "Grounds & Landscaping",
    "company": "llp",
    "matchedTerms": [
     "grounds",
@@ -13068,7 +13068,7 @@
    "reference": "252/2026",
    "title": "APPOINTMENT OF CONTRACTOR FOR RESEALING AND MAINTENANCE OF ROADS AND STORMWATER IN THE KOUGA LOCAL MUNICIPAL AREA FOR A PERIOD OF THREE (3) YEARS",
    "department": "Kouga Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -13440,7 +13440,7 @@
    "reference": "E0226EOISDLERI",
    "title": "Identification and selection of new-entrant, 100% black-owned Exempted Micro\r\nEnterprises (EMEs) and Qualifying Small Enterprises (QSEs) to be assigned\r\nas Enterprise and Supplier Development (ESD) beneficiaries to the contracted\r\nOutage Service Contractor(s) for the Provision of Outage, Maintenance and\r\nWorks Services for various Eskom Power Stations for a period of five (5) years.\r\nSelected beneficiaries will receive a minimum of 30% of the contractor’s\r\ntechnical scope as subcontracted work, together with a structured development\r\nprogramme. Enterprises owned by black women, black youth and black people\r\nwith disabilities are strongly encouraged to respond.",
    "department": "ESKOM",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -13664,7 +13664,7 @@
    "reference": "ZNB 3001/2026-H",
    "title": "PROVISION OF CLEANING OF BUILDINGS AND OFFICES AT SELECTED FACILITIES AND WILL BE AWARDED AS A MULTI-AWARD BID THREE (03) YEARS CONTRACT.",
    "department": "Kwazulu Natal - Health",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "buildings",
@@ -13711,7 +13711,7 @@
    "reference": "ZNB 3001 2026-H",
    "title": "PROVISION OF CLEANING OF BUILDINGS AND OFFICES AT SELECTED FACILITIES AND WILL BE AWARDED AS A MULTI-AWARD BID THREE (03) YEARS CONTRACT.",
    "department": "Kwazulu Natal - Health",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "buildings",
@@ -15990,7 +15990,7 @@
    "reference": "NRA  2026/0757",
    "title": "FOR THE OPERATIONS AND MAINTENANCE OF THE TOLL PLAZAS ON THE NATIONAL \r\nROUTE N2 NORTH (Retender) (Contractor)",
    "department": "South African National Roads Agency Soc Limited (SANRAL)",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -16031,7 +16031,7 @@
    "reference": "09/2027",
    "title": "Bid No: SUPPLY, INSTALL SERVICE AND MAINTENANCE OF  FOUR(4) 12kv SUBMERSIBLE PUMPS FOR PUMPING SEAWATER INTO SCOTTBURGH SWIMMING POOL,INCLUDING POOL CLEANING FOR A PERIOD OF 36 MONTHS",
    "department": "Umdoni Local Municipality",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -16456,7 +16456,7 @@
    "reference": "NRA 2026/0755",
    "title": "FOR THE OPERATIONS AND MAINTENANCE OF MARIANNHILL TOLL \r\nPLAZA ON NATIONAL ROUTE 3 (Contractor)",
    "department": "South African National Roads Agency Soc Limited (SANRAL)",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -16653,6 +16653,148 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=81f61cea-3e40-41aa-ac32-f70107dac837.pdf&downloadedFileName=J238-02-22-01-001.pdf",
      "format": "pdf",
      "published": "2026-10-30T13:28:55Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-177338",
+   "reference": "E3777GXMPDUV",
+   "title": "NORTH AND SOUTH PLANT FUEL OIL VALVES REFURBISHMENT FOR DUVHA\r\nPOWER STATION FOR A PERIOD OF 5 YEARS",
+   "department": "ESKOM",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "refurbish"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-09T00:00:00+00:00",
+   "closingDate": "2026-12-11T10:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "services",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Declaration of shareholding or beneficiaries form.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=43266708-f50b-4f38-9712-2c6fc7d79b15.pdf&downloadedFileName=Declaration%20of%20shareholding%20or%20beneficiaries%20form.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:07Z"
+    },
+    {
+     "title": "Eskom life-saving rules.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=e4bd253f-62e0-4cae-939f-4f5e3a7befdf.pdf&downloadedFileName=Eskom%20life-saving%20rules.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:07Z"
+    },
+    {
+     "title": "240-77471499 Annexure B .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=f8856b23-491b-4ca9-9054-5353dc918cfa.pdf&downloadedFileName=240-77471499%20Annexure%20B%20.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:06Z"
+    },
+    {
+     "title": "Integrity Declaration Form - 29 July 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=19b8408e-842b-4a64-807a-569bb77502a9.pdf&downloadedFileName=Integrity%20Declaration%20Form%20-%2029%20July%202026.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:07Z"
+    },
+    {
+     "title": "240-77471651 Annexure C1 Unit 1-6 Fuel Oil Valves Refurbishment.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0ff1523a-6524-4eed-8274-600e4ff6c180.pdf&downloadedFileName=240-77471651%20Annexure%20C1%20Unit%201-6%20Fuel%20Oil%20Valves%20Refurbishment.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:06Z"
+    },
+    {
+     "title": "SM Signed - 240-68099512 Form A_Cat 1_ Rev 9 -Fuel Oil Valves Refurbishment - 09 Sep 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=adc7dd08-55cf-415e-a577-6253fb2e197f.pdf&downloadedFileName=SM%20Signed%20-%20240-68099512%20Form%20A_Cat%201_%20Rev%209%20-Fuel%20Oil%20Valves%20Refurbishment%20-%2009%20Sep%202026.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:08Z"
+    },
+    {
+     "title": "Invitation to Tender (ITT) or Request for Proposal (RFP) Fuel Oil Valves.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=02fe1727-9189-467a-b568-742db4daee90.pdf&downloadedFileName=Invitation%20to%20Tender%20%28ITT%29%20or%20Request%20for%20Proposal%20%28RFP%29%20Fuel%20Oil%20Valves.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:07Z"
+    },
+    {
+     "title": "Environmental Requirements for Fuel oil Valves contract.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=cb29d54f-30ea-4074-9226-748069299277.pdf&downloadedFileName=Environmental%20Requirements%20for%20Fuel%20oil%20Valves%20contract.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:07Z"
+    },
+    {
+     "title": "Eskom - Standard Conditions of Tender - 30 January 2025.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9543e708-9ed1-4bb4-bc45-7fcb0e8212c1.pdf&downloadedFileName=Eskom%20-%20Standard%20Conditions%20of%20Tender%20-%2030%20January%202025.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:07Z"
+    },
+    {
+     "title": "E-Tenderers E-Tendering Training Acknowledgement Form.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=2d5edfe6-499a-4c68-9fd2-82cec712114d.pdf&downloadedFileName=E-Tenderers%20E-Tendering%20Training%20Acknowledgement%20Form.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:07Z"
+    },
+    {
+     "title": "E-tendering Help Manual for supplier - 27 January 2025.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=3d7c0c0f-4614-47e4-b47d-8f3d70d9aed6.pdf&downloadedFileName=E-tendering%20Help%20Manual%20for%20supplier%20-%2027%20January%202025.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:07Z"
+    },
+    {
+     "title": "240-53716769 Tender Technical Evaluation Strategy Template (Rev 2)_ Fuel oil valves_R.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c19529f3-4b38-4c49-bf88-9c015a0e5c4b.pdf&downloadedFileName=240-53716769%20Tender%20Technical%20Evaluation%20Strategy%20Template%20%28Rev%202%29_%20Fuel%20oil%20valves_R.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:06Z"
+    },
+    {
+     "title": "SM Signed - Cat 1 - 240-12248652_List of Tender Returnables - Duvha Unit 1-6 Fuel oil valves Refurbishment - 09 Aug 2026.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=5aa64297-8917-44c6-8734-c87173eee61c.pdf&downloadedFileName=SM%20Signed%20-%20Cat%201%20-%20240-12248652_List%20of%20Tender%20Returnables%20-%20Duvha%20Unit%201-6%20Fuel%20oil%20valves%20Refurbishment%20-%2009%20Aug%202026.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:08Z"
+    },
+    {
+     "title": "Unit 1-6 Fuel Oil Valves  Scope Of Work refurbishment review.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=57174573-1a35-4fb0-b130-d2f9857597aa.pdf&downloadedFileName=Unit%201-6%20Fuel%20Oil%20Valves%20%20Scope%20Of%20Work%20refurbishment%20review.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:08Z"
+    },
+    {
+     "title": "Supplier Evaluation Pack for 01 March 2026 to 28 February 2027.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=98f2a1a8-cabf-4e45-95c2-d371753b1736.pdf&downloadedFileName=Supplier%20Evaluation%20Pack%20for%2001%20March%202026%20to%2028%20February%202027.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:08Z"
+    },
+    {
+     "title": "(SDLI) Strategy North and South Plant Fuel Oil Valves Refurbishment on Units 1, 2, 4, 5 and 6 at Duvha .pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=28c23a05-3d1c-4836-9b5a-d827d0067178.pdf&downloadedFileName=%28SDLI%29%20Strategy%20North%20and%20South%20Plant%20Fuel%20Oil%20Valves%20Refurbishment%20on%20Units%201%2C%202%2C%204%2C%205%20and%206%20at%20Duvha%20.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:06Z"
+    },
+    {
+     "title": "Eskom Supplier Integrity Pact - 02 June 2023.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=4744cb1c-e407-4d7e-9ed7-f036a51a8a3a.pdf&downloadedFileName=Eskom%20Supplier%20Integrity%20Pact%20-%2002%20June%202023.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:07Z"
+    },
+    {
+     "title": "Non-Disclosure Agreement (NDA) Vendors Template - 02 September 2024.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=cbc77478-e6a1-41e5-94e7-f56ba58ac61f.pdf&downloadedFileName=Non-Disclosure%20Agreement%20%28NDA%29%20Vendors%20Template%20-%2002%20September%202024.pdf",
+     "format": "pdf",
+     "published": "2026-11-08T10:32:08Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -16930,7 +17072,7 @@
    "reference": "DWS08 1026 WTE",
    "title": "FRAMEWORK CONTRACTORS FOR CIVIL MAINTENANCE AND OTHER RELATED WORKS FOR NORTHERN OPERATIONS FOR A PERIOD OF FOUR (4) YEARS. ONLY RESPONDENTS WITH CIDB GRADING 7CE OR HIGHER ARE ELIGIBLE TO BID.",
    "department": "Water and Sanitation",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -16971,7 +17113,7 @@
    "reference": "DWS11 1026 WTE",
    "title": "FRAMEWORK CONTRACTORS FOR CIVIL MAINTENANCE AND OTHER RELATED WORKS FOR STRATEGIC INFRASTRUCTURE ASSET MANAGEMENT FOR A PERIOD OF FOUR (4) YEARS. ONLY RESPONDENTS WITH CIDB GRADING 9CE ARE ELIGIBLE TO BID",
    "department": "Water and Sanitation",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -17012,7 +17154,7 @@
    "reference": "DWS07-1026 WTE",
    "title": "FRAMEWORK CONTRACTORS FOR CIVIL MAINTENANCE AND OTHER RELATED WORKS FOR CENTRAL OPERATIONS FOR A PERIOD OF FOUR (4) YEARS.  ONLY RESPONDENTS WITH CIDB GRADING 8CE OR HIGHER ARE ELIGIBLE TO BID",
    "department": "Water and Sanitation",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -17059,7 +17201,7 @@
    "reference": "DWS09-0926WTE",
    "title": "FRAMEWORK CONTRACTORS FOR CIVIL MAINTENANCE AND OTHER RELATED WORKS FOR EASTERN OPERATIONS FOR A PERIOD OF FOUR (4) YEARS. ONLY RESPONDENTS WITH CIDB GRADING 9 CE OR HIGHER ARE ELIGIBLE TO BID",
    "department": "Water and Sanitation",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
@@ -17106,7 +17248,7 @@
    "reference": "DWS10-0926 WTE",
    "title": "FRAMEWORK CONTRACTORS FOR CIVIL MAINTENANCE AND OTHER RELATED WORKS FOR SOUTHERN OPERATIONS FOR A PERIOD OF FOUR (4) YEARS. ONLY RESPONDENTS WITH CIDB GRADING 9CE ARE ELIGIBLE TO BID.",
    "department": "Water and Sanitation",
-   "category": "Facilities Maintenance",
+   "category": "Agriculture",
    "company": "llp",
    "matchedTerms": [
     "maintenance",
