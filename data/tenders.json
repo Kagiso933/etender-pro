@@ -1,66 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-10T22:24:02.052263+00:00",
+ "generatedAt": "2026-11-11T02:31:32.598514+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-29",
- "releasesScanned": 1140,
- "uniqueTenders": 1175,
- "count": 165,
+ "coveredFrom": "2026-10-30",
+ "releasesScanned": 1019,
+ "uniqueTenders": 1019,
+ "count": 162,
  "categories": {
-  "IT Services & Support": 14,
-  "Software & Systems": 81,
-  "Cybersecurity": 11,
+  "Software & Systems": 76,
+  "Cybersecurity": 10,
   "End-User Computing": 16,
-  "Network & Infrastructure": 24,
+  "Network & Infrastructure": 23,
+  "IT Services & Support": 18,
   "Telecoms & Unified Comms": 13,
   "Cloud Services": 6
  },
  "onlineBriefings": 1,
- "carriedOver": 81,
+ "carriedOver": 87,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-176840",
-   "reference": "RFQ/CMS/ICT/01112026",
-   "title": "Appointment of a service provider to assist with the renewal of the Checkpoint 9200 firewall license for twelve (12) months",
-   "department": "Council for Medical Schemes",
-   "category": "IT Services & Support",
-   "company": "rtc",
-   "matchedTerms": [
-    "firewall",
-    "ict",
-    "license"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-03T00:00:00+00:00",
-   "closingDate": "2026-11-11T00:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "APPOIN~4.PDF",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c69d503e-6f06-49e4-9d0e-e335b96e0f8e.PDF&downloadedFileName=APPOIN~4.PDF",
-     "format": "pdf",
-     "published": "2026-11-03T14:32:16Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-176331",
    "reference": "Q15-01-2026-27",
@@ -98,46 +56,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=2339e961-57c9-40a3-a4eb-3b913525194f.pdf&downloadedFileName=Q15-01-2026-27%20QUOTATION%20DOCUMENT.pdf",
      "format": "pdf",
      "published": "2026-10-29T23:41:55Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176858",
-   "reference": "MKRIQ56/2026/27",
-   "title": "The Moses Kotane Research Institute (MKRI) invites prospective bidders to submit quotations for supply, delivery and install subscription for qualitative data analysis software tool.",
-   "department": "Moses Kotane Institute",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "software"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-03T00:00:00+00:00",
-   "closingDate": "2026-11-11T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ - Purchase of qualitative Data Analysis.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=61294480-7c5c-4304-b2e6-ef4fac822dcd.pdf&downloadedFileName=RFQ%20-%20Purchase%20of%20qualitative%20Data%20Analysis.pdf",
-     "format": "pdf",
-     "published": "2026-11-03T15:37:31Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -367,47 +285,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=42c80cbc-8e78-4bad-8d4d-f158352218c3.docx&downloadedFileName=2.%20SBD.docx",
      "format": "docx",
      "published": "2026-10-02T12:27:06Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176657",
-   "reference": "RFQ/VDM/CORP/12/10/2026/01",
-   "title": "REQUEST FOR THE PROCUREMENT OF CYBER SECURITY AND OFFICE 365 ADMINISTRATION TRAINING",
-   "department": "Vhembe District Municipality",
-   "category": "Cybersecurity",
-   "company": "rtc",
-   "matchedTerms": [
-    "cyber",
-    "office 365"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-03T00:00:00+00:00",
-   "closingDate": "2026-11-11T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "REQUEST FOR THE PROCUREMENT OF CYBER SECURITY AND OFFICE 365 ADMINISTRATION.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=bafd2165-7125-4d7f-bcab-29da30f74262.pdf&downloadedFileName=REQUEST%20FOR%20THE%20PROCUREMENT%20OF%20CYBER%20SECURITY%20AND%20OFFICE%20365%20ADMINISTRATION.pdf",
-     "format": "pdf",
-     "published": "2026-11-02T15:51:27Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -1163,69 +1040,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=7005b111-0a33-4172-9c59-e7a7bcd1a5eb.jpg&downloadedFileName=IMG-20261019-WA0017.jpg",
      "format": "jpg",
      "published": "2026-11-05T12:46:21Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176823",
-   "reference": "ASA 03/11/2026",
-   "title": "Re-advert: Appointment of a service provider to Design, Supply, implement, and maintain a Cloud-based Voice Over Internet Protocol (VoIP) Telephony system for a period of 2 years",
-   "department": "Agrément South Africa",
-   "category": "Telecoms & Unified Comms",
-   "company": "rtc",
-   "matchedTerms": [
-    "cloud",
-    "cloud-based",
-    "internet",
-    "system",
-    "telephony",
-    "voip"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-03T00:00:00+00:00",
-   "closingDate": "2026-11-12T12:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "REVISED SBD 4.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=25a9542e-d001-4181-b1b7-0e7be7ebf590.pdf&downloadedFileName=REVISED%20SBD%204.pdf",
-     "format": "pdf",
-     "published": "2026-11-03T13:44:55Z"
-    },
-    {
-     "title": "General Conditions of Contract.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=27d47378-9eac-427d-af37-18e656180650.pdf&downloadedFileName=General%20Conditions%20of%20Contract.pdf",
-     "format": "pdf",
-     "published": "2026-11-03T13:44:55Z"
-    },
-    {
-     "title": "SBD 6.1 IN TERMS OF PPR2022 .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=c0ee5e9b-36e0-495e-9641-4f7bef9ed4ce.pdf&downloadedFileName=SBD%206.1%20IN%20TERMS%20OF%20PPR2022%20.pdf",
-     "format": "pdf",
-     "published": "2026-11-03T13:44:55Z"
-    },
-    {
-     "title": "Terms of Reference - VOIP.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=cb13510b-a439-4fb5-b186-ca58b7f27ffd.pdf&downloadedFileName=Terms%20of%20Reference%20-%20VOIP.pdf",
-     "format": "pdf",
-     "published": "2026-11-03T13:44:55Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -2298,7 +2112,7 @@
    "reference": "RFQ-ICT-26-27-243(01)",
    "title": "Appointment of a Service Provider for the Maintenance and Support of Microsoft Dynamics GP (Great Plains)",
    "department": "Manufacturing, Engineering and Related Services SETA (merSETA)",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -2836,6 +2650,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-176875",
+   "reference": "ATNS/RFQ11/06/2026/27/ATS-BUSINESS ENGLISH-WRITIN-",
+   "title": "APPOINTMENT OF SUITABLY QUALIFIED AND ACCREDITED TRAINING SERVICE PROVIDER TO DELIVER BUSINESS ENGLISH, PROFESSIONAL WRITING, AND ARTIFICIAL INTELLIGENCE (AI) TRAINING PROGRAMMES TO EMPLOYEES IN GAUTENG AND KWA-ZULU NATAL OVER A PERIOD OF THREE (3) YEARS ON AN AS-AND-WHEN REQUIRED BASIS",
+   "department": "Air Traffic and Navigation Services Company Limited",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "ai",
+    "artificial intelligence"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-03T00:00:00+00:00",
+   "closingDate": "2026-11-17T11:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Volume 1A - Re-advert - Business English Writing  Training.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=dbd20e98-04e1-477d-9573-2dbb7d4e2540.pdf&downloadedFileName=Volume%201A%20-%20Re-advert%20-%20Business%20English%20Writing%20%20Training.pdf",
+     "format": "pdf",
+     "published": "2026-11-03T16:26:14Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175886",
    "reference": "B04/2026",
    "title": "THE APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE MICROSOFT 365 LICENSES FOR A PERIOD OF THREE (3) YEAR’S FOR THE AIDC-EC.",
@@ -3309,7 +3164,7 @@
    "reference": "QR0809TETA002300",
    "title": "APPOINTMENT OF AN ICT SERVICE PROVIDER TO DO THE FOLLOWING: PROVIDE SUPPORT AND MAINTENANCE TO TETA DG CLAIMS MANAGEMENT SYSTEM",
    "department": "Transport Education and Training Authority",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -5759,7 +5614,7 @@
    "reference": "HO/PGC/ICT/522/09/2026",
    "title": "THE APPOINTMENT OF A CONTRACTOR FOR THE DESIGN, SUPPLY, INSTALLATION, AND MAINTENANCE OF THE INTELLIGENT OPERATION CENTER AND AI PLATFORM FOR PRASA, AS AND WHEN REQUIRED, FOR A PERIOD OF 36 MONTHS.",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ai",
@@ -6458,7 +6313,7 @@
    "reference": "DHA20-2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FROM SITA RFB1183 FOR THE ESTABLISHMENT OF AN ICT PORTFOLIO MANAGEMENT OFFICE (PMO) TO DELIVER THE DIGITAL TRANSFORMATION STRATEGY (MICROSOFT-BASED PORTFOLIO MANAGEMENT) FOR A PERIOD OF THIRTY-SIX (36) MONTHS, WITH A POSSIBILITY TO RENEW FOR TWENTY-FOUR (24) MONTHS, SUBJECT TO SATISFACTORY PERFORMANCE OF THE SERVICE PROVIDER AND THE AVAILABILITY OF FUNDS.",
    "department": "Home Affairs",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -7759,7 +7614,7 @@
    "reference": "CGE/T/11/2026/27",
    "title": "Provision of WAN and VOIP services for 36 months",
    "department": "Commission for Gender Equality",
-   "category": "Network & Infrastructure",
+   "category": "Telecoms & Unified Comms",
    "company": "rtc",
    "matchedTerms": [
     "voip",
@@ -8690,7 +8545,7 @@
    "reference": "RFT111/11/2025/26",
    "title": "Appointment of a systems integrator and turnkey service provider for ICT Infrastructure modernization, managed ICT hardware, software consumable and peripherals on an outright purchase or as service basis.",
    "department": "Madibeng Local Municipality",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",

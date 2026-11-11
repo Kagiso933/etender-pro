@@ -1,19 +1,19 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-10T22:24:02.052263+00:00",
+ "generatedAt": "2026-11-11T02:31:32.598514+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-29",
- "releasesScanned": 1140,
- "uniqueTenders": 1175,
- "count": 310,
+ "coveredFrom": "2026-10-30",
+ "releasesScanned": 1019,
+ "uniqueTenders": 1019,
+ "count": 309,
  "categories": {
-  "Facilities Maintenance": 168,
-  "Agriculture": 35,
-  "Supply & Consumables": 69,
+  "Facilities Maintenance": 163,
+  "Agriculture": 33,
+  "Supply & Consumables": 75,
   "Grounds & Landscaping": 38
  },
  "onlineBriefings": 0,
- "carriedOver": 155,
+ "carriedOver": 171,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -4132,7 +4132,7 @@
    "reference": "PR00000016453",
    "title": "REQUEST FOR POTENTIAL SERVICE PROVIDERS TO PROVIDE CANTEEN KITCHEN CANOPY EXTRACTION CLEANING & MAINTENANCE AT 30 HELIUM ROAD AUTOMOTIVE SUPPLIER PARK ROSSLYN FOR 24 MONTHS",
    "department": "Automotive Industry Development Centre (AIDC)",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -5980,7 +5980,7 @@
    "reference": "Q58-2026-27",
    "title": "ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER FOR THE MAINTENANCE OF CREMATORIUM MACHINES AND FURNACES AND THE CLEANING OF THE STACK AT THE REBECCA STREET CREMATORIUM",
    "department": "City of Tshwane",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "cleaning",
@@ -6128,7 +6128,7 @@
    "reference": "E3478CXMWPREISSUE",
    "title": "PROVISION OF SERVICE, MAINTENANCE, CONSUMABLES AND SPARES FOR GLASSWARE WASHER MACHINE AT ESKOM PETROLEUM SCIENCES (PS) LABORATORIES FOR A PERIOD OF FIVE (05) YEARS ON AN ‘AS AND WHEN’ REQUIRED BASIS.",
    "department": "ESKOM",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -9739,7 +9739,7 @@
    "reference": "E3615GXMPDUVp",
    "title": "Publication of bidders names - Service, Maintenance, Calibration, Supply of spares and consumables of Lab Instruments at Duvha Power Station on as and when required basis for a period of 60 Months.",
    "department": "ESKOM",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "consumables",
@@ -12040,7 +12040,7 @@
    "reference": "ZNB 3001/2026-H",
    "title": "PROVISION OF CLEANING OF BUILDINGS AND OFFICES AT SELECTED FACILITIES AND WILL BE AWARDED AS A MULTI-AWARD BID THREE (03) YEARS CONTRACT.",
    "department": "Kwazulu Natal - Health",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "buildings",
@@ -12087,7 +12087,7 @@
    "reference": "ZNB 3001 2026-H",
    "title": "PROVISION OF CLEANING OF BUILDINGS AND OFFICES AT SELECTED FACILITIES AND WILL BE AWARDED AS A MULTI-AWARD BID THREE (03) YEARS CONTRACT.",
    "department": "Kwazulu Natal - Health",
-   "category": "Facilities Maintenance",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "buildings",
@@ -14702,95 +14702,6 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
-   "id": "ocds-9t57fa-177310",
-   "reference": "GNP-028-26",
-   "title": "APPOINTMENT OF SERVICE PROVIDER(S) FOR THE SUPPLY AND DELIVERY OF CLEANING MATERIALS AND CONSUMABLES FOR A PERIOD OF THREE (3) YEARS – ARID REGION PARKS",
-   "department": "South African National Parks",
-   "category": "Supply & Consumables",
-   "company": "llp",
-   "matchedTerms": [
-    "cleaning",
-    "cleaning materials",
-    "consumables"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-06T00:00:00+00:00",
-   "closingDate": "2026-12-04T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "GCOC.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fe5ed054-b598-4eca-be3f-0fca8e8c5b86.pdf&downloadedFileName=GCOC.pdf",
-     "format": "pdf",
-     "published": "2026-11-06T16:40:59Z"
-    },
-    {
-     "title": "Bid Document_GNP-028-26_Cleaning Material.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=b6d1345f-32e3-4fd5-8003-a516a72c382e.pdf&downloadedFileName=Bid%20Document_GNP-028-26_Cleaning%20Material.pdf",
-     "format": "pdf",
-     "published": "2026-11-06T16:40:06Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-177321",
-   "reference": "NRA  2026/0757",
-   "title": "FOR THE OPERATIONS AND MAINTENANCE OF THE TOLL PLAZAS ON THE NATIONAL \r\nROUTE N2 NORTH (Retender) (Contractor)",
-   "department": "South African National Roads Agency Soc Limited (SANRAL)",
-   "category": "Agriculture",
-   "company": "llp",
-   "matchedTerms": [
-    "maintenance",
-    "tractor"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-06T00:00:00+00:00",
-   "closingDate": "2026-12-04T11:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "N2.zip",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=136931b4-c8e4-4a92-b3d8-fdf61a8a240f.zip&downloadedFileName=N2.zip",
-     "format": "zip",
-     "published": "2026-11-06T19:13:24Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
    "id": "ocds-9t57fa-176539",
    "reference": "MMM/BID830-2026/2027",
    "title": "DEVELOPMENT OF OPEN SPACE WARD 5 UPGRADING OF UNIQUE HOMES PARK",
@@ -15949,6 +15860,47 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-177564",
+   "reference": "MMB 2627/043 GS",
+   "title": "PREVENTATIVE MAINTENANCE REPAIRS ON ELECTRICAL INSTALLATION SECURITY STREET AND HIGH MUST LIGHTS (CLUSTER BB)\r\nRAMOTSHERE MOILOA DISTRICT MUNICIPALITY:\r\nCIDB 5 EP & EB",
+   "department": "Public Works",
+   "category": "Facilities Maintenance",
+   "company": "llp",
+   "matchedTerms": [
+    "maintenance",
+    "repairs"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-11T00:00:00+00:00",
+   "closingDate": "2026-12-14T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "pa06_3CLUSTERBBDICHABAramotshere.doc",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=06016bbd-4e5f-472e-bc4c-22ddc2056f2b.doc&downloadedFileName=pa06_3CLUSTERBBDICHABAramotshere.doc",
+     "format": "doc",
+     "published": "2026-11-10T10:16:50Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-172174",
    "reference": "E3632GXMPGRO",
    "title": "Service repair and refurbishment of mill yoke stem, mill gearbox base, mill motor base and valve on site machining for 60 months",
@@ -16453,7 +16405,7 @@
    "reference": "T05-2027",
    "title": "THE APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE SUPPLY AND DELIVERY OF AGRICULTURAL INPUTS, TOOLS & EQUIPMENTS AND PROTECTIVE CLOTHING FOR PERIOD OF THREE YEARS",
    "department": "ILembe - Enterprise iLembe Economic Development Agency",
-   "category": "Agriculture",
+   "category": "Supply & Consumables",
    "company": "llp",
    "matchedTerms": [
     "agricultur",
