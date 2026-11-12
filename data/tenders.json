@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-12T13:18:36.561834+00:00",
+ "generatedAt": "2026-11-12T16:25:23.887016+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-09-24",
- "releasesScanned": 3841,
- "uniqueTenders": 3876,
- "count": 167,
+ "coveredFrom": "2026-10-17",
+ "releasesScanned": 2338,
+ "uniqueTenders": 2383,
+ "count": 170,
  "categories": {
-  "Software & Systems": 70,
-  "Network & Infrastructure": 27,
-  "Cybersecurity": 15,
-  "IT Services & Support": 15,
+  "Software & Systems": 79,
+  "Network & Infrastructure": 24,
+  "Cybersecurity": 12,
+  "IT Services & Support": 13,
   "Telecoms & Unified Comms": 12,
   "Cloud Services": 12,
-  "End-User Computing": 16
+  "End-User Computing": 18
  },
  "onlineBriefings": 1,
- "carriedOver": 5,
+ "carriedOver": 30,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1024,7 +1024,7 @@
    "reference": "RFQ-ICT-26-27-243(01)",
    "title": "Appointment of a Service Provider for the Maintenance and Support of Microsoft Dynamics GP (Great Plains)",
    "department": "Manufacturing, Engineering and Related Services SETA (merSETA)",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -2090,7 +2090,7 @@
    "reference": "RFQ/ICT/26/27/241",
    "title": "PROVISION OF MIMECAST EMAIL CONTINUITY AND ARCHIVING SOLUTIONS FOR 12 MONTHS",
    "department": "Manufacturing, Engineering and Related Services SETA (merSETA)",
-   "category": "Cybersecurity",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -3104,7 +3104,7 @@
    "reference": "RFQ2026-011-019",
    "title": "REQUEST FOR QUOTATIONS FOR THE APPOINTMENT OF A SERVICE PROVIDER FOR IMPLEMENTATION OF ISO/IEC 27001 INFORMATION SECURITY MANAGEMENT SYSTEM AND ISO 14001 ENVIRONMENTAL MANAGEMENT SYSTEM",
    "department": "National Lotteries Commission",
-   "category": "Cybersecurity",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "information security",
@@ -3187,7 +3187,7 @@
    "reference": "RFB 3301/ 2026 - (ERP No 530015)",
    "title": "Appointment of a Service Provider to Provide a New Integrated Video Conferencing and Audio-Visual Solution for SAPS UBUNYE Auditorium",
    "department": "State Information Technology Agency",
-   "category": "Telecoms & Unified Comms",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -3727,6 +3727,12 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=aea4c211-7247-48bd-b0cc-2cb7907e8cb0.docx&downloadedFileName=RFB%203305-2026%20-%20Annexure%201-Bid%20Specification.docx",
      "format": "docx",
      "published": "2026-10-30T16:14:26Z"
+    },
+    {
+     "title": "RFB 3305-2026-QUESTIONS AND ANSWERS.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=82295850-71dd-4251-a11d-a07086cbe352.pdf&downloadedFileName=RFB%203305-2026-QUESTIONS%20AND%20ANSWERS.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T15:01:14Z"
     },
     {
      "title": "RFB 3305-2026 - Annexure 5B-Invitation to Bid.docx",
@@ -4961,11 +4967,57 @@
    "portalUrl": "https://www.etenders.gov.za"
   },
   {
+   "id": "ocds-9t57fa-178031",
+   "reference": "ICT001",
+   "title": "REQUEST FOR A QUOTE FOR PROVISION OF ICT SUPPORT SERVICES ON A FIXED TERM PERIOD OF 36 MONTHS.",
+   "department": "National Museum Bloemfontein",
+   "category": "IT Services & Support",
+   "company": "rtc",
+   "matchedTerms": [
+    "ict"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-12T00:00:00+00:00",
+   "closingDate": "2026-11-24T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "RFQ for ICT support services 12 11 2026 Final.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=82e9c69a-26e1-407d-a2aa-8cd343056030.pdf&downloadedFileName=RFQ%20for%20ICT%20support%20services%2012%2011%202026%20Final.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T15:20:31Z"
+    },
+    {
+     "title": "SBD 4_ NASMUS_final2.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=0956bea3-bd5b-4542-8efa-f24ecb208a8a.pdf&downloadedFileName=SBD%204_%20NASMUS_final2.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T15:20:32Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
    "id": "ocds-9t57fa-175290",
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -5092,7 +5144,7 @@
    "reference": "HO/PGC/ICT/522/09/2026",
    "title": "THE APPOINTMENT OF A CONTRACTOR FOR THE DESIGN, SUPPLY, INSTALLATION, AND MAINTENANCE OF THE INTELLIGENT OPERATION CENTER AND AI PLATFORM FOR PRASA, AS AND WHEN REQUIRED, FOR A PERIOD OF 36 MONTHS.",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ai",
@@ -6109,7 +6161,7 @@
    "reference": "DHA20-2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FROM SITA RFB1183 FOR THE ESTABLISHMENT OF AN ICT PORTFOLIO MANAGEMENT OFFICE (PMO) TO DELIVER THE DIGITAL TRANSFORMATION STRATEGY (MICROSOFT-BASED PORTFOLIO MANAGEMENT) FOR A PERIOD OF THIRTY-SIX (36) MONTHS, WITH A POSSIBILITY TO RENEW FOR TWENTY-FOUR (24) MONTHS, SUBJECT TO SATISFACTORY PERFORMANCE OF THE SERVICE PROVIDER AND THE AVAILABILITY OF FUNDS.",
    "department": "Home Affairs",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -6385,6 +6437,64 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=e4d8d366-f544-41ef-88dd-3633ac635eac.pdf&downloadedFileName=Tender%20documents%20for%20Collection%20System.pdf",
      "format": "pdf",
      "published": "2026-10-23T09:58:36Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-178041",
+   "reference": "RFQ2026/27/34",
+   "title": "REQUEST FOR THE QUOTATION FOR THE APPOINTMENT OF THE AUCTIONER TO SUBMIT PROSOSALFOR THE DISPOSAL OF THE COMPUTER EQUIPMENT, FURNITURE AND SCRAPPED\r\nITEMS AT PORTS REGULATOR OF SOUTH AFRICA",
+   "department": "Ports Regulator of South Africa",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "computer"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-12T00:00:00+00:00",
+   "closingDate": "2026-11-27T12:00:00+00:00",
+   "procurementMethod": "Request for Quotation",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Supplier POPIA Consent.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=29abfc49-06b6-4b94-8190-33c7c08b9fba.pdf&downloadedFileName=Supplier%20POPIA%20Consent.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T15:37:29Z"
+    },
+    {
+     "title": "SBD 6.1 IN TERMS OF PPR2022.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=fe828aed-cded-43b5-9e42-5ea1b79faece.pdf&downloadedFileName=SBD%206.1%20IN%20TERMS%20OF%20PPR2022.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T15:37:29Z"
+    },
+    {
+     "title": "SBD 4 -Annexure A (1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9acedc23-6f91-49b6-b955-ca058dd2bda2.pdf&downloadedFileName=SBD%204%20-Annexure%20A%20%281%29.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T15:37:28Z"
+    },
+    {
+     "title": "RFQ for Appointment of an External Independent Auctioneer.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=9831c5d4-01ef-4c7b-9692-fa9055bb476a.pdf&downloadedFileName=RFQ%20for%20Appointment%20of%20an%20External%20Independent%20Auctioneer.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T15:37:28Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -7199,7 +7309,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "management system",
@@ -7247,7 +7357,7 @@
    "reference": "TCC/2026/08/0103/9785/RFP",
    "title": "PROVISIONING AND INSTALLATION OF A WEB APPLICATION FIREWALL (WAF) SOLUTION\r\nWITH MAINTENANCE AND SUPPORT FOR FIVE (5) YEARS",
    "department": "Transnet SOC Ltd",
-   "category": "Cybersecurity",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -7683,7 +7793,7 @@
    "reference": "CGE/T/11/2026/27",
    "title": "Provision of WAN and VOIP services for 36 months",
    "department": "Commission for Gender Equality",
-   "category": "Network & Infrastructure",
+   "category": "Telecoms & Unified Comms",
    "company": "rtc",
    "matchedTerms": [
     "voip",
@@ -8700,7 +8810,7 @@
    "reference": "RFT111/11/2025/26",
    "title": "Appointment of a systems integrator and turnkey service provider for ICT Infrastructure modernization, managed ICT hardware, software consumable and peripherals on an outright purchase or as service basis.",
    "department": "Madibeng Local Municipality",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -8733,6 +8843,46 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=dfa31dea-4f33-481d-9f96-b0b5f209fabf.pdf&downloadedFileName=INVITATION%20TO%20TENDER%20AS%20AT%20NOVEMBER%202026.pdf",
      "format": "pdf",
      "published": "2026-11-10T20:22:54Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-178042",
+   "reference": "SAMRC/KfW-PCS/2026/18",
+   "title": "Provision of Professional Consultancy Services for the Primate Unit and Delft Animal Centre (SAMRC) Laboratory under the DSTI/KfW/SAMRC Support of Development and Production of Vaccines in South Africa Project",
+   "department": "Medical Research Council of South Africa",
+   "category": "End-User Computing",
+   "company": "rtc",
+   "matchedTerms": [
+    "pcs"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-12T00:00:00+00:00",
+   "closingDate": "2026-12-14T11:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "Advert - Professional Consultancy Services.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=1881fc36-8ba7-4c43-afdb-509116421ed9.pdf&downloadedFileName=Advert%20-%20Professional%20Consultancy%20Services.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T15:40:09Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
