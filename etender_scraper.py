@@ -171,7 +171,7 @@ def fetch_page(page, date_from, date_to, page_size=PAGE_SIZE, retries=3):
     })
     req = urllib.request.Request(f"{API_URL}?{params}", headers={
         "Accept": "application/json",
-        "User-Agent": "SA-eTender-Pro/1.0 (+https://github.com/Kagiso933/etender-pro)",
+        "User-Agent": "SA-eTender-Pro/1.0 (+https://github.com/Ryno-Tec/etender-pro)",
     })
     for attempt in range(1, retries + 1):
         if DEADLINE[0] and time.monotonic() > DEADLINE[0]:

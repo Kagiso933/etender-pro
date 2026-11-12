@@ -2,7 +2,7 @@
 
 Finds open **IT tenders** on South Africa's eTenders portal, and helps you prepare and track bids for them.
 
-**Live site:** https://kagiso933.github.io/etender-pro/ (after GitHub Pages is enabled)
+**Live site:** https://tenders.ryno-tec.co.za
 
 ## How it works
 

@@ -177,7 +177,7 @@ def main():
                 added += 1
 
     summary = {"syncedAt": stamp, "feedGeneratedAt": feed.get("generatedAt"), "online": online,
-               "added": added, "updated": updated, "source": "https://kagiso933.github.io/etender-pro/",
+               "added": added, "updated": updated, "source": "https://tenders.ryno-tec.co.za/",
                "companies": {"llp": llp}}
     batches = [writes[i:i + 49] for i in range(0, len(writes), 49)] or [[]]
     # the sync status shown on the hub's Tenders page goes in the last batch
