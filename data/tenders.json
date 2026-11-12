@@ -1,65 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-12T16:25:23.887016+00:00",
+ "generatedAt": "2026-11-12T22:49:51.975028+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-17",
- "releasesScanned": 2338,
- "uniqueTenders": 2383,
- "count": 170,
+ "coveredFrom": "2026-10-02",
+ "releasesScanned": 3447,
+ "uniqueTenders": 3467,
+ "count": 171,
  "categories": {
-  "Software & Systems": 79,
-  "Network & Infrastructure": 24,
-  "Cybersecurity": 12,
+  "Network & Infrastructure": 27,
+  "Software & Systems": 76,
+  "Cybersecurity": 11,
   "IT Services & Support": 13,
   "Telecoms & Unified Comms": 12,
   "Cloud Services": 12,
-  "End-User Computing": 18
+  "End-User Computing": 20
  },
  "onlineBriefings": 1,
- "carriedOver": 30,
+ "carriedOver": 7,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-177071",
-   "reference": "RFQJW056NS26-271",
-   "title": "APPLICATION SUPPORT FOR THE OPENTEXT EXTENDED ENTERPRISE CONTENT MANAGEMENT SYSTEM FOR ENGINEERING FOR A PERIOD OF TWELVE (12) MONTHS.",
-   "department": "Johannesburg Water",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "management system",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-05T00:00:00+00:00",
-   "closingDate": "2026-11-12T16:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQJW056NS26-27 APPLICATION SUPPORT FOR THE OPENTEXT EXTENDED ENTERPRISE CONTENT MANAGEMENT SYSTEM FOR ENGINEERING FOR A PERIOD OF TWELVE (12) MONTHS..pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=6b937758-105a-4cf6-ac59-eb35081c62ae.pdf&downloadedFileName=RFQJW056NS26-27%20APPLICATION%20SUPPORT%20FOR%20THE%20OPENTEXT%20EXTENDED%20ENTERPRISE%20CONTENT%20MANAGEMENT%20SYSTEM%20FOR%20ENGINEERING%20FOR%20A%20PERIOD%20OF%20TWELVE%20%2812%29%20MONTHS..pdf",
-     "format": "pdf",
-     "published": "2026-11-05T15:49:28Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-176561",
    "reference": "RFQ/CMS/ITT/04/10/26",
@@ -975,7 +934,7 @@
    "reference": "ATNS/RFP01/10/2026/2027/ICT-FIREWALL-Sof-2025-310",
    "title": "Appointment of a service provider for the supply, implementation, and support of web application firewalls and internal network firewalls over a period of five (5) years",
    "department": "Air Traffic and Navigation Services Company Limited",
-   "category": "Cybersecurity",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "firewall",
@@ -1826,7 +1785,7 @@
    "reference": "RFB 3299/2026 - (ERP No 534010)",
    "title": "Request for Bid for the Procurement of Security Access Cards, Access Card Materials and the Cleaning Kit of the Smart Card Printer for a Period of Five (5) Years.",
    "department": "State Information Technology Agency",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -2497,7 +2456,7 @@
    "reference": "QR0809TETA002300",
    "title": "APPOINTMENT OF AN ICT SERVICE PROVIDER TO DO THE FOLLOWING: PROVIDE SUPPORT AND MAINTENANCE TO TETA DG CLAIMS MANAGEMENT SYSTEM",
    "department": "Transport Education and Training Authority",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -3187,7 +3146,7 @@
    "reference": "RFB 3301/ 2026 - (ERP No 530015)",
    "title": "Appointment of a Service Provider to Provide a New Integrated Video Conferencing and Audio-Visual Solution for SAPS UBUNYE Auditorium",
    "department": "State Information Technology Agency",
-   "category": "Software & Systems",
+   "category": "Telecoms & Unified Comms",
    "company": "rtc",
    "matchedTerms": [
     "erp",
@@ -5017,7 +4976,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -5135,6 +5094,18 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=81b7aa3a-68e2-4236-84ab-acd5f358ca1b.docx&downloadedFileName=Invitation%20to%20bid%20PSiRA%20-%20Printers.docx",
      "format": "docx",
      "published": "2026-10-23T16:09:38Z"
+    },
+    {
+     "title": "Minutes - Compulsory Briefing Session.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=c6902552-45cc-431c-8a8c-d3f81ce6e9d3.pdf&downloadedFileName=Minutes%20-%20Compulsory%20Briefing%20Session.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T21:08:55Z"
+    },
+    {
+     "title": "Erratum.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=421ff0db-96f8-4ffc-a737-eb56edf2d968.pdf&downloadedFileName=Erratum.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T21:09:25Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5448,10 +5419,22 @@
      "published": "2026-11-02T21:37:43Z"
     },
     {
+     "title": "Erratum - TOR - SBD 6 - Checklist.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=7f162a6e-de93-4358-ac82-7beba7f16956.pdf&downloadedFileName=Erratum%20-%20TOR%20-%20SBD%206%20-%20Checklist.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T21:01:06Z"
+    },
+    {
      "title": "bid document- telephony.pdf",
      "url": "https://www.etenders.gov.za/home/Download?blobName=0119d383-2eef-44cc-94e6-88917d9d5c1a.pdf&downloadedFileName=bid%20document-%20telephony.pdf",
      "format": "pdf",
      "published": "2026-10-23T15:54:12Z"
+    },
+    {
+     "title": "Minutes - Compulsory Briefing Session.pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=08938854-d67b-4915-af91-e77ab77fd4c5.pdf&downloadedFileName=Minutes%20-%20Compulsory%20Briefing%20Session.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T21:02:01Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -7309,7 +7292,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Software & Systems",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "management system",
@@ -7516,7 +7499,7 @@
    "reference": "TMPD 02-2026/27",
    "title": "Tender for the supply and delivery of original equipment manufacturer (OEM) printer specific consumables for identity (id) card printers and as well as upgrading of the existing id card software packages to the Tshwane police department for a period of three (3) years on and when required basis.",
    "department": "City of Tshwane",
-   "category": "Software & Systems",
+   "category": "End-User Computing",
    "company": "rtc",
    "matchedTerms": [
     "printer",
@@ -7793,7 +7776,7 @@
    "reference": "CGE/T/11/2026/27",
    "title": "Provision of WAN and VOIP services for 36 months",
    "department": "Commission for Gender Equality",
-   "category": "Telecoms & Unified Comms",
+   "category": "Network & Infrastructure",
    "company": "rtc",
    "matchedTerms": [
     "voip",
@@ -8662,6 +8645,86 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=c4787c0d-62d6-4831-a96e-f7184eecf086.doc&downloadedFileName=SCM-Bid%20documents%20SBD%203.3%20%281%29.doc",
      "format": "doc",
      "published": "2026-11-05T06:14:58Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-178085",
+   "reference": "TREA/028/26/MP Re-advertisement",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR AUDIT SOFTWARE FOR INTERNAL AUDIT FOR A PERIOD OF 60 MONTHS (5 YEARS) WITH AN OPTION TO EXTEND",
+   "department": "Mpumalanga - Provincial Treasury",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "software"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-12T00:00:00+00:00",
+   "closingDate": "2026-12-07T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "TREA028 (1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=18863151-10d5-49ea-be21-6e45836fe3df.pdf&downloadedFileName=TREA028%20%281%29.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T22:23:32Z"
+    }
+   ],
+   "portalUrl": "https://www.etenders.gov.za"
+  },
+  {
+   "id": "ocds-9t57fa-178086",
+   "reference": "TREA/028/26/MP Re-advert",
+   "title": "APPOINTMENT OF A SERVICE PROVIDER FOR AUDIT SOFTWARE FOR INTERNAL AUDIT FOR A PERIOD OF 60 MONTHS (5 YEARS) WITH AN OPTION TO EXTEND",
+   "department": "Mpumalanga - Provincial Treasury",
+   "category": "Software & Systems",
+   "company": "rtc",
+   "matchedTerms": [
+    "software"
+   ],
+   "value": null,
+   "currency": "ZAR",
+   "publishedDate": "2026-11-12T00:00:00+00:00",
+   "closingDate": "2026-12-07T12:00:00+00:00",
+   "procurementMethod": "Request for Bid(Open-Tender)",
+   "procurementCategory": "consultingServices",
+   "eligibility": "",
+   "submission": "",
+   "contact": {},
+   "province": "",
+   "briefing": {
+    "held": null,
+    "compulsory": null,
+    "date": null,
+    "venue": "",
+    "mode": "unknown",
+    "online": false,
+    "link": null,
+    "note": ""
+   },
+   "documents": [
+    {
+     "title": "TREA028 (1).pdf",
+     "url": "https://www.etenders.gov.za/home/Download?blobName=8469f75c-7ef2-487c-b6f0-22999647a0c3.pdf&downloadedFileName=TREA028%20%281%29.pdf",
+     "format": "pdf",
+     "published": "2026-11-12T22:27:05Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
