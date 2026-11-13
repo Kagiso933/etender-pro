@@ -1,124 +1,24 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-12T22:49:51.975028+00:00",
+ "generatedAt": "2026-11-13T03:15:10.104724+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-02",
- "releasesScanned": 3447,
- "uniqueTenders": 3467,
- "count": 171,
+ "coveredFrom": "2026-10-31",
+ "releasesScanned": 1135,
+ "uniqueTenders": 1160,
+ "count": 167,
  "categories": {
-  "Network & Infrastructure": 27,
-  "Software & Systems": 76,
+  "Software & Systems": 68,
   "Cybersecurity": 11,
-  "IT Services & Support": 13,
-  "Telecoms & Unified Comms": 12,
+  "IT Services & Support": 18,
+  "Telecoms & Unified Comms": 13,
   "Cloud Services": 12,
+  "Network & Infrastructure": 25,
   "End-User Computing": 20
  },
  "onlineBriefings": 1,
- "carriedOver": 7,
+ "carriedOver": 86,
  "briefingFieldsSeen": {},
  "tenders": [
-  {
-   "id": "ocds-9t57fa-176561",
-   "reference": "RFQ/CMS/ITT/04/10/26",
-   "title": "Appointment of a Service Provider for the Removal of Existing Network Switches and the Supply, Installation, Configuration, and Commissioning of New Network Switches",
-   "department": "Council for Medical Schemes",
-   "category": "Network & Infrastructure",
-   "company": "rtc",
-   "matchedTerms": [
-    "network",
-    "network switch",
-    "switches"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-31T00:00:00+00:00",
-   "closingDate": "2026-11-13T00:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ- Appointment of a service provide for supply installation and configuration of Network Switches43.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=1e5d5374-599c-4517-a321-dbacf1588992.pdf&downloadedFileName=RFQ-%20Appointment%20of%20a%20service%20provide%20for%20supply%20installation%20and%20configuration%20of%20Network%20Switches43.pdf",
-     "format": "pdf",
-     "published": "2026-10-31T10:53:42Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-174588",
-   "reference": "RFQ/29088",
-   "title": "Billing Software",
-   "department": "Airports Company of South Africa",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "software"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-19T00:00:00+00:00",
-   "closingDate": "2026-11-13T01:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "Addendum RFQ 29088 Sotware billing.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=dc15cf10-3c77-41a4-b71f-522c8c1cab51.pdf&downloadedFileName=Addendum%20RFQ%2029088%20Sotware%20billing.pdf",
-     "format": "pdf",
-     "published": "2026-11-04T22:16:25Z"
-    },
-    {
-     "title": "NEC3 - TSC Request for Quotation for the Provision of Billing Software RFQ 29088  for metering 6 Months 22-05-2026.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=84663dc9-5afd-466a-8e7a-9ccba8ced7a0.docx&downloadedFileName=NEC3%20-%20TSC%20Request%20for%20Quotation%20for%20the%20Provision%20of%20Billing%20Software%20RFQ%2029088%20%20for%20metering%206%20Months%2022-05-2026.docx",
-     "format": "docx",
-     "published": "2026-11-04T22:16:25Z"
-    },
-    {
-     "title": "Request for Quotation for the Provision of Billing Software RFQ 29088.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=a1e1e9d4-0925-4d03-af58-aca46d7bc5f9.pdf&downloadedFileName=Request%20for%20Quotation%20for%20the%20Provision%20of%20Billing%20Software%20RFQ%2029088.pdf",
-     "format": "pdf",
-     "published": "2026-11-04T22:16:25Z"
-    },
-    {
-     "title": "Copy of 1-BOQ for metering 6 Months.xlsx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f072b97d-30cc-45a0-9ab8-fb33f7639431.xlsx&downloadedFileName=Copy%20of%201-BOQ%20for%20metering%206%20Months.xlsx",
-     "format": "xlsx",
-     "published": "2026-11-04T22:16:25Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
   {
    "id": "ocds-9t57fa-171537",
    "reference": "E3571CXERE",
@@ -496,52 +396,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=df94c56b-c3cd-4920-92b2-b94fab3bb14e.zip&downloadedFileName=RFQ%20Document.zip",
      "format": "zip",
      "published": "2026-11-06T12:21:25Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176896",
-   "reference": "REQNHFC010638",
-   "title": "CONSOLIDATED CRM SUPPORT AND MAINTENANCE FOR TWELVE (12) MONTHS",
-   "department": "National Housing Finance Corporation Limited",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "crm"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-03T00:00:00+00:00",
-   "closingDate": "2026-11-13T11:00:00+00:00",
-   "procurementMethod": "Request for Quotation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "RFQ_CRM SUPPORT AND MAINTENANCE .pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=f61cf743-2479-488b-8c67-11ebc9d144d5.pdf&downloadedFileName=RFQ_CRM%20SUPPORT%20AND%20MAINTENANCE%20.pdf",
-     "format": "pdf",
-     "published": "2026-11-03T19:16:57Z"
-    },
-    {
-     "title": "Annexure 10- GCC.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=368ad9bf-98f4-4f51-8d90-96fb69e4e7e7.pdf&downloadedFileName=Annexure%2010-%20GCC.pdf",
-     "format": "pdf",
-     "published": "2026-11-03T19:16:57Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -983,7 +837,7 @@
    "reference": "RFQ-ICT-26-27-243(01)",
    "title": "Appointment of a Service Provider for the Maintenance and Support of Microsoft Dynamics GP (Great Plains)",
    "department": "Manufacturing, Engineering and Related Services SETA (merSETA)",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -2456,7 +2310,7 @@
    "reference": "QR0809TETA002300",
    "title": "APPOINTMENT OF AN ICT SERVICE PROVIDER TO DO THE FOLLOWING: PROVIDE SUPPORT AND MAINTENANCE TO TETA DG CLAIMS MANAGEMENT SYSTEM",
    "department": "Transport Education and Training Authority",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -2752,47 +2606,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=de104c70-b3fd-454c-adba-f13b2009e576.pdf&downloadedFileName=SBD%206.1%20IN%20TERMS%20OF%20PPR2022%20.pdf",
      "format": "pdf",
      "published": "2026-11-05T13:35:55Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176907",
-   "reference": "SCM20/10/2026",
-   "title": "REPAIRS AND COMMISSIONING OF LOAD MANAGEMENT SYSTEM AT CONTROL ROOM AND EBDEN SUBSTATION.",
-   "department": "Enoch Mgijima Local Municipality",
-   "category": "Software & Systems",
-   "company": "rtc",
-   "matchedTerms": [
-    "management system",
-    "system"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-11-04T00:00:00+00:00",
-   "closingDate": "2026-11-18T12:00:00+00:00",
-   "procurementMethod": "Request for Bid(Open-Tender)",
-   "procurementCategory": "services",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "COMBINED ADVERT- RIPLE CONTROL.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=981a84a9-147b-4741-bae1-700074d081d3.pdf&downloadedFileName=COMBINED%20ADVERT-%20RIPLE%20CONTROL.pdf",
-     "format": "pdf",
-     "published": "2026-11-04T06:04:26Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -5115,7 +4928,7 @@
    "reference": "HO/PGC/ICT/522/09/2026",
    "title": "THE APPOINTMENT OF A CONTRACTOR FOR THE DESIGN, SUPPLY, INSTALLATION, AND MAINTENANCE OF THE INTELLIGENT OPERATION CENTER AND AI PLATFORM FOR PRASA, AS AND WHEN REQUIRED, FOR A PERIOD OF 36 MONTHS.",
    "department": "Passenger Rail Agency of South Africa",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ai",
@@ -6144,7 +5957,7 @@
    "reference": "DHA20-2026",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FROM SITA RFB1183 FOR THE ESTABLISHMENT OF AN ICT PORTFOLIO MANAGEMENT OFFICE (PMO) TO DELIVER THE DIGITAL TRANSFORMATION STRATEGY (MICROSOFT-BASED PORTFOLIO MANAGEMENT) FOR A PERIOD OF THIRTY-SIX (36) MONTHS, WITH A POSSIBILITY TO RENEW FOR TWENTY-FOUR (24) MONTHS, SUBJECT TO SATISFACTORY PERFORMANCE OF THE SERVICE PROVIDER AND THE AVAILABILITY OF FUNDS.",
    "department": "Home Affairs",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -7776,7 +7589,7 @@
    "reference": "CGE/T/11/2026/27",
    "title": "Provision of WAN and VOIP services for 36 months",
    "department": "Commission for Gender Equality",
-   "category": "Network & Infrastructure",
+   "category": "Telecoms & Unified Comms",
    "company": "rtc",
    "matchedTerms": [
     "voip",
@@ -8873,7 +8686,7 @@
    "reference": "RFT111/11/2025/26",
    "title": "Appointment of a systems integrator and turnkey service provider for ICT Infrastructure modernization, managed ICT hardware, software consumable and peripherals on an outright purchase or as service basis.",
    "department": "Madibeng Local Municipality",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
