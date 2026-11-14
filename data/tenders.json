@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-14T03:03:11.071832+00:00",
+ "generatedAt": "2026-11-14T12:03:37.781717+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-10-15",
- "releasesScanned": 2759,
- "uniqueTenders": 2779,
+ "coveredFrom": "2026-10-13",
+ "releasesScanned": 2927,
+ "uniqueTenders": 2927,
  "count": 165,
  "categories": {
-  "Software & Systems": 75,
+  "Software & Systems": 74,
   "End-User Computing": 24,
   "Cloud Services": 5,
-  "IT Services & Support": 15,
+  "IT Services & Support": 16,
   "Cybersecurity": 13,
   "Network & Infrastructure": 22,
   "Telecoms & Unified Comms": 11
  },
  "onlineBriefings": 1,
- "carriedOver": 14,
+ "carriedOver": 12,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -1583,7 +1583,7 @@
    "reference": "QR0809TETA002300",
    "title": "APPOINTMENT OF AN ICT SERVICE PROVIDER TO DO THE FOLLOWING: PROVIDE SUPPORT AND MAINTENANCE TO TETA DG CLAIMS MANAGEMENT SYSTEM",
    "department": "Transport Education and Training Authority",
-   "category": "Software & Systems",
+   "category": "IT Services & Support",
    "company": "rtc",
    "matchedTerms": [
     "ict",
