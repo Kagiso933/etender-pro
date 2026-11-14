@@ -1,22 +1,22 @@
 {
  "source": "https://ocds-api.etenders.gov.za/api/OCDSReleases",
- "generatedAt": "2026-11-13T22:34:39.177393+00:00",
+ "generatedAt": "2026-11-14T03:03:11.071832+00:00",
  "lookbackDays": 60,
- "coveredFrom": "2026-11-03",
- "releasesScanned": 1153,
- "uniqueTenders": 1188,
- "count": 166,
+ "coveredFrom": "2026-10-15",
+ "releasesScanned": 2759,
+ "uniqueTenders": 2779,
+ "count": 165,
  "categories": {
-  "Software & Systems": 65,
+  "Software & Systems": 75,
   "End-User Computing": 24,
-  "Cloud Services": 10,
-  "IT Services & Support": 17,
-  "Cybersecurity": 12,
-  "Network & Infrastructure": 28,
-  "Telecoms & Unified Comms": 10
+  "Cloud Services": 5,
+  "IT Services & Support": 15,
+  "Cybersecurity": 13,
+  "Network & Infrastructure": 22,
+  "Telecoms & Unified Comms": 11
  },
  "onlineBriefings": 1,
- "carriedOver": 81,
+ "carriedOver": 14,
  "briefingFieldsSeen": {},
  "tenders": [
   {
@@ -532,7 +532,7 @@
    "reference": "GMT012/26-27",
    "title": "GMT012/26-27 – Tender for the appointment of a Service Provider for the Management of George Municipality’s Microsoft Enterprise Agreement, including Azure and Microsoft related projects from date of appointment until 30 June 2029.",
    "department": "George Municipality",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -977,7 +977,7 @@
    "reference": "RFX 6000003815",
    "title": "Appointment of a Service Provider for the Provisioning of Microsoft Azure Subscription Services and Microsoft Fabric F16 Capacity for Sentech Head Office",
    "department": "Sentech Limited",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -1176,7 +1176,7 @@
    "reference": "RFQ/ICT/26/27/241",
    "title": "PROVISION OF MIMECAST EMAIL CONTINUITY AND ARCHIVING SOLUTIONS FOR 12 MONTHS",
    "department": "Manufacturing, Engineering and Related Services SETA (merSETA)",
-   "category": "IT Services & Support",
+   "category": "Cybersecurity",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -1265,7 +1265,7 @@
    "reference": "ELM-4/004/2026-2027",
    "title": "Provision of Data Backup and Replication System",
    "department": "Elundini Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -1484,7 +1484,7 @@
    "reference": "RFQ2026-27-48",
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT AN AZURE DEVOPS COURSE FOR ONE DELEGATE.",
    "department": "The South African Qualifications Authority (SAQA)",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -1583,7 +1583,7 @@
    "reference": "QR0809TETA002300",
    "title": "APPOINTMENT OF AN ICT SERVICE PROVIDER TO DO THE FOLLOWING: PROVIDE SUPPORT AND MAINTENANCE TO TETA DG CLAIMS MANAGEMENT SYSTEM",
    "department": "Transport Education and Training Authority",
-   "category": "IT Services & Support",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "ict",
@@ -2713,7 +2713,7 @@
    "reference": "SANBI IT593/2026",
    "title": "THE APPOINTMENT OF A MICROSOFT AZURE MANAGED SERVICE PROVIDER TO MANAGE, STANDARDISE\r\nAND OPTIMISE EXISTING AZURE SERVICES FOR THE SOUTH AFRICAN NATIONAL BIODIVERSITY INSTITUTE (SANBI) FOR A PERIOD OF THREE (3) YEARS",
    "department": "South African National Biodiversity Institute",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "azure",
@@ -2883,52 +2883,6 @@
      "url": "https://www.etenders.gov.za/home/Download?blobName=007d30df-b6c9-46a8-8988-ed41dd25b958.xlsx&downloadedFileName=RFB%203303-2026%20-%20ERP%20537010-Annexure%20H%20Pricing%20Schedule%20final.xlsx",
      "format": "xlsx",
      "published": "2026-10-29T13:17:55Z"
-    }
-   ],
-   "portalUrl": "https://www.etenders.gov.za"
-  },
-  {
-   "id": "ocds-9t57fa-176143",
-   "reference": "PRDP 32/2025-26",
-   "title": "PRDP 32/2025-26 – REQUEST FOR PROPOSAL FOR THE PROVISION OF THE PROVINCIAL DATA CENTRE INFRASTRUCTURE FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
-   "department": "Limpopo - Office of the Premier",
-   "category": "Network & Infrastructure",
-   "company": "rtc",
-   "matchedTerms": [
-    "data centre"
-   ],
-   "value": null,
-   "currency": "ZAR",
-   "publishedDate": "2026-10-28T00:00:00+00:00",
-   "closingDate": "2026-11-20T11:00:00+00:00",
-   "procurementMethod": "Participation",
-   "procurementCategory": "consultingServices",
-   "eligibility": "",
-   "submission": "",
-   "contact": {},
-   "province": "",
-   "briefing": {
-    "held": null,
-    "compulsory": null,
-    "date": null,
-    "venue": "",
-    "mode": "unknown",
-    "online": false,
-    "link": null,
-    "note": ""
-   },
-   "documents": [
-    {
-     "title": "ADENDUM FOR TENDER ADVERTISEMENT REQUEST PROVINCIAL DATA.docx",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=fc5b278f-a257-42a4-864d-15896b1d72bb.docx&downloadedFileName=ADENDUM%20FOR%20TENDER%20ADVERTISEMENT%20REQUEST%20PROVINCIAL%20DATA.docx",
-     "format": "docx",
-     "published": "2026-11-09T14:59:45Z"
-    },
-    {
-     "title": "Amended TOR Provincial data.pdf",
-     "url": "https://www.etenders.gov.za/home/Download?blobName=7712e0df-67ee-4713-9db3-2e9b849873df.pdf&downloadedFileName=Amended%20TOR%20Provincial%20data.pdf",
-     "format": "pdf",
-     "published": "2026-11-09T14:58:49Z"
     }
    ],
    "portalUrl": "https://www.etenders.gov.za"
@@ -4196,7 +4150,7 @@
    "reference": "10418532 R",
    "title": "Installation of a Backup power supply system for Barnardsvlei online water quality Instruments, Hartebeesthoek Reservoir and Guard houses",
    "department": "Rand Water",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "backup",
@@ -4614,7 +4568,7 @@
    "reference": "PSiRA/2026/27/RFB/08",
    "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE DESIGN, SUPPLY, IMPLEMENT AND MAINTENANCE OF A CLOUD-BASED MICROSOFT TEAMS TELEPHONY SYSTEM AND CALL CENTER SOLUTION FOR A PERIOD OF 36 MONTHS.",
    "department": "Private Security Industry Regulatory Authority",
-   "category": "Cloud Services",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "cloud",
@@ -6604,7 +6558,7 @@
    "reference": "57 OF 2026",
    "title": "Supply, delivery, installation and commissioning of server room environmental management system including quarterly support and maintenance plan for the period of three years",
    "department": "Makhado Local Municipality",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "management system",
@@ -7195,7 +7149,7 @@
    "reference": "CGE/T/11/2026/27",
    "title": "Provision of WAN and VOIP services for 36 months",
    "department": "Commission for Gender Equality",
-   "category": "Network & Infrastructure",
+   "category": "Telecoms & Unified Comms",
    "company": "rtc",
    "matchedTerms": [
     "voip",
@@ -8112,7 +8066,7 @@
    "reference": "5/2/2/1(013)2026-2027",
    "title": "APPOINTMENT OF A SERVICE PROVIDER TO SUPPLY AND ACTIVATE CISCO DNA CENTRE VIRTUAL APPLIANCE, CISCO IDENTITY SERVICES LICENCE RENEWALS, SMARTNET AND PROVIDE SUPPORT FOR THE PERIOD OF THREE YEARS (36 MONTHS) FOR THE DEPARTMENT OF AGRICULTURE.",
    "department": "National - Department of Agriculture",
-   "category": "Network & Infrastructure",
+   "category": "Software & Systems",
    "company": "rtc",
    "matchedTerms": [
     "cisco",
